@@ -60,7 +60,7 @@ Google Sheet « Korotech - File d'attente Instagram ». On y ajoute une ligne vi
 - Reel : `medias` = URL publique du MP4.
 - Carrousel : `medias` = `{"files":[{"media_type":"IMAGE","image_url":"<url slide 1>"}, ...]}`.
 
-Goat passe les lignes en « Validé » ; le scénario 9972048 publie toutes les 15 min (7h-22h30).
+Validation par défaut avec droit de veto : le scénario 9972048 publie toutes les 15 min (7h-22h30) les lignes « À valider » ou « Validé » dont l'heure est passée. Goat passe en « Refusé » ce qu'il ne veut pas publier. Statuts posés par le scénario : « En cours », « Publié », « Erreur ».
 
 ## Journal
 `journal.md` liste chaque post produit (date, id, sujet). Le lire avant de choisir de nouveaux sujets pour ne pas se répéter.
