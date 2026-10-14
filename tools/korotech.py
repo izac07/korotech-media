@@ -190,9 +190,39 @@ async def _frames(html_path, fr, dur, fps=30):
             await pg.screenshot(path=f"{fr}/f_{i:04d}.jpg", type="jpeg", quality=90)
         await b.close()
 
-def build_reel(spec, out):
-    page, dur = reel_html(spec)
+def _dur(f):
+    return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f], capture_output=True, text=True).stdout.strip())
+
+def prepare_voice(spec, vo_dir, tmp):
+    """If scenes have 'vo' text and vo_<k>.mp3 files exist in vo_dir, trim them and stretch scene durations to fit.
+    Returns list of (start_time, wav) or [] when the reel has no voice."""
+    scenes = spec["scenes"]
+    if not any(s.get("vo") for s in scenes) or not vo_dir:
+        return []
+    clips = []
+    for k, s in enumerate(scenes):
+        if not s.get("vo"): clips.append(None); continue
+        src = os.path.join(vo_dir, f"vo_{k}.mp3")
+        if not os.path.exists(src):
+            raise FileNotFoundError(f"voix manquante pour la scène {k}: {src}")
+        w = os.path.join(tmp, f"vo_{k}.wav")
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", src, "-af",
+                        "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse",
+                        "-ar", "48000", "-ac", "2", w], check=True)
+        d = _dur(w)
+        base = float(s.get("dur", DEFAULT_DUR[s["type"]]))
+        s["dur"] = round(max(base, d + 0.9), 2)
+        clips.append((w, d))
+    out, t = [], 0.0
+    for s, c in zip(scenes, clips):
+        if c: out.append((t + 0.25, c[0]))
+        t += float(s.get("dur", DEFAULT_DUR[s["type"]]))
+    return out
+
+def build_reel(spec, out, vo_dir=None):
     tmp = tempfile.mkdtemp()
+    voice = prepare_voice(spec, vo_dir, tmp)
+    page, dur = reel_html(spec)
     hp_ = os.path.join(tmp, "reel.html"); open(hp_, "w").write(page)
     fr = os.path.join(tmp, "frames"); os.makedirs(fr)
     asyncio.run(_frames(hp_, fr, dur))
@@ -200,8 +230,17 @@ def build_reel(spec, out):
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-framerate", "30", "-i", f"{fr}/f_%04d.jpg", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "19", "-maxrate", "4M", "-bufsize", "8M", silent], check=True)
     wav = os.path.join(tmp, "music.wav")
     make_music(wav, dur + 1, int(spec.get("music_seed", sum(map(ord, spec.get("id", "x"))))))
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", silent, "-i", wav, "-filter_complex",
-                    f"[1]atrim=0:{dur},afade=t=out:st={dur-1.5}:d=1.5,loudnorm=I=-15:TP=-1.5[a]", "-map", "0:v", "-map", "[a]",
+    if not voice:
+        fc = f"[1]atrim=0:{dur},afade=t=out:st={dur-1.5}:d=1.5,loudnorm=I=-15:TP=-1.5[a]"
+        inputs = ["-i", silent, "-i", wav]
+    else:
+        inputs = ["-i", silent, "-i", wav] + sum((["-i", w] for _, w in voice), [])
+        dl = "".join(f"[{i+2}]adelay={int(t*1000)}|{int(t*1000)}[v{i}];" for i, (t, _) in enumerate(voice))
+        vs = "".join(f"[v{i}]" for i in range(len(voice)))
+        fc = (dl + f"{vs}amix=inputs={len(voice)}:normalize=0,apad=whole_dur={dur},loudnorm=I=-15:TP=-1.5[vo];"
+              f"[vo]asplit=2[voa][sc];[1]atrim=0:{dur},afade=t=out:st={dur-1.5}:d=1.5,volume=0.30[m];"
+              f"[m][sc]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[md];[voa][md]amix=inputs=2:normalize=0,alimiter=limit=0.95[a]")
+    subprocess.run(["ffmpeg", "-v", "error", "-y"] + inputs + ["-filter_complex", fc, "-map", "0:v", "-map", "[a]",
                     "-c:v", "copy", "-c:a", "aac", "-b:a", "128k", "-ar", "48000", "-movflags", "+faststart", out], check=True)
     shutil.rmtree(tmp)
     return dur
@@ -264,6 +303,6 @@ if __name__ == "__main__":
     if cmd == "carrousel":
         print(build_carrousel(json.load(open(sys.argv[2])), sys.argv[3]))
     elif cmd == "reel":
-        print("duration", build_reel(json.load(open(sys.argv[2])), sys.argv[3]))
+        print("duration", build_reel(json.load(open(sys.argv[2])), sys.argv[3], os.path.dirname(os.path.abspath(sys.argv[2]))))
     elif cmd == "music":
         make_music(sys.argv[2], float(sys.argv[3]), int(sys.argv[4]) if len(sys.argv) > 4 else 7)
