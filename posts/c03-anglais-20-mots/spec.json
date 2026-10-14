@@ -1,0 +1,59 @@
+{
+ "id": "C03",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "**20 mots**<br>d'anglais par jour<br>sans effort",
+   "size": 100,
+   "sub": "La méthode en 4 étapes, avec l'IA comme prof perso."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Étape 1",
+   "title": "Ta liste sur mesure",
+   "card": "Donne-moi 20 mots d'anglais utiles pour un élève de [ta classe] qui aime [tes passions], avec la traduction et une phrase d'exemple."
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Étape 2",
+   "title": "Des phrases, pas des listes",
+   "body": "Lis chaque mot **dans sa phrase**, à voix haute. Le contexte aide ta mémoire bien plus qu'une liste sèche."
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Étape 3",
+   "title": "La révision espacée",
+   "body": "Revois tes mots **le lendemain**, puis **3 jours après**, puis **une semaine après**. C'est ce rythme qui les ancre durablement."
+  },
+  {
+   "type": "item",
+   "num": 4,
+   "when": "Étape 4",
+   "title": "Le mini-test",
+   "card": "Interroge-moi sur mes 20 mots : donne-moi le mot en français, j'écris la traduction, et corrige-moi à la fin."
+  },
+  {
+   "type": "cta",
+   "title": "20 mots par jour,<br>**600 par mois.**",
+   "size": 92,
+   "ctas": [
+    [
+     "🔖",
+     "Enregistre et commence ce soir"
+    ],
+    [
+     "💬",
+     "Commente **ANGLAIS** pour la liste"
+    ],
+    [
+     "➕",
+     "Suis **@korotech_fr**"
+    ]
+   ],
+   "note": "L'IA peut se tromper : vérifie les traductions dans un dictionnaire."
+  }
+ ]
+}

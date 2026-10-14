@@ -1,0 +1,53 @@
+{
+ "id": "R03",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "Ta rédaction",
+    "corrigée",
+    "**comme par un prof**"
+   ]
+  },
+  {
+   "type": "chat",
+   "label": "Le prompt",
+   "title": "Colle ça avec ton texte",
+   "text": "Corrige ma rédaction comme un professeur de français : souligne chaque faute, explique la règle, puis propose une version améliorée sans changer mes idées. Ma rédaction : [colle ton texte]",
+   "dur": 8
+  },
+  {
+   "type": "result",
+   "label": "Exemple",
+   "title": "Ce que tu obtiens",
+   "sections": [
+    {
+     "t": "La faute",
+     "tx": "« Les enfants qu'il a vu » → « vus »"
+    },
+    {
+     "t": "La règle",
+     "tx": "Avec avoir, le participe s'accorde avec le COD placé avant : ici, « les enfants »."
+    },
+    {
+     "t": "La version améliorée",
+     "tx": "Tes idées, avec des phrases plus claires et un vocabulaire plus précis."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "Tu veux<br>**le prompt ?**",
+   "ctas": [
+    [
+     "💬",
+     "Commente **PROF**"
+    ],
+    [
+     "📤",
+     "Partage à quelqu'un qui a un devoir à rendre"
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "id": "R04",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "Ton cours est",
+    "trop long ?",
+    "**Résume-le comme ça**"
+   ]
+  },
+  {
+   "type": "chat",
+   "label": "Le prompt",
+   "title": "Colle ce prompt",
+   "text": "Résume ce cours en 10 lignes maximum, transforme-le en plan avec titres et sous-parties, puis donne les 5 mots-clés à retenir. Cours : [colle ton cours]",
+   "dur": 7.5
+  },
+  {
+   "type": "result",
+   "label": "Résultat",
+   "title": "6 pages → 1 page claire",
+   "sections": [
+    {
+     "t": "Le résumé",
+     "tx": "10 lignes avec l'essentiel, rien de plus."
+    },
+    {
+     "t": "Le plan",
+     "tx": "I, II, III avec les sous-parties, prêt à apprendre."
+    },
+    {
+     "t": "Les mots-clés",
+     "tx": "Les 5 notions à connaître par cœur."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "Tu veux<br>**le prompt ?**",
+   "ctas": [
+    [
+     "💬",
+     "Commente **RÉSUMÉ**"
+    ],
+    [
+     "🔖",
+     "Enregistre pour ce soir"
+    ]
+   ]
+  }
+ ]
+}

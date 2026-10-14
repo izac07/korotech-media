@@ -1,0 +1,48 @@
+{
+ "id": "C04",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Aidez votre enfant<br>**sans comprendre**<br>ses cours",
+   "size": 96,
+   "sub": "3 façons simples d'utiliser l'IA à la maison, même si vous avez tout oublié."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Façon 1",
+   "title": "Faire expliquer",
+   "card": "Explique cette leçon à mon enfant de [sa classe], avec des mots simples et un exemple du quotidien : [colle la leçon]"
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Façon 2",
+   "title": "Faire interroger",
+   "card": "Pose 5 questions à mon enfant sur ce chapitre, une par une, et encourage-le quand il se trompe : [colle le chapitre]"
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Façon 3",
+   "title": "Organiser la semaine",
+   "card": "Mon enfant a [ses devoirs et contrôles de la semaine]. Fais-lui un planning simple, 30 minutes par jour maximum."
+  },
+  {
+   "type": "cta",
+   "title": "L'IA explique.<br>**Vous encouragez.**",
+   "size": 96,
+   "ctas": [
+    [
+     "🔖",
+     "Enregistrez ce post"
+    ],
+    [
+     "📤",
+     "Partagez-le à un autre parent"
+    ]
+   ],
+   "note": "Gardez un œil sur les réponses : l'IA peut se tromper."
+  }
+ ]
+}

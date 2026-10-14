@@ -1,0 +1,43 @@
+{
+ "id": "R02",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "Fais-toi",
+    "interroger par l'IA",
+    "**avant ton contrôle**"
+   ]
+  },
+  {
+   "type": "chat",
+   "label": "La méthode",
+   "title": "Colle ce prompt",
+   "text": "Pose-moi 10 questions sur ce chapitre, une par une. Attends ma réponse, corrige-moi, puis donne-moi une note sur 20. Chapitre : [colle ton cours]"
+  },
+  {
+   "type": "list",
+   "label": "Pourquoi ça marche",
+   "title": "Ton cerveau retient mieux",
+   "items": [
+    "Tu **cherches** la réponse au lieu de relire",
+    "Tu vois **tout de suite** tes erreurs",
+    "Tu sais où tu en es **avant le vrai contrôle**"
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "Tu veux<br>**le prompt ?**",
+   "ctas": [
+    [
+     "💬",
+     "Commente **QUIZ**"
+    ],
+    [
+     "🔖",
+     "Enregistre pour ton prochain contrôle"
+    ]
+   ]
+  }
+ ]
+}
