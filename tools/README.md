@@ -8,7 +8,7 @@ URL publique d'un fichier : `https://izac07.github.io/korotech-media/<chemin>`
 - Niche : apprendre plus vite avec l'IA (révisions, langues, devoirs, organisation, orientation).
 - Cibles : élèves/étudiants (tutoiement) et parents (vouvoiement), environ 1 post sur 3 pour les parents.
 - Chaque post finit par une action : enregistrer, commenter un mot-clé en MAJUSCULES, partager ou suivre.
-- Reels : texte animé + **voix off ElevenLabs « Alice »** sur TOUS les reels + musique lo-fi originale en fond (baissée automatiquement sous la voix).
+- Reels : texte animé + **voix off ElevenLabs « Brian » (modèle Eleven v4)** sur TOUS les reels + musique lo-fi originale en fond (baissée automatiquement sous la voix).
 - Carrousels : sans musique (l'API Instagram ne le permet pas).
 - Rester exact : pas de chiffres ou d'affirmations inventés ; ajouter « l'IA peut se tromper » quand c'est pertinent.
 
@@ -55,9 +55,9 @@ Dépendances : `pip install --break-system-packages playwright scipy numpy pillo
 Chaque scène accepte `"dur"` (secondes). Hook : 3 lignes courtes max, ≤ 14 caractères par ligne.
 
 ### Voix off (tous les reels)
-Chaque scène porte un champ `"vo"` : la phrase dite par Alice pendant cette scène (français oral, naturel, tutoiement pour les élèves / vouvoiement pour les parents ; 8 à 25 mots par scène ; écrire les nombres en lettres ; total ≈ 250-350 caractères par reel pour tenir le quota ElevenLabs).
+Chaque scène porte un champ `"vo"` : la phrase dite par Brian pendant cette scène (français oral, naturel, tutoiement pour les élèves / vouvoiement pour les parents ; 8 à 25 mots par scène ; écrire les nombres en lettres ; total ≈ 250-350 caractères par reel pour tenir le quota ElevenLabs).
 Avant de générer la vidéo, pour chaque scène k qui a un `vo`, lancer le scénario Make **9977445** (« Korotech - Voix off ElevenLabs ») avec :
-`texte` = la phrase, `chemin` = `posts/<dossier>/vo_<k>.mp3` (k = index de la scène, à partir de 0), `voix` = `Xb7hH8MSUJpSbSDYk0k2` (Alice).
+`texte` = la phrase, `chemin` = `posts/<dossier>/vo_<k>.mp3` (k = index de la scène, à partir de 0), `voix` = `nPczCjzI2devNBz1zQrb` (Brian), `modele` = `eleven_v4` (ce sont aussi les valeurs par défaut du scénario). Make ne peut PAS écraser un fichier existant dans GitHub : toujours écrire vers un chemin nouveau (pour refaire une voix, supprimer d'abord l'ancien fichier du dépôt et pousser).
 Puis `git pull` : les `vo_<k>.mp3` arrivent dans le dossier du post. `tools/korotech.py reel` les détecte, allonge chaque scène pour caler la voix, et mixe la musique en dessous. S'il manque un fichier, le script s'arrête avec une erreur : relancer la génération de cette scène.
 Si ElevenLabs refuse (quota épuisé), produire le reel SANS `vo` (musique seule) et le signaler à Goat.
 
