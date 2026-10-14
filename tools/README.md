@@ -64,3 +64,11 @@ Validation par défaut avec droit de veto : le scénario 9972048 publie toutes l
 
 ## Journal
 `journal.md` liste chaque post produit (date, id, sujet). Le lire avant de choisir de nouveaux sujets pour ne pas se répéter.
+
+## Statistiques et bilan hebdomadaire
+Le scénario Make **9975091** (« Korotech - Stats ») récupère le nombre d'abonnés et, pour chaque post visible, les métriques views, reach, saved, shares, likes, comments. Il dépose un fichier `stats/AAAA-MM-JJ-HHmm.csv` dans ce dépôt (ligne 1 : abonnés, nombre de posts, date ; puis une ligne par post et par métrique). Les anciens posts du stylo (2024-2025) restent dans le fichier : ne comparer que les posts de la nouvelle ligne (à partir du 14/10/2026).
+
+Chaque dimanche soir, la tâche « Korotech - bilan hebdo » lance ce scénario, compare avec le fichier de la semaine précédente, écrit `stats/bilan-AAAA-MM-JJ.md` et met à jour la section ci-dessous.
+
+## Leçons des bilans (à appliquer par la tâche du soir)
+- (vide pour l'instant — premier bilan le dimanche 18 octobre 2026)
