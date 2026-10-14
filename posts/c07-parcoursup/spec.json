@@ -1,0 +1,55 @@
+{
+ "id": "C07",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Parcoursup<br>**avec l'IA**",
+   "size": 104,
+   "sub": "4 façons de t'en servir pour t'orienter… sans lui faire écrire à ta place."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Explorer",
+   "title": "Trouver des pistes",
+   "card": "J'aime [tes matières, activités, centres d'intérêt]. Propose-moi 8 types de formations après le bac qui pourraient me plaire, en expliquant pourquoi."
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Comparer",
+   "title": "Y voir clair",
+   "card": "Compare [formation A] et [formation B] : contenu des cours, façon de travailler, débouchés possibles. Présente-le sous forme de tableau."
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Se préparer",
+   "title": "Les portes ouvertes",
+   "card": "Je vais à la journée portes ouvertes de [formation]. Donne-moi 10 questions à poser aux étudiants et aux profs."
+  },
+  {
+   "type": "item",
+   "num": 4,
+   "when": "Rédiger",
+   "title": "Ton projet motivé",
+   "body": "Écris-le **toi-même**, puis demande à l'IA de repérer les fautes et ce qui manque de concret. Elle relit, **tu écris**."
+  },
+  {
+   "type": "cta",
+   "title": "Ton orientation,<br>**ton choix.**",
+   "size": 92,
+   "ctas": [
+    [
+     "💬",
+     "Commente **PARCOURSUP**"
+    ],
+    [
+     "🔖",
+     "Enregistre ce post"
+    ]
+   ],
+   "note": "L'IA peut se tromper : vérifie toujours les infos sur parcoursup.fr et sur les sites des formations."
+  }
+ ]
+}

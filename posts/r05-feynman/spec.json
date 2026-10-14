@@ -1,0 +1,50 @@
+{
+ "id": "R05",
+ "music_seed": 21,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "Tu crois",
+    "connaître",
+    "**ton cours ?**"
+   ]
+  },
+  {
+   "type": "text",
+   "label": "La méthode Feynman",
+   "title": "Explique-le à l'IA <br>**comme à un enfant.**"
+  },
+  {
+   "type": "chat",
+   "label": "Le prompt",
+   "title": "Colle ce prompt",
+   "text": "Joue un élève de 10 ans. Je vais t'expliquer [la notion] avec mes mots. Pose-moi des questions naïves dès que c'est flou, puis dis-moi ce que j'ai oublié ou mal expliqué.",
+   "dur": 8.5
+  },
+  {
+   "type": "list",
+   "label": "Pourquoi ça marche",
+   "title": "Tu vois tes trous",
+   "items": [
+    "Expliquer simplement montre **ce que tu as compris**",
+    "Les questions révèlent **ce qui est flou**",
+    "Tu sais quoi revoir **avant le contrôle**"
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "Tu veux<br>**le prompt ?**",
+   "ctas": [
+    [
+     "💬",
+     "Commente **FEYNMAN**"
+    ],
+    [
+     "🔖",
+     "Enregistre pour ta prochaine révision"
+    ]
+   ]
+  }
+ ]
+}

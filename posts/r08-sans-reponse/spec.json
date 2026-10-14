@@ -1,0 +1,45 @@
+{
+ "id": "R08",
+ "music_seed": 24,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "L'IA fait",
+    "tes exos ?",
+    "**Fais l'inverse**"
+   ]
+  },
+  {
+   "type": "chat",
+   "label": "Le prompt",
+   "title": "Colle ce prompt",
+   "text": "Je bloque sur cet exercice. Ne me donne pas la réponse. Pose-moi une question à la fois pour m'aider à trouver l'étape suivante, et dis-moi si mon raisonnement tient. Exercice : [colle l'énoncé]",
+   "dur": 9.0
+  },
+  {
+   "type": "list",
+   "label": "Pourquoi",
+   "title": "Le jour du contrôle…",
+   "items": [
+    "… l'IA **ne sera pas là**",
+    "Tu apprends **la méthode**, pas juste le résultat",
+    "Tu repères **où tu bloques**"
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "Tu veux<br>**le prompt ?**",
+   "ctas": [
+    [
+     "💬",
+     "Commente **INDICE**"
+    ],
+    [
+     "🔖",
+     "Enregistre pour tes devoirs"
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "id": "R10",
+ "music_seed": 26,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "Ta semaine",
+    "organisée",
+    "**en 1 prompt**"
+   ]
+  },
+  {
+   "type": "chat",
+   "label": "Le prompt",
+   "title": "Colle ce prompt",
+   "text": "Voici mes cours, devoirs et contrôles des 7 prochains jours : [ta liste]. Fais-moi un planning jour par jour, avec des sessions de 25 minutes, les contrôles en priorité et une soirée libre.",
+   "dur": 9.0
+  },
+  {
+   "type": "result",
+   "label": "Résultat",
+   "title": "Ton planning de la semaine",
+   "sections": [
+    {
+     "t": "Les priorités",
+     "tx": "Les contrôles les plus proches passent en premier."
+    },
+    {
+     "t": "Chaque jour",
+     "tx": "Des sessions courtes, faciles à tenir."
+    },
+    {
+     "t": "La pause",
+     "tx": "Une soirée libre pour souffler."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "Tu veux<br>**le prompt ?**",
+   "ctas": [
+    [
+     "💬",
+     "Commente **PLANNING**"
+    ],
+    [
+     "🔖",
+     "Enregistre pour ce week-end"
+    ]
+   ]
+  }
+ ]
+}

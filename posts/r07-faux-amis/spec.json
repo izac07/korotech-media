@@ -1,0 +1,48 @@
+{
+ "id": "R07",
+ "music_seed": 23,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "Ces 5 mots",
+    "d'anglais",
+    "**te piègent**"
+   ]
+  },
+  {
+   "type": "list",
+   "label": "Faux amis",
+   "title": "Ne traduis pas mot à mot",
+   "items": [
+    "**actually** = en fait (pas actuellement)",
+    "**eventually** = finalement",
+    "**library** = bibliothèque",
+    "**sensible** = raisonnable",
+    "**to attend** = assister à"
+   ],
+   "dur": 8.5
+  },
+  {
+   "type": "chat",
+   "label": "Pour t'entraîner",
+   "title": "Colle ce prompt",
+   "text": "Donne-moi 10 faux amis anglais-français courants, avec une phrase d'exemple pour chacun. Puis fais-moi un quiz de 10 questions, une par une.",
+   "dur": 7.5
+  },
+  {
+   "type": "cta",
+   "title": "Tu veux<br>**la liste complète ?**",
+   "ctas": [
+    [
+     "💬",
+     "Commente **PIÈGE**"
+    ],
+    [
+     "🔖",
+     "Enregistre avant ton prochain contrôle"
+    ]
+   ]
+  }
+ ]
+}

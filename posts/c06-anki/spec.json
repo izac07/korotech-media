@@ -1,0 +1,62 @@
+{
+ "id": "C06",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Tes flashcards<br>**Anki**<br>en 1 prompt",
+   "size": 104,
+   "sub": "Transforme ton cours en cartes prêtes à importer, puis révise-les chaque jour."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Étape 1",
+   "title": "Génère les cartes",
+   "card": "Transforme ce cours en 20 flashcards. Une par ligne, au format question;réponse, sans numéro ni titre. Cours : [colle ton cours]"
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Étape 2",
+   "title": "Vérifie",
+   "body": "Relis chaque carte avec ton cours : **l'IA peut se tromper**. Corrige ou supprime ce qui est faux."
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Étape 3",
+   "title": "Crée le fichier",
+   "body": "Colle les lignes dans un fichier texte (.txt) enregistré en **UTF-8** pour garder les accents."
+  },
+  {
+   "type": "item",
+   "num": 4,
+   "when": "Étape 4",
+   "title": "Importe dans Anki",
+   "body": "Sur ordinateur : **Fichier → Importer**, choisis ton fichier et le séparateur **point-virgule**."
+  },
+  {
+   "type": "item",
+   "num": 5,
+   "when": "Étape 5",
+   "title": "Révise chaque jour",
+   "body": "Anki te remontre chaque carte **juste avant que tu l'oublies** : c'est la répétition espacée."
+  },
+  {
+   "type": "cta",
+   "title": "Ton cours<br>**en flashcards**",
+   "size": 100,
+   "ctas": [
+    [
+     "💬",
+     "Commente **ANKI**"
+    ],
+    [
+     "🔖",
+     "Enregistre ce post"
+    ]
+   ],
+   "note": "Anki est gratuit sur ordinateur et sur Android."
+  }
+ ]
+}

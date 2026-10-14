@@ -1,0 +1,67 @@
+{
+ "id": "C05",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "« Ça s'est<br>bien passé ? »<br>**5 questions<br>qui marchent mieux**",
+   "size": 84,
+   "sub": "Pour vraiment savoir où en est votre enfant, sans interrogatoire."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Question 1",
+   "title": "Faire expliquer",
+   "body": "« Tu peux m'expliquer un truc que tu as appris aujourd'hui ? » Expliquer avec ses mots aide à **retenir**.",
+   "foot": "Enregistrez pour plus tard"
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Question 2",
+   "title": "Repérer ce qui bloque",
+   "body": "« Qu'est-ce qui t'a paru le plus difficile ? » Une difficulté repérée tôt est **plus facile à rattraper**.",
+   "foot": "Enregistrez pour plus tard"
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Question 3",
+   "title": "Anticiper",
+   "body": "« Tu as un contrôle de prévu cette semaine ? » De quoi **organiser les révisions** à l'avance.",
+   "foot": "Enregistrez pour plus tard"
+  },
+  {
+   "type": "item",
+   "num": 4,
+   "when": "Question 4",
+   "title": "Garder le lien",
+   "body": "« Qu'est-ce qui t'a fait rire aujourd'hui ? » L'école, ce n'est pas **que les notes**.",
+   "foot": "Enregistrez pour plus tard"
+  },
+  {
+   "type": "item",
+   "num": 5,
+   "when": "Bonus",
+   "title": "Demandez à l'IA",
+   "card": "Mon enfant est en [classe] et étudie [le chapitre]. Donne-moi 3 questions simples à lui poser ce soir pour vérifier qu'il a compris, avec les réponses attendues.",
+   "foot": "Enregistrez pour plus tard"
+  },
+  {
+   "type": "cta",
+   "title": "Une question<br>par soir<br>**suffit.**",
+   "size": 96,
+   "ctas": [
+    [
+     "🔖",
+     "Enregistrez ce post"
+    ],
+    [
+     "📤",
+     "Partagez-le à un autre parent"
+    ]
+   ],
+   "note": "Les réponses de l'IA peuvent contenir des erreurs : vérifiez-les avec le cours."
+  }
+ ]
+}

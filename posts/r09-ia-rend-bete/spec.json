@@ -1,0 +1,56 @@
+{
+ "id": "R09",
+ "music_seed": 25,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "L'IA rend",
+    "bête ?",
+    "**Ça dépend.**"
+   ]
+  },
+  {
+   "type": "list",
+   "label": "Tu n'apprends rien si…",
+   "title": "Elle fait à ta place",
+   "items": [
+    "Elle **écrit** ta rédac",
+    "Elle **résout** ton exo",
+    "Tu **copies** sans comprendre"
+   ],
+   "dur": 5.5
+  },
+  {
+   "type": "list",
+   "label": "Tu progresses si…",
+   "title": "Elle te fait travailler",
+   "items": [
+    "Elle **t'interroge**",
+    "Elle **t'explique** autrement",
+    "Elle **corrige** ce que TU as fait"
+   ],
+   "dur": 5.5
+  },
+  {
+   "type": "text",
+   "label": "La règle",
+   "title": "Si tu ne peux pas le refaire seul, **tu n'as pas appris.**",
+   "dur": 4.8
+  },
+  {
+   "type": "cta",
+   "title": "Envoie ça<br>**à un ami**",
+   "ctas": [
+    [
+     "📤",
+     "Partage ce reel"
+    ],
+    [
+     "➕",
+     "Suis **@korotech_fr**"
+    ]
+   ]
+  }
+ ]
+}

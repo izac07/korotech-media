@@ -1,0 +1,59 @@
+{
+ "id": "C08",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "A-t-il copié<br>**sur ChatGPT ?**",
+   "size": 96,
+   "sub": "4 réflexes plus utiles qu'un « détecteur d'IA »."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Réflexe 1",
+   "title": "Oubliez les détecteurs",
+   "body": "Les outils qui « repèrent l'IA » **ne sont pas fiables** : ils peuvent accuser un texte écrit par votre enfant, ou en laisser passer un autre.",
+   "foot": "Enregistrez pour plus tard"
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Réflexe 2",
+   "title": "Faites-le expliquer",
+   "body": "« Explique-moi comment tu as trouvé ça. » S'il a compris, **il saura le dire** avec ses mots.",
+   "foot": "Enregistrez pour plus tard"
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Réflexe 3",
+   "title": "Regardez le brouillon",
+   "body": "Un vrai travail laisse des traces : **brouillon, ratures, étapes**. Un texte parfait sorti de nulle part mérite une question.",
+   "foot": "Enregistrez pour plus tard"
+  },
+  {
+   "type": "item",
+   "num": 4,
+   "when": "Réflexe 4",
+   "title": "Fixez la règle ensemble",
+   "body": "L'IA peut **expliquer et interroger**, pas rédiger à sa place. Une règle claire vaut mieux qu'une surveillance.",
+   "foot": "Enregistrez pour plus tard"
+  },
+  {
+   "type": "cta",
+   "title": "Parlez-en<br>**sans accuser.**",
+   "size": 96,
+   "ctas": [
+    [
+     "🔖",
+     "Enregistrez ce post"
+    ],
+    [
+     "📤",
+     "Partagez-le à un autre parent"
+    ]
+   ],
+   "note": "Le but n'est pas de le prendre en faute, mais qu'il apprenne vraiment."
+  }
+ ]
+}

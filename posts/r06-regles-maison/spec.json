@@ -1,0 +1,44 @@
+{
+ "id": "R06",
+ "music_seed": 22,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "Votre enfant",
+    "utilise l'IA ?",
+    "**3 règles**"
+   ]
+  },
+  {
+   "type": "list",
+   "label": "À la maison",
+   "title": "3 règles simples",
+   "items": [
+    "L'IA **explique**, elle ne fait pas le devoir à sa place",
+    "On **vérifie** : l'IA peut se tromper",
+    "Pas d'**infos personnelles** : nom, adresse, photos"
+   ],
+   "dur": 7.0
+  },
+  {
+   "type": "text",
+   "label": "Le test",
+   "title": "Il doit pouvoir <br>**le réexpliquer**<br>sans l'écran."
+  },
+  {
+   "type": "cta",
+   "title": "Gardez<br>**ces 3 règles**",
+   "ctas": [
+    [
+     "🔖",
+     "Enregistrez ce reel"
+    ],
+    [
+     "📤",
+     "Partagez-le à un parent"
+    ]
+   ]
+  }
+ ]
+}
