@@ -1,0 +1,52 @@
+{
+ "id": "R07",
+ "music_seed": 23,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "Ces 5 mots",
+    "d'anglais",
+    "**te piègent**"
+   ],
+   "vo": "Ces cinq mots d'anglais te piègent. Attention."
+  },
+  {
+   "type": "list",
+   "label": "Faux amis",
+   "title": "Ne traduis pas mot à mot",
+   "items": [
+    "**actually** = en fait (pas actuellement)",
+    "**eventually** = finalement",
+    "**library** = bibliothèque",
+    "**sensible** = raisonnable",
+    "**to attend** = assister à"
+   ],
+   "dur": 8.5,
+   "vo": "Actually veut dire en fait. Eventually, finalement. Library, bibliothèque. Sensible, raisonnable. Et to attend, assister à."
+  },
+  {
+   "type": "chat",
+   "label": "Pour t'entraîner",
+   "title": "Colle ce prompt",
+   "text": "Donne-moi 10 faux amis anglais-français courants, avec une phrase d'exemple pour chacun. Puis fais-moi un quiz de 10 questions, une par une.",
+   "dur": 7.5,
+   "vo": "Pour t'entraîner, colle ce prompt : l'IA te donne d'autres faux amis, puis te fait un quiz."
+  },
+  {
+   "type": "cta",
+   "title": "Tu veux<br>**la liste complète ?**",
+   "ctas": [
+    [
+     "💬",
+     "Commente **PIÈGE**"
+    ],
+    [
+     "🔖",
+     "Enregistre avant ton prochain contrôle"
+    ]
+   ],
+   "vo": "Tu veux la liste complète ? Commente PIÈGE, et enregistre avant ton prochain contrôle."
+  }
+ ]
+}
