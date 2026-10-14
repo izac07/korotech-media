@@ -8,14 +8,16 @@
     "Ta semaine",
     "organisée",
     "**en 1 prompt**"
-   ]
+   ],
+   "vo": "Ta semaine organisée en un seul prompt."
   },
   {
    "type": "chat",
    "label": "Le prompt",
    "title": "Colle ce prompt",
    "text": "Voici mes cours, devoirs et contrôles des 7 prochains jours : [ta liste]. Fais-moi un planning jour par jour, avec des sessions de 25 minutes, les contrôles en priorité et une soirée libre.",
-   "dur": 9.0
+   "dur": 9.0,
+   "vo": "Colle ce prompt avec tes cours, tes devoirs et tes contrôles des sept prochains jours."
   },
   {
    "type": "result",
@@ -34,7 +36,8 @@
      "t": "La pause",
      "tx": "Une soirée libre pour souffler."
     }
-   ]
+   ],
+   "vo": "Résultat : un planning jour par jour, les contrôles en priorité, des sessions courtes, et une soirée libre."
   },
   {
    "type": "cta",
@@ -48,7 +51,8 @@
      "🔖",
      "Enregistre pour ce week-end"
     ]
-   ]
+   ],
+   "vo": "Tu veux le prompt ? Commente PLANNING, et enregistre-le pour ce week-end."
   }
  ]
 }

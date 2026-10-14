@@ -8,7 +8,8 @@
     "Votre enfant",
     "utilise l'IA ?",
     "**3 règles**"
-   ]
+   ],
+   "vo": "Votre enfant utilise l'IA ? Voici trois règles simples à la maison."
   },
   {
    "type": "list",
@@ -19,12 +20,14 @@
     "On **vérifie** : l'IA peut se tromper",
     "Pas d'**infos personnelles** : nom, adresse, photos"
    ],
-   "dur": 7.0
+   "dur": 7.0,
+   "vo": "Un : l'IA explique, elle ne fait pas le devoir. Deux : on vérifie, car elle peut se tromper. Trois : pas d'informations personnelles."
   },
   {
    "type": "text",
    "label": "Le test",
-   "title": "Il doit pouvoir <br>**le réexpliquer**<br>sans l'écran."
+   "title": "Il doit pouvoir <br>**le réexpliquer**<br>sans l'écran.",
+   "vo": "Et le test le plus simple : il doit pouvoir réexpliquer sans l'écran."
   },
   {
    "type": "cta",
@@ -38,7 +41,8 @@
      "📤",
      "Partagez-le à un parent"
     ]
-   ]
+   ],
+   "vo": "Enregistrez cette vidéo, et partagez-la à un autre parent."
   }
  ]
 }

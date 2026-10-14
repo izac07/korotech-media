@@ -8,19 +8,22 @@
     "Tu crois",
     "connaître",
     "**ton cours ?**"
-   ]
+   ],
+   "vo": "Tu crois connaître ton cours ? Fais ce test."
   },
   {
    "type": "text",
    "label": "La méthode Feynman",
-   "title": "Explique-le à l'IA <br>**comme à un enfant.**"
+   "title": "Explique-le à l'IA <br>**comme à un enfant.**",
+   "vo": "La méthode Feynman : explique ton cours à l'IA, comme à un enfant."
   },
   {
    "type": "chat",
    "label": "Le prompt",
    "title": "Colle ce prompt",
    "text": "Joue un élève de 10 ans. Je vais t'expliquer [la notion] avec mes mots. Pose-moi des questions naïves dès que c'est flou, puis dis-moi ce que j'ai oublié ou mal expliqué.",
-   "dur": 8.5
+   "dur": 8.5,
+   "vo": "Colle ce prompt. L'IA joue un élève de dix ans et te pose des questions dès que c'est flou."
   },
   {
    "type": "list",
@@ -30,7 +33,8 @@
     "Expliquer simplement montre **ce que tu as compris**",
     "Les questions révèlent **ce qui est flou**",
     "Tu sais quoi revoir **avant le contrôle**"
-   ]
+   ],
+   "vo": "En expliquant simplement, tu vois ce que tu as compris, et ce que tu dois revoir avant le contrôle."
   },
   {
    "type": "cta",
@@ -44,7 +48,8 @@
      "🔖",
      "Enregistre pour ta prochaine révision"
     ]
-   ]
+   ],
+   "vo": "Tu veux le prompt ? Commente FEYNMAN, et enregistre la vidéo."
   }
  ]
 }

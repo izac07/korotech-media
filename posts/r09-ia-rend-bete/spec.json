@@ -8,7 +8,8 @@
     "L'IA rend",
     "bête ?",
     "**Ça dépend.**"
-   ]
+   ],
+   "vo": "L'IA rend bête ? Ça dépend comment tu l'utilises."
   },
   {
    "type": "list",
@@ -19,7 +20,8 @@
     "Elle **résout** ton exo",
     "Tu **copies** sans comprendre"
    ],
-   "dur": 5.5
+   "dur": 5.5,
+   "vo": "Si elle écrit ta rédac ou résout ton exo à ta place, tu n'apprends rien."
   },
   {
    "type": "list",
@@ -30,13 +32,15 @@
     "Elle **t'explique** autrement",
     "Elle **corrige** ce que TU as fait"
    ],
-   "dur": 5.5
+   "dur": 5.5,
+   "vo": "Mais si elle t'interroge, t'explique autrement ou corrige ton travail, là tu progresses."
   },
   {
    "type": "text",
    "label": "La règle",
    "title": "Si tu ne peux pas le refaire seul, **tu n'as pas appris.**",
-   "dur": 4.8
+   "dur": 4.8,
+   "vo": "La règle : si tu ne peux pas le refaire seul, tu n'as pas appris."
   },
   {
    "type": "cta",
@@ -50,7 +54,8 @@
      "➕",
      "Suis **@korotech_fr**"
     ]
-   ]
+   ],
+   "vo": "Envoie ça à un ami, et suis Korotech pour d'autres astuces."
   }
  ]
 }

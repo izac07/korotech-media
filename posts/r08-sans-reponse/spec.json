@@ -8,14 +8,16 @@
     "L'IA fait",
     "tes exos ?",
     "**Fais l'inverse**"
-   ]
+   ],
+   "vo": "L'IA fait tes exos ? Fais plutôt l'inverse."
   },
   {
    "type": "chat",
    "label": "Le prompt",
    "title": "Colle ce prompt",
    "text": "Je bloque sur cet exercice. Ne me donne pas la réponse. Pose-moi une question à la fois pour m'aider à trouver l'étape suivante, et dis-moi si mon raisonnement tient. Exercice : [colle l'énoncé]",
-   "dur": 9.0
+   "dur": 9.0,
+   "vo": "Colle ce prompt : l'IA ne te donne pas la réponse, elle te pose une question à la fois pour t'aider à avancer."
   },
   {
    "type": "list",
@@ -25,7 +27,8 @@
     "… l'IA **ne sera pas là**",
     "Tu apprends **la méthode**, pas juste le résultat",
     "Tu repères **où tu bloques**"
-   ]
+   ],
+   "vo": "Parce que le jour du contrôle, l'IA ne sera pas là. Toi, tu auras appris la méthode."
   },
   {
    "type": "cta",
@@ -39,7 +42,8 @@
      "🔖",
      "Enregistre pour tes devoirs"
     ]
-   ]
+   ],
+   "vo": "Tu veux le prompt ? Commente INDICE, et enregistre-le pour tes devoirs."
   }
  ]
 }
