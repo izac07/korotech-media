@@ -1,0 +1,47 @@
+{
+ "id": "R12",
+ "music_seed": 32,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "Relire",
+    "ton cours",
+    "**ne suffit pas**"
+   ],
+   "vo": "Relire ton cours trois fois ? Ce n'est pas la meilleure méthode."
+  },
+  {
+   "type": "text",
+   "label": "Ce qu'on sait",
+   "title": "Se tester fait **mieux retenir** que relire",
+   "vo": "Les recherches sur la mémoire le montrent : se tester fait mieux retenir que relire."
+  },
+  {
+   "type": "list",
+   "label": "À la place",
+   "title": "Fais plutôt ça",
+   "items": [
+    "Écris **de mémoire** ce que tu sais",
+    "Compare avec ton cours",
+    "Fais-toi **interroger par l'IA**"
+   ],
+   "vo": "Écris de mémoire ce que tu sais, compare avec ton cours, puis fais-toi interroger par l'IA."
+  },
+  {
+   "type": "cta",
+   "title": "Partage-le<br>**à ton groupe**",
+   "ctas": [
+    [
+     "📤",
+     "Envoie à quelqu'un qui relit tout"
+    ],
+    [
+     "➕",
+     "Suis @korotech_fr"
+    ]
+   ],
+   "vo": "Partage cette vidéo à quelqu'un qui relit tout, et abonne-toi."
+  }
+ ]
+}

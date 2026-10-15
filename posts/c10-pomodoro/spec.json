@@ -1,0 +1,60 @@
+{
+ "id": "C10",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "La méthode<br>**Pomodoro**",
+   "size": 100,
+   "sub": "25 minutes sans décrocher, avec l'IA pour t'organiser."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Le principe",
+   "title": "25 min, puis pause",
+   "body": "**25 minutes** de travail concentré, puis **5 minutes** de pause. Après 4 sessions, une pause plus longue.",
+   "foot": "Enregistre pour ce soir"
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "L'organisation",
+   "title": "Découpe avec l'IA",
+   "card": "Voici ce que je dois faire ce soir : [ta liste]. Découpe tout en sessions de 25 minutes, avec un objectif précis pour chacune.",
+   "card_label": "LE PROMPT",
+   "foot": "Enregistre pour ce soir"
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "La concentration",
+   "title": "Pendant les 25 minutes",
+   "body": "Téléphone **dans une autre pièce**. Une seule tâche. Une idée te vient ? Note-la pour la pause.",
+   "foot": "Enregistre pour ce soir"
+  },
+  {
+   "type": "item",
+   "num": 4,
+   "when": "La pause",
+   "title": "Pendant la pause",
+   "body": "Lève-toi, bois de l'eau, bouge. Évite les écrans pour **vraiment souffler**.",
+   "foot": "Enregistre pour ce soir"
+  },
+  {
+   "type": "cta",
+   "title": "Ce soir,<br>**teste 2 sessions.**",
+   "size": 96,
+   "ctas": [
+    [
+     "💬",
+     "Commente **POMODORO**"
+    ],
+    [
+     "🔖",
+     "Enregistre ce post"
+    ]
+   ],
+   "note": "Le prompt est en slide 3."
+  }
+ ]
+}

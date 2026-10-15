@@ -1,0 +1,49 @@
+{
+ "id": "R13",
+ "music_seed": 33,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "Apprends",
+    "l'espagnol",
+    "**avec ta série**"
+   ],
+   "vo": "Et si tu apprenais l'espagnol avec ta série préférée ?"
+  },
+  {
+   "type": "list",
+   "label": "Pendant l'épisode",
+   "title": "Regarde comme ça",
+   "items": [
+    "Audio **en espagnol**",
+    "Sous-titres **en espagnol**",
+    "Note **5 expressions**"
+   ],
+   "vo": "Mets l'audio et les sous-titres en espagnol, et note cinq expressions par épisode."
+  },
+  {
+   "type": "chat",
+   "label": "Le prompt",
+   "title": "Colle ce prompt",
+   "text": "Voici 5 expressions entendues dans ma série : [tes expressions]. Explique chacune simplement, donne un autre exemple, puis fais-moi un mini quiz.",
+   "dur": 9.0,
+   "vo": "Colle-les dans ce prompt : l'IA les explique, te donne des exemples et te fait un quiz."
+  },
+  {
+   "type": "cta",
+   "title": "Tu veux<br>**le prompt ?**",
+   "ctas": [
+    [
+     "💬",
+     "Commente **SÉRIE**"
+    ],
+    [
+     "🔖",
+     "Enregistre avant ton prochain épisode"
+    ]
+   ],
+   "vo": "Commente SÉRIE, et enregistre avant ton prochain épisode."
+  }
+ ]
+}

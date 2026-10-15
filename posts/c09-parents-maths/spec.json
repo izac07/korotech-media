@@ -1,0 +1,61 @@
+{
+ "id": "C09",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Aider en maths<br>**sans tout réexpliquer**",
+   "size": 90,
+   "sub": "4 façons d'aider votre enfant avec l'IA, même si vos cours sont loin."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Étape 1",
+   "title": "Faites-le expliquer d'abord",
+   "body": "« Montre-moi où tu bloques. » En expliquant, **il débloque parfois seul**, et vous voyez où est la difficulté.",
+   "foot": "Enregistrez pour plus tard"
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Étape 2",
+   "title": "Comprenez la méthode",
+   "card": "Explique la méthode pour résoudre ce type d'exercice, niveau [classe], étape par étape, sans faire l'exercice : [l'énoncé]",
+   "card_label": "LE PROMPT (POUR VOUS)",
+   "foot": "Enregistrez pour plus tard"
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Étape 3",
+   "title": "Demandez des exercices similaires",
+   "card": "Crée 3 exercices du même type que celui-ci, du plus facile au plus dur, avec les corrigés à part : [l'énoncé]",
+   "card_label": "LE PROMPT",
+   "foot": "Enregistrez pour plus tard"
+  },
+  {
+   "type": "item",
+   "num": 4,
+   "when": "Étape 4",
+   "title": "Vérifiez toujours",
+   "body": "L'IA peut **se tromper, même en calcul**. Comparez avec le cours ou le manuel avant de valider.",
+   "foot": "Enregistrez pour plus tard"
+  },
+  {
+   "type": "cta",
+   "title": "Vous n'avez pas<br>**à tout savoir.**",
+   "size": 96,
+   "ctas": [
+    [
+     "🔖",
+     "Enregistrez ce post"
+    ],
+    [
+     "📤",
+     "Partagez-le à un autre parent"
+    ]
+   ],
+   "note": "Votre rôle : l'encourager à chercher, pas faire à sa place."
+  }
+ ]
+}

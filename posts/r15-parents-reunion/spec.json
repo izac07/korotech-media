@@ -1,0 +1,49 @@
+{
+ "id": "R15",
+ "music_seed": 35,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "Réunion",
+    "avec les profs",
+    "**bien préparée**"
+   ],
+   "vo": "Une réunion parents-profs bientôt ? Préparez-la avec l'IA."
+  },
+  {
+   "type": "chat",
+   "label": "Le prompt",
+   "title": "Collez ce prompt",
+   "text": "Mon enfant est en [classe]. Voici ce que j'observe à la maison : [vos remarques]. Aide-moi à préparer 5 questions claires et bienveillantes pour son professeur.",
+   "dur": 9.0,
+   "vo": "Décrivez ce que vous observez, et demandez à l'IA cinq questions claires pour le professeur."
+  },
+  {
+   "type": "list",
+   "label": "Les bons réflexes",
+   "title": "Avant la réunion",
+   "items": [
+    "Pas de **nom complet**",
+    "Gardez **vos mots**",
+    "Notez **les réponses**"
+   ],
+   "vo": "Ne donnez pas le nom complet de votre enfant, et notez les réponses pendant la réunion."
+  },
+  {
+   "type": "cta",
+   "title": "Prêt pour<br>**la réunion ?**",
+   "ctas": [
+    [
+     "💬",
+     "Commentez **RÉUNION**"
+    ],
+    [
+     "📤",
+     "Partagez à un autre parent"
+    ]
+   ],
+   "vo": "Commentez RÉUNION, et partagez à un autre parent."
+  }
+ ]
+}

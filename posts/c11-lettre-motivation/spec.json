@@ -1,0 +1,69 @@
+{
+ "id": "C11",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Une lettre<br>de motivation<br>**qui te ressemble**",
+   "size": 90,
+   "sub": "L'IA t'aide, sans écrire à ta place."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Étape 1",
+   "title": "Commence par toi",
+   "body": "Note en vrac **3 expériences vraies** : un projet, un job, une passion. Pas de phrases, juste des faits.",
+   "foot": "Enregistre pour Parcoursup"
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Étape 2",
+   "title": "Fais-toi interviewer",
+   "card": "Pose-moi 5 questions pour m'aider à expliquer pourquoi je veux intégrer [formation]. Une à la fois. N'écris pas la lettre.",
+   "card_label": "LE PROMPT",
+   "foot": "Enregistre pour Parcoursup"
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Étape 3",
+   "title": "Écris toi-même",
+   "body": "Rédige avec **tes mots**, à partir de tes réponses. Une lettre générique ne dit rien de toi.",
+   "foot": "Enregistre pour Parcoursup"
+  },
+  {
+   "type": "item",
+   "num": 4,
+   "when": "Étape 4",
+   "title": "Demande une relecture",
+   "card": "Relis ma lettre : signale les phrases floues, trop générales, et les fautes, sans réécrire le texte : [ta lettre]",
+   "card_label": "LE PROMPT",
+   "foot": "Enregistre pour Parcoursup"
+  },
+  {
+   "type": "item",
+   "num": 5,
+   "when": "Étape 5",
+   "title": "Respecte la consigne",
+   "body": "Longueur, contenu attendu : **lis bien la consigne** de chaque formation avant d'envoyer.",
+   "foot": "Enregistre pour Parcoursup"
+  },
+  {
+   "type": "cta",
+   "title": "Ta lettre,<br>**ta voix.**",
+   "size": 96,
+   "ctas": [
+    [
+     "💬",
+     "Commente **LETTRE**"
+    ],
+    [
+     "🔖",
+     "Enregistre pour Parcoursup"
+    ]
+   ],
+   "note": "L'IA t'accompagne, mais c'est toi qu'on veut lire."
+  }
+ ]
+}

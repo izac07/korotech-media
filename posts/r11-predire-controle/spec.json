@@ -1,0 +1,55 @@
+{
+ "id": "R11",
+ "music_seed": 31,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "Devine",
+    "les questions",
+    "**du contrôle**"
+   ],
+   "vo": "Et si tu devinais les questions de ton prochain contrôle ?"
+  },
+  {
+   "type": "chat",
+   "label": "Le prompt",
+   "title": "Colle ce prompt",
+   "text": "Voici mon cours : [ton cours]. Tu es mon prof. Donne-moi les 5 questions les plus probables au contrôle, de la plus facile à la plus dure, sans les réponses.",
+   "dur": 9.0,
+   "vo": "Colle ton cours et demande à l'IA les cinq questions les plus probables, sans les réponses."
+  },
+  {
+   "type": "list",
+   "label": "Ensuite",
+   "title": "Ta routine",
+   "items": [
+    "Réponds **sans ton cours**",
+    "Corrige-toi avec le cours",
+    "Revois **ce que tu as raté**"
+   ],
+   "vo": "Réponds sans ton cours, corrige-toi, puis revois ce que tu as raté."
+  },
+  {
+   "type": "text",
+   "label": "Attention",
+   "title": "Des questions probables, **pas le vrai sujet**",
+   "vo": "Attention : l'IA peut se tromper, ce n'est pas le vrai sujet."
+  },
+  {
+   "type": "cta",
+   "title": "Tu veux<br>**le prompt ?**",
+   "ctas": [
+    [
+     "💬",
+     "Commente **CONTRÔLE**"
+    ],
+    [
+     "🔖",
+     "Enregistre pour ton prochain contrôle"
+    ]
+   ],
+   "vo": "Tu veux le prompt ? Commente CONTRÔLE, et enregistre cette vidéo."
+  }
+ ]
+}

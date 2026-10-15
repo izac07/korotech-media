@@ -1,0 +1,49 @@
+{
+ "id": "R16",
+ "music_seed": 36,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "Ton cours",
+    "en podcast",
+    "**pour ce soir**"
+   ],
+   "vo": "Et si tu révisais ton cours en l'écoutant comme un podcast ?"
+  },
+  {
+   "type": "chat",
+   "label": "Le prompt",
+   "title": "Colle ce prompt",
+   "text": "Transforme ce cours en dialogue de 5 minutes entre un prof et un élève, simple et vivant, avec les notions clés répétées à la fin : [ton cours].",
+   "dur": 9.0,
+   "vo": "Demande à l'IA de transformer ton cours en dialogue de cinq minutes entre un prof et un élève."
+  },
+  {
+   "type": "list",
+   "label": "Ensuite",
+   "title": "Pour l'écouter",
+   "items": [
+    "Lis-le et **enregistre-toi**",
+    "Ou donne ton cours à **NotebookLM**",
+    "Vérifie tout **avec ton cours**"
+   ],
+   "vo": "Enregistre-toi en le lisant, ou donne ton cours à NotebookLM, qui en fait un podcast à deux voix."
+  },
+  {
+   "type": "cta",
+   "title": "Tu veux<br>**le prompt ?**",
+   "ctas": [
+    [
+     "💬",
+     "Commente **PODCAST**"
+    ],
+    [
+     "🔖",
+     "Enregistre pour ce soir"
+    ]
+   ],
+   "vo": "Tu veux le prompt ? Commente PODCAST, et enregistre pour ce soir."
+  }
+ ]
+}

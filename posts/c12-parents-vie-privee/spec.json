@@ -1,0 +1,67 @@
+{
+ "id": "C12",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "L'IA et<br>**sa vie privée**",
+   "size": 100,
+   "sub": "5 réflexes simples à transmettre à votre enfant."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Réflexe 1",
+   "title": "Aucune info personnelle",
+   "body": "Nom complet, adresse, école, numéro de téléphone : **rien de tout ça** dans une conversation avec une IA.",
+   "foot": "Enregistrez pour plus tard"
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Réflexe 2",
+   "title": "Attention aux photos",
+   "body": "Photographier une page de cours, oui. **Un visage ou un document officiel, non.**",
+   "foot": "Enregistrez pour plus tard"
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Réflexe 3",
+   "title": "Regardez les paramètres",
+   "body": "Plusieurs IA permettent de **refuser que les conversations servent à entraîner** leurs modèles. Regardez les réglages ensemble.",
+   "foot": "Enregistrez pour plus tard"
+  },
+  {
+   "type": "item",
+   "num": 4,
+   "when": "Réflexe 4",
+   "title": "Vérifiez l'âge minimum",
+   "body": "Chaque service fixe **un âge minimum** dans ses conditions d'utilisation. Lisez-les avant de créer un compte.",
+   "foot": "Enregistrez pour plus tard"
+  },
+  {
+   "type": "item",
+   "num": 5,
+   "when": "Réflexe 5",
+   "title": "Pas un confident",
+   "body": "Pour un souci personnel, **une personne de confiance** vaut mieux qu'un chatbot.",
+   "foot": "Enregistrez pour plus tard"
+  },
+  {
+   "type": "cta",
+   "title": "Protégez-le<br>**sans interdire.**",
+   "size": 96,
+   "ctas": [
+    [
+     "🔖",
+     "Enregistrez ce post"
+    ],
+    [
+     "📤",
+     "Partagez-le à un autre parent"
+    ]
+   ],
+   "note": "Ces réflexes valent aussi pour les adultes."
+  }
+ ]
+}

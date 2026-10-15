@@ -19,6 +19,16 @@
 | 2026-10-15 19:15 | R09 | Reel | L'IA rend bête ? Ça dépend de comment tu l'utilises | — |
 | 2026-10-15 20:30 | C08 | Carrousel | Parents : a-t-il copié sur ChatGPT ? 4 réflexes | — |
 | 2026-10-15 21:45 | R10 | Reel | Ta semaine organisée en 1 prompt | PLANNING |
+| 2026-10-16 07:15 | R11 | Reel | Prédire les questions du prochain contrôle | CONTRÔLE |
+| 2026-10-16 08:30 | C09 | Carrousel | Parents : aider en maths sans tout réexpliquer | — |
+| 2026-10-16 10:30 | R12 | Reel | Mythe : relire son cours ne suffit pas (se tester) | — |
+| 2026-10-16 12:15 | R13 | Reel | Apprendre l'espagnol avec sa série | SÉRIE |
+| 2026-10-16 13:30 | C10 | Carrousel | La méthode Pomodoro avec l'IA | POMODORO |
+| 2026-10-16 16:45 | R14 | Reel | Oral d'anglais en mode vocal | ORAL |
+| 2026-10-16 18:00 | C11 | Carrousel | Lettre de motivation qui te ressemble | LETTRE |
+| 2026-10-16 19:15 | R15 | Reel | Parents : préparer la réunion parents-profs | RÉUNION |
+| 2026-10-16 20:30 | C12 | Carrousel | Parents : l'IA et la vie privée de votre enfant | — |
+| 2026-10-16 21:45 | R16 | Reel | Son cours en podcast | PODCAST |
 
 ## Idées déjà prévues (pas encore faites)
-cours en podcast ; erreurs de dissertation ; prédire les questions du contrôle ; schéma bilan ; maths sans tricher ; oral d'anglais en mode vocal ; espagnol avec sa série ; corriger son accent ; mail en anglais ; oral du bac de langue ; emploi du temps en 1 prompt ; Pomodoro IA ; devoirs 2x plus vite ; to-do automatique ; parents : aider en maths ; outils gratuits ; lettre de motivation qui ne sonne pas IA ; entretien d'école ; trouver une alternance ; 3 IA testées sur le même exercice de physique ; comparatif 1h de révision avec IA vs sans.
+erreurs de dissertation ; schéma bilan ; maths sans tricher ; corriger son accent ; mail en anglais ; oral du bac de langue ; emploi du temps en 1 prompt ; devoirs 2x plus vite ; to-do automatique ; outils gratuits ; entretien d'école ; trouver une alternance ; 3 IA testées sur le même exercice de physique ; comparatif 1h de révision avec IA vs sans.

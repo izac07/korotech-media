@@ -1,0 +1,50 @@
+{
+ "id": "R14",
+ "music_seed": 34,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "Ton oral",
+    "d'anglais",
+    "**à voix haute**"
+   ],
+   "vo": "Prépare ton oral d'anglais en parlant vraiment avec l'IA."
+  },
+  {
+   "type": "chat",
+   "label": "Le prompt",
+   "title": "Mode vocal, puis dis :",
+   "card_label": "MODE VOCAL",
+   "text": "Let's practice English. Ask me one question at a time about [ton sujet]. After each answer, correct my mistakes and suggest a better sentence.",
+   "dur": 9.0,
+   "vo": "Active le mode vocal de ton IA, et demande-lui de t'interroger en anglais, une question à la fois."
+  },
+  {
+   "type": "list",
+   "label": "Pourquoi",
+   "title": "Ce que tu gagnes",
+   "items": [
+    "Tu **parles** pour de vrai",
+    "Tes erreurs **corrigées**",
+    "Personne ne te juge"
+   ],
+   "vo": "Tu parles pour de vrai, tes erreurs sont corrigées, et personne ne te juge."
+  },
+  {
+   "type": "cta",
+   "title": "Tu veux<br>**le prompt ?**",
+   "ctas": [
+    [
+     "💬",
+     "Commente **ORAL**"
+    ],
+    [
+     "🔖",
+     "Enregistre pour ton prochain oral"
+    ]
+   ],
+   "vo": "Commente ORAL, et enregistre pour ton prochain oral."
+  }
+ ]
+}
