@@ -415,7 +415,137 @@ window.render=function(t){{
 }};render(0);
 </script></body></html>"""
 
-LAYOUTS = {"messages": messages_page, "terminal": terminal_page, "cheatsheet": cheatsheet_page}
+# ------------------------------------------------------------------ layout « iceberg » (lia.entrepreneur, style terminal brut)
+def iceberg_page(spec, theme, starts, durs, caps, total):
+    sc = spec["scenes"]; ev = []; G = "#39ff88"; RED = "#ff4d4d"; YEL = "#febc2e"
+    fonts = K._font_faces(["JetBrains Mono", "Archivo Black"])
+    S = [{"a": starts[k], "b": starts[k] + durs[k], "ty": s["type"]} for k, s in enumerate(sc)]
+    ov = []
+    for k, s in enumerate(sc):
+        a = starts[k]; ty = s["type"]
+        if ty == "hook":
+            ov.append(f"<div class='cmdl' id='hk'><span class='g'>$ </span><span id='hkt'></span><b class='cur'></b></div>")
+            ev += [{"k": "type", "at": a + 0.0, "end": a + 0.55, "text": "./reveler --iceberg"}, {"k": "impact", "at": a + 0.65}]
+        elif ty == "surface":
+            pos = [(70, 300), (560, 500), (70, 700)]
+            for j, (l, (x, y)) in enumerate(zip(s["labels"], pos)):
+                ov.append(f"<div class='lab' id='lb{j}' style='left:{x}px;top:{y}px'>&gt; {H.escape(l)}<span class='faux' id='fx{j}'>[FAUX]</span></div>")
+                ev += [{"k": "pop", "at": a + 0.6 + 0.9 * j}, {"k": "impact", "at": a + 1.15 + 0.9 * j}]
+        elif ty == "process":
+            for j in range(3):
+                ov.append(f"<div class='blk' id='bk{j}'>[ÉTAPE {j+1}]</div>")
+            ov.append("<div class='arr' id='ar0'>→</div><div class='arr' id='ar1'>→</div><div class='chaos' id='chaos'>C H A O S</div><div class='okp' id='okp'>✓ process clair</div>")
+            ev += [{"k": "pop", "at": a + 0.5 + 0.3 * j} for j in range(3)] + [{"k": "impact", "at": a + 2.2}, {"k": "click", "at": a + 5.4}]
+        elif ty == "logs":
+            L = [("ERREUR 401 · API modifiée", RED, 0.5), ("CHAMP VIDE · formulaire", RED, 1.6), ("[ALERTE] → notification envoyée ✓", G, 3.0),
+                 ("abonnements :", "#cfe", 4.4), ("  + outil 1", YEL, 4.9), ("  + outil 2", YEL, 5.4), ("  + outil 3…", YEL, 5.9)]
+            for j, (txt, col, at) in enumerate(L):
+                ov.append(f"<div class='log' id='lg{j}' data-at='{at}' style='top:{360 + 92 * j}px;color:{col}'>{'[x] ' if col == RED else ''}{H.escape(txt)}</div>")
+                ev.append({"k": "impact" if col == RED else "pop", "at": a + at})
+        elif ty == "cta":
+            ov.append("<div class='task' id='task'>[ 1 TÂCHE RÉPÉTITIVE ] <span class='g'>✓</span></div>")
+            ov.append(f"<div class='cmdl' id='fc' style='top:170px'><span class='g'>$ </span><span id='fct'></span><b class='cur'></b></div><div class='done' id='done'>[✓] enregistré</div>")
+            ev += [{"k": "pop", "at": a + 1.2}, {"k": "type", "at": a + 3.0, "end": a + 4.2, "text": "suivre @" + spec.get("handle", "")}, {"k": "click", "at": a + 4.6}]
+        ov.append(f"<div class='bt' id='bt{k}'>{s.get('text','')}</div>")
+    cap_html = "".join(
+        f"<span class='cap' data-a='{c[0][1]:.3f}' data-b='{c_next:.3f}'>" + " ".join(f"<span data-w='{t:.3f}'>{H.escape(w)}</span>" for w, t in c) + "</span>"
+        for c, c_next in caps)
+    berg = ("M540 560 L470 640 L430 760 L390 900 L250 1150 L160 1500 L200 1900 L330 2300 L540 2600 L760 2350 L880 1950 L920 1500 L840 1150 L700 900 L660 780 L610 650 Z")
+    crack = "M540 560 L520 760 L560 900 M430 760 L520 760 M390 900 L470 1250 L380 1700 M700 900 L640 1300 L760 1750 M470 1250 L640 1300 M380 1700 L540 2100 L760 1750 M540 2100 L540 2600"
+    css = f"""{fonts}
+*{{margin:0;padding:0;box-sizing:border-box}}
+body{{width:1080px;height:1920px;overflow:hidden;background:#050806;color:#eafff2;font-family:'JetBrains Mono',monospace;position:relative}}
+.g{{color:{G}}}
+#world{{position:absolute;left:0;top:0;width:1080px;height:3000px;transform-origin:0 0}}
+.water{{position:absolute;left:0;right:0;top:900px;border-top:4px dashed {G}}}
+.wl{{position:absolute;right:30px;top:850px;font:700 26px 'JetBrains Mono';color:{G}}}
+.sea{{position:absolute;left:0;right:0;top:904px;height:2100px;background:repeating-linear-gradient(0deg,rgba(57,255,136,.035) 0 2px,transparent 2px 46px)}}
+.wlab{{position:absolute;left:0;right:0;text-align:center;font:700 52px 'JetBrains Mono';letter-spacing:2px}}
+svg#bg{{position:absolute;left:0;top:0;width:1080px;height:3000px}}
+.gauge{{position:absolute;left:24px;top:300px;height:940px;width:90px;border-left:3px solid rgba(57,255,136,.6)}}
+.gauge i{{position:absolute;left:0;width:22px;border-top:3px solid rgba(57,255,136,.6)}}
+.dep{{position:absolute;left:34px;top:1260px;font:700 34px 'JetBrains Mono';color:{G}}}
+.scan{{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.25) 0 2px,transparent 2px 5px);pointer-events:none}}
+.cmdl{{position:absolute;left:70px;right:70px;top:150px;font:700 50px 'JetBrains Mono';opacity:0}}
+.cur{{display:inline-block;width:26px;height:54px;background:{G};vertical-align:-10px;margin-left:6px}}
+.lab{{position:absolute;max-width:470px;padding:18px 24px;border:3px solid {G};background:#050806;font:700 38px/1.3 'JetBrains Mono';opacity:0}}
+.faux{{display:inline-block;margin-left:14px;color:{RED};border:3px solid {RED};padding:2px 10px;transform:rotate(-8deg);opacity:0}}
+.blk{{position:absolute;top:640px;width:270px;padding:28px 0;text-align:center;border:3px solid {G};background:#050806;font:700 40px 'JetBrains Mono';opacity:0}}
+.arr{{position:absolute;top:660px;font:700 60px 'JetBrains Mono';color:{G};opacity:0}}
+.chaos{{position:absolute;left:0;right:0;top:880px;text-align:center;font:400 120px 'Archivo Black';color:{RED};opacity:0}}
+.okp{{position:absolute;left:0;right:0;top:900px;text-align:center;font:700 52px 'JetBrains Mono';color:{G};opacity:0}}
+.log{{position:absolute;left:120px;font:700 44px 'JetBrains Mono';white-space:pre;opacity:0;background:#050806;padding:6px 14px}}
+.task{{position:absolute;left:0;right:0;top:700px;margin:auto;width:820px;text-align:center;padding:30px;border:4px solid {G};background:#050806;font:700 50px 'JetBrains Mono';opacity:0}}
+.done{{position:absolute;left:70px;top:240px;font:700 44px 'JetBrains Mono';color:{G};opacity:0}}
+.bt{{position:absolute;left:40px;right:40px;top:1335px;text-align:center;font:700 54px/1.25 'JetBrains Mono';text-transform:uppercase;opacity:0}}
+.capw{{position:absolute;left:0;right:0;top:1505px;text-align:center}}
+.cap{{display:none;background:#050806;border:3px solid {G};padding:12px 28px;font:700 46px 'JetBrains Mono'}}
+.cap .on{{color:{G}}}
+.bar{{position:absolute;left:0;top:0;height:10px;background:{G}}}
+.flash{{position:absolute;inset:0;background:{G};opacity:0;mix-blend-mode:screen}}
+"""
+    ticks = "".join(f"<i style='top:{y}px'></i>" for y in range(0, 941, 94))
+    page = f"""<!doctype html><html><head><meta charset='utf-8'><style>{css}</style></head><body>
+<div id='world'>
+ <div class='sea'></div>
+ <svg id='bg' viewBox='0 0 1080 3000'><path id='berg' d='{berg}' fill='rgba(57,255,136,.05)' stroke='{G}' stroke-width='5' stroke-linejoin='round'/>
+ <path id='crk' d='{crack}' fill='none' stroke='rgba(57,255,136,.45)' stroke-width='3'/></svg>
+ <div class='water'></div><div class='wl'>~ ~ NIVEAU DE LA MER ~ ~</div>
+ <div class='wlab' id='wl1' style='top:420px'>CE QU'ON TE MONTRE</div>
+ <div class='wlab' id='wl2' style='top:1180px;color:{G}'>CE QU'ON TE CACHE ▼</div>
+</div>
+<div class='gauge'>{ticks}</div><div class='dep' id='dep'>0 m</div>
+{''.join(ov)}
+<div class='scan' id='scan'></div><div class='flash' id='fl'></div>
+<div class='capw'>{cap_html}</div><div class='bar' id='bar'></div>
+<script>
+const EV={json.dumps(ev, ensure_ascii=False)}; const D={total}; const SC={json.dumps(S)};
+const c=x=>Math.max(0,Math.min(1,x)), eo=x=>1-Math.pow(1-c(x),4), back=x=>{{x=c(x);const s=1.7;return 1+(s+1)*Math.pow(x-1,3)+s*Math.pow(x-1,2);}};
+const $=id=>document.getElementById(id);
+const CAM={{hook:[780,1],surface:[700,1.55],process:[1450,1],logs:[2150,1],cta:[1580,.42]}};
+function show(el,on,t0,t){{if(!el)return;el.style.opacity=on&&t>=t0?1:0;}}
+function popx(el,t0,u){{const k=back((u-t0)/.3);el.style.opacity=u>=t0?1:0;el.style.transform=`scale(${{.6+.4*k}})`;}}
+window.render=function(t){{
+ $('bar').style.width=(c(t/D)*1080)+'px';
+ let k=0;for(let i=0;i<SC.length;i++)if(t>=SC[i].a)k=i;const s=SC[k],u=t-s.a;
+ const prev=SC[Math.max(0,k-1)];const [cy0,s0]=CAM[prev.ty],[cy1,s1]=CAM[s.ty];const m=k==0?1:eo(u/.45);
+ const cy=cy0+(cy1-cy0)*m, sc=s0+(s1-s0)*m;
+ $('world').style.transform=`translate(${{540-540*sc}}px,${{780-cy*sc}}px) scale(${{sc}})`;
+ const DP={{hook:0,surface:0,process:10,logs:50,cta:0}};const depth=DP[prev.ty]+(DP[s.ty]-DP[prev.ty])*m;$('dep').textContent=(depth<0.5?'0':'-'+Math.round(depth))+' m';
+ $('scan').style.backgroundPosition=`0 ${{(t*40)%5}}px`;
+ // hook
+ const hk=$('hk');hk.style.opacity=k==0&&u<1.0?1:0;$('hkt').textContent='./reveler --iceberg'.slice(0,Math.floor(c(u/.4)*19));
+ const bp=$('berg');bp.style.strokeDasharray='none';
+ $('crk').style.opacity=k==0?c((u-.45)/.3):1;
+ $('fl').style.opacity=(k==0&&u>=.42&&u<.62)?.35*(1-(u-.42)/.2):0;
+ $('wl1').style.opacity=k==0?1:0;$('wl2').style.opacity=k==0?(u<1.3||Math.floor(u*2.5)%2?1:.25):0;
+ // surface
+ for(let j=0;j<3;j++){{const l=$('lb'+j);if(!l)continue;if(SC[k].ty!=='surface'){{l.style.opacity=0;continue;}}popx(l,.6+.9*j,u);
+   const f=$('fx'+j);const kf=back((u-1.15-.9*j)/.3);f.style.opacity=u>=1.15+.9*j?1:0;f.style.transform=`rotate(-8deg) scale(${{2-kf}})`;}}
+ // process
+ const pr=s.ty==='process';
+ for(let j=0;j<3;j++){{const b=$('bk'+j);if(!b)continue;if(!pr){{b.style.opacity=0;continue;}}
+   const x0=50+j*360;const jam=u>2.2&&u<5.4;const r=(n)=>Math.sin(n*91.7+j*13.1);
+   b.style.left=(x0+(jam?r(1)*90:0))+'px';b.style.top=(640+(jam?r(2)*160:0))+'px';b.style.transform=`rotate(${{jam?r(3)*24:0}}deg)`;b.style.opacity=u>=.5+.3*j?1:0;
+   b.style.borderColor=jam?'{RED}':'{G}';}}
+ for(let j=0;j<2;j++){{const a=$('ar'+j);if(!a)continue;a.style.left=(330+j*360)+'px';a.style.opacity=pr&&u>1.3&&!(u>2.2&&u<5.4)?1:0;}}
+ const ch=$('chaos');if(ch){{ch.style.opacity=pr&&u>2.2&&u<5.4?(Math.floor(u*8)%3?1:.4):0;ch.style.transform=`translateX(${{pr?Math.sin(u*70)*8:0}}px)`;}}
+ const ok=$('okp');if(ok)ok.style.opacity=pr&&u>=5.4?1:0;
+ // logs
+ for(const el of document.querySelectorAll('.log'))el.style.opacity=s.ty==='logs'&&u>=+el.dataset.at?1:0;
+ // cta
+ const ta=$('task');if(ta){{if(s.ty==='cta')popx(ta,1.2,u);else ta.style.opacity=0;}}
+ const fc=$('fc');if(fc){{fc.style.opacity=s.ty==='cta'&&u>=3.0?1:0;$('fct').textContent=('suivre @{spec.get("handle","")}').slice(0,Math.floor(c((u-3.0)/1.2)*30));}}
+ const dn=$('done');if(dn)dn.style.opacity=s.ty==='cta'&&u>=4.6?1:0;
+ // texte bas
+ SC.forEach((x,i)=>{{const b=$('bt'+i);if(!b)return;const on=i==k;const t0=x.ty==='cta'?.6:.4;b.style.opacity=on&&u>=t0?1:0;}});
+ for(const cp of document.querySelectorAll('.cap')){{const a=+cp.dataset.a,b=+cp.dataset.b;cp.style.display=(t>=a&&t<b)?'inline-block':'none';
+   for(const w of cp.querySelectorAll('[data-w]'))w.className=(t>=+w.dataset.w)?'on':'';}}
+}};render(0);
+</script></body></html>"""
+    return page
+
+LAYOUTS = {"messages": messages_page, "terminal": terminal_page, "cheatsheet": cheatsheet_page, "iceberg": iceberg_page}
 
 # ------------------------------------------------------------------ rendu
 def sfx_track(path, total, events, starts):
