@@ -19,5 +19,6 @@
  "pill_bg": "#7a1f35",
  "pill_fg": "#ffffff",
  "mark_font": "Playfair Display",
- "extra_css": ".grad{font-style:italic;font-weight:700}"
+ "extra_css": ".grad{font-style:italic;font-weight:700}",
+ "layout": "messages"
 }

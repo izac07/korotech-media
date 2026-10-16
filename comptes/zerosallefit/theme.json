@@ -17,5 +17,6 @@
  "uppercase": true,
  "pill_bg": "#ff2d36",
  "pill_fg": "#ffffff",
- "extra_css": ""
+ "extra_css": "",
+ "layout": "sport"
 }

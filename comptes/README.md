@@ -1,7 +1,7 @@
 # Comptes Instagram (multi-comptes)
 
 Chaque dossier `comptes/<slug>/` = un compte : `theme.json` (couleurs, polices, pseudo, ID Instagram), `README.md` (ligne éditoriale), `journal.md`, `posts/<dossier>/spec.json` + médias.
-Le moteur est le même que Korotech : `python3 tools/korotech.py carrousel comptes/<slug>/posts/<dossier>/spec.json comptes/<slug>/posts/<dossier>` (le thème est détecté tout seul) et `... reel ... reel.mp4` (voix `vo_<k>.mp3` dans le même dossier).
+Chaque compte a sa propre mise en page (champ `layout` du theme.json, défini dans `tools/layouts.py` : terminal, sport, messages, manifeste, fiche) pour les carrousels ET les reels — ne pas réutiliser le layout d'un compte pour un autre. Le moteur est le même que Korotech : `python3 tools/korotech.py carrousel comptes/<slug>/posts/<dossier>/spec.json comptes/<slug>/posts/<dossier>` (le thème est détecté tout seul) et `... reel ... reel.mp4` (voix `vo_<k>.mp3` dans le même dossier).
 URL publique : `https://izac07.github.io/korotech-media/comptes/<slug>/posts/<dossier>/<fichier>`.
 
 ## Règles communes

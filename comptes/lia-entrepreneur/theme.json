@@ -19,5 +19,6 @@
  "body_font": "Space Grotesk",
  "pill_bg": "#39ff88",
  "pill_fg": "#04140a",
- "extra_css": "body{background-image:linear-gradient(rgba(57,255,136,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(57,255,136,.06) 1px,transparent 1px);background-size:54px 54px}.grad{text-shadow:none}"
+ "extra_css": "body{background-image:linear-gradient(rgba(57,255,136,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(57,255,136,.06) 1px,transparent 1px);background-size:54px 54px}.grad{text-shadow:none}",
+ "layout": "terminal"
 }

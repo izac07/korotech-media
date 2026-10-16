@@ -18,5 +18,6 @@
  "pill_bg": "#e9c46a",
  "pill_fg": "#123d2e",
  "mark_font": "DM Serif Display",
- "extra_css": ".grad{font-style:italic}"
+ "extra_css": ".grad{font-style:italic}",
+ "layout": "fiche"
 }

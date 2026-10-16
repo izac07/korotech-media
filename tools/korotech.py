@@ -33,6 +33,9 @@ FONT_FILES = {  # nom CSS -> [(fichier, weight, style)]
     "Archivo Black": [("archivo-black-latin-400-normal.woff2", 400, "normal")],
     "Space Grotesk": [("space-grotesk-latin-500-normal.woff2", 500, "normal"), ("space-grotesk-latin-700-normal.woff2", 700, "normal")],
     "Playfair Display": [("playfair-display-latin-700-normal.woff2", 700, "normal"), ("playfair-display-latin-800-normal.woff2", 800, "normal"), ("playfair-display-latin-700-italic.woff2", 700, "italic")],
+    "JetBrains Mono": [("jetbrains-mono-latin-400-normal.woff2", 400, "normal"), ("jetbrains-mono-latin-700-normal.woff2", 700, "normal")],
+    "Anton": [("anton-latin-400-normal.woff2", 400, "normal")],
+    "Caveat": [("caveat-latin-500-normal.woff2", 500, "normal"), ("caveat-latin-700-normal.woff2", 700, "normal")],
     "DM Serif Display": [("dm-serif-display-latin-400-normal.woff2", 400, "normal"), ("dm-serif-display-latin-400-italic.woff2", 400, "italic")],
 }
 
@@ -84,7 +87,7 @@ def load_theme(spec_path, spec):
         cand.append(os.path.join(d, "theme.json")); d = os.path.dirname(d)
     for c in cand:
         if os.path.exists(c):
-            t = json.load(open(c)); THEME = {"handle": t["handle"], "mark": t.get("mark", "∞"), "css": theme_css(t)}
+            t = json.load(open(c)); THEME = {"handle": t["handle"], "mark": t.get("mark", "∞"), "css": theme_css(t), "raw": t}
             return c
     return None
 
@@ -167,7 +170,14 @@ def build_carrousel(spec, out_dir):
     from PIL import Image
     os.makedirs(out_dir, exist_ok=True)
     slides = spec["slides"]
-    pages = [car_page(i, len(slides), car_slide(s)) for i, s in enumerate(slides, 1)]
+    lay = THEME.get("raw", {}).get("layout")
+    if lay:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import layouts
+        fonts = _font_faces(layouts.LAYOUT_FONTS.get(lay, []))
+        pages = [layouts.LAYOUTS[lay](i, len(slides), s, THEME["raw"], esc, rich, fonts) for i, s in enumerate(slides, 1)]
+    else:
+        pages = [car_page(i, len(slides), car_slide(s)) for i, s in enumerate(slides, 1)]
     asyncio.run(_shots(pages, out_dir, 1080, 1350))
     for n in range(1, len(slides) + 1):
         png = os.path.join(out_dir, f"slide_{n:02d}.png")
@@ -240,8 +250,14 @@ window.render=function(t){
  document.getElementById('g1').style.transform=`translate(${Math.sin(t/3)*60}px,${Math.cos(t/4)*40}px)`;
  document.getElementById('g2').style.transform=`translate(${Math.cos(t/3)*60}px,${Math.sin(t/5)*40}px)`;
 };render(0);""" % total
-    page = f"""<!doctype html><html><head><meta charset='utf-8'><style>{BRAND_CSS}{REEL_CSS}{THEME['css']}</style></head><body>
-<div class='glow1' id='g1'></div><div class='glow2' id='g2'></div><div class='bar' id='bar'></div>
+    lay = THEME.get("raw", {}).get("layout"); lcss = ldeco = ""
+    if lay:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import layouts
+        lcss = _font_faces(layouts.LAYOUT_FONTS.get(lay, [])) + layouts.REEL_CSS.get(lay, "")
+        ldeco = layouts.reel_decor(lay, THEME["raw"])
+    page = f"""<!doctype html><html><head><meta charset='utf-8'><style>{BRAND_CSS}{REEL_CSS}{THEME['css']}{lcss}</style></head><body>
+<div class='glow1' id='g1'></div><div class='glow2' id='g2'></div>{ldeco}<div class='bar' id='bar'></div>
 <div class='top'><div class='brand'><span class='inf'>{THEME['mark']}</span>{THEME['handle']}</div></div>
 {''.join(parts)}<script>{js}</script></body></html>"""
     return page, total

@@ -17,5 +17,6 @@
  "uppercase": true,
  "pill_bg": "#ffffff",
  "pill_fg": "#0a0a0a",
- "extra_css": ".grad{background:#fff;color:#0a0a0a;-webkit-background-clip:border-box;padding:0 12px;-webkit-box-decoration-break:clone;box-decoration-break:clone}.hl{color:#fff;text-decoration:underline}.num.grad{background:none;color:#fff;padding:0}.body .grad,.sub .grad,.li .grad,.cta .grad{background:none;color:#fff;padding:0;text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:6px}"
+ "extra_css": ".grad{background:#fff;color:#0a0a0a;-webkit-background-clip:border-box;padding:0 12px;-webkit-box-decoration-break:clone;box-decoration-break:clone}.hl{color:#fff;text-decoration:underline}.num.grad{background:none;color:#fff;padding:0}.body .grad,.sub .grad,.li .grad,.cta .grad{background:none;color:#fff;padding:0;text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:6px}",
+ "layout": "manifeste"
 }
