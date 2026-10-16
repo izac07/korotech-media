@@ -1,0 +1,50 @@
+{
+ "id": "CL-R02",
+ "layout": "nightchat",
+ "music_seed": 52,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Ouvre-le si tu doutes de toi aujourd'hui 🤍",
+   "vo": "Si tu doutes de ta valeur aujourd'hui, ce message est pour toi. Reste jusqu'au bout."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Ta valeur ne dépend pas d'un « vu ».",
+    "Ni de l'avis de quelqu'un qui ne te connaît qu'à moitié."
+   ],
+   "ghost": "Vu 22:14",
+   "vo": "Ta valeur ne dépend pas d'un message sans réponse, d'un vu, ou de l'avis de quelqu'un qui ne te connaît qu'à moitié."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Tu as déjà traversé des journées que tu croyais impossibles.",
+    "Tu es encore là. Ça compte. 🤍",
+    "Les personnes qui t'aiment vraiment ne te demandent pas de mériter leur amour."
+   ],
+   "vo": "Tu as déjà traversé des journées que tu croyais impossibles. Tu es encore là. Ça compte. Et ceux qui t'aiment vraiment ne te demandent pas de mériter leur amour."
+  },
+  {
+   "type": "check",
+   "title": "Pas besoin d'être parfait·e aujourd'hui.",
+   "items": [
+    "Un verre d'eau",
+    "3 grandes respirations",
+    "1 petite chose pour toi"
+   ],
+   "vo": "Aujourd'hui, pas besoin d'être parfait. Bois un verre d'eau, respire, et fais une seule petite chose pour toi."
+  },
+  {
+   "type": "cta",
+   "last": "Tu comptes. 🤍",
+   "ctas": [
+    "🔖 Garde-le pour les jours difficiles",
+    "↗️ Envoie-le à quelqu'un qui en a besoin"
+   ],
+   "vo": "Enregistre ce message pour les jours difficiles, et envoie-le à quelqu'un qui en a besoin. Tu comptes."
+  }
+ ]
+}
