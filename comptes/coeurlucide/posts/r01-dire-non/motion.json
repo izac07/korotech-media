@@ -1,0 +1,154 @@
+{
+ "id": "CL-R01",
+ "layout": "messages",
+ "music_seed": 52,
+ "contact": "Léa",
+ "scenes": [
+  {
+   "vo": "Tu dis oui alors que tu penses non ? Tu n'es pas la seule personne dans ce cas.",
+   "title": [
+    {
+     "at": 0,
+     "text": "Tu dis oui"
+    },
+    {
+     "at": 0.3,
+     "text": "alors que tu"
+    },
+    {
+     "at": 0.45,
+     "text": "**penses non ?**"
+    }
+   ],
+   "events": [
+    {
+     "kind": "them",
+     "at": 0,
+     "text": "Tu peux me remplacer samedi ? 🙏"
+    },
+    {
+     "kind": "typing_me",
+     "at": 0.1,
+     "until": 0.28
+    },
+    {
+     "kind": "me",
+     "at": 0.28,
+     "text": "Oui pas de souci 🙂"
+    },
+    {
+     "kind": "strike",
+     "at": 0.62,
+     "target": 2
+    }
+   ]
+  },
+  {
+   "vo": "Un non n'a pas besoin d'une longue explication. Plus tu te justifies, plus on négocie.",
+   "title": [
+    {
+     "at": 0.03,
+     "text": "Un non n'a pas besoin"
+    },
+    {
+     "at": 0.2,
+     "text": "d'une **longue explication**"
+    }
+   ],
+   "events": [
+    {
+     "kind": "them",
+     "at": 0,
+     "text": "Tu peux me remplacer samedi ? 🙏"
+    },
+    {
+     "kind": "type_erase",
+     "at": 0.06,
+     "full": 0.45,
+     "erase": 0.55,
+     "gone": 0.7,
+     "text": "Euh en fait je sais pas trop, parce que samedi j'avais un peu prévu de…"
+    },
+    {
+     "kind": "typing_them",
+     "at": 0.7,
+     "until": 0.8
+    },
+    {
+     "kind": "them",
+     "at": 0.8,
+     "text": "Allez stp, juste 2 h ? 😅"
+    }
+   ]
+  },
+  {
+   "vo": "Essaie simplement : merci d'avoir pensé à moi, mais cette fois je ne vais pas pouvoir.",
+   "title": [
+    {
+     "at": 0.02,
+     "text": "Essaie **celle-ci** 👆"
+    }
+   ],
+   "events": [
+    {
+     "kind": "input",
+     "at": 0.12,
+     "end": 0.62,
+     "send": 0.66,
+     "text": "Merci d'avoir pensé à moi, mais cette fois je ne vais pas pouvoir.",
+     "bubble": 1
+    },
+    {
+     "kind": "me",
+     "at": 0.66,
+     "text": "Merci d'avoir pensé à moi, mais cette fois je ne vais pas pouvoir."
+    },
+    {
+     "kind": "seen",
+     "at": 0.72
+    },
+    {
+     "kind": "typing_them",
+     "at": 0.74,
+     "until": 0.84
+    },
+    {
+     "kind": "them",
+     "at": 0.84,
+     "text": "Ok, pas de souci. Merci de me le dire 🤍"
+    }
+   ]
+  },
+  {
+   "vo": "Enregistre cette vidéo, et entraîne-toi à la dire. Ton non compte aussi.",
+   "title": [
+    {
+     "at": 0.12,
+     "text": "Ton non"
+    },
+    {
+     "at": 0.26,
+     "text": "**compte aussi**"
+    }
+   ],
+   "events": [
+    {
+     "kind": "heart",
+     "at": 0.0
+    },
+    {
+     "kind": "pill",
+     "at": 0.45,
+     "row": 0,
+     "text": "🔖 Enregistre"
+    },
+    {
+     "kind": "pill",
+     "at": 0.58,
+     "row": 1,
+     "text": "➕ Suis **@coeurlucide__**"
+    }
+   ]
+  }
+ ]
+}
