@@ -231,15 +231,16 @@ def build_reel(spec, out, vo_dir=None):
     wav = os.path.join(tmp, "music.wav")
     make_music(wav, dur + 1, int(spec.get("music_seed", sum(map(ord, spec.get("id", "x"))))))
     if not voice:
-        fc = f"[1]atrim=0:{dur},afade=t=out:st={dur-1.5}:d=1.5,loudnorm=I=-15:TP=-1.5[a]"
+        fc = f"[1]apad=whole_dur={dur+4},afade=t=out:st={dur-1.5}:d=1.5,loudnorm=I=-15:TP=-1.5,atrim=0:{dur}[a]"
         inputs = ["-i", silent, "-i", wav]
     else:
         inputs = ["-i", silent, "-i", wav] + sum((["-i", w] for _, w in voice), [])
         dl = "".join(f"[{i+2}]adelay={int(t*1000)}|{int(t*1000)}[v{i}];" for i, (t, _) in enumerate(voice))
         vs = "".join(f"[v{i}]" for i in range(len(voice)))
-        fc = (dl + f"{vs}amix=inputs={len(voice)}:normalize=0,apad=whole_dur={dur},loudnorm=I=-15:TP=-1.5[vo];"
-              f"[vo]asplit=2[voa][sc];[1]atrim=0:{dur},afade=t=out:st={dur-1.5}:d=1.5,volume=0.30[m];"
-              f"[m][sc]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[md];[voa][md]amix=inputs=2:normalize=0,alimiter=limit=0.95[a]")
+        # NB: loudnorm (dynamic mode) drops its ~3 s lookahead at end of stream -> pad generously, then cut to dur.
+        fc = (dl + f"{vs}amix=inputs={len(voice)}:normalize=0:duration=longest,apad=whole_dur={dur+4},loudnorm=I=-15:TP=-1.5,atrim=0:{dur}[vo];"
+              f"[vo]asplit=2[voa][sc];[1]apad=whole_dur={dur+1},atrim=0:{dur},afade=t=out:st={dur-1.5}:d=1.5,volume=0.30[m];"
+              f"[m][sc]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[md];[voa][md]amix=inputs=2:normalize=0:duration=longest,alimiter=limit=0.95,apad=whole_dur={dur},atrim=0:{dur}[a]")
     subprocess.run(["ffmpeg", "-v", "error", "-y"] + inputs + ["-filter_complex", fc, "-map", "0:v", "-map", "[a]",
                     "-c:v", "copy", "-c:a", "aac", "-b:a", "128k", "-ar", "48000", "-movflags", "+faststart", out], check=True)
     shutil.rmtree(tmp)
