@@ -263,7 +263,159 @@ window.render=function(t){{
 </script></body></html>"""
     return page
 
-LAYOUTS = {"messages": messages_page, "terminal": terminal_page}
+# ------------------------------------------------------------------ layout « cheatsheet » (korotech_fr)
+def cheatsheet_page(spec, theme, starts, durs, caps, total):
+    sc = spec["scenes"]; ev = []
+    def R(s): return rich(s).replace("<em>", "<span class='gr'>").replace("</em>", "</span>")
+    html_sc = []
+    for k, s in enumerate(sc):
+        a, d = starts[k], durs[k]; ty = s["type"]
+        if ty == "hook":
+            pages = "".join(f"<div class='page' id='pg{i}'><i style='width:80%'></i><i class='hlb' style='width:65%'></i><i style='width:90%'></i><i style='width:55%'></i><i class='hlb' style='width:75%'></i><i style='width:85%'></i></div>" for i in range(3))
+            parts = "".join(f"<b class='pt' id='pt{i}'></b>" for i in range(46))
+            inner = (f"{pages}{parts}<div class='three' id='three'>3</div><div class='h1' id='h1'>IA <span class='gr'>GRATUITES</span></div>"
+                     f"<div class='h2' id='h2'>que presque personne n'utilise 👀</div>")
+            ev += [{"k": "whoosh", "at": a + 0.22}, {"k": "impact", "at": a + 0.5}, {"k": "sparkle", "at": a + 0.85}]
+        elif ty == "pills":
+            pills = "".join(f"<div class='pill' id='pl{k}_{j}'>{H.escape(p)}</div>" for j, p in enumerate(s["pills"]))
+            wave = "".join(f"<i id='wv{j}'></i>" for j in range(14))
+            inner = (f"<div class='card' id='cd{k}'><div class='hd'><span class='gr num'>{s['num']}</span> · {H.escape(s['name'])}</div>"
+                     f"<div class='drop'><div class='pdf' id='pdf{k}'><span>PDF</span>{H.escape(s['file'])}</div></div></div>"
+                     f"<div class='pills'>{pills}<div class='wave' id='wave{k}'>{wave}</div></div><div class='bt' id='bt{k}'>{R(s['text'])}</div>")
+            ev += [{"k": "pop", "at": a + 0.9}] + [{"k": "pop", "at": a + 1.7 + 0.8 * j} for j in range(len(s["pills"]))]
+        elif ty == "diagram":
+            lines = "".join(f"<i class='tl' id='tl{k}_{j}' style='width:{w}%'></i>" for j, w in enumerate([92, 85, 96, 70, 88, 94, 60]))
+            n = s["nodes"]
+            inner = (f"<div class='card tall' id='cd{k}'><div class='hd'><span class='gr num'>{s['num']}</span> · {H.escape(s['name'])}</div>"
+                     f"<div class='tblock'>{lines}</div>"
+                     f"<svg class='dg' viewBox='0 0 880 520'><defs><linearGradient id='lg' x1='0' x2='1'><stop offset='0' stop-color='#7b5cff'/><stop offset='1' stop-color='#ff4fd8'/></linearGradient></defs>"
+                     f"<path id='ln{k}_0' d='M190 130 L440 300' stroke='url(#lg)' stroke-width='8' fill='none' stroke-linecap='round'/>"
+                     f"<path id='ln{k}_1' d='M440 300 L690 410' stroke='url(#lg)' stroke-width='8' fill='none' stroke-linecap='round'/></svg>"
+                     f"<div class='node' id='nd{k}_0' style='left:60px;top:250px'>{H.escape(n[0])}</div><div class='node' id='nd{k}_1' style='left:310px;top:420px'>{H.escape(n[1])}</div>"
+                     f"<div class='node' id='nd{k}_2' style='left:520px;top:530px'>{H.escape(n[2])}</div></div><div class='bt' id='bt{k}'>{R(s['text'])}</div>")
+            ev += [{"k": "pop", "at": a + 2.6 + 0.4 * j} for j in range(3)] + [{"k": "whoosh", "at": a + 2.2}]
+        elif ty == "search":
+            ans = "".join(f"<div class='ans' id='an{k}_{j}'>• {H.escape(x)} <span class='src'>[{j+1}]</span></div>" for j, x in enumerate(s["answers"]))
+            inner = (f"<div class='card tall' id='cd{k}'><div class='hd'><span class='gr num'>{s['num']}</span> · {H.escape(s['name'])}</div>"
+                     f"<div class='sbar'><span>🔍</span><span id='q{k}'></span><b class='cur' id='cu{k}'></b></div>{ans}"
+                     f"<div class='badge' id='bg{k}'>⚠ Vérifie toujours</div></div><div class='bt' id='bt{k}'>{R(s['text'])}</div>")
+            ev += [{"k": "type", "at": a + 0.6, "end": a + 2.2, "text": s["q"]}] + [{"k": "pop", "at": a + 2.6 + 0.5 * j} for j in range(3)] + [{"k": "pop", "at": a + 4.9}]
+        elif ty == "cta":
+            names = [x["name"] for x in sc if x.get("name")]
+            minis = "".join(f"<div class='mini' id='mi{j}'><span class='gr'>0{j+1}</span><br>{H.escape(nm)}</div>" for j, nm in enumerate(names))
+            ctas = "".join(f"<div class='ctl' id='ct{j}'>{H.escape(x)}</div>" for j, x in enumerate(s["ctas"]))
+            inner = (f"{minis}<div class='bm' id='bm'>🔖</div><div class='logo' id='logo'><span class='gr'>∞</span> {H.escape(spec.get('handle','korotech_fr'))}"
+                     f"<span class='fol' id='fol'>Suivre</span></div><div class='ctas'>{ctas}</div>")
+            ev += [{"k": "whoosh", "at": a + 0.2}, {"k": "click", "at": a + 2.0}, {"k": "pop", "at": a + 2.9}, {"k": "pop", "at": a + 3.2}, {"k": "pop", "at": a + 3.6}]
+        html_sc.append(f"<div class='scn' id='s{k}' data-a='{a:.3f}' data-b='{a+d:.3f}' data-ty='{ty}'>{inner}</div>")
+    cap_html = "".join(
+        f"<span class='cap' data-a='{c[0][1]:.3f}' data-b='{c_next:.3f}'>" + " ".join(f"<span data-w='{t:.3f}'>{H.escape(w)}</span>" for w, t in c) + "</span>"
+        for c, c_next in caps)
+    S = json.dumps([{"a": starts[k], "b": starts[k] + durs[k], "ty": s["type"], "q": s.get("q", "")} for k, s in enumerate(sc)], ensure_ascii=False)
+    css = """
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;overflow:hidden;background:#0d0a1c;color:#fff;font-family:Inter,sans-serif;position:relative}
+.glow{position:absolute;border-radius:50%;filter:blur(30px)}
+.gr{background:linear-gradient(90deg,#7b5cff,#ff4fd8);-webkit-background-clip:text;color:transparent}
+.scn{position:absolute;inset:0;opacity:0}
+.page{position:absolute;width:420px;height:540px;background:#f3f0ff;border-radius:18px;padding:50px 40px;display:flex;flex-direction:column;gap:30px;box-shadow:0 30px 60px rgba(0,0,0,.5)}
+.page i{display:block;height:20px;border-radius:10px;background:#c9c3e6}.page i.hlb{background:#ffe86a}
+.pt{position:absolute;width:16px;height:16px;border-radius:50%;background:linear-gradient(90deg,#7b5cff,#ff4fd8);opacity:0}
+.three{position:absolute;left:0;right:0;top:330px;text-align:center;font:700 560px/1 Poppins;background:linear-gradient(160deg,#7b5cff,#ff4fd8);-webkit-background-clip:text;color:transparent;opacity:0}
+.h1{position:absolute;left:0;right:0;top:960px;text-align:center;font:700 120px/1 Poppins;opacity:0}
+.h2{position:absolute;left:0;right:0;top:1110px;text-align:center;font:600 54px Inter;color:#d9d3f5;opacity:0}
+.card{position:absolute;left:70px;right:70px;top:300px;height:560px;border-radius:44px;background:rgba(255,255,255,.07);border:2px solid rgba(160,130,255,.45);box-shadow:0 30px 90px rgba(91,46,255,.25)}
+.card.tall{height:800px}
+.hd{padding:44px 54px 0;font:700 64px Poppins}
+.num{font-size:76px}
+.drop{position:absolute;left:0;right:0;top:170px;bottom:0;display:flex;justify-content:center}
+.pdf{position:absolute;top:60px;width:300px;height:300px;border-radius:28px;background:#fff;color:#2a2440;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;font:600 28px Inter;box-shadow:0 20px 40px rgba(0,0,0,.4)}
+.pdf span{background:#e5484d;color:#fff;font:800 56px Inter;padding:10px 30px;border-radius:16px}
+.pills{position:absolute;left:70px;right:70px;top:920px;display:flex;flex-direction:column;gap:26px;align-items:flex-start}
+.pill{padding:26px 44px;border-radius:999px;background:linear-gradient(90deg,#5b2eff,#e23cc8);font:700 54px Inter;opacity:0}
+.wave{position:absolute;left:600px;top:272px;display:flex;gap:10px;align-items:center;height:110px;opacity:0}.wave i{display:block;width:14px;border-radius:7px;background:#ff9ae9}
+.bt{position:absolute;left:50px;right:50px;top:1340px;text-align:center;font:700 54px/1.2 Poppins;opacity:0}
+.tblock{position:absolute;left:54px;right:54px;top:200px;display:flex;flex-direction:column;gap:28px}
+.tl{display:block;height:26px;border-radius:13px;background:rgba(220,210,255,.35);transform-origin:left}
+.dg{position:absolute;left:0;top:140px;width:940px;height:556px}
+.node{position:absolute;padding:24px 40px;border-radius:30px;background:#1b1535;border:3px solid #a58bff;font:700 46px Inter;opacity:0;box-shadow:0 0 40px rgba(226,60,200,.35)}
+.sbar{margin:44px 54px 0;height:110px;border-radius:55px;background:rgba(255,255,255,.95);color:#1d1838;display:flex;align-items:center;gap:18px;padding:0 36px;font:600 35px Inter;white-space:nowrap}
+.cur{display:inline-block;width:4px;height:46px;background:#5b2eff}
+.ans{margin:34px 54px 0;font:600 44px/1.35 Inter;opacity:0;color:#f2efff}
+.src{display:inline-block;padding:4px 14px;border-radius:12px;background:rgba(123,92,255,.35);color:#fff;font:700 34px Inter}
+.badge{position:absolute;right:40px;bottom:50px;background:#ffd43b;color:#1d1838;font:800 44px Inter;padding:18px 30px;border-radius:20px;opacity:0}
+.mini{position:absolute;left:390px;top:520px;width:300px;height:400px;border-radius:36px;background:rgba(255,255,255,.08);border:2px solid rgba(160,130,255,.5);
+ display:flex;align-items:center;justify-content:center;text-align:center;font:700 48px/1.3 Poppins;opacity:0;box-shadow:0 20px 60px rgba(91,46,255,.3)}
+.bm{position:absolute;left:0;right:0;top:560px;text-align:center;font-size:260px;opacity:0}
+.logo{position:absolute;left:0;right:0;top:920px;text-align:center;font:700 70px Poppins;opacity:0}
+.fol{display:inline-block;margin-left:24px;padding:12px 34px;border-radius:20px;background:linear-gradient(90deg,#5b2eff,#e23cc8);font:700 44px Inter;vertical-align:middle}
+.ctas{position:absolute;left:0;right:0;top:1100px;display:flex;flex-direction:column;align-items:center;gap:24px}
+.ctl{padding:22px 40px;border-radius:26px;background:rgba(255,255,255,.08);border:2px solid rgba(160,130,255,.45);font:700 50px Inter;opacity:0}
+.capw{position:absolute;left:0;right:0;top:1500px;text-align:center}
+.cap{display:none;background:rgba(13,10,28,.85);border:2px solid rgba(160,130,255,.5);border-radius:22px;padding:14px 32px;font:800 50px Inter}
+.cap .on{color:#ff9ae9}
+.bar{position:absolute;left:0;top:0;height:10px;background:linear-gradient(90deg,#5b2eff,#e23cc8)}
+.sweep{position:absolute;top:0;bottom:0;width:700px;background:linear-gradient(90deg,transparent,rgba(123,92,255,.55),rgba(226,60,200,.55),transparent);opacity:0}
+"""
+    return f"""<!doctype html><html><head><meta charset='utf-8'><style>{css}</style></head><body>
+<div class='glow' id='g1' style='width:900px;height:900px;left:-300px;top:-200px;background:radial-gradient(circle,rgba(91,46,255,.5),transparent 65%)'></div>
+<div class='glow' id='g2' style='width:900px;height:900px;right:-350px;bottom:200px;background:radial-gradient(circle,rgba(226,60,200,.4),transparent 65%)'></div>
+<div class='sweep' id='sw'></div>
+{''.join(html_sc)}<div class='capw'>{cap_html}</div><div class='bar' id='bar'></div>
+<script>
+const EV={json.dumps(ev, ensure_ascii=False)}; const D={total}; const SC={S};
+const c=x=>Math.max(0,Math.min(1,x)), eo=x=>1-Math.pow(1-c(x),3), ei=x=>c(x)*c(x)*c(x), back=x=>{{x=c(x);const s=1.7;return 1+(s+1)*Math.pow(x-1,3)+s*Math.pow(x-1,2);}};
+const $=id=>document.getElementById(id);
+function rnd(i){{const x=Math.sin(i*12.9898)*43758.5453;return x-Math.floor(x);}}
+function pop(el,t0,t,from=.4,dx=0,dy=40){{const k=back((t-t0)/.45);el.style.opacity=c((t-t0)/.12);el.style.transform=`translate(${{(1-k)*dx}}px,${{(1-k)*dy}}px) scale(${{from+(1-from)*k}})`;}}
+window.render=function(t){{
+ $('bar').style.width=(c(t/D)*1080)+'px';
+ $('g1').style.transform=`translate(${{Math.sin(t/2)*80}}px,${{Math.cos(t/2.6)*60}}px)`;$('g2').style.transform=`translate(${{Math.cos(t/2.2)*80}}px,${{Math.sin(t/3)*60}}px)`;
+ let sw=-1;
+ SC.forEach((s,k)=>{{const el=$('s'+k);const on=t>=s.a-0.001&&t<s.b;const u=t-s.a;
+  const vin=k==0?1:eo(u/.35), vout=eo((t-(s.b-.3))/.3);
+  el.style.opacity=on?1:0; const x=(1-vin)*1080-vout*1080; const bl=Math.abs((1-vin)+vout)>0.02?Math.min(18,40*Math.abs((1-vin)+vout)):0;
+  el.style.transform=`translateX(${{x}}px)`;el.style.filter=bl?`blur(${{bl}}px)`:'none';
+  if(k>0&&u>=0&&u<.45)sw=u/.45;
+  if(!on)return;
+  if(s.ty==='hook'){{
+    for(let i=0;i<3;i++){{const p=$('pg'+i);const fly=eo((u-.15)/.35);const x0=250+i*40, y0=520+i*30;
+      p.style.left=(x0+fly*900)+'px';p.style.top=(y0-fly*120)+'px';p.style.transform=`rotate(${{-8+i*7+fly*25}}deg)`;
+      p.style.filter=(u>.15&&u<.5)?`blur(${{14*Math.sin(c((u-.15)/.35)*Math.PI)}}px)`:'none';p.style.opacity=u<.45?1:1-c((u-.45)/.12);}}
+    for(let i=0;i<46;i++){{const p=$('pt'+i);const v=(u-.45);const ang=rnd(i)*6.283,sp=300+rnd(i+9)*900;
+      if(v<0||v>1.2){{p.style.opacity=0;continue;}}p.style.opacity=1-v/1.2;p.style.left=(700+Math.cos(ang)*sp*eo(v/1.2))+'px';p.style.top=(800+Math.sin(ang)*sp*eo(v/1.2))+'px';}}
+    const th=$('three');const k3=back((u-.5)/.5);th.style.opacity=c((u-.5)/.1);th.style.transform=`scale(${{.2+.8*k3+.02*Math.sin(u*3)}})`;
+    pop($('h1'),.8,u,.6,0,50);pop($('h2'),1.2,u,.8,0,40);
+  }}
+  if(s.ty==='pills'){{pop($('cd'+k),.0,u+.35,.9,0,60);
+    const pd=$('pdf'+k);const kd=back((u-.6)/.5);pd.style.opacity=c((u-.6)/.1);pd.style.transform=`translateY(${{(1-kd)*-500}}px) rotate(${{(1-kd)*-12}}deg)`;
+    for(let j=0;j<3;j++)pop($('pl'+k+'_'+j),1.7+.8*j,u,.5,-200,0);
+    const w=$('wave'+k);w.style.opacity=c((u-3.4)/.3);for(let j=0;j<14;j++)$('wv'+j).style.height=(14+60*Math.abs(Math.sin(u*6+j*0.7)))+'px';
+    pop($('bt'+k),4.2,u,.8,0,40);}}
+  if(s.ty==='diagram'){{pop($('cd'+k),.0,u+.35,.9,0,60);
+    for(let j=0;j<7;j++){{const l=$('tl'+k+'_'+j);l.style.opacity=c((u-.3-j*.08)/.2)*(1-c((u-2.6)/.2));l.style.transform=`scaleX(${{1-eo((u-2.0-j*.06)/.4)}})`;}}
+    for(let j=0;j<3;j++){{const n=$('nd'+k+'_'+j);pop(n,2.6+.4*j,u,.3,0,0);if(u>3.8)n.style.boxShadow=`0 0 ${{30+20*Math.sin(u*4+j)}}px rgba(226,60,200,.55)`;}}
+    for(let j=0;j<2;j++){{const p=$('ln'+k+'_'+j);const L=p.getTotalLength();p.style.strokeDasharray=L;p.style.strokeDashoffset=L*(1-eo((u-2.9-.4*j)/.45));}}
+    pop($('bt'+k),4.2,u,.8,0,40);}}
+  if(s.ty==='search'){{pop($('cd'+k),.0,u+.35,.9,0,60);
+    const n=Math.floor(c((u-.6)/1.6)*s.q.length);$('q'+k).textContent=s.q.slice(0,n);$('cu'+k).style.opacity=(u<2.6&&Math.floor(u*3)%2==0)?1:0;
+    for(let j=0;j<3;j++){{const an=$('an'+k+'_'+j);pop(an,2.6+.5*j,u,1,-60,0);const sr=an.querySelector('.src');const g=c((u-2.9-.5*j)/.3);
+      sr.style.background=`rgba(${{Math.round(123+103*g)}},${{Math.round(92-32*g)}},${{Math.round(255-55*g)}},${{.35+.5*g}})`;}}
+    const bg=$('bg'+k);const kb=back((u-4.9)/.45);bg.style.opacity=c((u-4.9)/.1);bg.style.transform=`rotate(${{-6+0*kb}}deg) scale(${{1.8-.8*kb}})`;
+    pop($('bt'+k),4.2,u,.8,0,40);}}
+  if(s.ty==='cta'){{for(let j=0;j<3;j++){{const m=$('mi'+j);const kf=back((u-.2-.15*j)/.5);const sh=eo((u-1.8)/.35);
+      m.style.opacity=c((u-.2-.15*j)/.1)*(1-sh);m.style.transform=`translateX(${{(j-1)*230*kf*(1-sh)}}px) rotate(${{(j-1)*14*kf*(1-sh)}}deg) scale(${{(.5+.5*kf)*(1-.7*sh)}})`;}}
+    const bm=$('bm');const kb=back((u-2.0)/.5);bm.style.opacity=c((u-2.0)/.1);bm.style.transform=`scale(${{.3+.7*kb}})`;
+    pop($('logo'),2.6,u,.8,0,30);const f=$('fol');const kf=back((u-2.9)/.4);f.style.transform=`scale(${{u>2.9?.5+.5*kf:0}})`;
+    pop($('ct0'),3.2,u,.7,0,40);pop($('ct1'),3.6,u,.7,0,40);}}
+ }});
+ const swe=$('sw');swe.style.opacity=sw>=0?Math.sin(sw*Math.PI):0;swe.style.left=(sw>=0?-700+sw*2480:-800)+'px';
+ for(const cp of document.querySelectorAll('.cap')){{const a=+cp.dataset.a,b=+cp.dataset.b;cp.style.display=(t>=a&&t<b)?'inline-block':'none';
+   for(const w of cp.querySelectorAll('[data-w]'))w.className=(t>=+w.dataset.w)?'on':'';}}
+}};render(0);
+</script></body></html>"""
+
+LAYOUTS = {"messages": messages_page, "terminal": terminal_page, "cheatsheet": cheatsheet_page}
 
 # ------------------------------------------------------------------ rendu
 def sfx_track(path, total, events, starts):
@@ -290,6 +442,12 @@ def sfx_track(path, total, events, starts):
             L = len(e["text"]); step = (e["end"] - e["at"]) / max(1, L)
             for q in range(0, L, 2): put(tick, e["at"] + q * step, 0.8)
         if e["k"] == "heart": put(chime, e["at"] + 1.0)
+        if e["k"] == "sparkle": put(chime, e["at"], 0.8)
+        if e["k"] == "whoosh": put(whoosh, e["at"] - 0.05)
+        if e["k"] == "click": put(tick * 3, e["at"]); put(pop, e["at"] + 0.03)
+        if e["k"] == "impact":
+            ti = np.arange(int(.5 * SR)) / SR
+            put(np.sin(2 * np.pi * (70 + 80 * np.exp(-ti * 18)) * ti) * np.exp(-ti * 7) * .6, e["at"])
         if e["k"] == "input":
             L = len(e["text"]); step = (e["end"] - e["at"]) / max(1, L)
             for q in range(0, L, 2): put(tick, e["at"] + q * step, 0.8)
@@ -302,7 +460,7 @@ def sfx_track(path, total, events, starts):
 
 def build(spec_path, out):
     spec = json.load(open(spec_path)); vo_dir = os.path.dirname(os.path.abspath(spec_path))
-    K.load_theme(spec_path, spec); theme = K.THEME["raw"]
+    K.load_theme(spec_path, spec); theme = K.THEME.get("raw", {})
     tmp = tempfile.mkdtemp()
     # voix -> durées des scènes (même logique que le moteur v1)
     vspec = {"scenes": [{"type": "text", "vo": s["vo"], "dur": s.get("dur", 3.0)} for s in spec["scenes"]]}
