@@ -1,0 +1,22 @@
+{
+ "handle": "revenus_malin",
+ "ig_id": "",
+ "mark": "R€",
+ "bg": "#123d2e",
+ "fg": "#f3ead8",
+ "text": "#e8e2d0",
+ "muted": "#a9bfae",
+ "accent": "#e9c46a",
+ "kicker": "#e9c46a",
+ "glow1": "rgba(233,196,106,.14)",
+ "glow2": "rgba(255,255,255,.05)",
+ "card_bg": "rgba(243,234,216,.07)",
+ "card_border": "rgba(233,196,106,.4)",
+ "head_font": "DM Serif Display",
+ "head_weight": 400,
+ "uppercase": false,
+ "pill_bg": "#e9c46a",
+ "pill_fg": "#123d2e",
+ "mark_font": "DM Serif Display",
+ "extra_css": ".grad{font-style:italic}"
+}

@@ -1,0 +1,21 @@
+{
+ "handle": "zerosallefit",
+ "ig_id": "17841467969534543",
+ "mark": "0",
+ "bg": "#0b0b0b",
+ "fg": "#ffffff",
+ "text": "#ececec",
+ "muted": "#a3a3a3",
+ "accent": "#ff2d36",
+ "kicker": "#ff2d36",
+ "glow1": "rgba(255,45,54,.22)",
+ "glow2": "rgba(255,45,54,.10)",
+ "card_bg": "rgba(255,255,255,.05)",
+ "card_border": "rgba(255,45,54,.45)",
+ "head_font": "Archivo Black",
+ "head_weight": 400,
+ "uppercase": true,
+ "pill_bg": "#ff2d36",
+ "pill_fg": "#ffffff",
+ "extra_css": ""
+}

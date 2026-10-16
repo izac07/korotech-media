@@ -25,6 +25,69 @@ body{font-family:Inter,sans-serif;color:#fff;background:#0d0a1c;position:relativ
 .ico{flex:none;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.08);border:2px solid rgba(160,130,255,.4)}
 """
 
+# ---------------------------------------------------------------- themes (multi-comptes)
+# Un compte = un dossier comptes/<slug>/ avec theme.json. Sans theme.json -> style Korotech.
+THEME = {"handle": "korotech_fr", "mark": "∞", "css": ""}
+FONT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
+FONT_FILES = {  # nom CSS -> [(fichier, weight, style)]
+    "Archivo Black": [("archivo-black-latin-400-normal.woff2", 400, "normal")],
+    "Space Grotesk": [("space-grotesk-latin-500-normal.woff2", 500, "normal"), ("space-grotesk-latin-700-normal.woff2", 700, "normal")],
+    "Playfair Display": [("playfair-display-latin-700-normal.woff2", 700, "normal"), ("playfair-display-latin-800-normal.woff2", 800, "normal"), ("playfair-display-latin-700-italic.woff2", 700, "italic")],
+    "DM Serif Display": [("dm-serif-display-latin-400-normal.woff2", 400, "normal"), ("dm-serif-display-latin-400-italic.woff2", 400, "italic")],
+}
+
+def _font_faces(names):
+    import base64
+    out = ""
+    for n in names:
+        for f, w, st in FONT_FILES.get(n, []):
+            b64 = base64.b64encode(open(os.path.join(FONT_DIR, f), "rb").read()).decode()
+            out += f"@font-face{{font-family:'{n}';font-weight:{w};font-style:{st};src:url(data:font/woff2;base64,{b64}) format('woff2')}}"
+    return out
+
+def theme_css(t):
+    """Construit le CSS d'un thème à partir de ses couleurs/polices (surcharge le style Korotech)."""
+    a, a2 = t["accent"], t.get("accent2", t["accent"])
+    hf, hw = t.get("head_font", "Poppins"), t.get("head_weight", 700)
+    up = "uppercase" if t.get("uppercase", True) else "none"
+    grad = (f"background:linear-gradient(90deg,{a},{a2});-webkit-background-clip:text;color:transparent" if a != a2 else f"background:none;color:{a}")
+    css = _font_faces({hf, t.get("body_font", "Inter"), t.get("mark_font", hf)})
+    css += f"""
+body{{background:{t['bg']};color:{t['fg']};font-family:'{t.get('body_font','Inter')}',Inter,sans-serif}}
+.glow1{{background:radial-gradient(circle,{t.get('glow1','transparent')},transparent 65%)}}
+.glow2{{background:radial-gradient(circle,{t.get('glow2','transparent')},transparent 65%)}}
+.brand{{color:{t['muted']}}}
+.inf{{font-family:'{t.get('mark_font',hf)}';background:none;color:{a};-webkit-background-clip:initial}}
+.grad{{{grad}}}
+.hl{{color:{t.get('hl',a)}}}
+.lbl,.count,.foot,.note{{color:{t['muted']}}}
+.when,.sec .st{{color:{t.get('kicker',a)}}}
+.card{{background:{t['card_bg']};border:2px solid {t['card_border']}}}
+.ico{{background:{t['card_bg']};border:2px solid {t['card_border']}}}
+h1,h2,.num,.hook,.big,.h2,.fh{{font-family:'{hf}';font-weight:{hw}}}
+h1,.hook{{text-transform:{up}}}
+.sub,.body,.card,.li,.sec .tx{{color:{t.get('text',t['fg'])}}}
+.pill{{background:{t.get('pill_bg',a)};color:{t.get('pill_fg','#fff')}}}
+.bar,.li .dot{{background:{a}}}
+.cursor{{background:{a}}}
+"""
+    return css + t.get("extra_css", "")
+
+def load_theme(spec_path, spec):
+    """Cherche theme.json (champ 'theme' du spec, sinon en remontant depuis le dossier du spec)."""
+    global THEME
+    cand = []
+    if spec.get("theme"):
+        cand.append(spec["theme"])
+    d = os.path.dirname(os.path.abspath(spec_path))
+    for _ in range(4):
+        cand.append(os.path.join(d, "theme.json")); d = os.path.dirname(d)
+    for c in cand:
+        if os.path.exists(c):
+            t = json.load(open(c)); THEME = {"handle": t["handle"], "mark": t.get("mark", "∞"), "css": theme_css(t)}
+            return c
+    return None
+
 def esc(s):
     """Escape text but keep [placeholders] highlighted and allow <br>."""
     s = H.escape(s).replace("&lt;br&gt;", "<br>")
@@ -67,9 +130,9 @@ h2{font-family:Poppins;font-weight:700;font-size:78px;line-height:1.1;margin-top
 """
 
 def car_page(i, total, body):
-    return f"""<html><head><meta charset='utf-8'><style>{BRAND_CSS}{CAR_CSS}</style></head><body>
+    return f"""<html><head><meta charset='utf-8'><style>{BRAND_CSS}{CAR_CSS}{THEME['css']}</style></head><body>
 <div class='glow1'></div><div class='glow2'></div><div class='wrap'>
-<div class='top'><div class='brand'><span class='inf'>∞</span>korotech_fr</div><div class='count'>{i:02d}/{total:02d}</div></div>
+<div class='top'><div class='brand'><span class='inf'>{THEME['mark']}</span>{THEME['handle']}</div><div class='count'>{i:02d}/{total:02d}</div></div>
 {body}</div></body></html>"""
 
 def car_slide(s):
@@ -174,9 +237,9 @@ window.render=function(t){
  document.getElementById('g1').style.transform=`translate(${Math.sin(t/3)*60}px,${Math.cos(t/4)*40}px)`;
  document.getElementById('g2').style.transform=`translate(${Math.cos(t/3)*60}px,${Math.sin(t/5)*40}px)`;
 };render(0);""" % total
-    page = f"""<!doctype html><html><head><meta charset='utf-8'><style>{BRAND_CSS}{REEL_CSS}</style></head><body>
+    page = f"""<!doctype html><html><head><meta charset='utf-8'><style>{BRAND_CSS}{REEL_CSS}{THEME['css']}</style></head><body>
 <div class='glow1' id='g1'></div><div class='glow2' id='g2'></div><div class='bar' id='bar'></div>
-<div class='top'><div class='brand'><span class='inf'>∞</span>korotech_fr</div></div>
+<div class='top'><div class='brand'><span class='inf'>{THEME['mark']}</span>{THEME['handle']}</div></div>
 {''.join(parts)}<script>{js}</script></body></html>"""
     return page, total
 
@@ -301,6 +364,8 @@ def make_music(out, dur, seed=7):
 
 if __name__ == "__main__":
     cmd = sys.argv[1]
+    if cmd in ("carrousel", "reel"):
+        load_theme(sys.argv[2], json.load(open(sys.argv[2])))
     if cmd == "carrousel":
         print(build_carrousel(json.load(open(sys.argv[2])), sys.argv[3]))
     elif cmd == "reel":

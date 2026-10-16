@@ -1,0 +1,23 @@
+{
+ "handle": "coeurlucide__",
+ "ig_id": "17841415150585724",
+ "mark": "C",
+ "bg": "#f7e4e7",
+ "fg": "#3a0f1c",
+ "text": "#4a1a28",
+ "muted": "#9a6070",
+ "accent": "#8c2340",
+ "hl": "#b0465e",
+ "kicker": "#b0465e",
+ "glow1": "rgba(255,255,255,.75)",
+ "glow2": "rgba(176,70,94,.16)",
+ "card_bg": "rgba(255,255,255,.55)",
+ "card_border": "rgba(122,31,53,.22)",
+ "head_font": "Playfair Display",
+ "head_weight": 800,
+ "uppercase": false,
+ "pill_bg": "#7a1f35",
+ "pill_fg": "#ffffff",
+ "mark_font": "Playfair Display",
+ "extra_css": ".grad{font-style:italic;font-weight:700}"
+}

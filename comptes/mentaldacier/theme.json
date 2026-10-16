@@ -1,0 +1,21 @@
+{
+ "handle": "mentaldacier2030",
+ "ig_id": "",
+ "mark": "M",
+ "bg": "#0a0a0a",
+ "fg": "#ffffff",
+ "text": "#e6e6e6",
+ "muted": "#8a8a8a",
+ "accent": "#ffffff",
+ "kicker": "#bdbdbd",
+ "glow1": "rgba(255,255,255,.07)",
+ "glow2": "rgba(255,255,255,.04)",
+ "card_bg": "rgba(255,255,255,.05)",
+ "card_border": "rgba(255,255,255,.28)",
+ "head_font": "Archivo Black",
+ "head_weight": 400,
+ "uppercase": true,
+ "pill_bg": "#ffffff",
+ "pill_fg": "#0a0a0a",
+ "extra_css": ".grad{background:#fff;color:#0a0a0a;-webkit-background-clip:border-box;padding:0 12px;-webkit-box-decoration-break:clone;box-decoration-break:clone}.hl{color:#fff;text-decoration:underline}.num.grad{background:none;color:#fff;padding:0}"
+}
