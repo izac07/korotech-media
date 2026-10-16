@@ -1,0 +1,35 @@
+{
+ "id": "ZSF-R02",
+ "layout": "sportmotion",
+ "music_seed": 44,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "vo": "Arrête les séries de cent crunchs. Fais plutôt ce circuit de cinq minutes."
+  },
+  {
+   "type": "erreur",
+   "vo": "L'erreur : enchaîner les crunchs pendant vingt minutes. C'est long, beaucoup tirent sur leur nuque, et ça ne fait pas fondre le ventre : on ne perd pas de gras à un endroit précis."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "PLANCHE",
+    "DEAD BUG",
+    "GAINAGE LATÉRAL",
+    "MOUNTAIN CLIMBERS LENTS",
+    "POSITION CREUSE"
+   ],
+   "vo": "La solution : cinq exercices, quarante-cinq secondes d'effort, quinze secondes de repos. Planche. Dead bug. Gainage latéral. Mountain climbers lents. Position creuse."
+  },
+  {
+   "type": "pourquoi",
+   "vo": "Tu fais travailler toute ta sangle abdominale, pas juste le haut. Dos neutre, respiration contrôlée, et si c'est trop dur, genoux au sol."
+  },
+  {
+   "type": "cta",
+   "vo": "Enregistre ce circuit, fais-le ce soir, et dis-moi en commentaire si tu as tenu les cinq minutes."
+  }
+ ]
+}
