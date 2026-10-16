@@ -15,7 +15,7 @@ URL publique d'un fichier : `https://izac07.github.io/korotech-media/<chemin>`
   5. **Parents** (≈ 1/10).
 - **Accroches** : jamais « voici une méthode ». Priorité à l'émotion, la situation vécue, la curiosité ou le défi : « POV : … », « Personne ne t'a dit que… », « Arrête de… », « Le truc que je fais quand… ». Hook ≤ 3 lignes courtes.
 - **Varier la structure** : pas toujours « colle ce prompt ». Alterner : mini-histoire (problème → astuce → résultat), liste de 3, avant/après, mythe vs réalité, démonstration. Le prompt peut apparaître, mais ce n'est pas obligatoire.
-- **Reels plus courts** : viser 12-20 s (4 scènes max), une seule idée par reel.
+- **Reels = format motion « cheatsheet » validé par Goat le 16/10/2026** : 40-45 s, 5 scènes, 100-120 mots de voix off, une seule idée par reel. Spec et rendu : voir `tools/MOTION.md` (remplace l'ancien format `korotech.py reel`).
 - Chaque post finit par une action : enregistrer, partager à un ami, suivre, ou commenter (le mot-clé seulement si c'est naturel ; on ne promet PAS d'envoyer quelque chose en DM).
 - Reels : texte animé + **voix off ElevenLabs « Brian » (modèle Eleven v4)** sur TOUS les reels + musique lo-fi originale en fond (baissée automatiquement sous la voix).
 - Carrousels : sans musique (l'API Instagram ne le permet pas). Le contenu complet (prompt, liste) est DANS le carrousel.
@@ -49,7 +49,7 @@ Production À LA SEMAINE : la tâche « Korotech - production de la semaine » t
 
 ## Outils
 `python3 tools/korotech.py carrousel posts/<dossier>/spec.json posts/<dossier>` → `slide_XX.jpg` (1080×1350, JPEG obligatoire pour Instagram)
-`python3 tools/korotech.py reel posts/<dossier>/spec.json posts/<dossier>/reel.mp4` → MP4 1080×1920 avec musique originale (variée par `music_seed`)
+REELS : `python3 tools/motion.py posts/<dossier>/motion.json posts/<dossier>/reel.mp4` (layout `cheatsheet`, voir `tools/MOTION.md`). L'ancien `korotech.py reel` n'est plus utilisé.
 
 Dépendances : `pip install --break-system-packages playwright scipy numpy pillow && python3 -m playwright install chromium`, plus ffmpeg et les polices Poppins/Inter.
 
@@ -63,7 +63,7 @@ Dépendances : `pip install --break-system-packages playwright scipy numpy pillo
 ```
 5 à 8 slides. `**...**` = dégradé, `[...]` = rose (placeholder), `<br>` = retour à la ligne.
 
-### Spec reel (≈ 20-25 s)
+### Ancienne spec reel (NE PLUS UTILISER — voir tools/MOTION.md)
 ```json
 {"id":"R05","music_seed":12,"scenes":[
  {"type":"hook","lines":["Ligne 1","Ligne 2","**Ligne en dégradé**"]},
@@ -76,10 +76,10 @@ Dépendances : `pip install --break-system-packages playwright scipy numpy pillo
 Chaque scène accepte `"dur"` (secondes). Hook : 3 lignes courtes max, ≤ 14 caractères par ligne.
 
 ### Voix off (tous les reels)
-Chaque scène porte un champ `"vo"` : la phrase dite par Brian pendant cette scène (français oral, naturel, tutoiement pour les élèves / vouvoiement pour les parents ; 8 à 25 mots par scène ; écrire les nombres en lettres ; total ≈ 250-350 caractères par reel pour tenir le quota ElevenLabs).
+Chaque scène porte un champ `"vo"` : la phrase dite par Brian pendant cette scène (français oral, naturel, tutoiement pour les élèves / vouvoiement pour les parents ; écrire les nombres en lettres ; total 100-120 mots par reel motion).
 Avant de générer la vidéo, pour chaque scène k qui a un `vo`, lancer le scénario Make **9977445** (« Korotech - Voix off ElevenLabs ») avec :
 `texte` = la phrase, `chemin` = `posts/<dossier>/vo_<k>.mp3` (k = index de la scène, à partir de 0), `voix` = `nPczCjzI2devNBz1zQrb` (Brian), `modele` = `eleven_v4` (ce sont aussi les valeurs par défaut du scénario). Make ne peut PAS écraser un fichier existant dans GitHub : toujours écrire vers un chemin nouveau (pour refaire une voix, supprimer d'abord l'ancien fichier du dépôt et pousser).
-Puis `git pull` : les `vo_<k>.mp3` arrivent dans le dossier du post. `tools/korotech.py reel` les détecte, allonge chaque scène pour caler la voix, et mixe la musique en dessous. S'il manque un fichier, le script s'arrête avec une erreur : relancer la génération de cette scène.
+Puis `git pull` : les `vo_<k>.mp3` arrivent dans le dossier du post. `tools/motion.py` les détecte, allonge chaque scène pour caler la voix, et mixe la musique en dessous. S'il manque un fichier, le script s'arrête avec une erreur : relancer la génération de cette scène.
 Si ElevenLabs refuse (quota épuisé), produire le reel SANS `vo` (musique seule) et le signaler à Goat.
 
 ## File d'attente

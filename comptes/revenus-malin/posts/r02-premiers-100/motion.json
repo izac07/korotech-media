@@ -6,23 +6,67 @@
  "scenes": [
   {
    "type": "hook",
-   "vo": "Tes premiers cent euros en ligne ce week-end ? C'est possible, mais pas avec une formule magique. Voici la méthode honnête."
+   "vo": "Tes premiers cent euros en ligne ce week-end ? C'est possible, mais pas avec une formule magique. Voici la méthode honnête.",
+   "icon": "💶",
+   "title": "Tes premiers 100 € en ligne ce week-end",
+   "mark": "100 €",
+   "strike": "Revenus passifs garantis",
+   "callout": "Pas de formule magique. Une méthode honnête, de A à Z."
   },
   {
    "type": "steps12",
-   "vo": "Étape un : choisis une compétence que tu as déjà. Relecture, montage, Canva, cours. Étape deux : une offre simple à prix fixe, par exemple : je relis ton CV pour quinze euros."
+   "vo": "Étape un : choisis une compétence que tu as déjà. Relecture, montage, Canva, cours. Étape deux : une offre simple à prix fixe, par exemple : je relis ton CV pour quinze euros.",
+   "steps": [
+    "Étape 1 — Choisis une compétence que tu as déjà",
+    "Étape 2 — Une offre simple, à prix fixe"
+   ],
+   "tags": [
+    "Relecture",
+    "Montage",
+    "Canva",
+    "Cours"
+   ],
+   "quote": "« Je relis ton CV pour 15 € »",
+   "quote_mark": "15 €"
   },
   {
    "type": "step3",
-   "vo": "Étape trois : propose-la là où les gens cherchent déjà : ton entourage, les groupes de ton quartier, les plateformes de services."
+   "vo": "Étape trois : propose-la là où les gens cherchent déjà : ton entourage, les groupes de ton quartier, les plateformes de services.",
+   "steps": [
+    "Étape 3 — Propose-la là où on cherche déjà"
+   ],
+   "items": [
+    "👥 Ton entourage",
+    "🏘️ Les groupes de ton quartier",
+    "🧰 Les plateformes de services"
+   ]
   },
   {
    "type": "step45",
-   "vo": "Étape quatre : livre vite, et demande un avis. Il te faut environ sept ventes pour atteindre cent euros. Et pense à déclarer ces revenus."
+   "vo": "Étape quatre : livre vite, et demande un avis. Il te faut environ sept ventes pour atteindre cent euros. Et pense à déclarer ces revenus.",
+   "steps": [
+    "Étape 4 — Livre vite, demande un avis ⭐",
+    "Étape 5 — Déclare ces revenus 🧾"
+   ],
+   "progress": {
+    "label": "Objectif 100 €",
+    "n": 7,
+    "step": 15,
+    "suffix": " €",
+    "note": "≈ 7 ventes × 15 €"
+   },
+   "callout": "Infos officielles : autoentrepreneur.urssaf.fr · impots.gouv.fr"
   },
   {
    "type": "cta",
-   "vo": "Enregistre la méthode, et dis-moi en commentaire quelle compétence tu vas proposer."
+   "vo": "Enregistre la méthode, et dis-moi en commentaire quelle compétence tu vas proposer.",
+   "title": "Méthode complète.",
+   "mark": "complète.",
+   "ctas": [
+    "Enregistre la méthode",
+    "Quelle compétence tu vas proposer ?"
+   ]
   }
- ]
+ ],
+ "crumb": "Revenus Malins / Méthode « premiers 100 € »"
 }

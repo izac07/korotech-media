@@ -1,7 +1,7 @@
 # Revenus Malins — @revenus_malin
 
 - ID Instagram : (pas encore relié — publication manuelle)  ·  préfixe des posts : RM
-- Créneau(x) : 19:30 (2e créneau à partir de la semaine 2 : 12:00)
+- Créneaux : 19:30 et 12:00 — 2 posts par jour dès le 19/10/2026 (1 reel motion + 1 carrousel par jour, en alternant les créneaux)
 - Voix off : nPczCjzI2devNBz1zQrb (Brian)
 - Cible : 20-35 ans qui veulent un complément de revenus réaliste en France. Tutoiement.
 - Promesse : Des idées de side hustle concrètes et honnêtes, avec les vraies étapes, les vrais coûts et les vrais pièges.

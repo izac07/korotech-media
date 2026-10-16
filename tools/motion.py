@@ -420,30 +420,37 @@ def iceberg_page(spec, theme, starts, durs, caps, total):
     sc = spec["scenes"]; ev = []; G = "#39ff88"; RED = "#ff4d4d"; YEL = "#febc2e"
     fonts = K._font_faces(["JetBrains Mono", "Archivo Black"])
     S = [{"a": starts[k], "b": starts[k] + durs[k], "ty": s["type"]} for k, s in enumerate(sc)]
-    ov = []
+    ov = []; h0 = next((x for x in sc if x["type"] == "hook"), {})
+    hook_cmd = h0.get("cmd", "./reveler --iceberg"); wtop = h0.get("top", "CE QU'ON TE MONTRE"); wbot = h0.get("bottom", "CE QU'ON TE CACHE")
     for k, s in enumerate(sc):
         a = starts[k]; ty = s["type"]
         if ty == "hook":
             ov.append(f"<div class='cmdl' id='hk'><span class='g'>$ </span><span id='hkt'></span><b class='cur'></b></div>")
-            ev += [{"k": "type", "at": a + 0.0, "end": a + 0.55, "text": "./reveler --iceberg"}, {"k": "impact", "at": a + 0.65}]
+            ev += [{"k": "type", "at": a + 0.0, "end": a + 0.55, "text": hook_cmd}, {"k": "impact", "at": a + 0.65}]
         elif ty == "surface":
             pos = [(70, 300), (560, 500), (70, 700)]
             for j, (l, (x, y)) in enumerate(zip(s["labels"], pos)):
                 ov.append(f"<div class='lab' id='lb{j}' style='left:{x}px;top:{y}px'>&gt; {H.escape(l)}<span class='faux' id='fx{j}'>[FAUX]</span></div>")
                 ev += [{"k": "pop", "at": a + 0.6 + 0.9 * j}, {"k": "impact", "at": a + 1.15 + 0.9 * j}]
         elif ty == "process":
-            for j in range(3):
-                ov.append(f"<div class='blk' id='bk{j}'>[ÉTAPE {j+1}]</div>")
-            ov.append("<div class='arr' id='ar0'>→</div><div class='arr' id='ar1'>→</div><div class='chaos' id='chaos'>C H A O S</div><div class='okp' id='okp'>✓ process clair</div>")
+            steps = (s.get("steps") or [f"[ÉTAPE {j+1}]" for j in range(3)])[:3]
+            for j, stp in enumerate(steps):
+                ov.append(f"<div class='blk' id='bk{j}'>{H.escape(stp)}</div>")
+            ov.append(f"<div class='arr' id='ar0'>→</div><div class='arr' id='ar1'>→</div><div class='chaos' id='chaos'{'' if len(s.get('chaos', 'CHAOS')) <= 8 else " style='font-size:84px;letter-spacing:2px'"}>{H.escape((' '.join(s.get('chaos', 'CHAOS').upper())) if len(s.get('chaos', 'CHAOS')) <= 8 else s.get('chaos', '').upper())}</div><div class='okp' id='okp'>✓ {H.escape(s.get('ok', 'process clair'))}</div>")
             ev += [{"k": "pop", "at": a + 0.5 + 0.3 * j} for j in range(3)] + [{"k": "impact", "at": a + 2.2}, {"k": "click", "at": a + 5.4}]
         elif ty == "logs":
-            L = [("ERREUR 401 · API modifiée", RED, 0.5), ("CHAMP VIDE · formulaire", RED, 1.6), ("[ALERTE] → notification envoyée ✓", G, 3.0),
-                 ("abonnements :", "#cfe", 4.4), ("  + outil 1", YEL, 4.9), ("  + outil 2", YEL, 5.4), ("  + outil 3…", YEL, 5.9)]
+            if s.get("logs"):
+                COL = {"err": RED, "ok": G, "info": "#cfe", "item": YEL}
+                n = len(s["logs"][:8]); step = min(1.1, max(0.45, (durs[k] - 1.5) / max(1, n)))
+                L = [(("  + " if kd == "item" else "") + tx, COL.get(kd, "#cfe"), round(0.5 + step * j, 2)) for j, (tx, kd) in enumerate(s["logs"][:8])]
+            else:
+                L = [("ERREUR 401 · API modifiée", RED, 0.5), ("CHAMP VIDE · formulaire", RED, 1.6), ("[ALERTE] → notification envoyée ✓", G, 3.0),
+                     ("abonnements :", "#cfe", 4.4), ("  + outil 1", YEL, 4.9), ("  + outil 2", YEL, 5.4), ("  + outil 3…", YEL, 5.9)]
             for j, (txt, col, at) in enumerate(L):
                 ov.append(f"<div class='log' id='lg{j}' data-at='{at}' style='top:{360 + 92 * j}px;color:{col}'>{'[x] ' if col == RED else ''}{H.escape(txt)}</div>")
                 ev.append({"k": "impact" if col == RED else "pop", "at": a + at})
         elif ty == "cta":
-            ov.append("<div class='task' id='task'>[ 1 TÂCHE RÉPÉTITIVE ] <span class='g'>✓</span></div>")
+            ov.append(f"<div class='task' id='task'>[ {H.escape(s.get('task', '1 TÂCHE RÉPÉTITIVE'))} ] <span class='g'>✓</span></div>")
             ov.append(f"<div class='cmdl' id='fc' style='top:170px'><span class='g'>$ </span><span id='fct'></span><b class='cur'></b></div><div class='done' id='done'>[✓] enregistré</div>")
             ev += [{"k": "pop", "at": a + 1.2}, {"k": "type", "at": a + 3.0, "end": a + 4.2, "text": "suivre @" + spec.get("handle", "")}, {"k": "click", "at": a + 4.6}]
         ov.append(f"<div class='bt' id='bt{k}'>{s.get('text','')}</div>")
@@ -491,8 +498,8 @@ svg#bg{{position:absolute;left:0;top:0;width:1080px;height:3000px}}
  <svg id='bg' viewBox='0 0 1080 3000'><path id='berg' d='{berg}' fill='rgba(57,255,136,.05)' stroke='{G}' stroke-width='5' stroke-linejoin='round'/>
  <path id='crk' d='{crack}' fill='none' stroke='rgba(57,255,136,.45)' stroke-width='3'/></svg>
  <div class='water'></div><div class='wl'>~ ~ NIVEAU DE LA MER ~ ~</div>
- <div class='wlab' id='wl1' style='top:420px'>CE QU'ON TE MONTRE</div>
- <div class='wlab' id='wl2' style='top:1180px;color:{G}'>CE QU'ON TE CACHE ▼</div>
+ <div class='wlab' id='wl1' style='top:420px'>{H.escape(wtop.upper())}</div>
+ <div class='wlab' id='wl2' style='top:1180px;color:{G}'>{H.escape(wbot.upper())} ▼</div>
 </div>
 <div class='gauge'>{ticks}</div><div class='dep' id='dep'>0 m</div>
 {''.join(ov)}
@@ -514,7 +521,7 @@ window.render=function(t){{
  const DP={{hook:0,surface:0,process:10,logs:50,cta:0}};const depth=DP[prev.ty]+(DP[s.ty]-DP[prev.ty])*m;$('dep').textContent=(depth<0.5?'0':'-'+Math.round(depth))+' m';
  $('scan').style.backgroundPosition=`0 ${{(t*40)%5}}px`;
  // hook
- const hk=$('hk');hk.style.opacity=k==0&&u<1.0?1:0;$('hkt').textContent='./reveler --iceberg'.slice(0,Math.floor(c(u/.4)*19));
+ const hk=$('hk');hk.style.opacity=k==0&&u<1.0?1:0;const HC={json.dumps(hook_cmd)};$('hkt').textContent=HC.slice(0,Math.floor(c(u/.4)*HC.length));
  const bp=$('berg');bp.style.strokeDasharray='none';
  $('crk').style.opacity=k==0?c((u-.45)/.3):1;
  $('fl').style.opacity=(k==0&&u>=.42&&u<.62)?.35*(1-(u-.42)/.2):0;
@@ -559,6 +566,14 @@ POSES = {
              {"H":[58,132],"N":[90,116],"P":[220,92],"E1":[93,62],"W1":[95,12],"E2":[96,62],"W2":[98,12],"K1":[152,62],"F1":[172,16],"K2":[282,48],"F2":[340,12]}],
  "creuse": [{"H":[92,62],"N":[122,50],"P":[200,26],"E1":[72,74],"W1":[22,88],"E2":[74,72],"W2":[24,86],"K1":[270,44],"F1":[340,64],"K2":[272,42],"F2":[342,62]},
             {"H":[92,68],"N":[122,56],"P":[200,26],"E1":[72,80],"W1":[22,94],"E2":[74,78],"W2":[24,92],"K1":[270,50],"F1":[340,72],"K2":[272,48],"F2":[342,70]}],
+ "squat": [{"H":[180,176],"N":[180,150],"P":[180,92],"E1":[158,136],"W1":[132,134],"E2":[161,136],"W2":[135,134],"K1":[180,52],"F1":[180,12],"K2":[183,52],"F2":[183,12]},
+           {"H":[160,130],"N":[170,105],"P":[208,58],"E1":[146,96],"W1":[120,96],"E2":[149,96],"W2":[123,96],"K1":[168,52],"F1":[180,12],"K2":[171,52],"F2":[183,12]}],
+ "pompe": [{"H":[58,104],"N":[90,92],"P":[205,55],"E1":[92,52],"W1":[92,12],"E2":[95,52],"W2":[95,12],"K1":[262,34],"F1":[322,12],"K2":[265,34],"F2":[325,12]},
+           {"H":[58,52],"N":[90,42],"P":[205,28],"E1":[125,40],"W1":[92,12],"E2":[128,40],"W2":[95,12],"K1":[262,20],"F1":[322,12],"K2":[265,20],"F2":[325,12]}],
+ "fente": [{"H":[180,176],"N":[180,150],"P":[180,92],"E1":[180,122],"W1":[180,96],"E2":[183,122],"W2":[183,96],"K1":[180,52],"F1":[180,12],"K2":[183,52],"F2":[183,12]},
+           {"H":[195,140],"N":[195,116],"P":[195,60],"E1":[195,90],"W1":[195,66],"E2":[198,90],"W2":[198,66],"K1":[152,58],"F1":[152,12],"K2":[232,20],"F2":[276,12]}],
+ "pont": [{"H":[60,24],"N":[95,22],"P":[200,22],"E1":[130,12],"W1":[165,12],"E2":[133,12],"W2":[168,12],"K1":[255,70],"F1":[285,12],"K2":[258,70],"F2":[288,12]},
+          {"H":[60,24],"N":[95,26],"P":[200,74],"E1":[130,12],"W1":[165,12],"E2":[133,12],"W2":[168,12],"K1":[255,78],"F1":[285,12],"K2":[258,78],"F2":[288,12]}],
 }
 
 def sportmotion_page(spec, theme, starts, durs, caps, total):
@@ -567,9 +582,22 @@ def sportmotion_page(spec, theme, starts, durs, caps, total):
     S = [{"a": starts[k], "b": starts[k] + durs[k], "ty": s["type"], "ex": s.get("ex", [])} for k, s in enumerate(sc)]
     a0, a1, a2, a3, a4 = starts
     d2 = durs[2]
+    def red(x): return K.esc(x).replace("**", "\x00").split("\x00")
+    def R_(x): return "".join(f"<span class='r'>{q}</span>" if n % 2 else q for n, q in enumerate(red(x)))
+    h, er, so, po, ct = sc
+    exn = so.get("ex", [])[:5]; NX = len(exn)
+    exp = (so.get("poses") or ["planche", "deadbug", "lateral", "climber", "creuse"])[:NX]
+    exp = [q if q in POSES else "planche" for q in exp] + ["planche"] * (NX - len(exp))
+    eff, rst = so.get("effort", "45 s"), so.get("rest", "15 s")
+    tot = so.get("total", "5:00"); tsec = int(tot.split(":")[0]) * 60 + int(tot.split(":")[1] or 0)
+    hpose = h.get("pose", "crunch") if h.get("pose", "crunch") in POSES else "crunch"
+    epose = er.get("pose", hpose) if er.get("pose", hpose) in POSES else hpose
+    zones = (po.get("zones") or ["AVANT", "CÔTÉS", "PROFOND"])[:3]
+    badges = (po.get("badges") or ["DOS NEUTRE", "RESPIRE", "TROP DUR ? GENOUX AU SOL"])[:3]
+    ctas = (ct.get("ctas") or ["🔖 ENREGISTRE LE CIRCUIT", "💬 T'AS TENU 5 MIN ?"])[:2]
     ev += [{"k": "type", "at": a0, "end": a0 + 1.5, "text": "x" * 40}, {"k": "glitch", "at": a0 + 1.55}, {"k": "impact", "at": a0 + 1.7}]
     ev += [{"k": "glitch", "at": a1 + 0.1}, {"k": "glitch", "at": a1 + 3.2}, {"k": "impact", "at": a1 + durs[1] * 0.68}]
-    exs = [a2 + 1.3 + (d2 - 1.6) / 5 * j for j in range(5)]
+    exs = [a2 + 1.3 + (d2 - 1.6) / max(1, NX) * j for j in range(NX)]
     ev += [{"k": "impact", "at": a2 + 0.05}] + [{"k": "pop", "at": x} for x in exs] + [{"k": "whoosh", "at": x - 0.2} for x in exs[1:]]
     ev += [{"k": "pop", "at": a3 + 0.5 + 0.8 * j} for j in range(3)] + [{"k": "pop", "at": a3 + 3.6 + 0.7 * j} for j in range(3)]
     ev += [{"k": "beep", "at": a4 + 0.2 + 0.25 * j} for j in range(5)] + [{"k": "whistle", "at": a4 + 1.5}, {"k": "impact", "at": a4 + 1.6},
@@ -612,9 +640,11 @@ body{{width:1080px;height:1920px;overflow:hidden;background:#0b0b0b;color:#fff;f
 .scanl{{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 2px,transparent 2px 6px);opacity:0}}
 .flash{{position:absolute;inset:0;background:{RED};opacity:0}}
 """
+    STAND = ("squat", "fente")
     def figsvg(id_):
-        return (f"<svg class='fig' id='{id_}' viewBox='-20 -40 400 240'><g id='{id_}c' transform='translate(-6,0)' opacity='0'></g><g id='{id_}m' transform='translate(6,0)' opacity='0'></g>"
-                f"<g id='{id_}w'></g><line x1='-20' y1='4' x2='380' y2='4' stroke='#444' stroke-width='4'/></svg>")
+        st = " style='top:520px'" if (id_ == "f0" and hpose in STAND) or (id_ == "f1" and epose in STAND) else ""
+        return (f"<svg class='fig'{st} id='{id_}' viewBox='-20 -40 400 240'><g id='{id_}c' transform='translate(-6,0)' opacity='0'></g><g id='{id_}m' transform='translate(6,0)' opacity='0'></g>"
+                f"<g id='{id_}w'></g><line x1='-20' y1='154' x2='380' y2='154' stroke='#444' stroke-width='4'/></svg>")
     body_svg = f"""<svg class='body' viewBox='0 0 400 640'>
 <circle cx='200' cy='70' r='56' fill='none' stroke='#fff' stroke-width='10'/>
 <rect x='110' y='150' width='180' height='300' rx='60' fill='none' stroke='#fff' stroke-width='10'/>
@@ -625,28 +655,28 @@ body{{width:1080px;height:1920px;overflow:hidden;background:#0b0b0b;color:#fff;f
     page = f"""<!doctype html><html><head><meta charset='utf-8'><style>{css}</style></head><body>
 <div class='scn' id='s0'><div class='cnt A' id='cnt0'>0</div>{figsvg('f0')}
  <svg class='x' id='x0' viewBox='0 0 100 100'><path d='M12 12 L88 88 M88 12 L12 88' stroke='{RED}' stroke-width='14' stroke-linecap='round'/></svg>
- <div class='big' id='h0' style='top:1000px'>STOP AUX <span class='r'>100 CRUNCHS</span></div>
- <div class='big' id='h1' style='top:1280px;font-size:90px'>⏱ 5 MIN À LA PLACE</div></div>
-<div class='scn' id='s1'><div class='tag' id='tg1' style='background:{RED}'>ERREUR</div><div class='timer A' id='tm1' style='top:340px;color:#999'>00:00 / 20:00</div>{figsvg('f1')}
+ <div class='big' id='h0' style='top:1000px'>{R_(h.get("title", "STOP AUX **100 CRUNCHS**"))}</div>
+ <div class='big' id='h1' style='top:1280px;font-size:90px'>{R_(h.get("sub", "⏱ 5 MIN À LA PLACE"))}</div></div>
+<div class='scn' id='s1'><div class='tag' id='tg1' style='background:{RED}'>ERREUR</div><div class='timer A' id='tm1' style='top:340px;color:#999'>00:00</div>{figsvg('f1')}
  <svg style='position:absolute;left:0;top:0' width='1080' height='1920'><circle id='nk' cx='340' cy='640' r='60' fill='none' stroke='{RED}' stroke-width='10' opacity='0'/></svg>
- <div class='myth' id='my1' style='top:1060px'>« FONDRE LE VENTRE »</div><div class='stamp' id='st1'>MYTHE</div>
- <div class='bt' id='bt1'>LONG · NUQUE ·<br><span class='r'>ZÉRO FONTE LOCALE</span></div></div>
-<div class='scn' id='s2'><div class='tag' id='tg2' style='background:#fff;color:#0b0b0b'>SOLUTION</div><div class='timer A' id='tm2' style='top:300px;font-size:150px'>5:00</div>
- {''.join(f"<div class='card' id='cd{j}'><div class='idx'>{j+1}</div><div class='sec'>45 s</div>{figsvg('fx'+str(j)).replace('class=\'fig\'', 'class=\'fig\' style=\'left:20px;top:80px;width:800px;height:460px\'')}<div class='nm'>{H.escape(n)}</div></div>" for j, n in enumerate(sc[2]['ex']))}
- <div class='rest' id='rest'>REPOS 15 s</div><div class='dots'>{''.join(f"<i id='dt{j}'></i>" for j in range(5))}</div>
- <div class='bt' id='bt2'>45 s EFFORT / <span class='r'>15 s REPOS</span> × 5</div></div>
+ <div class='myth' id='my1' style='top:1060px'>{R_(er.get("myth", "« FONDRE LE VENTRE »"))}</div><div class='stamp' id='st1'>{K.esc(er.get("stamp", "MYTHE"))}</div>
+ <div class='bt' id='bt1'>{R_(er.get("text", "LONG · NUQUE ·<br>**ZÉRO FONTE LOCALE**")).replace("&lt;br&gt;", "<br>")}</div></div>
+<div class='scn' id='s2'><div class='tag' id='tg2' style='background:#fff;color:#0b0b0b'>SOLUTION</div><div class='timer A' id='tm2' style='top:300px;font-size:150px'>{tot}</div>
+ {''.join(f"<div class='card' id='cd{j}'><div class='idx'>{j+1}</div><div class='sec'>{K.esc(eff)}</div>{figsvg('fx'+str(j)).replace('class=\'fig\'', 'class=\'fig\' style=\'left:20px;top:80px;width:800px;height:460px\'')}<div class='nm'>{H.escape(n)}</div></div>" for j, n in enumerate(exn))}
+ <div class='rest' id='rest'>REPOS {K.esc(rst)}</div><div class='dots'>{''.join(f"<i id='dt{j}'></i>" for j in range(NX))}</div>
+ <div class='bt' id='bt2'>{K.esc(eff)} EFFORT / <span class='r'>{K.esc(rst)} REPOS</span> × {NX}</div></div>
 <div class='scn' id='s3'>{body_svg}
- <div class='zl' id='zl0' style='left:740px;top:560px'>AVANT</div><div class='zl' id='zl1' style='left:180px;top:560px'>CÔTÉS</div><div class='zl' id='zl2' style='left:740px;top:680px'>PROFOND</div>
- <div class='badge' id='bg0' style='top:960px;font-size:54px'>DOS NEUTRE</div><div class='badge' id='bg1' style='top:1090px;font-size:54px;background:#fff;color:#0b0b0b'>RESPIRE</div>
- <div class='badge' id='bg2' style='top:1220px;font-size:48px'>TROP DUR ? GENOUX AU SOL</div>
- <div class='big' id='t3' style='top:200px;font-size:84px'>TOUTE LA SANGLE,<br><span class='r'>PAS JUSTE LE HAUT</span></div></div>
-<div class='scn' id='s4'><div class='timer A' id='tm4' style='top:260px;font-size:200px;color:{RED}'>5:00</div><div class='slash' id='sl4'></div><div class='tick' id='tk4'>{'ZÉRO SALLE · ZÉRO EXCUSE · ' * 6}</div>
- <div class='big' id='h4' style='top:560px;font-size:150px'>ON LE FAIT<br><span class='r'>CE SOIR ?</span></div>
- <div class='cl' id='c40' style='top:900px'>🔖 ENREGISTRE LE CIRCUIT</div><div class='cl' id='c41' style='top:1000px'>💬 T'AS TENU 5 MIN ?</div></div>
+ <div class='zl' id='zl0' style='left:740px;top:560px'>{K.esc(zones[0])}</div><div class='zl' id='zl1' style='left:{max(40, 360 - 34 * len(zones[1]))}px;top:560px'>{K.esc(zones[1])}</div><div class='zl' id='zl2' style='left:740px;top:680px'>{K.esc(zones[2])}</div>
+ <div class='badge' id='bg0' style='top:960px;font-size:54px'>{K.esc(badges[0])}</div><div class='badge' id='bg1' style='top:1090px;font-size:54px;background:#fff;color:#0b0b0b'>{K.esc(badges[1])}</div>
+ <div class='badge' id='bg2' style='top:1220px;font-size:48px'>{K.esc(badges[2])}</div>
+ <div class='big' id='t3' style='top:200px;font-size:84px'>{R_(po.get("title", "TOUTE LA SANGLE,<br>**PAS JUSTE LE HAUT**")).replace("&lt;br&gt;", "<br>")}</div></div>
+<div class='scn' id='s4'><div class='timer A' id='tm4' style='top:260px;font-size:200px;color:{RED}'>{tot}</div><div class='slash' id='sl4'></div><div class='tick' id='tk4'>{K.esc(ct.get("ticker", "ZÉRO SALLE · ZÉRO EXCUSE")) + (" · " + K.esc(ct.get("ticker", "ZÉRO SALLE · ZÉRO EXCUSE"))) * 5}</div>
+ <div class='big' id='h4' style='top:560px;font-size:150px'>{R_(ct.get("title", "ON LE FAIT<br>**CE SOIR ?**")).replace("&lt;br&gt;", "<br>")}</div>
+ <div class='cl' id='c40' style='top:900px'>{K.esc(ctas[0])}</div><div class='cl' id='c41' style='top:1000px'>{K.esc(ctas[-1])}</div></div>
 <div class='scanl' id='scl'></div><div class='flash' id='fl'></div>
 <div class='capw'>{cap_html}</div><div class='bar' id='bar'></div>
 <script>
-const EV={json.dumps(ev, ensure_ascii=False)}; const D={total}; const SC={json.dumps(S, ensure_ascii=False)}; const P={json.dumps(POSES)};
+const EV={json.dumps(ev, ensure_ascii=False)}; const D={total}; const SC={json.dumps(S, ensure_ascii=False)}; const P={json.dumps(POSES)}; const NX={NX}, EXP={json.dumps(exp)}, HP={json.dumps(hpose)}, EP={json.dumps(epose)}, CNT={int(h.get("count", 100))}, TS={tsec}, NECK={'true' if er.get('neck', epose == 'crunch') else 'false'};
 const c=x=>Math.max(0,Math.min(1,x)), eo=x=>1-Math.pow(1-c(x),3), back=x=>{{x=c(x);const s=1.7;return 1+(s+1)*Math.pow(x-1,3)+s*Math.pow(x-1,2);}};
 const $=id=>document.getElementById(id);
 const SEG=[['N','P'],['N','E1'],['E1','W1'],['N','E2'],['E2','W2'],['P','K1'],['K1','F1'],['P','K2'],['K2','F2']];
@@ -666,26 +696,26 @@ window.render=function(t){{
  for(let i=0;i<SC.length;i++)$('s'+i).style.opacity=i==k?1:0;
  const cut=u<.12&&k>0;$('scl').style.opacity=(k==1)?.9:(cut?.6:0);
  $('fl').style.opacity=0;document.body.style.filter='none';
- if(k==0){{const n=Math.min(100,Math.floor(Math.pow(c(u/1.5),1.6)*100));$('cnt0').textContent=n;
-   const g=u>1.5&&u<1.85;drawFig('f0','crunch',.5+.5*Math.sin(u*(6+u*10)),g);$('f0').style.transform=g?`translateX(${{Math.sin(u*120)*16}}px)`:'none';
+ if(k==0){{const n=Math.min(CNT,Math.floor(Math.pow(c(u/1.5),1.6)*CNT));$('cnt0').textContent=n;
+   const g=u>1.5&&u<1.85;drawFig('f0',HP,.5+.5*Math.sin(u*(6+u*10)),g);$('f0').style.transform=g?`translateX(${{Math.sin(u*120)*16}}px)`:'none';
    slam($('x0'),1.7,u,2.4);$('h0').style.opacity=1;gl($('h0'),g,u);rise($('h1'),2.2,u);
    if(g)$('fl').style.opacity=.15;}}
  if(k==1){{document.body.style.filter='grayscale(1) contrast(1.1)';$('tg1').style.opacity=Math.floor(u*3)%2?1:.3;$('tg1').style.filter='none';
-   const sec=Math.floor(u*9);$('tm1').textContent=String(Math.floor(sec/60)).padStart(2,'0')+':'+String(sec%60).padStart(2,'0')+' / 20:00';
-   const g=(u>.1&&u<.35)||(u>3.2&&u<3.45);drawFig('f1','crunch',.5+.5*Math.sin(u*2.4),g,u>2.2?(.5+.5*Math.sin(u*8)):0);
+   const sec=Math.floor(u*9);$('tm1').textContent=String(Math.floor(sec/60)).padStart(2,'0')+':'+String(sec%60).padStart(2,'0');
+   const g=(u>.1&&u<.35)||(u>3.2&&u<3.45);drawFig('f1',EP,.5+.5*Math.sin(u*2.4),g,(NECK&&u>2.2)?(.5+.5*Math.sin(u*8)):0);
    
    const ms=d*.68;$('my1').style.opacity=u>ms-.8?1:0;slam($('st1'),ms,u,2.6);rise($('bt1'),1.0,u);}}
- if(k==2){{const T0=1.3,step=(d-1.6)/5;slam($('tg2'),0,u,1.6);const rem=Math.max(0,300-Math.floor(c((u-T0)/(d-T0))*15));$('tm2').textContent=Math.floor(rem/60)+':'+String(rem%60).padStart(2,'0');
-   let cur=-1;for(let j=0;j<5;j++)if(u>=T0+step*j)cur=j;
-   for(let j=0;j<5;j++){{const cd=$('cd'+j);const on=j==cur;const kk=back((u-T0-step*j)/.3);cd.style.opacity=on?1:0;cd.style.transform=`translateX(${{(1-kk)*700}}px) rotate(${{(1-kk)*6}}deg)`;
-     const pose=['planche','deadbug','lateral','climber','creuse'][j];const sp=pose=='climber'?5:2.2;drawFig('fx'+j,pose,.5+.5*Math.sin(u*sp),false);
+ if(k==2){{const T0=1.3,step=(d-1.6)/NX;slam($('tg2'),0,u,1.6);const rem=Math.max(0,TS-Math.floor(c((u-T0)/(d-T0))*15));$('tm2').textContent=Math.floor(rem/60)+':'+String(rem%60).padStart(2,'0');
+   let cur=-1;for(let j=0;j<NX;j++)if(u>=T0+step*j)cur=j;
+   for(let j=0;j<NX;j++){{const cd=$('cd'+j);const on=j==cur;const kk=back((u-T0-step*j)/.3);cd.style.opacity=on?1:0;cd.style.transform=`translateX(${{(1-kk)*700}}px) rotate(${{(1-kk)*6}}deg)`;
+     const pose=EXP[j];const sp=pose=='climber'?5:2.2;drawFig('fx'+j,pose,.5+.5*Math.sin(u*sp),false);
      $('dt'+j).style.background=j<=cur?'{RED}':'transparent';}}
-   const r=$('rest');let ro=0;for(let j=1;j<5;j++){{const x=u-(T0+step*j);if(x>-.35&&x<0)ro=1;}}r.style.opacity=ro;r.style.transform=`translateX(${{ro?0:-1200}}px)`;
+   const r=$('rest');let ro=0;for(let j=1;j<NX;j++){{const x=u-(T0+step*j);if(x>-.35&&x<0)ro=1;}}r.style.opacity=ro;r.style.transform=`translateX(${{ro?0:-1200}}px)`;
    rise($('bt2'),.6,u);}}
  if(k==3){{rise($('t3'),.0,u);const zs=[['z0'],['z1a','z1b'],['z2']];
    for(let j=0;j<3;j++){{const on=u>=.5+.8*j;for(const id of zs[j])$(id).setAttribute('opacity',on?(.55+.35*Math.sin(u*5+j)):0);$('zl'+j).style.opacity=on?1:0;}}
    for(let j=0;j<3;j++){{const b=$('bg'+j);const kk=back((u-3.6-.7*j)/.45);b.style.opacity=u>=3.6+.7*j?1:0;b.style.transform=`translateY(${{(1-kk)*-300}}px) rotate(${{(j-1)*3}}deg)`;}}}}
- if(k==4){{const rem=Math.max(0,300-Math.floor(c((u-.1)/1.4)*300));$('tm4').textContent=Math.floor(rem/60)+':'+String(rem%60).padStart(2,'0');
+ if(k==4){{const rem=Math.max(0,TS-Math.floor(c((u-.1)/1.4)*TS));$('tm4').textContent=Math.floor(rem/60)+':'+String(rem%60).padStart(2,'0');
    $('tm4').style.opacity=u<1.6?1:0;if(u>1.5&&u<1.75)$('fl').style.opacity=.8*(1-(u-1.5)/.25);
    slam($('h4'),1.6,u,2.2);const ks=eo((u-2.2)/.35);$('sl4').style.transform=`rotate(-14deg) translateX(${{(1-ks)*-2400}}px)`;
    $('tk4').style.transform=`rotate(-14deg) translateX(${{(1-ks)*2400-((u*160)%600)}}px)`;slam($('c40'),2.9,u,1.8);slam($('c41'),3.4,u,1.8);}}
@@ -709,7 +739,7 @@ def nightchat_page(spec, theme, starts, durs, caps, total):
             continue
         if ty == "msgs":
             inner = f"<div class='typ' id='ty{k}_0'><i></i><i></i><i></i></div>{B(k,0,s['bubbles'][0])}<div class='typ' id='ty{k}_1'><i></i><i></i><i></i></div>{B(k,1,s['bubbles'][1])}"
-            inner += f"<div class='ghost' id='gh{k}'><div class='gb'>Tu es dispo ?</div><div class='gv'>{H.escape(s['ghost'])}</div></div>"
+            inner += f"<div class='ghost' id='gh{k}'><div class='gb'>{H.escape(s.get('sent', 'Tu es dispo ?'))}</div><div class='gv'>{H.escape(s['ghost'])}</div></div>"
             ev += [{"k": "pop", "at": a + 1.0}, {"k": "pop", "at": a + 4.2}]
         elif ty == "msgs2":
             for j, t in enumerate(s["bubbles"]):
@@ -860,32 +890,32 @@ h1{font:800 100px/1.1 Inter;color:#1f1e1b;margin-top:20px}
 .hd{position:absolute;left:44px;right:44px;top:120px;display:flex;justify-content:space-between;color:#e9c46a;font:700 30px 'JetBrains Mono'}
 </style></head><body>
 <div class='hd'><span>@__HANDLE__</span><span id='pct'>0/5</span></div>
-<div class='page'><div class='crumb'>📄 Revenus Malins / Méthode « premiers 100 € »</div>
-<div class='blk' id='k0'><div class='ico'>💶</div><h1>Tes premiers <span class='mk' id='mk0'>100 €</span> en ligne ce week-end</h1>
- <div class='strike' id='st0'>Revenus passifs garantis<i id='sti'></i></div>
- <div class='call' id='cl0'><span class='ci'>⚠️</span><span>Pas de formule magique. Une méthode honnête, de A à Z.</span></div></div>
+<div class='page'><div class='crumb'>📄 __CRUMB__</div>
+<div class='blk' id='k0'><div class='ico'>__H_ICO__</div><h1>__H_TITLE__</h1>
+ <div class='strike' id='st0'>__H_STRIKE__<i id='sti'></i></div>
+ <div class='call' id='cl0'><span class='ci'>⚠️</span><span>__H_CALL__</span></div></div>
 <div class='blk' id='k1'>
- <div class='row' id='r10'><div class='cb' id='cb1'></div><div>Étape 1 — Choisis une compétence que tu as déjà</div></div>
- <div class='tags'><span class='tag' id='tg0' style='background:#e3f0e8;color:#1c6b3a'>Relecture</span><span class='tag' id='tg1' style='background:#e8ecf8;color:#2b4fa8'>Montage</span><span class='tag' id='tg2' style='background:#fbe9f1;color:#a3326b'>Canva</span><span class='tag' id='tg3' style='background:#fdf1dd;color:#9a5b00'>Cours</span></div>
- <div class='row' id='r11'><div class='cb' id='cb2'></div><div>Étape 2 — Une offre simple, à prix fixe</div></div>
- <div class='quote' id='q1'>« Je relis ton CV pour <span class='mk' id='mk1'>15 €</span> »</div></div>
+ <div class='row' id='r10'><div class='cb' id='cb1'></div><div>__S1__</div></div>
+ <div class='tags'>__TAGS__</div>
+ <div class='row' id='r11'><div class='cb' id='cb2'></div><div>__S2__</div></div>
+ <div class='quote' id='q1'>__QUOTE__</div></div>
 <div class='blk' id='k2'>
- <div class='row' id='r20'><div class='cb' id='cb3'></div><div>Étape 3 — Propose-la là où on cherche déjà</div></div>
- <div class='li' id='l0'>👥 Ton entourage</div><div class='li' id='l1'>🏘️ Les groupes de ton quartier</div><div class='li' id='l2'>🧰 Les plateformes de services</div>
+ <div class='row' id='r20'><div class='cb' id='cb3'></div><div>__S3__</div></div>
+ __ITEMS__
  <svg class='cur' id='mouse' viewBox='0 0 24 24'><path d='M3 2 L3 20 L8 15 L11 22 L14 21 L11 14 L18 14 Z' fill='#111' stroke='#fff' stroke-width='1.2'/></svg></div>
 <div class='blk' id='k3'>
- <div class='row' id='r30'><div class='cb' id='cb4'></div><div>Étape 4 — Livre vite, demande un avis ⭐</div></div>
- <div class='prog' id='pg'><div class='pl'><span>🎯 Objectif 100 €</span><span id='eur'>0 €</span></div><div class='pbar'>__SEGS__</div><div class='sub' style='opacity:1;margin-left:0'>≈ 7 ventes × 15 €</div></div>
- <div class='row' id='r31'><div class='cb' id='cb5'></div><div>Étape 5 — Déclare ces revenus 🧾</div></div>
- <div class='call' id='cl3'><span class='ci'>🔗</span><span>Infos officielles : autoentrepreneur.urssaf.fr · impots.gouv.fr</span></div></div>
-<div class='blk' id='k4'><div class='ico'>✅</div><div class='big' style='margin-top:20px'>Méthode <span class='mk' id='mk4'>complète.</span></div>
- <div class='call' id='c40' style='margin-top:60px'><span class='ci'>🔖</span><span>Enregistre la méthode</span></div>
- <div class='call' id='c41'><span class='ci'>💬</span><span>Quelle compétence tu vas proposer ?</span></div></div>
-<div class='plus' id='plus'>+15 €</div>
+ <div class='row' id='r30'><div class='cb' id='cb4'></div><div>__S4__</div></div>
+ <div class='prog' id='pg'><div class='pl'><span>🎯 __PG_LABEL__</span><span id='eur'>0</span></div><div class='pbar'>__SEGS__</div><div class='sub' style='opacity:1;margin-left:0'>__PG_NOTE__</div></div>
+ <div class='row' id='r31'><div class='cb' id='cb5'></div><div>__S5__</div></div>
+ <div class='call' id='cl3'><span class='ci'>🔗</span><span>__CALL3__</span></div></div>
+<div class='blk' id='k4'><div class='ico'>✅</div><div class='big' style='margin-top:20px'>__C_TITLE__</div>
+ <div class='call' id='c40' style='margin-top:60px'><span class='ci'>🔖</span><span>__C0__</span></div>
+ <div class='call' id='c41'><span class='ci'>💬</span><span>__C1__</span></div></div>
+<div class='plus' id='plus'>__PLUS__</div>
 </div>
 <div class='capw'>__CAPS__</div><div class='bar' id='bar'></div>
 <script>
-const EV=__EV__; const D=__D__; const SC=__SC__;
+const EV=__EV__; const D=__D__; const SC=__SC__; const PG=__PG__;
 const c=x=>Math.max(0,Math.min(1,x)), eo=x=>1-Math.pow(1-c(x),3), back=x=>{x=c(x);const s=1.6;return 1+(s+1)*Math.pow(x-1,3)+s*Math.pow(x-1,2);};
 const $=id=>document.getElementById(id);
 function inn(id,t0,u,dy=30){const e=$(id);if(!e)return;const k=eo((u-t0)/.35);e.style.opacity=u>=t0?k:0;e.style.transform=`translateY(${(1-k)*dy}px)`;}
@@ -904,8 +934,8 @@ window.render=function(t){
    const m=$('mouse');let tg=-1;T.forEach((x,j)=>{if(u>=x+.3)tg=j;});m.style.opacity=u>1.4?1:0;
    T.forEach((x,j)=>$('l'+j).style.background=(tg==j)?'#efe9d8':'transparent');
    if(tg>=0){const L=$('l'+tg);m.style.left=(L.offsetLeft+L.offsetWidth-60)+'px';m.style.top=(L.offsetTop+30)+'px';}chk('cb3',u>d-.6);}
- if(k==3){inn('r30',.2,u);inn('pg',1.2,u);let n=0;for(let j=0;j<7;j++){const on=u>=2.0+.42*j;$('sg'+j).style.background=on?'#0f7b6c':'transparent';if(on)n=j+1;}
-   $('eur').textContent=(n*15)+' €';const p=$('plus');const lt=2.0+.42*(n-1);p.style.opacity=n>0&&u-lt<.4?1-(u-lt)/.4:0;p.style.left=(150+n*110)+'px';p.style.top=(700-(u-lt)*140)+'px';
+ if(k==3){inn('r30',.2,u);inn('pg',1.2,u);let n=0;for(let j=0;j<PG.n;j++){const on=u>=2.0+.42*j;$('sg'+j).style.background=on?'#0f7b6c':'transparent';if(on)n=j+1;}
+   $('eur').textContent=PG.pre+(n*PG.v)+PG.suf;const p=$('plus');const lt=2.0+.42*(n-1);p.style.opacity=n>0&&u-lt<.4?1-(u-lt)/.4:0;p.style.left=(150+n*110)+'px';p.style.top=(700-(u-lt)*140)+'px';
    chk('cb4',u>5.2);inn('r31',5.4,u);inn('cl3',6.4,u);chk('cb5',u>d-.6);}
  if(k==4){mark('mk4',.4,u);inn('c40',1.2,u);inn('c41',1.8,u);}
  for(const cp of document.querySelectorAll('.cap')){const a=+cp.dataset.a,b=+cp.dataset.b;cp.style.display=(t>=a&&t<b)?'inline-block':'none';
@@ -919,13 +949,42 @@ def notion_page(spec, theme, starts, durs, caps, total):
     ev = [{"k": "type", "at": a[0], "end": a[0] + .3, "text": "x" * 6}, {"k": "whoosh", "at": a[0] + .3}, {"k": "click", "at": a[0] + 1.5}, {"k": "pop", "at": a[0] + 2.3}]
     ev += [{"k": "pop", "at": a[1] + 2.0 + .35 * j} for j in range(4)] + [{"k": "click", "at": a[1] + 4.2}, {"k": "whoosh", "at": a[1] + 6.6}]
     ev += [{"k": "click", "at": a[2] + x + .3} for x in (1.6, 2.6, 3.6)]
-    ev += [{"k": "sparkle" if j == 6 else "pop", "at": a[3] + 2.0 + .42 * j} for j in range(7)] + [{"k": "click", "at": a[3] + 5.2}]
+    NP = int(sc[3].get("progress", {}).get("n", 7))
+    ev += [{"k": "sparkle" if j == NP - 1 else "pop", "at": a[3] + 2.0 + .42 * j} for j in range(NP)] + [{"k": "click", "at": a[3] + 5.2}]
     ev += [{"k": "whoosh", "at": a[4] + .4}, {"k": "pop", "at": a[4] + 1.2}, {"k": "pop", "at": a[4] + 1.8}]
     cap_html = "".join(
         f"<span class='cap' data-a='{c[0][1]:.3f}' data-b='{c_next:.3f}'>" + " ".join(f"<span data-w='{t:.3f}'>{H.escape(w)}</span>" for w, t in c) + "</span>"
         for c, c_next in caps)
-    page = NOTION_TPL.replace("__EV__", json.dumps(ev)).replace("__D__", str(total)).replace("__SC__", json.dumps(S))
-    page = page.replace("__CAPS__", cap_html).replace("__HANDLE__", H.escape(spec.get("handle", ""))).replace("__SEGS__", "".join(f"<i id='sg{j}'></i>" for j in range(7)))
+    h, s12, s3, s45, ct = sc
+    def mk(txt, mark, id_):
+        txt = txt.replace(" €", "\u00a0€"); mark = (mark or "").replace(" €", "\u00a0€")
+        e = K.esc(txt)
+        if mark and K.esc(mark) in e:
+            e = e.replace(K.esc(mark), f"<span class='mk' id='{id_}'>{K.esc(mark)}</span>", 1)
+        else:
+            e += f"<span class='mk' id='{id_}'></span>"
+        return e
+    TAGC = [("#e3f0e8", "#1c6b3a"), ("#e8ecf8", "#2b4fa8"), ("#fbe9f1", "#a3326b"), ("#fdf1dd", "#9a5b00")]
+    tg = s12.get("tags", [])[:4]
+    tags = "".join(f"<span class='tag' id='tg{q}' style='background:{TAGC[q][0]};color:{TAGC[q][1]}'>{K.esc(x)}</span>" for q, x in enumerate(tg))
+    tags += "".join(f"<span id='tg{q}'></span>" for q in range(len(tg), 4))
+    its = ((s3.get("items") or []) + ["", "", ""])[:3]
+    items = "".join(f"<div class='li' id='l{q}'>{K.esc(x)}</div>" for q, x in enumerate(its))
+    pg = s45.get("progress", {}); PG = {"n": int(pg.get("n", 7)), "v": pg.get("step", 15), "pre": pg.get("prefix", ""), "suf": pg.get("suffix", "\u00a0€")}
+    st = s12.get("steps", []) + s3.get("steps", []) + s45.get("steps", [])
+    ctas = ct.get("ctas", ["Enregistre la méthode", "Une question ? Commente"])
+    R = {"__CRUMB__": K.esc(spec.get("crumb", spec.get("titre", "Méthode"))), "__H_ICO__": h.get("icon", "📌"), "__H_TITLE__": mk(h.get("title", ""), h.get("mark", ""), "mk0"),
+         "__H_STRIKE__": K.esc(h.get("strike", "")), "__H_CALL__": K.esc(h.get("callout", "")), "__TAGS__": tags, "__QUOTE__": mk(s12.get("quote", ""), s12.get("quote_mark", ""), "mk1"),
+         "__ITEMS__": items, "__PG_LABEL__": K.esc(pg.get("label", "")), "__PG_NOTE__": K.esc(pg.get("note", "")), "__CALL3__": K.esc(s45.get("callout", "")),
+         "__C_TITLE__": mk(ct.get("title", "Méthode complète."), ct.get("mark", ""), "mk4"), "__C0__": K.esc(ctas[0]), "__C1__": K.esc(ctas[-1]),
+         "__PLUS__": "+" + K.esc(PG["pre"] + str(PG["v"]) + PG["suf"])}
+    for q in range(5):
+        R[f"__S{q+1}__"] = K.esc(st[q]) if q < len(st) else ""
+    page = NOTION_TPL
+    for kk, v in R.items():
+        page = page.replace(kk, v)
+    page = page.replace("__EV__", json.dumps(ev)).replace("__D__", str(total)).replace("__SC__", json.dumps(S)).replace("__PG__", json.dumps(PG, ensure_ascii=False))
+    page = page.replace("__CAPS__", cap_html).replace("__HANDLE__", H.escape(spec.get("handle", ""))).replace("__SEGS__", "".join(f"<i id='sg{j}'></i>" for j in range(PG["n"])))
     return page.replace("<style>", "<style>" + K._font_faces(["JetBrains Mono"]), 1)
 
 MANIF3D_TPL = r"""<!doctype html><html><head><meta charset='utf-8'><style>
@@ -977,36 +1036,36 @@ canvas{position:absolute;left:0;top:0;filter:grayscale(.85) contrast(1.08);opaci
 .cap .on{background:#fff;color:#0a0a0a}
 </style></head><body>
 <canvas id='cv' width='1080' height='1920'></canvas>
-<div class='hd'><span>@__HANDLE__</span><span><b id='dd'>JOUR 1</b> / 30</span></div>
+<div class='hd'><span>@__HANDLE__</span><span><b id='dd'>__CL__ 1</b> / __CMAX__</span></div>
 <div class='blk' id='k0'>
- <div class='n30' id='n30'>30</div><div class='jours' id='jours'>JOURS</div>
- <div class='l1' id='l1'><span class='inv'>pour reprendre le contrôle</span><br>de ton cerveau.</div>
- <div class='l2' id='l2'>// plan brutal. mais simple.</div></div>
+ <div class='n30' id='n30'>__HBIG__</div><div class='jours' id='jours'>__HUNIT__</div>
+ <div class='l1' id='l1'>__HLINE__</div>
+ <div class='l2' id='l2'>// __HSUB__</div></div>
 <div class='blk' id='k1'>
- <div class='lab a' style='top:__TA__px'>AVANT · J1</div>
- <div class='lab b' style='top:__BA__px'>OBJECTIF · J30</div>
+ <div class='lab a' style='top:__TA__px'>__LTOP__</div>
+ <div class='lab b' style='top:__BA__px'>__LBOT__</div>
  <div class='div' style='top:__DV__px'></div>
- <div class='notif' id='nt0' style='top:__N0__px'>🔔 6 notifications</div>
- <div class='notif' id='nt1' style='top:__N1__px'>📱 Écran : 4 h 12 aujourd'hui</div>
- <div class='notif' id='nt2' style='top:__N2__px'>🔁 Encore 5 minutes…</div>
+ <div class='notif' id='nt0' style='top:__N0__px'>__NT0__</div>
+ <div class='notif' id='nt1' style='top:__N1__px'>__NT1__</div>
+ <div class='notif' id='nt2' style='top:__N2__px'>__NT2__</div>
  <div class='reps' id='reps' style='top:__RP__px'>×0</div>
  <div class='dim' id='dim'></div>
- <div class='card' id='card'><div class='ck'>// précision</div>
-  <div class='c1'>≠ « vider » sa dopamine<i id='cst'></i></div>
-  <div class='c2' id='c2'>= <span>réduire les plaisirs faciles</span></div></div></div>
+ <div class='card' id='card'><div class='ck'>// __CK__</div>
+  <div class='c1'>≠ __CNO__<i id='cst'></i></div>
+  <div class='c2' id='c2'>= <span>__CYES__</span></div></div></div>
 <div class='blk' id='kw'>
  <div class='tl'>__SEGS__</div>
- <div class='day' id='day'>J1<small id='dsm'>/ 30</small></div>
+ <div class='day' id='day'>__CS__1<small id='dsm'>/ __CMAX__</small></div>
  <div class='wk' id='w0' style='top:620px'><div class='wt' id='w0t'></div><div class='wi' id='w0a'></div><div class='wi' id='w0b'></div></div>
  <div class='wk' id='w1' style='top:1150px'><div class='wt' id='w1t'></div><div class='wi' id='w1a'></div><div class='wi' id='w1b'></div></div></div>
 <div class='blk' id='k4'>
- <div class='cta30'><div class='j' id='cj'>JOUR</div><div class='n' id='cn'>28</div></div>
- <div class='obj' id='obj'>Objectif : que l'effort redevienne <u id='ou'>normal.</u></div>
- <div class='pill w' id='p0' style='top:1320px'>🔖 ENREGISTRE LE PLAN</div>
- <div class='pill k' id='p1' style='top:1480px'>💬 COMMENTE « JOUR 1 »</div></div>
+ <div class='cta30'><div class='j' id='cj'>__CKICK__</div><div class='n' id='cn'>__CBIG__</div></div>
+ <div class='obj' id='obj'>__COBJ__</div>
+ <div class='pill w' id='p0' style='top:1320px'>__P0__</div>
+ <div class='pill k' id='p1' style='top:1480px'>__P1__</div></div>
 <div class='capw'>__CAPS__</div><div class='bar' id='bar'></div>
 <script>
-const EV=__EV__; const D=__D__; const SC=__SC__; const WK=__WK__; const TOP=__TOP__, BOT=__BOT__;
+const EV=__EV__; const D=__D__; const SC=__SC__; const WK=__WK__; const CF=__CF__; const TOP=__TOP__, BOT=__BOT__;
 const c=x=>Math.max(0,Math.min(1,x)), eo=x=>1-Math.pow(1-c(x),3), back=x=>{x=c(x);const s=1.7;return 1+(s+1)*Math.pow(x-1,3)+s*Math.pow(x-1,2);};
 const $=id=>document.getElementById(id);
 function inn(id,t0,u,dy=40){const e=$(id);if(!e)return;const k=eo((u-t0)/.35);e.style.opacity=u>=t0?k:0;e.style.transform=`translateY(${(1-k)*dy}px)`;}
@@ -1113,12 +1172,12 @@ window.render=function(t){
      const e=$('w'+j);const kk=back((u-w.at)/.4);e.style.opacity=u>=w.at?c((u-w.at)/.12):0;e.style.transform=`translateX(${(1-kk)*-140}px) rotate(${(1-kk)*-3}deg)`;}
    $('w1').style.top=($('w0').offsetTop+$('w0').offsetHeight+56)+'px';
    for(let s=0;s<4;s++){let f=0;if(s<base)f=1;else if(s<base+2){const w=ws[s-base];f=eo((u-w.at)/.6);}
-     $('sg'+s).style.width=(f*100)+'%';$('tx'+s).className='tx'+(f>0?' on':'');day=Math.max(day,f>0?Math.round(1+(s+f)*7.25):day);}
-   day=Math.min(29,day);$('day').firstChild.textContent='J'+day;}
- if(k==4){const n=u<.25?28:u<.5?29:30;$('cn').textContent=n;slam('cn',.5,u,1.9);inn('cj',.1,u,20);inn('obj',1.0,u);$('ou').style.backgroundSize=(eo((u-2.6)/.5)*100)+'% 10px';
-   const pp=(id,x)=>{const e=$(id);const kk=back((u-x)/.35);e.style.opacity=u>=x?c((u-x)/.1):0;e.style.transform=`scale(${.6+.4*kk})`;};pp('p0',WK.p0);pp('p1',WK.p1);day=30;}
+     $('sg'+s).style.width=(f*100)+'%';$('tx'+s).className='tx'+(f>0?' on':'');day=Math.max(day,f>0?Math.round(1+(s+f)*(CF.max-1)/4):day);}
+   day=Math.min(CF.max-1,day);$('day').firstChild.textContent=CF.short+day;}
+ if(k==4){const n=CF.num?(u<.25?CF.big-2:u<.5?CF.big-1:CF.big):CF.bigs;$('cn').textContent=n;slam('cn',.5,u,1.9);inn('cj',.1,u,20);inn('obj',1.0,u);if($('ou'))$('ou').style.backgroundSize=(eo((u-2.6)/.5)*100)+'% 10px';
+   const pp=(id,x)=>{const e=$(id);const kk=back((u-x)/.35);e.style.opacity=u>=x?c((u-x)/.1):0;e.style.transform=`scale(${.6+.4*kk})`;};pp('p0',WK.p0);pp('p1',WK.p1);day=CF.max;}
  if(k==1)day=1;
- $('dd').textContent='JOUR '+day;
+ $('dd').textContent=CF.label+' '+day;
  for(const cp of document.querySelectorAll('.cap')){const a=+cp.dataset.a,b=+cp.dataset.b;cp.style.display=(t>=a&&t<b)?'inline-block':'none';
    for(const w of cp.querySelectorAll('[data-w]'))w.className=(t>=+w.dataset.w)?'on':'';}
 };render(0);
@@ -1131,14 +1190,15 @@ def manifeste3d_page(spec, theme, starts, durs, caps, total):
     def wt(pref, t0, t1, nth=0, dflt=None):
         hits = [t for w, t in words if t0 <= t < t1 and w.lower().strip("«»:,.").startswith(pref)]
         return hits[nth] if len(hits) > nth else dflt
-    card = (wt("précision", a[1], a[1] + durs[1], 0, a[1] + durs[1] * .62) - a[1]) - .1
+    cw = sc[1].get("card_word", "précision").lower()
+    card = (wt(cw, a[1], a[1] + durs[1], 0, a[1] + durs[1] * .62) - a[1]) - .1
     S = [{"a": starts[k], "b": starts[k] + durs[k]} for k in range(len(sc))]
     S[1]["card"] = card
     WK = {"card": card}
     for k in (2, 3):
         ws = sc[k]["weeks"]; out = []
         for j, w in enumerate(ws):
-            at = (wt("semaine", a[k], a[k] + durs[k], j, a[k] + (0.2 if j == 0 else durs[k] * .5)) - a[k])
+            at = (wt(sc[k].get("word", "semaine").lower(), a[k], a[k] + durs[k], j, a[k] + (0.2 if j == 0 else durs[k] * .5)) - a[k])
             out.append({"t": w[0], "a": w[1], "b": w[2], "at": max(.15, at - .15)})
         WK[k] = out
     WK["p0"] = (wt("enregistre", a[4], total, 0, a[4] + 3.5) - a[4]) - .1
@@ -1154,12 +1214,27 @@ def manifeste3d_page(spec, theme, starts, durs, caps, total):
     cap_html = "".join(
         f"<span class='cap' data-a='{c[0][1]:.3f}' data-b='{c_next:.3f}'>" + " ".join(f"<span data-w='{t:.3f}'>{H.escape(w)}</span>" for w, t in c) + "</span>"
         for c, c_next in caps)
-    segs = "".join(f"<div><div class='sg'><i id='sg{s}'></i></div><div class='tx' id='tx{s}'>S{s+1}</div></div>" for s in range(4))
     three = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "three.min.js")).read()
     rep = {"__EV__": json.dumps(ev), "__D__": str(total), "__SC__": json.dumps(S), "__WK__": json.dumps(WK, ensure_ascii=False),
            "__TOP__": json.dumps(TOP), "__BOT__": json.dumps(BOT), "__TA__": str(TOP[0] + 30), "__BA__": str(BOT[0] + 30), "__DV__": str(TOP[1] + 12),
            "__N0__": str(TOP[0] + 400), "__N1__": str(TOP[0] + 510), "__N2__": str(TOP[0] + 620), "__RP__": str(BOT[0] + 20),
-           "__HANDLE__": H.escape(spec.get("handle", "")), "__SEGS__": segs, "__CAPS__": cap_html}
+           "__HANDLE__": H.escape(spec.get("handle", "")), "__CAPS__": cap_html}
+    h, av, ct = sc[0], sc[1], sc[-1]
+    cnt = spec.get("counter", {}); cmax = int(cnt.get("max", 30)); clab = cnt.get("label", "JOUR"); csh = cnt.get("short", "J")
+    def inv(x):  # **texte** = bandeau blanc
+        q = K.esc(x).split("**"); return "".join(f"<span class='inv'>{z}</span>" if n % 2 else z for n, z in enumerate(q)).replace("&lt;br&gt;", "<br>")
+    def und(x):
+        q = K.esc(x).split("**"); return "".join(f"<u id='ou'>{z}</u>" if n % 2 else z for n, z in enumerate(q))
+    big = str(ct.get("big", cmax)); nts = (av.get("notifs") or ["", "", ""]) + ["", "", ""]
+    tl = (spec.get("timeline") or ["S1", "S2", "S3", "S4"])[:4]
+    segs = "".join(f"<div><div class='sg'><i id='sg{q}'></i></div><div class='tx' id='tx{q}'>{K.esc(x)}</div></div>" for q, x in enumerate(tl))
+    rep["__SEGS__"] = segs
+    rep.update({"__CL__": K.esc(clab), "__CMAX__": str(cmax), "__CS__": K.esc(csh), "__HBIG__": K.esc(str(h.get("big", cmax))), "__HUNIT__": K.esc(h.get("unit", "JOURS")),
+        "__HLINE__": inv(h.get("line", "")), "__HSUB__": K.esc(h.get("sub", "")), "__LTOP__": K.esc(av.get("top", "AVANT")), "__LBOT__": K.esc(av.get("bottom", "APRÈS")),
+        "__NT0__": K.esc(nts[0]), "__NT1__": K.esc(nts[1]), "__NT2__": K.esc(nts[2]), "__CK__": K.esc(av.get("kicker", "précision")),
+        "__CNO__": K.esc(av.get("no", "")), "__CYES__": K.esc(av.get("yes", "")), "__CKICK__": K.esc(ct.get("kicker", clab)), "__CBIG__": K.esc(big),
+        "__COBJ__": und(ct.get("obj", "")), "__P0__": K.esc((ct.get("ctas") or ["🔖 ENREGISTRE"])[0]), "__P1__": K.esc((ct.get("ctas") or ["", "💬 COMMENTE"])[-1]),
+        "__CF__": json.dumps({"max": cmax, "label": clab, "short": csh, "num": big.isdigit(), "big": int(big) if big.isdigit() else 0, "bigs": big}, ensure_ascii=False)})
     page = MANIF3D_TPL
     for kk, v in rep.items():
         page = page.replace(kk, v)

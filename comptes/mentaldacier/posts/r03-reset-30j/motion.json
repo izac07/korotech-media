@@ -6,11 +6,26 @@
  "scenes": [
   {
    "type": "hook",
-   "vo": "Trente jours pour reprendre le contrôle de ton cerveau. Plan brutal, mais simple."
+   "vo": "Trente jours pour reprendre le contrôle de ton cerveau. Plan brutal, mais simple.",
+   "big": "30",
+   "unit": "JOURS",
+   "line": "**pour reprendre le contrôle**<br>de ton cerveau.",
+   "sub": "plan brutal. mais simple."
   },
   {
    "type": "avantapres",
-   "vo": "Avant : le téléphone au réveil, du scroll toutes les cinq minutes, et l'impression que tout effort est insupportable. Précision : on ne vide pas sa dopamine. On réduit les plaisirs faciles."
+   "vo": "Avant : le téléphone au réveil, du scroll toutes les cinq minutes, et l'impression que tout effort est insupportable. Précision : on ne vide pas sa dopamine. On réduit les plaisirs faciles.",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J30",
+   "notifs": [
+    "🔔 6 notifications",
+    "📱 Écran : 4 h 12 aujourd'hui",
+    "🔁 Encore 5 minutes…"
+   ],
+   "kicker": "précision",
+   "card_word": "précision",
+   "no": "« vider » sa dopamine",
+   "yes": "réduire les plaisirs faciles"
   },
   {
    "type": "weeks",
@@ -46,7 +61,25 @@
   },
   {
    "type": "cta",
-   "vo": "Objectif au jour trente : que l'effort redevienne normal. Enregistre le plan, et commente jour un si tu commences demain."
+   "vo": "Objectif au jour trente : que l'effort redevienne normal. Enregistre le plan, et commente jour un si tu commences demain.",
+   "kicker": "JOUR",
+   "big": "30",
+   "obj": "Objectif : que l'effort redevienne **normal.**",
+   "ctas": [
+    "🔖 ENREGISTRE LE PLAN",
+    "💬 COMMENTE « JOUR 1 »"
+   ]
   }
+ ],
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 30
+ },
+ "timeline": [
+  "S1",
+  "S2",
+  "S3",
+  "S4"
  ]
 }
