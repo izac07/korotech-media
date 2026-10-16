@@ -1,0 +1,265 @@
+{
+ "id": "CL-R01",
+ "layout": "messages",
+ "music_seed": 52,
+ "contact": "Léa",
+ "scenes": [
+  {
+   "vo": "Tu dis oui alors que tu penses non ? Tu n'es pas la seule personne dans ce cas.",
+   "title": [
+    {
+     "at": 0,
+     "text": "Tu dis oui"
+    },
+    {
+     "at": 0.3,
+     "text": "alors que tu"
+    },
+    {
+     "at": 0.45,
+     "text": "**penses non ?**"
+    }
+   ],
+   "events": [
+    {
+     "kind": "them",
+     "at": 0,
+     "text": "Tu peux me remplacer samedi ? 🙏"
+    },
+    {
+     "kind": "typing_me",
+     "at": 0.1,
+     "until": 0.28
+    },
+    {
+     "kind": "me",
+     "at": 0.28,
+     "text": "Oui pas de souci 🙂"
+    },
+    {
+     "kind": "strike",
+     "at": 0.62,
+     "target": 2
+    }
+   ]
+  },
+  {
+   "vo": "Dans ta tête, c'est déjà le bazar : tu avais prévu de souffler, et tu as peur qu'elle t'en veuille.",
+   "title": [
+    {
+     "at": 0.02,
+     "text": "Dans ta tête…"
+    }
+   ],
+   "events": [
+    {
+     "kind": "them",
+     "at": 0,
+     "text": "Tu peux me remplacer samedi ? 🙏"
+    },
+    {
+     "kind": "me",
+     "at": 0.02,
+     "text": "Oui pas de souci 🙂"
+    },
+    {
+     "kind": "thought",
+     "at": 0.3,
+     "text": "J'avais prévu de souffler ce week-end…"
+    },
+    {
+     "kind": "thought",
+     "at": 0.62,
+     "text": "Si je dis non, elle va m'en vouloir"
+    }
+   ]
+  },
+  {
+   "vo": "Alors tu te justifies. Et plus tu te justifies, plus on négocie.",
+   "title": [
+    {
+     "at": 0.05,
+     "text": "Plus tu te justifies,"
+    },
+    {
+     "at": 0.5,
+     "text": "**plus on négocie.**"
+    }
+   ],
+   "events": [
+    {
+     "kind": "them",
+     "at": 0,
+     "text": "Tu peux me remplacer samedi ? 🙏"
+    },
+    {
+     "kind": "type_erase",
+     "at": 0.04,
+     "full": 0.42,
+     "erase": 0.5,
+     "gone": 0.62,
+     "text": "Euh en fait je sais pas trop, parce que samedi j'avais un peu prévu de…"
+    },
+    {
+     "kind": "typing_them",
+     "at": 0.62,
+     "until": 0.74
+    },
+    {
+     "kind": "them",
+     "at": 0.74,
+     "text": "Allez stp, juste 2 h ? 😅"
+    }
+   ]
+  },
+  {
+   "vo": "Souvent, on dit oui par peur de décevoir, ou pour être apprécié. C'est humain.",
+   "title": [
+    {
+     "at": 0.12,
+     "text": "Peur de **décevoir**"
+    },
+    {
+     "at": 0.42,
+     "text": "Envie d'être **apprécié·e**"
+    },
+    {
+     "at": 0.78,
+     "text": "C'est **humain** 🤍"
+    }
+   ],
+   "events": [
+    {
+     "kind": "emoji",
+     "at": 0.05,
+     "text": "😬"
+    }
+   ]
+  },
+  {
+   "vo": "Essaie plutôt : merci d'avoir pensé à moi, mais cette fois je ne vais pas pouvoir.",
+   "title": [
+    {
+     "at": 0.02,
+     "text": "Essaie **celle-ci** 👆"
+    }
+   ],
+   "events": [
+    {
+     "kind": "them",
+     "at": 0,
+     "text": "Tu peux me remplacer samedi ? 🙏"
+    },
+    {
+     "kind": "input",
+     "at": 0.16,
+     "end": 0.8,
+     "send": 0.86,
+     "text": "Merci d'avoir pensé à moi, mais cette fois je ne vais pas pouvoir.",
+     "bubble": 2
+    },
+    {
+     "kind": "me",
+     "at": 0.86,
+     "text": "Merci d'avoir pensé à moi, mais cette fois je ne vais pas pouvoir."
+    }
+   ]
+  },
+  {
+   "vo": "Court, gentil, sans excuse. Et une relation qui te respecte, respecte aussi ton non.",
+   "title": [
+    {
+     "at": 0.04,
+     "text": "Court. Gentil."
+    },
+    {
+     "at": 0.22,
+     "text": "**Sans excuse.**"
+    }
+   ],
+   "events": [
+    {
+     "kind": "me",
+     "at": 0.0,
+     "text": "Merci d'avoir pensé à moi, mais cette fois je ne vais pas pouvoir."
+    },
+    {
+     "kind": "seen",
+     "at": 0.08
+    },
+    {
+     "kind": "typing_them",
+     "at": 0.12,
+     "until": 0.3
+    },
+    {
+     "kind": "them",
+     "at": 0.3,
+     "text": "Ok, pas de souci. Merci de me le dire 🤍"
+    }
+   ]
+  },
+  {
+   "vo": "Au travail : je ne peux pas le prendre en plus cette semaine. En famille : je ne serai pas là, mais je vous embrasse.",
+   "title": [
+    {
+     "at": 0.02,
+     "text": "Selon la **situation**"
+    }
+   ],
+   "events": [
+    {
+     "kind": "tag",
+     "at": 0.04,
+     "text": "Au travail"
+    },
+    {
+     "kind": "me",
+     "at": 0.08,
+     "text": "Je ne peux pas le prendre en plus cette semaine."
+    },
+    {
+     "kind": "tag",
+     "at": 0.5,
+     "text": "En famille"
+    },
+    {
+     "kind": "me",
+     "at": 0.54,
+     "text": "Je ne serai pas là, mais je vous embrasse fort 🤍"
+    }
+   ]
+  },
+  {
+   "vo": "Enregistre cette vidéo pour t'entraîner. Ton non compte aussi.",
+   "title": [
+    {
+     "at": 0.12,
+     "text": "Ton non"
+    },
+    {
+     "at": 0.26,
+     "text": "**compte aussi**"
+    }
+   ],
+   "events": [
+    {
+     "kind": "heart",
+     "at": 0.0
+    },
+    {
+     "kind": "pill",
+     "at": 0.45,
+     "row": 0,
+     "text": "🔖 Enregistre"
+    },
+    {
+     "kind": "pill",
+     "at": 0.58,
+     "row": 1,
+     "text": "➕ Suis **@coeurlucide__**"
+    }
+   ]
+  }
+ ]
+}

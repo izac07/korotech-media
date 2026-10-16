@@ -51,6 +51,10 @@ body{{width:1080px;height:1920px;overflow:hidden;font-family:Inter,sans-serif;co
 .me{{align-self:flex-end;background:{a};color:#fff;border-bottom-right-radius:12px}}
 .strike{{position:absolute;left:24px;top:50%;height:7px;background:#ff4d6d;border-radius:4px;width:0}}
 .dots{{display:flex;gap:12px;padding:6px 4px}} .dots i{{width:18px;height:18px;border-radius:50%;background:currentColor;opacity:.6;display:block}}
+.th{{align-self:flex-start;max-width:820px;padding:24px 36px;border-radius:40px;border:3px dashed #c98a9a;background:rgba(255,255,255,.55);font:italic 500 40px/1.35 Inter;color:#6b3344;display:none}}
+.th:before{{content:'💭 '}}
+.emo{{align-self:center;font-size:220px;line-height:1;display:none;margin-top:60px}}
+.tag{{align-self:center;font:700 26px Inter;letter-spacing:3px;text-transform:uppercase;color:#9a6070;display:none;margin-top:6px}}
 .seen{{align-self:flex-end;font:500 26px Inter;color:#9a6070;display:none;margin-top:-12px}}
 .inp{{position:absolute;left:60px;right:60px;top:960px;height:110px;border-radius:55px;background:#fff;display:flex;align-items:center;padding:0 18px 0 44px;font:500 38px Inter;color:#3a0f1c;box-shadow:0 10px 30px rgba(122,31,53,.10)}}
 .inp .ph{{color:#c4a1aa}} .inp .send{{margin-left:auto;width:78px;height:78px;border-radius:50%;background:{a};color:#fff;font:800 40px/78px Inter;text-align:center;flex:none}}
@@ -87,6 +91,10 @@ body{{width:1080px;height:1920px;overflow:hidden;font-family:Inter,sans-serif;co
                 js_scenes.append({"id": eid, "k": "typeerase", "at": at, "full": T(ev["full"]), "erase": T(ev["erase"]), "gone": T(ev["gone"]), "text": ev["text"]})
             elif kind == "strike":
                 js_scenes.append({"id": f"e{k}_{ev['target']}", "k": "strike", "at": at})
+            elif kind in ("thought", "emoji", "tag"):
+                cls = {"thought": "th", "emoji": "emo", "tag": "tag"}[kind]
+                bubbles.append(f"<div class='{cls}' id='{eid}'>{rich(ev['text'])}</div>")
+                js_scenes.append({"id": eid, "k": "pop", "at": at})
             elif kind == "seen":
                 bubbles.append(f"<div class='seen' id='{eid}'>Vu</div>")
                 js_scenes.append({"id": eid, "k": "show", "at": at})
