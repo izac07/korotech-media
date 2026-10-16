@@ -30,5 +30,9 @@
 | 2026-10-16 20:30 | C12 | Carrousel | Parents : l'IA et la vie privée de votre enfant | — |
 | 2026-10-16 21:45 | R16 | Reel | Son cours en podcast | PODCAST |
 
-## Idées déjà prévues (pas encore faites)
-erreurs de dissertation ; schéma bilan ; maths sans tricher ; corriger son accent ; mail en anglais ; oral du bac de langue ; emploi du temps en 1 prompt ; devoirs 2x plus vite ; to-do automatique ; outils gratuits ; entretien d'école ; trouver une alternance ; 3 IA testées sur le même exercice de physique ; comparatif 1h de révision avec IA vs sans.
+## Idées en réserve (nouvelle ligne mixée)
+Études : POV contrôle demain et rien révisé ; arrêter de surligner tout son cours ; réviser dans le bus ; la veille du bac ; quand tu comprends rien au prof ; erreurs de dissertation ; oral du bac de langue ; corriger son accent ; maths sans tricher ; schéma bilan.
+Vie étudiante : préparer son premier entretien de job étudiant ; CV sans expérience ; trouver une alternance ; mail à un prof ou une école ; budget étudiant du mois ; écrire à un propriétaire ; choisir sa formation ; entretien d'école.
+IA au quotidien : 3 choses que ChatGPT sait faire et que tu ne sais pas ; photo du frigo → recette ; préparer un voyage pas cher ; écrire un message difficile ; résumer une vidéo YouTube ; apprendre un truc en 10 minutes.
+POV / humour : ma mère découvre que je révise avec ChatGPT ; le prof qui rend les copies ; moi à 2h du mat vs moi le jour du contrôle ; groupe de travail où personne ne bosse.
+Parents : aider en maths ; outils gratuits ; parler d'IA à son ado.

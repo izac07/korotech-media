@@ -1,0 +1,44 @@
+{
+ "id": "X02",
+ "music_seed": 47,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "3 trucs que",
+    "ChatGPT sait faire",
+    "**et que tu ignores**"
+   ],
+   "dur": 3.2,
+   "vo": "Trois trucs que ChatGPT sait faire, et que t'utilises sûrement pas."
+  },
+  {
+   "type": "list",
+   "label": "Teste ce soir",
+   "title": "Pas que pour les devoirs",
+   "items": [
+    "Une **photo de ton frigo** → une recette",
+    "Te faire **passer un entretien** d'embauche",
+    "Transformer ta to-do en **planning de semaine**"
+   ],
+   "dur": 7.5,
+   "vo": "Un : envoie une photo de ton frigo, il te propose une recette. Deux : il te fait passer un entretien d'embauche. Trois : il transforme ta liste de tâches en planning."
+  },
+  {
+   "type": "cta",
+   "title": "Enregistre,<br>**tu vas en avoir besoin**",
+   "ctas": [
+    [
+     "🔖",
+     "Enregistre ce reel"
+    ],
+    [
+     "➕",
+     "Suis pour d'autres astuces"
+    ]
+   ],
+   "dur": 3.5,
+   "vo": "Enregistre la vidéo, tu vas en avoir besoin."
+  }
+ ]
+}

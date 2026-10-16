@@ -1,0 +1,47 @@
+{
+ "id": "X03",
+ "music_seed": 58,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "Ton premier",
+    "entretien de",
+    "**job étudiant ?**"
+   ],
+   "dur": 3.2,
+   "vo": "Ton premier entretien pour un job étudiant arrive ?"
+  },
+  {
+   "type": "chat",
+   "label": "Entraîne-toi avant",
+   "title": "L'IA joue le recruteur",
+   "text": "Fais-moi passer un entretien pour un job de [vendeur, serveur...]. Pose-moi une question à la fois, puis dis-moi ce que je peux améliorer.",
+   "dur": 7.0,
+   "vo": "Demande à l'IA de jouer le recruteur. Elle te pose les questions une par une, puis te dit ce que tu peux améliorer."
+  },
+  {
+   "type": "text",
+   "label": "Le jour J",
+   "title": "Tu as déjà<br>**répondu à tout.**",
+   "dur": 3.2,
+   "vo": "Le jour J, t'auras déjà répondu à tout."
+  },
+  {
+   "type": "cta",
+   "title": "Partage à<br>**un pote qui cherche**",
+   "ctas": [
+    [
+     "📤",
+     "Envoie à un pote qui cherche un job"
+    ],
+    [
+     "🔖",
+     "Enregistre pour plus tard"
+    ]
+   ],
+   "dur": 3.5,
+   "vo": "Envoie ça à un pote qui cherche un job."
+  }
+ ]
+}

@@ -5,26 +5,35 @@ Dépôt des médias publiés sur Instagram @korotech_fr. Tout ce qui est ici est
 URL publique d'un fichier : `https://izac07.github.io/korotech-media/<chemin>`
 
 ## Ligne éditoriale
-- Niche : apprendre plus vite avec l'IA (révisions, langues, devoirs, organisation, orientation).
-- Cibles : élèves/étudiants (tutoiement) et parents (vouvoiement), environ 1 post sur 3 pour les parents.
-- Chaque post finit par une action : enregistrer, commenter un mot-clé en MAJUSCULES, partager ou suivre.
+- Compte : « L'IA, ton meilleur prof » — mais pas un compte scolaire. On mixe les études avec la vie étudiante et l'IA au quotidien.
+- Cibles : surtout les 15-25 ans (tutoiement) ; environ 1 post sur 5 pour les parents (vouvoiement).
+- **Les 5 piliers (répartition sur 10 posts/jour)** :
+  1. **Études malin** (≈ 4/10) : réviser, s'organiser, langues, examens — toujours avec un angle émotion (stress, retard, flemme, contrôle demain).
+  2. **Vie étudiante** (≈ 2/10) : job étudiant, entretien, CV, alternance, budget, logement, orientation, premier appart.
+  3. **L'IA au quotidien / curiosité** (≈ 2/10) : ce que l'IA sait faire et que personne ne montre, astuces fun ou surprenantes (photo du frigo → recette, préparer un voyage, écrire un message délicat…).
+  4. **Humour / POV relatable** (≈ 1/10, au moins 1 par jour) : situations vécues par les élèves/étudiants, qui débouchent sur une astuce.
+  5. **Parents** (≈ 1/10).
+- **Accroches** : jamais « voici une méthode ». Priorité à l'émotion, la situation vécue, la curiosité ou le défi : « POV : … », « Personne ne t'a dit que… », « Arrête de… », « Le truc que je fais quand… ». Hook ≤ 3 lignes courtes.
+- **Varier la structure** : pas toujours « colle ce prompt ». Alterner : mini-histoire (problème → astuce → résultat), liste de 3, avant/après, mythe vs réalité, démonstration. Le prompt peut apparaître, mais ce n'est pas obligatoire.
+- **Reels plus courts** : viser 12-20 s (4 scènes max), une seule idée par reel.
+- Chaque post finit par une action : enregistrer, partager à un ami, suivre, ou commenter (le mot-clé seulement si c'est naturel ; on ne promet PAS d'envoyer quelque chose en DM).
 - Reels : texte animé + **voix off ElevenLabs « Brian » (modèle Eleven v4)** sur TOUS les reels + musique lo-fi originale en fond (baissée automatiquement sous la voix).
-- Carrousels : sans musique (l'API Instagram ne le permet pas).
-- Rester exact : pas de chiffres ou d'affirmations inventés ; ajouter « l'IA peut se tromper » quand c'est pertinent.
+- Carrousels : sans musique (l'API Instagram ne le permet pas). Le contenu complet (prompt, liste) est DANS le carrousel.
+- Rester exact : pas de chiffres, résultats de « tests » ou anecdotes personnelles inventés. Ne jamais présenter un test comme réalisé s'il ne l'a pas été. Ajouter « l'IA peut se tromper » quand c'est pertinent.
 
 ## Rythme : 10 posts par jour (heure de Paris)
-| Heure | Format | Cible |
+| Heure | Format | Pilier |
 |---|---|---|
-| 07:15 | Reel | Élèves |
-| 08:30 | Carrousel | Parents |
-| 10:30 | Reel | Tous |
-| 12:15 | Reel | Élèves |
-| 13:30 | Carrousel | Élèves |
-| 16:45 | Reel | Élèves |
-| 18:00 | Carrousel | Élèves |
-| 19:15 | Reel | Tous |
+| 07:15 | Reel | Humour / POV |
+| 08:30 | Carrousel | Études malin |
+| 10:30 | Reel | IA au quotidien |
+| 12:15 | Reel | Études malin |
+| 13:30 | Carrousel | Vie étudiante |
+| 16:45 | Reel | Études malin |
+| 18:00 | Carrousel | IA au quotidien |
+| 19:15 | Reel | Vie étudiante |
 | 20:30 | Carrousel | Parents |
-| 21:45 | Reel | Élèves |
+| 21:45 | Reel | Études malin |
 
 ## Outils
 `python3 tools/korotech.py carrousel posts/<dossier>/spec.json posts/<dossier>` → `slide_XX.jpg` (1080×1350, JPEG obligatoire pour Instagram)

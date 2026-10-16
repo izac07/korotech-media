@@ -1,0 +1,44 @@
+{
+ "id": "X01",
+ "music_seed": 31,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "POV : 23h,",
+    "contrôle demain,",
+    "**rien révisé 😭**"
+   ],
+   "dur": 3.2,
+   "vo": "P.O.V. : il est vingt-trois heures, contrôle demain, et t'as rien révisé."
+  },
+  {
+   "type": "list",
+   "label": "Le plan de survie",
+   "title": "30 minutes, pas plus",
+   "items": [
+    "L'IA te sort **l'essentiel** du chapitre",
+    "Elle t'**interroge** sur ces points",
+    "Tu **dors** : le sommeil fixe ce que t'as appris"
+   ],
+   "dur": 6.5,
+   "vo": "Le plan de survie. Demande à l'IA l'essentiel du chapitre, fais-toi interroger dessus, et va dormir : le sommeil aide à retenir."
+  },
+  {
+   "type": "cta",
+   "title": "Envoie ça<br>**à ton binôme**",
+   "ctas": [
+    [
+     "📤",
+     "Partage à celui qui révise la veille"
+    ],
+    [
+     "➕",
+     "Suis **@korotech_fr**"
+    ]
+   ],
+   "dur": 3.5,
+   "vo": "Envoie ça à ton pote qui révise toujours la veille."
+  }
+ ]
+}
