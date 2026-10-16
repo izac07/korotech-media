@@ -1,0 +1,37 @@
+{
+ "id": "LIA-R02",
+ "layout": "iceberg",
+ "music_seed": 36,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "vo": "Les gourous te montrent le haut de l'iceberg. Voici ce qu'ils ne te montrent jamais sur l'automatisation."
+  },
+  {
+   "type": "surface",
+   "labels": [
+    "1 clic = business automatique",
+    "outils magiques",
+    "revenus passifs"
+   ],
+   "text": "LA VITRINE",
+   "vo": "En surface : un clic, et ton business tourne tout seul. Des captures d'écran, des outils magiques, des revenus passifs."
+  },
+  {
+   "type": "process",
+   "text": "PROCESS D'ABORD,<br>OUTIL ENSUITE",
+   "vo": "Sous l'eau : on n'automatise pas un process qui n'existe pas. Si tu ne sais pas le faire à la main, l'outil va juste automatiser le chaos."
+  },
+  {
+   "type": "logs",
+   "text": "ÇA CASSE · ÇA SE SURVEILLE<br>· ÇA COÛTE",
+   "vo": "Et ça casse : une API qui change, un formulaire mal rempli. Il faut des alertes, quelqu'un qui vérifie, et compter les abonnements qui s'additionnent."
+  },
+  {
+   "type": "cta",
+   "text": "COMMENCE PAR 1 TÂCHE",
+   "vo": "Commence petit : une seule tâche répétitive, bien faite. Enregistre cette vidéo, et suis-moi pour automatiser sans te faire vendre du rêve."
+  }
+ ]
+}
