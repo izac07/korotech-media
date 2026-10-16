@@ -163,7 +163,107 @@ window.render=function(t){{
 </script></body></html>"""
     return page
 
-LAYOUTS = {"messages": messages_page}
+# ------------------------------------------------------------------ layout « terminal »
+def terminal_page(spec, theme, starts, durs, caps, total):
+    g = theme["accent"]
+    fonts = K._font_faces(["Archivo Black", "JetBrains Mono", "Space Grotesk"])
+    css = f"""{fonts}
+*{{margin:0;padding:0;box-sizing:border-box}}
+body{{width:1080px;height:1920px;overflow:hidden;background:#040705;color:#eafff2;font-family:'Space Grotesk',sans-serif;position:relative}}
+.grid{{position:absolute;inset:-120px;background-image:linear-gradient(rgba(57,255,136,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(57,255,136,.06) 1px,transparent 1px);background-size:60px 60px}}
+.glow{{position:absolute;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(57,255,136,.18),transparent 65%)}}
+.win{{position:absolute;left:50px;right:50px;top:200px;height:900px;border:2px solid rgba(57,255,136,.4);border-radius:28px;background:rgba(6,12,8,.94);box-shadow:0 0 90px rgba(57,255,136,.15);overflow:hidden}}
+.wbar{{height:76px;display:flex;align-items:center;gap:14px;padding:0 30px;border-bottom:2px solid rgba(57,255,136,.18);background:rgba(57,255,136,.05)}}
+.wbar i{{width:20px;height:20px;border-radius:50%;display:block}}
+.fname{{flex:1;text-align:center;font:400 26px 'JetBrains Mono';color:#7fa891;margin-right:100px}}
+.term{{position:absolute;left:44px;right:44px;top:110px;bottom:30px;display:flex;flex-direction:column;gap:14px;font:400 36px/1.45 'JetBrains Mono'}}
+.l{{display:none;white-space:pre-wrap}}
+.cmd .p{{color:{g}}}
+.out{{color:#d6f5e2}} .cm{{color:#5f8a70;font-style:italic}} .warn{{color:#febc2e}} .ok{{color:{g}}}
+.spin{{color:{g}}}
+.hl{{color:#b6ff3b}}
+.cur{{display:inline-block;width:20px;height:40px;background:{g};vertical-align:-6px;margin-left:4px}}
+.pbar{{height:26px;border:2px solid {g};border-radius:8px;overflow:hidden;margin-top:6px}} .pbar b{{display:block;height:100%;width:0;background:{g}}}
+.big{{position:absolute;left:70px;right:70px;top:1150px}}
+.ln{{font:400 88px/1.08 'Archivo Black';display:block;opacity:0}}
+.ln em{{font-style:normal;color:{g}}}
+.capw{{position:absolute;left:0;right:0;top:1480px;text-align:center}}
+.cap{{display:none;background:rgba(6,12,8,.92);border:2px solid rgba(57,255,136,.5);border-radius:18px;padding:14px 30px;font:700 46px 'JetBrains Mono';color:#eafff2}}
+.cap .on{{color:{g}}}
+.pill{{position:absolute;left:70px;border:3px solid {g};border-radius:18px;padding:18px 30px;font:700 40px 'JetBrains Mono';background:rgba(6,12,8,.95);opacity:0}}
+.pill em{{font-style:normal;color:{g}}}
+.bar{{position:absolute;left:0;top:0;height:10px;background:{g}}}
+"""
+    parts, evs = [], []
+    for k, sc in enumerate(spec["scenes"]):
+        a0, d = starts[k], durs[k]
+        T = lambda f: round(a0 + f * d, 3)
+        lines = []
+        for j, ev in enumerate(sc.get("events", [])):
+            kind = ev["kind"]; at = T(ev["at"]); eid = f"e{k}_{j}"
+            if kind == "cmd":
+                lines.append(f"<div class='l cmd' id='{eid}'><span class='p'>$ </span><span class='tx'></span></div>")
+                evs.append({"id": eid, "k": "type", "at": at, "end": T(ev["end"]), "text": ev["text"]})
+            elif kind in ("out", "cm", "warn", "ok"):
+                txt = ev["text"]
+                if kind == "cm": txt = "// " + txt
+                lines.append(f"<div class='l {kind}' id='{eid}'>{K.esc(txt)}</div>")
+                evs.append({"id": eid, "k": "line", "at": at})
+            elif kind == "spin":
+                lines.append(f"<div class='l spin' id='{eid}'></div>")
+                evs.append({"id": eid, "k": "spin", "at": at, "until": T(ev["until"]), "text": ev.get("text", "génération en cours")})
+            elif kind == "check":
+                lines.append(f"<div class='l out' id='{eid}'><span class='bx ok'>[ ]</span> {K.esc(ev['text'])}</div>")
+                evs.append({"id": eid, "k": "check", "at": at, "tick": T(ev.get("tick", ev["at"] + 0.06))})
+            elif kind == "prog":
+                lines.append(f"<div class='l ok' id='{eid}'>{K.esc(ev.get('text',''))}<div class='pbar'><b></b></div></div>")
+                evs.append({"id": eid, "k": "prog", "at": at, "end": T(ev["end"])})
+            elif kind == "pill":
+                parts.append(f"<div class='pill' id='{eid}' style='top:{830 + 120 * ev.get("row", 0)}px'>{rich(ev['text'])}</div>")
+                evs.append({"id": eid, "k": "pill", "at": at})
+        title = "".join(f"<span class='ln' data-at='{T(l['at'])}'>{rich(l['text'])}</span>" for l in sc.get("title", []))
+        parts.append(f"<div class='term sc' data-a='{a0}' data-b='{a0 + d}' data-f='{K.esc(sc.get('file', 'terminal'))}'>{''.join(lines)}</div>")
+        parts.append(f"<div class='big sc2' data-a='{a0}' data-b='{a0 + d}'>{title}</div>")
+    cap_html = "".join(
+        f"<span class='cap' data-a='{c[0][1]:.3f}' data-b='{c_next:.3f}'>" + " ".join(f"<span data-w='{t:.3f}'>{H.escape(w)}</span>" for w, t in c) + "</span>"
+        for c, c_next in caps)
+    terms = "".join(p for p in parts if "class='term" in p)
+    others = "".join(p for p in parts if "class='term" not in p)
+    page = f"""<!doctype html><html><head><meta charset='utf-8'><style>{css}</style></head><body>
+<div class='grid' id='grid'></div><div class='glow' id='gl' style='left:-300px;top:900px'></div><div class='bar' id='bar'></div>
+<div class='win' id='win'><div class='wbar'><i style='background:#ff5f57'></i><i style='background:#febc2e'></i><i style='background:#28c840'></i><div class='fname' id='fn'></div></div>{terms}</div>
+{others}<div class='capw'>{cap_html}</div>
+<script>
+const EV={json.dumps(evs, ensure_ascii=False)}; const D={total};
+const c=x=>Math.max(0,Math.min(1,x)), eo=x=>1-Math.pow(1-c(x),3), back=x=>{{x=c(x);const s=1.7;return 1+(s+1)*Math.pow(x-1,3)+s*Math.pow(x-1,2);}};
+const SP='⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏';
+function esc(s){{return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/\\[([^\\]]*)(\\]|$)/g,(m,a,b)=>"<span class='hl'>["+a+b+"</span>");}}
+window.render=function(t){{
+ document.getElementById('bar').style.width=(c(t/D)*1080)+'px';
+ document.getElementById('grid').style.transform=`translateY(${{(t*12)%60}}px)`;
+ document.getElementById('gl').style.transform=`translate(${{Math.sin(t/2)*120}}px,${{Math.cos(t/3)*80}}px)`;
+ for(const el of document.querySelectorAll('.sc,.sc2')){{const a=+el.dataset.a,b=+el.dataset.b;const vin=a<=0?1:eo((t-a)/0.3),vout=1-eo((t-(b-0.2))/0.2);
+   const on=t>=a-0.001&&t<b;el.style.opacity=on?Math.min(vin,vout):0;el.style.transform=`translateY(${{(1-vin)*40}}px)`;
+   if(on&&el.dataset.f)document.getElementById('fn').textContent=el.dataset.f;}}
+ for(const l of document.querySelectorAll('.ln')){{const at=+l.dataset.at;const k=at<=0.001?1:back((t-at)/0.4);l.style.opacity=at<=0.001?1:c((t-at)/0.12);
+   l.style.transform=`translateX(${{(1-k)*-90}}px)`;}}
+ for(const e of EV){{const el=document.getElementById(e.id);
+  if(e.k==='type'){{el.style.display=t>=e.at-0.001?'block':'none';const n=Math.floor(c((t-e.at)/(e.end-e.at))*e.text.length);
+     el.querySelector('.tx').innerHTML=esc(e.text.slice(0,n))+(t<e.end+0.6?"<span class='cur'></span>":"");}}
+  else if(e.k==='line'){{el.style.display=t>=e.at-0.001?'block':'none';el.style.opacity=e.at<=0.001?1:c((t-e.at)/0.12);el.style.transform=`translateX(${{(1-eo((t-e.at)/0.25))*-30}}px)`;}}
+  else if(e.k==='spin'){{el.style.display=(t>=e.at&&t<e.until)?'block':'none';el.textContent=SP[Math.floor(t*12)%10]+' '+e.text+'.'.repeat(1+Math.floor(t*3)%3);}}
+  else if(e.k==='check'){{el.style.display=t>=e.at?'block':'none';el.style.opacity=c((t-e.at)/0.12);el.querySelector('.bx').textContent=t>=e.tick?'[✓]':'[ ]';
+     el.querySelector('.bx').style.transform=`scale(${{t>=e.tick?1+0.4*(1-eo((t-e.tick)/0.3)):1}})`;el.querySelector('.bx').style.display='inline-block';}}
+  else if(e.k==='prog'){{el.style.display=t>=e.at?'block':'none';el.querySelector('b').style.width=(eo((t-e.at)/(e.end-e.at))*100)+'%';}}
+  else if(e.k==='pill'){{const q=back((t-e.at)/0.4);el.style.opacity=c((t-e.at)/0.12);el.style.transform=`translateX(${{(1-q)*-120}}px)`;}}
+ }}
+ for(const cp of document.querySelectorAll('.cap')){{const a=+cp.dataset.a,b=+cp.dataset.b;cp.style.display=(t>=a&&t<b)?'inline-block':'none';
+   for(const w of cp.querySelectorAll('[data-w]'))w.className=(t>=+w.dataset.w)?'on':'';}}
+}};render(0);
+</script></body></html>"""
+    return page
+
+LAYOUTS = {"messages": messages_page, "terminal": terminal_page}
 
 # ------------------------------------------------------------------ rendu
 def sfx_track(path, total, events, starts):
@@ -184,7 +284,11 @@ def sfx_track(path, total, events, starts):
     chime = sum(np.sin(2 * np.pi * f * th) * np.exp(-th * 3) for f in (880, 1320, 1760)) * 0.06
     for s in starts[1:]: put(whoosh, s - 0.2)
     for e in events:
-        if e["k"] in ("pop", "pill"): put(pop, e["at"])
+        if e["k"] in ("pop", "pill", "check"): put(pop, e.get("tick", e["at"]))
+        if e["k"] == "line": put(pop, e["at"], 0.45)
+        if e["k"] == "type":
+            L = len(e["text"]); step = (e["end"] - e["at"]) / max(1, L)
+            for q in range(0, L, 2): put(tick, e["at"] + q * step, 0.8)
         if e["k"] == "heart": put(chime, e["at"] + 1.0)
         if e["k"] == "input":
             L = len(e["text"]); step = (e["end"] - e["at"]) / max(1, L)

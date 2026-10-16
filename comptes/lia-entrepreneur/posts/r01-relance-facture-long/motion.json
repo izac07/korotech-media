@@ -1,0 +1,233 @@
+{
+ "id": "LIA-R01",
+ "layout": "terminal",
+ "music_seed": 31,
+ "scenes": [
+  {
+   "vo": "Un client ne t'a toujours pas payé ? Arrête de repousser la relance.",
+   "file": "factures.log",
+   "title": [
+    {
+     "at": 0,
+     "text": "Facture impayée ?"
+    },
+    {
+     "at": 0.45,
+     "text": "**Fais ça.**"
+    }
+   ],
+   "events": [
+    {
+     "kind": "cmd",
+     "at": 0,
+     "end": 0.25,
+     "text": "factures --en-retard"
+    },
+    {
+     "kind": "warn",
+     "at": 0.3,
+     "text": "⚠ [facture n°1] · en retard"
+    },
+    {
+     "kind": "warn",
+     "at": 0.42,
+     "text": "⚠ [facture n°2] · en retard"
+    },
+    {
+     "kind": "cm",
+     "at": 0.6,
+     "text": "relance prévue : … un jour"
+    }
+   ]
+  },
+  {
+   "vo": "On repousse, parce qu'on a peur d'abîmer la relation, ou de passer pour quelqu'un d'insistant.",
+   "file": "dans_ta_tete.txt",
+   "title": [
+    {
+     "at": 0.05,
+     "text": "On **repousse**…"
+    }
+   ],
+   "events": [
+    {
+     "kind": "cm",
+     "at": 0.1,
+     "text": "et s'il le prend mal ?"
+    },
+    {
+     "kind": "cm",
+     "at": 0.35,
+     "text": "je vais passer pour un relou"
+    },
+    {
+     "kind": "cm",
+     "at": 0.6,
+     "text": "je relancerai la semaine prochaine…"
+    },
+    {
+     "kind": "warn",
+     "at": 0.8,
+     "text": "⚠ trésorerie : en attente"
+    }
+   ]
+  },
+  {
+   "vo": "Colle ce prompt dans ChatGPT ou Claude avec le numéro, le montant et le retard de ta facture.",
+   "file": "prompt.txt",
+   "title": [
+    {
+     "at": 0.05,
+     "text": "Colle **ce prompt**"
+    }
+   ],
+   "events": [
+    {
+     "kind": "cmd",
+     "at": 0.05,
+     "end": 0.85,
+     "text": "Rédige une relance pour la facture [numéro] de [montant], échue depuis [X jours]. Ton ferme mais cordial. Rappelle la date d'échéance et propose un moyen de paiement simple."
+    }
+   ]
+  },
+  {
+   "vo": "En quelques secondes, l'IA te propose une relance claire, ferme mais polie.",
+   "file": "relance.md",
+   "title": [
+    {
+     "at": 0.05,
+     "text": "Ferme mais **polie.**"
+    }
+   ],
+   "events": [
+    {
+     "kind": "spin",
+     "at": 0.0,
+     "until": 0.2,
+     "text": "rédaction"
+    },
+    {
+     "kind": "ok",
+     "at": 0.2,
+     "text": "Objet : Relance – facture [numéro]"
+    },
+    {
+     "kind": "out",
+     "at": 0.3,
+     "text": "Bonjour [prénom],"
+    },
+    {
+     "kind": "out",
+     "at": 0.42,
+     "text": "Sauf erreur de ma part, la facture [numéro] de [montant], échue le [date], reste à régler."
+    },
+    {
+     "kind": "out",
+     "at": 0.62,
+     "text": "Pourriez-vous m'indiquer la date de paiement prévue ? Le virement reste le plus simple."
+    },
+    {
+     "kind": "out",
+     "at": 0.8,
+     "text": "Belle journée,"
+    }
+   ]
+  },
+  {
+   "vo": "Relance dès le premier jour de retard, joins la facture, et reste factuel.",
+   "file": "reflexes.md",
+   "title": [
+    {
+     "at": 0.03,
+     "text": "3 **réflexes**"
+    }
+   ],
+   "events": [
+    {
+     "kind": "check",
+     "at": 0.1,
+     "tick": 0.2,
+     "text": "Relance dès le 1er jour de retard"
+    },
+    {
+     "kind": "check",
+     "at": 0.4,
+     "tick": 0.5,
+     "text": "Joins la facture"
+    },
+    {
+     "kind": "check",
+     "at": 0.66,
+     "tick": 0.76,
+     "text": "Reste factuel, jamais agressif"
+    }
+   ]
+  },
+  {
+   "vo": "Relis toujours avant d'envoyer : c'est toi qui restes responsable de ce que tu envoies.",
+   "file": "relance.md",
+   "title": [
+    {
+     "at": 0.05,
+     "text": "Tu **relis**,"
+    },
+    {
+     "at": 0.4,
+     "text": "tu **envoies.**"
+    }
+   ],
+   "events": [
+    {
+     "kind": "warn",
+     "at": 0.05,
+     "text": "⚠ L'IA peut se tromper : vérifie montant, date et nom."
+    },
+    {
+     "kind": "cmd",
+     "at": 0.45,
+     "end": 0.65,
+     "text": "envoyer relance.md"
+    },
+    {
+     "kind": "ok",
+     "at": 0.78,
+     "text": "✓ envoyé"
+    }
+   ]
+  },
+  {
+   "vo": "Enregistre cette vidéo pour ta prochaine relance, et abonne-toi pour plus de prompts.",
+   "file": "a_faire.sh",
+   "title": [
+    {
+     "at": 0.05,
+     "text": "Garde-le"
+    },
+    {
+     "at": 0.2,
+     "text": "**sous la main**"
+    }
+   ],
+   "events": [
+    {
+     "kind": "prog",
+     "at": 0.05,
+     "end": 0.35,
+     "text": "enregistrement…"
+    },
+    {
+     "kind": "pill",
+     "at": 0.4,
+     "row": 0,
+     "text": "🔖 Enregistre"
+    },
+    {
+     "kind": "pill",
+     "at": 0.55,
+     "row": 1,
+     "text": "➕ Suis **@lia.entrepreneur**"
+    }
+   ]
+  }
+ ]
+}
