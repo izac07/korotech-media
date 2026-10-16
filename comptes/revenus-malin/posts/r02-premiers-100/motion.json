@@ -1,0 +1,28 @@
+{
+ "id": "RM-R02",
+ "layout": "notion",
+ "music_seed": 71,
+ "handle": "revenus_malin",
+ "scenes": [
+  {
+   "type": "hook",
+   "vo": "Tes premiers cent euros en ligne ce week-end ? C'est possible, mais pas avec une formule magique. Voici la méthode honnête."
+  },
+  {
+   "type": "steps12",
+   "vo": "Étape un : choisis une compétence que tu as déjà. Relecture, montage, Canva, cours. Étape deux : une offre simple à prix fixe, par exemple : je relis ton CV pour quinze euros."
+  },
+  {
+   "type": "step3",
+   "vo": "Étape trois : propose-la là où les gens cherchent déjà : ton entourage, les groupes de ton quartier, les plateformes de services."
+  },
+  {
+   "type": "step45",
+   "vo": "Étape quatre : livre vite, et demande un avis. Il te faut environ sept ventes pour atteindre cent euros. Et pense à déclarer ces revenus."
+  },
+  {
+   "type": "cta",
+   "vo": "Enregistre la méthode, et dis-moi en commentaire quelle compétence tu vas proposer."
+  }
+ ]
+}

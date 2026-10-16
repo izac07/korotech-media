@@ -1,0 +1,52 @@
+{
+ "id": "MDA-R03",
+ "layout": "manifeste3d",
+ "music_seed": 63,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "type": "hook",
+   "vo": "Trente jours pour reprendre le contrôle de ton cerveau. Plan brutal, mais simple."
+  },
+  {
+   "type": "avantapres",
+   "vo": "Avant : le téléphone au réveil, du scroll toutes les cinq minutes, et l'impression que tout effort est insupportable. Précision : on ne vide pas sa dopamine. On réduit les plaisirs faciles."
+  },
+  {
+   "type": "weeks",
+   "weeks": [
+    [
+     "SEMAINE 1",
+     "📵 Téléphone hors de la chambre",
+     "🔕 Notifications coupées"
+    ],
+    [
+     "SEMAINE 2",
+     "⛔ Pas d'écran la 1re heure",
+     ""
+    ]
+   ],
+   "vo": "Semaine un : téléphone hors de la chambre, notifications coupées. Semaine deux : pas d'écran pendant la première heure de la journée."
+  },
+  {
+   "type": "weeks",
+   "weeks": [
+    [
+     "SEMAINE 3",
+     "🚶 Scroll → marche, lecture, sport",
+     ""
+    ],
+    [
+     "SEMAINE 4",
+     "🧠 1 bloc de travail profond / jour",
+     ""
+    ]
+   ],
+   "vo": "Semaine trois : remplace le scroll par la marche, la lecture ou le sport. Semaine quatre : un bloc de travail profond chaque jour."
+  },
+  {
+   "type": "cta",
+   "vo": "Objectif au jour trente : que l'effort redevienne normal. Enregistre le plan, et commente jour un si tu commences demain."
+  }
+ ]
+}
