@@ -29,6 +29,7 @@
 | 2026-10-21 19:15 (replanifié, prévu le 16/10) | R15 | Reel | Parents : préparer la réunion parents-profs | RÉUNION |
 | 2026-10-20 19:15 (replanifié, prévu le 16/10) | C12 | Carrousel | Parents : l'IA et la vie privée de votre enfant | — |
 | 2026-10-21 12:15 (replanifié, prévu le 16/10) | R16 | Reel | Son cours en podcast | PODCAST |
+| 2026-10-22 12:15 | X04 | Reel | 3 IA gratuites pour réviser (NotebookLM, Napkin, Perplexity) — motion design | — |
 
 ## Idées en réserve (nouvelle ligne mixée)
 Études : POV contrôle demain et rien révisé ; arrêter de surligner tout son cours ; réviser dans le bus ; la veille du bac ; quand tu comprends rien au prof ; erreurs de dissertation ; oral du bac de langue ; corriger son accent ; maths sans tricher ; schéma bilan.
