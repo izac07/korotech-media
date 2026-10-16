@@ -545,7 +545,157 @@ window.render=function(t){{
 </script></body></html>"""
     return page
 
-LAYOUTS = {"messages": messages_page, "terminal": terminal_page, "cheatsheet": cheatsheet_page, "iceberg": iceberg_page}
+# ------------------------------------------------------------------ layout « sportmotion » (zerosallefit)
+POSES = {
+ "crunch": [{"H":[78,24],"N":[110,22],"P":[200,20],"E1":[120,62],"W1":[86,44],"E2":[122,60],"W2":[88,42],"K1":[258,82],"F1":[312,12],"K2":[262,80],"F2":[316,12]},
+            {"H":[104,96],"N":[132,72],"P":[200,20],"E1":[152,106],"W1":[110,88],"E2":[154,104],"W2":[112,86],"K1":[258,82],"F1":[312,12],"K2":[262,80],"F2":[316,12]}],
+ "planche": [{"H":[58,72],"N":[90,62],"P":[190,50],"E1":[95,12],"W1":[40,12],"E2":[98,12],"W2":[43,12],"K1":[252,30],"F1":[330,12],"K2":[255,30],"F2":[333,12]},
+             {"H":[58,76],"N":[90,66],"P":[190,56],"E1":[95,12],"W1":[40,12],"E2":[98,12],"W2":[43,12],"K1":[252,32],"F1":[330,12],"K2":[255,32],"F2":[333,12]}],
+ "deadbug": [{"H":[78,24],"N":[110,22],"P":[210,20],"E1":[110,92],"W1":[110,152],"E2":[114,92],"W2":[114,152],"K1":[210,92],"F1":[270,92],"K2":[214,92],"F2":[274,92]},
+             {"H":[78,24],"N":[110,22],"P":[210,20],"E1":[62,46],"W1":[12,40],"E2":[114,92],"W2":[114,152],"K1":[210,92],"F1":[270,92],"K2":[282,44],"F2":[352,34]}],
+ "lateral": [{"H":[80,108],"N":[110,92],"P":[200,56],"E1":[112,40],"W1":[62,14],"E2":[112,150],"W2":[112,206],"K1":[262,34],"F1":[330,12],"K2":[264,36],"F2":[332,14]},
+             {"H":[80,104],"N":[110,88],"P":[200,46],"E1":[112,40],"W1":[62,14],"E2":[112,146],"W2":[112,202],"K1":[262,30],"F1":[330,12],"K2":[264,32],"F2":[332,14]}],
+ "climber": [{"H":[58,132],"N":[90,116],"P":[220,92],"E1":[93,62],"W1":[95,12],"E2":[96,62],"W2":[98,12],"K1":[282,48],"F1":[340,12],"K2":[152,62],"F2":[172,16]},
+             {"H":[58,132],"N":[90,116],"P":[220,92],"E1":[93,62],"W1":[95,12],"E2":[96,62],"W2":[98,12],"K1":[152,62],"F1":[172,16],"K2":[282,48],"F2":[340,12]}],
+ "creuse": [{"H":[92,62],"N":[122,50],"P":[200,26],"E1":[72,74],"W1":[22,88],"E2":[74,72],"W2":[24,86],"K1":[270,44],"F1":[340,64],"K2":[272,42],"F2":[342,62]},
+            {"H":[92,68],"N":[122,56],"P":[200,26],"E1":[72,80],"W1":[22,94],"E2":[74,78],"W2":[24,92],"K1":[270,50],"F1":[340,72],"K2":[272,48],"F2":[342,70]}],
+}
+
+def sportmotion_page(spec, theme, starts, durs, caps, total):
+    sc = spec["scenes"]; ev = []; RED = "#ff2d36"
+    fonts = K._font_faces(["Anton"])
+    S = [{"a": starts[k], "b": starts[k] + durs[k], "ty": s["type"], "ex": s.get("ex", [])} for k, s in enumerate(sc)]
+    a0, a1, a2, a3, a4 = starts
+    d2 = durs[2]
+    ev += [{"k": "type", "at": a0, "end": a0 + 1.5, "text": "x" * 40}, {"k": "glitch", "at": a0 + 1.55}, {"k": "impact", "at": a0 + 1.7}]
+    ev += [{"k": "glitch", "at": a1 + 0.1}, {"k": "glitch", "at": a1 + 3.2}, {"k": "impact", "at": a1 + durs[1] * 0.68}]
+    exs = [a2 + 1.3 + (d2 - 1.6) / 5 * j for j in range(5)]
+    ev += [{"k": "impact", "at": a2 + 0.05}] + [{"k": "pop", "at": x} for x in exs] + [{"k": "whoosh", "at": x - 0.2} for x in exs[1:]]
+    ev += [{"k": "pop", "at": a3 + 0.5 + 0.8 * j} for j in range(3)] + [{"k": "pop", "at": a3 + 3.6 + 0.7 * j} for j in range(3)]
+    ev += [{"k": "beep", "at": a4 + 0.2 + 0.25 * j} for j in range(5)] + [{"k": "whistle", "at": a4 + 1.5}, {"k": "impact", "at": a4 + 1.6},
+            {"k": "whoosh", "at": a4 + 2.2}, {"k": "pop", "at": a4 + 2.9}, {"k": "pop", "at": a4 + 3.4}]
+    cap_html = "".join(
+        f"<span class='cap' data-a='{c[0][1]:.3f}' data-b='{c_next:.3f}'>" + " ".join(f"<span data-w='{t:.3f}'>{H.escape(w)}</span>" for w, t in c) + "</span>"
+        for c, c_next in caps)
+    css = f"""{fonts}
+*{{margin:0;padding:0;box-sizing:border-box}}
+body{{width:1080px;height:1920px;overflow:hidden;background:#0b0b0b;color:#fff;font-family:Inter,sans-serif;position:relative}}
+.A{{font-family:Anton;text-transform:uppercase;letter-spacing:1px}}
+.r{{color:{RED}}}
+.scn{{position:absolute;inset:0;opacity:0}}
+.fig{{position:absolute;left:60px;top:400px;width:960px;height:576px}}
+.big{{position:absolute;left:60px;right:60px;text-align:center;font:400 130px/0.95 Anton;text-transform:uppercase}}
+.tag{{position:absolute;left:60px;top:250px;padding:12px 28px;border-radius:10px;font:800 40px Inter;letter-spacing:3px}}
+.cnt{{position:absolute;left:0;right:0;top:250px;text-align:center;font:400 150px Anton;color:{RED}}}
+.x{{position:absolute;left:290px;top:380px;width:500px;height:500px;opacity:0}}
+.timer{{position:absolute;left:0;right:0;text-align:center;font:400 120px Anton}}
+.stamp{{position:absolute;left:0;right:0;top:1010px;margin:auto;width:560px;text-align:center;border:10px solid {RED};color:{RED};font:400 130px Anton;transform:rotate(-10deg);opacity:0}}
+.myth{{position:absolute;left:0;right:0;top:1000px;text-align:center;font:400 72px Anton;color:#888}}
+.card{{position:absolute;left:70px;right:70px;top:480px;height:640px;background:#151515;border:4px solid {RED};border-radius:28px;opacity:0}}
+.card .nm{{position:absolute;left:0;right:0;bottom:40px;text-align:center;font:400 84px/1 Anton;text-transform:uppercase}}
+.card .sec{{position:absolute;right:30px;top:24px;background:{RED};font:400 56px Anton;padding:4px 22px;border-radius:12px}}
+.card .idx{{position:absolute;left:30px;top:16px;font:400 90px Anton;color:{RED}}}
+.dots{{position:absolute;left:0;right:0;top:1150px;display:flex;justify-content:center;gap:22px}}
+.dots i{{display:block;width:34px;height:34px;border-radius:50%;border:4px solid {RED}}}
+.rest{{position:absolute;left:0;right:0;top:820px;height:120px;background:#fff;color:#0b0b0b;font:400 80px/120px Anton;text-align:center;opacity:0}}
+.body{{position:absolute;left:390px;top:380px;width:300px;height:480px}}
+.zl{{position:absolute;font:400 46px Anton;color:#fff;opacity:0}}
+.badge{{position:absolute;left:0;right:0;margin:auto;width:fit-content;padding:20px 36px;background:{RED};font:400 60px Anton;border-radius:14px;opacity:0}}
+.slash{{position:absolute;width:2200px;height:340px;background:{RED};transform:rotate(-14deg);left:-560px;top:1060px}}
+.tick{{position:absolute;width:2300px;height:100px;background:#fff;color:#0b0b0b;font:400 54px/100px Anton;white-space:nowrap;transform:rotate(-14deg);left:-600px;top:1380px}}
+.cl{{position:absolute;left:70px;font:400 76px Anton;text-transform:uppercase;opacity:0}}
+.bt{{position:absolute;left:40px;right:40px;top:1330px;text-align:center;font:400 72px/1.05 Anton;text-transform:uppercase;opacity:0}}
+.capw{{position:absolute;left:0;right:0;top:1500px;text-align:center}}
+.cap{{display:none;background:#0b0b0b;border:4px solid {RED};padding:10px 28px;font:400 58px Anton;text-transform:uppercase;letter-spacing:1px}}
+.cap .on{{color:{RED}}}
+.bar{{position:absolute;left:0;top:0;height:12px;background:{RED}}}
+.scanl{{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 2px,transparent 2px 6px);opacity:0}}
+.flash{{position:absolute;inset:0;background:{RED};opacity:0}}
+"""
+    def figsvg(id_):
+        return (f"<svg class='fig' id='{id_}' viewBox='-20 -40 400 240'><g id='{id_}c' transform='translate(-6,0)' opacity='0'></g><g id='{id_}m' transform='translate(6,0)' opacity='0'></g>"
+                f"<g id='{id_}w'></g><line x1='-20' y1='4' x2='380' y2='4' stroke='#444' stroke-width='4'/></svg>")
+    body_svg = f"""<svg class='body' viewBox='0 0 400 640'>
+<circle cx='200' cy='70' r='56' fill='none' stroke='#fff' stroke-width='10'/>
+<rect x='110' y='150' width='180' height='300' rx='60' fill='none' stroke='#fff' stroke-width='10'/>
+<rect id='z0' x='165' y='210' width='70' height='190' rx='20' fill='{RED}' opacity='0'/>
+<rect id='z1a' x='122' y='230' width='36' height='170' rx='16' fill='{RED}' opacity='0'/><rect id='z1b' x='242' y='230' width='36' height='170' rx='16' fill='{RED}' opacity='0'/>
+<rect id='z2' x='130' y='330' width='140' height='90' rx='30' fill='none' stroke='{RED}' stroke-width='10' opacity='0'/>
+<line x1='150' y1='450' x2='140' y2='620' stroke='#fff' stroke-width='10' stroke-linecap='round'/><line x1='250' y1='450' x2='260' y2='620' stroke='#fff' stroke-width='10' stroke-linecap='round'/></svg>"""
+    page = f"""<!doctype html><html><head><meta charset='utf-8'><style>{css}</style></head><body>
+<div class='scn' id='s0'><div class='cnt A' id='cnt0'>0</div>{figsvg('f0')}
+ <svg class='x' id='x0' viewBox='0 0 100 100'><path d='M12 12 L88 88 M88 12 L12 88' stroke='{RED}' stroke-width='14' stroke-linecap='round'/></svg>
+ <div class='big' id='h0' style='top:1000px'>STOP AUX <span class='r'>100 CRUNCHS</span></div>
+ <div class='big' id='h1' style='top:1280px;font-size:90px'>⏱ 5 MIN À LA PLACE</div></div>
+<div class='scn' id='s1'><div class='tag' id='tg1' style='background:{RED}'>ERREUR</div><div class='timer A' id='tm1' style='top:340px;color:#999'>00:00 / 20:00</div>{figsvg('f1')}
+ <svg style='position:absolute;left:0;top:0' width='1080' height='1920'><circle id='nk' cx='340' cy='640' r='60' fill='none' stroke='{RED}' stroke-width='10' opacity='0'/></svg>
+ <div class='myth' id='my1' style='top:1060px'>« FONDRE LE VENTRE »</div><div class='stamp' id='st1'>MYTHE</div>
+ <div class='bt' id='bt1'>LONG · NUQUE ·<br><span class='r'>ZÉRO FONTE LOCALE</span></div></div>
+<div class='scn' id='s2'><div class='tag' id='tg2' style='background:#fff;color:#0b0b0b'>SOLUTION</div><div class='timer A' id='tm2' style='top:300px;font-size:150px'>5:00</div>
+ {''.join(f"<div class='card' id='cd{j}'><div class='idx'>{j+1}</div><div class='sec'>45 s</div>{figsvg('fx'+str(j)).replace('class=\'fig\'', 'class=\'fig\' style=\'left:20px;top:80px;width:800px;height:460px\'')}<div class='nm'>{H.escape(n)}</div></div>" for j, n in enumerate(sc[2]['ex']))}
+ <div class='rest' id='rest'>REPOS 15 s</div><div class='dots'>{''.join(f"<i id='dt{j}'></i>" for j in range(5))}</div>
+ <div class='bt' id='bt2'>45 s EFFORT / <span class='r'>15 s REPOS</span> × 5</div></div>
+<div class='scn' id='s3'>{body_svg}
+ <div class='zl' id='zl0' style='left:740px;top:560px'>AVANT</div><div class='zl' id='zl1' style='left:180px;top:560px'>CÔTÉS</div><div class='zl' id='zl2' style='left:740px;top:680px'>PROFOND</div>
+ <div class='badge' id='bg0' style='top:960px;font-size:54px'>DOS NEUTRE</div><div class='badge' id='bg1' style='top:1090px;font-size:54px;background:#fff;color:#0b0b0b'>RESPIRE</div>
+ <div class='badge' id='bg2' style='top:1220px;font-size:48px'>TROP DUR ? GENOUX AU SOL</div>
+ <div class='big' id='t3' style='top:200px;font-size:84px'>TOUTE LA SANGLE,<br><span class='r'>PAS JUSTE LE HAUT</span></div></div>
+<div class='scn' id='s4'><div class='timer A' id='tm4' style='top:260px;font-size:200px;color:{RED}'>5:00</div><div class='slash' id='sl4'></div><div class='tick' id='tk4'>{'ZÉRO SALLE · ZÉRO EXCUSE · ' * 6}</div>
+ <div class='big' id='h4' style='top:560px;font-size:150px'>ON LE FAIT<br><span class='r'>CE SOIR ?</span></div>
+ <div class='cl' id='c40' style='top:900px'>🔖 ENREGISTRE LE CIRCUIT</div><div class='cl' id='c41' style='top:1000px'>💬 T'AS TENU 5 MIN ?</div></div>
+<div class='scanl' id='scl'></div><div class='flash' id='fl'></div>
+<div class='capw'>{cap_html}</div><div class='bar' id='bar'></div>
+<script>
+const EV={json.dumps(ev, ensure_ascii=False)}; const D={total}; const SC={json.dumps(S, ensure_ascii=False)}; const P={json.dumps(POSES)};
+const c=x=>Math.max(0,Math.min(1,x)), eo=x=>1-Math.pow(1-c(x),3), back=x=>{{x=c(x);const s=1.7;return 1+(s+1)*Math.pow(x-1,3)+s*Math.pow(x-1,2);}};
+const $=id=>document.getElementById(id);
+const SEG=[['N','P'],['N','E1'],['E1','W1'],['N','E2'],['E2','W2'],['P','K1'],['K1','F1'],['P','K2'],['K2','F2']];
+function fig(id,pose,k,col){{const A=P[pose][0],B=P[pose][1];const J={{}};for(const n in A)J[n]=[A[n][0]+(B[n][0]-A[n][0])*k,A[n][1]+(B[n][1]-A[n][1])*k];
+  const y=v=>160-v;let s='';for(const [a,b] of SEG)s+=`<line x1='${{J[a][0]}}' y1='${{y(J[a][1])}}' x2='${{J[b][0]}}' y2='${{y(J[b][1])}}' stroke='${{col}}' stroke-width='16' stroke-linecap='round'/>`;
+  s+=`<circle cx='${{J.H[0]}}' cy='${{y(J.H[1])}}' r='24' fill='${{col}}'/>`;return s;}}
+function drawFig(id,pose,k,glitch,neck=0){{$(id+'w').innerHTML=fig(id,pose,k,'#fff')+(neck?`<circle cx='${{(P[pose][0].N[0]+(P[pose][1].N[0]-P[pose][0].N[0])*k)}}' cy='${{160-(P[pose][0].N[1]+(P[pose][1].N[1]-P[pose][0].N[1])*k)}}' r='34' fill='none' stroke='#ff2d36' stroke-width='8' opacity='${{neck}}'/>`:'');
+  $(id+'c').innerHTML=glitch?fig(id,pose,k,'#00e5ff'):'';$(id+'m').innerHTML=glitch?fig(id,pose,k,'#ff2d36'):'';
+  $(id+'c').setAttribute('opacity',glitch?.8:0);$(id+'m').setAttribute('opacity',glitch?.8:0);
+  $(id+'c').setAttribute('transform',`translate(${{glitch?-10:0}},${{glitch?3:0}})`);$(id+'m').setAttribute('transform',`translate(${{glitch?10:0}},${{glitch?-3:0}})`);}}
+function slam(el,t0,u,from=2){{const k=back((u-t0)/.3);el.style.opacity=u>=t0?1:0;el.style.transform=`scale(${{from-(from-1)*k}})`;}}
+function rise(el,t0,u){{const k=back((u-t0)/.35);el.style.opacity=u>=t0?c((u-t0)/.1):0;el.style.transform=`translateY(${{(1-k)*80}}px)`;}}
+function gl(el,on,u){{if(!el)return;el.style.textShadow=on?`${{-6+Math.sin(u*90)*4}}px 0 #00e5ff, ${{6}}px 0 #ff2d36`:'none';el.style.transform=(el.style.transform||'')+(on?` translateX(${{Math.sin(u*130)*10}}px)`:'');}}
+window.render=function(t){{
+ $('bar').style.width=(c(t/D)*1080)+'px';
+ let k=0;for(let i=0;i<SC.length;i++)if(t>=SC[i].a)k=i;const s=SC[k],u=t-s.a,d=s.b-s.a;
+ for(let i=0;i<SC.length;i++)$('s'+i).style.opacity=i==k?1:0;
+ const cut=u<.12&&k>0;$('scl').style.opacity=(k==1)?.9:(cut?.6:0);
+ $('fl').style.opacity=0;document.body.style.filter='none';
+ if(k==0){{const n=Math.min(100,Math.floor(Math.pow(c(u/1.5),1.6)*100));$('cnt0').textContent=n;
+   const g=u>1.5&&u<1.85;drawFig('f0','crunch',.5+.5*Math.sin(u*(6+u*10)),g);$('f0').style.transform=g?`translateX(${{Math.sin(u*120)*16}}px)`:'none';
+   slam($('x0'),1.7,u,2.4);$('h0').style.opacity=1;gl($('h0'),g,u);rise($('h1'),2.2,u);
+   if(g)$('fl').style.opacity=.15;}}
+ if(k==1){{document.body.style.filter='grayscale(1) contrast(1.1)';$('tg1').style.opacity=Math.floor(u*3)%2?1:.3;$('tg1').style.filter='none';
+   const sec=Math.floor(u*9);$('tm1').textContent=String(Math.floor(sec/60)).padStart(2,'0')+':'+String(sec%60).padStart(2,'0')+' / 20:00';
+   const g=(u>.1&&u<.35)||(u>3.2&&u<3.45);drawFig('f1','crunch',.5+.5*Math.sin(u*2.4),g,u>2.2?(.5+.5*Math.sin(u*8)):0);
+   
+   const ms=d*.68;$('my1').style.opacity=u>ms-.8?1:0;slam($('st1'),ms,u,2.6);rise($('bt1'),1.0,u);}}
+ if(k==2){{const T0=1.3,step=(d-1.6)/5;slam($('tg2'),0,u,1.6);const rem=Math.max(0,300-Math.floor(c((u-T0)/(d-T0))*15));$('tm2').textContent=Math.floor(rem/60)+':'+String(rem%60).padStart(2,'0');
+   let cur=-1;for(let j=0;j<5;j++)if(u>=T0+step*j)cur=j;
+   for(let j=0;j<5;j++){{const cd=$('cd'+j);const on=j==cur;const kk=back((u-T0-step*j)/.3);cd.style.opacity=on?1:0;cd.style.transform=`translateX(${{(1-kk)*700}}px) rotate(${{(1-kk)*6}}deg)`;
+     const pose=['planche','deadbug','lateral','climber','creuse'][j];const sp=pose=='climber'?5:2.2;drawFig('fx'+j,pose,.5+.5*Math.sin(u*sp),false);
+     $('dt'+j).style.background=j<=cur?'{RED}':'transparent';}}
+   const r=$('rest');let ro=0;for(let j=1;j<5;j++){{const x=u-(T0+step*j);if(x>-.35&&x<0)ro=1;}}r.style.opacity=ro;r.style.transform=`translateX(${{ro?0:-1200}}px)`;
+   rise($('bt2'),.6,u);}}
+ if(k==3){{rise($('t3'),.0,u);const zs=[['z0'],['z1a','z1b'],['z2']];
+   for(let j=0;j<3;j++){{const on=u>=.5+.8*j;for(const id of zs[j])$(id).setAttribute('opacity',on?(.55+.35*Math.sin(u*5+j)):0);$('zl'+j).style.opacity=on?1:0;}}
+   for(let j=0;j<3;j++){{const b=$('bg'+j);const kk=back((u-3.6-.7*j)/.45);b.style.opacity=u>=3.6+.7*j?1:0;b.style.transform=`translateY(${{(1-kk)*-300}}px) rotate(${{(j-1)*3}}deg)`;}}}}
+ if(k==4){{const rem=Math.max(0,300-Math.floor(c((u-.1)/1.4)*300));$('tm4').textContent=Math.floor(rem/60)+':'+String(rem%60).padStart(2,'0');
+   $('tm4').style.opacity=u<1.6?1:0;if(u>1.5&&u<1.75)$('fl').style.opacity=.8*(1-(u-1.5)/.25);
+   slam($('h4'),1.6,u,2.2);const ks=eo((u-2.2)/.35);$('sl4').style.transform=`rotate(-14deg) translateX(${{(1-ks)*-2400}}px)`;
+   $('tk4').style.transform=`rotate(-14deg) translateX(${{(1-ks)*2400-((u*160)%600)}}px)`;slam($('c40'),2.9,u,1.8);slam($('c41'),3.4,u,1.8);}}
+ for(const cp of document.querySelectorAll('.cap')){{const a=+cp.dataset.a,b=+cp.dataset.b;cp.style.display=(t>=a&&t<b)?'inline-block':'none';
+   for(const w of cp.querySelectorAll('[data-w]'))w.className=(t>=+w.dataset.w)?'on':'';}}
+}};render(0);
+</script></body></html>"""
+    return page
+
+LAYOUTS = {"messages": messages_page, "terminal": terminal_page, "cheatsheet": cheatsheet_page, "iceberg": iceberg_page, "sportmotion": sportmotion_page}
 
 # ------------------------------------------------------------------ rendu
 def sfx_track(path, total, events, starts):
@@ -573,6 +723,15 @@ def sfx_track(path, total, events, starts):
             for q in range(0, L, 2): put(tick, e["at"] + q * step, 0.8)
         if e["k"] == "heart": put(chime, e["at"] + 1.0)
         if e["k"] == "sparkle": put(chime, e["at"], 0.8)
+        if e["k"] == "glitch":
+            tg = np.arange(int(.22 * SR)) / SR
+            put(np.sign(np.sin(2 * np.pi * 180 * tg)) * (rng.random(len(tg)) > .5) * .18 * np.exp(-tg * 6), e["at"])
+        if e["k"] == "beep":
+            tb = np.arange(int(.12 * SR)) / SR
+            put(np.sin(2 * np.pi * 1320 * tb) * .25 * np.minimum(1, (len(tb) - np.arange(len(tb))) / 300), e["at"])
+        if e["k"] == "whistle":
+            tw2 = np.arange(int(.6 * SR)) / SR
+            put(np.sin(2 * np.pi * (2900 + 120 * np.sin(2 * np.pi * 32 * tw2)) * tw2) * .18 * np.minimum(1, (len(tw2) - np.arange(len(tw2))) / 2000), e["at"])
         if e["k"] == "whoosh": put(whoosh, e["at"] - 0.05)
         if e["k"] == "click": put(tick * 3, e["at"]); put(pop, e["at"] + 0.03)
         if e["k"] == "impact":
