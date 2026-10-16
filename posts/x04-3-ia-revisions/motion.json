@@ -1,0 +1,63 @@
+{
+ "id": "X04",
+ "layout": "cheatsheet",
+ "music_seed": 17,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "vo": "Tu passes des heures à relire tes cours ? Voici trois IA gratuites que presque personne n'utilise.",
+   "say": "Tu passes des heures à relire tes cours ? Voici trois IA gratuites que presque personne n'utilise."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "NotebookLM",
+   "file": "Cours_Histoire.pdf",
+   "pills": [
+    "📝 Quiz",
+    "🃏 Fiches",
+    "🎧 Résumé audio"
+   ],
+   "text": "Ton cours → **quiz + fiches + audio**",
+   "vo": "Un : NotebookLM, de Google. Tu y déposes ton cours, et il te génère un quiz, des fiches, et même un résumé audio à écouter dans le bus.",
+   "say": "Un : Notebook L M, de Google. Tu y déposes ton cours, et il te génère un quiz, des fiches, et même un résumé audio à écouter dans le bus."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Napkin",
+   "nodes": [
+    "Cause",
+    "Fait",
+    "Conséquence"
+   ],
+   "text": "Texte → **schéma en 1 clic**",
+   "vo": "Deux : Napkin. Tu colles un paragraphe, il le transforme en schéma clair. Parfait pour mémoriser visuellement.",
+   "say": "Deux : Napkin. Tu colles un paragraphe, il le transforme en schéma clair. Parfait pour mémoriser visuellement."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Perplexity",
+   "q": "Causes de la Révolution française ?",
+   "answers": [
+    "Crise financière de l'État",
+    "Inégalités entre les ordres",
+    "Diffusion des idées des Lumières"
+   ],
+   "text": "Des réponses **AVEC sources**",
+   "vo": "Trois : Perplexity. Tu poses ta question, il te répond avec ses sources, pour vérifier avant de recopier. Parce que l'IA peut se tromper.",
+   "say": "Trois : Perplexity. Tu poses ta question, il te répond avec ses sources, pour vérifier avant de recopier. Parce que l'IA peut se tromper."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour tes révisions",
+    "➕ 1 astuce IA par jour"
+   ],
+   "vo": "Enregistre cette vidéo pour tes prochaines révisions, et abonne-toi pour une astuce par jour.",
+   "say": "Enregistre cette vidéo pour tes prochaines révisions, et abonne-toi pour une astuce par jour."
+  }
+ ]
+}
