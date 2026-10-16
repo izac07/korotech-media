@@ -172,11 +172,11 @@ def terminal_page(spec, theme, starts, durs, caps, total):
 body{{width:1080px;height:1920px;overflow:hidden;background:#040705;color:#eafff2;font-family:'Space Grotesk',sans-serif;position:relative}}
 .grid{{position:absolute;inset:-120px;background-image:linear-gradient(rgba(57,255,136,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(57,255,136,.06) 1px,transparent 1px);background-size:60px 60px}}
 .glow{{position:absolute;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(57,255,136,.18),transparent 65%)}}
-.win{{position:absolute;left:50px;right:50px;top:200px;height:900px;border:2px solid rgba(57,255,136,.4);border-radius:28px;background:rgba(6,12,8,.94);box-shadow:0 0 90px rgba(57,255,136,.15);overflow:hidden}}
+.win{{position:absolute;left:50px;right:50px;top:200px;height:820px;border:2px solid rgba(57,255,136,.4);border-radius:28px;background:rgba(6,12,8,.94);box-shadow:0 0 90px rgba(57,255,136,.15);overflow:hidden}}
 .wbar{{height:76px;display:flex;align-items:center;gap:14px;padding:0 30px;border-bottom:2px solid rgba(57,255,136,.18);background:rgba(57,255,136,.05)}}
 .wbar i{{width:20px;height:20px;border-radius:50%;display:block}}
 .fname{{flex:1;text-align:center;font:400 26px 'JetBrains Mono';color:#7fa891;margin-right:100px}}
-.term{{position:absolute;left:44px;right:44px;top:110px;bottom:30px;display:flex;flex-direction:column;gap:14px;font:400 36px/1.45 'JetBrains Mono'}}
+.term{{position:absolute;left:44px;right:44px;top:112px;bottom:30px;display:flex;flex-direction:column;gap:22px;font:400 45px/1.42 'JetBrains Mono'}}
 .l{{display:none;white-space:pre-wrap}}
 .cmd .p{{color:{g}}}
 .out{{color:#d6f5e2}} .cm{{color:#5f8a70;font-style:italic}} .warn{{color:#febc2e}} .ok{{color:{g}}}
@@ -184,8 +184,8 @@ body{{width:1080px;height:1920px;overflow:hidden;background:#040705;color:#eafff
 .hl{{color:#b6ff3b}}
 .cur{{display:inline-block;width:20px;height:40px;background:{g};vertical-align:-6px;margin-left:4px}}
 .pbar{{height:26px;border:2px solid {g};border-radius:8px;overflow:hidden;margin-top:6px}} .pbar b{{display:block;height:100%;width:0;background:{g}}}
-.big{{position:absolute;left:70px;right:70px;top:1150px}}
-.ln{{font:400 88px/1.08 'Archivo Black';display:block;opacity:0}}
+.big{{position:absolute;left:70px;right:70px;top:1080px}}
+.ln{{font:400 96px/1.08 'Archivo Black';display:block;opacity:0}}
 .ln em{{font-style:normal;color:{g}}}
 .capw{{position:absolute;left:0;right:0;top:1480px;text-align:center}}
 .cap{{display:none;background:rgba(6,12,8,.92);border:2px solid rgba(57,255,136,.5);border-radius:18px;padding:14px 30px;font:700 46px 'JetBrains Mono';color:#eafff2}}
@@ -219,7 +219,7 @@ body{{width:1080px;height:1920px;overflow:hidden;background:#040705;color:#eafff
                 lines.append(f"<div class='l ok' id='{eid}'>{K.esc(ev.get('text',''))}<div class='pbar'><b></b></div></div>")
                 evs.append({"id": eid, "k": "prog", "at": at, "end": T(ev["end"])})
             elif kind == "pill":
-                parts.append(f"<div class='pill' id='{eid}' style='top:{830 + 120 * ev.get("row", 0)}px'>{rich(ev['text'])}</div>")
+                parts.append(f"<div class='pill' id='{eid}' style='top:{740 + 120 * ev.get("row", 0)}px'>{rich(ev['text'])}</div>")
                 evs.append({"id": eid, "k": "pill", "at": at})
         title = "".join(f"<span class='ln' data-at='{T(l['at'])}'>{rich(l['text'])}</span>" for l in sc.get("title", []))
         parts.append(f"<div class='term sc' data-a='{a0}' data-b='{a0 + d}' data-f='{K.esc(sc.get('file', 'terminal'))}'>{''.join(lines)}</div>")
