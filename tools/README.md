@@ -21,17 +21,19 @@ URL publique d'un fichier : `https://izac07.github.io/korotech-media/<chemin>`
 - Carrousels : sans musique (l'API Instagram ne le permet pas). Le contenu complet (prompt, liste) est DANS le carrousel.
 - Rester exact : pas de chiffres, résultats de « tests » ou anecdotes personnelles inventés. Ne jamais présenter un test comme réalisé s'il ne l'a pas été. Ajouter « l'IA peut se tromper » quand c'est pertinent.
 
-## Rythme (heure de Paris) — montée progressive après la suspension Facebook du 16/10
+## Rythme (heure de Paris) — 2 posts par jour (décision de Goat du 16/10/2026)
 
-| Période | Posts / jour | Créneaux |
+| Créneau | Format | Pilier |
 |---|---|---|
-| 17 → 19/10/2026 | 3 | 12:15 Reel · 18:00 Carrousel · 21:45 Reel — déjà remplis avec le stock R11-R16, C09-C11 |
-| à partir du 20/10/2026 | 5 | 12:15 Reel Études · 13:30 Carrousel Vie étudiante (ou Parents 1 jour sur 2) · 18:00 Carrousel IA au quotidien · 19:15 Reel Humour/POV · 21:45 Reel Études |
-| plus tard | 10 | grille complète ci-dessous — UNIQUEMENT quand Goat le décide (mettre alors à jour ce tableau) |
+| 12:15 | Reel ou Carrousel (alterner d'un jour à l'autre) | Études malin le plus souvent |
+| 19:15 | l'autre format | Vie étudiante, IA au quotidien, Humour/POV ou Parents (tourner) |
 
-La tâche du soir ne remplit que les créneaux de demain qui sont encore vides dans la file (voir « Lire la file »).
+Sur une semaine (14 posts) : environ 7 reels et 7 carrousels ; 5-6 Études malin, 2-3 Vie étudiante, 2 IA au quotidien, 2 Humour/POV, 2 Parents.
+Le stock R11-R16 / C09-C12 couvre du 17 au 21/10/2026.
 
-### Grille complète à 10 posts (pas encore active)
+Production À LA SEMAINE : la tâche « Korotech - production de la semaine » tourne le samedi vers 01:00 et remplit les créneaux encore vides des 7 jours suivants (du dimanche au samedi suivant) — voir « Lire / corriger la file ».
+
+### Ancienne grille à 10 posts (plus utilisée, gardée pour référence)
 | Heure | Format | Pilier |
 |---|---|---|
 | 07:15 | Reel | Humour / POV |

@@ -19,16 +19,16 @@
 | 2026-10-15 19:15 | R09 | Reel | L'IA rend bête ? Ça dépend de comment tu l'utilises | — |
 | 2026-10-15 20:30 | C08 | Carrousel | Parents : a-t-il copié sur ChatGPT ? 4 réflexes | — |
 | 2026-10-15 21:45 | R10 | Reel | Ta semaine organisée en 1 prompt | PLANNING |
-| 2026-10-19 12:15 (replanifié, prévu le 16/10) | R11 | Reel | Prédire les questions du prochain contrôle | CONTRÔLE |
-| 2026-10-19 18:00 (replanifié, prévu le 16/10) | C09 | Carrousel | Parents : aider en maths sans tout réexpliquer | — |
+| 2026-10-19 19:15 (replanifié, prévu le 16/10) | R11 | Reel | Prédire les questions du prochain contrôle | CONTRÔLE |
+| 2026-10-19 12:15 (replanifié, prévu le 16/10) | C09 | Carrousel | Parents : aider en maths sans tout réexpliquer | — |
 | 2026-10-18 12:15 (replanifié, prévu le 16/10) | R12 | Reel | Mythe : relire son cours ne suffit pas (se tester) | — |
 | 2026-10-17 12:15 (replanifié, prévu le 16/10) | R13 | Reel | Apprendre l'espagnol avec sa série | SÉRIE |
-| 2026-10-17 18:00 (replanifié, prévu le 16/10) | C10 | Carrousel | La méthode Pomodoro avec l'IA | POMODORO |
-| 2026-10-19 21:45 (replanifié, prévu le 16/10) | R14 | Reel | Oral d'anglais en mode vocal | ORAL |
-| 2026-10-18 18:00 (replanifié, prévu le 16/10) | C11 | Carrousel | Lettre de motivation qui te ressemble | LETTRE |
-| 2026-10-18 21:45 (replanifié, prévu le 16/10) | R15 | Reel | Parents : préparer la réunion parents-profs | RÉUNION |
-| 2026-10-20 13:30 (replanifié, prévu le 16/10) | C12 | Carrousel | Parents : l'IA et la vie privée de votre enfant | — |
-| 2026-10-17 21:45 (replanifié, prévu le 16/10) | R16 | Reel | Son cours en podcast | PODCAST |
+| 2026-10-17 19:15 (replanifié, prévu le 16/10) | C10 | Carrousel | La méthode Pomodoro avec l'IA | POMODORO |
+| 2026-10-20 12:15 (replanifié, prévu le 16/10) | R14 | Reel | Oral d'anglais en mode vocal | ORAL |
+| 2026-10-18 19:15 (replanifié, prévu le 16/10) | C11 | Carrousel | Lettre de motivation qui te ressemble | LETTRE |
+| 2026-10-21 19:15 (replanifié, prévu le 16/10) | R15 | Reel | Parents : préparer la réunion parents-profs | RÉUNION |
+| 2026-10-20 19:15 (replanifié, prévu le 16/10) | C12 | Carrousel | Parents : l'IA et la vie privée de votre enfant | — |
+| 2026-10-21 12:15 (replanifié, prévu le 16/10) | R16 | Reel | Son cours en podcast | PODCAST |
 
 ## Idées en réserve (nouvelle ligne mixée)
 Études : POV contrôle demain et rien révisé ; arrêter de surligner tout son cours ; réviser dans le bus ; la veille du bac ; quand tu comprends rien au prof ; erreurs de dissertation ; oral du bac de langue ; corriger son accent ; maths sans tricher ; schéma bilan.
