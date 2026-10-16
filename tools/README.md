@@ -21,7 +21,17 @@ URL publique d'un fichier : `https://izac07.github.io/korotech-media/<chemin>`
 - Carrousels : sans musique (l'API Instagram ne le permet pas). Le contenu complet (prompt, liste) est DANS le carrousel.
 - Rester exact : pas de chiffres, résultats de « tests » ou anecdotes personnelles inventés. Ne jamais présenter un test comme réalisé s'il ne l'a pas été. Ajouter « l'IA peut se tromper » quand c'est pertinent.
 
-## Rythme : 10 posts par jour (heure de Paris)
+## Rythme (heure de Paris) — montée progressive après la suspension Facebook du 16/10
+
+| Période | Posts / jour | Créneaux |
+|---|---|---|
+| 17 → 19/10/2026 | 3 | 12:15 Reel · 18:00 Carrousel · 21:45 Reel — déjà remplis avec le stock R11-R16, C09-C11 |
+| à partir du 20/10/2026 | 5 | 12:15 Reel Études · 13:30 Carrousel Vie étudiante (ou Parents 1 jour sur 2) · 18:00 Carrousel IA au quotidien · 19:15 Reel Humour/POV · 21:45 Reel Études |
+| plus tard | 10 | grille complète ci-dessous — UNIQUEMENT quand Goat le décide (mettre alors à jour ce tableau) |
+
+La tâche du soir ne remplit que les créneaux de demain qui sont encore vides dans la file (voir « Lire la file »).
+
+### Grille complète à 10 posts (pas encore active)
 | Heure | Format | Pilier |
 |---|---|---|
 | 07:15 | Reel | Humour / POV |
@@ -75,6 +85,12 @@ Google Sheet « Korotech - File d'attente Instagram ». On y ajoute une ligne vi
 `id, date ("AAAA-MM-JJ HH:mm", heure de Paris), heure, format ("Reel" ou "Carrousel"), titre, legende, medias, statut ("À valider"), note`.
 - Reel : `medias` = URL publique du MP4.
 - Carrousel : `medias` = `{"files":[{"media_type":"IMAGE","image_url":"<url slide 1>"}, ...]}`.
+
+### Lire / corriger la file
+Scénario Make **9989122** (« Korotech - Admin file »), à lancer avec `scenarios_run` (responsive true), un appel à la fois :
+- `exporter` = `oui` → dépose `admin/file-AAAA-MM-JJ-HHmmss.csv` dans ce dépôt (faire `git pull`). Colonnes sans en-tête : `ligne;id;date;heure;format;titre;statut;id_instagram`.
+- `ligne`, `date`, `heure`, `statut` → replanifie une ligne (colonnes B, C, H).
+- `cellule`, `valeur` → modifie une cellule précise (ex. `H12` = `Refusé`).
 
 Validation par défaut avec droit de veto : le scénario 9972048 publie toutes les 15 min (7h-22h30) les lignes « À valider » ou « Validé » dont l'heure est passée. Goat passe en « Refusé » ce qu'il ne veut pas publier. Statuts posés par le scénario : « En cours », « Publié », « Erreur ».
 
