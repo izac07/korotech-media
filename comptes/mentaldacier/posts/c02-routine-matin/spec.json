@@ -1,0 +1,55 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Routine du matin<br>**sans te lever<br>à 5 h**",
+   "size": 98,
+   "sub": "4 étapes simples, à ton heure."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Étape 1",
+   "title": "Pas de téléphone **les 15 premières minutes**",
+   "body": "Ta journée commence par **tes** priorités, pas par celles des notifications."
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Étape 2",
+   "title": "Un verre d'eau **et de la lumière**",
+   "body": "Ouvre les volets ou sors quelques minutes. Simple, et ça aide à te réveiller."
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Étape 3",
+   "title": "Bouge **5 minutes**",
+   "body": "Étirements, quelques squats, une petite marche. **Pas besoin d'une séance complète.**"
+  },
+  {
+   "type": "item",
+   "num": 4,
+   "when": "Étape 4",
+   "title": "Ta **priorité n°1**",
+   "body": "Écris la seule chose qui rendrait ta journée réussie. Et commence par **elle**."
+  },
+  {
+   "type": "cta",
+   "title": "Teste-la<br>**demain**",
+   "size": 100,
+   "ctas": [
+    [
+     "🔖",
+     "Enregistre ce post"
+    ],
+    [
+     "➕",
+     "Suis **@mentaldacier2030**"
+    ]
+   ],
+   "note": "Adapte l'heure à ta vie : la régularité compte plus que l'horaire."
+  }
+ ],
+ "id": "MDA-C02"
+}

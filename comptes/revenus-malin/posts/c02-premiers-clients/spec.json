@@ -1,0 +1,56 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Tes 3 premiers<br>**clients**",
+   "size": 112,
+   "sub": "Sans pub, sans budget, en partant de ce que tu as."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Étape 1",
+   "title": "Une offre **en une phrase**",
+   "card": "J'aide [qui] à [résultat] grâce à [ton service].",
+   "card_label": "À COMPLÉTER"
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Étape 2",
+   "title": "Préviens **ton entourage**",
+   "body": "Un message simple à 20 personnes : ce que tu proposes et **pour qui**. Demande-leur à qui ils pensent."
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Étape 3",
+   "title": "Sois visible **localement**",
+   "body": "Groupes du quartier, commerces, plateformes de services : là où tes clients **cherchent déjà**."
+  },
+  {
+   "type": "item",
+   "num": 4,
+   "when": "Étape 4",
+   "title": "Demande **un avis**",
+   "body": "Après chaque mission, demande un retour honnête. Les avis rassurent **les clients suivants**."
+  },
+  {
+   "type": "cta",
+   "title": "Commence<br>**aujourd'hui**",
+   "size": 100,
+   "ctas": [
+    [
+     "🔖",
+     "Enregistre ce post"
+    ],
+    [
+     "➕",
+     "Suis **@revenus_malin**"
+    ]
+   ],
+   "note": "Pas de promesse de revenus ici : juste une méthode honnête."
+  }
+ ],
+ "id": "RM-C02"
+}

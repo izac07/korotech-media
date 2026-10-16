@@ -1,0 +1,62 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "title": "5 green flags<br>qu'on ne remarque<br>**pas assez**",
+   "size": 100,
+   "sub": "Les bons signes sont souvent les plus discrets."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Green flag",
+   "title": "Tu peux dire **non**",
+   "body": "Sans devoir te justifier pendant 10 minutes, et sans que ça crée un drame."
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Green flag",
+   "title": "Les disputes **apaisent**",
+   "body": "Vous n'êtes pas toujours d'accord, mais une dispute finit par **une solution**, pas par du silence pendant des jours."
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Green flag",
+   "title": "Ta vie **continue**",
+   "body": "Tes amis, tes projets, tes passions gardent leur place. On ne te demande pas de **choisir**."
+  },
+  {
+   "type": "item",
+   "num": 4,
+   "when": "Green flag",
+   "title": "Ce qui est dit **est fait**",
+   "body": "Les petites promesses sont tenues. La confiance se construit dans **les détails**."
+  },
+  {
+   "type": "item",
+   "num": 5,
+   "when": "Green flag",
+   "title": "Tu te sens **toi-même**",
+   "body": "Tu n'as pas besoin de jouer un rôle ou de surveiller chaque mot. **Tu es calme.**"
+  },
+  {
+   "type": "cta",
+   "title": "Tu mérites<br>**le calme**",
+   "size": 96,
+   "ctas": [
+    [
+     "🔖",
+     "Enregistre ce post"
+    ],
+    [
+     "↗️",
+     "Partage à quelqu'un"
+    ]
+   ],
+   "note": "Chaque relation est différente : ces repères ne remplacent pas ton ressenti."
+  }
+ ],
+ "id": "CL-C01"
+}

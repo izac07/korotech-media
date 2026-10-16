@@ -1,0 +1,56 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "title": "3 erreurs qui<br>rendent tes<br>**prompts nuls**",
+   "size": 104,
+   "sub": "Et la formule simple pour avoir enfin de bonnes réponses."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Erreur 1",
+   "title": "Pas de **contexte**",
+   "body": "« Écris un mail de prospection » → réponse générique. Dis **qui tu es, à qui tu écris et pourquoi**."
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Erreur 2",
+   "title": "Pas de **format**",
+   "body": "Précise ce que tu veux recevoir : **longueur, ton, structure** (liste, tableau, 3 versions…)."
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Erreur 3",
+   "title": "Tout accepter **du premier coup**",
+   "body": "La première réponse est un brouillon. Demande : **« plus court »**, « plus direct », « donne 3 variantes »."
+  },
+  {
+   "type": "item",
+   "num": "✓",
+   "when": "La formule",
+   "title": "Rôle + contexte + **format**",
+   "card": "Tu es [rôle]. Je suis [ton activité] et je veux [objectif] pour [cible]. Donne-moi [format précis]. Pose-moi des questions si besoin.",
+   "card_label": "À COPIER"
+  },
+  {
+   "type": "cta",
+   "title": "Teste-la<br>**aujourd'hui**",
+   "size": 96,
+   "ctas": [
+    [
+     "🔖",
+     "Enregistre la formule"
+    ],
+    [
+     "💬",
+     "Dis-moi ton métier en commentaire"
+    ]
+   ],
+   "note": "Relis toujours ce que l'IA produit avant de l'utiliser."
+  }
+ ],
+ "id": "LIA-C02"
+}

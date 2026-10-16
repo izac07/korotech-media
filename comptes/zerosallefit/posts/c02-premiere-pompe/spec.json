@@ -1,0 +1,55 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Zéro pompe ?<br>**Normal.**",
+   "size": 110,
+   "sub": "4 étapes pour réussir ta première, à ton rythme."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Étape 1",
+   "title": "Pompes **contre un mur**",
+   "body": "Mains à hauteur d'épaules, corps bien droit. Vise **3 séries de 10** sans te cambrer."
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Étape 2",
+   "title": "Sur une **table ou un canapé**",
+   "body": "Plus les mains sont basses, plus c'est dur. **3 séries de 8** avant de passer à la suite."
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Étape 3",
+   "title": "Sur les **genoux**",
+   "body": "Hanches alignées avec le dos, poitrine qui descend près du sol. **3 séries de 6 à 8.**"
+  },
+  {
+   "type": "item",
+   "num": 4,
+   "when": "Étape 4",
+   "title": "La descente **lente**",
+   "body": "Position pompe classique, descends en **3 à 5 secondes**, remonte sur les genoux. C'est elle qui construit ta première pompe."
+  },
+  {
+   "type": "cta",
+   "title": "Tu en es<br>**à quelle étape ?**",
+   "size": 92,
+   "ctas": [
+    [
+     "💬",
+     "Dis-le en commentaire"
+    ],
+    [
+     "🔖",
+     "Enregistre ta progression"
+    ]
+   ],
+   "note": "Avance quand l'étape devient facile. Douleur = stop."
+  }
+ ],
+ "id": "ZSF-C02"
+}

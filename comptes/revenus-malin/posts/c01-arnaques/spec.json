@@ -1,0 +1,62 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "title": "4 arnaques<br>« argent facile »<br>**à reconnaître**",
+   "size": 100,
+   "sub": "Avant de chercher un complément de revenus, protège-toi."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Arnaque 1",
+   "title": "Les « missions » **payées pour liker**",
+   "body": "On te paie un peu au début, puis on te demande de **déposer de l'argent** pour débloquer la suite. Tu ne revois jamais tes fonds."
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Arnaque 2",
+   "title": "Le **faux job** qui passe par ton compte",
+   "body": "Recevoir de l'argent sur ton compte pour le renvoyer ailleurs : tu peux te retrouver complice de **blanchiment**."
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Arnaque 3",
+   "title": "La formation **miracle**",
+   "body": "Revenus « garantis », captures de virements, compte à rebours : on vend **un rêve**, pas une compétence."
+  },
+  {
+   "type": "item",
+   "num": 4,
+   "when": "Arnaque 4",
+   "title": "Le recrutement **de recrutement**",
+   "body": "Si l'argent vient surtout du fait de **faire entrer d'autres personnes** plutôt que de vendre un vrai produit, fuis."
+  },
+  {
+   "type": "item",
+   "num": "✓",
+   "when": "La règle",
+   "title": "Un vrai side hustle **ne te demande pas de payer** pour travailler",
+   "body": "Victime ou doute ? Renseigne-toi sur **cybermalveillance.gouv.fr**."
+  },
+  {
+   "type": "cta",
+   "title": "Protège<br>**ton argent**",
+   "size": 100,
+   "ctas": [
+    [
+     "🔖",
+     "Enregistre ce post"
+    ],
+    [
+     "↗️",
+     "Partage à un proche"
+    ]
+   ],
+   "note": "Ici : des idées concrètes, sans promesses magiques."
+  }
+ ],
+ "id": "RM-C01"
+}

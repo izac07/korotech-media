@@ -1,0 +1,47 @@
+{
+ "music_seed": 44,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "Ton squat",
+    "est peut-être",
+    "**raté.**"
+   ],
+   "vo": "Tu fais des squats ? Vérifie ces trois erreurs."
+  },
+  {
+   "type": "list",
+   "label": "Les erreurs",
+   "title": "À corriger",
+   "items": [
+    "Talons **qui décollent**",
+    "Genoux qui rentrent **vers l'intérieur**",
+    "Dos **arrondi**"
+   ],
+   "vo": "Les talons qui décollent, les genoux qui rentrent vers l'intérieur, et le dos qui s'arrondit."
+  },
+  {
+   "type": "text",
+   "label": "La correction",
+   "title": "Pieds **à plat**, genoux dans l'axe des pieds, poitrine **ouverte**",
+   "vo": "Garde les pieds bien à plat, les genoux dans l'axe des pieds, et la poitrine ouverte."
+  },
+  {
+   "type": "cta",
+   "title": "Teste devant<br>**un miroir**",
+   "ctas": [
+    [
+     "🔖",
+     "Enregistre"
+    ],
+    [
+     "➕",
+     "Suis **@zerosallefit**"
+    ]
+   ],
+   "vo": "Teste devant un miroir, et enregistre la vidéo pour ta prochaine séance."
+  }
+ ],
+ "id": "ZSF-R01"
+}

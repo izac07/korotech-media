@@ -1,0 +1,47 @@
+{
+ "music_seed": 63,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "« Je commence",
+    "lundi »",
+    "**encore ?**"
+   ],
+   "vo": "Je commence lundi. Combien de fois tu t'es dit ça ?"
+  },
+  {
+   "type": "text",
+   "label": "Le vrai problème",
+   "title": "Tu attends le jour parfait pour un **plan trop gros**",
+   "vo": "Le problème, ce n'est pas le jour. C'est que tu prévois un changement trop gros pour le tenir."
+  },
+  {
+   "type": "list",
+   "label": "Fais plutôt ça",
+   "title": "Aujourd'hui",
+   "items": [
+    "Choisis **une seule** action",
+    "Fais-la en **version mini**",
+    "Coche-la, même petite"
+   ],
+   "vo": "Choisis une seule action, fais-la en version mini, et coche-la aujourd'hui."
+  },
+  {
+   "type": "cta",
+   "title": "Lundi,<br>**c'est maintenant**",
+   "ctas": [
+    [
+     "🔖",
+     "Enregistre"
+    ],
+    [
+     "➕",
+     "Suis **@mentaldacier2030**"
+    ]
+   ],
+   "vo": "Lundi, c'est maintenant. Enregistre la vidéo et abonne-toi."
+  }
+ ],
+ "id": "MDA-R01"
+}

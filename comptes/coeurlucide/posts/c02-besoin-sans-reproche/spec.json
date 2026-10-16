@@ -1,0 +1,58 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Dire ton besoin<br>**sans reproche**",
+   "size": 104,
+   "sub": "Le même message, dit autrement, change toute la discussion."
+  },
+  {
+   "type": "item",
+   "num": "✗",
+   "when": "Au lieu de",
+   "title": "« Tu ne fais **jamais** attention à moi »",
+   "body": "Les « toujours » et « jamais » mettent l'autre **sur la défensive**. Il répond à l'attaque, pas à ton besoin."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Dis plutôt",
+   "title": "Ce que **tu ressens**",
+   "card": "Je me sens un peu seul·e en ce moment.",
+   "card_label": "EXEMPLE"
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Puis",
+   "title": "Ce dont **tu as besoin**",
+   "card": "J'aurais besoin qu'on se garde un moment rien qu'à nous cette semaine.",
+   "card_label": "EXEMPLE"
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Et enfin",
+   "title": "Une **question ouverte**",
+   "card": "Qu'est-ce qui serait possible pour toi ?",
+   "card_label": "EXEMPLE"
+  },
+  {
+   "type": "cta",
+   "title": "Parle de toi,<br>**pas de ses fautes**",
+   "size": 92,
+   "ctas": [
+    [
+     "🔖",
+     "Enregistre ce post"
+    ],
+    [
+     "➕",
+     "Suis **@coeurlucide__**"
+    ]
+   ],
+   "note": "Adapte les phrases à tes mots : l'important, c'est la sincérité."
+  }
+ ],
+ "id": "CL-C02"
+}

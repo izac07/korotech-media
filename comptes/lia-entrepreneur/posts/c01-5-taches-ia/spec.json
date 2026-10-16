@@ -1,0 +1,65 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "title": "5 tâches à<br>déléguer **à l'IA**<br>dès lundi",
+   "size": 104,
+   "sub": "Tu gardes la décision. L'IA fait le premier jet."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Tâche 1",
+   "title": "Les mails **répétitifs**",
+   "card": "Voici un mail client : [colle le mail]. Rédige une réponse claire, polie et courte. Pose-moi une question si une info manque.",
+   "card_label": "LE PROMPT"
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Tâche 2",
+   "title": "Tes notes de réunion → **actions**",
+   "card": "Voici mes notes : [notes]. Fais un résumé en 5 lignes, puis la liste des actions avec qui fait quoi et pour quand.",
+   "card_label": "LE PROMPT"
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Tâche 3",
+   "title": "Les **relances** de devis",
+   "card": "Écris une relance pour un devis envoyé il y a [X jours] à [client]. Ton cordial, sans insister, avec une question simple pour relancer l'échange.",
+   "card_label": "LE PROMPT"
+  },
+  {
+   "type": "item",
+   "num": 4,
+   "when": "Tâche 4",
+   "title": "Tes posts **de la semaine**",
+   "body": "Donne ton métier, ta cible et 3 sujets. Demande **5 idées de posts** avec une accroche chacune. Tu choisis, tu ajustes avec ta voix."
+  },
+  {
+   "type": "item",
+   "num": 5,
+   "when": "Tâche 5",
+   "title": "Résumer un **long document**",
+   "body": "Contrat, compte rendu, cahier des charges : demande les **points clés**, les dates et ce qui te concerne. Puis vérifie dans le document original."
+  },
+  {
+   "type": "cta",
+   "title": "Commence<br>**par une seule**",
+   "size": 96,
+   "ctas": [
+    [
+     "🔖",
+     "Enregistre pour lundi"
+    ],
+    [
+     "➕",
+     "Suis **@lia.entrepreneur**"
+    ]
+   ],
+   "note": "L'IA peut se tromper : relis toujours avant d'envoyer."
+  }
+ ],
+ "id": "LIA-C01"
+}

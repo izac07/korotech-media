@@ -90,6 +90,9 @@ def load_theme(spec_path, spec):
 
 def esc(s):
     """Escape text but keep [placeholders] highlighted and allow <br>."""
+    for a in ("?", "!", ":", ";", "»"):  # typo française : pas de ponctuation orpheline en début de ligne
+        s = s.replace(" " + a, "\u00a0" + a)
+    s = s.replace("« ", "«\u00a0")
     s = H.escape(s).replace("&lt;br&gt;", "<br>")
     out, i = "", 0
     while i < len(s):

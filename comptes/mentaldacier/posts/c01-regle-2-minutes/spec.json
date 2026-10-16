@@ -1,0 +1,55 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "title": "La règle<br>des **2 minutes**",
+   "size": 116,
+   "sub": "Le moyen le plus simple d'arrêter de repousser."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Le principe",
+   "title": "Réduis l'habitude à **2 minutes**",
+   "body": "Popularisée par James Clear dans « Atomic Habits » : une nouvelle habitude doit pouvoir **commencer en 2 minutes**."
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Exemples",
+   "title": "Version **mini**",
+   "body": "Lire 30 min → **lire une page**. Courir → **mettre tes baskets**. Réviser → **ouvrir ton cours**."
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Pourquoi ça marche",
+   "title": "Le plus dur, c'est **de commencer**",
+   "body": "Une fois lancé, continuer est bien plus facile. Et même si tu t'arrêtes à 2 minutes, **tu as tenu ta promesse**."
+  },
+  {
+   "type": "item",
+   "num": 4,
+   "when": "Ton action",
+   "title": "Choisis **une** habitude",
+   "body": "Écris sa version 2 minutes et fais-la **maintenant**."
+  },
+  {
+   "type": "cta",
+   "title": "Discipline<br>**> motivation**",
+   "size": 100,
+   "ctas": [
+    [
+     "🔖",
+     "Enregistre ce post"
+    ],
+    [
+     "➕",
+     "Suis **@mentaldacier2030**"
+    ]
+   ],
+   "note": "Petit chaque jour bat parfait une fois."
+  }
+ ],
+ "id": "MDA-C01"
+}

@@ -1,0 +1,55 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "title": "15 min.<br>Zéro matériel.<br>**Zéro salle.**",
+   "size": 104,
+   "sub": "Ta séance débutant pour reprendre en douceur."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Échauffement · 3 min",
+   "title": "Réveille le **corps**",
+   "body": "30 s de marche sur place, 30 s de rotations d'épaules, 30 s de rotations de hanches. **Répète 2 fois.**"
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Circuit · 3 tours",
+   "title": "4 exercices, **40 s chacun**",
+   "body": "**Squats** · pompes sur les genoux · fentes alternées · gainage. 20 s de repos entre chaque exercice."
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Trop dur ?",
+   "title": "La version **facile**",
+   "body": "Squats sur une chaise · pompes contre un mur · gainage sur les genoux. **Le plus important, c'est la régularité.**"
+  },
+  {
+   "type": "item",
+   "num": 4,
+   "when": "Retour au calme · 2 min",
+   "title": "Étire-**toi**",
+   "body": "Cuisses, mollets, épaules : 20 s par position, en respirant lentement."
+  },
+  {
+   "type": "cta",
+   "title": "On la fait<br>**ce soir ?**",
+   "size": 96,
+   "ctas": [
+    [
+     "🔖",
+     "Enregistre ta séance"
+    ],
+    [
+     "➕",
+     "Suis **@zerosallefit**"
+    ]
+   ],
+   "note": "Adapte à ton niveau. Douleur = stop. En cas de doute, demande l'avis d'un professionnel de santé."
+  }
+ ],
+ "id": "ZSF-C01"
+}

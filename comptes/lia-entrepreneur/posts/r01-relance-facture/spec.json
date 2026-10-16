@@ -1,0 +1,48 @@
+{
+ "music_seed": 31,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "Facture",
+    "impayée ?",
+    "**Fais ça.**"
+   ],
+   "vo": "Un client ne t'a toujours pas payé ? Arrête de repousser la relance."
+  },
+  {
+   "type": "chat",
+   "label": "Le prompt",
+   "title": "Colle **ce prompt**",
+   "text": "Rédige une relance pour la facture [numéro] de [montant], échue depuis [X jours]. Ton ferme mais cordial. Rappelle la date d'échéance et propose un moyen de paiement simple.",
+   "vo": "Colle ce prompt dans ChatGPT ou Claude avec le numéro, le montant et le retard de ta facture."
+  },
+  {
+   "type": "list",
+   "label": "Astuces",
+   "title": "Pour que ça marche",
+   "items": [
+    "Relance **dès le retard**",
+    "Joins la facture",
+    "Reste factuel, jamais agressif"
+   ],
+   "vo": "Relance dès le premier jour de retard, joins la facture, et reste factuel."
+  },
+  {
+   "type": "cta",
+   "title": "Garde-le<br>**sous la main**",
+   "ctas": [
+    [
+     "🔖",
+     "Enregistre"
+    ],
+    [
+     "➕",
+     "Suis **@lia.entrepreneur**"
+    ]
+   ],
+   "vo": "Enregistre cette vidéo pour ta prochaine relance, et abonne-toi pour plus de prompts."
+  }
+ ],
+ "id": "LIA-R01"
+}

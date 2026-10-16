@@ -1,0 +1,48 @@
+{
+ "music_seed": 71,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "Un revenu",
+    "en plus,",
+    "**sans investir ?**"
+   ],
+   "vo": "Tu veux un revenu en plus sans rien investir ? Voici quatre idées réalistes."
+  },
+  {
+   "type": "list",
+   "label": "Les idées",
+   "title": "Commence avec **ce que tu as**",
+   "items": [
+    "**Cours** dans une matière où tu es à l'aise",
+    "**Garde d'animaux** près de chez toi",
+    "**Revendre** ce que tu n'utilises plus",
+    "**Relecture** ou rédaction de textes"
+   ],
+   "vo": "Donner des cours, garder des animaux, revendre ce que tu n'utilises plus, ou relire des textes."
+  },
+  {
+   "type": "text",
+   "label": "Honnêtement",
+   "title": "Ça demande **du temps** et de la régularité. Et pense à **déclarer** tes revenus.",
+   "vo": "Honnêtement, ça demande du temps. Et pense à déclarer tes revenus."
+  },
+  {
+   "type": "cta",
+   "title": "Laquelle<br>**tu testes ?**",
+   "ctas": [
+    [
+     "💬",
+     "Dis-le en commentaire"
+    ],
+    [
+     "🔖",
+     "Enregistre"
+    ]
+   ],
+   "vo": "Dis-moi en commentaire laquelle tu testes, et enregistre la vidéo."
+  }
+ ],
+ "id": "RM-R01"
+}

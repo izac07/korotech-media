@@ -1,0 +1,44 @@
+{
+ "music_seed": 52,
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    "Tu dis oui",
+    "alors que tu",
+    "**penses non ?**"
+   ],
+   "vo": "Tu dis oui alors que tu penses non ? Tu n'es pas la seule personne dans ce cas."
+  },
+  {
+   "type": "text",
+   "label": "Le principe",
+   "title": "Un non n'a pas besoin **d'une longue explication**",
+   "vo": "Un non n'a pas besoin d'une longue explication. Plus tu te justifies, plus on négocie."
+  },
+  {
+   "type": "chat",
+   "label": "La phrase",
+   "title": "Essaie **celle-ci**",
+   "card_label": "À DIRE AVEC TES MOTS",
+   "text": "Merci d'avoir pensé à moi, mais cette fois je ne vais pas pouvoir.",
+   "vo": "Essaie simplement : merci d'avoir pensé à moi, mais cette fois je ne vais pas pouvoir."
+  },
+  {
+   "type": "cta",
+   "title": "Ton non<br>**compte aussi**",
+   "ctas": [
+    [
+     "🔖",
+     "Enregistre"
+    ],
+    [
+     "➕",
+     "Suis **@coeurlucide__**"
+    ]
+   ],
+   "vo": "Enregistre cette vidéo, et entraîne-toi à la dire. Ton non compte aussi."
+  }
+ ],
+ "id": "CL-R01"
+}
