@@ -695,7 +695,136 @@ window.render=function(t){{
 </script></body></html>"""
     return page
 
-LAYOUTS = {"messages": messages_page, "terminal": terminal_page, "cheatsheet": cheatsheet_page, "iceberg": iceberg_page, "sportmotion": sportmotion_page}
+# ------------------------------------------------------------------ layout « nightchat » (coeurlucide, POV iOS de nuit)
+def nightchat_page(spec, theme, starts, durs, caps, total):
+    sc = spec["scenes"]; ev = []; PINK = "#f4b6c6"; BOR = "#7a1f35"
+    S = [{"a": starts[k], "b": starts[k] + durs[k], "ty": s["type"]} for k, s in enumerate(sc)]
+    blocks = []
+    def B(k, j, txt, extra=""):
+        return f"<div class='b' id='b{k}_{j}' {extra}>{H.escape(txt)}</div>"
+    for k, s in enumerate(sc):
+        a = starts[k]; ty = s["type"]; inner = ""
+        if ty == "lock":
+            ev += [{"k": "notif", "at": a + 0.05}, {"k": "click", "at": a + 3.0}, {"k": "whoosh", "at": a + 3.3}]
+            continue
+        if ty == "msgs":
+            inner = f"<div class='typ' id='ty{k}_0'><i></i><i></i><i></i></div>{B(k,0,s['bubbles'][0])}<div class='typ' id='ty{k}_1'><i></i><i></i><i></i></div>{B(k,1,s['bubbles'][1])}"
+            inner += f"<div class='ghost' id='gh{k}'><div class='gb'>Tu es dispo ?</div><div class='gv'>{H.escape(s['ghost'])}</div></div>"
+            ev += [{"k": "pop", "at": a + 1.0}, {"k": "pop", "at": a + 4.2}]
+        elif ty == "msgs2":
+            for j, t in enumerate(s["bubbles"]):
+                inner += f"<div class='typ' id='ty{k}_{j}'><i></i><i></i><i></i></div>{B(k,j,t)}"
+            inner += f"<svg class='hs' id='hs{k}' viewBox='0 0 100 92'><path id='hp{k}' d='M50 86 C 14 60 2 40 12 22 C 22 4 44 8 50 26 C 56 8 78 4 88 22 C 98 40 86 60 50 86 Z' fill='none' stroke='{PINK}' stroke-width='6' stroke-linecap='round'/></svg>"
+            ev += [{"k": "pop", "at": a + 0.9}, {"k": "pop", "at": a + 3.2}, {"k": "sparkle", "at": a + 3.7}, {"k": "pop", "at": a + 5.5}]
+        elif ty == "check":
+            items = "".join(f"<div class='ci' id='ci{k}_{j}'><span class='bx' id='bx{k}_{j}'>☐</span> {H.escape(x)}</div>" for j, x in enumerate(s["items"]))
+            inner = f"<div class='typ' id='ty{k}_0'><i></i><i></i><i></i></div>{B(k,0,s['title'])}<div class='b chk' id='b{k}_1'>{items}</div>"
+            ev += [{"k": "pop", "at": a + 0.8}, {"k": "pop", "at": a + 1.6}] + [{"k": "click", "at": a + t} for t in (2.4, 3.6, 5.4)]
+        elif ty == "cta":
+            inner = (f"<div class='typ' id='ty{k}_0'><i></i><i></i><i></i></div><div class='b big' id='b{k}_0'>{H.escape(s['last'])}</div>"
+                     f"<div class='react' id='rc{k}'><span>❤️</span><span>👍</span><span>😂</span><span>😮</span><span>😢</span><span>🙏</span></div>")
+            ev += [{"k": "pop", "at": a + 0.6}, {"k": "pop", "at": a + 1.8}, {"k": "sparkle", "at": a + 2.4}, {"k": "whoosh", "at": a + 3.5}, {"k": "click", "at": a + 4.0}, {"k": "click", "at": a + 4.6}]
+        blocks.append(f"<div class='chat' id='c{k}'>{inner}</div>")
+    cta = sc[-1]
+    hearts = "".join(f"<b class='ht' id='ht{j}'>❤️</b>" for j in range(14))
+    share = (f"<div class='share' id='share'><div class='sh'></div>"
+             + "".join(f"<div class='sr' id='sr{j}'>{H.escape(x)}</div>" for j, x in enumerate(cta["ctas"])) + "</div>")
+    cap_html = "".join(
+        f"<span class='cap' data-a='{c[0][1]:.3f}' data-b='{c_next:.3f}'>" + " ".join(f"<span data-w='{t:.3f}'>{H.escape(w)}</span>" for w, t in c) + "</span>"
+        for c, c_next in caps)
+    css = f"""
+*{{margin:0;padding:0;box-sizing:border-box}}
+body{{width:1080px;height:1920px;overflow:hidden;background:#1e0d14;color:#fbe9ee;font-family:Inter,sans-serif;position:relative}}
+.halo{{position:absolute;width:1200px;height:1200px;border-radius:50%;left:-60px;top:300px;background:radial-gradient(circle,rgba(176,70,94,.35),transparent 62%)}}
+.stat{{position:absolute;left:70px;right:70px;top:40px;display:flex;justify-content:space-between;font:700 34px Inter;color:#fbe9ee}}
+.lock{{position:absolute;inset:0}}
+.ltime{{position:absolute;left:0;right:0;top:250px;text-align:center;font:200 230px/1 Inter;letter-spacing:-6px}}
+.ldate{{position:absolute;left:0;right:0;top:220px;text-align:center;font:600 40px Inter;color:#e9c3ce}}
+.notif{{position:absolute;left:50px;right:50px;top:620px;border-radius:44px;background:rgba(255,255,255,.14);backdrop-filter:blur(10px);padding:34px 40px;display:flex;gap:28px;align-items:flex-start}}
+.nav{{flex:none;width:96px;height:96px;border-radius:24px;background:{BOR};color:#fff;font:800 54px/96px Georgia,serif;text-align:center}}
+.nt{{font:800 38px Inter}} .nt span{{float:right;font:500 30px Inter;color:#d9b3bf}} .nb{{font:500 42px/1.3 Inter;margin-top:8px}}
+.tap{{position:absolute;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.35);left:480px;top:690px;opacity:0}}
+.hdr{{position:absolute;left:0;right:0;top:110px;height:170px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;border-bottom:2px solid rgba(255,255,255,.08);opacity:0}}
+.hav{{width:96px;height:96px;border-radius:50%;background:{BOR};color:#fff;font:800 52px/96px Georgia,serif;text-align:center}}
+.hn{{font:700 34px Inter}} .hs2{{font:500 26px Inter;color:#d9b3bf}}
+.chat{{position:absolute;left:46px;right:46px;top:320px;display:flex;flex-direction:column;gap:22px;opacity:0;z-index:3}}
+.b{{align-self:flex-start;max-width:880px;background:#3a1a26;border-radius:46px;border-bottom-left-radius:12px;padding:30px 40px;font:500 50px/1.32 Inter;display:none;transform-origin:left bottom}}
+.b.big{{font:700 84px/1.2 Inter;background:{BOR};color:#fff;margin-top:230px}}
+.chk{{font:600 48px/1.5 Inter}} .bx{{display:inline-block;color:{PINK};width:66px}}
+.typ{{align-self:flex-start;background:#3a1a26;border-radius:40px;padding:26px 34px;display:none;gap:12px}}
+.typ i{{display:inline-block;width:18px;height:18px;border-radius:50%;background:#d9b3bf;margin:0 5px}}
+.ghost{{position:absolute;right:0;top:330px;opacity:0;filter:blur(3px)}}
+.gb{{background:#2c6bff;color:#fff;border-radius:40px;border-bottom-right-radius:12px;padding:24px 34px;font:500 42px Inter}} .gv{{text-align:right;font:500 28px Inter;color:#b98a98;margin-top:8px}}
+.hs{{position:absolute;width:120px;height:110px;opacity:0}}
+.react{{position:absolute;left:0;top:40px;background:#3a1a26;border-radius:60px;padding:16px 26px;display:flex;gap:20px;font-size:62px;opacity:0;box-shadow:0 10px 40px rgba(0,0,0,.5)}}
+.react span:first-child{{border-radius:50%;padding:4px}}
+.ht{{position:absolute;font-size:70px;opacity:0}}
+.inp{{position:absolute;left:46px;right:46px;top:1390px;height:96px;border-radius:48px;border:2px solid rgba(255,255,255,.2);font:500 36px/92px Inter;color:#b98a98;padding-left:40px;opacity:0}}
+.share{{position:absolute;left:0;right:0;top:1920px;height:520px;background:#2a1520;border-radius:48px 48px 0 0;padding:34px 46px;box-shadow:0 -10px 50px rgba(0,0,0,.5)}}
+.sh{{width:120px;height:10px;border-radius:5px;background:#5a3a46;margin:0 auto 30px}}
+.sr{{padding:28px 30px;border-radius:26px;font:700 46px Inter;margin-bottom:18px;background:#3a1a26}}
+.dim{{position:absolute;inset:0;background:#000;opacity:0;z-index:2}}
+.capw{{position:absolute;left:0;right:0;top:1560px;text-align:center}}
+.cap{{display:none;background:rgba(30,13,20,.85);border:2px solid rgba(244,182,198,.45);border-radius:24px;padding:14px 30px;font:700 46px Inter}}
+.cap .on{{color:{PINK}}}
+.bar{{position:absolute;left:0;top:0;height:8px;background:{PINK}}}
+"""
+    page = f"""<!doctype html><html><head><meta charset='utf-8'><style>{css}</style></head><body>
+<div class='halo' id='halo'></div>
+<div class='stat'><span id='clk'>23:47</span><span>●●● 🔋</span></div>
+<div class='lock' id='lock'><div class='ldate'>Ce soir</div><div class='ltime'>23:47</div>
+ <div class='notif' id='notif'><div class='nav'>C</div><div style='flex:1'><div class='nt'>Cœur Lucide <span>maintenant</span></div><div class='nb'>{H.escape(sc[0]['notif'])}</div></div></div>
+ <div class='tap' id='tap'></div></div>
+<div class='hdr' id='hdr'><div class='hav'>C</div><div class='hn'>Cœur Lucide</div><div class='hs2' id='hst'>en ligne</div></div>
+{''.join(blocks)}
+<div class='inp' id='inp'>iMessage</div><div class='dim' id='dim'></div>{hearts}{share}
+<div class='capw'>{cap_html}</div><div class='bar' id='bar'></div>
+<script>
+const EV={json.dumps(ev, ensure_ascii=False)}; const D={total}; const SC={json.dumps(S)};
+const c=x=>Math.max(0,Math.min(1,x)), eo=x=>1-Math.pow(1-c(x),3), back=x=>{{x=c(x);const s=1.5;return 1+(s+1)*Math.pow(x-1,3)+s*Math.pow(x-1,2);}};
+const $=id=>document.getElementById(id);
+function bub(id,t0,u){{const e=$(id);if(!e)return;e.style.display=u>=t0?'block':'none';const k=back((u-t0)/.4);e.style.transform=`scale(${{.6+.4*k}})`;e.style.opacity=c((u-t0)/.12);}}
+function typ(id,t0,t1,u){{const e=$(id);if(!e)return false;const on=u>=t0&&u<t1;e.style.display=on?'flex':'none';
+  if(on)[...e.querySelectorAll('i')].forEach((d,n)=>d.style.transform=`translateY(${{-Math.max(0,Math.sin((u-t0)*8-n*.9))*12}}px)`);return on;}}
+window.render=function(t){{
+ $('bar').style.width=(c(t/D)*1080)+'px';
+ let k=0;for(let i=0;i<SC.length;i++)if(t>=SC[i].a)k=i;const s=SC[k],u=t-s.a,d=s.b-s.a;
+ $('halo').style.transform=`scale(${{1+.06*Math.sin(t*1.2)}})`;$('halo').style.opacity=k==2&&u>3.2?1:.8;
+ $('clk').textContent=t<20?'23:47':'23:48';
+ // lock
+ const L=$('lock');const op=k==0?1-eo((u-3.3)/.4):0;L.style.opacity=op;L.style.transform=`scale(${{k==0?1+.15*eo((u-3.3)/.4):1}})`;
+ const nk=k==0?(u<.05?1:back(u/.5)):1;$('notif').style.transform=`translateY(${{(1-nk)*-200}}px) scale(${{k==0?1+.04*Math.sin(Math.min(u,3)*3):1}})`;
+ const tp=$('tap');tp.style.opacity=k==0&&u>2.9&&u<3.35?.8:0;tp.style.transform=`scale(${{.6+.6*c((u-2.9)/.3)}})`;
+ const inchat=k>0||u>3.4;$('hdr').style.opacity=inchat?eo(k>0?1:(u-3.4)/.4):0;$('inp').style.opacity=inchat&&k<4?1:(k==4?1-eo((u-3.4)/.3):0);
+ let typing=false;
+ SC.forEach((x,i)=>{{const el=$('c'+i);if(!el)return;const on=i==k;const out=i==k-1&&u<.4;el.style.opacity=on?1:(out?1-eo(u/.4):0);
+   el.style.transform=`translateY(${{on?0:(out?-eo(u/.4)*300:0)}}px)`;}});
+ const ty=s.ty;
+ if(ty==='msgs'){{typing=typ('ty1_0',.2,1.0,u)||typ('ty1_1',3.4,4.2,u);bub('b1_0',1.0,u);bub('b1_1',4.2,u);
+   const g=$('gh1');g.style.opacity=u>1.6&&u<3.4?(u<3.0?.75:.75*(1-(u-3.0)/.4)):0;g.style.filter=`blur(${{3+8*c((u-2.8)/.6)}}px)`;g.style.transform=`translateY(${{-c((u-2.8)/.6)*60}}px)`;}}
+ if(ty==='msgs2'){{typing=typ('ty2_0',.2,.9,u)||typ('ty2_1',2.6,3.2,u)||typ('ty2_2',4.8,5.5,u);bub('b2_0',.9,u);bub('b2_1',3.2,u);bub('b2_2',5.5,u);
+   const hs=$('hs2'),b=$('b2_1');if(hs&&u>=3.6){{hs.style.opacity=1;hs.style.left=(b.offsetLeft+b.offsetWidth+20)+'px';hs.style.top=(b.offsetTop+b.offsetHeight/2-55)+'px';
+     const p=$('hp2'),Lp=p.getTotalLength();p.style.strokeDasharray=Lp;p.style.strokeDashoffset=Lp*(1-eo((u-3.6)/.8));p.setAttribute('fill',u>4.4?'rgba(244,182,198,.9)':'none');
+     hs.style.transform=`scale(${{u>4.4?1+.15*Math.max(0,Math.sin((u-4.4)*6))*(u<5?1:0):1}})`;}}else if(hs)hs.style.opacity=0;}}
+ if(ty==='check'){{typing=typ('ty3_0',.2,.8,u);bub('b3_0',.8,u);bub('b3_1',1.6,u);
+   [2.4,3.6,5.4].forEach((tt,j)=>{{const bx=$('bx3_'+j);bx.textContent=u>=tt?'☑':'☐';bx.style.transform=`scale(${{u>=tt?1+.5*(1-eo((u-tt)/.3)):1}})`;$('ci3_'+j).style.opacity=u>=tt?1:.6;}});
+   const br=u>3.6&&u<5.3?1+.06*Math.sin((u-3.6)/1.7*Math.PI):1;const bb=$('b3_1');if(u>=2)bb.style.transform=`scale(${{br}})`;}}
+ if(ty==='cta'){{typing=typ('ty4_0',.1,.6,u);bub('b4_0',.6,u);const bb=$('b4_0');
+   const lp=u>1.6&&u<3.5;$('dim').style.opacity=lp?.5:(u>=3.5?.4:0);$('c4').style.zIndex=4;if(u>1.6)bb.style.transform=`scale(${{1.05}})`;bb.style.position='relative';bb.style.zIndex=5;
+   const rc=$('rc4');rc.style.opacity=u>1.8&&u<3.4?1:0;rc.style.transform=`scale(${{.5+.5*back((u-1.8)/.35)}})`;rc.style.zIndex=6;
+   rc.firstChild.style.background=u>2.4?'rgba(244,182,198,.35)':'none';
+   for(let j=0;j<14;j++){{const h=$('ht'+j);const v=u-2.45-j*.06;if(v<0||v>1.6){{h.style.opacity=0;continue;}}
+     h.style.opacity=1-v/1.6;h.style.left=(140+((j*137)%800))+'px';h.style.top=(700-v*500-(j%3)*60)+'px';h.style.transform=`scale(${{.6+.6*Math.sin(v*3)}}) rotate(${{(j%2?-1:1)*v*40}}deg)`;h.style.zIndex=7;}}
+   const sh=$('share');sh.style.top=(1920-eo((u-3.5)/.45)*560)+'px';sh.style.zIndex=8;
+   [4.0,4.6].forEach((tt,j)=>{{$('sr'+j).style.background=u>=tt?'#7a1f35':'#3a1a26';$('sr'+j).style.transform=`scale(${{u>=tt?1+.04*(1-eo((u-tt)/.3)):1}})`;}});}}
+ $('hst').textContent=typing?'en train d’écrire…':'en ligne';
+ for(const cp of document.querySelectorAll('.cap')){{const a=+cp.dataset.a,b=+cp.dataset.b;cp.style.display=(t>=a&&t<b)?'inline-block':'none';
+   for(const w of cp.querySelectorAll('[data-w]'))w.className=(t>=+w.dataset.w)?'on':'';}}
+}};render(0);
+</script></body></html>"""
+    return page
+
+LAYOUTS = {"messages": messages_page, "terminal": terminal_page, "cheatsheet": cheatsheet_page, "iceberg": iceberg_page, "sportmotion": sportmotion_page, "nightchat": nightchat_page}
 
 # ------------------------------------------------------------------ rendu
 def sfx_track(path, total, events, starts):
@@ -723,6 +852,10 @@ def sfx_track(path, total, events, starts):
             for q in range(0, L, 2): put(tick, e["at"] + q * step, 0.8)
         if e["k"] == "heart": put(chime, e["at"] + 1.0)
         if e["k"] == "sparkle": put(chime, e["at"], 0.8)
+        if e["k"] == "notif":
+            tn = np.arange(int(.35 * SR)) / SR
+            n1 = np.sin(2 * np.pi * 1175 * tn) * np.exp(-tn * 9) * .25
+            put(n1, e["at"]); put(np.sin(2 * np.pi * 1568 * tn) * np.exp(-tn * 9) * .25, e["at"] + .14)
         if e["k"] == "glitch":
             tg = np.arange(int(.22 * SR)) / SR
             put(np.sign(np.sin(2 * np.pi * 180 * tg)) * (rng.random(len(tg)) > .5) * .18 * np.exp(-tg * 6), e["at"])
