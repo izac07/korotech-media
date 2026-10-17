@@ -1,0 +1,68 @@
+{
+ "id": "ZSF-R07",
+ "layout": "sportmotion",
+ "music_seed": 91,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "creuse",
+   "count": 4,
+   "title": "PAS ENVIE ?<br>**4 MINUTES.**",
+   "sub": "⏱ LA SÉANCE MINIMUM",
+   "vo": "Pas envie de t'entraîner aujourd'hui ? Garde juste ce plan : quatre minutes, pas plus."
+  },
+  {
+   "type": "erreur",
+   "pose": "creuse",
+   "myth": "« J'ATTENDS D'ÊTRE MOTIVÉ »",
+   "stamp": "PIÈGE",
+   "text": "LA MOTIVATION ·<br>**VA ET VIENT**",
+   "vo": "Le piège : attendre d'avoir la motivation. Elle va et vient. Et sauter une séance parce qu'elle serait trop courte, c'est perdre l'habitude."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "SQUATS",
+    "POMPES AU MUR",
+    "PONT FESSIER",
+    "PLANCHE"
+   ],
+   "poses": [
+    "squat",
+    "pompe",
+    "pont",
+    "planche"
+   ],
+   "effort": "50 s",
+   "rest": "10 s",
+   "total": "4:00",
+   "vo": "La séance minimum : quatre exercices, cinquante secondes d'effort, dix de repos. Squats. Pompes contre un mur. Pont fessier. Planche."
+  },
+  {
+   "type": "pourquoi",
+   "title": "GARDER<br>**LE RYTHME**",
+   "zones": [
+    "JAMBES",
+    "BRAS",
+    "SANGLE"
+   ],
+   "badges": [
+    "4 MIN, ÇA COMPTE",
+    "EN FORME ? FAIS-EN PLUS",
+    "DOULEUR = STOP"
+   ],
+   "vo": "Le but n'est pas la performance, c'est de garder le rythme. Les jours où ça va mieux, tu en fais plus. Et si tu as mal quelque part, tu t'arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "TON PLAN<br>**ANTI-FLEMME**",
+   "ctas": [
+    "🔖 ENREGISTRE LE PLAN",
+    "💬 ÉCRIS « 4 MIN » APRÈS"
+   ],
+   "ticker": "PETIT MAIS RÉGULIER · ZÉRO SALLE",
+   "vo": "Enregistre-la pour ton prochain jour sans envie, et écris quatre minutes en commentaire quand c'est fait."
+  }
+ ]
+}
