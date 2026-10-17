@@ -1,0 +1,8 @@
+{"id":"CL-C03","slides":[
+ {"type":"cover","title":"Compromis<br>ou **sacrifice** ?","size":104,"sub":"Les deux demandent de céder. Un seul te laisse entier·e."},
+ {"type":"item","num":1,"when":"Le compromis","title":"Chacun fait **un pas**","body":"Vous cherchez une solution qui tienne compte de vous deux. Tu cèdes sur un point, l'autre aussi, et **personne ne disparaît**."},
+ {"type":"item","num":2,"when":"Le sacrifice","title":"Toujours **le même** qui cède","body":"Tu renonces encore et encore à ce qui compte pour toi, souvent sans le dire, pour **éviter le conflit**."},
+ {"type":"item","num":3,"when":"Pose-toi la question","title":"Est-ce que je l'ai **choisi** ?","card":"Si je dis oui, est-ce par envie, ou par peur de sa réaction ?","card_label":"À TE DEMANDER"},
+ {"type":"item","num":4,"when":"Le signal","title":"Le **ressentiment** qui s'installe","body":"Quand tu comptes les fois où tu as cédé, ou que tu te sens vidé·e après avoir dit oui, c'est un signe à écouter."},
+ {"type":"item","num":5,"when":"Ce que tu peux dire","title":"Remettre **tes besoins** sur la table","card":"J'ai envie qu'on trouve une solution qui nous convienne à tous les deux.","card_label":"EXEMPLE"},
+ {"type":"cta","title":"Céder, oui.<br>**T'effacer, non.**","size":92,"ctas":[["🔖","Enregistre ce post"],["➕","Suis **@coeurlucide__**"]],"note":"Si tu te sens en danger ou sous pression constante, parles-en à un proche ou appelle le 3919 (violences conjugales, gratuit)."}]}

@@ -1,0 +1,51 @@
+{
+ "id": "CL-R03",
+ "layout": "nightchat",
+ "music_seed": 64,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "On peut reparler de tout à l'heure ? 🤍",
+   "vo": "Une dispute, et maintenant ce silence lourd. Voici comment réparer, sans faire semblant que rien ne s'est passé."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "T'as raison, laisse tomber.",
+    "De toute façon, tu comprends jamais."
+   ],
+   "sent": "Je voulais pas dire ça comme ça…",
+   "ghost": "Vu 23:02",
+   "vo": "Après une dispute, on lance souvent des phrases qui ferment la porte. Laisse tomber. Tu comprends jamais. Et le silence s'installe."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Je suis désolé·e pour le ton que j'ai pris.",
+    "Ce qui m'a blessé·e, c'est de me sentir mis·e de côté.",
+    "On en reparle demain, à tête reposée ?"
+   ],
+   "vo": "Pour réparer : excuse-toi pour ta part, même petite. Dis ce que tu as ressenti, sans accuser. Et propose un moment pour en reparler, au calme."
+  },
+  {
+   "type": "check",
+   "title": "Avant d'envoyer :",
+   "items": [
+    "Être redescendu·e",
+    "Une excuse sans « mais »",
+    "Prêt·e à écouter sa version"
+   ],
+   "vo": "Avant d'envoyer, vérifie trois choses : tu es redescendu, ton excuse n'a pas de mais, et tu es prêt à écouter sa version."
+  },
+  {
+   "type": "cta",
+   "last": "Merci de m'avoir écrit. On en parle demain 🤍",
+   "ctas": [
+    "🔖 Garde-le pour la prochaine dispute",
+    "↗️ Envoie-le à quelqu'un qui en a besoin"
+   ],
+   "vo": "Réparer, ce n'est pas avouer qu'on avait tort. C'est montrer qu'on tient à la relation. Enregistre ce message pour la prochaine fois."
+  }
+ ]
+}
