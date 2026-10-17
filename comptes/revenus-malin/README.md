@@ -1,4 +1,4 @@
-# Revenus Malins — @revenus_malin
+# Revenus Malins — @revenus_malins
 
 - ID Instagram : (pas encore relié — publication manuelle)  ·  préfixe des posts : RM
 - Créneaux : 19:30 et 12:00 — 2 posts par jour dès le 19/10/2026 (1 reel motion + 1 carrousel par jour, en alternant les créneaux)
