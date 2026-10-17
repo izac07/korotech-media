@@ -265,7 +265,8 @@ window.render=function(t){
 async def _frames(html_path, fr, dur, fps=30):
     from playwright.async_api import async_playwright
     async with async_playwright() as p:
-        b = await p.chromium.launch(args=["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"]); pg = await b.new_page(viewport={"width": 1080, "height": 1920})
+        gl = "WebGLRenderer" in open(html_path).read()  # WebGL (3D) seulement : swiftshader ralentit les pages 2D
+        b = await p.chromium.launch(args=["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"] if gl else []); pg = await b.new_page(viewport={"width": 1080, "height": 1920})
         await pg.goto("file://" + os.path.abspath(html_path)); await pg.wait_for_timeout(500)
         for i in range(int(dur * fps)):
             await pg.evaluate(f"render({i / fps})")
