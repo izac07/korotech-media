@@ -1,0 +1,70 @@
+{
+ "id": "ZSF-R03",
+ "layout": "sportmotion",
+ "music_seed": 71,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "squat",
+   "count": 50,
+   "title": "50 SQUATS **MAL FAITS** ?",
+   "sub": "⏱ 5 MIN BIEN FAITES",
+   "vo": "Cinquante squats mal faits ne valent pas cinq minutes bien faites. Voici le circuit jambes pour bien commencer."
+  },
+  {
+   "type": "erreur",
+   "pose": "squat",
+   "myth": "« PLUS VITE = PLUS EFFICACE »",
+   "stamp": "FAUX",
+   "text": "GENOUX QUI RENTRENT ·<br>**TALONS QUI DÉCOLLENT**",
+   "vo": "L'erreur classique : enchaîner trop vite, les genoux qui rentrent vers l'intérieur et les talons qui décollent. Tu te fatigues, mais tu travailles mal."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "SQUAT LENT",
+    "FENTE ALTERNÉE",
+    "PONT FESSIER",
+    "SQUAT + PAUSE",
+    "PLANCHE"
+   ],
+   "poses": [
+    "squat",
+    "fente",
+    "pont",
+    "squat",
+    "planche"
+   ],
+   "effort": "40 s",
+   "rest": "20 s",
+   "total": "5:00",
+   "vo": "Le circuit : cinq exercices, quarante secondes d'effort, vingt secondes de repos. Squat lent. Fente alternée. Pont fessier. Squat avec pause en bas. Et on finit en planche."
+  },
+  {
+   "type": "pourquoi",
+   "title": "CUISSES + FESSIERS<br>**+ GAINAGE**",
+   "zones": [
+    "CUISSES",
+    "FESSIERS",
+    "SANGLE"
+   ],
+   "badges": [
+    "GENOUX DANS L'AXE",
+    "TALONS AU SOL",
+    "MAL AU GENOU ? MOINS BAS"
+   ],
+   "vo": "Tu fais travailler les cuisses, les fessiers et le gainage. Genoux dans l'axe des pieds, talons au sol, et descends lentement. Si tu as mal au genou, descends moins bas ou arrête."
+  },
+  {
+   "type": "cta",
+   "title": "1RE SÉANCE<br>**CE SOIR ?**",
+   "ctas": [
+    "🔖 ENREGISTRE LE CIRCUIT",
+    "💬 ÉCRIS « FAIT » APRÈS"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Enregistre le circuit, fais-le ce soir, et écris fait en commentaire quand c'est bouclé."
+  }
+ ]
+}
