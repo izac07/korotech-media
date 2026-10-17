@@ -1,0 +1,78 @@
+{
+ "id": "LIA-R03",
+ "layout": "iceberg",
+ "music_seed": 48,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "cmd": "./reveler --mythe-ia",
+   "top": "ce qu'on te dit",
+   "bottom": "ce qui se passe vraiment",
+   "vo": "On te répète que l'IA va remplacer les freelances. Regardons ce qu'il y a sous la surface."
+  },
+  {
+   "type": "surface",
+   "labels": [
+    "l'IA fait tout",
+    "plus besoin d'experts",
+    "tes clients vont partir"
+   ],
+   "text": "LA PEUR",
+   "vo": "En surface : l'IA fait tout, plus besoin d'experts, et tes clients vont partir."
+  },
+  {
+   "type": "process",
+   "steps": [
+    "BRIEF",
+    "IA",
+    "RELECTURE"
+   ],
+   "chaos": "ERREURS",
+   "ok": "humain + IA",
+   "text": "L'IA PRODUIT,<br>TOI TU DÉCIDES",
+   "vo": "Sous l'eau : l'IA produit vite, mais quelqu'un doit comprendre le besoin, donner le bon brief et vérifier le résultat. Ce quelqu'un, c'est toi."
+  },
+  {
+   "type": "logs",
+   "logs": [
+    [
+     "texte générique · sans contexte",
+     "err"
+    ],
+    [
+     "info fausse · non vérifiée",
+     "err"
+    ],
+    [
+     "relu par un pro ✓",
+     "ok"
+    ],
+    [
+     "ce que ton client paie :",
+     "info"
+    ],
+    [
+     "ton jugement",
+     "item"
+    ],
+    [
+     "ta relation client",
+     "item"
+    ],
+    [
+     "ta responsabilité",
+     "item"
+    ]
+   ],
+   "text": "LE CLIENT PAIE<br>LE RÉSULTAT",
+   "vo": "Sans toi, ça donne du texte générique et des erreurs que personne ne voit. Ton client ne paie pas des mots : il paie ton jugement, ta relation et ta responsabilité."
+  },
+  {
+   "type": "cta",
+   "task": "1 TÂCHE DÉLÉGUÉE",
+   "text": "UTILISE-LA,<br>NE LA SUBIS PAS",
+   "vo": "Alors ne la subis pas : confie-lui une tâche cette semaine, et garde la main sur le reste. Enregistre la vidéo, et suis-moi pour apprendre à t'en servir."
+  }
+ ]
+}
