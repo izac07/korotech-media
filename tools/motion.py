@@ -1242,7 +1242,138 @@ def manifeste3d_page(spec, theme, starts, durs, caps, total):
     return page.replace("<style>", "<style>" + K._font_faces(["Archivo Black", "JetBrains Mono"]), 1)
 
 
-LAYOUTS = {"manifeste3d": manifeste3d_page, "messages": messages_page, "terminal": terminal_page, "cheatsheet": cheatsheet_page, "iceberg": iceberg_page, "sportmotion": sportmotion_page, "nightchat": nightchat_page, "notion": notion_page}
+# ------------------------------------------------------------------ layout « claudeflow » (LIA : coulisses d'un système Claude → file → publication)
+FLOW_TPL = r"""<!doctype html><html><head><meta charset='utf-8'><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;overflow:hidden;background:#050806;color:#eafff2;font-family:'JetBrains Mono',monospace;position:relative}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(57,255,136,.06) 2px,transparent 2px),linear-gradient(90deg,rgba(57,255,136,.06) 2px,transparent 2px);background-size:90px 90px}
+.scan{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 2px,transparent 2px 5px)}
+.g{color:#39ff88}.y{color:#febc2e}.r{color:#ff4d4d}
+.hd{position:absolute;left:50px;right:50px;top:120px;display:flex;justify-content:space-between;font:700 30px 'JetBrains Mono';color:#7fa891}
+.blk{position:absolute;inset:0;opacity:0}
+.tag{position:absolute;left:60px;top:200px;font:700 36px 'JetBrains Mono';color:#050806;background:#39ff88;padding:8px 20px}
+.big{position:absolute;left:60px;right:60px;top:520px;font:400 118px/1.05 'Archivo Black';text-transform:uppercase}
+.big em{font-style:normal;color:#39ff88}
+.sub{position:absolute;left:60px;right:60px;top:1000px;font:700 48px 'JetBrains Mono';color:#7fa891}
+.cur{display:inline-block;width:24px;height:52px;background:#39ff88;vertical-align:-8px;margin-left:8px}
+.win{position:absolute;left:50px;right:50px;top:300px;height:1100px;border:3px solid rgba(57,255,136,.55);border-radius:26px;background:rgba(6,14,9,.96);overflow:hidden}
+.wbar{height:76px;border-bottom:2px solid rgba(57,255,136,.3);display:flex;align-items:center;gap:14px;padding:0 28px;font:700 30px 'JetBrains Mono';color:#7fa891}
+.wbar i{width:20px;height:20px;border-radius:50%;background:#2a3b30}
+.ub{position:absolute;right:40px;left:160px;top:120px;background:#16241b;border:2px solid #2d4a37;border-radius:24px 24px 6px 24px;padding:26px 30px;font:600 48px/1.3 Inter,sans-serif;color:#eafff2;opacity:0}
+.who{font:700 28px 'JetBrains Mono';color:#7fa891;margin-bottom:8px}
+.ar{position:absolute;left:40px;right:50px;font:600 48px/1.3 Inter,sans-serif;color:#d6f5e2}
+.ln{opacity:0;margin-top:26px;padding-left:40px;position:relative}
+.ln:before{content:'▸';position:absolute;left:0;color:#39ff88}
+.row{display:grid;grid-template-columns:120px 130px 1fr 250px;gap:12px;align-items:center;padding:40px 26px;border-bottom:2px solid rgba(57,255,136,.14);font:700 42px/1.2 Inter,sans-serif;opacity:0}
+.row.h{opacity:1;font:700 26px 'JetBrains Mono';color:#7fa891;padding:18px 26px}
+.st{font:700 32px 'JetBrains Mono';padding:10px 14px;border-radius:10px;text-align:center}
+.node{position:absolute;left:290px;width:500px;height:150px;border:4px solid #39ff88;background:#050806;display:flex;align-items:center;justify-content:center;font:400 54px 'Archivo Black';opacity:0}
+.node small{display:block;font:700 26px 'JetBrains Mono';color:#7fa891;text-align:center;margin-top:6px}
+.wire{position:absolute;left:536px;width:8px;background:rgba(57,255,136,.25)}
+.pk{position:absolute;left:526px;width:28px;height:28px;border-radius:50%;background:#39ff88;box-shadow:0 0 24px #39ff88;opacity:0}
+.notif{position:absolute;left:90px;right:90px;top:1300px;background:rgba(240,255,245,.95);color:#08130c;border-radius:28px;padding:24px 30px;display:flex;gap:22px;align-items:center;font:700 38px Inter,sans-serif;opacity:0}
+.notif b{font-size:58px}
+.ctl{position:absolute;left:60px;right:60px;font:700 50px 'JetBrains Mono';opacity:0}
+.capw{position:absolute;left:0;right:0;top:1505px;text-align:center;z-index:9}
+.cap{display:none;background:#050806;border:3px solid #39ff88;padding:12px 28px;font:700 46px 'JetBrains Mono'}
+.cap .on{color:#39ff88}
+.bar{position:absolute;left:0;top:0;height:10px;background:#39ff88;z-index:9}
+</style></head><body><div class='grid'></div>
+<div class='hd'><span>@__HANDLE__</span><span id='stp'></span></div>
+<div class='blk' id='k0'><div class='big' id='hk'>__H_TITLE__</div><div class='sub' id='hs'>&gt; <span id='hst'></span><b class='cur'></b></div></div>
+<div class='blk' id='k1'><div class='tag'>__C_TAG__</div><div class='win'><div class='wbar'><i></i><i></i><i></i>&nbsp;__C_WIN__</div>
+ <div class='ub' id='ub'><div class='who'>toi</div><span id='ubt'></span></div>
+ <div class='ar' id='ar' style='top:__AR_TOP__px'><div class='who' style='opacity:0' id='aw'>__C_WHO__</div>__C_LINES__</div></div></div>
+<div class='blk' id='k2'><div class='tag'>__T_TAG__</div><div class='win'><div class='wbar'><i></i><i></i><i></i>&nbsp;__T_WIN__</div>
+ <div class='row h'><span>JOUR</span><span>HEURE</span><span>POST</span><span>STATUT</span></div>__T_ROWS__</div></div>
+<div class='blk' id='k3'><div class='tag'>__P_TAG__</div>__P_NODES__<div class='notif' id='nt'><b>✓</b><span>__P_NOTIF__</span></div></div>
+<div class='blk' id='k4'><div class='big' id='cb' style='top:420px'>__CT_TITLE__</div>__CT_LINES__</div>
+<div class='scan'></div><div class='capw'>__CAPS__</div><div class='bar' id='bar'></div>
+<script>
+const EV=__EV__; const D=__D__; const SC=__SC__; const CF=__CF__;
+const c=x=>Math.max(0,Math.min(1,x)), eo=x=>1-Math.pow(1-c(x),3), back=x=>{x=c(x);const s=1.7;return 1+(s+1)*Math.pow(x-1,3)+s*Math.pow(x-1,2);};
+const $=id=>document.getElementById(id);
+function inn(id,t0,u,dy=40){const e=$(id);if(!e)return;const k=eo((u-t0)/.35);e.style.opacity=u>=t0?k:0;e.style.transform=`translateY(${(1-k)*dy}px)`;}
+const ST={valider:['À valider','#3a3214','#febc2e'],refuse:['Refusé','#3a1414','#ff4d4d'],publie:['Publié ✓','#123a20','#39ff88']};
+window.render=function(t){
+ $('bar').style.width=(c(t/D)*1080)+'px';
+ let k=0;for(let i=0;i<SC.length;i++)if(t>=SC[i].a)k=i;const u=t-SC[k].a,d=SC[k].b-SC[k].a;
+ for(let i=0;i<5;i++){const e=$('k'+i);const on=i==k;const out=i==k-1&&u<.3;e.style.opacity=on?(k==0?1:eo(u/.3)):(out?1-eo(u/.3):0);e.style.transform=`translateX(${on?(1-eo(k==0?1:u/.3))*80:(out?-eo(u/.3)*80:0)}px)`;}
+ $('stp').textContent=['','ÉTAPE 1/3','ÉTAPE 2/3','ÉTAPE 3/3','✓'][k];
+ if(k==0){const hk=$('hk');const kk=back(u/.35);hk.style.transform=`scale(${1.6-.6*kk})`;hk.style.opacity=c(u/.08);
+   $('hst').textContent=CF.hsub.slice(0,Math.floor(c((u-1.0)/1.2)*CF.hsub.length));}
+ if(k==1){$('ub').style.opacity=u>=.3?1:0;$('ubt').textContent=CF.prompt.slice(0,Math.floor(c((u-.3)/CF.ptime)*CF.prompt.length));
+   const a0=.3+CF.ptime+.3;$('aw').style.opacity=u>=a0?1:0;const n=CF.nl;const st=(d-a0-.6)/Math.max(1,n);
+   for(let j=0;j<n;j++){const e=$('al'+j);const k2=eo((u-a0-st*j)/.3);e.style.opacity=u>=a0+st*j?k2:0;e.style.transform=`translateX(${(1-k2)*30}px)`;}}
+ if(k==2){const n=CF.nr;const st=Math.min(.7,(d*.45)/Math.max(1,n));
+   for(let j=0;j<n;j++){const e=$('rw'+j);const t0=.4+st*j;const k2=eo((u-t0)/.3);e.style.opacity=u>=t0?k2:0;e.style.transform=`translateY(${(1-k2)*30}px)`;
+     const s=$('rs'+j);let v='valider';const fin=CF.rows[j];if(u>=d*.62+.25*j&&fin!='valider')v=fin;const S=ST[v];s.textContent=S[0];s.style.background=S[1];s.style.color=S[2];}}
+ if(k==3){const n=CF.nn;const st=(d*.5)/Math.max(1,n);
+   for(let j=0;j<n;j++){inn('nd'+j,.2+st*j,u,30);}
+   for(let j=0;j<n-1;j++){const p=$('pk'+j);const t0=.2+st*(j+1)-.35;const y0=CF.ny[j]+150,y1=CF.ny[j+1];const kk=c((u-t0)/.4);p.style.opacity=u>=t0&&kk<1?1:0;p.style.top=(y0+(y1-y0)*kk-14)+'px';}
+   const tn=.2+st*n;const kn=back((u-tn)/.4);$('nt').style.opacity=u>=tn?c((u-tn)/.1):0;$('nt').style.transform=`translateY(${(1-kn)*-120}px)`;}
+ if(k==4){const cb=$('cb');const kk=back(u/.35);cb.style.opacity=c(u/.1);cb.style.transform=`scale(${1.4-.4*kk})`;
+   for(let j=0;j<CF.nc;j++)inn('cl'+j,1.2+.6*j,u,30);}
+ for(const cp of document.querySelectorAll('.cap')){const a=+cp.dataset.a,b=+cp.dataset.b;cp.style.display=(t>=a&&t<b)?'inline-block':'none';
+   for(const w of cp.querySelectorAll('[data-w]'))w.className=(t>=+w.dataset.w)?'on':'';}
+};render(0);
+</script></body></html>"""
+
+def claudeflow_page(spec, theme, starts, durs, caps, total):
+    sc = spec["scenes"]; a = starts
+    h, ch, tb, pp, ct = sc
+    def em(x):
+        q = K.esc(x).split("**"); return "".join(f"<em>{z}</em>" if n % 2 else z for n, z in enumerate(q)).replace("&lt;br&gt;", "<br>")
+    lines = ch.get("reply", [])[:6]
+    rows = tb.get("rows", [])[:7]
+    nodes = pp.get("nodes", ["CLAUDE", "MAKE", "INSTAGRAM"])[:4]
+    ny = [330 + j * (780 // max(1, len(nodes) - 1)) for j in range(len(nodes))] if len(nodes) > 1 else [600]
+    nodes_html = ""
+    for j, nd in enumerate(nodes):
+        lab, sub = (nd if isinstance(nd, list) else [nd, ""])[:2]
+        nodes_html += f"<div class='node' id='nd{j}' style='top:{ny[j]}px'><div>{K.esc(lab)}<small>{K.esc(sub)}</small></div></div>"
+        if j < len(nodes) - 1:
+            nodes_html += f"<div class='wire' style='top:{ny[j]+150}px;height:{ny[j+1]-ny[j]-150}px'></div><div class='pk' id='pk{j}'></div>"
+    rows_html = ""
+    for j, r in enumerate(rows):
+        day, hr, lab = (r + ["", "", ""])[:3]
+        rows_html += f"<div class='row' id='rw{j}'><span class='g'>{K.esc(day)}</span><span>{K.esc(hr)}</span><span>{K.esc(lab)}</span><span class='st' id='rs{j}'></span></div>"
+    fin = [(r[3] if len(r) > 3 else "valider") for r in rows]
+    prompt = ch.get("prompt", "")
+    ctl = ct.get("ctas", [])[:3]
+    ct_html = "".join(f"<div class='ctl' id='cl{j}' style='top:{1000 + 110 * j}px'>{K.esc(x)}</div>" for j, x in enumerate(ctl))
+    S = [{"a": starts[k], "b": starts[k] + durs[k]} for k in range(len(sc))]
+    ptime = min(2.2, max(1.0, len(prompt) / 45))
+    CF = {"hsub": h.get("sub", ""), "prompt": prompt, "ptime": ptime, "nl": len(lines), "nr": len(rows), "rows": fin, "nn": len(nodes), "ny": ny, "nc": len(ctl)}
+    ev = [{"k": "impact", "at": a[0] + .05}, {"k": "type", "at": a[0] + 1.0, "end": a[0] + 2.2, "text": h.get("sub", "x")}]
+    ev += [{"k": "type", "at": a[1] + .3, "end": a[1] + .3 + ptime, "text": prompt}]
+    a0 = .3 + ptime + .3; st = (durs[1] - a0 - .6) / max(1, len(lines))
+    ev += [{"k": "pop", "at": a[1] + a0 + st * j} for j in range(len(lines))]
+    st2 = min(.7, (durs[2] * .45) / max(1, len(rows)))
+    ev += [{"k": "pop", "at": a[2] + .4 + st2 * j} for j in range(len(rows))]
+    ev += [{"k": ("impact" if f == "refuse" else "check"), "at": a[2] + durs[2] * .62 + .25 * j} for j, f in enumerate(fin) if f != "valider"]
+    st3 = (durs[3] * .5) / max(1, len(nodes))
+    ev += [{"k": "pop", "at": a[3] + .2 + st3 * j} for j in range(len(nodes))] + [{"k": "notif", "at": a[3] + .2 + st3 * len(nodes)}]
+    ev += [{"k": "impact", "at": a[4] + .05}] + [{"k": "pop", "at": a[4] + 1.2 + .6 * j} for j in range(len(ctl))]
+    ev.sort(key=lambda e: e["at"])
+    cap_html = "".join(
+        f"<span class='cap' data-a='{c[0][1]:.3f}' data-b='{c_next:.3f}'>" + " ".join(f"<span data-w='{t:.3f}'>{H.escape(w)}</span>" for w, t in c) + "</span>"
+        for c, c_next in caps)
+    R = {"__HANDLE__": H.escape(spec.get("handle", "")), "__H_TITLE__": em(h.get("title", "")),
+         "__C_TAG__": K.esc(ch.get("tag", "ÉTAPE 1 · CLAUDE ÉCRIT")), "__C_WIN__": K.esc(ch.get("window", "claude — nouvelle conversation")),
+         "__C_WHO__": K.esc(ch.get("who", "claude")), "__AR_TOP__": str(ch.get("reply_top", 420)),
+         "__C_LINES__": "".join(f"<div class='ln' id='al{j}'>{em(x)}</div>" for j, x in enumerate(lines)),
+         "__T_TAG__": K.esc(tb.get("tag", "ÉTAPE 2 · JE VALIDE")), "__T_WIN__": K.esc(tb.get("window", "file d'attente")), "__T_ROWS__": rows_html,
+         "__P_TAG__": K.esc(pp.get("tag", "ÉTAPE 3 · PUBLICATION")), "__P_NODES__": nodes_html, "__P_NOTIF__": K.esc(pp.get("notif", "Publié sur Instagram")),
+         "__CT_TITLE__": em(ct.get("title", "")), "__CT_LINES__": ct_html, "__CAPS__": cap_html}
+    page = FLOW_TPL
+    for kk, v in R.items():
+        page = page.replace(kk, v)
+    page = page.replace("__EV__", json.dumps(ev, ensure_ascii=False)).replace("__D__", str(total)).replace("__SC__", json.dumps(S)).replace("__CF__", json.dumps(CF, ensure_ascii=False))
+    return page.replace("<style>", "<style>" + K._font_faces(["JetBrains Mono", "Archivo Black"]), 1)
+
+
+LAYOUTS = {"claudeflow": claudeflow_page, "manifeste3d": manifeste3d_page, "messages": messages_page, "terminal": terminal_page, "cheatsheet": cheatsheet_page, "iceberg": iceberg_page, "sportmotion": sportmotion_page, "nightchat": nightchat_page, "notion": notion_page}
 
 # ------------------------------------------------------------------ rendu
 def sfx_track(path, total, events, starts):

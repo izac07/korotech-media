@@ -1,0 +1,91 @@
+{
+ "id": "LIA-R04",
+ "layout": "claudeflow",
+ "music_seed": 52,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "title": "2 posts / jour.<br>**0 à la main.**",
+   "sub": "le système, en 3 briques",
+   "vo": "Mon compte publie deux posts par jour, et je ne poste plus rien à la main. Voici le système, en trois briques."
+  },
+  {
+   "type": "chat",
+   "tag": "ÉTAPE 1 · CLAUDE ÉCRIT",
+   "prompt": "Prépare les posts de la semaine pour @lia.entrepreneur",
+   "reply": [
+    "Ligne éditoriale et journal lus ✓",
+    "14 créneaux : 7 reels + 7 carrousels",
+    "Sujets nouveaux, rien d'inventé",
+    "Voix off générées, vidéos rendues",
+    "**Tout est dans ta file d'attente.**"
+   ],
+   "vo": "Brique un : Claude écrit. Il connaît la ligne éditoriale du compte, et chaque semaine il prépare les sujets, les textes, les voix et les vidéos."
+  },
+  {
+   "type": "table",
+   "tag": "ÉTAPE 2 · JE VALIDE",
+   "rows": [
+    [
+     "SAM",
+     "08:50",
+     "L'iceberg de l'automatisation",
+     "publie"
+    ],
+    [
+     "LUN",
+     "12:30",
+     "5 tâches à déléguer à l'IA",
+     "valider"
+    ],
+    [
+     "LUN",
+     "18:30",
+     "Reel : prompt de relance",
+     "refuse"
+    ],
+    [
+     "MER",
+     "12:30",
+     "3 erreurs de prompts",
+     "valider"
+    ]
+   ],
+   "vo": "Brique deux : tout arrive dans une file d'attente. Je relis, et je peux refuser n'importe quel post avant qu'il parte."
+  },
+  {
+   "type": "pipeline",
+   "tag": "ÉTAPE 3 · PUBLICATION",
+   "nodes": [
+    [
+     "CLAUDE",
+     "écrit + rend"
+    ],
+    [
+     "FILE",
+     "je valide"
+    ],
+    [
+     "MAKE",
+     "publie à l'heure"
+    ],
+    [
+     "INSTAGRAM",
+     "+ bilan du dimanche"
+    ]
+   ],
+   "notif": "Publié sur @lia.entrepreneur",
+   "vo": "Brique trois : Make publie à l'heure prévue sur Instagram. Et chaque dimanche, Claude me fait le bilan des statistiques."
+  },
+  {
+   "type": "cta",
+   "title": "Pas magique.<br>**Construit.**",
+   "ctas": [
+    "🔖 enregistre la vidéo",
+    "➕ suis-moi pour la suite"
+   ],
+   "vo": "Ce n'est pas magique : il faut le construire et le surveiller. Enregistre la vidéo, et suis-moi : je te montre chaque brique."
+  }
+ ]
+}
