@@ -1,0 +1,24 @@
+{
+ "id": "R18",
+ "layout": "cheatsheet",
+ "music_seed": 79,
+ "handle": "korotech_fr",
+ "scenes": [
+  {"type": "hook", "big": "3", "title": "**ASTUCES**", "sub": "quand le prof t'a perdu 😵",
+   "vo": "POV : le prof explique depuis une heure, tout le monde hoche la tête, et toi, t'as rien compris. Voici trois astuces.",
+   "say": "P.O.V. : le prof explique depuis une heure, tout le monde hoche la tête, et toi, t'as rien compris. Voici trois astuces."},
+  {"type": "pills", "num": "01", "name": "Simplifie", "file": "Cours_Physique.pdf",
+   "pills": ["🧒 Comme à 12 ans", "🍕 Avec un exemple", "🔁 Autrement"],
+   "text": "Ton cours → **en mots simples**",
+   "vo": "Un : simplifie. Donne ton cours à l'IA et demande-lui de te l'expliquer comme si t'avais douze ans, avec un exemple de la vraie vie."},
+  {"type": "diagram", "num": "02", "name": "Vérifie", "nodes": ["Notion", "Exemple", "Exercice"],
+   "text": "Compris ? **Prouve-le.**",
+   "vo": "Deux : vérifie. Demande-lui un petit exercice sur la notion, sans la correction. Si tu le réussis seul, c'est que t'as compris."},
+  {"type": "search", "num": "03", "name": "Demande", "q": "Quoi demander au prof demain ?",
+   "answers": ["Refaire l'étape 2 ?", "Pourquoi cette formule ?", "Un exercice type ?"],
+   "text": "Une question **précise**",
+   "vo": "Trois : prépare avec l'IA une question précise à poser au prof. C'est plus facile que de dire « j'ai rien compris ». Et l'IA peut se tromper : compare avec ton cours."},
+  {"type": "cta", "ctas": ["🔖 Enregistre ça", "📤 Envoie au pote qui décroche"],
+   "vo": "Enregistre la vidéo et envoie-la au pote qui décroche en cours. Abonne-toi pour une astuce par jour."}
+ ]
+}

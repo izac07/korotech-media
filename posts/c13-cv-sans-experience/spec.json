@@ -1,0 +1,8 @@
+{"id":"C13","slides":[
+ {"type":"cover","title":"Ton CV est vide ?<br>**Pas tant que ça.**","size":92,"sub":"Ce que tu as déjà fait compte. L'IA t'aide à le voir."},
+ {"type":"item","num":1,"when":"Étape 1","title":"Liste tout, même le « petit »","body":"Baby-sitting, aide au club de sport, projet de groupe, stage de 3e, bénévolat : **tout compte**.","foot":"Enregistre pour ta recherche"},
+ {"type":"item","num":2,"when":"Étape 2","title":"Fais-toi interroger","card":"Pose-moi des questions, une à la fois, pour trouver ce que j'ai déjà fait d'utile (école, sport, famille, bénévolat). Je postule pour un job de [job visé].","card_label":"LE PROMPT","foot":"Enregistre pour ta recherche"},
+ {"type":"item","num":3,"when":"Étape 3","title":"Transforme en compétences","card":"À partir de mes réponses, propose 5 compétences avec un exemple concret pour chacune. N'invente rien : [tes réponses]","card_label":"LE PROMPT","foot":"Enregistre pour ta recherche"},
+ {"type":"item","num":4,"when":"Étape 4","title":"2 lignes d'accroche","body":"En haut du CV : **qui tu es**, ce que tu cherches et tes disponibilités. Court et clair.","foot":"Enregistre pour ta recherche"},
+ {"type":"item","num":5,"when":"Étape 5","title":"Tout doit être vrai","body":"Relis chaque ligne : tu dois pouvoir **l'expliquer en entretien**. Si c'est faux, tu l'enlèves.","foot":"Enregistre pour ta recherche"},
+ {"type":"cta","title":"Ton premier CV,<br>**sans mentir.**","size":96,"ctas":[["🔖","Enregistre pour ta recherche"],["📤","Partage à un pote qui cherche"]],"note":"L'IA peut se tromper : relis tout avant d'envoyer."}]}

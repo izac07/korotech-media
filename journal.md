@@ -30,10 +30,15 @@
 | 2026-10-20 19:15 (replanifié, prévu le 16/10) | C12 | Carrousel | Parents : l'IA et la vie privée de votre enfant | — |
 | 2026-10-21 12:15 (replanifié, prévu le 16/10) | R16 | Reel | Son cours en podcast | PODCAST |
 | 2026-10-22 12:15 | X04 | Reel | 3 IA gratuites pour réviser (NotebookLM, Napkin, Perplexity) — motion design | — |
+| 2026-10-22 19:15 | C13 | Carrousel | CV sans expérience : ce que tu as déjà fait compte | — |
+| 2026-10-23 12:15 | C14 | Carrousel | POV : exposé de groupe et personne ne bosse (répartir avec l'IA) | — |
+| 2026-10-23 19:15 | R17 | Reel | Message gênant : 3 réflexes avec l'IA avant d'envoyer — motion cheatsheet | — |
+| 2026-10-24 12:15 | R18 | Reel | POV : tu comprends rien au prof, 3 astuces — motion cheatsheet | — |
+| 2026-10-24 19:15 | C15 | Carrousel | Apprendre un truc en 10 min par jour avec un plan IA | — |
 
 ## Idées en réserve (nouvelle ligne mixée)
-Études : POV contrôle demain et rien révisé ; arrêter de surligner tout son cours ; réviser dans le bus ; la veille du bac ; quand tu comprends rien au prof ; erreurs de dissertation ; oral du bac de langue ; corriger son accent ; maths sans tricher ; schéma bilan.
-Vie étudiante : préparer son premier entretien de job étudiant ; CV sans expérience ; trouver une alternance ; mail à un prof ou une école ; budget étudiant du mois ; écrire à un propriétaire ; choisir sa formation ; entretien d'école.
-IA au quotidien : 3 choses que ChatGPT sait faire et que tu ne sais pas ; photo du frigo → recette ; préparer un voyage pas cher ; écrire un message difficile ; résumer une vidéo YouTube ; apprendre un truc en 10 minutes.
-POV / humour : ma mère découvre que je révise avec ChatGPT ; le prof qui rend les copies ; moi à 2h du mat vs moi le jour du contrôle ; groupe de travail où personne ne bosse.
+Études : POV contrôle demain et rien révisé ; arrêter de surligner tout son cours ; réviser dans le bus ; la veille du bac ; erreurs de dissertation ; oral du bac de langue ; corriger son accent ; maths sans tricher ; schéma bilan.
+Vie étudiante : préparer son premier entretien de job étudiant ; trouver une alternance ; mail à un prof ou une école ; budget étudiant du mois ; écrire à un propriétaire ; choisir sa formation ; entretien d'école.
+IA au quotidien : 3 choses que ChatGPT sait faire et que tu ne sais pas ; photo du frigo → recette ; préparer un voyage pas cher ; résumer une vidéo YouTube ; 
+POV / humour : ma mère découvre que je révise avec ChatGPT ; le prof qui rend les copies ; moi à 2h du mat vs moi le jour du contrôle.
 Parents : aider en maths ; outils gratuits ; parler d'IA à son ado.

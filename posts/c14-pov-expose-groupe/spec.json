@@ -1,0 +1,69 @@
+{
+ "id": "C14",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "POV : exposé<br>de groupe<br>**et personne<br>ne bosse**",
+   "size": 96,
+   "sub": "Le plan pour que chacun fasse sa part."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Étape 1",
+   "title": "Découpe le travail",
+   "card": "On est [4] pour un exposé sur [sujet], à rendre le [date]. Découpe le travail en tâches de taille égale, avec une deadline pour chacune.",
+   "card_label": "LE PROMPT",
+   "foot": "Enregistre pour le prochain exposé"
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Étape 2",
+   "title": "Chacun choisit",
+   "body": "Envoie la liste dans le groupe : **chacun prend ses tâches**, écrit noir sur blanc. Fini le « je croyais que c'était toi ».",
+   "foot": "Enregistre pour le prochain exposé"
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Étape 3",
+   "title": "Un point à mi-parcours",
+   "body": "Fixez **une date** au milieu du projet pour voir qui a avancé, avant qu'il soit trop tard.",
+   "foot": "Enregistre pour le prochain exposé"
+  },
+  {
+   "type": "item",
+   "num": 4,
+   "when": "Étape 4",
+   "title": "Relie les parties",
+   "card": "Voici nos parties : [vos textes]. Signale les répétitions et les passages qui ne s'enchaînent pas, sans réécrire.",
+   "card_label": "LE PROMPT",
+   "foot": "Enregistre pour le prochain exposé"
+  },
+  {
+   "type": "item",
+   "num": 5,
+   "when": "Étape 5",
+   "title": "Répétez ensemble",
+   "body": "Chacun présente sa partie. Demandez à l'IA de **vous poser des questions** comme le ferait un prof.",
+   "foot": "Enregistre pour le prochain exposé"
+  },
+  {
+   "type": "cta",
+   "title": "Envoie ça<br>**à ton groupe.**",
+   "size": 96,
+   "ctas": [
+    [
+     "📤",
+     "Partage à ton groupe"
+    ],
+    [
+     "🔖",
+     "Enregistre pour le prochain exposé"
+    ]
+   ],
+   "note": "L'IA organise. C'est vous qui écrivez."
+  }
+ ]
+}

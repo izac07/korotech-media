@@ -1,0 +1,69 @@
+{
+ "id": "C15",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Apprends<br>un truc<br>**en 10 min<br>par jour**",
+   "size": 96,
+   "sub": "Cuisine, guitare, code : l'IA te fait le plan."
+  },
+  {
+   "type": "item",
+   "num": 1,
+   "when": "Étape 1",
+   "title": "Choisis petit",
+   "body": "Pas « la guitare », mais « jouer **3 accords** ». Un objectif précis, c'est plus facile à tenir.",
+   "foot": "Enregistre pour commencer"
+  },
+  {
+   "type": "item",
+   "num": 2,
+   "when": "Étape 2",
+   "title": "Demande un plan",
+   "card": "Je veux apprendre [sujet] en 10 minutes par jour pendant 7 jours. Donne-moi un objectif concret et un exercice pour chaque jour.",
+   "card_label": "LE PROMPT",
+   "foot": "Enregistre pour commencer"
+  },
+  {
+   "type": "item",
+   "num": 3,
+   "when": "Étape 3",
+   "title": "Fais, ne lis pas",
+   "body": "Lis 2 minutes, **pratique le reste**. Le but : faire, pas juste regarder des tutos.",
+   "foot": "Enregistre pour commencer"
+  },
+  {
+   "type": "item",
+   "num": 4,
+   "when": "Étape 4",
+   "title": "Fais-toi interroger",
+   "card": "Pose-moi 3 questions sur ce que j'ai appris hier sur [sujet]. Attends ma réponse avant de corriger.",
+   "card_label": "LE PROMPT",
+   "foot": "Enregistre pour commencer"
+  },
+  {
+   "type": "item",
+   "num": 5,
+   "when": "Étape 5",
+   "title": "Vérifie les sources",
+   "body": "Santé, argent, sécurité : **vérifie avec une vraie source**. L'IA peut se tromper.",
+   "foot": "Enregistre pour commencer"
+  },
+  {
+   "type": "cta",
+   "title": "Tu veux apprendre<br>**quoi ?**",
+   "size": 96,
+   "ctas": [
+    [
+     "💬",
+     "Dis-le en commentaire"
+    ],
+    [
+     "🔖",
+     "Enregistre pour commencer"
+    ]
+   ],
+   "note": "7 jours, 10 minutes par jour. Tu tiens le pari ?"
+  }
+ ]
+}

@@ -273,14 +273,16 @@ def cheatsheet_page(spec, theme, starts, durs, caps, total):
         if ty == "hook":
             pages = "".join(f"<div class='page' id='pg{i}'><i style='width:80%'></i><i class='hlb' style='width:65%'></i><i style='width:90%'></i><i style='width:55%'></i><i class='hlb' style='width:75%'></i><i style='width:85%'></i></div>" for i in range(3))
             parts = "".join(f"<b class='pt' id='pt{i}'></b>" for i in range(46))
-            inner = (f"{pages}{parts}<div class='three' id='three'>3</div><div class='h1' id='h1'>IA <span class='gr'>GRATUITES</span></div>"
-                     f"<div class='h2' id='h2'>que presque personne n'utilise 👀</div>")
+            big = H.escape(s.get("big", "3")); h1 = R(s["title"]) if s.get("title") else "IA <span class='gr'>GRATUITES</span>"
+            h2 = H.escape(s.get("sub", "que presque personne n'utilise 👀"))
+            inner = (f"{pages}{parts}<div class='three' id='three'>{big}</div><div class='h1' id='h1'>{h1}</div>"
+                     f"<div class='h2' id='h2'>{h2}</div>")
             ev += [{"k": "whoosh", "at": a + 0.22}, {"k": "impact", "at": a + 0.5}, {"k": "sparkle", "at": a + 0.85}]
         elif ty == "pills":
             pills = "".join(f"<div class='pill' id='pl{k}_{j}'>{H.escape(p)}</div>" for j, p in enumerate(s["pills"]))
             wave = "".join(f"<i id='wv{j}'></i>" for j in range(14))
             inner = (f"<div class='card' id='cd{k}'><div class='hd'><span class='gr num'>{s['num']}</span> · {H.escape(s['name'])}</div>"
-                     f"<div class='drop'><div class='pdf' id='pdf{k}'><span>PDF</span>{H.escape(s['file'])}</div></div></div>"
+                     f"<div class='drop'><div class='pdf' id='pdf{k}'><span>{H.escape(s.get('ext', 'PDF'))}</span>{H.escape(s['file'])}</div></div></div>"
                      f"<div class='pills'>{pills}<div class='wave' id='wave{k}'>{wave}</div></div><div class='bt' id='bt{k}'>{R(s['text'])}</div>")
             ev += [{"k": "pop", "at": a + 0.9}] + [{"k": "pop", "at": a + 1.7 + 0.8 * j} for j in range(len(s["pills"]))]
         elif ty == "diagram":

@@ -30,8 +30,8 @@ Exemples validés (à copier comme base) :
 ---
 
 ## cheatsheet (Korotech) — « 3 outils / 3 astuces »
-1. `hook` : `vo`
-2. `pills` : `num` ("01"), `name`, `file` (nom de fichier déposé), `pills` (3 courts, avec emoji), `text`
+1. `hook` : `vo` ; optionnels `big` (défaut « 3 »), `title` (défaut « IA **GRATUITES** », ≤ 12 caractères, `**mot**` en dégradé) et `sub` (défaut « que presque personne n'utilise 👀 », ≤ 28 caractères). À remplir dès que le reel n'est pas « 3 IA gratuites » (ex. « 3 » / « **ASTUCES** » / « quand le prof t'a perdu 😵 »).
+2. `pills` : `num` ("01"), `name`, `file` (nom de fichier déposé, ≤ 18 caractères), optionnel `ext` (étiquette du fichier, défaut « PDF »), `pills` (3 courts, avec emoji), `text`
 3. `diagram` : `num`, `name`, `nodes` (3 mots), `text`
 4. `search` : `num`, `name`, `q` (question tapée), `answers` (3 lignes courtes), `text`
 5. `cta` : `ctas` (2 lignes)

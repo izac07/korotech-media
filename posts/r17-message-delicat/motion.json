@@ -1,0 +1,23 @@
+{
+ "id": "R17",
+ "layout": "cheatsheet",
+ "music_seed": 73,
+ "handle": "korotech_fr",
+ "scenes": [
+  {"type": "hook", "big": "3", "title": "**RÉFLEXES**", "sub": "avant un message gênant 😬",
+   "vo": "Tu dois envoyer un message gênant, et ça fait vingt minutes que tu le réécris ? Voici trois réflexes avec l'IA."},
+  {"type": "pills", "num": "01", "name": "Brouillon", "file": "Mon_message.txt", "ext": "TXT",
+   "pills": ["🙏 Plus poli", "✂️ Plus court", "🎯 Plus direct"],
+   "text": "Ton brouillon → **3 versions**",
+   "vo": "Un : le brouillon. Écris ton message comme il vient, sans te prendre la tête, puis demande à l'IA trois versions : plus polie, plus courte et plus directe."},
+  {"type": "diagram", "num": "02", "name": "Structure", "nodes": ["Reconnais", "Explique", "Propose"],
+   "text": "3 étapes, **zéro pavé**",
+   "vo": "Deux : la structure. Pour t'excuser ou dire non, garde trois étapes : tu reconnais la situation, tu expliques en une phrase, et tu proposes une solution."},
+  {"type": "search", "num": "03", "name": "Le test", "q": "Mon message peut-il être mal pris ?",
+   "answers": ["Le « ok. » final paraît sec", "La blague peut vexer", "Il manque une solution"],
+   "text": "Relis **avant d'envoyer**",
+   "vo": "Trois : le test. Demande à l'IA comment ton message pourrait être mal compris. À la fin, c'est toi qui choisis tes mots, pas l'IA."},
+  {"type": "cta", "ctas": ["🔖 Enregistre pour plus tard", "📤 Envoie-le à un pote"],
+   "vo": "Enregistre cette vidéo pour ton prochain message gênant, et envoie-la au pote qui réécrit ses messages dix fois."}
+ ]
+}
