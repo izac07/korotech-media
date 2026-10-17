@@ -1,0 +1,90 @@
+{
+ "id": "LIA-R05",
+ "layout": "claudeflow",
+ "music_seed": 37,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "title": "Tout part seul.<br>**Sauf veto.**",
+   "sub": "mon droit de veto",
+   "vo": "Mon compte publie tout seul, mais rien ne part sans passer par une étape : mon droit de veto. Je te montre comment ça marche."
+  },
+  {
+   "type": "chat",
+   "tag": "ÉTAPE 1 · CLAUDE REMPLIT LA FILE",
+   "prompt": "Ajoute les posts de la semaine à la file d'attente",
+   "reply": [
+    "Une ligne par post dans le Google Sheet",
+    "Date, heure, légende, lien du média",
+    "Statut : **À valider**",
+    "Rien n'est publié à ce stade"
+   ],
+   "vo": "Étape un : Claude ajoute chaque post dans un Google Sheet, avec la date, l'heure, la légende et le lien de la vidéo. Statut : à valider."
+  },
+  {
+   "type": "table",
+   "tag": "ÉTAPE 2 · JE RELIS",
+   "rows": [
+    [
+     "SAM",
+     "08:50",
+     "L'iceberg de l'automatisation",
+     "publie"
+    ],
+    [
+     "LUN",
+     "12:30",
+     "5 tâches à déléguer à l'IA",
+     "valider"
+    ],
+    [
+     "MAR",
+     "12:30",
+     "Reel : relance de factures",
+     "refuse"
+    ],
+    [
+     "MER",
+     "12:30",
+     "3 erreurs de prompts",
+     "valider"
+    ]
+   ],
+   "vo": "Étape deux : je relis. Si un post ne me plaît pas, je passe son statut à refusé. Celui-là, je l'ai refusé : il ne partira jamais."
+  },
+  {
+   "type": "pipeline",
+   "tag": "ÉTAPE 3 · MAKE VÉRIFIE",
+   "nodes": [
+    [
+     "FILE",
+     "statut lu"
+    ],
+    [
+     "HEURE",
+     "passée ?"
+    ],
+    [
+     "MAKE",
+     "toutes les 15 min"
+    ],
+    [
+     "INSTAGRAM",
+     "sauf les refusés"
+    ]
+   ],
+   "notif": "Publié · statut mis à jour",
+   "vo": "Étape trois : toutes les quinze minutes, Make lit la file. Un post dont l'heure est passée, et qui n'est pas refusé, part sur Instagram."
+  },
+  {
+   "type": "cta",
+   "title": "Auto ✓<br>**Aveugle ✗**",
+   "ctas": [
+    "🔖 enregistre le principe",
+    "➕ suis-moi pour la suite"
+   ],
+   "vo": "Automatique, mais pas aveugle. Enregistre la vidéo, et suis-moi pour voir les autres briques."
+  }
+ ]
+}

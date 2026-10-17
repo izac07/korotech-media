@@ -8,3 +8,4 @@
 | 2026-10-17 08:50 | LIA-R02 | Reel | L'iceberg de l'automatisation (motion design) |
 | 2026-10-17 18:30 | LIA-R04 | Reel | 2 posts/jour, 0 à la main : mon système avec Claude (format claudeflow, lancement du nouveau concept) |
 | (réserve) | LIA-R03 | Reel | Mythe : l'IA va remplacer les freelances (iceberg, prêt, non programmé) |
+| 2026-10-19 18:30 | LIA-R05 | Reel | Tout part seul, sauf veto : ma file d'attente (claudeflow) |
