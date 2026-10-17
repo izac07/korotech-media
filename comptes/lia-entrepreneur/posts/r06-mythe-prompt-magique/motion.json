@@ -1,0 +1,78 @@
+{
+ "id": "LIA-R06",
+ "layout": "iceberg",
+ "music_seed": 91,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "cmd": "./reveler --prompt-magique",
+   "top": "ce qu'on te vend",
+   "bottom": "ce qui marche vraiment",
+   "vo": "On te vend le prompt magique pour tout faire avec l'IA. Voici ce qu'il y a vraiment sous la surface."
+  },
+  {
+   "type": "surface",
+   "labels": [
+    "le prompt parfait",
+    "copier-coller, c'est fini",
+    "l'IA devine tout"
+   ],
+   "text": "LE PROMPT MAGIQUE",
+   "vo": "En surface : un prompt parfait, un copier-coller, et l'IA devine tout le reste."
+  },
+  {
+   "type": "process",
+   "steps": [
+    "CONTEXTE",
+    "EXEMPLES",
+    "RÈGLES"
+   ],
+   "chaos": "FLOU",
+   "ok": "résultats stables",
+   "text": "UN FICHIER,<br>PAS UN PROMPT",
+   "vo": "Sous l'eau : ce qui marche, c'est le contexte. Qui tu vises, des exemples de ce que tu veux, et des règles claires. Sans ça, c'est flou."
+  },
+  {
+   "type": "logs",
+   "logs": [
+    [
+     "sans contexte · texte générique",
+     "err"
+    ],
+    [
+     "sans règles · chiffres inventés",
+     "err"
+    ],
+    [
+     "fichier d'instructions ✓",
+     "ok"
+    ],
+    [
+     "dans le mien :",
+     "info"
+    ],
+    [
+     "la cible du compte",
+     "item"
+    ],
+    [
+     "le ton et les piliers",
+     "item"
+    ],
+    [
+     "ce qui est interdit",
+     "item"
+    ]
+   ],
+   "text": "CE QUI REND<br>LE SYSTÈME FIABLE",
+   "vo": "Pour mes comptes, Claude lit un fichier d'instructions à chaque fois : la cible, le ton, les piliers, et ce qui est interdit, comme inventer des chiffres."
+  },
+  {
+   "type": "cta",
+   "task": "1 FICHIER D'INSTRUCTIONS",
+   "text": "ÉCRIS-LE UNE FOIS",
+   "vo": "Écris-le une fois, améliore-le chaque semaine. Enregistre la vidéo, et suis-moi pour voir le mien en détail."
+  }
+ ]
+}

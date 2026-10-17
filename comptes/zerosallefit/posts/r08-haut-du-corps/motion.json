@@ -1,0 +1,70 @@
+{
+ "id": "ZSF-R08",
+ "layout": "sportmotion",
+ "music_seed": 83,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "pompe",
+   "count": 20,
+   "title": "PAS DE **MATÉRIEL** ?",
+   "sub": "⏱ HAUT DU CORPS EN 5 MIN",
+   "vo": "Pas de salle, pas de matériel ? Pas grave. Voici cinq minutes pour le haut du corps."
+  },
+  {
+   "type": "erreur",
+   "pose": "pompe",
+   "myth": "« SANS HALTÈRES, PAS DE MUSCLES »",
+   "stamp": "FAUX",
+   "text": "LE POIDS DU CORPS<br>**SUFFIT POUR DÉBUTER**",
+   "vo": "L'idée reçue : sans haltères, pas de muscles. Faux : pour débuter, le poids du corps suffit largement, à condition de bien faire les mouvements."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "POMPES INCLINÉES",
+    "PLANCHE",
+    "GAINAGE LATÉRAL",
+    "MOUNTAIN CLIMBERS",
+    "POMPES GENOUX"
+   ],
+   "poses": [
+    "pompe",
+    "planche",
+    "lateral",
+    "climber",
+    "pompe"
+   ],
+   "effort": "40 s",
+   "rest": "20 s",
+   "total": "5:00",
+   "vo": "Le circuit : quarante secondes d'effort, vingt secondes de repos. Pompes inclinées. Planche. Gainage latéral. Mountain climbers. Et pompes sur les genoux pour finir."
+  },
+  {
+   "type": "pourquoi",
+   "title": "PECS + ÉPAULES<br>**+ GAINAGE**",
+   "zones": [
+    "PECS",
+    "ÉPAULES",
+    "SANGLE"
+   ],
+   "badges": [
+    "CORPS GAINÉ",
+    "COUDES À 45°",
+    "TROP DUR ? SUR UN MEUBLE"
+   ],
+   "vo": "Tu travailles les pectoraux, les épaules et la sangle. Corps gainé, coudes à quarante-cinq degrés, et si c'est trop dur, mains sur un meuble stable."
+  },
+  {
+   "type": "cta",
+   "title": "TU TESTES<br>**CE SOIR ?**",
+   "ctas": [
+    "🔖 ENREGISTRE LE CIRCUIT",
+    "💬 ÉCRIS « FAIT » APRÈS"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Enregistre le circuit, fais-le ce soir, et écris fait en commentaire quand c'est bouclé."
+  }
+ ]
+}
