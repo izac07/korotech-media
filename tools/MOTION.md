@@ -18,7 +18,7 @@ python3 tools/motion.py <dossier>/motion.json <dossier>/reel.mp4
 | Compte | layout | voix |
 |---|---|---|
 | korotech_fr | `cheatsheet` | Brian |
-| lia.entrepreneur | `iceberg` | Brian |
+| lia.entrepreneur | `claudeflow` (coulisses, par défaut) ou `iceberg` (mythes) | Brian |
 | zerosallefit | `sportmotion` | Brian |
 | coeurlucide__ | `nightchat` | Alice |
 | mentaldacier2030 | `manifeste3d` | Brian |
@@ -36,6 +36,15 @@ Exemples validés (à copier comme base) :
 4. `search` : `num`, `name`, `q` (question tapée), `answers` (3 lignes courtes), `text`
 5. `cta` : `ctas` (2 lignes)
 Champ optionnel `say` sur chaque scène = texte à envoyer à ElevenLabs à la place de `vo` quand la prononciation pose problème (ex. « Notebook L M »). Les sous-titres suivent `vo`.
+
+## claudeflow (LIA) — coulisses « Claude → file → publication »
+Exemple validé : `comptes/lia-entrepreneur/posts/r04-systeme-claude/motion.json`.
+1. `hook` : `title` (avec `<br>` et `**mot en vert**`, 2 lignes courtes), `sub` (tapé au clavier, ≤ 30 caractères)
+2. `chat` : `tag` (ex. « ÉTAPE 1 · CLAUDE ÉCRIT »), `prompt` (la demande tapée, ≤ 70 caractères), `reply` (3 à 6 lignes courtes de réponse, `**…**` en vert), optionnels `window`, `who`
+3. `table` : `tag`, `rows` = 3 à 6 lignes `[jour, heure, intitulé court, statut final]` avec statut `valider`, `publie` ou `refuse` ; optionnel `window`
+4. `pipeline` : `tag`, `nodes` = 3 ou 4 `[NOM, sous-titre]`, `notif` (notification finale)
+5. `cta` : `title` (avec `<br>` et `**…**`), `ctas` (2 lignes)
+Le contenu montré doit être vrai chez Goat (vrais outils, vrais réglages) ; adapter `tag`/`rows`/`nodes` au sujet (un tuto peut avoir ÉTAPE 1/2/3 différentes).
 
 ## iceberg (LIA) — « ce qu'on te montre / ce qu'on te cache »
 1. `hook` : `cmd` (commande tapée, ex. `./reveler --iceberg`), `top` (ex. « ce qu'on te montre »), `bottom` (ex. « ce qu'on te cache »)
