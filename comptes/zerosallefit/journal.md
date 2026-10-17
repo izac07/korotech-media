@@ -13,4 +13,4 @@
 | 2026-10-20 18:00 | ZSF-R06 | Reel | Fentes bancales ? La bonne position (motion) |
 | 2026-10-20 07:30 | ZSF-C04 | Carrousel | Planche : passer de 20 s à 1 minute |
 | 2026-10-21 07:30 | ZSF-R07 | Reel | Pas envie ? La séance minimum de 4 minutes (motion) |
-| 2026-10-17 19:40 | ZSF-R08 | Reel | Haut du corps en 5 min, sans matériel (motion) |
+| 2026-10-17 22:40 | ZSF-R08 | Reel | Haut du corps en 5 min, sans matériel (motion) |
