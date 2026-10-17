@@ -1,0 +1,68 @@
+{
+ "id": "ZSF-R06",
+ "layout": "sportmotion",
+ "music_seed": 58,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "fente",
+   "count": 3,
+   "title": "TES FENTES<br>**SONT BANCALES ?**",
+   "sub": "📏 LA BONNE POSITION",
+   "vo": "Si tes fentes te paraissent bancales, c'est souvent une question de position. Voici comment bien les faire."
+  },
+  {
+   "type": "erreur",
+   "pose": "fente",
+   "myth": "« UN PETIT PAS, ÇA IRA »",
+   "stamp": "FAUX",
+   "text": "PAS TROP COURT ·<br>**GENOU QUI RENTRE**",
+   "vo": "L'erreur fréquente : un pas trop court, le buste penché en avant, et le genou de devant qui part vers l'intérieur. Tu perds l'équilibre et le mouvement devient moins propre."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "FENTE STATIQUE",
+    "FENTE ARRIÈRE",
+    "PONT FESSIER",
+    "FENTE ALTERNÉE"
+   ],
+   "poses": [
+    "fente",
+    "fente",
+    "pont",
+    "fente"
+   ],
+   "effort": "45 s",
+   "rest": "15 s",
+   "total": "4:00",
+   "vo": "Pour t'entraîner : quatre exercices, quarante-cinq secondes d'effort, quinze de repos. Fente statique. Fente arrière. Pont fessier. Fente alternée, lentement."
+  },
+  {
+   "type": "pourquoi",
+   "title": "GRAND PAS<br>**BUSTE DROIT**",
+   "zones": [
+    "CUISSES",
+    "FESSIERS",
+    "ÉQUILIBRE"
+   ],
+   "badges": [
+    "GENOU DANS L'AXE DU PIED",
+    "GENOU ARRIÈRE VERS LE SOL",
+    "DUR ? TIENS UNE CHAISE"
+   ],
+   "vo": "Fais un grand pas, garde le buste droit, le genou avant dans l'axe du pied, et descends le genou arrière vers le sol. Besoin d'équilibre ? Tiens-toi à une chaise."
+  },
+  {
+   "type": "cta",
+   "title": "FENTES PROPRES<br>**CE SOIR ?**",
+   "ctas": [
+    "🔖 ENREGISTRE LA TECHNIQUE",
+    "↗️ ENVOIE-LA À TON BINÔME"
+   ],
+   "ticker": "BIEN FAIT > VITE FAIT",
+   "vo": "Enregistre la technique, et envoie-la à la personne qui s'entraîne avec toi."
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+{
+ "id": "ZSF-R05",
+ "layout": "sportmotion",
+ "music_seed": 29,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "climber",
+   "count": 5,
+   "title": "PAS BESOIN<br>**DE FINIR TREMPÉ**",
+   "sub": "⏱ 5 MIN · TEMPO LENT",
+   "vo": "Tu crois qu'une séance sans transpirer ne sert à rien ? Voici cinq minutes lentes qui travaillent vraiment."
+  },
+  {
+   "type": "erreur",
+   "pose": "climber",
+   "myth": "« PAS DE SUEUR = PAS DE RÉSULTAT »",
+   "stamp": "MYTHE",
+   "text": "LA SUEUR REFROIDIT ·<br>**ELLE NE MESURE RIEN**",
+   "vo": "L'idée reçue : pas de sueur, pas de résultat. Faux. La transpiration sert surtout à refroidir ton corps, et elle dépend de la chaleur, de l'humidité et de chacun."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "PONT FESSIER",
+    "DEAD BUG",
+    "FENTE ARRIÈRE",
+    "POMPES INCLINÉES",
+    "POSITION CREUSE"
+   ],
+   "poses": [
+    "pont",
+    "deadbug",
+    "fente",
+    "pompe",
+    "creuse"
+   ],
+   "effort": "45 s",
+   "rest": "15 s",
+   "total": "5:00",
+   "vo": "Le circuit, en mode lent : quarante-cinq secondes d'effort, quinze de repos. Pont fessier. Dead bug. Fente arrière. Pompes inclinées. Position creuse."
+  },
+  {
+   "type": "pourquoi",
+   "title": "LENT, CE N'EST PAS<br>**INUTILE**",
+   "zones": [
+    "FESSIERS",
+    "SANGLE",
+    "BRAS"
+   ],
+   "badges": [
+    "3 S POUR DESCENDRE",
+    "DOS NEUTRE",
+    "TROP DUR ? MOINS BAS"
+   ],
+   "vo": "Descends en trois secondes, remonte en contrôle : tes muscles restent sous tension plus longtemps. Trop dur ? Réduis l'amplitude, ou plie les genoux pour la position creuse."
+  },
+  {
+   "type": "cta",
+   "title": "TEMPO LENT<br>**DEMAIN MATIN ?**",
+   "ctas": [
+    "🔖 ENREGISTRE LA SÉANCE",
+    "💬 LAQUELLE EST LA PLUS DURE ?"
+   ],
+   "ticker": "LENT · CONTRÔLÉ · ZÉRO SALLE",
+   "vo": "Enregistre la séance, et dis-moi en commentaire quel exercice t'a semblé le plus dur."
+  }
+ ]
+}
