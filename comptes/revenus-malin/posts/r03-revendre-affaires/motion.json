@@ -1,0 +1,72 @@
+{
+ "id": "RM-R03",
+ "layout": "notion",
+ "music_seed": 17,
+ "handle": "revenus_malin",
+ "crumb": "Revenus Malins / Revendre ses affaires",
+ "scenes": [
+  {
+   "type": "hook",
+   "icon": "📦",
+   "title": "Revendre tes affaires sans te faire avoir",
+   "mark": "sans te faire avoir",
+   "strike": "Tout vendre en un jour",
+   "callout": "Une méthode simple, et les pièges à connaître.",
+   "vo": "Tu as des affaires qui dorment dans un placard ? Voici comment les revendre proprement, sans te faire avoir."
+  },
+  {
+   "type": "steps12",
+   "steps": [
+    "Étape 1 — Trie ce qui a encore de la valeur",
+    "Étape 2 — Photos nettes, description honnête"
+   ],
+   "tags": [
+    "Vêtements",
+    "Livres",
+    "Jeux vidéo",
+    "Petit électro"
+   ],
+   "quote": "« Bon état, petite rayure au dos (photo 4) »",
+   "quote_mark": "petite rayure",
+   "vo": "Étape un : trie ce qui a encore de la valeur. Étape deux : des photos nettes, à la lumière du jour, et une description honnête, défauts compris."
+  },
+  {
+   "type": "step3",
+   "steps": [
+    "Étape 3 — Fixe un prix réaliste"
+   ],
+   "items": [
+    "🔍 Compare avec des annonces similaires",
+    "🏷️ Garde une petite marge pour négocier",
+    "📉 Pas de contact ? Baisse un peu le prix"
+   ],
+   "vo": "Étape trois : fixe ton prix en comparant avec des annonces similaires, et garde une petite marge pour la négociation."
+  },
+  {
+   "type": "step45",
+   "steps": [
+    "Étape 4 — Paie et expédie via la plateforme 🔒",
+    "Étape 5 — Méfie-toi des liens reçus par message 🚩"
+   ],
+   "progress": {
+    "label": "Objets vendus",
+    "n": 6,
+    "step": 1,
+    "suffix": "",
+    "note": "Une annonce soignée à la fois"
+   },
+   "callout": "Vendre tes affaires perso ≠ acheter pour revendre. Infos : impots.gouv.fr",
+   "vo": "Étape quatre : reste sur le paiement de la plateforme. Étape cinq : méfie-toi des liens de paiement envoyés par message, c'est une arnaque fréquente. Et acheter pour revendre, c'est une activité à déclarer."
+  },
+  {
+   "type": "cta",
+   "title": "Vide ton placard, malin.",
+   "mark": "malin.",
+   "ctas": [
+    "Enregistre la méthode",
+    "Partage-la à qui déménage"
+   ],
+   "vo": "Enregistre la méthode, et partage-la à quelqu'un qui déménage bientôt."
+  }
+ ]
+}
