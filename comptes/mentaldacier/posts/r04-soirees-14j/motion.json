@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R04",
+ "layout": "manifeste3d",
+ "music_seed": 86,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 14
+ },
+ "timeline": [
+  "J1-3",
+  "J4-7",
+  "J8-11",
+  "J12-14"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "14",
+   "unit": "JOURS",
+   "line": "**pour reprendre tes soirées**<br>et tes matins.",
+   "sub": "// ta journée commence la veille",
+   "vo": "Quatorze jours pour reprendre tes soirées : ta journée de demain se joue ce soir."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J14",
+   "notifs": [
+    "🔔 23:47 · Épisode suivant ?",
+    "📱 Encore 5 minutes de scroll…",
+    "⏰ Réveil : 3e alarme"
+   ],
+   "kicker": "précision",
+   "card_word": "précision",
+   "no": "« plus de volonté le matin »",
+   "yes": "une soirée préparée",
+   "vo": "Avant : un épisode de plus, le scroll au lit, un réveil qui sonne trois fois. Précision : le problème n'est pas ton matin. C'est ta soirée."
+  },
+  {
+   "type": "weeks",
+   "word": "phase",
+   "weeks": [
+    [
+     "PHASE 1",
+     "🕙 Heure de coucher fixe",
+     "📵 Téléphone loin du lit"
+    ],
+    [
+     "PHASE 2",
+     "📝 3 priorités pour demain",
+     ""
+    ]
+   ],
+   "vo": "Phase un : une heure de coucher fixe, et le téléphone qui charge loin du lit. Phase deux : chaque soir, tu écris tes trois priorités du lendemain."
+  },
+  {
+   "type": "weeks",
+   "word": "phase",
+   "weeks": [
+    [
+     "PHASE 3",
+     "👕 Affaires du matin prêtes",
+     ""
+    ],
+    [
+     "PHASE 4",
+     "📖 30 min sans écran au coucher",
+     ""
+    ]
+   ],
+   "vo": "Phase trois : tu prépares tes affaires du matin dès le soir. Phase quatre : trente minutes sans écran avant de dormir, avec un livre ou de la musique."
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "14",
+   "obj": "Objectif : des matins **sans lutte.**",
+   "ctas": [
+    "🔖 ENREGISTRE LE PLAN",
+    "💬 COMMENTE « CE SOIR »"
+   ],
+   "vo": "Objectif au jour quatorze : des matins qui commencent sans lutte. Enregistre le plan, et commente ce soir si tu commences."
+  }
+ ]
+}
