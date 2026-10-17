@@ -5,4 +5,4 @@
 | 2026-10-19 12:30 | LIA-C01 | Carrousel | 5 tâches à déléguer à l'IA dès lundi |
 | 2026-10-21 12:30 | LIA-C02 | Carrousel | Les 3 erreurs qui rendent tes prompts nuls |
 | (annulé) | LIA-R01 | Reel | Le prompt qui écrit tes relances de factures impayées (ancien format, remplacé) |
-| 2026-10-20 12:30 | LIA-R02 | Reel | L'iceberg de l'automatisation (motion design) |
+| 2026-10-17 08:50 | LIA-R02 | Reel | L'iceberg de l'automatisation (motion design) |
