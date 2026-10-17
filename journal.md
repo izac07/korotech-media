@@ -39,6 +39,6 @@
 ## Idées en réserve (nouvelle ligne mixée)
 Études : POV contrôle demain et rien révisé ; arrêter de surligner tout son cours ; réviser dans le bus ; la veille du bac ; erreurs de dissertation ; oral du bac de langue ; corriger son accent ; maths sans tricher ; schéma bilan.
 Vie étudiante : préparer son premier entretien de job étudiant ; trouver une alternance ; mail à un prof ou une école ; budget étudiant du mois ; écrire à un propriétaire ; choisir sa formation ; entretien d'école.
-IA au quotidien : 3 choses que ChatGPT sait faire et que tu ne sais pas ; photo du frigo → recette ; préparer un voyage pas cher ; résumer une vidéo YouTube ; 
+IA au quotidien : 3 choses que ChatGPT sait faire et que tu ne sais pas ; photo du frigo → recette ; préparer un voyage pas cher ; résumer une vidéo YouTube.
 POV / humour : ma mère découvre que je révise avec ChatGPT ; le prof qui rend les copies ; moi à 2h du mat vs moi le jour du contrôle.
 Parents : aider en maths ; outils gratuits ; parler d'IA à son ado.
