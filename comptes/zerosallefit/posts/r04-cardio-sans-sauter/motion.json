@@ -1,0 +1,70 @@
+{
+ "id": "ZSF-R04",
+ "layout": "sportmotion",
+ "music_seed": 83,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "pompe",
+   "count": 10,
+   "title": "STOP AUX<br>**10 BURPEES**",
+   "sub": "🤫 CARDIO SANS SAUTER",
+   "vo": "Pas besoin de sauter pour faire du cardio. Voici cinq minutes qui font monter le cœur, sans déranger tes voisins."
+  },
+  {
+   "type": "erreur",
+   "pose": "pompe",
+   "myth": "« SANS SAUTS, PAS DE CARDIO »",
+   "stamp": "FAUX",
+   "text": "C'EST LE RYTHME ·<br>**PAS LE BRUIT**",
+   "vo": "L'idée reçue : sans burpees ni jumping jacks, pas de cardio. Faux. Ce qui fait monter ton cœur, c'est un effort continu, pas le bruit sur le parquet."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "SQUAT DYNAMIQUE",
+    "FENTES ARRIÈRE",
+    "MOUNTAIN CLIMBERS",
+    "SQUAT + GENOU",
+    "PLANCHE TAPE-ÉPAULES"
+   ],
+   "poses": [
+    "squat",
+    "fente",
+    "climber",
+    "squat",
+    "planche"
+   ],
+   "effort": "45 s",
+   "rest": "15 s",
+   "total": "5:00",
+   "vo": "Le circuit : quarante-cinq secondes d'effort, quinze de repos. Squat dynamique. Fentes arrière. Mountain climbers. Squat avec montée de genou. Planche avec tape-épaules."
+  },
+  {
+   "type": "pourquoi",
+   "title": "CŒUR QUI MONTE<br>**ZÉRO BRUIT**",
+   "zones": [
+    "JAMBES",
+    "SOUFFLE",
+    "GAINAGE"
+   ],
+   "badges": [
+    "PIEDS POSÉS EN DOUCEUR",
+    "RESPIRE EN CONTINU",
+    "TROP DUR ? RALENTIS"
+   ],
+   "vo": "Tu travailles les jambes, le gainage et le souffle. Pose les pieds en douceur et garde un rythme régulier. Si c'est trop dur, ralentis ou prends des pauses plus longues."
+  },
+  {
+   "type": "cta",
+   "title": "CE SOIR,<br>**EN SILENCE ?**",
+   "ctas": [
+    "🔖 ENREGISTRE LE CIRCUIT",
+    "↗️ ENVOIE-LE À TON COLOC"
+   ],
+   "ticker": "ZÉRO SAUT · ZÉRO VOISIN FÂCHÉ",
+   "vo": "Enregistre le circuit, et envoie-le à quelqu'un qui vit en appartement."
+  }
+ ]
+}
