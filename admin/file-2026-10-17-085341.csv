@@ -1,0 +1,41 @@
+2;C02;2026-10-14 11:00;11:00;Carrousel;5 prompts pour réviser 2x plus vite;Publié;18008359854005504;
+3;R01;2026-10-14 18:30;2026-10-14 18:30;Reel;Ton cours en fiche de révision en 30 secondes;Publié;18193778074399803;
+4;R02;2026-10-14 16:45;16:45;Reel;Fais-toi interroger par l'IA avant ton contrôle;Publié;17962367151226608;
+5;C03;2026-10-14 18:00;18:00;Carrousel;20 mots d'anglais par jour sans effort;Publié;18114765650039196;
+6;R03;2026-10-14 19:15;19:15;Reel;Ta rédaction corrigée comme par un prof;Publié;18375391738242711;
+7;C04;2026-10-14 20:30;20:30;Carrousel;Parents : aider son enfant sans comprendre ses cours;Publié;17940253848364270;
+8;R04;2026-10-14 21:45;21:45;Reel;Ton cours est trop long ? Résume-le comme ça;Publié;18064917383789769;
+9;R05;2026-10-15 07:15;07:15;Reel;Méthode Feynman : explique ton cours à l'IA;Publié;18112748771466525;
+10;C05;2026-10-15 08:30;08:30;Carrousel;Parents : 5 questions à poser après les cours;Publié;17997848438826849;
+11;R06;2026-10-15 10:30;10:30;Reel;Parents : 3 règles pour l'IA à la maison;Publié;18148555273564597;
+12;R07;2026-10-15 12:15;12:15;Reel;5 faux amis anglais qui te piègent;Publié;18111568157605066;
+13;C06;2026-10-15 13:30;13:30;Carrousel;Tes flashcards Anki en 1 prompt;Publié;17910872880552618;
+14;R08;2026-10-15 16:45;16:45;Reel;L'IA qui t'aide sans te donner la réponse;Publié;17998977273006167;
+15;C07;2026-10-15 18:00;18:00;Carrousel;Parcoursup : 4 façons d'utiliser l'IA pour t'orienter;Publié;17994881445019419;
+16;R09;2026-10-15 19:15;19:15;Reel;L'IA rend bête ? Ça dépend de comment tu l'utilises;Publié;18031059440884282;
+17;C08;2026-10-15 20:30;20:30;Carrousel;Parents : a-t-il copié sur ChatGPT ? 4 réflexes;Publié;18157901608504529;
+18;R10;2026-10-15 21:45;21:45;Reel;Ta semaine organisée en 1 prompt;Publié;17919956655452403;
+19;R11;2026-10-19 19:15;19:15;Reel;Prédire les questions du prochain contrôle;À valider;;
+20;C09;2026-10-19 12:15;12:15;Carrousel;Parents : aider en maths sans tout réexpliquer;À valider;;
+21;R12;2026-10-18 12:15;12:15;Reel;Mythe : relire son cours ne suffit pas;À valider;;
+22;R13;2026-10-17 12:15;12:15;Reel;Apprendre l'espagnol avec sa série;À valider;;
+23;C10;2026-10-17 19:15;19:15;Carrousel;La méthode Pomodoro avec l'IA;À valider;;
+24;R14;2026-10-20 12:15;12:15;Reel;Oral d'anglais en mode vocal;À valider;;
+25;C11;2026-10-18 19:15;19:15;Carrousel;Lettre de motivation qui te ressemble;À valider;;
+26;R15;2026-10-21 19:15;19:15;Reel;Parents : préparer la réunion parents-profs;À valider;;
+27;C12;2026-10-20 19:15;19:15;Carrousel;Parents : l'IA et la vie privée de votre enfant;À valider;;
+28;R16;2026-10-21 12:15;12:15;Reel;Son cours en podcast;À valider;;
+29;LIA-C01;2026-10-19 12:30;12:30;Carrousel;5 tâches à déléguer à l'IA dès lundi;À valider;;17841420788582578
+30;ZSF-C01;2026-10-19 18:00;18:00;Carrousel;Séance 15 min sans matériel — débutant;À valider;;17841467969534543
+31;CL-C01;2026-10-19 21:00;21:00;Carrousel;5 green flags qu'on ne remarque pas assez;À valider;;17841415150585724
+32;LIA-R01;2026-10-20 12:30;12:30;Reel;Le prompt qui écrit tes relances de factures impayées;Refusé;;17841420788582578
+33;ZSF-R01;2026-10-20 18:00;18:00;Reel;Le squat : 3 erreurs à corriger;Refusé;;17841467969534543
+34;CL-R01;2026-10-20 21:00;21:00;Reel;Dire non sans se justifier;Refusé;;17841415150585724
+35;LIA-C02;2026-10-21 12:30;12:30;Carrousel;Les 3 erreurs qui rendent tes prompts nuls;À valider;;17841420788582578
+36;ZSF-C02;2026-10-21 18:00;18:00;Carrousel;Pas encore de pompe ? Progresse en 4 étapes;À valider;;17841467969534543
+37;CL-C02;2026-10-21 21:00;21:00;Carrousel;Exprimer un besoin sans faire de reproche;À valider;;17841415150585724
+38;X04;2026-10-22 12:15;12:15;Reel;3 IA gratuites pour réviser (motion design);À valider;;
+39;LIA-R02;2026-10-17 08:50;08:50;Reel;L'iceberg de l'automatisation (motion design);Publié;18102913571327010;17841420788582578
+40;ZSF-R02;2026-10-17 18:00;18:00;Reel;Stop aux 100 crunchs : circuit abdos 5 min;À valider;;17841467969534543
+41;CL-R02;2026-10-20 21:00;21:00;Reel;Le message à entendre si tu doutes de ta valeur;À valider;;17841415150585724
+42;ZSF-R03;2026-10-17 08:30;08:30;Reel;Circuit jambes 5 min : arrête les squats bâclés;Publié;17949661215340778;17841467969534543
