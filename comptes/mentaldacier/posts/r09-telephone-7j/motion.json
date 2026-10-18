@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R09",
+ "layout": "manifeste3d",
+ "music_seed": 307,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 7
+ },
+ "timeline": [
+  "J1",
+  "J2-3",
+  "J4-6",
+  "J7"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "7",
+   "unit": "JOURS",
+   "line": "**pour reprendre la main**<br>sur ton téléphone.",
+   "sub": "3 réglages, zéro appli en plus",
+   "vo": "Sept jours pour reprendre la main sur ton téléphone, avec trois réglages et aucune appli en plus."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J7",
+   "notifs": [
+    "📱 1re chose le matin : le scroll",
+    "🔔 Une notif toutes les 5 min",
+    "🌙 Écran jusqu'à minuit"
+   ],
+   "kicker": "réglage",
+   "card_word": "réglage",
+   "no": "tout désinstaller",
+   "yes": "changer 3 réglages",
+   "vo": "Avant : c'est ton téléphone qui décide pour toi. L'idée : pas besoin de tout désinstaller, il suffit d'un réglage à la fois."
+  },
+  {
+   "type": "weeks",
+   "word": "réglage",
+   "weeks": [
+    [
+     "RÉGLAGE 1",
+     "🔕 Notifs : l'essentiel seulement",
+     ""
+    ],
+    [
+     "RÉGLAGE 2",
+     "📲 Scroll hors de l'accueil",
+     "🔎 Pour l'ouvrir, il faut chercher"
+    ]
+   ],
+   "vo": "Réglage un : coupe les notifications, sauf les messages de tes proches. Réglage deux : sors les applis de scroll de ton écran d'accueil, pour devoir les chercher."
+  },
+  {
+   "type": "weeks",
+   "word": "réglage",
+   "weeks": [
+    [
+     "RÉGLAGE 3",
+     "⏱️ Limite sur l'appli de scroll",
+     ""
+    ],
+    [
+     "JOUR 7",
+     "📊 Compare ton temps d'écran",
+     "✅ Garde ce qui marche"
+    ]
+   ],
+   "vo": "Réglage trois : mets une limite de temps sur ton appli de scroll. Au septième jour, compare ton temps d'écran et garde le réglage qui t'a le plus aidé."
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "7",
+   "obj": "Objectif : un téléphone **qui te sert.**",
+   "ctas": [
+    "🔖 ENREGISTRE LE PLAN",
+    "💬 COMMENTE « RÉGLAGE »"
+   ],
+   "vo": "Objectif au jour sept : un téléphone qui te sert, pas l'inverse. Enregistre le plan, et commente réglage si tu commences ce soir."
+  }
+ ]
+}

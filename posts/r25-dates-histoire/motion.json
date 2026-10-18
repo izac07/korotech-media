@@ -1,0 +1,61 @@
+{
+ "id": "R25",
+ "layout": "cheatsheet",
+ "music_seed": 309,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**ASTUCES**",
+   "sub": "pour retenir tes dates 📅",
+   "vo": "Les dates d'histoire ne rentrent pas ? Voici trois astuces avec l'IA pour enfin les retenir avant ton contrôle."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Frise express",
+   "file": "Chapitre_3.pdf",
+   "pills": [
+    "🗓️ Frise",
+    "🔗 Causes",
+    "📝 Quiz"
+   ],
+   "text": "Ton cours → **une frise**",
+   "vo": "Un : la frise express. Tu donnes ton chapitre à l'IA et tu lui demandes une frise, avec les dates, les événements et les liens de cause."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Histoire-mémo",
+   "nodes": [
+    "1789",
+    "1792",
+    "1804"
+   ],
+   "text": "Des dates → **une histoire**",
+   "vo": "Deux : l'histoire-mémo. Demande-lui de relier les dates en un petit récit. Une histoire se retient plus facilement qu'une liste."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Vérif' date",
+   "q": "Proclamation de la Première République ?",
+   "answers": [
+    "Septembre 1792",
+    "Après la chute de la monarchie",
+    "Par la Convention nationale"
+   ],
+   "text": "Vérifie **chaque date**",
+   "vo": "Trois : vérifie chaque date avec un outil qui cite ses sources, comme Perplexity. L'IA peut se tromper, surtout sur les dates."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour ton contrôle",
+    "➕ 1 astuce IA par jour"
+   ],
+   "vo": "Enregistre la vidéo avant ton prochain contrôle d'histoire, et abonne-toi pour une astuce par jour."
+  }
+ ]
+}

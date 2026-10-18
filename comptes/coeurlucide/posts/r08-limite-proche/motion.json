@@ -1,0 +1,51 @@
+{
+ "id": "CL-R08",
+ "layout": "nightchat",
+ "music_seed": 308,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Tu peux garder les enfants ce soir ? 🙏",
+   "vo": "Un proche te demande encore un service, et tu dis oui avant même d'y réfléchir. Voici comment poser une limite, sans casser le lien."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Tu peux garder les enfants ce soir ?",
+    "Tu fais toujours ça si bien 🙏"
+   ],
+   "sent": "Euh… oui, bien sûr",
+   "ghost": "Vu 19:42",
+   "vo": "Le piège : dire oui par peur de décevoir, puis le regretter toute la soirée, en silence."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Ce soir, je ne peux pas.",
+    "J'ai besoin de ma soirée pour souffler.",
+    "Samedi matin, je peux t'aider si tu veux 🤍"
+   ],
+   "vo": "Essaie plutôt ça : un non clair, une raison courte si tu en as envie, et une autre option seulement si elle te convient vraiment."
+  },
+  {
+   "type": "check",
+   "title": "Pour poser ta limite :",
+   "items": [
+    "Un non clair, sans excuse",
+    "Une raison courte (ou aucune)",
+    "Une autre option si tu veux"
+   ],
+   "vo": "Retiens trois choses : pas d'excuses à rallonge, tu n'as pas à te justifier longtemps, et une limite claire est plus facile à respecter."
+  },
+  {
+   "type": "cta",
+   "last": "Dire non à une demande, ce n'est pas dire non à la personne 🤍",
+   "ctas": [
+    "🔖 Garde-le pour la prochaine fois",
+    "↗️ Envoie-le à quelqu'un qui dit toujours oui"
+   ],
+   "vo": "Dire non à une demande, ce n'est pas dire non à la personne. Garde cette vidéo pour la prochaine fois."
+  }
+ ]
+}
