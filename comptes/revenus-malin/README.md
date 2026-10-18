@@ -1,6 +1,7 @@
 # Revenus Malins — @revenus_malins
 
 - ID Instagram : (pas encore relié — publication manuelle)  ·  préfixe des posts : RM
+- Format des reels (décision de Goat du 18/10/2026) : layout `malin` sans visage — liste à trous, tier list, bocaux, chiffres en cases (voir tools/MOTION.md). Sujets : side hustles ET finances perso France (budget, Livret A, LEP, PEA, assurance-vie…), toujours en information générale.
 - Créneaux : 19:30 et 12:00 — 2 REELS par jour (décision de Goat du 18/10/2026 : plus aucun carrousel)
 - Voix off : nPczCjzI2devNBz1zQrb (Brian)
 - Cible : 20-35 ans qui veulent un complément de revenus réaliste en France. Tutoiement.

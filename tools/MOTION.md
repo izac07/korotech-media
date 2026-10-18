@@ -22,7 +22,7 @@ python3 tools/motion.py <dossier>/motion.json <dossier>/reel.mp4
 | zerosallefit | `sportmotion` | Brian |
 | coeurlucide__ | `nightchat` | Alice |
 | mentaldacier2030 | `manifeste3d` | Brian |
-| revenus_malin | `notion` | Brian |
+| revenus_malins | `malin` (par défaut, validé le 18/10) ou `notion` (méthode en 5 étapes) | Brian |
 
 Exemples validés (à copier comme base) :
 `posts/x04-3-ia-revisions/motion.json`, `comptes/lia-entrepreneur/posts/r02-iceberg/motion.json`, `comptes/zerosallefit/posts/r02-abdos-circuit/motion.json`, `comptes/coeurlucide/posts/r02-message-valeur/motion.json`, `comptes/mentaldacier/posts/r03-reset-30j/motion.json`, `comptes/revenus-malin/posts/r02-premiers-100/motion.json`.
@@ -88,3 +88,14 @@ Champ du haut : `crumb` (fil d'Ariane, ex. « Revenus Malins / Méthode « premi
 4. `step45` : `steps` (2), `progress` = `{"label":"Objectif 100 €","n":7,"step":15,"suffix":" €","note":"≈ 7 ventes × 15 €"}` (barre qui se remplit n fois de `step`), `callout` (encadré 🔗, ex. sources officielles / déclaration)
 5. `cta` : `title`, `mark`, `ctas` (2 lignes)
 Objectifs modestes et réalistes, jamais de revenu garanti ; rappeler de déclarer ses revenus quand c'est pertinent.
+
+
+## malin (Revenus Malins, format par défaut depuis le 18/10/2026) — structures qui se remplissent
+Exemple validé : `comptes/revenus-malin/posts/r04-budget-50-30-20/motion.json`. Pas de visage. Nombre de scènes LIBRE (en général 5) ; on enchaîne les types suivants selon le sujet, une seule idée par reel :
+- `hook` : `big` (gros titre, `<br>` et `**mot en jaune**`), `sub` (sous-titre)
+- `list` (liste à trous qui se remplit) : `title` (`**mot surligné**`), `items` = 3 à 5 `[texte, précision]`, `slots` (nombre de lignes affichées, ≥ items : les vides créent la curiosité), `cue` (optionnel : mot de la voix off qui fait apparaître chaque ligne, ex. ["un","deux","trois"]), `note` (optionnel)
+- `tier` (tier list S→F) : `title`, `rows` = {"S":[..],"A":[..],"B":[..],...} (étiquettes courtes), `note`
+- `jars` (bocaux qui se remplissent, 2 à 4) : `title`, `jars` = [{"label","pct","amount"}], `cue`, `note`
+- `math` (chiffres en cases qui défilent) : `title`, `cells` = 2 ou 3 `[libellé, "1 500 €", opérateur]` (opérateur "−", "+", "=" devant la 2e/3e case ; la dernière case est surlignée), `note`
+- `cta` : `big`, `ctas` (2 lignes), `note`
+Règles : information générale uniquement, jamais de promesse de rendement ni de conseil d'achat d'un placement précis ; pas de taux ou plafonds qui changent sans vérifier ; mettre « Information générale, pas un conseil personnalisé » dans la note du `cta` dès qu'on parle d'épargne/placements. Les chiffres d'exemple sont présentés comme des exemples.
