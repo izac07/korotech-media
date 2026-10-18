@@ -1,0 +1,62 @@
+{
+ "id": "R24",
+ "layout": "cheatsheet",
+ "music_seed": 214,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "10",
+   "title": "**MIN / JOUR**",
+   "sub": "pour apprendre un truc 🎸",
+   "vo": "Tu veux apprendre la guitare, la cuisine ou le code, mais t'as jamais le temps ? Commence par dix minutes par jour. Voici comment."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Choisis petit",
+   "file": "Mon_objectif.txt",
+   "ext": "TXT",
+   "pills": [
+    "🎸 3 accords",
+    "🍳 1 recette",
+    "💻 1 mini-page"
+   ],
+   "text": "Un objectif **précis**",
+   "vo": "Un : choisis petit. Pas la guitare, mais trois accords. Un objectif précis, c'est plus facile à tenir."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Le plan",
+   "nodes": [
+    "Jour 1",
+    "Jour 4",
+    "Jour 7"
+   ],
+   "text": "7 jours, **1 exercice par jour**",
+   "vo": "Deux : demande à l'IA un plan de sept jours, avec un objectif concret et un exercice pour chaque jour. Lis deux minutes, et pratique le reste."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Le rappel",
+   "q": "3 questions sur ce que j'ai appris hier ?",
+   "answers": [
+    "Question 1 ✓",
+    "Question 2 ✗ → à revoir",
+    "Question 3 ✓"
+   ],
+   "text": "Teste-toi **chaque jour**",
+   "vo": "Trois : chaque jour, demande-lui trois questions sur ce que t'as appris la veille. Et pour la santé, l'argent ou la sécurité, vérifie avec une vraie source."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour commencer",
+    "💬 Dis-moi ce que tu veux apprendre"
+   ],
+   "vo": "Enregistre la vidéo, et dis-moi en commentaire ce que tu veux apprendre."
+  }
+ ]
+}
