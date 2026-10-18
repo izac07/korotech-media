@@ -1,0 +1,51 @@
+{
+ "id": "CL-R07",
+ "layout": "nightchat",
+ "music_seed": 305,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Aucun nouveau message",
+   "vo": "Plus de réponse. Ton message a été vu, et toujours rien. Voici comment réagir au silence radio, sans te perdre."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Trop bien ce soir 😊",
+    "On se refait ça vite !"
+   ],
+   "sent": "Tu es dispo samedi ?",
+   "ghost": "Vu 21:14",
+   "vo": "Tout allait bien, puis plus rien. Le réflexe : relancer, encore et encore, ou chercher ce que tu as pu mal faire."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Hey, pas de nouvelles, tout va bien ?",
+    "Si tu n'es plus partant·e, je préfère le savoir.",
+    "Pas de souci, je te laisse revenir vers moi 🙂"
+   ],
+   "vo": "Envoie un seul message, calme et clair. Demande des nouvelles, dis que tu préfères la franchise, et laisse la porte ouverte. Puis tu t'arrêtes là."
+  },
+  {
+   "type": "check",
+   "title": "Pendant le silence :",
+   "items": [
+    "Pas de relances en boucle",
+    "Pas de scénario inventé",
+    "Retour à ta journée"
+   ],
+   "vo": "Pendant l'attente, trois règles : pas de relances en boucle, pas de scénarios inventés, et tu reviens à ta journée."
+  },
+  {
+   "type": "cta",
+   "last": "Le silence est aussi une réponse 🤍",
+   "ctas": [
+    "🔖 Garde-le pour la prochaine fois",
+    "↗️ Envoie-le à quelqu'un qui attend un message"
+   ],
+   "vo": "Le silence est aussi une réponse. Tu mérites quelqu'un qui te répond. Garde cette vidéo pour la prochaine fois."
+  }
+ ]
+}

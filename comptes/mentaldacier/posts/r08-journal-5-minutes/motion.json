@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R08",
+ "layout": "manifeste3d",
+ "music_seed": 304,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 7
+ },
+ "timeline": [
+  "J1",
+  "J2-3",
+  "J4-6",
+  "J7"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "7",
+   "unit": "JOURS",
+   "line": "**de journal de 5 minutes**<br>pour vider ta tête.",
+   "sub": "un stylo, une page, le soir",
+   "vo": "Sept jours avec un journal de cinq minutes, pour vider ta tête avant de dormir."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J7",
+   "notifs": [
+    "🌀 23 h : la tête qui tourne",
+    "📱 Scroll « pour me calmer »",
+    "😵 Demain ? Aucune idée"
+   ],
+   "kicker": "principe",
+   "card_word": "principe",
+   "no": "tout garder dans sa tête",
+   "yes": "l'écrire, 5 minutes",
+   "vo": "Avant : le soir, ta tête tourne, et tu scrolles pour la calmer. Le principe est simple : ce qui est écrit n'a plus besoin d'être retenu."
+  },
+  {
+   "type": "weeks",
+   "word": "question",
+   "weeks": [
+    [
+     "QUESTION 1",
+     "✅ Qu'ai-je fait aujourd'hui ?",
+     ""
+    ],
+    [
+     "QUESTION 2",
+     "🧠 Qu'est-ce qui me trotte ?",
+     "✍️ Même en vrac"
+    ]
+   ],
+   "vo": "Chaque soir, trois questions. Question un : qu'ai-je fait aujourd'hui ? Question deux : qu'est-ce qui me trotte dans la tête ? Écris-le, même en vrac."
+  },
+  {
+   "type": "weeks",
+   "word": "question",
+   "weeks": [
+    [
+     "QUESTION 3",
+     "🎯 Ma priorité de demain",
+     ""
+    ],
+    [
+     "JOUR 7",
+     "📖 Relis ta semaine",
+     "👀 Ce qui revient souvent"
+    ]
+   ],
+   "vo": "Question trois : ta seule priorité de demain. Au septième jour, relis tes pages et pose-toi une dernière question : qu'est-ce qui revient souvent ?"
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "7",
+   "obj": "Objectif : une tête **plus légère** le soir.",
+   "ctas": [
+    "🔖 ENREGISTRE LE PLAN",
+    "💬 COMMENTE « JOUR 1 »"
+   ],
+   "vo": "Objectif au jour sept : finir la journée avec une tête plus légère. Enregistre le plan, et commente jour un si tu commences ce soir."
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+{
+ "id": "ZSF-R12",
+ "layout": "sportmotion",
+ "music_seed": 306,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "squat",
+   "count": 3,
+   "title": "**3 MIN** AVANT CHAQUE SÉANCE",
+   "sub": "⏱ L'ÉCHAUFFEMENT QUI CHANGE TOUT",
+   "vo": "Trois minutes avant ta séance, et elle passe beaucoup mieux. Voici l'échauffement à ne jamais zapper."
+  },
+  {
+   "type": "erreur",
+   "pose": "pompe",
+   "myth": "« JE ZAPPE L'ÉCHAUFFEMENT »",
+   "stamp": "ERREUR",
+   "text": "CORPS FROID ·<br>**SÉANCE PLUS DURE**",
+   "vo": "L'erreur : attaquer à froid. Ton corps est raide, tes mouvements moins propres, et la séance te paraît plus dure."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "SQUAT LÉGER",
+    "FENTE LENTE",
+    "PONT FESSIER",
+    "DEAD BUG",
+    "CLIMBER LENT"
+   ],
+   "poses": [
+    "squat",
+    "fente",
+    "pont",
+    "deadbug",
+    "climber"
+   ],
+   "effort": "30 s",
+   "rest": "6 s",
+   "total": "3:00",
+   "vo": "Cinq mouvements, trente secondes chacun, six secondes pour enchaîner. Squat léger. Fente lente. Pont fessier. Dead bug. Et mountain climber, tranquille."
+  },
+  {
+   "type": "pourquoi",
+   "title": "CORPS CHAUD<br>**MOUVEMENTS PROPRES**",
+   "zones": [
+    "HANCHES",
+    "GENOUX",
+    "DOS"
+   ],
+   "badges": [
+    "LENT ET CONTRÔLÉ",
+    "AMPLITUDE PROGRESSIVE",
+    "DOULEUR ? ON ARRÊTE"
+   ],
+   "vo": "Hanches, genoux et dos se mettent en route. Va lentement, et augmente l'amplitude petit à petit. Trop dur ? Fais-les moins bas, sans sauter. Une douleur, tu arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "TA SÉANCE<br>**COMMENCE ICI**",
+   "ctas": [
+    "🔖 ENREGISTRE-LE",
+    "💬 ÉCRIS « CHAUD » APRÈS"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Enregistre l'échauffement, fais-le avant ta prochaine séance, et écris chaud en commentaire quand c'est fait."
+  }
+ ]
+}

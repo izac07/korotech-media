@@ -1,0 +1,58 @@
+{
+ "id": "LIA-R09",
+ "layout": "claudeflow",
+ "music_seed": 302,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "title": "Chaque dimanche,<br>**Claude lit mes stats.**",
+   "sub": "le bilan, en 3 étapes",
+   "vo": "Chaque dimanche soir, Claude lit les statistiques de mon compte Instagram à ma place. Voici comment, en trois étapes."
+  },
+  {
+   "type": "chat",
+   "tag": "ÉTAPE 1 · JE DEMANDE",
+   "prompt": "Fais le bilan de la semaine de @lia.entrepreneur",
+   "reply": [
+    "Stats Instagram récupérées ✓",
+    "Chaque reel comparé à la médiane",
+    "Top et flop, par pilier et par hook",
+    "**Leçons notées pour la semaine.**"
+   ],
+   "vo": "Étape un : je lui demande le bilan. Il compare chaque reel à la médiane du compte, pour repérer ceux qui sortent vraiment du lot."
+  },
+  {
+   "type": "table",
+   "tag": "ÉTAPE 2 · LA SEMAINE",
+   "rows": [
+    ["SAM", "08:50", "L'iceberg de l'automatisation", "publie"],
+    ["SAM", "18:30", "Mon système avec Claude", "publie"],
+    ["LUN", "12:30", "Délègue ça : 3 tâches", "valider"],
+    ["LUN", "12:30", "Carrousel 5 tâches IA", "refuse"]
+   ],
+   "vo": "Étape deux : il range la semaine. Ce qui est publié, ce qui attend, ce que j'ai refusé. Rien n'est inventé, tout vient des vrais chiffres."
+  },
+  {
+   "type": "pipeline",
+   "tag": "ÉTAPE 3 · LE BILAN",
+   "nodes": [
+    ["MAKE", "récupère les stats"],
+    ["CLAUDE", "compare + écrit"],
+    ["LEÇONS", "pour la semaine"],
+    ["MOI", "je décide"]
+   ],
+   "notif": "Bilan de la semaine prêt",
+   "vo": "Étape trois : Make récupère les stats, Claude écrit le bilan et note deux ou trois leçons, que le système applique la semaine suivante."
+  },
+  {
+   "type": "cta",
+   "title": "Pas des likes.<br>**Des leçons.**",
+   "ctas": [
+    "🔖 enregistre la vidéo",
+    "➕ suis-moi pour le prochain bilan"
+   ],
+   "vo": "Plus besoin de fixer tes likes toute la journée. Enregistre la vidéo, et suis-moi pour voir le prochain bilan."
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "id": "RM-R07",
+ "layout": "malin",
+ "music_seed": 303,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Tes services,<br>**personne ne les voit** ?",
+   "sub": "5 endroits gratuits près de chez toi",
+   "vo": "Tu proposes un service, mais personne ne le voit ? Voici cinq endroits gratuits pour te faire connaître près de chez toi."
+  },
+  {
+   "type": "list",
+   "title": "Où **les proposer**",
+   "items": [
+    ["Leboncoin", "rubrique Services"],
+    ["Groupes Facebook", "de ta ville ou de ton quartier"],
+    ["Nextdoor", "le réseau des voisins"],
+    ["Panneaux d'affichage", "commerçants, en demandant avant"],
+    ["Bouche-à-oreille", "famille, amis, voisins"]
+   ],
+   "slots": 5,
+   "cue": ["un", "deux", "trois", "quatre", "cinq"],
+   "vo": "Un : Leboncoin, dans la rubrique services. Deux : les groupes Facebook de ta ville. Trois : Nextdoor, le réseau des voisins. Quatre : les panneaux des commerçants, en demandant avant. Cinq : le bouche-à-oreille."
+  },
+  {
+   "type": "list",
+   "title": "Ton annonce en **3 lignes**",
+   "items": [
+    ["Ce que tu fais", "ex. : tonte, cours de maths, montage vidéo"],
+    ["Pour qui, et où", "ton quartier, ta ville"],
+    ["Comment te joindre", "+ tes disponibilités"]
+   ],
+   "slots": 3,
+   "cue": ["un", "deux", "trois"],
+   "vo": "Ton annonce tient en trois lignes. Un : ce que tu fais. Deux : pour qui, et où. Trois : comment te joindre, avec tes disponibilités."
+  },
+  {
+   "type": "cta",
+   "big": "Visible,<br>**puis choisi.**",
+   "ctas": [
+    "🔖 Enregistre la liste",
+    "↗️ Partage à quelqu'un qui se lance"
+   ],
+   "note": "Revenus à déclarer (sites officiels)",
+   "vo": "Commence par deux endroits, pas cinq, et garde le même texte partout. Pense aussi à déclarer tes revenus. Enregistre la liste, et partage-la à quelqu'un qui se lance."
+  }
+ ]
+}
