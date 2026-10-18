@@ -1,0 +1,68 @@
+{
+ "id": "ZSF-R11",
+ "layout": "sportmotion",
+ "music_seed": 219,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "pompe",
+   "count": 4,
+   "title": "ZÉRO POMPE ? **NORMAL.**",
+   "sub": "⏱ 4 ÉTAPES POUR TA 1RE",
+   "vo": "Tu n'arrives pas encore à faire une seule pompe ? C'est normal. Voici quatre étapes pour réussir ta première."
+  },
+  {
+   "type": "erreur",
+   "pose": "pompe",
+   "myth": "« FORCE, ÇA VA PASSER »",
+   "stamp": "FAUX",
+   "text": "DOS CAMBRÉ ·<br>**MAUVAISE TECHNIQUE**",
+   "vo": "L'erreur : forcer sur des pompes au sol, le dos cambré. Mieux vaut une version plus facile, bien faite, et monter petit à petit."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "POMPES AU MUR",
+    "POMPES SUR TABLE",
+    "POMPES GENOUX",
+    "DESCENTE LENTE"
+   ],
+   "poses": [
+    "pompe",
+    "pompe",
+    "pompe",
+    "pompe"
+   ],
+   "effort": "30 s",
+   "rest": "30 s",
+   "total": "4:00",
+   "vo": "Les quatre étapes : pompes contre un mur, puis sur une table, puis sur les genoux, et enfin la descente lente, en trois à cinq secondes. Passe à la suivante quand c'est facile."
+  },
+  {
+   "type": "pourquoi",
+   "title": "PECS + TRICEPS<br>**+ GAINAGE**",
+   "zones": [
+    "PECS",
+    "TRICEPS",
+    "SANGLE"
+   ],
+   "badges": [
+    "CORPS ALIGNÉ",
+    "COUDES À 45°",
+    "DOULEUR = STOP"
+   ],
+   "vo": "La descente lente construit la force de ta première pompe. Corps aligné, coudes à quarante-cinq degrés, et si tu as mal, tu t'arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "TU EN ES<br>**OÙ ?**",
+   "ctas": [
+    "💬 TON ÉTAPE EN COMMENTAIRE",
+    "🔖 ENREGISTRE LA PROGRESSION"
+   ],
+   "ticker": "MUR · TABLE · GENOUX · DESCENTE LENTE",
+   "vo": "Enregistre la progression, et dis-moi en commentaire à quelle étape tu en es."
+  }
+ ]
+}
