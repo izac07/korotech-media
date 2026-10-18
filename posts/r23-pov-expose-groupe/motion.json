@@ -1,0 +1,62 @@
+{
+ "id": "R23",
+ "layout": "cheatsheet",
+ "music_seed": 213,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**ÉTAPES**",
+   "sub": "exposé où personne bosse 😤",
+   "vo": "POV : exposé de groupe, et personne ne bosse à part toi. Voici trois étapes pour que chacun fasse sa part.",
+   "say": "P.O.V. : exposé de groupe, et personne ne bosse à part toi. Voici trois étapes pour que chacun fasse sa part."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Découpe",
+   "file": "Exposé_groupe.pdf",
+   "pills": [
+    "✂️ Tâches égales",
+    "📅 Une deadline",
+    "🙋 Chacun choisit"
+   ],
+   "text": "Le travail → **en parts égales**",
+   "vo": "Un : demande à l'IA de découper l'exposé en tâches de taille égale, avec une deadline pour chacune. Chacun choisit les siennes, noir sur blanc, dans le groupe."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Mi-parcours",
+   "nodes": [
+    "Début",
+    "Point",
+    "Rendu"
+   ],
+   "text": "Un point **avant la panique**",
+   "vo": "Deux : fixez une date au milieu du projet pour voir qui a avancé, avant qu'il soit trop tard."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Les liens",
+   "q": "Nos parties s'enchaînent bien ?",
+   "answers": [
+    "Répétition parties 2 et 3",
+    "Transition manquante",
+    "Conclusion trop courte"
+   ],
+   "text": "Signale, **sans réécrire**",
+   "vo": "Trois : collez vos parties, et demandez à l'IA de signaler les répétitions et ce qui ne s'enchaîne pas, sans réécrire. L'IA organise, c'est vous qui écrivez."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour le prochain exposé",
+    "📤 Envoie ça à ton groupe"
+   ],
+   "vo": "Envoie cette vidéo à ton groupe, et enregistre-la pour le prochain exposé."
+  }
+ ]
+}
