@@ -2,7 +2,7 @@
 
 | Date | ID | Format | Sujet |
 |---|---|---|---|
-| 2026-10-19 18:00 | ZSF-C01 | Carrousel | Séance 15 min sans matériel — débutant |
+| 2026-10-19 18:00 | ZSF-C01 | Carrousel (remplacé par ZSF-R09, refusé le 18/10/2026) | Séance 15 min sans matériel — débutant |
 | 2026-10-21 18:00 | ZSF-C02 | Carrousel | Pas encore de pompe ? Progresse en 4 étapes |
 | (annulé) | ZSF-R01 | Reel | Le squat : 3 erreurs à corriger (ancien format, remplacé) |
 | 2026-10-17 18:00 | ZSF-R02 | Reel | Stop aux 100 crunchs : circuit abdos 5 min (motion design) |
@@ -14,3 +14,4 @@
 | 2026-10-20 07:30 | ZSF-C04 | Carrousel | Planche : passer de 20 s à 1 minute |
 | 2026-10-21 07:30 | ZSF-R07 | Reel | Pas envie ? La séance minimum de 4 minutes (motion) |
 | 2026-10-17 22:40 | ZSF-R08 | Reel | Haut du corps en 5 min, sans matériel (motion) |
+| 2026-10-19 18:00 | ZSF-R09 | Reel | Stop à la séance d'1 h : ta séance débutant de 15 min — motion, remplace le carrousel ZSF-C01 (plus de carrousels) |

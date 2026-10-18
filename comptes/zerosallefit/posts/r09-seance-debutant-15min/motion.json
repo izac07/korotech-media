@@ -1,0 +1,68 @@
+{
+ "id": "ZSF-R09",
+ "layout": "sportmotion",
+ "music_seed": 205,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "climber",
+   "count": 60,
+   "title": "STOP À LA **SÉANCE D'1 H**",
+   "sub": "⏱ 15 MIN À LA PLACE",
+   "vo": "Pas besoin d'une séance d'une heure pour reprendre. Voici ta séance débutant de quinze minutes, corps entier, sans matériel."
+  },
+  {
+   "type": "erreur",
+   "pose": "squat",
+   "myth": "« IL FAUT TOUT DONNER »",
+   "stamp": "FAUX",
+   "text": "COMMENCE DOUX<br>**SOIS RÉGULIER**",
+   "vo": "L'erreur : vouloir tout donner dès la première séance. Pour reprendre, mieux vaut une séance douce que tu refais, qu'une séance trop dure que tu abandonnes."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "SQUATS",
+    "POMPES GENOUX",
+    "FENTES ALTERNÉES",
+    "PLANCHE"
+   ],
+   "poses": [
+    "squat",
+    "pompe",
+    "fente",
+    "planche"
+   ],
+   "effort": "40 s",
+   "rest": "20 s",
+   "total": "12:00",
+   "vo": "Après trois minutes d'échauffement : quarante secondes d'effort, vingt de repos, trois tours. Squats. Pompes sur les genoux. Fentes alternées. Planche."
+  },
+  {
+   "type": "pourquoi",
+   "title": "TOUT LE CORPS<br>**EN 15 MIN**",
+   "zones": [
+    "JAMBES",
+    "PECS",
+    "SANGLE"
+   ],
+   "badges": [
+    "DOS DROIT",
+    "GENOUX DANS L'AXE",
+    "TROP DUR ? SUR UNE CHAISE"
+   ],
+   "vo": "Jambes, pectoraux, sangle : tout le corps travaille. Trop dur ? Squats sur une chaise, pompes contre un mur. Et en cas de douleur, tu t'arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "ON LA FAIT<br>**CE SOIR ?**",
+   "ctas": [
+    "🔖 ENREGISTRE LA SÉANCE",
+    "📤 ENVOIE-LA À TON BINÔME"
+   ],
+   "ticker": "15 MIN · ZÉRO MATÉRIEL · CORPS ENTIER",
+   "vo": "Enregistre la séance, et envoie-la à la personne qui va la faire avec toi ce soir."
+  }
+ ]
+}
