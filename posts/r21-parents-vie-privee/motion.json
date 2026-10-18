@@ -1,0 +1,62 @@
+{
+ "id": "R21",
+ "layout": "cheatsheet",
+ "music_seed": 211,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**RÉFLEXES**",
+   "sub": "pour sa vie privée 🔒",
+   "vo": "Votre enfant utilise l'IA pour ses devoirs ? Voici trois réflexes à lui transmettre pour protéger sa vie privée."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Rien de perso",
+   "file": "Conversation.txt",
+   "ext": "TXT",
+   "pills": [
+    "🚫 Nom complet",
+    "🏠 Adresse, école",
+    "📞 Téléphone"
+   ],
+   "text": "Ses infos → **restent chez lui**",
+   "vo": "Un : aucune info personnelle. Nom complet, adresse, école, numéro de téléphone : rien de tout ça dans une conversation avec une IA. Ni photo de visage ou de document officiel."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Les réglages",
+   "nodes": [
+    "Paramètres",
+    "Données",
+    "Désactiver"
+   ],
+   "text": "À regarder **ensemble**",
+   "vo": "Deux : regardez les paramètres ensemble. Plusieurs IA permettent de refuser que les conversations servent à entraîner leurs modèles. Vérifiez aussi l'âge minimum du service."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Pas un confident",
+   "q": "À qui parler d'un vrai souci ?",
+   "answers": [
+    "Vous, ses parents",
+    "Un ami de confiance",
+    "Un adulte du collège"
+   ],
+   "text": "Une **vraie personne**",
+   "vo": "Trois : l'IA n'est pas un confident. Pour un souci personnel, une personne de confiance vaut toujours mieux qu'un chatbot."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistrez ces réflexes",
+    "📤 Partagez à un autre parent"
+   ],
+   "vo": "Protégez-le sans interdire. Enregistrez cette vidéo, et partagez-la à un autre parent."
+  }
+ ]
+}

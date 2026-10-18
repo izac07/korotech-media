@@ -27,7 +27,7 @@
 | 2026-10-20 12:15 (replanifié, prévu le 16/10) | R14 | Reel | Oral d'anglais en mode vocal | ORAL |
 | 2026-10-18 19:15 (replanifié, prévu le 16/10) | C11 | Carrousel (remplacé par R19, refusé le 18/10/2026) | Lettre de motivation qui te ressemble | LETTRE |
 | 2026-10-21 19:15 (replanifié, prévu le 16/10) | R15 | Reel | Parents : préparer la réunion parents-profs | RÉUNION |
-| 2026-10-20 19:15 (replanifié, prévu le 16/10) | C12 | Carrousel | Parents : l'IA et la vie privée de votre enfant | — |
+| 2026-10-20 19:15 (replanifié, prévu le 16/10) | C12 | Carrousel (remplacé par R21, refusé le 18/10/2026) | Parents : l'IA et la vie privée de votre enfant | — |
 | 2026-10-21 12:15 (replanifié, prévu le 16/10) | R16 | Reel | Son cours en podcast | PODCAST |
 | 2026-10-22 12:15 | X04 | Reel | 3 IA gratuites pour réviser (NotebookLM, Napkin, Perplexity) — motion design | — |
 | 2026-10-22 19:15 | C13 | Carrousel | CV sans expérience : ce que tu as déjà fait compte | — |
@@ -37,6 +37,7 @@
 | 2026-10-24 19:15 | C15 | Carrousel | Apprendre un truc en 10 min par jour avec un plan IA | — |
 | 2026-10-18 19:15 | R19 | Reel | Lettre de motivation : 3 étapes pour qu'elle te ressemble — motion, remplace le carrousel C11 (plus de carrousels) | — |
 | 2026-10-19 12:15 | R20 | Reel | Parents : 3 réflexes pour aider en maths — motion, remplace le carrousel C09 (plus de carrousels) | — |
+| 2026-10-20 19:15 | R21 | Reel | Parents : 3 réflexes pour sa vie privée avec l'IA — motion, remplace le carrousel C12 (plus de carrousels) | — |
 
 ## Idées en réserve (nouvelle ligne mixée)
 Études : POV contrôle demain et rien révisé ; arrêter de surligner tout son cours ; réviser dans le bus ; la veille du bac ; erreurs de dissertation ; oral du bac de langue ; corriger son accent ; maths sans tricher ; schéma bilan.
