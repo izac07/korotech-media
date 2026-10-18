@@ -1,0 +1,51 @@
+{
+ "id": "CL-R06",
+ "layout": "nightchat",
+ "music_seed": 210,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "« Tu ne fais jamais attention à moi »",
+   "vo": "Tu ne fais jamais attention à moi. Ce genre de phrase lance une dispute. Voici comment dire ton besoin, sans reproche."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Tu ne fais JAMAIS attention à moi.",
+    "N'importe quoi, je fais tout pour toi !"
+   ],
+   "sent": "Laisse tomber…",
+   "ghost": "Vu 22:31",
+   "vo": "Avec les toujours et les jamais, l'autre se sent attaqué. Il répond à l'attaque, pas à ton besoin. Et la dispute repart."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Je me sens un peu seul·e en ce moment.",
+    "J'aurais besoin qu'on se garde un moment à nous cette semaine.",
+    "Qu'est-ce qui serait possible pour toi ?"
+   ],
+   "vo": "À la place : dis ce que tu ressens, puis ce dont tu as besoin, et termine par une question ouverte. Qu'est-ce qui serait possible pour toi ?"
+  },
+  {
+   "type": "check",
+   "title": "La formule :",
+   "items": [
+    "Je me sens…",
+    "J'aurais besoin de…",
+    "Qu'est-ce qui serait possible ?"
+   ],
+   "vo": "Retiens la formule : je me sens, j'aurais besoin de, et qu'est-ce qui serait possible. Tu parles de toi, pas de ses fautes."
+  },
+  {
+   "type": "cta",
+   "last": "Merci de me l'avoir dit 🤍",
+   "ctas": [
+    "🔖 Garde la formule",
+    "↗️ Envoie-le à quelqu'un qui en a besoin"
+   ],
+   "vo": "Enregistre ce message pour ta prochaine discussion difficile, et envoie-le à quelqu'un qui a du mal à dire ce qu'il ressent."
+  }
+ ]
+}
