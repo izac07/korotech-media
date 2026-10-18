@@ -1375,7 +1375,165 @@ def claudeflow_page(spec, theme, starts, durs, caps, total):
     return page.replace("<style>", "<style>" + K._font_faces(["JetBrains Mono", "Archivo Black"]), 1)
 
 
-LAYOUTS = {"claudeflow": claudeflow_page, "manifeste3d": manifeste3d_page, "messages": messages_page, "terminal": terminal_page, "cheatsheet": cheatsheet_page, "iceberg": iceberg_page, "sportmotion": sportmotion_page, "nightchat": nightchat_page, "notion": notion_page}
+# ------------------------------------------------------------------ layout « malin » (Revenus Malins : structures qui se remplissent — liste, tier list, bocaux, calcul)
+MALIN_TPL = r"""<!doctype html><html><head><meta charset='utf-8'><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;overflow:hidden;background:#0f3326;color:#fbf8f1;font-family:Inter,sans-serif;position:relative}
+.bgd{position:absolute;inset:0;background:radial-gradient(1200px 900px at 50% 30%,#175a42 0,#0f3326 60%,#0a241b 100%)}
+.hd{position:absolute;left:50px;right:50px;top:120px;display:flex;justify-content:space-between;font:700 30px 'JetBrains Mono';color:#9fd9bf}
+.blk{position:absolute;inset:0;opacity:0}
+.ttl{position:absolute;left:60px;right:60px;top:220px;font:900 76px/1.08 Inter;color:#fbf8f1;text-align:center}
+.mk{background:linear-gradient(90deg,#e9c46a,#e9c46a) no-repeat 0 100%;background-size:0% 22%;padding:0 6px;color:#ffe58f}
+.hk{position:absolute;left:60px;right:60px;top:560px;font:900 118px/1.04 Inter;text-align:center}
+.hk em{font-style:normal;color:#ffe58f}
+.hs{position:absolute;left:80px;right:80px;top:1080px;font:700 48px/1.3 Inter;text-align:center;color:#cfe9dc}
+/* liste */
+.ls{position:absolute;left:70px;right:70px;top:470px}
+.li{display:flex;align-items:center;gap:26px;height:150px;border-bottom:3px solid rgba(251,248,241,.18)}
+.li .n{flex:none;width:96px;font:900 76px Inter;color:#ffe58f}
+.li .t{font:800 56px/1.15 Inter;opacity:0}
+.li .t small{display:block;font:600 36px Inter;color:#cfe9dc;margin-top:6px}
+.li .ok{margin-left:auto;flex:none;width:64px;height:64px;border-radius:50%;background:#0f7b6c;color:#fff;font:900 40px/64px Inter;text-align:center;opacity:0}
+/* tier */
+.tr{position:absolute;left:50px;right:50px;top:440px}
+.tw{display:flex;height:150px;margin-bottom:12px;background:#0b2a1f;border:3px solid rgba(251,248,241,.25)}
+.tw .lt{flex:none;width:130px;display:flex;align-items:center;justify-content:center;font:900 80px Inter;color:#111}
+.tw .cs{flex:1;display:flex;flex-wrap:wrap;align-content:center;gap:12px;padding:0 16px}
+.chip{background:#fbf8f1;color:#1f1e1b;border-radius:14px;padding:12px 22px;font:800 38px Inter;opacity:0}
+/* bocaux */
+.jr{position:absolute;left:30px;right:30px;top:470px;display:flex;justify-content:space-around;align-items:flex-start}
+.jw{display:flex;flex-direction:column;align-items:center}
+.jar{position:relative;width:290px;height:540px;border:8px solid #fbf8f1;border-top:none;border-radius:0 0 50px 50px;overflow:hidden;opacity:0}
+.jar:before{content:'';position:absolute;left:-8px;right:-8px;top:0;height:22px;background:#fbf8f1;opacity:.6}
+.jar .fl{position:absolute;left:0;right:0;bottom:0;height:0;background:linear-gradient(#ffe58f,#e9c46a)}
+.jar .pc{position:absolute;left:0;right:0;top:38%;text-align:center;font:900 82px Inter;color:#fbf8f1;text-shadow:0 3px 12px rgba(0,0,0,.6)}
+.jl{margin-top:24px;text-align:center;font:800 46px/1.2 Inter;opacity:0}
+.jl small{display:block;font:700 44px Inter;color:#ffe58f;margin-top:6px}
+/* calcul */
+.mt{position:absolute;left:60px;right:60px;top:440px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.cell{display:flex;flex-direction:column;align-items:center;opacity:0}
+.cell .lb{background:#fbf8f1;color:#1f1e1b;font:800 40px Inter;padding:8px 26px;border-radius:12px}
+.cell .vl{margin-top:10px;background:#fbf8f1;color:#1f1e1b;font:900 92px Inter;padding:10px 46px;border-radius:22px;min-width:520px;text-align:center}
+.cell.res .vl{background:#ffe58f}
+.op{font:900 70px/1 Inter;color:#ffe58f;opacity:0}
+.cta{position:absolute;left:80px;right:80px;font:800 52px/1.25 Inter;opacity:0;text-align:center}
+.note{position:absolute;left:60px;right:60px;top:1400px;text-align:center;font:600 34px Inter;color:#9fd9bf;opacity:0}
+.capw{position:absolute;left:0;right:0;top:1520px;text-align:center;z-index:9}
+.cap{display:none;background:#fbf8f1;color:#1f1e1b;border-radius:16px;padding:12px 28px;font:800 46px Inter}
+.cap .on{background:#ffe58f}
+.bar{position:absolute;left:0;top:0;height:10px;background:#ffe58f;z-index:9}
+</style></head><body><div class='bgd'></div>
+<div class='hd'><span>@__HANDLE__</span><span id='stp'></span></div>
+__BLOCKS__
+<div class='capw'>__CAPS__</div><div class='bar' id='bar'></div>
+<script>
+const EV=__EV__; const D=__D__; const SC=__SC__;
+const c=x=>Math.max(0,Math.min(1,x)), eo=x=>1-Math.pow(1-c(x),3), back=x=>{x=c(x);const s=1.7;return 1+(s+1)*Math.pow(x-1,3)+s*Math.pow(x-1,2);};
+const $=id=>document.getElementById(id);
+function inn(e,t0,u,dy=40){if(!e)return;const k=eo((u-t0)/.35);e.style.opacity=u>=t0?k:0;e.style.transform=`translateY(${(1-k)*dy}px)`;}
+function pop(e,t0,u,s0=.4){if(!e)return;const k=back((u-t0)/.35);e.style.opacity=u>=t0?c((u-t0)/.1):0;e.style.transform=`scale(${s0+(1-s0)*k})`;}
+function fmt(n){return Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g,'\u00a0');})+(?!\d))/g,' ');}
+window.render=function(t){
+ $('bar').style.width=(c(t/D)*1080)+'px';
+ let k=0;for(let i=0;i<SC.length;i++)if(t>=SC[i].a)k=i;const s=SC[k],u=t-s.a,d=s.b-s.a;
+ for(let i=0;i<SC.length;i++){const e=$('k'+i);const on=i==k;const out=i==k-1&&u<.3;e.style.opacity=on?(k==0?1:eo(u/.3)):(out?1-eo(u/.3):0);}
+ const mk=$('mk'+k);if(mk)mk.style.backgroundSize=`${eo((u-.3)/.5)*100}% 22%`;
+ if(s.ty=='hook'){pop($('hk'),.05,u,1.4);inn($('hs'),1.4,u);}
+ if(s.ty=='list'){for(let j=0;j<s.n;j++){const tt=s.at[j];const e=$('lt'+k+'_'+j);const kk=eo((u-tt)/.35);e.style.opacity=u>=tt?kk:0;e.style.transform=`translateX(${(1-kk)*60}px)`;pop($('lo'+k+'_'+j),tt+.4,u);}}
+ if(s.ty=='tier'){for(let j=0;j<s.n;j++){const tt=s.at[j];const e=$('ch'+k+'_'+j);const kk=back((u-tt)/.4);e.style.opacity=u>=tt?c((u-tt)/.1):0;e.style.transform=`translateY(${(1-kk)*-260}px) rotate(${(1-kk)*-8}deg)`;}}
+ if(s.ty=='jars'){for(let j=0;j<s.n;j++){const tt=s.at[j];inn($('ja'+k+'_'+j),.2+.15*j,u,60);const f=eo((u-tt)/1.0);$('jf'+k+'_'+j).style.height=(f*s.p[j])+'%';$('jp'+k+'_'+j).textContent=Math.round(f*s.p[j])+'%';inn($('jl'+k+'_'+j),tt+.6,u,20);}}
+ if(s.ty=='math'){for(let j=0;j<s.n;j++){const tt=s.at[j];pop($('mc'+k+'_'+j),tt,u,.6);const v=$('mv'+k+'_'+j);const f=eo((u-tt)/.8);v.textContent=s.pre[j]+fmt(f*s.v[j])+s.suf[j];if(j>0)pop($('mo'+k+'_'+j),tt-.25,u,.3);}}
+ if(s.ty=='cta'){pop($('hk'+k),.05,u,1.3);for(let j=0;j<s.n;j++)inn($('ct'+k+'_'+j),1.0+.5*j,u,30);}
+ const nt=$('nt'+k);if(nt)inn(nt,Math.max(.8,d*.55),u,10);
+ for(const cp of document.querySelectorAll('.cap')){const a=+cp.dataset.a,b=+cp.dataset.b;cp.style.display=(t>=a&&t<b)?'inline-block':'none';
+   for(const w of cp.querySelectorAll('[data-w]'))w.className=(t>=+w.dataset.w)?'on':'';}
+};render(0);
+</script></body></html>"""
+
+def malin_page(spec, theme, starts, durs, caps, total):
+    sc = spec["scenes"]
+    words = [(w, t) for ch, _ in caps for (w, t) in ch]
+    def em(x, id_=None):
+        q = K.esc(x).split("**")
+        return "".join((f"<span class='mk'{(' id=' + chr(39) + id_ + chr(39)) if id_ else ''}>{z}</span>" if id_ else f"<em>{z}</em>") if n % 2 else z for n, z in enumerate(q)).replace("&lt;br&gt;", "<br>")
+    def wt(word, t0, t1, nth, dflt):
+        hits = [t for w, t in words if t0 <= t < t1 and w.lower().strip("«»:,.!?").startswith(word.lower())]
+        return hits[nth] if len(hits) > nth else dflt
+    def spread(n, d, a):
+        st = (d - 1.6) / max(1, n); return [round(.7 + st * j, 2) for j in range(n)]
+    blocks, S, ev = [], [], []
+    for k, s in enumerate(sc):
+        a, d, ty = starts[k], durs[k], s["type"]; info = {"a": a, "b": a + d, "ty": ty}
+        title = f"<div class='ttl'>{em(s.get('title', ''), 'mk' + str(k))}</div>" if s.get("title") else ""
+        note = f"<div class='note' id='nt{k}'>{K.esc(s['note'])}</div>" if s.get("note") else ""
+        if ty == "hook":
+            h = f"<div class='hk' id='hk'>{em(s.get('big', ''))}</div><div class='hs' id='hs'>{K.esc(s.get('sub', ''))}</div>"
+            ev += [{"k": "impact", "at": a + .05}, {"k": "whoosh", "at": a + 1.4}]
+            blocks.append(f"<div class='blk' id='k{k}'>{h}</div>"); S.append(info); continue
+        if ty == "list":
+            items = s.get("items", [])[:6]; n = len(items)
+            at = spread(n, d, a)
+            if s.get("cue"):
+                at = [round(max(.5, wt(s["cue"][j], a, a + d, 0, a + at[j]) - a - .1), 2) if j < len(s["cue"]) and s["cue"][j] else at[j] for j in range(n)]
+            rows = ""
+            for j, it in enumerate(items):
+                tx, sub = (it if isinstance(it, list) else [it, ""])[:2]
+                rows += f"<div class='li'><div class='n'>{j+1}.</div><div class='t' id='lt{k}_{j}'>{K.esc(tx)}{'<small>' + K.esc(sub) + '</small>' if sub else ''}</div><div class='ok' id='lo{k}_{j}'>✓</div></div>"
+            for j in range(n, s.get("slots", n)):
+                rows += f"<div class='li'><div class='n'>{j+1}.</div><div class='t'></div></div>"
+            info.update({"n": n, "at": at}); ev += [{"k": "pop", "at": a + x} for x in at] + [{"k": "check", "at": a + x + .4} for x in at]
+            blocks.append(f"<div class='blk' id='k{k}'>{title}<div class='ls' style='top:{s.get('top', 470)}px'>{rows}</div>{note}</div>")
+        elif ty == "tier":
+            COL = {"S": "#ff6b6b", "A": "#ffb36b", "B": "#ffe58f", "C": "#8ee59a", "D": "#7cc4ff", "E": "#b79cff", "F": "#ff8fd1"}
+            rows = s.get("rows", {}); order = [r for r in "SABCDEF" if r in rows or s.get("all_rows")]
+            chips = [(r, x) for r in order for x in rows.get(r, [])]
+            if s.get("order"):
+                chips = sorted(chips, key=lambda rc: s["order"].index(rc[1]) if rc[1] in s["order"] else 99)
+            n = len(chips); at = spread(n, d, a)
+            idx = {rc: j for j, rc in enumerate(chips)}
+            html = ""
+            for r in order:
+                html += f"<div class='tw'><div class='lt' style='background:{COL[r]}'>{r}</div><div class='cs'>" + "".join(f"<span class='chip' id='ch{k}_{idx[(r, x)]}'>{K.esc(x)}</span>" for x in rows.get(r, [])) + "</div></div>"
+            info.update({"n": n, "at": at}); ev += [{"k": "impact" if r in "SF" else "pop", "at": a + at[idx[(r, x)]]} for r, x in chips]
+            blocks.append(f"<div class='blk' id='k{k}'>{title}<div class='tr'>{html}</div>{note}</div>")
+        elif ty == "jars":
+            jars = s.get("jars", [])[:4]; n = len(jars); at = spread(n, d, a)
+            if s.get("cue"):
+                at = [round(max(.5, wt(s["cue"][j], a, a + d, 0, a + at[j]) - a - .1), 2) if j < len(s["cue"]) and s["cue"][j] else at[j] for j in range(n)]
+            w = 290 if n <= 3 else 220
+            html = "".join(f"<div class='jw'><div class='jar' id='ja{k}_{j}' style='width:{w}px'><div class='fl' id='jf{k}_{j}'></div><div class='pc' id='jp{k}_{j}'>0%</div></div><div class='jl' id='jl{k}_{j}'>{K.esc(jj.get('label', ''))}<small>{K.esc(jj.get('amount', '').replace(' €', chr(160) + '€'))}</small></div></div>" for j, jj in enumerate(jars))
+            info.update({"n": n, "at": at, "p": [int(jj.get("pct", 0)) for jj in jars]}); ev += [{"k": "pop", "at": a + x} for x in at]
+            blocks.append(f"<div class='blk' id='k{k}'>{title}<div class='jr'>{html}</div>{note}</div>")
+        elif ty == "math":
+            cells = s.get("cells", [])[:3]; n = len(cells); at = spread(n, d, a)
+            html, pre, suf, vals = "", [], [], []
+            for j, cl in enumerate(cells):
+                lb, val = cl[0], cl[1]; op = cl[2] if len(cl) > 2 else ""
+                import re as _re
+                m = _re.match(r"^(\D*?)(\d[\d\s\u202f\u00a0]*\d|\d)(.*)$", val)
+                p0, num, s0 = (m.group(1), int(_re.sub(r"\D", "", m.group(2))), m.group(3)) if m else ("", 0, val)
+                s0 = s0.strip(); s0 = ("\u00a0" + s0) if s0 else ""
+                pre.append(p0); suf.append(s0); vals.append(num)
+                if j > 0: html += f"<div class='op' id='mo{k}_{j}'>{K.esc(op or '−')}</div>"
+                html += f"<div class='cell{' res' if j == n - 1 and s.get('result', True) and n > 1 else ''}' id='mc{k}_{j}'><div class='lb'>{K.esc(lb)}</div><div class='vl' id='mv{k}_{j}'>0</div></div>"
+            info.update({"n": n, "at": at, "pre": pre, "suf": suf, "v": vals}); ev += [{"k": "pop", "at": a + x} for x in at]
+            blocks.append(f"<div class='blk' id='k{k}'>{title}<div class='mt'>{html}</div>{note}</div>")
+        elif ty == "cta":
+            ctas = s.get("ctas", [])[:3]
+            html = f"<div class='hk' id='hk{k}' style='top:520px'>{em(s.get('big', ''))}</div>" + "".join(f"<div class='cta' id='ct{k}_{j}' style='top:{1000 + 120 * j}px'>{K.esc(x)}</div>" for j, x in enumerate(ctas))
+            info.update({"n": len(ctas)}); ev += [{"k": "impact", "at": a + .05}] + [{"k": "pop", "at": a + 1.0 + .5 * j} for j in range(len(ctas))]
+            blocks.append(f"<div class='blk' id='k{k}'>{html}{note}</div>")
+        S.append(info)
+    ev.sort(key=lambda e: e["at"])
+    cap_html = "".join(
+        f"<span class='cap' data-a='{c[0][1]:.3f}' data-b='{c_next:.3f}'>" + " ".join(f"<span data-w='{t:.3f}'>{H.escape(w)}</span>" for w, t in c) + "</span>"
+        for c, c_next in caps)
+    page = MALIN_TPL.replace("__BLOCKS__", "\n".join(blocks)).replace("__CAPS__", cap_html).replace("__HANDLE__", H.escape(spec.get("handle", "")))
+    page = page.replace("__EV__", json.dumps(ev, ensure_ascii=False)).replace("__D__", str(total)).replace("__SC__", json.dumps(S, ensure_ascii=False))
+    return page.replace("<style>", "<style>" + K._font_faces(["JetBrains Mono"]), 1)
+
+
+LAYOUTS = {"malin": malin_page, "claudeflow": claudeflow_page, "manifeste3d": manifeste3d_page, "messages": messages_page, "terminal": terminal_page, "cheatsheet": cheatsheet_page, "iceberg": iceberg_page, "sportmotion": sportmotion_page, "nightchat": nightchat_page, "notion": notion_page}
 
 # ------------------------------------------------------------------ rendu
 def sfx_track(path, total, events, starts):

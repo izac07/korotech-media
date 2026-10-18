@@ -1,0 +1,98 @@
+{
+ "id": "RM-R04",
+ "layout": "malin",
+ "music_seed": 104,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Ton salaire<br>part en **fumée** ?",
+   "sub": "La règle 50 / 30 / 20, en 40 secondes",
+   "vo": "Premier salaire, et à la fin du mois il ne reste rien ? Voici une règle simple : cinquante, trente, vingt."
+  },
+  {
+   "type": "math",
+   "title": "Exemple : **1 500 € nets**",
+   "cells": [
+    [
+     "Salaire net",
+     "1 500 €"
+    ],
+    [
+     "Besoins + envies",
+     "1 200 €",
+     "−"
+    ],
+    [
+     "Épargne",
+     "300 €",
+     "="
+    ]
+   ],
+   "note": "Exemple pour illustrer, adapte à tes chiffres",
+   "vo": "Exemple avec mille cinq cents euros nets. On découpe en trois enveloppes, et l'épargne passe en premier."
+  },
+  {
+   "type": "jars",
+   "title": "Les **3 enveloppes**",
+   "jars": [
+    {
+     "label": "Besoins",
+     "pct": 50,
+     "amount": "750 €"
+    },
+    {
+     "label": "Envies",
+     "pct": 30,
+     "amount": "450 €"
+    },
+    {
+     "label": "Épargne",
+     "pct": 20,
+     "amount": "300 €"
+    }
+   ],
+   "cue": [
+    "cinquante",
+    "trente",
+    "vingt"
+   ],
+   "vo": "Cinquante pour cent pour les besoins : loyer, courses, transport. Trente pour cent pour les envies. Vingt pour cent d'épargne, dès le jour de la paie."
+  },
+  {
+   "type": "list",
+   "title": "Où mettre les **20 %** ?",
+   "items": [
+    [
+     "Livret A",
+     "épargne de précaution, dispo à tout moment"
+    ],
+    [
+     "LEP",
+     "si tes revenus te le permettent"
+    ],
+    [
+     "Projets long terme",
+     "seulement une fois le matelas fait"
+    ]
+   ],
+   "slots": 4,
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ],
+   "vo": "Ces vingt pour cent, où les mettre ? Un : une épargne de précaution sur un Livret A, disponible à tout moment. Deux : le LEP, si tes revenus le permettent. Trois : ensuite seulement, les projets à long terme."
+  },
+  {
+   "type": "cta",
+   "big": "Un repère,<br>**pas une loi.**",
+   "ctas": [
+    "🔖 Enregistre la règle",
+    "↗️ Partage à quelqu'un qui touche son 1er salaire"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "C'est un repère, pas une loi : adapte les pourcentages à ta vie. Enregistre la vidéo et partage-la à quelqu'un qui touche son premier salaire."
+  }
+ ]
+}
