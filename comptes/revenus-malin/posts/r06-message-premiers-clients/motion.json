@@ -1,0 +1,96 @@
+{
+ "id": "RM-R06",
+ "layout": "malin",
+ "music_seed": 218,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Tes 3 premiers<br>**clients**",
+   "sub": "Le message à envoyer, sans pub ni budget",
+   "vo": "Tes trois premiers clients, sans pub et sans budget ? Tout commence par un message. Voici comment l'écrire."
+  },
+  {
+   "type": "list",
+   "title": "Ton offre en **1 phrase**",
+   "items": [
+    [
+     "J'aide [qui]",
+     "ex. : les commerçants du quartier"
+    ],
+    [
+     "à [résultat]",
+     "ex. : avoir de belles photos"
+    ],
+    [
+     "grâce à [ton service]",
+     "ex. : une séance photo d'une heure"
+    ]
+   ],
+   "cue": [
+    "qui",
+    "résultat",
+    "service"
+   ],
+   "vo": "D'abord, ton offre en une phrase : j'aide qui, à obtenir quel résultat, grâce à quel service."
+  },
+  {
+   "type": "list",
+   "title": "Le **message** à envoyer",
+   "items": [
+    [
+     "Ce que tu proposes",
+     "en une phrase"
+    ],
+    [
+     "Pour qui",
+     "« les indépendants qui… »"
+    ],
+    [
+     "« Tu penses à quelqu'un ? »",
+     "plus simple que « achète »"
+    ]
+   ],
+   "cue": [
+    "proposes",
+    "pour",
+    "quelqu'un"
+   ],
+   "vo": "Ensuite, un message perso à ton entourage : ce que tu proposes, pour qui, et une question : tu penses à quelqu'un ? C'est plus simple que de demander d'acheter."
+  },
+  {
+   "type": "list",
+   "title": "Les **erreurs** à éviter",
+   "items": [
+    [
+     "Le même message à tous",
+     "en groupe, sans prénom"
+    ],
+    [
+     "Une offre floue",
+     "pas de prix, pas de délai"
+    ],
+    [
+     "Oublier l'avis",
+     "il rassure les clients suivants"
+    ]
+   ],
+   "cue": [
+    "même",
+    "floue",
+    "avis"
+   ],
+   "vo": "À éviter : le même message copié à tout le monde, une offre floue sans prix ni délai, et oublier de demander un avis après chaque mission."
+  },
+  {
+   "type": "cta",
+   "big": "Commence<br>**aujourd'hui.**",
+   "ctas": [
+    "🔖 Enregistre la méthode",
+    "💬 Quel service tu proposes ?"
+   ],
+   "note": "Infos officielles : autoentrepreneur.urssaf.fr",
+   "vo": "Et pense à déclarer tes revenus. Enregistre la méthode, et dis-moi en commentaire quel service tu proposes."
+  }
+ ]
+}
