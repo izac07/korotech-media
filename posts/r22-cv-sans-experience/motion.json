@@ -1,0 +1,62 @@
+{
+ "id": "R22",
+ "layout": "cheatsheet",
+ "music_seed": 212,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**ÉTAPES**",
+   "sub": "CV vide ? Pas tant que ça 📄",
+   "vo": "Ton CV est vide parce que t'as jamais travaillé ? Pas tant que ça. Voici trois étapes avec l'IA, sans mentir."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Liste tout",
+   "file": "Mon_CV.docx",
+   "ext": "DOCX",
+   "pills": [
+    "👶 Baby-sitting",
+    "⚽ Club de sport",
+    "🤝 Bénévolat"
+   ],
+   "text": "Même le « petit » **compte**",
+   "vo": "Un : liste tout, même ce qui te paraît petit. Baby-sitting, aide au club de sport, projet de groupe, stage de troisième, bénévolat : tout compte."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Compétences",
+   "nodes": [
+    "Expérience",
+    "Compétence",
+    "Exemple"
+   ],
+   "text": "Des faits → **des compétences**",
+   "vo": "Deux : demande à l'IA de transformer tes réponses en compétences, avec un exemple concret pour chacune. Et précise-lui bien : n'invente rien."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Le test",
+   "q": "Je peux l'expliquer en entretien ?",
+   "answers": [
+    "Oui → je garde",
+    "Pas sûr → je précise",
+    "Faux → je l'enlève"
+   ],
+   "text": "Tout doit être **vrai**",
+   "vo": "Trois : relis chaque ligne. Tu dois pouvoir l'expliquer en entretien. Si c'est faux, tu l'enlèves. L'IA peut se tromper, mais c'est toi qui signes."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour ton CV",
+    "📤 Envoie au pote qui cherche un job"
+   ],
+   "vo": "Enregistre la vidéo, et envoie-la au pote qui cherche son premier job."
+  }
+ ]
+}
