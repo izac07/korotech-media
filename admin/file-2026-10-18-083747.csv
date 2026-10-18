@@ -1,0 +1,67 @@
+2;C02;2026-10-14 11:00;11:00;Carrousel;5 prompts pour réviser 2x plus vite;Publié;18008359854005504;
+3;R01;2026-10-14 18:30;2026-10-14 18:30;Reel;Ton cours en fiche de révision en 30 secondes;Publié;18193778074399803;
+4;R02;2026-10-14 16:45;16:45;Reel;Fais-toi interroger par l'IA avant ton contrôle;Publié;17962367151226608;
+5;C03;2026-10-14 18:00;18:00;Carrousel;20 mots d'anglais par jour sans effort;Publié;18114765650039196;
+6;R03;2026-10-14 19:15;19:15;Reel;Ta rédaction corrigée comme par un prof;Publié;18375391738242711;
+7;C04;2026-10-14 20:30;20:30;Carrousel;Parents : aider son enfant sans comprendre ses cours;Publié;17940253848364270;
+8;R04;2026-10-14 21:45;21:45;Reel;Ton cours est trop long ? Résume-le comme ça;Publié;18064917383789769;
+9;R05;2026-10-15 07:15;07:15;Reel;Méthode Feynman : explique ton cours à l'IA;Publié;18112748771466525;
+10;C05;2026-10-15 08:30;08:30;Carrousel;Parents : 5 questions à poser après les cours;Publié;17997848438826849;
+11;R06;2026-10-15 10:30;10:30;Reel;Parents : 3 règles pour l'IA à la maison;Publié;18148555273564597;
+12;R07;2026-10-15 12:15;12:15;Reel;5 faux amis anglais qui te piègent;Publié;18111568157605066;
+13;C06;2026-10-15 13:30;13:30;Carrousel;Tes flashcards Anki en 1 prompt;Publié;17910872880552618;
+14;R08;2026-10-15 16:45;16:45;Reel;L'IA qui t'aide sans te donner la réponse;Publié;17998977273006167;
+15;C07;2026-10-15 18:00;18:00;Carrousel;Parcoursup : 4 façons d'utiliser l'IA pour t'orienter;Publié;17994881445019419;
+16;R09;2026-10-15 19:15;19:15;Reel;L'IA rend bête ? Ça dépend de comment tu l'utilises;Publié;18031059440884282;
+17;C08;2026-10-15 20:30;20:30;Carrousel;Parents : a-t-il copié sur ChatGPT ? 4 réflexes;Publié;18157901608504529;
+18;R10;2026-10-15 21:45;21:45;Reel;Ta semaine organisée en 1 prompt;Publié;17919956655452403;
+19;R11;2026-10-19 19:15;19:15;Reel;Prédire les questions du prochain contrôle;Validé;;
+20;C09;2026-10-19 12:15;12:15;Carrousel;Parents : aider en maths sans tout réexpliquer;Validé;;
+21;R12;2026-10-18 12:15;12:15;Reel;Mythe : relire son cours ne suffit pas;Validé;;
+22;R13;2026-10-17 21:00;21:00;Reel;Apprendre l'espagnol avec sa série;Publié;18144839044547030;
+23;C10;2026-10-17 19:15;19:15;Carrousel;La méthode Pomodoro avec l'IA;Publié;17978114118133392;
+24;R14;2026-10-20 12:15;12:15;Reel;Oral d'anglais en mode vocal;Validé;;
+25;C11;2026-10-18 19:15;19:15;Carrousel;Lettre de motivation qui te ressemble;Validé;;
+26;R15;2026-10-21 19:15;19:15;Reel;Parents : préparer la réunion parents-profs;Validé;;
+27;C12;2026-10-20 19:15;19:15;Carrousel;Parents : l'IA et la vie privée de votre enfant;Validé;;
+28;R16;2026-10-21 12:15;12:15;Reel;Son cours en podcast;Validé;;
+29;LIA-C01;2026-10-19 12:30;12:30;Carrousel;5 tâches à déléguer à l'IA dès lundi;Validé;;17841420788582578
+30;ZSF-C01;2026-10-19 18:00;18:00;Carrousel;Séance 15 min sans matériel — débutant;Validé;;17841467969534543
+31;CL-C01;2026-10-19 21:00;21:00;Carrousel;5 green flags qu'on ne remarque pas assez;Validé;;17841415150585724
+32;LIA-R01;2026-10-20 12:30;12:30;Reel;Le prompt qui écrit tes relances de factures impayées;Refusé;;17841420788582578
+33;ZSF-R01;2026-10-20 18:00;18:00;Reel;Le squat : 3 erreurs à corriger;Refusé;;17841467969534543
+34;CL-R01;2026-10-20 21:00;21:00;Reel;Dire non sans se justifier;Refusé;;17841415150585724
+35;LIA-C02;2026-10-21 12:30;12:30;Carrousel;Les 3 erreurs qui rendent tes prompts nuls;Validé;;17841420788582578
+36;ZSF-C02;2026-10-21 18:00;18:00;Carrousel;Pas encore de pompe ? Progresse en 4 étapes;Validé;;17841467969534543
+37;CL-C02;2026-10-21 21:00;21:00;Carrousel;Exprimer un besoin sans faire de reproche;Validé;;17841415150585724
+38;X04;2026-10-22 12:15;12:15;Reel;3 IA gratuites pour réviser (motion design);Validé;;
+39;LIA-R02;2026-10-17 08:50;08:50;Reel;L'iceberg de l'automatisation (motion design);Publié;18102913571327010;17841420788582578
+40;ZSF-R02;2026-10-17 18:00;18:00;Reel;Stop aux 100 crunchs : circuit abdos 5 min;Publié;18130482721864986;17841467969534543
+41;CL-R02;2026-10-17 19:15;19:15;Reel;Le message à entendre si tu doutes de ta valeur;Publié;18115797077132422;17841415150585724
+42;ZSF-R03;2026-10-17 08:30;08:30;Reel;Circuit jambes 5 min : arrête les squats bâclés;Publié;17949661215340778;17841467969534543
+43;LIA-R04;2026-10-17 18:30;18:30;Reel;2 posts par jour, 0 à la main : mon système avec Claude;Publié;18113187404165635;17841420788582578
+44;ZSF-C03;2026-10-18 07:30;07:30;Carrousel;L'échauffement de 3 min que tu zappes trop;Publié;18113398277132717;17841467969534543
+45;ZSF-R04;2026-10-18 18:00;18:00;Reel;Cardio sans sauter : 5 min sans déranger les voisins;Validé;;17841467969534543
+46;ZSF-R05;2026-10-19 07:30;07:30;Reel;Pas besoin de finir trempé : la séance tempo lent;Validé;;17841467969534543
+47;ZSF-R06;2026-10-20 18:00;18:00;Reel;Fentes bancales ? La bonne position;Validé;;17841467969534543
+48;ZSF-C04;2026-10-20 07:30;07:30;Carrousel;Planche : passer de 20 s à 1 minute;Validé;;17841467969534543
+49;ZSF-R07;2026-10-21 07:30;07:30;Reel;Pas envie ? La séance minimum de 4 minutes;Validé;;17841467969534543
+50;LIA-R05;2026-10-19 18:30;18:30;Reel;Tout part seul, sauf veto : ma file d'attente;Validé;;17841420788582578
+51;CL-R03;2026-10-19 12:30;12:30;Reel;Après une dispute : le message qui répare;Validé;;17841415150585724
+52;CL-C03;2026-10-20 12:30;12:30;Carrousel;Compromis ou sacrifice : comment faire la différence;Validé;;17841415150585724
+53;C13;2026-10-22 19:15;19:15;Carrousel;CV sans expérience : ce que tu as déjà fait compte;Validé;;
+54;C14;2026-10-23 12:15;12:15;Carrousel;POV : exposé de groupe et personne ne bosse;Validé;;
+55;R17;2026-10-23 19:15;19:15;Reel;Message gênant : 3 réflexes avec l'IA avant d'envoyer;Validé;;
+56;R18;2026-10-24 12:15;12:15;Reel;POV : tu comprends rien au prof, 3 astuces;Validé;;
+57;C15;2026-10-24 19:15;19:15;Carrousel;Apprendre un truc en 10 min par jour avec l'IA;Validé;;
+58;MDA-C01;2026-10-19 07:30;07:30;Carrousel;La règle des 2 minutes contre la procrastination;À valider;;17841429867473189
+59;RM-R03;2026-10-19 12:00;12:00;Reel;Revendre tes affaires sans te faire avoir;À valider;;17841421563093307
+60;RM-C01;2026-10-19 19:30;19:30;Carrousel;4 arnaques « argent facile » à reconnaître;À valider;;17841421563093307
+61;MDA-R04;2026-10-19 21:30;21:30;Reel;14 jours pour reprendre tes soirées (et tes matins);À valider;;17841429867473189
+62;MDA-R03;2026-10-17 19:15;19:15;Reel;Reset 30 jours : reprendre le contrôle;Publié;17891033316683842;17841429867473189
+63;RM-R02;2026-10-17 19:15;19:15;Reel;Tes premiers 100 € en ligne : la méthode honnête;Publié;17911454955551879;17841421563093307
+64;MDA-C03;2026-10-20 21:30;21:30;Carrousel;La méthode 1-3-5 pour ta journée;À valider;;17841429867473189
+65;MDA-C02;2026-10-21 07:30;07:30;Carrousel;Routine du matin en 4 étapes (sans se lever à 5 h);À valider;;17841429867473189
+66;RM-C02;2026-10-21 19:30;19:30;Carrousel;Trouver tes 3 premiers clients;À valider;;17841421563093307
+67;ZSF-R08;2026-10-17 22:40;22:40;Reel;Haut du corps en 5 min, sans matériel;Publié;18097071884395078;17841467969534543
+68;LIA-R06;2026-10-17 22:40;22:40;Reel;Mythe : le prompt magique;Publié;17961236763236942;17841420788582578
