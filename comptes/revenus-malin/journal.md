@@ -9,3 +9,4 @@
 | 2026-10-18 08:55 | RM-R04 | Reel | La règle 50/30/20 pour ton premier salaire (nouveau format « malin ») |
 | 2026-10-19 19:30 | RM-R05 | Reel | L'argent facile ? 4 arnaques à reconnaître — motion, remplace le carrousel RM-C01 (plus de carrousels) |
 | 2026-10-21 19:30 | RM-R06 | Reel | Le message qui trouve tes 3 premiers clients — motion, remplace le carrousel RM-C02 (plus de carrousels) |
+| 2026-10-18 16:31 | RM-R07 | Reel | Où proposer tes services près de chez toi (Organisation, malin) |

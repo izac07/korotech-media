@@ -12,3 +12,4 @@
 | 2026-10-17 22:40 | LIA-R06 | Reel | Mythe : le prompt magique — un fichier d'instructions, pas un prompt (iceberg) |
 | 2026-10-19 12:30 | LIA-R07 | Reel | Lundi, délègue ça : 3 tâches pour Claude — motion, remplace le carrousel LIA-C01 (plus de carrousels) |
 | 2026-10-21 12:30 | LIA-R08 | Reel | La 1re réponse de l'IA est un brouillon : 3 relances — motion, remplace le carrousel LIA-C02 (plus de carrousels) |
+| 2026-10-18 16:31 | LIA-R09 | Reel | Le bilan du dimanche : Claude lit mes stats (Coulisses du système, claudeflow) |

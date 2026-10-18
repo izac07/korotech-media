@@ -11,3 +11,4 @@
 | 2026-10-19 21:00 | CL-R04 | Reel | Les green flags qu'on ne remarque pas assez — motion, remplace le carrousel CL-C01 (plus de carrousels) |
 | 2026-10-20 12:30 | CL-R05 | Reel | Compromis ou sacrifice : fais la différence — motion, remplace le carrousel CL-C03 (plus de carrousels) |
 | 2026-10-21 21:00 | CL-R06 | Reel | Dire ton besoin sans faire de reproche — motion, remplace le carrousel CL-C02 (plus de carrousels) |
+| 2026-10-18 16:31 | CL-R07 | Reel | Le silence radio : comment réagir (Communication, nightchat) |

@@ -17,3 +17,4 @@
 | 2026-10-19 18:00 | ZSF-R09 | Reel | Stop à la séance d'1 h : ta séance débutant de 15 min — motion, remplace le carrousel ZSF-C01 (plus de carrousels) |
 | 2026-10-20 07:30 | ZSF-R10 | Reel | Planche : de 20 s à 1 minute, la progression simple — motion, remplace le carrousel ZSF-C04 (plus de carrousels) |
 | 2026-10-21 18:00 | ZSF-R11 | Reel | Zéro pompe ? Normal : 4 étapes pour ta première — motion, remplace le carrousel ZSF-C02 (plus de carrousels) |
+| 2026-10-18 16:31 | ZSF-R12 | Reel | L'échauffement de 3 minutes à ne pas zapper (Technique, sportmotion) |
