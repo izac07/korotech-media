@@ -105,4 +105,6 @@ Le scénario Make **9975091** (« Korotech - Stats ») récupère le nombre d'ab
 Chaque dimanche soir, la tâche « Korotech - bilan hebdo » lance ce scénario, compare avec le fichier de la semaine précédente, écrit `stats/bilan-AAAA-MM-JJ.md` et met à jour la section ci-dessous.
 
 ## Leçons des bilans (à appliquer par la tâche du soir)
-- (vide pour l'instant — premier bilan le dimanche 18 octobre 2026)
+- 2026-10-18 : un seul reel dépasse 3x la médiane (53 vues) : « Ta série préférée peut devenir ton cours d'espagnol », 166 vues (3.1x). Échantillon de 1 reel sur 14 : on ne généralise pas, on l'analyse. À analyser avec le skill analyse-reel : https://www.instagram.com/reel/Dem05SuCdG6/
+- 2026-10-18 : l'écart est large (17 à 166 vues) mais les reels « méthode/outil IA » R04 (18) et R10 (17) sont à 0.3x. Aucun lien causal démontrable avec si peu de reels : tester avant de conclure.
+- 2026-10-18 : 12 reels sur 14 affichent « ? / ? » et 2 « non relié au journal » : aucun bilan par pilier ou formule de hook n'est possible. Relier les reels à journal-reels.csv avant le prochain bilan. Abonnés : 148 (+0), vues des reels de plus de 3 jours inchangées (+0).
