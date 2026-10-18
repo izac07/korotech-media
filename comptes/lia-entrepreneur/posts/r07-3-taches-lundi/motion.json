@@ -1,0 +1,23 @@
+{
+ "id": "LIA-R07",
+ "layout": "claudeflow",
+ "music_seed": 204,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {"type": "hook", "title": "Lundi,<br>**délègue ça.**", "sub": "3 tâches pour Claude",
+   "vo": "Lundi matin, tu peux déléguer trois tâches à Claude. Tu gardes la décision, il fait le premier jet."},
+  {"type": "chat", "tag": "TÂCHE 1 · LES MAILS",
+   "prompt": "Réponds à ce mail client, court et poli. Demande si une info manque.",
+   "reply": ["Bonjour,", "Merci pour votre message.", "Pour vous envoyer le devis,", "il me manque **la date souhaitée**.", "Belle journée !"],
+   "vo": "Tâche un : les mails répétitifs. Tu colles le mail, Claude rédige une réponse claire et courte, et te pose une question si une info manque."},
+  {"type": "table", "tag": "TÂCHE 2 · TES POSTS",
+   "rows": [["LUN", "12:30", "3 erreurs sur un devis", "publie"], ["MER", "12:30", "Mon outil du quotidien", "valider"], ["VEN", "18:30", "Avant / après client", "refuse"]],
+   "vo": "Tâche deux : tes posts de la semaine. Donne ton métier, ta cible et trois sujets. Claude propose, tu gardes ou tu refuses."},
+  {"type": "pipeline", "tag": "TÂCHE 3 · LES RÉUNIONS",
+   "nodes": [["NOTES", "de réunion"], ["CLAUDE", "résume"], ["ACTIONS", "qui · quoi · quand"]],
+   "notif": "Liste des actions prête",
+   "vo": "Tâche trois : tes notes de réunion. Claude les résume en cinq lignes, puis sort la liste des actions : qui fait quoi, et pour quand."},
+  {"type": "cta", "title": "Il prépare.<br>**Tu relis.**", "ctas": ["🔖 enregistre pour lundi", "➕ suis-moi pour la suite"],
+   "vo": "L'IA peut se tromper : relis toujours avant d'envoyer. Enregistre la vidéo pour lundi, et suis-moi pour la suite."}
+ ]
+}
