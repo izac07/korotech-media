@@ -12,3 +12,4 @@
 | 2026-10-20 12:30 | CL-R05 | Reel | Compromis ou sacrifice : fais la différence — motion, remplace le carrousel CL-C03 (plus de carrousels) |
 | 2026-10-21 21:00 | CL-R06 | Reel | Dire ton besoin sans faire de reproche — motion, remplace le carrousel CL-C02 (plus de carrousels) |
 | 2026-10-18 16:31 | CL-R07 | Reel | Le silence radio : comment réagir (Communication, nightchat) |
+| 2026-10-20 21:00 | CL-R08 | Reel | Poser une limite avec un proche (Communication, nightchat) |
