@@ -1432,7 +1432,7 @@ const c=x=>Math.max(0,Math.min(1,x)), eo=x=>1-Math.pow(1-c(x),3), back=x=>{x=c(x
 const $=id=>document.getElementById(id);
 function inn(e,t0,u,dy=40){if(!e)return;const k=eo((u-t0)/.35);e.style.opacity=u>=t0?k:0;e.style.transform=`translateY(${(1-k)*dy}px)`;}
 function pop(e,t0,u,s0=.4){if(!e)return;const k=back((u-t0)/.35);e.style.opacity=u>=t0?c((u-t0)/.1):0;e.style.transform=`scale(${s0+(1-s0)*k})`;}
-function fmt(n){return Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g,'\u00a0');})+(?!\d))/g,' ');}
+function fmt(n){return Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g,'\u00a0');}
 window.render=function(t){
  $('bar').style.width=(c(t/D)*1080)+'px';
  let k=0;for(let i=0;i<SC.length;i++)if(t>=SC[i].a)k=i;const s=SC[k],u=t-s.a,d=s.b-s.a;
