@@ -11,7 +11,8 @@
 | 2026-10-18 18:00 | ZSF-R04 | Reel | Cardio sans sauter : 5 min sans déranger les voisins (motion) |
 | 2026-10-19 07:30 | ZSF-R05 | Reel | Mythe : pas besoin de finir trempé — séance tempo lent (motion) |
 | 2026-10-20 18:00 | ZSF-R06 | Reel | Fentes bancales ? La bonne position (motion) |
-| 2026-10-20 07:30 | ZSF-C04 | Carrousel | Planche : passer de 20 s à 1 minute |
+| 2026-10-20 07:30 | ZSF-C04 | Carrousel (remplacé par ZSF-R10, refusé le 18/10/2026) | Planche : passer de 20 s à 1 minute |
 | 2026-10-21 07:30 | ZSF-R07 | Reel | Pas envie ? La séance minimum de 4 minutes (motion) |
 | 2026-10-17 22:40 | ZSF-R08 | Reel | Haut du corps en 5 min, sans matériel (motion) |
 | 2026-10-19 18:00 | ZSF-R09 | Reel | Stop à la séance d'1 h : ta séance débutant de 15 min — motion, remplace le carrousel ZSF-C01 (plus de carrousels) |
+| 2026-10-20 07:30 | ZSF-R10 | Reel | Planche : de 20 s à 1 minute, la progression simple — motion, remplace le carrousel ZSF-C04 (plus de carrousels) |

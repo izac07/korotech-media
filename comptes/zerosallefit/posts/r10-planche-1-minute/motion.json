@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R10",
+ "layout": "sportmotion",
+ "music_seed": 208,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "planche",
+   "count": 60,
+   "title": "PLANCHE : **20 S → 1 MIN**",
+   "sub": "⏱ LA PROGRESSION SIMPLE",
+   "vo": "Tu tiens vingt secondes en planche, et tu vises une minute ? Voici la progression simple."
+  },
+  {
+   "type": "erreur",
+   "pose": "planche",
+   "myth": "« TENIR JUSQU'À CRAQUER »",
+   "stamp": "FAUX",
+   "text": "DOS CREUSÉ ·<br>**SÉRIE TERMINÉE**",
+   "vo": "L'erreur : tenir jusqu'à craquer, le dos qui se creuse. Une planche cambrée ne compte plus : dès que le dos lâche, la série est finie."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "PLANCHE",
+    "GAINAGE LATÉRAL",
+    "DEAD BUG"
+   ],
+   "poses": [
+    "planche",
+    "lateral",
+    "deadbug"
+   ],
+   "effort": "20 s",
+   "rest": "40 s",
+   "total": "3:00",
+   "vo": "Le circuit : planche, gainage latéral, dead bug. Vingt secondes d'effort, quarante de repos. Quand tout est propre, ajoute cinq secondes à la séance suivante. Pas avant."
+  },
+  {
+   "type": "pourquoi",
+   "title": "GAINAGE<br>**PROPRE**",
+   "zones": [
+    "ABDOS",
+    "LOMBAIRES",
+    "ÉPAULES"
+   ],
+   "badges": [
+    "COUDES SOUS LES ÉPAULES",
+    "FESSIERS SERRÉS",
+    "TROP DUR ? SUR LES GENOUX"
+   ],
+   "vo": "Coudes sous les épaules, fessiers serrés, et tu respires normalement. Trop dur ? Sur les genoux : mieux vaut quinze secondes propres qu'une minute cambrée. Douleur au dos, stop."
+  },
+  {
+   "type": "cta",
+   "title": "TA 1RE SÉRIE<br>**AUJOURD'HUI ?**",
+   "ctas": [
+    "🔖 ENREGISTRE LA PROGRESSION",
+    "💬 TON CHRONO EN COMMENTAIRE"
+   ],
+   "ticker": "20 S · 25 S · 30 S · … · 1 MIN",
+   "vo": "Enregistre la progression, et écris ton chrono de départ en commentaire."
+  }
+ ]
+}
