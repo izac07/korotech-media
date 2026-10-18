@@ -277,7 +277,8 @@ def cheatsheet_page(spec, theme, starts, durs, caps, total):
             h2 = H.escape(s.get("sub", "que presque personne n'utilise 👀"))
             inner = (f"{pages}{parts}<div class='three' id='three'>{big}</div><div class='h1' id='h1'>{h1}</div>"
                      f"<div class='h2' id='h2'>{h2}</div>")
-            ev += [{"k": "whoosh", "at": a + 0.22}, {"k": "impact", "at": a + 0.5}, {"k": "sparkle", "at": a + 0.85}]
+            # hook lisible dès 0,25 s (audit : le pouce décide dans la première demi-seconde)
+            ev += [{"k": "whoosh", "at": a + 0.1}, {"k": "impact", "at": a + 0.25}, {"k": "sparkle", "at": a + 0.5}]
         elif ty == "pills":
             pills = "".join(f"<div class='pill' id='pl{k}_{j}'>{H.escape(p)}</div>" for j, p in enumerate(s["pills"]))
             wave = "".join(f"<i id='wv{j}'></i>" for j in range(14))
@@ -359,6 +360,7 @@ body{width:1080px;height:1920px;overflow:hidden;background:#0d0a1c;color:#fff;fo
 .bar{position:absolute;left:0;top:0;height:10px;background:linear-gradient(90deg,#5b2eff,#e23cc8)}
 .sweep{position:absolute;top:0;bottom:0;width:700px;background:linear-gradient(90deg,transparent,rgba(123,92,255,.55),rgba(226,60,200,.55),transparent);opacity:0}
 """
+    css = K._font_faces(["Poppins", "Inter"]) + css  # polices embarquées : rendu identique en local et dans le cloud
     return f"""<!doctype html><html><head><meta charset='utf-8'><style>{css}</style></head><body>
 <div class='glow' id='g1' style='width:900px;height:900px;left:-300px;top:-200px;background:radial-gradient(circle,rgba(91,46,255,.5),transparent 65%)'></div>
 <div class='glow' id='g2' style='width:900px;height:900px;right:-350px;bottom:200px;background:radial-gradient(circle,rgba(226,60,200,.4),transparent 65%)'></div>
@@ -384,10 +386,10 @@ window.render=function(t){{
     for(let i=0;i<3;i++){{const p=$('pg'+i);const fly=eo((u-.15)/.35);const x0=250+i*40, y0=520+i*30;
       p.style.left=(x0+fly*900)+'px';p.style.top=(y0-fly*120)+'px';p.style.transform=`rotate(${{-8+i*7+fly*25}}deg)`;
       p.style.filter=(u>.15&&u<.5)?`blur(${{14*Math.sin(c((u-.15)/.35)*Math.PI)}}px)`:'none';p.style.opacity=u<.45?1:1-c((u-.45)/.12);}}
-    for(let i=0;i<46;i++){{const p=$('pt'+i);const v=(u-.45);const ang=rnd(i)*6.283,sp=300+rnd(i+9)*900;
+    for(let i=0;i<46;i++){{const p=$('pt'+i);const v=(u-.2);const ang=rnd(i)*6.283,sp=300+rnd(i+9)*900;
       if(v<0||v>1.2){{p.style.opacity=0;continue;}}p.style.opacity=1-v/1.2;p.style.left=(700+Math.cos(ang)*sp*eo(v/1.2))+'px';p.style.top=(800+Math.sin(ang)*sp*eo(v/1.2))+'px';}}
-    const th=$('three');const k3=back((u-.5)/.5);th.style.opacity=c((u-.5)/.1);th.style.transform=`scale(${{.2+.8*k3+.02*Math.sin(u*3)}})`;
-    pop($('h1'),.8,u,.6,0,50);pop($('h2'),1.2,u,.8,0,40);
+    const th=$('three');const k3=back((u-.25)/.5);th.style.opacity=c((u-.25)/.1);th.style.transform=`scale(${{.2+.8*k3+.02*Math.sin(u*3)}})`;
+    pop($('h1'),.5,u,.6,0,50);pop($('h2'),.85,u,.8,0,40);
   }}
   if(s.ty==='pills'){{pop($('cd'+k),.0,u+.35,.9,0,60);
     const pd=$('pdf'+k);const kd=back((u-.6)/.5);pd.style.opacity=c((u-.6)/.1);pd.style.transform=`translateY(${{(1-kd)*-500}}px) rotate(${{(1-kd)*-12}}deg)`;
@@ -1533,7 +1535,42 @@ def malin_page(spec, theme, starts, durs, caps, total):
     return page.replace("<style>", "<style>" + K._font_faces(["JetBrains Mono"]), 1)
 
 
-LAYOUTS = {"malin": malin_page, "claudeflow": claudeflow_page, "manifeste3d": manifeste3d_page, "messages": messages_page, "terminal": terminal_page, "cheatsheet": cheatsheet_page, "iceberg": iceberg_page, "sportmotion": sportmotion_page, "nightchat": nightchat_page, "notion": notion_page}
+# ------------------------------------------------------------------ layout « boucle » (PILOTE, format court 6-10 s)
+def boucle_page(spec, theme, starts, durs, caps, total):
+    """Une phrase par scène, qui se construit mot à mot ; le fond bascule à chaque mot entre 2 couleurs.
+    Coupes sèches, texte visible dès la 1re image, fin sur la couleur du début pour boucler. Pas de voix ni de sous-titres."""
+    pas = float(spec.get("pas", 0.3))
+    coul = spec.get("couleurs", [["#fbedf1", "#8d0323"], ["#16181f", "#ffffff"]])
+    police = spec.get("police", "Georgia, 'Times New Roman', serif")
+    S, html_sc, ev = [], [], []
+    for k, s in enumerate(spec["scenes"]):
+        mots = s["texte"].split()
+        html_sc.append(f"<div class='scn' id='s{k}'><div class='txt'>" + " ".join(f"<span id='w{k}_{j}'>{rich(m)}</span>" for j, m in enumerate(mots)) + "</div></div>")
+        S.append({"a": starts[k], "b": starts[k] + durs[k], "n": len(mots)})
+        ev += [{"k": "pop", "at": starts[k] + j * pas} for j in range(len(mots))]
+    css = f"""*{{margin:0;padding:0;box-sizing:border-box}}
+body{{width:1080px;height:1920px;overflow:hidden;background:{coul[0][0]};font-family:{police}}}
+.scn{{position:absolute;inset:0;display:none}}
+.txt{{position:absolute;left:96px;right:96px;top:380px;font-weight:700;font-size:{int(spec.get('taille', 120))}px;line-height:1.12}}
+.txt span{{visibility:hidden}} .txt em{{font-style:normal;text-decoration:underline;text-decoration-thickness:8px}}"""
+    return f"""<!doctype html><html><head><meta charset='utf-8'><style>{css}</style></head><body>
+{''.join(html_sc)}
+<script>
+const EV={json.dumps(ev)}; const D={total}; const SC={json.dumps(S)}; const P={pas}; const C={json.dumps(coul)};
+window.render=function(t){{
+ SC.forEach((s,k)=>{{const el=document.getElementById('s'+k);const on=t>=s.a-0.001&&(t<s.b||k==SC.length-1&&t<=D);
+  el.style.display=on?'block':'none';if(!on)return;
+  // nombre de pas écoulés ; la dernière scène retombe sur la couleur 0 dans son dernier pas pour boucler
+  let q=Math.max(0,Math.floor((t-s.a)/P+1e-6)); if(k==SC.length-1&&t>=s.b-P)q=0;
+  const [bg,fg]=C[q%C.length];document.body.style.background=bg;el.style.color=fg;
+  const vis=Math.floor((t-s.a)/P+1e-6);
+  for(let j=0;j<s.n;j++)document.getElementById('w'+k+'_'+j).style.visibility=j<=vis?'visible':'hidden';
+ }});
+}};render(0);
+</script></body></html>"""
+
+
+LAYOUTS = {"boucle": boucle_page, "malin": malin_page, "claudeflow": claudeflow_page, "manifeste3d": manifeste3d_page, "messages": messages_page, "terminal": terminal_page, "cheatsheet": cheatsheet_page, "iceberg": iceberg_page, "sportmotion": sportmotion_page, "nightchat": nightchat_page, "notion": notion_page}
 
 # ------------------------------------------------------------------ rendu
 def sfx_track(path, total, events, starts):
@@ -1589,22 +1626,44 @@ def sfx_track(path, total, events, starts):
     out = np.clip(out, -1, 1)
     wavfile.write(path, SR, (np.stack([out, out], 1) * 32767).astype(np.int16))
 
-def build(spec_path, out):
-    spec = json.load(open(spec_path)); vo_dir = os.path.dirname(os.path.abspath(spec_path))
+MOTS_PAR_S = 2.6  # débit de Brian / Alice, pour estimer les durées quand les voix n'existent pas encore
+
+def prepare(spec_path, tmp, estime=False):
+    """Voix -> durées des scènes -> page HTML. estime=True : sans fichiers vo_<k>.mp3, durées estimées
+    depuis le nombre de mots (pour verifier/auditer AVANT de payer les voix)."""
+    spec = json.load(open(spec_path, encoding="utf-8")); vo_dir = os.path.dirname(os.path.abspath(spec_path))
     K.load_theme(spec_path, spec); theme = K.THEME.get("raw", {})
-    tmp = tempfile.mkdtemp()
-    # voix -> durées des scènes (même logique que le moteur v1)
+    if spec.get("layout") == "boucle":  # pilote : durée = un pas par mot + tenue de la phrase complète
+        for s in spec["scenes"]:
+            s.setdefault("vo", "")
+            s.setdefault("dur", round(len(s["texte"].split()) * float(spec.get("pas", 0.3)) + float(spec.get("tenue", 1.2)), 2))
     vspec = {"scenes": [{"type": "text", "vo": s["vo"], "dur": s.get("dur", 3.0)} for s in spec["scenes"]]}
-    voice = K.prepare_voice(vspec, vo_dir, tmp)
+    if estime and any(s["vo"] for s in vspec["scenes"]):
+        voice, t = [], 0.0
+        for s in vspec["scenes"]:
+            d = len(s["vo"].split()) / MOTS_PAR_S
+            s["dur"] = round(max(float(s["dur"]), d + 0.9), 2); voice.append((t + 0.25, d)); t += s["dur"]
+    else:
+        voice = K.prepare_voice(vspec, vo_dir, tmp)
     durs = [float(s["dur"]) for s in vspec["scenes"]]
     starts = [sum(durs[:k]) for k in range(len(durs))]; total = sum(durs)
     words = []
     for (t0, w), s in zip(voice, spec["scenes"]):
-        words += words_timed(s["vo"], t0, K._dur(w))
+        words += words_timed(s["vo"], t0, w if estime else K._dur(w))
     ch = caption_chunks(words)
     caps = [(c, (ch[i + 1][0][1] if i + 1 < len(ch) else total)) for i, c in enumerate(ch)]
     page = LAYOUTS[spec.get("layout", theme.get("layout"))](spec, theme, starts, durs, caps, total)
-    hp = os.path.join(tmp, "m.html"); open(hp, "w").write(page)
+    hp = os.path.join(tmp, "m.html"); open(hp, "w", encoding="utf-8").write(page)
+    return spec, page, hp, starts, durs, total, ([] if estime else voice)
+
+def build(spec_path, out):
+    tmp = tempfile.mkdtemp()
+    spec, page, hp, starts, durs, total, voice = prepare(spec_path, tmp)
+    try:  # audit automatique (texte trop petit, hors zones sûres, hook tardif) : avertit sans bloquer
+        import audit as A
+        A.afficher(A.auditer(hp, starts, total), spec_path)
+    except Exception as e:
+        print("audit non réalisé :", e)
     fr = os.path.join(tmp, "fr"); os.makedirs(fr)
     asyncio.run(K._frames(hp, fr, total))
     silent = os.path.join(tmp, "v.mp4")
@@ -1616,10 +1675,14 @@ def build(spec_path, out):
     dl = "".join(f"[{i+3}]adelay={int(t*1000)}|{int(t*1000)}[v{i}];" for i, (t, _) in enumerate(voice))
     vs = "".join(f"[v{i}]" for i in range(len(voice)))
     D = total
-    fc = (dl + f"{vs}amix=inputs={len(voice)}:normalize=0:duration=longest,apad=whole_dur={D+4},loudnorm=I=-15:TP=-1.5,atrim=0:{D}[vo];"
-          f"[vo]asplit=2[voa][sc];[1]apad=whole_dur={D+1},atrim=0:{D},afade=t=out:st={D-1.5}:d=1.5,volume=0.25[m];"
-          f"[m][sc]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[md];[2]atrim=0:{D},volume=0.9[fx];"
-          f"[voa][md][fx]amix=inputs=3:normalize=0:duration=longest,alimiter=limit=0.95,apad=whole_dur={D},atrim=0:{D}[a]")
+    if voice:
+        fc = (dl + f"{vs}amix=inputs={len(voice)}:normalize=0:duration=longest,apad=whole_dur={D+4},loudnorm=I=-15:TP=-1.5,atrim=0:{D}[vo];"
+              f"[vo]asplit=2[voa][sc];[1]apad=whole_dur={D+1},atrim=0:{D},afade=t=out:st={D-1.5}:d=1.5,volume=0.25[m];"
+              f"[m][sc]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[md];[2]atrim=0:{D},volume=0.9[fx];"
+              f"[voa][md][fx]amix=inputs=3:normalize=0:duration=longest,alimiter=limit=0.95,apad=whole_dur={D},atrim=0:{D}[a]")
+    else:  # reel sans voix (layout boucle) : musique plus présente + bruitages, pas de fondu final (la boucle doit raccorder)
+        fc = (f"[1]apad=whole_dur={D+1},atrim=0:{D},volume=0.45[m];[2]atrim=0:{D},volume=0.6[fx];"
+              f"[m][fx]amix=inputs=2:normalize=0:duration=longest,loudnorm=I=-16:TP=-1.5,alimiter=limit=0.95,apad=whole_dur={D},atrim=0:{D}[a]")
     subprocess.run(["ffmpeg", "-v", "error", "-y"] + inputs + ["-filter_complex", fc, "-map", "0:v", "-map", "[a]", "-c:v", "copy",
                     "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", out], check=True)
     shutil.rmtree(tmp)

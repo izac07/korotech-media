@@ -1,0 +1,13 @@
+{
+  "id": "PILOTE-BOUCLE-01",
+  "layout": "boucle",
+  "handle": "lia.entrepreneur",
+  "music_seed": 301,
+  "pas": 0.3,
+  "tenue": 1.2,
+  "couleurs": [["#fbedf1", "#8d0323"], ["#16181f", "#ffffff"]],
+  "scenes": [
+    {"type": "phrase", "texte": "Plus tu portes seul ce que l'IA ferait,"},
+    {"type": "phrase", "texte": "plus ça coûte cher de rentrer chez toi."}
+  ]
+}

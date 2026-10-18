@@ -10,6 +10,7 @@ URL publique : `https://izac07.github.io/korotech-media/comptes/<slug>/posts/<do
 - Légende : accroche + bénéfice + appel à l'action + 5 à 7 hashtags de la niche (pas de hashtags génériques type #instagood).
 - Pas de contenu identique entre comptes : chaque compte a ses sujets, son ton, son visuel.
 - Reels : 40-45 s (100-120 mots de voix off), format motion de `tools/MOTION.md`, voix off ElevenLabs (scénario Make 9977445, champ `voix` = ID indiqué dans le README du compte), chemins `comptes/<slug>/posts/<dossier>/vo_<k>.mp3`.
+- Contrôles obligatoires (depuis le 18/10/2026, détail dans `tools/MOTION.md` « Chaîne de contrôle ») : `tools/journal.py` (sujet pas déjà traité, 2 reels du jour différents), `tools/verifie.py` (0 erreur avant de payer les voix), `tools/audit.py --estime` (hook ≤ 0,5 s, zones sûres), puis `tools/journal.py ajouter` après l'ajout à la file. Bilan : `tools/bilan.py` (tous les comptes, x fois la médiane).
 
 ## File d'attente
 Même Google Sheet que Korotech, scénario 9971858 avec en plus `compte` = ID Instagram du compte (colonne K). ID des posts préfixés par le compte (ex. `LIA-C01`, `ZSF-R01`).

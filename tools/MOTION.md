@@ -15,6 +15,16 @@ python3 tools/motion.py <dossier>/motion.json <dossier>/reel.mp4
 - Vérifie visuellement 3 images du MP4 (ffmpeg -ss … -frames:v 1) : texte qui déborde ou chevauche → raccourcis le texte.
 - Champs communs : `"id"`, `"layout"`, `"music_seed"`, `"handle"` (pseudo sans @), `"scenes"`.
 
+## Chaîne de contrôle (depuis le 18/10/2026) — dans cet ordre
+Python **3.12 minimum** (`motion.py` ne tourne pas en 3.11). Machine neuve / routine cloud : `source tools/setup.sh` puis utiliser `"$PY"` à la place de `python3`.
+1. **Sujet** : `"$PY" tools/journal.py sujets --compte <handle>` puis `"$PY" tools/journal.py verifier --compte <handle> --sujet "…"` (alerte si sujet déjà traité).
+2. **motion.json écrit** → `"$PY" tools/verifie.py <dossier>/motion.json` : 0 ERREUR obligatoire, corriger les ATTENTION. Un champ manquant n'est jamais anodin : le moteur afficherait le texte par défaut de l'exemple (ex. « STOP AUX 100 CRUNCHS »). Vérifie aussi 100-120 mots, longueurs, mots déclencheurs présents dans `vo`, règles du compte, `music_seed` jamais utilisé.
+3. **Avant les voix** → `"$PY" tools/audit.py <dossier>/motion.json --estime --planche /tmp/audit.jpg` puis lire la planche (outil Read). Hook lisible ≤ 0,5 s, texte ≥ 30 px, rien sous les boutons d'Instagram (x > 960, y 1000-1750).
+4. Voix (scénario 9977445) → rendu `"$PY" tools/motion.py …` : l'audit est relancé tout seul avec les vraies durées et s'affiche avant le rendu.
+5. **Après ajout à la file** → `"$PY" tools/journal.py ajouter <dossier>/motion.json --date "AAAA-MM-JJ HH:MM" --pilier "<pilier du README>" --formule <pov|question|stop|secret|chiffre|avant-apres|mythe|liste|defi|histoire|demo|erreur> --sujet "…"` (remplit `journal-reels.csv` ET le journal.md du compte, et contrôle que les 2 reels du jour ne se ressemblent pas : pas le même pilier ET la même formule).
+Bilan du dimanche : `"$PY" tools/bilan.py --ecrire` (tous les comptes, x fois la médiane, par pilier et par formule de hook).
+Zone connue : les sous-titres de tous les layouts sont vers y = 1570-1800, dans la zone pseudo/légende d'Instagram (l'audit le signale) — à décider par Goat avant de les remonter.
+
 | Compte | layout | voix |
 |---|---|---|
 | korotech_fr | `cheatsheet` | Brian |
@@ -24,8 +34,9 @@ python3 tools/motion.py <dossier>/motion.json <dossier>/reel.mp4
 | mentaldacier2030 | `manifeste3d` | Brian |
 | revenus_malins | `malin` (par défaut, validé le 18/10) ou `notion` (méthode en 5 étapes) | Brian |
 
-Exemples validés (à copier comme base) :
-`posts/x04-3-ia-revisions/motion.json`, `comptes/lia-entrepreneur/posts/r02-iceberg/motion.json`, `comptes/zerosallefit/posts/r02-abdos-circuit/motion.json`, `comptes/coeurlucide/posts/r02-message-valeur/motion.json`, `comptes/mentaldacier/posts/r03-reset-30j/motion.json`, `comptes/revenus-malin/posts/r02-premiers-100/motion.json`.
+Exemples validés et COMPLETS (à copier comme base ; ils passent `tools/verifie.py`) :
+`posts/x04-3-ia-revisions/motion.json`, `comptes/lia-entrepreneur/posts/r06-mythe-prompt-magique/motion.json` (iceberg), `comptes/lia-entrepreneur/posts/r04-systeme-claude/motion.json` (claudeflow), `comptes/zerosallefit/posts/r03-circuit-jambes/motion.json`, `comptes/coeurlucide/posts/r03-reparer-dispute/motion.json`, `comptes/mentaldacier/posts/r03-reset-30j/motion.json`, `comptes/revenus-malin/posts/r04-budget-50-30-20/motion.json`.
+Ne PAS copier `r02-iceberg` ni `r02-abdos-circuit` : ils n'ont pas les champs (ils s'appuient sur les textes par défaut du moteur).
 
 ---
 
@@ -99,3 +110,8 @@ Exemple validé : `comptes/revenus-malin/posts/r04-budget-50-30-20/motion.json`.
 - `math` (chiffres en cases qui défilent) : `title`, `cells` = 2 ou 3 `[libellé, "1 500 €", opérateur]` (opérateur "−", "+", "=" devant la 2e/3e case ; la dernière case est surlignée), `note`
 - `cta` : `big`, `ctas` (2 lignes), `note`
 Règles : information générale uniquement, jamais de promesse de rendement ni de conseil d'achat d'un placement précis ; pas de taux ou plafonds qui changent sans vérifier ; mettre « Information générale, pas un conseil personnalisé » dans la note du `cta` dès qu'on parle d'épargne/placements. Les chiffres d'exemple sont présentés comme des exemples.
+
+## boucle (PILOTE, tous comptes) — boucle courte de 6 à 10 s, sans voix
+Exemple : `tools/exemples/boucle-exemple/motion.json`. À tester sur 2-3 posts par semaine maximum, à côté des 40-45 s, puis comparer au bilan (x médiane).
+Champs du haut : `pas` (secondes par mot, défaut 0.3), `tenue` (s de phrase complète, défaut 1.2), `couleurs` = 2 paires `[fond, texte]`, optionnels `police`, `taille` (px, défaut 120).
+Scènes : 1 à 3 `{"type":"phrase","texte":"…"}`, 9 mots max par phrase (`**mot**` = souligné). Mécanique tirée d'une source mesurée : un mot par pas, le fond bascule à chaque pas, coupes sèches, texte visible dès la 1re image, la fin retombe sur la 1re couleur pour boucler. Musique + bruitages, pas de voix ni de sous-titres. Mêmes règles éditoriales que le compte (aucun chiffre inventé).

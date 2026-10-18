@@ -37,6 +37,9 @@ FONT_FILES = {  # nom CSS -> [(fichier, weight, style)]
     "Anton": [("anton-latin-400-normal.woff2", 400, "normal")],
     "Caveat": [("caveat-latin-500-normal.woff2", 500, "normal"), ("caveat-latin-700-normal.woff2", 700, "normal")],
     "DM Serif Display": [("dm-serif-display-latin-400-normal.woff2", 400, "normal"), ("dm-serif-display-latin-400-italic.woff2", 400, "italic")],
+    # layout cheatsheet (Korotech) : embarquées depuis le 18/10/2026, absentes des machines cloud (@fontsource 5.1.0, OFL)
+    "Poppins": [("poppins-latin-600-normal.woff2", 600, "normal"), ("poppins-latin-700-normal.woff2", 700, "normal")],
+    "Inter": [("inter-latin-600-normal.woff2", 600, "normal"), ("inter-latin-700-normal.woff2", 700, "normal"), ("inter-latin-800-normal.woff2", 800, "normal")],
 }
 
 def _font_faces(names):
@@ -156,10 +159,18 @@ def car_slide(s):
         return f"<h1 style='font-size:{s.get('size',100)}px;margin-top:120px'>{rich(s['title'])}</h1><div class='ctas'>{rows}</div><div class='note'>{esc(s.get('note',''))}</div>"
     raise ValueError(t)
 
+def chromium_args(extra=None):
+    """Options de lancement de Chromium. PW_CHROMIUM (exporté par tools/setup.sh) = chemin d'un Chromium déjà
+    installé, utilisé quand Playwright ne peut pas télécharger le sien (routines cloud, réseau filtré)."""
+    kw = {"args": extra} if extra else {}
+    if os.environ.get("PW_CHROMIUM"):
+        kw["executable_path"] = os.environ["PW_CHROMIUM"]
+    return kw
+
 async def _shots(pages, out_dir, w, h):
     from playwright.async_api import async_playwright
     async with async_playwright() as p:
-        b = await p.chromium.launch(); pg = await b.new_page(viewport={"width": w, "height": h})
+        b = await p.chromium.launch(**chromium_args()); pg = await b.new_page(viewport={"width": w, "height": h})
         for n, page in enumerate(pages, 1):
             await pg.set_content(page); await pg.wait_for_timeout(250)
             png = os.path.join(out_dir, f"slide_{n:02d}.png")
@@ -266,7 +277,7 @@ async def _frames(html_path, fr, dur, fps=30):
     from playwright.async_api import async_playwright
     async with async_playwright() as p:
         gl = "WebGLRenderer" in open(html_path).read()  # WebGL (3D) seulement : swiftshader ralentit les pages 2D
-        b = await p.chromium.launch(args=["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"] if gl else []); pg = await b.new_page(viewport={"width": 1080, "height": 1920})
+        b = await p.chromium.launch(**chromium_args(["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"] if gl else None)); pg = await b.new_page(viewport={"width": 1080, "height": 1920})
         await pg.goto("file://" + os.path.abspath(html_path)); await pg.wait_for_timeout(500)
         for i in range(int(dur * fps)):
             await pg.evaluate(f"render({i / fps})")

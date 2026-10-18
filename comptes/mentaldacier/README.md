@@ -1,6 +1,6 @@
 # Mental d'Acier — @mentaldacier2030
 
-- ID Instagram : (pas encore relié — publication manuelle)  ·  préfixe des posts : MDA
+- ID Instagram : 17841429867473189 (relié à Make le 17/10/2026)  ·  préfixe des posts : MDA
 - Créneaux : 07:30 et 21:30 — 2 REELS par jour (décision de Goat du 18/10/2026 : plus aucun carrousel)
 - Voix off : nPczCjzI2devNBz1zQrb (Brian)
 - Cible : 18-30 ans qui veulent plus de discipline (études, sport, projets). Tutoiement, ton direct, punchy.
