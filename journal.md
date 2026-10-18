@@ -20,7 +20,7 @@
 | 2026-10-15 20:30 | C08 | Carrousel | Parents : a-t-il copié sur ChatGPT ? 4 réflexes | — |
 | 2026-10-15 21:45 | R10 | Reel | Ta semaine organisée en 1 prompt | PLANNING |
 | 2026-10-19 19:15 (replanifié, prévu le 16/10) | R11 | Reel | Prédire les questions du prochain contrôle | CONTRÔLE |
-| 2026-10-19 12:15 (replanifié, prévu le 16/10) | C09 | Carrousel | Parents : aider en maths sans tout réexpliquer | — |
+| 2026-10-19 12:15 (replanifié, prévu le 16/10) | C09 | Carrousel (remplacé par R20, refusé le 18/10/2026) | Parents : aider en maths sans tout réexpliquer | — |
 | 2026-10-18 12:15 (replanifié, prévu le 16/10) | R12 | Reel | Mythe : relire son cours ne suffit pas (se tester) | — |
 | 2026-10-17 12:15 (replanifié, prévu le 16/10) | R13 | Reel | Apprendre l'espagnol avec sa série | SÉRIE |
 | 2026-10-17 19:15 (replanifié, prévu le 16/10) | C10 | Carrousel | La méthode Pomodoro avec l'IA | POMODORO |
@@ -36,6 +36,7 @@
 | 2026-10-24 12:15 | R18 | Reel | POV : tu comprends rien au prof, 3 astuces — motion cheatsheet | — |
 | 2026-10-24 19:15 | C15 | Carrousel | Apprendre un truc en 10 min par jour avec un plan IA | — |
 | 2026-10-18 19:15 | R19 | Reel | Lettre de motivation : 3 étapes pour qu'elle te ressemble — motion, remplace le carrousel C11 (plus de carrousels) | — |
+| 2026-10-19 12:15 | R20 | Reel | Parents : 3 réflexes pour aider en maths — motion, remplace le carrousel C09 (plus de carrousels) | — |
 
 ## Idées en réserve (nouvelle ligne mixée)
 Études : POV contrôle demain et rien révisé ; arrêter de surligner tout son cours ; réviser dans le bus ; la veille du bac ; erreurs de dissertation ; oral du bac de langue ; corriger son accent ; maths sans tricher ; schéma bilan.

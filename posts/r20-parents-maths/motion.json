@@ -1,0 +1,23 @@
+{
+ "id": "R20",
+ "layout": "cheatsheet",
+ "music_seed": 203,
+ "handle": "korotech_fr",
+ "scenes": [
+  {"type": "hook", "big": "3", "title": "**RÉFLEXES**", "sub": "pour l'aider en maths 🧮",
+   "vo": "Votre enfant bloque en maths, et vos cours sont loin ? Voici trois réflexes pour l'aider, sans tout réexpliquer."},
+  {"type": "pills", "num": "01", "name": "Il explique", "file": "Exercice_maths.pdf",
+   "pills": ["🗣️ Où il bloque", "✏️ Ce qu'il a tenté", "🤔 Ce qu'il pense"],
+   "text": "Lui d'abord → **vous ensuite**",
+   "vo": "Un : faites-le expliquer d'abord. Demandez-lui de vous montrer où il bloque. En expliquant, il se débloque parfois seul, et vous voyez où est la difficulté."},
+  {"type": "diagram", "num": "02", "name": "La méthode", "nodes": ["Énoncé", "Méthode", "Exemple"],
+   "text": "Pour vous, **pas à sa place**",
+   "vo": "Deux : comprenez la méthode. Demandez à l'IA d'expliquer, étape par étape, comment résoudre ce type d'exercice, sans faire l'exercice lui-même."},
+  {"type": "search", "num": "03", "name": "S'entraîner", "q": "3 exercices du même type ?",
+   "answers": ["Exercice 1 : facile", "Exercice 2 : moyen", "Exercice 3 : difficile"],
+   "text": "Corrigés **à part**",
+   "vo": "Trois : demandez trois exercices du même type, du plus facile au plus dur, avec les corrigés à part. Et vérifiez avec le manuel : l'IA peut se tromper, même en calcul."},
+  {"type": "cta", "ctas": ["🔖 Enregistrez pour plus tard", "📤 Partagez à un autre parent"],
+   "vo": "Enregistrez cette vidéo, et partagez-la à un autre parent. Vous n'avez pas à tout savoir."}
+ ]
+}
