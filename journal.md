@@ -25,7 +25,7 @@
 | 2026-10-17 12:15 (replanifié, prévu le 16/10) | R13 | Reel | Apprendre l'espagnol avec sa série | SÉRIE |
 | 2026-10-17 19:15 (replanifié, prévu le 16/10) | C10 | Carrousel | La méthode Pomodoro avec l'IA | POMODORO |
 | 2026-10-20 12:15 (replanifié, prévu le 16/10) | R14 | Reel | Oral d'anglais en mode vocal | ORAL |
-| 2026-10-18 19:15 (replanifié, prévu le 16/10) | C11 | Carrousel | Lettre de motivation qui te ressemble | LETTRE |
+| 2026-10-18 19:15 (replanifié, prévu le 16/10) | C11 | Carrousel (remplacé par R19, refusé le 18/10/2026) | Lettre de motivation qui te ressemble | LETTRE |
 | 2026-10-21 19:15 (replanifié, prévu le 16/10) | R15 | Reel | Parents : préparer la réunion parents-profs | RÉUNION |
 | 2026-10-20 19:15 (replanifié, prévu le 16/10) | C12 | Carrousel | Parents : l'IA et la vie privée de votre enfant | — |
 | 2026-10-21 12:15 (replanifié, prévu le 16/10) | R16 | Reel | Son cours en podcast | PODCAST |
@@ -35,6 +35,7 @@
 | 2026-10-23 19:15 | R17 | Reel | Message gênant : 3 réflexes avec l'IA avant d'envoyer — motion cheatsheet | — |
 | 2026-10-24 12:15 | R18 | Reel | POV : tu comprends rien au prof, 3 astuces — motion cheatsheet | — |
 | 2026-10-24 19:15 | C15 | Carrousel | Apprendre un truc en 10 min par jour avec un plan IA | — |
+| 2026-10-18 19:15 | R19 | Reel | Lettre de motivation : 3 étapes pour qu'elle te ressemble — motion, remplace le carrousel C11 (plus de carrousels) | — |
 
 ## Idées en réserve (nouvelle ligne mixée)
 Études : POV contrôle demain et rien révisé ; arrêter de surligner tout son cours ; réviser dans le bus ; la veille du bac ; erreurs de dissertation ; oral du bac de langue ; corriger son accent ; maths sans tricher ; schéma bilan.

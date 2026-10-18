@@ -1,0 +1,23 @@
+{
+ "id": "R19",
+ "layout": "cheatsheet",
+ "music_seed": 201,
+ "handle": "korotech_fr",
+ "scenes": [
+  {"type": "hook", "big": "3", "title": "**ÉTAPES**", "sub": "pour ta lettre de motiv ✍️",
+   "vo": "Ta lettre de motivation ressemble à celle de tout le monde ? Voici trois étapes pour qu'elle te ressemble, sans que l'IA l'écrive à ta place."},
+  {"type": "pills", "num": "01", "name": "Tes faits", "file": "Mes_faits.txt", "ext": "TXT",
+   "pills": ["🛠️ Un projet", "💼 Un job", "🔥 Une passion"],
+   "text": "Des faits → **pas de blabla**",
+   "vo": "Un : tes faits. Note en vrac trois expériences vraies : un projet, un job, une passion. Pas de phrases, juste ce que t'as vraiment fait."},
+  {"type": "diagram", "num": "02", "name": "Interview", "nodes": ["Question", "Réponse", "Tes mots"],
+   "text": "L'IA pose, **toi tu réponds**",
+   "vo": "Deux : fais-toi interviewer. Demande à l'IA cinq questions sur ton projet, une à la fois, sans écrire la lettre. Puis rédige toi-même avec tes réponses."},
+  {"type": "search", "num": "03", "name": "Relecture", "q": "Qu'est-ce qui est flou dans ma lettre ?",
+   "answers": ["Phrase trop générale", "Exemple à préciser", "Faute d'accord"],
+   "text": "Relis **sans réécrire**",
+   "vo": "Trois : la relecture. Demande-lui de signaler les phrases floues et les fautes, sans réécrire ton texte. Et lis bien la consigne de chaque formation."},
+  {"type": "cta", "ctas": ["🔖 Enregistre pour Parcoursup", "📤 Envoie à un pote en terminale"],
+   "vo": "Enregistre la vidéo, et envoie-la au pote qui galère sur sa lettre."}
+ ]
+}
