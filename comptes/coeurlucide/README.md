@@ -1,7 +1,7 @@
 # Cœur Lucide — @coeurlucide__
 
 - ID Instagram : 17841415150585724  ·  préfixe des posts : CL
-- Créneaux : 21:00 et 12:30 — 2 posts par jour dès le 19/10/2026 (1 reel motion + 1 carrousel par jour, en alternant les créneaux)
+- Créneaux : 21:00 et 12:30 — 2 REELS par jour (décision de Goat du 18/10/2026 : plus aucun carrousel)
 - Voix off : Xb7hH8MSUJpSbSDYk0k2 (Alice) — voix féminine, différente des autres comptes
 - Cible : Femmes et hommes 20-35 ans qui veulent des relations plus saines et plus de confiance en soi. Tutoiement, ton doux et lucide.
 - Promesse : Comprendre ce qui se joue dans tes relations, poser tes limites et reprendre confiance.

@@ -1,11 +1,11 @@
 # Comptes Instagram (multi-comptes)
 
 Chaque dossier `comptes/<slug>/` = un compte : `theme.json` (couleurs, polices, pseudo, ID Instagram), `README.md` (ligne éditoriale), `journal.md`, `posts/<dossier>/spec.json` + médias.
-Chaque compte a sa propre mise en page. CARROUSELS : champ `layout` du theme.json (défini dans `tools/layouts.py` : terminal, sport, messages, manifeste, fiche), rendu avec `python3 tools/korotech.py carrousel comptes/<slug>/posts/<dossier>/spec.json comptes/<slug>/posts/<dossier>` (le thème est détecté tout seul). REELS : uniquement le format motion design validé du compte, décrit dans `tools/MOTION.md` (fichier `motion.json`, rendu `python3 tools/motion.py <dossier>/motion.json <dossier>/reel.mp4`, voix `vo_<k>.mp3` dans le même dossier). Ne plus utiliser `korotech.py reel`. Ne pas réutiliser le layout d'un compte pour un autre.
+Chaque compte a sa propre mise en page. CARROUSELS (plus utilisés depuis le 18/10/2026, gardé pour référence) : champ `layout` du theme.json (défini dans `tools/layouts.py` : terminal, sport, messages, manifeste, fiche), rendu avec `python3 tools/korotech.py carrousel comptes/<slug>/posts/<dossier>/spec.json comptes/<slug>/posts/<dossier>` (le thème est détecté tout seul). REELS : uniquement le format motion design validé du compte, décrit dans `tools/MOTION.md` (fichier `motion.json`, rendu `python3 tools/motion.py <dossier>/motion.json <dossier>/reel.mp4`, voix `vo_<k>.mp3` dans le même dossier). Ne plus utiliser `korotech.py reel`. Ne pas réutiliser le layout d'un compte pour un autre.
 URL publique : `https://izac07.github.io/korotech-media/comptes/<slug>/posts/<dossier>/<fichier>`.
 
 ## Règles communes
-- Rythme (décision de Goat du 17/10/2026) : 2 posts par jour sur chaque compte dès le 19/10/2026 (les 2 créneaux du README) : 1 reel motion + 1 carrousel par jour, en alternant quel créneau a le reel d'un jour à l'autre. Soit 7 reels + 7 carrousels par semaine et par compte.
+- Rythme (décision de Goat du 18/10/2026) : 2 posts par jour sur chaque compte (les 2 créneaux du README), UNIQUEMENT DES REELS motion. Plus aucun carrousel. Soit 14 reels par semaine et par compte. Varier les sujets et les angles d'un reel à l'autre (les 2 reels d'une même journée ne doivent pas se ressembler).
 - Accroche forte, une seule idée par post, contenu exact et utile, aucun chiffre / test / témoignage inventé. Fin = action (enregistrer, partager, suivre, commenter si naturel ; jamais de promesse d'envoi en DM).
 - Légende : accroche + bénéfice + appel à l'action + 5 à 7 hashtags de la niche (pas de hashtags génériques type #instagood).
 - Pas de contenu identique entre comptes : chaque compte a ses sujets, son ton, son visuel.

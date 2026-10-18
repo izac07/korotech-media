@@ -25,10 +25,10 @@ URL publique d'un fichier : `https://izac07.github.io/korotech-media/<chemin>`
 
 | Créneau | Format | Pilier |
 |---|---|---|
-| 12:15 | Reel ou Carrousel (alterner d'un jour à l'autre) | Études malin le plus souvent |
-| 19:15 | l'autre format | Vie étudiante, IA au quotidien, Humour/POV ou Parents (tourner) |
+| 12:15 | Reel | Études malin le plus souvent |
+| 19:15 | Reel | Vie étudiante, IA au quotidien, Humour/POV ou Parents (tourner) |
 
-Sur une semaine (14 posts) : environ 7 reels et 7 carrousels ; 5-6 Études malin, 2-3 Vie étudiante, 2 IA au quotidien, 2 Humour/POV, 2 Parents.
+Sur une semaine (14 posts) : 14 REELS, plus aucun carrousel (décision de Goat du 18/10/2026) ; 5-6 Études malin, 2-3 Vie étudiante, 2 IA au quotidien, 2 Humour/POV, 2 Parents.
 Le stock R11-R16 / C09-C12 couvre du 17 au 21/10/2026.
 
 Production À LA SEMAINE : la tâche « Korotech - production de la semaine » tourne le samedi vers 01:00 et remplit les créneaux encore vides des 7 jours suivants (du dimanche au samedi suivant) — voir « Lire / corriger la file ».

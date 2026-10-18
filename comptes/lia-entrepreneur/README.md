@@ -1,7 +1,7 @@
 # L'IA Entrepreneur — @lia.entrepreneur
 
 - ID Instagram : 17841420788582578  ·  préfixe des posts : LIA
-- Créneaux : 12:30 et 18:30 — 2 posts par jour dès le 19/10/2026 (1 reel motion + 1 carrousel par jour, en alternant les créneaux)
+- Créneaux : 12:30 et 18:30 — 2 REELS par jour (décision de Goat du 18/10/2026 : plus aucun carrousel)
 - Voix off : nPczCjzI2devNBz1zQrb (Brian)
 - Cible : Freelances, indépendants, créateurs et gérants de TPE (25-45 ans) qui veulent automatiser leur Instagram et leur business avec Claude. Tutoiement.
 - Concept (décision de Goat du 17/10/2026, inspiré de comptes type « business avec Claude ») : « J'automatise mon Instagram avec Claude, je te montre comment ». On montre le VRAI système de Goat (Claude écrit et rend les posts, file d'attente avec veto, Make publie, bilan du dimanche) — coulisses réelles, jamais de résultat inventé.
@@ -15,7 +15,7 @@
 
 ## Formats
 - Reels : layout `claudeflow` (coulisses : conversation Claude → file d'attente → publication) en priorité ; layout `iceberg` pour les mythes / vérités. Voir tools/MOTION.md.
-- Carrousels : layout terminal du compte.
+- Carrousels : PLUS DE CARROUSELS (décision du 18/10/2026).
 
 ## Règles spécifiques
 - Pas de promesse de revenus ni de « deviens riche avec l'IA ». Pas de chiffres d'abonnés/vues inventés : uniquement ce qui est vrai chez Goat.

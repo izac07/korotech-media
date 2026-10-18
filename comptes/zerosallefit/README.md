@@ -1,7 +1,7 @@
 # Zéro Salle — @zerosallefit
 
 - ID Instagram : 17841467969534543  ·  préfixe des posts : ZSF
-- Créneaux : 18:00 et 07:30 — 2 posts par jour dès le 19/10/2026 (1 reel motion + 1 carrousel par jour, en alternant les créneaux)
+- Créneaux : 18:00 et 07:30 — 2 REELS par jour (décision de Goat du 18/10/2026 : plus aucun carrousel)
 - Voix off : nPczCjzI2devNBz1zQrb (Brian)
 - Cible : Débutants et personnes reprenant le sport, 20-40 ans, sans salle ni matériel. Tutoiement.
 - Promesse : Des séances maison simples, sans matériel, pour bouger régulièrement et progresser.
