@@ -1,0 +1,51 @@
+{
+ "id": "CL-R04",
+ "layout": "nightchat",
+ "music_seed": 207,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Les bons signes sont souvent les plus discrets 🤍",
+   "vo": "On parle beaucoup des red flags. Mais les green flags, on ne les remarque pas assez. En voici quelques-uns."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Je peux pas ce soir, je suis épuisé·e.",
+    "Pas de souci, repose-toi 🤍 On se voit demain ?"
+   ],
+   "sent": "Merci de comprendre 🙏",
+   "ghost": "Vu 21:48",
+   "vo": "Premier green flag : tu peux dire non sans te justifier pendant dix minutes, et sans que ça crée un drame. L'autre comprend, tout simplement."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Hier on s'est mal compris, on en reparle ?",
+    "Je t'avais dit que j'appellerais à 20 h, je suis là.",
+    "Profite de tes amis, tu me racontes après 🤍"
+   ],
+   "vo": "Une dispute qui finit par une solution, pas par des jours de silence. Des petites promesses tenues. Et ta vie qui garde sa place : tes amis, tes projets."
+  },
+  {
+   "type": "check",
+   "title": "Avec cette personne :",
+   "items": [
+    "Tu peux dire non",
+    "Tu restes toi-même",
+    "Tu te sens calme"
+   ],
+   "vo": "Le plus discret : avec cette personne, tu n'as pas besoin de jouer un rôle, ni de surveiller chaque mot. Tu te sens calme."
+  },
+  {
+   "type": "cta",
+   "last": "Tu mérites le calme 🤍",
+   "ctas": [
+    "🔖 Garde-le pour t'en souvenir",
+    "↗️ Envoie-le à quelqu'un qui doute"
+   ],
+   "vo": "Tu mérites une relation où tu te sens calme. Enregistre ce message pour t'en souvenir, et envoie-le à quelqu'un qui en a besoin."
+  }
+ ]
+}
