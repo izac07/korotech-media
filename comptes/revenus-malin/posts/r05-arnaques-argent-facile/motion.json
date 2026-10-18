@@ -1,0 +1,102 @@
+{
+ "id": "RM-R05",
+ "layout": "malin",
+ "music_seed": 206,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "L'argent<br>**facile** ?",
+   "sub": "4 arnaques à reconnaître en 40 secondes",
+   "vo": "On te promet de l'argent facile en ligne ? Voici quatre arnaques à reconnaître avant de te faire avoir."
+  },
+  {
+   "type": "list",
+   "title": "Les **4 arnaques**",
+   "items": [
+    [
+     "Payé pour liker",
+     "puis on te demande un dépôt"
+    ],
+    [
+     "Argent qui transite",
+     "risque de complicité de blanchiment"
+    ],
+    [
+     "Formation miracle",
+     "revenus « garantis »"
+    ],
+    [
+     "Gagner en recrutant",
+     "pas de vrai produit à vendre"
+    ]
+   ],
+   "cue": [
+    "un",
+    "deux",
+    "trois",
+    "quatre"
+   ],
+   "vo": "Un : les missions payées pour liker, qui finissent par te demander un dépôt. Deux : l'argent à faire transiter par ton compte. Trois : la formation miracle aux revenus garantis. Quatre : gagner surtout en recrutant."
+  },
+  {
+   "type": "list",
+   "title": "Les **signaux** d'alarme",
+   "items": [
+    [
+     "Payer pour travailler",
+     "dépôt, « frais de déblocage »"
+    ],
+    [
+     "Gains garantis",
+     "personne ne peut les promettre"
+    ],
+    [
+     "Pression du temps",
+     "« plus que 2 places »"
+    ]
+   ],
+   "cue": [
+    "payer",
+    "gains",
+    "pression"
+   ],
+   "vo": "La règle : un vrai job ne te demande jamais de payer pour travailler. Méfie-toi aussi des gains garantis et de la pression du temps."
+  },
+  {
+   "type": "list",
+   "title": "Un **doute** ?",
+   "items": [
+    [
+     "Ne paie rien",
+     "aucun dépôt, aucuns « frais »"
+    ],
+    [
+     "Nom + « arnaque »",
+     "cherche avant de t'engager"
+    ],
+    [
+     "cybermalveillance.gouv.fr",
+     "aide et conseils officiels"
+    ]
+   ],
+   "cue": [
+    "paie",
+    "cherche",
+    "cybermalveillance"
+   ],
+   "vo": "Un doute ? Ne paie rien, cherche le nom de l'offre avec le mot arnaque, et renseigne-toi sur cybermalveillance.gouv.fr.",
+   "say": "Un doute ? Ne paie rien, cherche le nom de l'offre avec le mot arnaque, et renseigne-toi sur cybermalveillance point gouv point f r."
+  },
+  {
+   "type": "cta",
+   "big": "Protège<br>**ton argent.**",
+   "ctas": [
+    "🔖 Enregistre la liste",
+    "↗️ Partage à un proche qui cherche un complément"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Enregistre la liste, et partage-la à un proche qui cherche un complément de revenus."
+  }
+ ]
+}
