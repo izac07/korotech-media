@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R07",
+ "layout": "manifeste3d",
+ "music_seed": 216,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 7
+ },
+ "timeline": [
+  "J1-2",
+  "J3-4",
+  "J5-6",
+  "J7"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "7",
+   "unit": "JOURS",
+   "line": "**pour une routine du matin**<br>sans te lever à 5 h.",
+   "sub": "à ton heure",
+   "vo": "Sept jours pour construire une routine du matin, sans te lever à cinq heures."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J7",
+   "notifs": [
+    "⏰ Snooze ×3",
+    "📱 Scroll au lit",
+    "🏃 En retard, déjà stressé"
+   ],
+   "kicker": "ce qui compte",
+   "card_word": "régularité",
+   "no": "se lever à 5 h",
+   "yes": "la régularité",
+   "vo": "Avant : trois snooze, le scroll au lit, et la course. Pas besoin de te lever à cinq heures : ce qui compte, c'est la régularité."
+  },
+  {
+   "type": "weeks",
+   "word": "jours",
+   "weeks": [
+    [
+     "JOURS 1-2",
+     "📵 Pas de téléphone 15 min",
+     ""
+    ],
+    [
+     "JOURS 3-4",
+     "💧 Un verre d'eau",
+     "☀️ De la lumière"
+    ]
+   ],
+   "vo": "Jours un et deux : pas de téléphone pendant les quinze premières minutes. Jours trois et quatre : ajoute un verre d'eau, et ouvre les volets."
+  },
+  {
+   "type": "weeks",
+   "word": "jours",
+   "weeks": [
+    [
+     "JOURS 5-6",
+     "🤸 Bouge 5 minutes",
+     ""
+    ],
+    [
+     "JOURS 7+",
+     "🎯 Ta priorité n°1",
+     "✍️ Écrite, puis attaquée"
+    ]
+   ],
+   "vo": "Jours cinq et six : bouge cinq minutes, étirements ou petite marche. Jours sept et suivants : écris ta priorité numéro un, et commence par elle."
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "7",
+   "obj": "Ta journée commence par **tes priorités.**",
+   "ctas": [
+    "🔖 ENREGISTRE LA ROUTINE",
+    "💬 COMMENTE « DEMAIN »"
+   ],
+   "vo": "Adapte l'heure à ta vie. Enregistre la routine, et commente demain si tu la testes."
+  }
+ ]
+}
