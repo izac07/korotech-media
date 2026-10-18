@@ -1,0 +1,74 @@
+{
+ "id": "LIA-R08",
+ "layout": "iceberg",
+ "music_seed": 217,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "cmd": "./reveler --premiere-reponse",
+   "top": "ce que tu acceptes",
+   "bottom": "ce qu'il fallait demander",
+   "vo": "Tu prends la première réponse de l'IA telle quelle ? Voici ce qu'il fallait lui demander."
+  },
+  {
+   "type": "surface",
+   "labels": [
+    "réponse générique",
+    "ton qui sonne faux",
+    "beaucoup trop long"
+   ],
+   "text": "LA 1RE RÉPONSE",
+   "vo": "En surface : une réponse générique, un ton qui sonne faux, et un texte trop long. Et tu te dis que l'IA est nulle."
+  },
+  {
+   "type": "process",
+   "steps": [
+    "FORMAT",
+    "VARIANTES",
+    "RELECTURE"
+   ],
+   "chaos": "BLABLA",
+   "ok": "réponse utilisable",
+   "text": "ITÈRE, N'ACCEPTE PAS",
+   "vo": "Sous l'eau : la première réponse est un brouillon. Précise le format, demande des variantes, puis relis."
+  },
+  {
+   "type": "logs",
+   "logs": [
+    [
+     "« écris un mail » · générique",
+     "err"
+    ],
+    [
+     "accepté tel quel · ton robot",
+     "err"
+    ],
+    [
+     "relance 1 : 5 lignes max",
+     "ok"
+    ],
+    [
+     "relance 2 : 3 variantes",
+     "ok"
+    ],
+    [
+     "relance 3 : plus direct",
+     "ok"
+    ],
+    [
+     "tu choisis, tu ajustes",
+     "item"
+    ]
+   ],
+   "text": "3 RELANCES QUI CHANGENT TOUT",
+   "vo": "Relance un : plus court, cinq lignes maximum. Relance deux : donne-moi trois variantes. Relance trois : plus direct, sans formules toutes faites. Tu choisis, tu ajustes."
+  },
+  {
+   "type": "cta",
+   "task": "3 RELANCES",
+   "text": "AVANT D'ACCEPTER",
+   "vo": "Et relis toujours ce que l'IA produit avant de l'utiliser. Enregistre la vidéo, et suis-moi pour d'autres coulisses."
+  }
+ ]
+}
