@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R06",
+ "layout": "manifeste3d",
+ "music_seed": 215,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "TÂCHE",
+  "short": "T",
+  "max": 9
+ },
+ "timeline": [
+  "T1",
+  "T2-4",
+  "T5-9",
+  "SOIR"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "9",
+   "unit": "TÂCHES",
+   "line": "**maximum par jour.**<br>la méthode 1-3-5.",
+   "sub": "pas une de plus",
+   "vo": "Neuf tâches maximum par jour. Pas une de plus. C'est la méthode un, trois, cinq."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · 25 TÂCHES",
+   "bottom": "OBJECTIF · 9 MAX",
+   "notifs": [
+    "📋 25 tâches à faire",
+    "✅ 3 faites (les faciles)",
+    "😩 « J'ai rien fait »"
+   ],
+   "kicker": "le vrai problème",
+   "card_word": "problème",
+   "no": "une liste infinie",
+   "yes": "9 tâches choisies",
+   "vo": "Avant : une liste de vingt-cinq tâches, impossible à finir. Tu fais les plus faciles, et tu finis la journée avec l'impression d'avoir échoué. Le problème, c'est la liste."
+  },
+  {
+   "type": "weeks",
+   "word": "règle",
+   "weeks": [
+    [
+     "RÈGLE 1",
+     "🎯 1 grosse tâche",
+     ""
+    ],
+    [
+     "RÈGLE 2",
+     "⚖️ 3 moyennes",
+     "🧩 5 petites"
+    ]
+   ],
+   "vo": "Règle un : une seule grosse tâche importante. Règle deux : trois tâches moyennes, et cinq petites. Le reste attend demain."
+  },
+  {
+   "type": "weeks",
+   "word": "règle",
+   "weeks": [
+    [
+     "RÈGLE 3",
+     "🌅 La grosse en premier",
+     ""
+    ],
+    [
+     "RÈGLE 4",
+     "📝 La liste la veille",
+     "⏱ 5 minutes"
+    ]
+   ],
+   "vo": "Règle trois : la grosse tâche en premier, quand ton énergie est au plus haut. Règle quatre : écris ta liste la veille, en cinq minutes."
+  },
+  {
+   "type": "cta",
+   "kicker": "TÂCHES",
+   "big": "9",
+   "obj": "Moins de tâches. **Plus de fait.**",
+   "ctas": [
+    "🔖 ENREGISTRE LA MÉTHODE",
+    "💬 COMMENTE « 1-3-5 »"
+   ],
+   "vo": "Pas fini ? Reporte, sans culpabiliser. Enregistre la méthode, et commente un trois cinq si tu l'essaies demain."
+  }
+ ]
+}
