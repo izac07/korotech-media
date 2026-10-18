@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R05",
+ "layout": "manifeste3d",
+ "music_seed": 202,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 7
+ },
+ "timeline": [
+  "J1",
+  "J2-3",
+  "J4-6",
+  "J7"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "7",
+   "unit": "JOURS",
+   "line": "**avec la règle des 2 minutes**<br>pour arrêter de repousser.",
+   "sub": "commencer, c'est le plus dur",
+   "vo": "Sept jours avec la règle des deux minutes, pour arrêter de repousser ce que tu dois faire."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J7",
+   "notifs": [
+    "📌 Réviser : reporté à demain",
+    "🏃 Sport : « lundi, promis »",
+    "📚 Lecture : 0 page"
+   ],
+   "kicker": "principe",
+   "card_word": "principe",
+   "no": "attendre d'être motivé",
+   "yes": "commencer petit",
+   "vo": "Avant : tu attends d'être motivé. Le principe, popularisé par James Clear dans Atomic Habits : une habitude doit pouvoir commencer en deux minutes."
+  },
+  {
+   "type": "weeks",
+   "word": "étape",
+   "weeks": [
+    [
+     "ÉTAPE 1",
+     "🎯 Choisis UNE habitude",
+     ""
+    ],
+    [
+     "ÉTAPE 2",
+     "✂️ Sa version 2 minutes",
+     "📖 Lire → 1 page"
+    ]
+   ],
+   "vo": "Étape un : choisis une seule habitude. Étape deux : réduis-la à deux minutes. Lire devient lire une page, courir devient mettre tes baskets."
+  },
+  {
+   "type": "weeks",
+   "word": "étape",
+   "weeks": [
+    [
+     "ÉTAPE 3",
+     "⏰ Même moment chaque jour",
+     ""
+    ],
+    [
+     "ÉTAPE 4",
+     "➕ Continue si tu veux",
+     "✅ Sinon, 2 min suffisent"
+    ]
+   ],
+   "vo": "Étape trois : même moment chaque jour. Étape quatre : continue si tu veux. Sinon, deux minutes suffisent : promesse tenue."
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "7",
+   "obj": "Objectif : que commencer devienne **automatique.**",
+   "ctas": [
+    "🔖 ENREGISTRE LE PLAN",
+    "💬 COMMENTE « 2 MIN »"
+   ],
+   "vo": "Objectif au jour sept : que commencer devienne automatique. Enregistre le plan, et commente deux minutes si tu t'y mets."
+  }
+ ]
+}
