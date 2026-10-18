@@ -1,0 +1,51 @@
+{
+ "id": "CL-R05",
+ "layout": "nightchat",
+ "music_seed": 209,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Tu dis oui… mais tu le penses vraiment ? 🤍",
+   "vo": "Tu cèdes souvent pour éviter le conflit ? Voici comment faire la différence entre un compromis et un sacrifice."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "On va chez mes parents ce week-end ?",
+    "On y était déjà il y a deux semaines…"
+   ],
+   "sent": "Ok, comme tu veux.",
+   "ghost": "Vu 19:32",
+   "vo": "Le sacrifice, c'est quand c'est toujours la même personne qui cède. Souvent sans le dire, juste pour éviter la dispute."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Ce week-end, j'aimerais qu'on se garde du temps à nous.",
+    "Ok ! Et on passe voir mes parents dimanche midi ?",
+    "Deal 🤍"
+   ],
+   "vo": "Le compromis, c'est chacun qui fait un pas. Tu cèdes sur un point, l'autre aussi, et personne ne disparaît. Vous trouvez une solution à deux."
+  },
+  {
+   "type": "check",
+   "title": "Pose-toi la question :",
+   "items": [
+    "Par envie, ou par peur ?",
+    "Je compte les fois où je cède ?",
+    "Je me sens vidé·e après ?"
+   ],
+   "vo": "Demande-toi : est-ce que je dis oui par envie, ou par peur de sa réaction ? Si tu comptes les fois où tu cèdes, c'est un signe à écouter."
+  },
+  {
+   "type": "cta",
+   "last": "Céder, oui. T'effacer, non 🤍",
+   "ctas": [
+    "🔖 Garde-le pour y repenser",
+    "↗️ Envoie-le à quelqu'un qui cède tout le temps"
+   ],
+   "vo": "Céder, oui. T'effacer, non. Enregistre ce message pour y repenser, et envoie-le à quelqu'un qui cède tout le temps, sans rien dire."
+  }
+ ]
+}
