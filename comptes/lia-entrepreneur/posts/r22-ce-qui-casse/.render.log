@@ -1,0 +1,13 @@
+audit comptes/lia-entrepreneur/posts/r22-ce-qui-casse/motion.json : 11 point(s)
+  ATTENTION texte dans la zone du pseudo/légende (y 1581 > 1500) : 3.5 s « sous-titres » (x30 instants)
+  ATTENTION texte de 28 px (min 30) : 12.2 s « toi » (x2 instants)
+  ATTENTION texte de 28 px (min 30) : 12.2 s « claude » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 17.5 s « JOUR » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 17.5 s « HEURE » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 17.5 s « POST » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 17.5 s « STATUT » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 31.1 s « avant l'envoi » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 31.1 s « tu relis » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 31.1 s « si ça casse » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 31.1 s « vite » (x2 instants)
+duration 42.63

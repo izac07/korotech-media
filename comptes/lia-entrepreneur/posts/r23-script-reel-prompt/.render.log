@@ -1,0 +1,13 @@
+audit comptes/lia-entrepreneur/posts/r23-script-reel-prompt/motion.json : 11 point(s)
+  ATTENTION texte dans la zone du pseudo/légende (y 1581 > 1500) : 3.4 s « sous-titres » (x34 instants)
+  ATTENTION texte de 28 px (min 30) : 12.0 s « toi » (x2 instants)
+  ATTENTION texte de 28 px (min 30) : 12.0 s « claude » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 17.4 s « JOUR » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 17.4 s « HEURE » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 17.4 s « POST » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 17.4 s « STATUT » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 31.6 s « le modèle » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 31.6 s « Claude » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 31.6 s « relis » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 31.6 s « tourné » (x2 instants)
+duration 41.42

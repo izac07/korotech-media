@@ -1,0 +1,13 @@
+audit comptes/lia-entrepreneur/posts/r19-client-mecontent/motion.json : 11 point(s)
+  ATTENTION texte dans la zone du pseudo/légende (y 1581 > 1500) : 4.4 s « sous-titres » (x30 instants)
+  ATTENTION texte de 28 px (min 30) : 14.4 s « toi » (x2 instants)
+  ATTENTION texte de 28 px (min 30) : 14.4 s « claude » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 20.2 s « JOUR » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 20.2 s « HEURE » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 20.2 s « POST » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 20.2 s « STATUT » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 32.6 s « reçu » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 32.6 s « propose » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 32.6 s « relis » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 32.6 s « répondu » (x2 instants)
+duration 44.49

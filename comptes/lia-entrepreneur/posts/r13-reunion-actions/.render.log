@@ -1,0 +1,13 @@
+audit comptes/lia-entrepreneur/posts/r13-reunion-actions/motion.json : 11 point(s)
+  ATTENTION texte dans la zone du pseudo/légende (y 1581 > 1500) : 3.7 s « sous-titres » (x28 instants)
+  ATTENTION texte de 28 px (min 30) : 13.1 s « toi » (x2 instants)
+  ATTENTION texte de 28 px (min 30) : 13.1 s « claude » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 19.0 s « JOUR » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 19.0 s « HEURE » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 19.0 s « POST » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 19.0 s « STATUT » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 32.0 s « brutes » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 32.0 s « résume » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 32.0 s « relis » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 32.0 s « reçoit » (x2 instants)
+duration 44.32

@@ -1,0 +1,4 @@
+audit comptes/revenus-malin/posts/r08-freelance-debutant/motion.json : 2 point(s)
+  ATTENTION texte dans la zone du pseudo/légende (y 1588 > 1500) : 3.0 s « sous-titres » (x32 instants)
+  ATTENTION texte sous les boutons d'Instagram (x 968 > 960) : 38.0 s « ↗️ Partage à quelqu'un qui hésite » (x2 instants)
+duration 42.29

@@ -1,0 +1,13 @@
+audit comptes/lia-entrepreneur/posts/r14-schema-make/motion.json : 11 point(s)
+  ATTENTION texte dans la zone du pseudo/légende (y 1581 > 1500) : 3.5 s « sous-titres » (x33 instants)
+  ATTENTION texte de 28 px (min 30) : 11.7 s « toi » (x2 instants)
+  ATTENTION texte de 28 px (min 30) : 11.7 s « claude » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 16.6 s « JOUR » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 16.6 s « HEURE » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 16.6 s « POST » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 16.6 s « STATUT » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 29.2 s « lit la file » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 29.2 s « à l'heure prévue » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 29.2 s « publie » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 29.2 s « statut à jour » (x2 instants)
+duration 41.77

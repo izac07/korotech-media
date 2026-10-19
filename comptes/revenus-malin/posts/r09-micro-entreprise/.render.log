@@ -1,0 +1,5 @@
+audit comptes/revenus-malin/posts/r09-micro-entreprise/motion.json : 3 point(s)
+  ATTENTION texte dans la zone du pseudo/légende (y 1588 > 1500) : 3.2 s « sous-titres » (x32 instants)
+  ATTENTION texte sous les boutons d'Instagram (x 995 > 960) : 21.0 s « ✓ »
+  ATTENTION texte sous les boutons d'Instagram (x 995 > 960) : 43.2 s « ↗️ Partage à quelqu'un qui se lance » (x2 instants)
+duration 46.97

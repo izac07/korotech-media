@@ -1,0 +1,13 @@
+audit comptes/lia-entrepreneur/posts/r20-outils-du-systeme/motion.json : 11 point(s)
+  ATTENTION texte dans la zone du pseudo/légende (y 1581 > 1500) : 2.5 s « sous-titres » (x26 instants)
+  ATTENTION texte de 28 px (min 30) : 9.2 s « toi » (x2 instants)
+  ATTENTION texte de 28 px (min 30) : 9.2 s « claude » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 13.5 s « JOUR » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 13.5 s « HEURE » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 13.5 s « POST » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 13.5 s « STATUT » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 25.0 s « la voix off » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 25.0 s « la vidéo » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 25.0 s « publie » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 25.0 s « à l'heure » (x2 instants)
+duration 37.42

@@ -1,0 +1,5 @@
+audit comptes/revenus-malin/posts/r14-erreurs-premier-mois/motion.json : 3 point(s)
+  ATTENTION texte dans la zone du pseudo/légende (y 1588 > 1500) : 2.9 s « sous-titres » (x34 instants)
+  ATTENTION texte sous les boutons d'Instagram (x 995 > 960) : 17.5 s « ✓ » (x2 instants)
+  ATTENTION texte sous les boutons d'Instagram (x 995 > 960) : 41.2 s « ↗️ Partage à quelqu'un qui se lance » (x2 instants)
+duration 44.43

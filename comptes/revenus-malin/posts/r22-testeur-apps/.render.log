@@ -1,0 +1,4 @@
+audit comptes/revenus-malin/posts/r22-testeur-apps/motion.json : 2 point(s)
+  ATTENTION texte dans la zone du pseudo/légende (y 1588 > 1500) : 2.8 s « sous-titres » (x28 instants)
+  ATTENTION texte sous les boutons d'Instagram (x 994 > 960) : 35.4 s « ↗️ Partage à quelqu'un qui cherche » (x2 instants)
+duration 38.93

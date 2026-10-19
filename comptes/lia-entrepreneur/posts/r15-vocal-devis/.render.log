@@ -1,0 +1,13 @@
+audit comptes/lia-entrepreneur/posts/r15-vocal-devis/motion.json : 11 point(s)
+  ATTENTION texte dans la zone du pseudo/légende (y 1581 > 1500) : 3.3 s « sous-titres » (x28 instants)
+  ATTENTION texte de 28 px (min 30) : 12.2 s « toi » (x2 instants)
+  ATTENTION texte de 28 px (min 30) : 12.2 s « claude » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 17.9 s « JOUR » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 17.9 s « HEURE » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 17.9 s « POST » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 17.9 s « STATUT » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 29.3 s « tu dictes » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 29.3 s « met en forme » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 29.3 s « vérifies » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 29.3 s « reçoit » (x2 instants)
+duration 40.5

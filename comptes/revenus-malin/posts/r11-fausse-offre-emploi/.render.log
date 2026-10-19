@@ -1,0 +1,4 @@
+audit comptes/revenus-malin/posts/r11-fausse-offre-emploi/motion.json : 2 point(s)
+  ATTENTION texte dans la zone du pseudo/légende (y 1588 > 1500) : 2.7 s « sous-titres » (x32 instants)
+  ATTENTION texte sous les boutons d'Instagram (x 994 > 960) : 39.9 s « ↗️ Partage à quelqu'un qui cherche » (x2 instants)
+duration 44.11

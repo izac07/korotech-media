@@ -1,0 +1,13 @@
+audit comptes/lia-entrepreneur/posts/r16-journal-sujets/motion.json : 11 point(s)
+  ATTENTION texte dans la zone du pseudo/légende (y 1581 > 1500) : 3.3 s « sous-titres » (x31 instants)
+  ATTENTION texte de 28 px (min 30) : 11.2 s « toi » (x2 instants)
+  ATTENTION texte de 28 px (min 30) : 11.2 s « claude » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 16.0 s « JOUR » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 16.0 s « HEURE » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 16.0 s « POST » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 16.0 s « STATUT » (x3 instants)
+  ATTENTION texte de 26 px (min 30) : 31.3 s « choisi » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 31.3 s « écrit » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 31.3 s « mis à jour » (x2 instants)
+  ATTENTION texte de 26 px (min 30) : 31.3 s « suivante » (x2 instants)
+duration 44.19

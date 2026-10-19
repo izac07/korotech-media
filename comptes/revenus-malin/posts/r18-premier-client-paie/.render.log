@@ -1,0 +1,4 @@
+audit comptes/revenus-malin/posts/r18-premier-client-paie/motion.json : 2 point(s)
+  ATTENTION texte dans la zone du pseudo/légende (y 1588 > 1500) : 2.6 s « sous-titres » (x33 instants)
+  ATTENTION texte sous les boutons d'Instagram (x 997 > 960) : 34.6 s « ↗️ Partage à quelqu'un qui démarre » (x2 instants)
+duration 38.63

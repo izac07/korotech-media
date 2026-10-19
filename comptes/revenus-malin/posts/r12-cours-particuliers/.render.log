@@ -1,0 +1,4 @@
+audit comptes/revenus-malin/posts/r12-cours-particuliers/motion.json : 2 point(s)
+  ATTENTION texte dans la zone du pseudo/légende (y 1588 > 1500) : 2.3 s « sous-titres » (x30 instants)
+  ATTENTION texte sous les boutons d'Instagram (x 999 > 960) : 37.7 s « ↗️ Partage à quelqu'un qui explique bien » (x2 instants)
+duration 41.43
