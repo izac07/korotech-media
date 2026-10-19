@@ -27,3 +27,4 @@
 | 2026-10-26 12:30 | LIA-R21 | Reel | Écrire ta page À propos en 10 minutes (Tutos Claude, claudeflow) |
 | 2026-10-26 18:30 | LIA-R22 | Reel | Ce qui peut casser dans une automatisation (Erreurs et vérités, claudeflow) |
 | 2026-10-27 12:30 | LIA-R23 | Reel | Faire écrire un script de reel à Claude : le prompt (Tutos Claude, claudeflow) |
+| 2026-10-27 18:30 | LIA-R24 | Reel | Mail de prospection à froid qui ne sent pas le spam (Tutos Claude, claudeflow) |
