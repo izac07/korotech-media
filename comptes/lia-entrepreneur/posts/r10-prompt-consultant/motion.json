@@ -1,0 +1,84 @@
+{
+ "id": "LIA-R10",
+ "layout": "claudeflow",
+ "music_seed": 410,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "title": "Ton idée,<br>**challengée**",
+   "sub": "le prompt « consultant »",
+   "vo": "Tu as une idée de service ou de produit ? Avant de t'y mettre, demande à Claude de la challenger comme un consultant."
+  },
+  {
+   "type": "chat",
+   "tag": "ÉTAPE 1 · LE PROMPT",
+   "prompt": "Agis comme un consultant : challenge mon idée",
+   "reply": [
+    "Qui est ton client précis ?",
+    "Pourquoi paierait-il ?",
+    "Qu'existe-t-il déjà ?",
+    "**Quel est ton 1er test ?**"
+   ],
+   "vo": "Étape un : le prompt. Tu écris : agis comme un consultant et challenge mon idée. Claude demande qui est ton client, pourquoi il paierait, et ce qui existe déjà."
+  },
+  {
+   "type": "table",
+   "tag": "ÉTAPE 2 · TU RÉPONDS",
+   "rows": [
+    [
+     "CIBLE",
+     "·",
+     "Trop large",
+     "refuse"
+    ],
+    [
+     "PRIX",
+     "·",
+     "À tester",
+     "valider"
+    ],
+    [
+     "OFFRE",
+     "·",
+     "Claire",
+     "publie"
+    ]
+   ],
+   "vo": "Étape deux : tu réponds, et il fait le tri. Cible trop large, prix à tester, offre claire. Tu vois ce qui tient."
+  },
+  {
+   "type": "pipeline",
+   "tag": "ÉTAPE 3 · TU TESTES",
+   "nodes": [
+    [
+     "IDÉE",
+     "la tienne"
+    ],
+    [
+     "QUESTIONS",
+     "Claude"
+    ],
+    [
+     "TEST",
+     "1 seul"
+    ],
+    [
+     "DÉCISION",
+     "toi"
+    ]
+   ],
+   "notif": "Test choisi ✓",
+   "vo": "Étape trois : un seul test cette semaine, par exemple parler à des clients possibles. Ensuite, tu décides."
+  },
+  {
+   "type": "cta",
+   "title": "Claude challenge.<br>**Tu décides.**",
+   "ctas": [
+    "🔖 enregistre le prompt",
+    "➕ suis-moi pour la suite"
+   ],
+   "vo": "Claude challenge, mais c'est toi qui décides : relis ses conseils. Enregistre la vidéo, et suis-moi pour d'autres prompts."
+  }
+ ]
+}

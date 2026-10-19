@@ -1,0 +1,84 @@
+{
+ "id": "LIA-R11",
+ "layout": "claudeflow",
+ "music_seed": 411,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "title": "Le vrai secret,<br>**c'est un fichier**",
+   "sub": "ce que Claude lit d'abord",
+   "vo": "Le secret de mon système, ce n'est pas un prompt magique. C'est un fichier que Claude relit avant d'écrire le moindre post."
+  },
+  {
+   "type": "chat",
+   "tag": "ÉTAPE 1 · CLAUDE LIT",
+   "prompt": "Lis la ligne éditoriale du compte",
+   "reply": [
+    "Cible : freelances et TPE ✓",
+    "Ton : tutoiement ✓",
+    "Piliers du compte ✓",
+    "**Interdits : rien d'inventé**"
+   ],
+   "vo": "Étape un : Claude lit le fichier du compte. Ma cible, le ton, les piliers de contenu, et surtout les interdits, comme ne rien inventer."
+  },
+  {
+   "type": "table",
+   "tag": "ÉTAPE 2 · IL VÉRIFIE",
+   "rows": [
+    [
+     "SUJET",
+     "·",
+     "Déjà traité ?",
+     "valider"
+    ],
+    [
+     "HOOK",
+     "·",
+     "Lisible vite",
+     "valider"
+    ],
+    [
+     "CHIFFRE",
+     "·",
+     "Inventé",
+     "refuse"
+    ]
+   ],
+   "vo": "Étape deux : il vérifie le journal, pour ne pas refaire un sujet déjà traité, et il contrôle le texte. Un chiffre inventé, et c'est refusé."
+  },
+  {
+   "type": "pipeline",
+   "tag": "ÉTAPE 3 · J'AMÉLIORE",
+   "nodes": [
+    [
+     "FICHIER",
+     "les règles"
+    ],
+    [
+     "CLAUDE",
+     "écrit"
+    ],
+    [
+     "FILE",
+     "je relis"
+    ],
+    [
+     "FICHIER",
+     "mis à jour"
+    ]
+   ],
+   "notif": "Règle ajoutée ✓",
+   "vo": "Étape trois : quand quelque chose ne va pas, je corrige la règle dans le fichier, pas le post. Le système s'améliore."
+  },
+  {
+   "type": "cta",
+   "title": "Un fichier.<br>**Pas un prompt.**",
+   "ctas": [
+    "🔖 enregistre la vidéo",
+    "➕ suis-moi pour la suite"
+   ],
+   "vo": "Un bon fichier d'instructions vaut mieux que cent prompts. Enregistre la vidéo, et suis-moi pour voir comment je construis le mien."
+  }
+ ]
+}

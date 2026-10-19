@@ -1,0 +1,78 @@
+{
+ "id": "LIA-R12",
+ "layout": "iceberg",
+ "music_seed": 412,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "cmd": "./reveler --automatisation",
+   "top": "ce qu'on te montre",
+   "bottom": "ce qu'on te cache",
+   "vo": "On te dit que l'IA fait tout, sans que tu aies à relire. Voici ce qu'il y a vraiment sous la surface."
+  },
+  {
+   "type": "surface",
+   "labels": [
+    "zéro relecture",
+    "tout est automatique",
+    "l'IA ne se trompe pas"
+   ],
+   "text": "L'IA FAIT TOUT",
+   "vo": "En surface : zéro relecture, tout est automatique, et l'IA ne se trompe jamais."
+  },
+  {
+   "type": "process",
+   "steps": [
+    "ÉCRIT",
+    "RELU",
+    "VALIDÉ"
+   ],
+   "chaos": "ERREUR",
+   "ok": "fiable",
+   "text": "UN HUMAIN<br>AVANT L'ENVOI",
+   "vo": "Sous l'eau : l'IA écrit, mais elle peut se tromper ou inventer un détail avec aplomb. Alors un humain relit, avant que ça parte."
+  },
+  {
+   "type": "logs",
+   "logs": [
+    [
+     "publié sans relire",
+     "err"
+    ],
+    [
+     "détail inventé",
+     "err"
+    ],
+    [
+     "file d'attente + veto ✓",
+     "ok"
+    ],
+    [
+     "dans mon système :",
+     "info"
+    ],
+    [
+     "je relis chaque post",
+     "item"
+    ],
+    [
+     "je peux refuser",
+     "item"
+    ],
+    [
+     "Make publie après",
+     "item"
+    ]
+   ],
+   "text": "LE VETO,<br>MON FILET",
+   "vo": "Dans mon système, chaque post passe par une file d'attente. Je relis, je peux refuser, et seulement ensuite Make publie."
+  },
+  {
+   "type": "cta",
+   "task": "1 ÉTAPE DE RELECTURE",
+   "text": "AVANT CHAQUE ENVOI",
+   "vo": "Automatise tout ce que tu veux, mais garde une étape de relecture. Enregistre la vidéo, et suis-moi pour voir comment je l'ai construite."
+  }
+ ]
+}
