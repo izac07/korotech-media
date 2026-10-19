@@ -13,3 +13,6 @@
 | 2026-10-19 12:30 | LIA-R07 | Reel | Lundi, délègue ça : 3 tâches pour Claude — motion, remplace le carrousel LIA-C01 (plus de carrousels) |
 | 2026-10-21 12:30 | LIA-R08 | Reel | La 1re réponse de l'IA est un brouillon : 3 relances — motion, remplace le carrousel LIA-C02 (plus de carrousels) |
 | 2026-10-18 16:31 | LIA-R09 | Reel | Le bilan du dimanche : Claude lit mes stats (Coulisses du système, claudeflow) |
+| 2026-10-20 12:30 | LIA-R10 | Reel | Le prompt consultant pour challenger ton idée (Tutos Claude, claudeflow) |
+| 2026-10-20 18:30 | LIA-R11 | Reel | Les instructions que je donne à Claude pour un compte (Coulisses du système, claudeflow) |
+| 2026-10-21 18:30 | LIA-R12 | Reel | Pourquoi je relis encore tout ce que Claude écrit (Erreurs et vérités, iceberg) |

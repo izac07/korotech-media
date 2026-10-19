@@ -44,7 +44,9 @@ date;compte;id;layout;pilier;formule;sujet;hook
 2026-10-20 07:30;zerosallefit;ZSF-R10;sportmotion;;;Planche : de 20 s à 1 minute, la progression simple;
 2026-10-20 12:15;korotech_fr;R14;;;;Oral d'anglais en mode vocal;
 2026-10-20 12:30;coeurlucide__;CL-R05;nightchat;;;Compromis ou sacrifice : fais la différence;
+2026-10-20 12:30;lia.entrepreneur;LIA-R10;claudeflow;Tutos Claude;question;Le prompt consultant pour challenger ton idée;Ton idée, challengée le prompt « consultant »
 2026-10-20 18:00;zerosallefit;ZSF-R06;sportmotion;;;Fentes bancales ? La bonne position (motion);
+2026-10-20 18:30;lia.entrepreneur;LIA-R11;claudeflow;Coulisses du système;secret;Les instructions que je donne à Claude pour un compte;Le vrai secret, c'est un fichier ce que Claude lit d'abord
 2026-10-20 19:15;korotech_fr;R21;cheatsheet;;;Parents : 3 réflexes pour sa vie privée avec l'IA;
 2026-10-20 21:00;coeurlucide__;CL-R08;nightchat;Communication;pov;Poser une limite avec un proche;Tu peux garder les enfants ce soir ? 🙏
 2026-10-20 21:30;mentaldacier2030;MDA-R06;manifeste3d;;;9 tâches max par jour : la méthode 1-3-5;
@@ -53,6 +55,7 @@ date;compte;id;layout;pilier;formule;sujet;hook
 2026-10-21 12:15;korotech_fr;R16;;;;Son cours en podcast;
 2026-10-21 12:30;lia.entrepreneur;LIA-R08;iceberg;;;La 1re réponse de l'IA est un brouillon : 3 relances;
 2026-10-21 18:00;zerosallefit;ZSF-R11;sportmotion;;;Zéro pompe ? Normal : 4 étapes pour ta première;
+2026-10-21 18:30;lia.entrepreneur;LIA-R12;iceberg;Erreurs et vérités;erreur;Pourquoi je relis encore tout ce que Claude écrit;ce qu'on te montre ./reveler --automatisation
 2026-10-21 19:15;korotech_fr;R15;;;;Parents : préparer la réunion parents-profs;
 2026-10-21 19:30;revenus_malins;RM-R06;malin;;;Le message qui trouve tes 3 premiers clients;
 2026-10-21 21:00;coeurlucide__;CL-R06;nightchat;;;Dire ton besoin sans faire de reproche;
