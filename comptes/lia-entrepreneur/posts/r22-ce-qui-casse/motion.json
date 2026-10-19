@@ -1,0 +1,84 @@
+{
+ "id": "LIA-R22",
+ "layout": "claudeflow",
+ "music_seed": 422,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "title": "Ton automatisation<br>**va casser**",
+   "sub": "et c'est normal",
+   "vo": "Une automatisation finit toujours par casser un jour. Voici deux causes courantes, et comment s'en protéger."
+  },
+  {
+   "type": "chat",
+   "tag": "CAUSE 1 · UN CHANGEMENT",
+   "prompt": "Pourquoi ça ne publie plus ?",
+   "reply": [
+    "Un accès a expiré",
+    "Un outil a changé",
+    "Un champ a été renommé",
+    "**Vérifie la connexion d'abord**"
+   ],
+   "vo": "Cause un : un changement. Un accès qui expire, un outil qui évolue, un champ renommé. Vérifie d'abord la connexion entre tes outils."
+  },
+  {
+   "type": "table",
+   "tag": "CAUSE 2 · UNE DONNÉE",
+   "rows": [
+    [
+     "DATE",
+     "·",
+     "Mal formatée",
+     "refuse"
+    ],
+    [
+     "LIEN",
+     "·",
+     "Vidéo introuvable",
+     "refuse"
+    ],
+    [
+     "TEXTE",
+     "·",
+     "Complet",
+     "publie"
+    ]
+   ],
+   "vo": "Cause deux : une donnée mal remplie. Une date au mauvais format, un lien de vidéo qui ne marche pas. Un contrôle avant l'envoi évite ça."
+  },
+  {
+   "type": "pipeline",
+   "tag": "LE FILET DE SÉCURITÉ",
+   "nodes": [
+    [
+     "CONTRÔLE",
+     "avant l'envoi"
+    ],
+    [
+     "VETO",
+     "tu relis"
+    ],
+    [
+     "ALERTE",
+     "si ça casse"
+    ],
+    [
+     "RÉPARE",
+     "vite"
+    ]
+   ],
+   "notif": "Alerte : à vérifier",
+   "vo": "Le filet de sécurité : un contrôle avant l'envoi, un droit de veto, et une alerte quand quelque chose casse. Sans ça, tu ne le vois pas."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 enregistre la vidéo",
+    "➕ suis-moi pour la suite"
+   ],
+   "title": "Ça casse.<br>**Tu le sais vite.**",
+   "vo": "Une automatisation, ça se surveille. Enregistre la vidéo, et suis-moi pour voir comment je surveille la mienne."
+  }
+ ]
+}

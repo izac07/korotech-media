@@ -1,0 +1,84 @@
+{
+ "id": "LIA-R19",
+ "layout": "claudeflow",
+ "music_seed": 419,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "title": "Client mécontent ?<br>**Respire d'abord**",
+   "sub": "POV : le mail qui pique",
+   "vo": "Pov : un client t'envoie un message furieux, et tu as envie de répondre à chaud. Voici comment préparer ta réponse avec Claude."
+  },
+  {
+   "type": "chat",
+   "tag": "ÉTAPE 1 · TU COLLES",
+   "prompt": "Voici son message : aide-moi à répondre calmement",
+   "reply": [
+    "Problème reformulé ✓",
+    "Excuses sans te rabaisser ✓",
+    "Solution concrète proposée ✓",
+    "**Ton : calme et pro**"
+   ],
+   "vo": "Étape un : tu colles son message dans Claude, et tu demandes de l'aide pour répondre calmement. Il reformule le problème, propose une solution, et garde un ton professionnel."
+  },
+  {
+   "type": "table",
+   "tag": "ÉTAPE 2 · TU AJUSTES",
+   "rows": [
+    [
+     "EXCUSES",
+     "·",
+     "Sincères",
+     "valider"
+    ],
+    [
+     "SOLUTION",
+     "·",
+     "Réaliste ?",
+     "valider"
+    ],
+    [
+     "PROMESSE",
+     "·",
+     "Impossible à tenir",
+     "refuse"
+    ]
+   ],
+   "vo": "Étape deux : tu ajustes. Tu retires toute promesse que tu ne peux pas tenir, et tu vérifies que la solution est réaliste."
+  },
+  {
+   "type": "pipeline",
+   "tag": "ÉTAPE 3 · TU ENVOIES",
+   "nodes": [
+    [
+     "MESSAGE",
+     "reçu"
+    ],
+    [
+     "CLAUDE",
+     "propose"
+    ],
+    [
+     "TOI",
+     "relis"
+    ],
+    [
+     "CLIENT",
+     "répondu"
+    ]
+   ],
+   "notif": "Réponse envoyée ✓",
+   "vo": "Étape trois : tu attends un peu, tu relis une dernière fois, et seulement après tu envoies. Jamais à chaud."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 enregistre la vidéo",
+    "➕ suis-moi pour la suite"
+   ],
+   "title": "Calme.<br>**Relu. Envoyé.**",
+   "vo": "Claude t'aide à rester calme, mais la réponse, c'est toi qui l'envoies. Enregistre la vidéo pour le prochain message qui pique."
+  }
+ ]
+}

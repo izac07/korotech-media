@@ -1,0 +1,84 @@
+{
+ "id": "LIA-R21",
+ "layout": "claudeflow",
+ "music_seed": 421,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "title": "Ta page « À propos »<br>**en 10 minutes**",
+   "sub": "défi : sans page blanche",
+   "vo": "Ta page à propos reste vide depuis des mois ? Voici le défi : l'écrire en dix minutes avec Claude."
+  },
+  {
+   "type": "chat",
+   "tag": "ÉTAPE 1 · TES INFOS",
+   "prompt": "Voici mon parcours : écris ma page À propos",
+   "reply": [
+    "Qui tu aides ✓",
+    "Ce que tu fais ✓",
+    "Ton histoire, en 3 phrases ✓",
+    "**Un appel à l'action**"
+   ],
+   "vo": "Étape un : tu donnes à Claude ton parcours en vrac. Il structure la page : qui tu aides, ce que tu fais, ton histoire en trois phrases, et un appel à l'action."
+  },
+  {
+   "type": "table",
+   "tag": "ÉTAPE 2 · TU CORRIGES",
+   "rows": [
+    [
+     "FAITS",
+     "·",
+     "Tous vrais ?",
+     "valider"
+    ],
+    [
+     "TON",
+     "·",
+     "Comme toi",
+     "valider"
+    ],
+    [
+     "EXAGÉRATION",
+     "·",
+     "À retirer",
+     "refuse"
+    ]
+   ],
+   "vo": "Étape deux : tu corriges. Chaque fait doit être vrai, le ton doit te ressembler, et tu retires tout ce qui est exagéré."
+  },
+  {
+   "type": "pipeline",
+   "tag": "ÉTAPE 3 · TU PUBLIES",
+   "nodes": [
+    [
+     "PARCOURS",
+     "en vrac"
+    ],
+    [
+     "CLAUDE",
+     "structure"
+    ],
+    [
+     "TOI",
+     "corriges"
+    ],
+    [
+     "PAGE",
+     "en ligne"
+    ]
+   ],
+   "notif": "Page publiée ✓",
+   "vo": "Étape trois : tu publies la page, et tu la relis dans une semaine pour l'améliorer."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 enregistre la vidéo",
+    "➕ suis-moi pour la suite"
+   ],
+   "title": "Une page claire.<br>**À ta voix.**",
+   "vo": "Une page claire, écrite avec ta voix à toi. Enregistre la vidéo, et suis-moi pour d'autres défis de dix minutes."
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "id": "LIA-R20",
+ "layout": "claudeflow",
+ "music_seed": 420,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "title": "Les outils<br>**derrière les posts**",
+   "sub": "le système, sans magie",
+   "vo": "Plusieurs outils font tourner mes comptes Instagram. Je te montre le rôle de chacun."
+  },
+  {
+   "type": "chat",
+   "tag": "OUTIL 1 · CLAUDE",
+   "prompt": "Écris et prépare les posts",
+   "reply": [
+    "Lit les règles du compte ✓",
+    "Écrit les textes ✓",
+    "Prépare les vidéos ✓",
+    "**Il ne publie rien seul**"
+   ],
+   "vo": "Un : Claude. Il lit les règles du compte, écrit les textes et prépare les vidéos. Mais il ne publie rien tout seul."
+  },
+  {
+   "type": "table",
+   "tag": "OUTIL 2 · LE TABLEAU",
+   "rows": [
+    [
+     "MAR",
+     "12:30",
+     "Reel prêt",
+     "valider"
+    ],
+    [
+     "MAR",
+     "18:30",
+     "Reel prêt",
+     "valider"
+    ],
+    [
+     "MER",
+     "12:30",
+     "Reel refusé",
+     "refuse"
+    ]
+   ],
+   "vo": "Deux : un tableau, la file d'attente. C'est là que je relis, et que je peux refuser un post."
+  },
+  {
+   "type": "pipeline",
+   "tag": "OUTILS 3 ET 4",
+   "nodes": [
+    [
+     "ELEVENLABS",
+     "la voix off"
+    ],
+    [
+     "HÉBERGEMENT",
+     "la vidéo"
+    ],
+    [
+     "MAKE",
+     "publie"
+    ],
+    [
+     "INSTAGRAM",
+     "à l'heure"
+    ]
+   ],
+   "notif": "Publié sur @lia.entrepreneur",
+   "vo": "Trois et quatre : ElevenLabs pour la voix, un hébergement pour la vidéo, et Make qui publie à l'heure. Chaque outil a un seul rôle."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 enregistre la vidéo",
+    "➕ suis-moi pour la suite"
+   ],
+   "title": "Chaque outil,<br>**un seul rôle.**",
+   "vo": "Chaque outil a un rôle simple, et c'est le veto humain qui tient le tout. Enregistre la vidéo, et suis-moi pour les détails."
+  }
+ ]
+}

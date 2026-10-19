@@ -1,0 +1,84 @@
+{
+ "id": "LIA-R18",
+ "layout": "claudeflow",
+ "music_seed": 418,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "title": "Arrête de<br>**tout lancer**",
+   "sub": "la tâche planifiée",
+   "vo": "Tu relances toi-même la même demande chaque semaine ? Il existe mieux : la tâche planifiée avec Claude."
+  },
+  {
+   "type": "chat",
+   "tag": "ÉTAPE 1 · LA CONSIGNE",
+   "prompt": "Prépare mes posts de la semaine",
+   "reply": [
+    "Ligne éditoriale lue ✓",
+    "Créneaux vides repérés ✓",
+    "Posts écrits et rendus ✓",
+    "**Tout arrive dans la file**"
+   ],
+   "vo": "Étape un : tu écris la consigne une fois, par exemple : prépare mes posts de la semaine. Claude lit les règles, repère les créneaux vides, et remplit la file."
+  },
+  {
+   "type": "table",
+   "tag": "ÉTAPE 2 · LE RYTHME",
+   "rows": [
+    [
+     "CHAQUE",
+     "SEMAINE",
+     "Remplir la file",
+     "valider"
+    ],
+    [
+     "CHAQUE",
+     "JOUR",
+     "Je relis",
+     "valider"
+    ],
+    [
+     "DIMANCHE",
+     "·",
+     "Bilan",
+     "publie"
+    ]
+   ],
+   "vo": "Étape deux : la tâche tourne toute seule, une fois par semaine. Elle remplit seulement les créneaux encore vides, donc aucun trou, et aucun doublon."
+  },
+  {
+   "type": "pipeline",
+   "tag": "ÉTAPE 3 · JE GARDE LA MAIN",
+   "nodes": [
+    [
+     "TÂCHE",
+     "chaque semaine"
+    ],
+    [
+     "CLAUDE",
+     "prépare"
+    ],
+    [
+     "FILE",
+     "je relis"
+    ],
+    [
+     "MAKE",
+     "publie"
+    ]
+   ],
+   "notif": "Semaine prête ✓",
+   "vo": "Étape trois : je relis la file, je refuse ce qui ne va pas, et Make publie le reste. Je ne lance rien à la main."
+  },
+  {
+   "type": "cta",
+   "title": "Écris la consigne<br>**une seule fois.**",
+   "ctas": [
+    "🔖 enregistre la vidéo",
+    "➕ suis-moi pour la suite"
+   ],
+   "vo": "Écris la consigne une seule fois, et améliore-la au fil des semaines. Enregistre la vidéo, et suis-moi pour voir la mienne."
+  }
+ ]
+}

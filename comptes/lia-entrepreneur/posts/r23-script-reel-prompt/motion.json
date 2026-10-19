@@ -1,0 +1,84 @@
+{
+ "id": "LIA-R23",
+ "layout": "claudeflow",
+ "music_seed": 423,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "title": "Un script de reel<br>**en 1 prompt**",
+   "sub": "le modèle à copier",
+   "vo": "Écrire un script de reel prend du temps. Voici le modèle de prompt que tu peux copier pour que Claude s'en charge."
+  },
+  {
+   "type": "chat",
+   "tag": "ÉTAPE 1 · LE PROMPT",
+   "prompt": "Script de reel de 40 s : accroche, 3 points, appel à l'action",
+   "reply": [
+    "Accroche en 1 phrase ✓",
+    "3 points courts ✓",
+    "Appel à l'action ✓",
+    "**Sans chiffre inventé**"
+   ],
+   "vo": "Étape un : tu demandes un script de quarante secondes, avec une accroche, trois points et un appel à l'action. Tu ajoutes une règle : aucun chiffre inventé."
+  },
+  {
+   "type": "table",
+   "tag": "ÉTAPE 2 · TU RELIS",
+   "rows": [
+    [
+     "ACCROCHE",
+     "·",
+     "Claire d'emblée",
+     "valider"
+    ],
+    [
+     "POINTS",
+     "·",
+     "Un seul sujet",
+     "valider"
+    ],
+    [
+     "CHIFFRES",
+     "·",
+     "Source ?",
+     "refuse"
+    ]
+   ],
+   "vo": "Étape deux : tu relis l'accroche, elle doit être claire dès les premières secondes, et le script doit traiter un seul sujet. Un chiffre sans source, tu le retires."
+  },
+  {
+   "type": "pipeline",
+   "tag": "ÉTAPE 3 · TU RÉUTILISES",
+   "nodes": [
+    [
+     "PROMPT",
+     "le modèle"
+    ],
+    [
+     "SCRIPT",
+     "Claude"
+    ],
+    [
+     "TOI",
+     "relis"
+    ],
+    [
+     "REEL",
+     "tourné"
+    ]
+   ],
+   "notif": "Script validé ✓",
+   "vo": "Étape trois : tu gardes le prompt, et tu le réutilises pour chaque nouveau sujet. Seul le sujet change."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 enregistre la vidéo",
+    "➕ suis-moi pour la suite"
+   ],
+   "title": "Un modèle.<br>**Tous tes scripts.**",
+   "vo": "Garde ce modèle dans tes notes. Enregistre la vidéo, et suis-moi pour d'autres prompts à copier."
+  }
+ ]
+}
