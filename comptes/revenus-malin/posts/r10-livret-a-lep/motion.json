@@ -1,0 +1,94 @@
+{
+ "id": "RM-R10",
+ "layout": "malin",
+ "music_seed": 510,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Livret A<br>ou **LEP** ?",
+   "sub": "la différence en 40 secondes",
+   "vo": "Livret A ou LEP, quelle différence ? Voici l'essentiel, en information générale."
+  },
+  {
+   "type": "list",
+   "title": "Le **Livret A**",
+   "items": [
+    [
+     "Ouvert à tous",
+     "ou presque, en banque"
+    ],
+    [
+     "Argent disponible",
+     "retrait possible à tout moment"
+    ],
+    [
+     "Taux fixé",
+     "par les pouvoirs publics, il change"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Le Livret A : un, il est ouvert à tous. Deux, ton argent reste disponible. Trois, le taux est fixé par les pouvoirs publics, et il peut changer.",
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Le **LEP**",
+   "items": [
+    [
+     "Sous conditions",
+     "de revenus du foyer"
+    ],
+    [
+     "Argent disponible",
+     "comme un livret"
+    ],
+    [
+     "À comparer",
+     "avec les chiffres du moment"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Le LEP : un, il est réservé selon les revenus du foyer. Deux, l'argent reste disponible. Trois, à comparer avec le Livret A, chiffres du moment en main.",
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Pour **décider**",
+   "items": [
+    [
+     "Tes revenus",
+     "donnent-ils droit au LEP ?"
+    ],
+    [
+     "Ton objectif",
+     "un matelas de sécurité d'abord"
+    ],
+    [
+     "La source officielle",
+     "service-public.fr"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Pour décider, regarde d'abord si tes revenus te donnent droit au LEP. Garde en tête ton objectif : un matelas de sécurité. Et vérifie les taux sur service-public.fr."
+  },
+  {
+   "type": "cta",
+   "big": "Compare avec<br>**les chiffres du jour.**",
+   "ctas": [
+    "🔖 Enregistre la vidéo",
+    "↗️ Partage à quelqu'un qui épargne"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Compare toujours avec les chiffres du moment. Enregistre la vidéo, et partage-la à quelqu'un qui commence à épargner."
+  }
+ ]
+}

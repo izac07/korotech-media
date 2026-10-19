@@ -1,0 +1,84 @@
+{
+ "id": "LIA-R24",
+ "layout": "claudeflow",
+ "music_seed": 424,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "title": "Mail de prospection<br>**sans spam**",
+   "sub": "l'erreur à éviter",
+   "vo": "L'erreur numéro un en prospection : un mail copié-collé qui ressemble à du spam. Voici comment l'éviter avec Claude."
+  },
+  {
+   "type": "chat",
+   "tag": "ÉTAPE 1 · LE CONTEXTE",
+   "prompt": "Écris un mail court pour ce prospect, avec ce détail",
+   "reply": [
+    "Un détail sur lui ✓",
+    "Un seul message ✓",
+    "Une seule question ✓",
+    "**Pas de pavé**"
+   ],
+   "vo": "Étape un : tu donnes à Claude un vrai détail sur ton prospect, ce qu'il a publié ou fait. Tu demandes un mail court, avec un seul message et une seule question."
+  },
+  {
+   "type": "table",
+   "tag": "ÉTAPE 2 · TU RELIS",
+   "rows": [
+    [
+     "DÉTAIL",
+     "·",
+     "Vrai et vérifié",
+     "valider"
+    ],
+    [
+     "LONGUEUR",
+     "·",
+     "Court",
+     "valider"
+    ],
+    [
+     "FAUX COMPLIMENT",
+     "·",
+     "À retirer",
+     "refuse"
+    ]
+   ],
+   "vo": "Étape deux : tu relis. Le détail doit être vrai, le mail court, et tu retires tout faux compliment. Un prospect le sent tout de suite."
+  },
+  {
+   "type": "pipeline",
+   "tag": "ÉTAPE 3 · TU ENVOIES",
+   "nodes": [
+    [
+     "DÉTAIL",
+     "sur lui"
+    ],
+    [
+     "CLAUDE",
+     "rédige"
+    ],
+    [
+     "TOI",
+     "relis"
+    ],
+    [
+     "PROSPECT",
+     "répond"
+    ]
+   ],
+   "notif": "Mail envoyé ✓",
+   "vo": "Étape trois : tu l'envoies toi-même, à une seule personne à la fois. Pas d'envoi en masse."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 enregistre la vidéo",
+    "➕ suis-moi pour la suite"
+   ],
+   "title": "Personnalisé.<br>**Pas du spam.**",
+   "vo": "Un mail personnel, court, et sincère. Enregistre la vidéo, et suis-moi pour d'autres prompts de freelance."
+  }
+ ]
+}

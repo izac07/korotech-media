@@ -1,0 +1,94 @@
+{
+ "id": "RM-R09",
+ "layout": "malin",
+ "music_seed": 509,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Micro-entreprise :<br>**les étapes**",
+   "sub": "sans te perdre dans l'admin",
+   "vo": "Tu penses à te lancer en micro-entreprise ? Voici les grandes étapes, sans te perdre dans l'administratif."
+  },
+  {
+   "type": "list",
+   "title": "Les **4 étapes**",
+   "items": [
+    [
+     "Vérifier que c'est possible",
+     "activité, contrat de travail"
+    ],
+    [
+     "Déclarer ton activité",
+     "sur le site officiel"
+    ],
+    [
+     "Séparer pro et perso",
+     "plus simple à suivre"
+    ],
+    [
+     "Noter tes encaissements",
+     "un tableau simple"
+    ]
+   ],
+   "slots": 4,
+   "vo": "Un : vérifier que ton activité est possible, y compris avec ton contrat de travail. Deux : déclarer ton activité sur le site officiel. Trois : séparer pro et perso. Quatre : noter chaque encaissement.",
+   "cue": [
+    "un",
+    "deux",
+    "trois",
+    "quatre"
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Où **te renseigner**",
+   "items": [
+    [
+     "autoentrepreneur.urssaf.fr",
+     "le guichet officiel"
+    ],
+    [
+     "impots.gouv.fr",
+     "pour tes impôts"
+    ],
+    [
+     "service-public.fr",
+     "les infos fiables"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Pour les démarches, un seul réflexe : les sites officiels. L'Urssaf pour l'activité, impots.gouv.fr pour les impôts, service-public.fr pour les infos fiables."
+  },
+  {
+   "type": "list",
+   "title": "Avant de **te lancer**",
+   "items": [
+    [
+     "Les règles changent",
+     "vérifie à jour"
+    ],
+    [
+     "Pas de chiffres de mémoire",
+     "toujours à la source"
+    ],
+    [
+     "Un doute ?",
+     "un conseiller officiel"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Les règles changent : ne te fie pas à une vidéo, même celle-ci. Vérifie à la source."
+  },
+  {
+   "type": "cta",
+   "big": "Les sources<br>**officielles d'abord.**",
+   "ctas": [
+    "🔖 Enregistre la vidéo",
+    "↗️ Partage à quelqu'un qui se lance"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Les sources officielles d'abord, toujours. Enregistre la vidéo, et partage-la à quelqu'un qui pense à se lancer."
+  }
+ ]
+}

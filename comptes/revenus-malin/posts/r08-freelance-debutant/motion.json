@@ -1,0 +1,99 @@
+{
+ "id": "RM-R08",
+ "layout": "malin",
+ "music_seed": 508,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Freelance,<br>**par où commencer** ?",
+   "sub": "3 étapes sans te lancer à l'aveugle",
+   "vo": "Tu veux te lancer en freelance, mais tu ne sais pas par où commencer ? Voici trois étapes simples."
+  },
+  {
+   "type": "list",
+   "title": "Choisis **1 compétence**",
+   "items": [
+    [
+     "Ce que tu sais déjà faire",
+     "écrire, monter, expliquer…"
+    ],
+    [
+     "Ce pour quoi on paie",
+     "des gens ont ce besoin"
+    ],
+    [
+     "Ce que tu supportes",
+     "tu vas le refaire souvent"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Un : ce que tu sais déjà faire, écrire, monter, expliquer. Deux : ce pour quoi on paie. Trois : ce que tu supportes de refaire souvent.",
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Ton offre en **1 phrase**",
+   "items": [
+    [
+     "Je t'aide à…",
+     "un résultat précis"
+    ],
+    [
+     "Pour qui ?",
+     "une cible claire"
+    ],
+    [
+     "Pour combien ?",
+     "un prix de départ simple"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Ensuite, une offre en une phrase : je t'aide à obtenir quoi, pour qui, pour combien. Plus c'est précis, plus c'est clair.",
+   "cue": [
+    "aide",
+    "qui",
+    "combien"
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Tes **premiers pas**",
+   "items": [
+    [
+     "Un exemple de travail",
+     "fait pour toi ou un proche"
+    ],
+    [
+     "Un profil simple",
+     "qui dit ce que tu fais"
+    ],
+    [
+     "2 ou 3 contacts",
+     "amis, voisins, anciens collègues"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Pour démarrer : un exemple de ton travail, un profil simple qui dit ce que tu fais, et deux ou trois personnes à qui en parler.",
+   "cue": [
+    "exemple",
+    "profil",
+    "personnes"
+   ]
+  },
+  {
+   "type": "cta",
+   "big": "Commence<br>**petit, précis.**",
+   "ctas": [
+    "🔖 Enregistre la vidéo",
+    "↗️ Partage à quelqu'un qui hésite"
+   ],
+   "note": "Revenus à déclarer (sites officiels)",
+   "vo": "Commence petit et précis, et déclare tes revenus sur les sites officiels. Enregistre la vidéo, et partage-la à quelqu'un qui hésite."
+  }
+ ]
+}

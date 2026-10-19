@@ -1,0 +1,89 @@
+{
+ "id": "RM-R11",
+ "layout": "malin",
+ "music_seed": 511,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Offre de job<br>**trop belle** ?",
+   "sub": "3 signaux d'une fausse offre",
+   "vo": "Une offre de job trop belle pour être vraie ? Voici trois signaux d'une fausse offre."
+  },
+  {
+   "type": "list",
+   "title": "Les **3 signaux**",
+   "items": [
+    [
+     "Tu dois payer d'abord",
+     "formation, matériel, « frais »"
+    ],
+    [
+     "Aucun entretien",
+     "embauché en quelques minutes"
+    ],
+    [
+     "Seulement une messagerie",
+     "société introuvable"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Un : on te demande de payer avant de commencer. Deux : aucun entretien, tu es embauché en quelques minutes. Trois : tout se passe sur une messagerie, sans société identifiable.",
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Tu peux **vérifier**",
+   "items": [
+    [
+     "Le nom de la société",
+     "registre officiel des entreprises"
+    ],
+    [
+     "Son nom + « arnaque »",
+     "dans un moteur de recherche"
+    ],
+    [
+     "L'adresse du mail",
+     "un domaine gratuit est suspect"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Tu peux vérifier : cherche le nom de la société dans le registre officiel des entreprises, ajoute le mot arnaque dans ta recherche, et regarde l'adresse du mail."
+  },
+  {
+   "type": "list",
+   "title": "Si tu t'es **fait avoir**",
+   "items": [
+    [
+     "Arrête tout paiement",
+     "garde les preuves"
+    ],
+    [
+     "Signale",
+     "sur les sites officiels"
+    ],
+    [
+     "Préviens ta banque",
+     "au plus vite"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Si tu t'es fait avoir : arrête tout paiement, garde les preuves, signale-le sur les sites officiels, et préviens ta banque."
+  },
+  {
+   "type": "cta",
+   "big": "Un vrai job<br>**ne se paie pas.**",
+   "ctas": [
+    "🔖 Enregistre la vidéo",
+    "↗️ Partage à quelqu'un qui cherche"
+   ],
+   "note": "Aide : cybermalveillance.gouv.fr",
+   "vo": "Un vrai job ne te demande jamais de payer pour travailler. Enregistre la vidéo, et partage-la à quelqu'un qui cherche un complément de revenus."
+  }
+ ]
+}
