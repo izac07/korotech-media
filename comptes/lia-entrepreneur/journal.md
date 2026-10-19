@@ -16,3 +16,8 @@
 | 2026-10-20 12:30 | LIA-R10 | Reel | Le prompt consultant pour challenger ton idée (Tutos Claude, claudeflow) |
 | 2026-10-20 18:30 | LIA-R11 | Reel | Les instructions que je donne à Claude pour un compte (Coulisses du système, claudeflow) |
 | 2026-10-21 18:30 | LIA-R12 | Reel | Pourquoi je relis encore tout ce que Claude écrit (Erreurs et vérités, iceberg) |
+| 2026-10-22 12:30 | LIA-R13 | Reel | Résumer une réunion et en sortir les actions (Tutos Claude, claudeflow) |
+| 2026-10-22 18:30 | LIA-R14 | Reel | Publier sur Instagram avec Make : le schéma (Automatisations Make / Instagram, claudeflow) |
+| 2026-10-23 12:30 | LIA-R15 | Reel | Transformer un vocal en devis propre (Tutos Claude, claudeflow) |
+| 2026-10-23 18:30 | LIA-R16 | Reel | Le journal des sujets : comment Claude évite les doublons (Coulisses du système, claudeflow) |
+| 2026-10-24 12:30 | LIA-R17 | Reel | Mythe : l'IA va remplacer les freelances (Erreurs et vérités, iceberg) |
