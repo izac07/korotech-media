@@ -1,0 +1,91 @@
+{
+ "id": "RM-R13",
+ "layout": "malin",
+ "music_seed": 513,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Combien de temps<br>**faut-il vraiment** ?",
+   "sub": "honnêtement, sans promesse",
+   "vo": "Combien de temps faut-il vraiment pour un side hustle ? Voici une réponse honnête."
+  },
+  {
+   "type": "math",
+   "title": "Exemple : **ta semaine**",
+   "cells": [
+    [
+     "Heures vraiment libres",
+     "10 h"
+    ],
+    [
+     "Repos, famille, imprévus",
+     "6 h",
+     "−"
+    ],
+    [
+     "Pour ton projet",
+     "4 h",
+     "="
+    ]
+   ],
+   "note": "Exemple pour illustrer, adapte à ta semaine",
+   "vo": "Prenons un exemple. Dix heures vraiment libres dans ta semaine. Tu retires le repos, la famille et les imprévus, et il te reste quatre heures pour ton projet."
+  },
+  {
+   "type": "list",
+   "title": "L'honnête **vérité**",
+   "items": [
+    [
+     "Les débuts sont lents",
+     "le 1er client prend du temps"
+    ],
+    [
+     "Régulier bat intense",
+     "un peu chaque semaine"
+    ],
+    [
+     "Aucun revenu garanti",
+     "ça dépend de toi et du marché"
+    ]
+   ],
+   "slots": 3,
+   "vo": "La vérité : un, les débuts sont lents. Deux, régulier vaut mieux qu'intense. Trois, aucun revenu n'est garanti, ça dépend de toi et du marché.",
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Comment **tenir**",
+   "items": [
+    [
+     "Bloque tes créneaux",
+     "dans ton agenda"
+    ],
+    [
+     "Une seule tâche",
+     "par session"
+    ],
+    [
+     "Un petit objectif",
+     "pour la semaine"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Pour tenir : bloque tes créneaux dans ton agenda, fais une seule tâche par session, et fixe-toi un petit objectif pour la semaine."
+  },
+  {
+   "type": "cta",
+   "big": "Régulier,<br>**pas parfait.**",
+   "ctas": [
+    "🔖 Enregistre la vidéo",
+    "↗️ Partage à quelqu'un qui manque de temps"
+   ],
+   "note": "Exemple chiffré : adapte à ta situation",
+   "vo": "Mieux vaut régulier que parfait. Enregistre la vidéo, et partage-la à quelqu'un qui n'a jamais le temps."
+  }
+ ]
+}

@@ -1,0 +1,89 @@
+{
+ "id": "RM-R18",
+ "layout": "malin",
+ "music_seed": 518,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "POV : ton 1er client<br>**te paie**",
+   "sub": "ce qu'il faut faire ensuite",
+   "vo": "Pov : ton premier client te paie. Et maintenant, que faire ?"
+  },
+  {
+   "type": "list",
+   "title": "Les **réflexes**",
+   "items": [
+    [
+     "Une facture",
+     "avec ce que tu as vendu"
+    ],
+    [
+     "Une trace",
+     "du paiement reçu"
+    ],
+    [
+     "Un tableau",
+     "des encaissements"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Un : fais une facture. Deux : garde une trace du paiement. Trois : note tout dans un tableau.",
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Mets de **côté**",
+   "items": [
+    [
+     "Une part à chaque fois",
+     "pour les cotisations"
+    ],
+    [
+     "Le pourcentage exact",
+     "à vérifier sur le site de l'Urssaf"
+    ],
+    [
+     "Pas de dépense folle",
+     "garde une marge"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Mets de côté une part de chaque paiement pour les cotisations. Le pourcentage exact change : vérifie-le sur le site de l'Urssaf. Et ne dépense pas tout."
+  },
+  {
+   "type": "list",
+   "title": "Et **ensuite** ?",
+   "items": [
+    [
+     "Demande un avis",
+     "un mot sur ton travail"
+    ],
+    [
+     "Propose la suite",
+     "un autre service"
+    ],
+    [
+     "Déclare",
+     "tes revenus, sites officiels"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Ensuite, demande un petit avis sur ton travail, propose une suite si ça lui a plu, et déclare tes revenus sur les sites officiels."
+  },
+  {
+   "type": "cta",
+   "big": "Le 1er paiement,<br>**c'est le début.**",
+   "ctas": [
+    "🔖 Enregistre la vidéo",
+    "↗️ Partage à quelqu'un qui démarre"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Le premier paiement, c'est le début, pas la fin. Enregistre la vidéo, et partage-la à quelqu'un qui attend son premier client."
+  }
+ ]
+}

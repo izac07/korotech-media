@@ -1,0 +1,98 @@
+{
+ "id": "RM-R14",
+ "layout": "malin",
+ "music_seed": 514,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Premier mois :<br>**les 4 erreurs**",
+   "sub": "à éviter pour te lancer mieux",
+   "vo": "Premier mois de side hustle : voici les quatre erreurs que beaucoup de débutants font."
+  },
+  {
+   "type": "list",
+   "title": "Les **4 erreurs**",
+   "items": [
+    [
+     "Tout acheter d'abord",
+     "matériel, formation, logo"
+    ],
+    [
+     "Prix trop bas",
+     "tu t'épuises pour rien"
+    ],
+    [
+     "Offre floue",
+     "personne ne comprend"
+    ],
+    [
+     "Ne rien noter",
+     "ni clients, ni revenus"
+    ]
+   ],
+   "slots": 4,
+   "vo": "Un : tout acheter avant de commencer. Deux : fixer un prix trop bas. Trois : une offre floue. Quatre : ne rien noter, ni les clients, ni les revenus.",
+   "cue": [
+    "un",
+    "deux",
+    "trois",
+    "quatre"
+   ]
+  },
+  {
+   "type": "list",
+   "title": "À la **place**",
+   "items": [
+    [
+     "Commence avec ce que tu as",
+     "zéro dépense inutile"
+    ],
+    [
+     "Un prix qui paie ton temps",
+     "calcule-le"
+    ],
+    [
+     "Une offre en 1 phrase",
+     "claire et précise"
+    ],
+    [
+     "Un tableau simple",
+     "pour tout suivre"
+    ]
+   ],
+   "slots": 4,
+   "vo": "À la place, commence avec ce que tu as, calcule un prix qui paie ton temps, écris ton offre en une phrase, et suis tout dans un tableau simple."
+  },
+  {
+   "type": "list",
+   "title": "Ton **premier mois**",
+   "items": [
+    [
+     "Semaine 1",
+     "ton offre et un exemple"
+    ],
+    [
+     "Semaine 2",
+     "en parler autour de toi"
+    ],
+    [
+     "Semaines 3 et 4",
+     "chercher un 1er client"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Ton premier mois : semaine un, ton offre et un exemple. Semaine deux, en parler autour de toi. Semaines trois et quatre, chercher un client."
+  },
+  {
+   "type": "cta",
+   "big": "Moins de pièges,<br>**plus de clarté.**",
+   "ctas": [
+    "🔖 Enregistre la vidéo",
+    "↗️ Partage à quelqu'un qui se lance"
+   ],
+   "note": "Revenus à déclarer (sites officiels)",
+   "vo": "Moins de pièges, plus de clarté. Enregistre la vidéo, et partage-la à quelqu'un qui se lance."
+  }
+ ]
+}

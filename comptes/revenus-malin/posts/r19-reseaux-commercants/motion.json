@@ -1,0 +1,84 @@
+{
+ "id": "RM-R19",
+ "layout": "malin",
+ "music_seed": 519,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Les commerçants<br>**ont besoin de toi** ?",
+   "sub": "gérer leurs réseaux, pas à pas",
+   "vo": "Les commerçants ont besoin d'aide pour leurs réseaux sociaux ? Voici comment démarrer, pas à pas."
+  },
+  {
+   "type": "list",
+   "title": "Ce que tu **proposes**",
+   "items": [
+    [
+     "Des publications régulières",
+     "photos et textes simples"
+    ],
+    [
+     "Des réponses aux messages",
+     "sur un créneau défini"
+    ],
+    [
+     "Un planning",
+     "validé avec le commerçant"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Ce que tu peux proposer : des publications régulières, des réponses aux messages sur un créneau défini, et un planning validé avec le commerçant."
+  },
+  {
+   "type": "list",
+   "title": "Pour **démarcher**",
+   "items": [
+    [
+     "Un commerce du coin",
+     "passe sur place"
+    ],
+    [
+     "Un exemple",
+     "avant / après d'une page"
+    ],
+    [
+     "Une offre simple",
+     "à l'essai"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Pour démarcher : passe voir un commerce du coin, montre un exemple avant et après, et propose une offre simple à l'essai."
+  },
+  {
+   "type": "list",
+   "title": "Les **points d'attention**",
+   "items": [
+    [
+     "Le droit à l'image",
+     "demande l'accord"
+    ],
+    [
+     "Les accès",
+     "pas de mot de passe en clair"
+    ],
+    [
+     "Le cadre",
+     "ce qui est inclus"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Les points d'attention : le droit à l'image, il faut un accord. Les accès au compte, sans partager un mot de passe en clair. Et un cadre clair sur ce qui est inclus."
+  },
+  {
+   "type": "cta",
+   "big": "Utile,<br>**régulier, clair.**",
+   "ctas": [
+    "🔖 Enregistre la vidéo",
+    "↗️ Partage à un fan de réseaux"
+   ],
+   "note": "Revenus à déclarer (sites officiels)",
+   "vo": "Utile, régulier, clair : voilà ce que cherche un commerçant. Enregistre la vidéo, et partage-la à quelqu'un qui aime les réseaux sociaux."
+  }
+ ]
+}

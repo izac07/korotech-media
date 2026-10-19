@@ -1,0 +1,84 @@
+{
+ "id": "RM-R21",
+ "layout": "malin",
+ "music_seed": 521,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Écrire pour le web<br>**sans être écrivain**",
+   "sub": "par où commencer",
+   "vo": "Écrire pour le web sans être écrivain, c'est possible. Voici par où commencer."
+  },
+  {
+   "type": "list",
+   "title": "Les **missions**",
+   "items": [
+    [
+     "Articles de blog",
+     "pour petites entreprises"
+    ],
+    [
+     "Fiches produits",
+     "pour des boutiques"
+    ],
+    [
+     "Newsletters",
+     "pour des indépendants"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Écrire pour le web, ça peut être : des articles de blog pour de petites entreprises, des fiches produits pour des boutiques, ou des newsletters pour des indépendants."
+  },
+  {
+   "type": "list",
+   "title": "Pour **démarrer**",
+   "items": [
+    [
+     "3 textes d'exemple",
+     "sur des sujets que tu aimes"
+    ],
+    [
+     "Un endroit pour les montrer",
+     "un petit site, un profil"
+    ],
+    [
+     "Un message court",
+     "à de petites entreprises"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Pour démarrer : écris trois textes d'exemple, mets-les quelque part pour les montrer, et envoie un message court à de petites entreprises."
+  },
+  {
+   "type": "list",
+   "title": "Ce qui fait la **différence**",
+   "items": [
+    [
+     "Des textes clairs",
+     "phrases courtes"
+    ],
+    [
+     "Des délais tenus",
+     "c'est ce qu'on retient"
+    ],
+    [
+     "Une relecture",
+     "faits vérifiés"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Ce qui fait la différence : des textes clairs, des délais tenus, et une relecture sérieuse, avec les faits vérifiés."
+  },
+  {
+   "type": "cta",
+   "big": "Écris,<br>**montre, propose.**",
+   "ctas": [
+    "🔖 Enregistre la vidéo",
+    "↗️ Partage à quelqu'un qui aime écrire"
+   ],
+   "note": "Revenus à déclarer (sites officiels)",
+   "vo": "Écris, montre, propose, et recommence. Enregistre la vidéo, et partage-la à quelqu'un qui aime écrire, ou qui voudrait s'y mettre."
+  }
+ ]
+}

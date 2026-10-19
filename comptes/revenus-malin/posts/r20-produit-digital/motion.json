@@ -1,0 +1,89 @@
+{
+ "id": "RM-R20",
+ "layout": "malin",
+ "music_seed": 520,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Un produit digital<br>**simple** ?",
+   "sub": "l'idée, sans promesse de revenus",
+   "vo": "Tu veux créer un produit digital simple ? Voici comment t'y prendre, sans promesse de revenus."
+  },
+  {
+   "type": "list",
+   "title": "Des idées **simples**",
+   "items": [
+    [
+     "Un modèle",
+     "planning, budget, CV"
+    ],
+    [
+     "Un mini-guide",
+     "un problème, une solution"
+    ],
+    [
+     "Une checklist",
+     "à télécharger"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Un produit digital simple : un modèle, comme un planning ou un budget. Un mini-guide qui résout un seul problème. Ou une checklist à télécharger.",
+   "cue": [
+    "modèle",
+    "guide",
+    "checklist"
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Les **étapes**",
+   "items": [
+    [
+     "Trouver un vrai problème",
+     "demande autour de toi"
+    ],
+    [
+     "Créer une version simple",
+     "pas parfaite"
+    ],
+    [
+     "La tester",
+     "avec 2 ou 3 personnes"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Les étapes : trouve un vrai problème autour de toi, crée une version simple, et teste-la avec deux ou trois personnes avant de la vendre."
+  },
+  {
+   "type": "list",
+   "title": "L'honnête **vérité**",
+   "items": [
+    [
+     "Aucune vente garantie",
+     "ça se mérite"
+    ],
+    [
+     "Il faut le faire connaître",
+     "contenu, bouche-à-oreille"
+    ],
+    [
+     "Revenus à déclarer",
+     "sites officiels"
+    ]
+   ],
+   "slots": 3,
+   "vo": "La vérité : aucune vente n'est garantie, il faut le faire connaître, et les revenus se déclarent, selon les règles officielles."
+  },
+  {
+   "type": "cta",
+   "big": "Une idée,<br>**un test.**",
+   "ctas": [
+    "🔖 Enregistre la vidéo",
+    "↗️ Partage à quelqu'un qui a une idée"
+   ],
+   "note": "Revenus à déclarer (sites officiels)",
+   "vo": "Une idée, un test, et tu vois si ça intéresse. Enregistre la vidéo, et partage-la à quelqu'un qui a une idée en tête."
+  }
+ ]
+}

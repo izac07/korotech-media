@@ -1,0 +1,89 @@
+{
+ "id": "RM-R16",
+ "layout": "malin",
+ "music_seed": 516,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Salarié et<br>**side hustle** ?",
+   "sub": "3 points à vérifier d'abord",
+   "vo": "Salarié et tenté par un side hustle ? Voici trois points à vérifier avant de te lancer."
+  },
+  {
+   "type": "list",
+   "title": "À **vérifier**",
+   "items": [
+    [
+     "Ton contrat de travail",
+     "exclusivité, non-concurrence"
+    ],
+    [
+     "Ton employeur",
+     "faut-il l'informer ?"
+    ],
+    [
+     "Ton repos",
+     "garde du temps pour toi"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Un : relis ton contrat de travail, notamment les clauses d'exclusivité ou de non-concurrence. Deux : vois s'il faut informer ton employeur. Trois : garde du temps de repos.",
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Les **limites** claires",
+   "items": [
+    [
+     "Pas sur ton temps de travail",
+     "ni avec le matériel du bureau"
+    ],
+    [
+     "Pas de concurrence",
+     "avec ton employeur"
+    ],
+    [
+     "Loyauté",
+     "reste la règle"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Le bon réflexe : ne jamais faire ton activité pendant ton temps de travail, ni avec le matériel de ton employeur, et ne pas concurrencer ton employeur."
+  },
+  {
+   "type": "list",
+   "title": "Où **te renseigner**",
+   "items": [
+    [
+     "Ton contrat",
+     "et la convention collective"
+    ],
+    [
+     "service-public.fr",
+     "les règles officielles"
+    ],
+    [
+     "Un conseiller",
+     "si tu as un doute"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Pour t'informer : ton contrat, la convention collective, service-public.fr, ou un conseiller si tu as un doute."
+  },
+  {
+   "type": "cta",
+   "big": "Vérifie avant,<br>**pas après.**",
+   "ctas": [
+    "🔖 Enregistre la vidéo",
+    "↗️ Partage à un ami salarié"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Vérifie avant de te lancer, pas après. Enregistre la vidéo, et partage-la à un ami salarié qui veut un complément."
+  }
+ ]
+}

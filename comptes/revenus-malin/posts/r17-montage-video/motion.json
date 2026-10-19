@@ -1,0 +1,89 @@
+{
+ "id": "RM-R17",
+ "layout": "malin",
+ "music_seed": 517,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Monter des vidéos<br>**pour des créateurs**",
+   "sub": "par où commencer, honnêtement",
+   "vo": "Tu aimes monter des vidéos ? Voici comment en faire un petit complément de revenus, honnêtement."
+  },
+  {
+   "type": "list",
+   "title": "Ce qu'il te **faut**",
+   "items": [
+    [
+     "Un logiciel gratuit",
+     "pour apprendre"
+    ],
+    [
+     "Un ordinateur correct",
+     "ou un smartphone"
+    ],
+    [
+     "De la patience",
+     "les débuts sont lents"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Ce qu'il te faut : un logiciel gratuit pour apprendre, un ordinateur ou un smartphone correct, et de la patience, car les débuts sont lents."
+  },
+  {
+   "type": "list",
+   "title": "Trouver des **clients**",
+   "items": [
+    [
+     "Un petit portfolio",
+     "3 extraits montés"
+    ],
+    [
+     "Les petits créateurs",
+     "ils cherchent de l'aide"
+    ],
+    [
+     "Un message court",
+     "avec un exemple"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Pour trouver des clients : fais-toi un petit portfolio, contacte de petits créateurs, et envoie un message court avec un exemple de ton travail.",
+   "cue": [
+    "portfolio",
+    "créateurs",
+    "message"
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Pense à **cadrer**",
+   "items": [
+    [
+     "Ce qui est inclus",
+     "nombre de modifications"
+    ],
+    [
+     "Les délais",
+     "annonce-les"
+    ],
+    [
+     "Le tarif",
+     "avant de commencer"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Pense à cadrer : ce qui est inclus, le nombre de modifications, les délais et le tarif, avant de commencer."
+  },
+  {
+   "type": "cta",
+   "big": "Montre,<br>**ne dis pas.**",
+   "ctas": [
+    "🔖 Enregistre la vidéo",
+    "↗️ Partage à un monteur en herbe"
+   ],
+   "note": "Revenus à déclarer (sites officiels)",
+   "vo": "Montre ton travail, ne te contente pas de le décrire. Enregistre la vidéo, et partage-la à quelqu'un qui aime monter."
+  }
+ ]
+}

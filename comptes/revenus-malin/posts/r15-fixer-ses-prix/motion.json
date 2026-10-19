@@ -1,0 +1,86 @@
+{
+ "id": "RM-R15",
+ "layout": "malin",
+ "music_seed": 515,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Fixer ton prix :<br>**la méthode simple**",
+   "sub": "sans te sous-payer",
+   "vo": "Comment fixer tes premiers prix sans te sous-payer ? Voici une méthode simple."
+  },
+  {
+   "type": "math",
+   "title": "Exemple : **1 heure**",
+   "cells": [
+    [
+     "Tarif horaire visé",
+     "15 €"
+    ],
+    [
+     "Frais (outils, trajets)",
+     "5 €",
+     "+"
+    ],
+    [
+     "Prix à annoncer",
+     "20 €",
+     "="
+    ]
+   ],
+   "note": "Exemple pour illustrer, adapte à ta situation",
+   "vo": "Une méthode simple, avec un exemple. Le tarif horaire que tu vises, plus tes frais comme les outils ou les trajets, donne le prix à annoncer pour une heure."
+  },
+  {
+   "type": "list",
+   "title": "Avant de **fixer**",
+   "items": [
+    [
+     "Ton temps réel",
+     "échanges avec le client inclus"
+    ],
+    [
+     "Tes frais",
+     "outils, déplacements"
+    ],
+    [
+     "Ce qui se pratique",
+     "regarde des offres proches"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Avant de fixer ton prix : compte ton temps réel, y compris les échanges avec le client, ajoute tes frais, et regarde ce qui se pratique autour de toi."
+  },
+  {
+   "type": "list",
+   "title": "Les **pièges**",
+   "items": [
+    [
+     "Casser les prix",
+     "tu t'épuises"
+    ],
+    [
+     "Ne rien facturer",
+     "ton temps a de la valeur"
+    ],
+    [
+     "Rester flou",
+     "annonce le prix avant"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Les pièges : casser les prix pour être choisi, offrir ton temps sans rien facturer, et rester flou sur le prix. Annonce-le clairement avant de commencer."
+  },
+  {
+   "type": "cta",
+   "big": "Ton temps<br>**a un prix.**",
+   "ctas": [
+    "🔖 Enregistre la vidéo",
+    "↗️ Partage à quelqu'un qui se sous-paie"
+   ],
+   "note": "Exemple chiffré : adapte à ta situation",
+   "vo": "Ton temps a un prix. Enregistre la vidéo, et partage-la à quelqu'un qui sous-estime son travail."
+  }
+ ]
+}

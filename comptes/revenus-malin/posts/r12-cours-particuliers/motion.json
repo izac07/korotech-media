@@ -1,0 +1,94 @@
+{
+ "id": "RM-R12",
+ "layout": "malin",
+ "music_seed": 512,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Cours particuliers :<br>**par où commencer** ?",
+   "sub": "l'essentiel, sans te mentir",
+   "vo": "Tu veux donner des cours particuliers ? Voici l'essentiel pour bien démarrer."
+  },
+  {
+   "type": "list",
+   "title": "Avant de **commencer**",
+   "items": [
+    [
+     "Une matière maîtrisée",
+     "et un niveau précis"
+    ],
+    [
+     "Un public clair",
+     "collège, lycée, adultes"
+    ],
+    [
+     "Un lieu",
+     "chez l'élève ou en visio"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Un : choisis une matière que tu maîtrises vraiment. Deux : décide à quel public tu t'adresses. Trois : choisis où tu donnes les cours, chez l'élève ou en visio.",
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Trouver des **élèves**",
+   "items": [
+    [
+     "Ton entourage",
+     "parents, voisins"
+    ],
+    [
+     "Les annonces locales",
+     "en lisant les règles"
+    ],
+    [
+     "Les plateformes",
+     "avec leurs conditions"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Pour trouver des élèves : un, ton entourage. Deux, les annonces locales. Trois, les plateformes de cours, en lisant bien leurs conditions.",
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Pense à **l'organisation**",
+   "items": [
+    [
+     "Un tarif clair",
+     "annoncé avant le 1er cours"
+    ],
+    [
+     "Un suivi simple",
+     "ce qui a été travaillé"
+    ],
+    [
+     "Tes revenus",
+     "à déclarer"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Annonce ton tarif avant le premier cours, note ce que vous avez travaillé, et pense à déclarer tes revenus sur les sites officiels."
+  },
+  {
+   "type": "cta",
+   "big": "Un bon prof,<br>**c'est d'abord clair.**",
+   "ctas": [
+    "🔖 Enregistre la vidéo",
+    "↗️ Partage à quelqu'un qui explique bien"
+   ],
+   "note": "Revenus à déclarer (sites officiels)",
+   "vo": "Un bon prof, c'est d'abord quelqu'un de clair. Enregistre la vidéo, et partage-la à quelqu'un qui aime expliquer."
+  }
+ ]
+}

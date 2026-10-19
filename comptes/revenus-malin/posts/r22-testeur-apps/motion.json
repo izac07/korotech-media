@@ -1,0 +1,89 @@
+{
+ "id": "RM-R22",
+ "layout": "malin",
+ "music_seed": 522,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Testeur d'apps<br>**payé** ?",
+   "sub": "ce qui est vrai, ce qui est piège",
+   "vo": "Testeur d'apps, payé pour ça ? Voici ce qui est vrai, et ce qui est un piège."
+  },
+  {
+   "type": "list",
+   "title": "Le **vrai** et le **faux**",
+   "items": [
+    [
+     "Des tests existent",
+     "pour de vrais retours"
+    ],
+    [
+     "Des gains ponctuels",
+     "pas un salaire"
+    ],
+    [
+     "Payer pour tester",
+     "c'est un piège"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Le vrai : des tests existent, mais les gains restent ponctuels. Le piège : si on te demande de payer pour devenir testeur, fuis.",
+   "cue": [
+    "vrai",
+    "gains",
+    "piège"
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Les **signaux** d'alarme",
+   "items": [
+    [
+     "Frais d'inscription",
+     "un vrai test est gratuit"
+    ],
+    [
+     "Gains garantis",
+     "personne ne peut les promettre"
+    ],
+    [
+     "Données sensibles",
+     "identité, banque"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Les signaux d'alarme : des frais d'inscription, des gains garantis, ou des demandes de données sensibles comme ta pièce d'identité ou ta banque."
+  },
+  {
+   "type": "list",
+   "title": "Avant de **tester**",
+   "items": [
+    [
+     "Cherche le nom",
+     "+ « avis » + « arnaque »"
+    ],
+    [
+     "Lis les conditions",
+     "paiement et données"
+    ],
+    [
+     "Aucune avance",
+     "jamais d'argent d'avance"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Avant de tester : cherche le nom de la plateforme avec le mot avis, lis les conditions, et n'avance jamais d'argent."
+  },
+  {
+   "type": "cta",
+   "big": "Un vrai test<br>**est gratuit.**",
+   "ctas": [
+    "🔖 Enregistre la vidéo",
+    "↗️ Partage à quelqu'un qui cherche"
+   ],
+   "note": "Aide : cybermalveillance.gouv.fr",
+   "vo": "Un vrai test est gratuit pour toi. Enregistre la vidéo, et partage-la à quelqu'un qui cherche un petit complément."
+  }
+ ]
+}
