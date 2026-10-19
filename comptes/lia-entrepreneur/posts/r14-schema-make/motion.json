@@ -1,0 +1,84 @@
+{
+ "id": "LIA-R14",
+ "layout": "claudeflow",
+ "music_seed": 414,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "title": "Publier tout seul<br>**sur Instagram**",
+   "sub": "le schéma Make",
+   "vo": "Publier sur Instagram sans y toucher, c'est possible avec Make. Voici le schéma, en trois blocs simples."
+  },
+  {
+   "type": "chat",
+   "tag": "BLOC 1 · LE TABLEAU",
+   "prompt": "Où sont mes posts prêts à partir ?",
+   "reply": [
+    "Un tableau, une ligne par post ✓",
+    "Date, heure, légende ✓",
+    "Lien de la vidéo ✓",
+    "**Statut : à valider**"
+   ],
+   "vo": "Bloc un : un tableau. Chaque post y a sa ligne, avec la date, l'heure, la légende, le lien de la vidéo, et un statut."
+  },
+  {
+   "type": "table",
+   "tag": "BLOC 2 · LE VETO",
+   "rows": [
+    [
+     "MAR",
+     "12:30",
+     "Reel tuto",
+     "valider"
+    ],
+    [
+     "MAR",
+     "18:30",
+     "Reel coulisses",
+     "valider"
+    ],
+    [
+     "MER",
+     "12:30",
+     "Reel à revoir",
+     "refuse"
+    ]
+   ],
+   "vo": "Bloc deux : mon droit de veto. Je relis la file, et je peux refuser un post. Un post refusé, Make ne le publie pas."
+  },
+  {
+   "type": "pipeline",
+   "tag": "BLOC 3 · LA PUBLICATION",
+   "nodes": [
+    [
+     "TABLEAU",
+     "lit la file"
+    ],
+    [
+     "MAKE",
+     "à l'heure prévue"
+    ],
+    [
+     "INSTAGRAM",
+     "publie"
+    ],
+    [
+     "TABLEAU",
+     "statut à jour"
+    ]
+   ],
+   "notif": "Publié sur @lia.entrepreneur",
+   "vo": "Bloc trois : à l'heure prévue, Make lit la file, publie sur Instagram, et met le statut à jour dans le tableau."
+  },
+  {
+   "type": "cta",
+   "title": "Un tableau,<br>**un robot, un veto.**",
+   "ctas": [
+    "🔖 enregistre le schéma",
+    "➕ suis-moi pour la suite"
+   ],
+   "vo": "Un tableau, Make, et mon droit de veto : voilà tout le schéma. Enregistre la vidéo, et suis-moi pour voir chaque bloc en détail."
+  }
+ ]
+}

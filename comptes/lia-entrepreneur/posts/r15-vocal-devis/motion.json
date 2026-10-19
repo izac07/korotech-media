@@ -1,0 +1,84 @@
+{
+ "id": "LIA-R15",
+ "layout": "claudeflow",
+ "music_seed": 415,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "title": "Un vocal<br>**devient un devis**",
+   "sub": "avant / après",
+   "vo": "Tu dictes ton besoin dans un vocal, et tu obtiens un devis propre. Voici comment faire avec Claude."
+  },
+  {
+   "type": "chat",
+   "tag": "ÉTAPE 1 · LE VOCAL",
+   "prompt": "Voici ma transcription : fais-en un devis",
+   "reply": [
+    "Prestations listées ✓",
+    "Quantités et délais ✓",
+    "Conditions de paiement ✓",
+    "**Prix : à vérifier par toi**"
+   ],
+   "vo": "Étape un : tu dictes ton vocal, tu copies la transcription, et tu demandes un devis à Claude. Il liste les prestations, les quantités, les délais et les conditions."
+  },
+  {
+   "type": "table",
+   "tag": "ÉTAPE 2 · TU VÉRIFIES",
+   "rows": [
+    [
+     "PRESTA",
+     "·",
+     "Bien décrite",
+     "valider"
+    ],
+    [
+     "DÉLAI",
+     "·",
+     "À confirmer",
+     "valider"
+    ],
+    [
+     "PRIX",
+     "·",
+     "Inventé ?",
+     "refuse"
+    ]
+   ],
+   "vo": "Étape deux : tu vérifies tout, surtout les prix et les délais. Claude ne doit jamais choisir tes tarifs à ta place."
+  },
+  {
+   "type": "pipeline",
+   "tag": "ÉTAPE 3 · TU ENVOIES",
+   "nodes": [
+    [
+     "VOCAL",
+     "tu dictes"
+    ],
+    [
+     "CLAUDE",
+     "met en forme"
+    ],
+    [
+     "TOI",
+     "vérifies"
+    ],
+    [
+     "CLIENT",
+     "reçoit"
+    ]
+   ],
+   "notif": "Devis envoyé ✓",
+   "vo": "Étape trois : tu exportes en PDF et tu l'envoies à ton client le jour même, pendant qu'il y pense encore."
+  },
+  {
+   "type": "cta",
+   "title": "Tu parles.<br>**Claude met en forme.**",
+   "ctas": [
+    "🔖 enregistre la vidéo",
+    "➕ suis-moi pour la suite"
+   ],
+   "vo": "Tu parles, Claude met en forme, et c'est toi qui valides. Enregistre la vidéo, et suis-moi pour d'autres astuces de freelance."
+  }
+ ]
+}

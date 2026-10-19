@@ -1,0 +1,84 @@
+{
+ "id": "LIA-R13",
+ "layout": "claudeflow",
+ "music_seed": 413,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "title": "Ta réunion,<br>**en actions**",
+   "sub": "résumé + à-faire",
+   "vo": "Une réunion de plus, et personne ne sait qui fait quoi. Voici comment Claude transforme tes notes en actions."
+  },
+  {
+   "type": "chat",
+   "tag": "ÉTAPE 1 · TES NOTES",
+   "prompt": "Voici mes notes : résume et liste les actions",
+   "reply": [
+    "Résumé en 3 lignes ✓",
+    "Décisions prises ✓",
+    "Actions : qui, quoi, quand",
+    "**À toi de vérifier**"
+   ],
+   "vo": "Étape un : tu colles tes notes brutes dans Claude, et tu demandes un résumé et la liste des actions. Il rend les décisions, et pour chaque action : qui, quoi, pour quand."
+  },
+  {
+   "type": "table",
+   "tag": "ÉTAPE 2 · TU RELIS",
+   "rows": [
+    [
+     "TOI",
+     "·",
+     "Envoyer le devis",
+     "valider"
+    ],
+    [
+     "ÉQUIPE",
+     "·",
+     "Préparer la maquette",
+     "valider"
+    ],
+    [
+     "???",
+     "·",
+     "Qui s'en occupe ?",
+     "refuse"
+    ]
+   ],
+   "vo": "Étape deux : tu relis. Claude peut mal comprendre une note, ou oublier un détail. Une action sans responsable, tu la corriges toi-même."
+  },
+  {
+   "type": "pipeline",
+   "tag": "ÉTAPE 3 · TU ENVOIES",
+   "nodes": [
+    [
+     "NOTES",
+     "brutes"
+    ],
+    [
+     "CLAUDE",
+     "résume"
+    ],
+    [
+     "TOI",
+     "relis"
+    ],
+    [
+     "ÉQUIPE",
+     "reçoit"
+    ]
+   ],
+   "notif": "Compte rendu envoyé ✓",
+   "vo": "Étape trois : tu envoies le compte rendu à tout le monde juste après la réunion, pendant que tout est encore frais."
+  },
+  {
+   "type": "cta",
+   "title": "Notes en vrac.<br>**Actions claires.**",
+   "ctas": [
+    "🔖 enregistre la vidéo",
+    "➕ suis-moi pour la suite"
+   ],
+   "vo": "Des notes en vrac, des actions claires, et toi qui gardes la main. Enregistre la vidéo, et suis-moi pour d'autres usages au quotidien."
+  }
+ ]
+}

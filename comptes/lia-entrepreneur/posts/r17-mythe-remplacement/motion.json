@@ -1,0 +1,78 @@
+{
+ "id": "LIA-R17",
+ "layout": "iceberg",
+ "music_seed": 417,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "cmd": "./reveler --remplacement",
+   "top": "ce qu'on te dit",
+   "bottom": "ce qui change vraiment",
+   "vo": "On te dit que l'IA va remplacer les freelances. Voici ce qu'il y a vraiment sous la surface."
+  },
+  {
+   "type": "surface",
+   "labels": [
+    "l'IA fait ton métier",
+    "plus besoin de toi",
+    "tout est automatique"
+   ],
+   "text": "TU SERAS REMPLACÉ",
+   "vo": "En surface : l'IA fait ton métier, les clients n'ont plus besoin de toi, et tout devient automatique."
+  },
+  {
+   "type": "process",
+   "steps": [
+    "TÂCHES",
+    "JUGEMENT",
+    "CLIENT"
+   ],
+   "chaos": "PEUR",
+   "ok": "tu gardes la main",
+   "text": "L'IA ACCÉLÈRE<br>LES TÂCHES",
+   "vo": "Sous l'eau : l'IA accélère certaines tâches. Mais le jugement, la relation client et les choix restent à toi. Ce qui change, c'est ta manière de travailler."
+  },
+  {
+   "type": "logs",
+   "logs": [
+    [
+     "l'IA remplace tout",
+     "err"
+    ],
+    [
+     "personne ne relit",
+     "err"
+    ],
+    [
+     "l'IA + ton jugement ✓",
+     "ok"
+    ],
+    [
+     "ce que tu délègues :",
+     "info"
+    ],
+    [
+     "les premiers jets",
+     "item"
+    ],
+    [
+     "le répétitif",
+     "item"
+    ],
+    [
+     "la mise en forme",
+     "item"
+    ]
+   ],
+   "text": "DÉLÈGUE,<br>GARDE LE JUGEMENT",
+   "vo": "Ce que tu peux déléguer : les premiers jets, le répétitif, la mise en forme. Ce que tu gardes : le jugement, et la relation avec tes clients."
+  },
+  {
+   "type": "cta",
+   "task": "1 TÂCHE À DÉLÉGUER",
+   "text": "ESSAIE CETTE SEMAINE",
+   "vo": "Choisis une tâche répétitive et essaie de la déléguer cette semaine. Enregistre la vidéo, et suis-moi pour des idées concrètes."
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "id": "LIA-R16",
+ "layout": "claudeflow",
+ "music_seed": 416,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "title": "Comment Claude<br>**évite de se répéter**",
+   "sub": "le journal des sujets",
+   "vo": "Comment une IA évite de refaire le même post chaque semaine ? Avec un journal, tout simplement."
+  },
+  {
+   "type": "chat",
+   "tag": "ÉTAPE 1 · IL CONSULTE",
+   "prompt": "Quels sujets ai-je déjà traités ?",
+   "reply": [
+    "Journal du compte lu ✓",
+    "Sujets déjà faits listés ✓",
+    "Nouveaux angles proposés ✓",
+    "**Doublon : écarté**"
+   ],
+   "vo": "Étape un : avant de proposer un sujet, Claude lit le journal du compte. Il voit tout ce qui a déjà été publié, et il écarte les doublons."
+  },
+  {
+   "type": "table",
+   "tag": "ÉTAPE 2 · IL COMPARE",
+   "rows": [
+    [
+     "SUJET A",
+     "·",
+     "Déjà fait",
+     "refuse"
+    ],
+    [
+     "SUJET B",
+     "·",
+     "Nouveau",
+     "valider"
+    ],
+    [
+     "SUJET C",
+     "·",
+     "Nouveau",
+     "valider"
+    ]
+   ],
+   "vo": "Étape deux : il compare chaque idée avec le journal. Déjà fait, on écarte. Nouveau, on garde. Deux posts du même jour doivent aussi différer."
+  },
+  {
+   "type": "pipeline",
+   "tag": "ÉTAPE 3 · IL NOTE",
+   "nodes": [
+    [
+     "SUJET",
+     "choisi"
+    ],
+    [
+     "POST",
+     "écrit"
+    ],
+    [
+     "JOURNAL",
+     "mis à jour"
+    ],
+    [
+     "SEMAINE",
+     "suivante"
+    ]
+   ],
+   "notif": "Journal à jour ✓",
+   "vo": "Étape trois : une fois le post prêt, il l'ajoute au journal, avec le pilier et le type d'accroche. La semaine suivante, il repart de là."
+  },
+  {
+   "type": "cta",
+   "title": "Un journal,<br>**zéro doublon.**",
+   "ctas": [
+    "🔖 enregistre la vidéo",
+    "➕ suis-moi pour la suite"
+   ],
+   "vo": "Pas de mémoire magique : juste un journal bien tenu. Enregistre la vidéo, et suis-moi pour voir les autres rouages du système."
+  }
+ ]
+}
