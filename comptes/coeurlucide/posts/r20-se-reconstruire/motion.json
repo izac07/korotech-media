@@ -1,0 +1,51 @@
+{
+ "id": "CL-R20",
+ "layout": "nightchat",
+ "music_seed": 812,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Une petite victoire aujourd'hui ? 🤍",
+   "vo": "Se reconstruire, ça se fait par petites victoires. Voici comment les repérer, même quand ça semble minuscule."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Rien n'avance.",
+    "Je suis toujours au même point."
+   ],
+   "sent": "J'ai juste réussi à me lever",
+   "ghost": "Vu 08:15",
+   "vo": "Quand tout est lourd, se lever est déjà une victoire. On avance à son rythme, et les petits pas comptent autant que les grands."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Aujourd'hui, j'ai pris l'air.",
+    "J'ai dit non à ce qui me pèse.",
+    "J'ai ri, un peu."
+   ],
+   "vo": "Aujourd'hui, j'ai pris l'air. J'ai dit non à ce qui me pèse. J'ai ri, un peu. Voilà ce que sont les petites victoires."
+  },
+  {
+   "type": "check",
+   "title": "Ce soir, note :",
+   "items": [
+    "Une chose faite pour toi",
+    "Un moment de calme",
+    "Un merci à toi-même"
+   ],
+   "vo": "Ce soir, note une chose faite pour toi, un moment de calme, et un merci à toi-même. Cette liste te montre ton chemin."
+  },
+  {
+   "type": "cta",
+   "last": "Je vais mieux, doucement 🤍",
+   "ctas": [
+    "🔖 Garde-le pour plus tard",
+    "↗️ Envoie-le à quelqu'un qui en a besoin"
+   ],
+   "vo": "Se reconstruire prend du temps. Chaque petite victoire compte. Enregistre ce message pour les jours où tout semble figé."
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R24",
+ "layout": "manifeste3d",
+ "music_seed": 724,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 7
+ },
+ "timeline": [
+  "J1",
+  "J2-3",
+  "J4-6",
+  "J7"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "7",
+   "unit": "JOURS",
+   "line": "**pour commencer**<br>par le plus dur.",
+   "sub": "la tâche qui te pèse d'abord",
+   "vo": "Sept jours pour commencer par le plus dur. La tâche que tu repousses pèse sur ta journée, tant qu'elle n'est pas faite."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J7",
+   "notifs": [
+    "📩 Je repousse le plus important",
+    "🧹 Je fais le facile d'abord",
+    "😮‍💨 Il pèse toute la journée"
+   ],
+   "kicker": "tâche",
+   "card_word": "tâche",
+   "no": "repousser le plus dur",
+   "yes": "l'attaquer en premier",
+   "vo": "Avant : tu fais le facile d'abord, et la grosse tâche reste. L'idée : choisis-la la veille, et fais-la en premier."
+  },
+  {
+   "type": "weeks",
+   "word": "tâche",
+   "weeks": [
+    [
+     "TÂCHE 1",
+     "🎯 Choisis la tâche qui te pèse",
+     "📝 La veille, sur papier"
+    ],
+    [
+     "TÂCHE 2",
+     "✂️ Découpe-la",
+     "▶️ Commence par la première partie"
+    ]
+   ],
+   "vo": "Première tâche : choisis celle qui te pèse, la veille, sur papier. Deuxième tâche : découpe-la, et commence par la première partie seulement."
+  },
+  {
+   "type": "weeks",
+   "word": "tâche",
+   "weeks": [
+    [
+     "JOURS 3 À 6",
+     "⏰ Fais-la avant le reste",
+     "📵 Avant les messages"
+    ],
+    [
+     "JOUR 7",
+     "🏁 Compte les jours",
+     "🌤️ Note ce que tu ressens"
+    ]
+   ],
+   "vo": "Du jour trois au jour six, fais cette tâche avant le reste, avant les messages. Au septième jour, compte tes jours. Une tâche suffit."
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "7",
+   "obj": "Objectif : **le plus dur** en premier.",
+   "ctas": [
+    "🔖 ENREGISTRE LE PLAN",
+    "💬 COMMENTE « TÂCHE »"
+   ],
+   "vo": "Objectif au jour sept : le plus dur fait en premier. Enregistre le plan, et commente tâche si tu choisis la tienne maintenant."
+  }
+ ]
+}

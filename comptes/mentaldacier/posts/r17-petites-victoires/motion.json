@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R17",
+ "layout": "manifeste3d",
+ "music_seed": 717,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 7
+ },
+ "timeline": [
+  "J1",
+  "J2-3",
+  "J4-6",
+  "J7"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "7",
+   "unit": "JOURS",
+   "line": "**de petites victoires**<br>pour te faire confiance.",
+   "sub": "tiens une promesse minuscule",
+   "vo": "Sept jours de petites victoires pour te faire confiance. Chaque promesse tenue, même minuscule, prouve que tu peux compter sur toi."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J7",
+   "notifs": [
+    "🎯 Je me fixe trop de choses",
+    "😞 Je tiens rarement",
+    "🤷 Je ne me crois plus"
+   ],
+   "kicker": "promesse",
+   "card_word": "promesse",
+   "no": "viser trop gros",
+   "yes": "des promesses minuscules",
+   "vo": "Avant : tu te fixes dix choses, tu en tiens une, et tu te crois moins. L'idée : une promesse minuscule, tenue tous les jours."
+  },
+  {
+   "type": "weeks",
+   "word": "victoire",
+   "weeks": [
+    [
+     "VICTOIRE 1",
+     "📌 Une promesse minuscule",
+     "🛏️ Faire son lit, par exemple"
+    ],
+    [
+     "VICTOIRE 2",
+     "✅ Tiens-la, puis note-la",
+     "📓 Une ligne, le soir"
+    ]
+   ],
+   "vo": "Victoire numéro un : choisis une promesse minuscule, comme faire ton lit. Victoire numéro deux : tiens-la, puis note-la le soir, en une ligne."
+  },
+  {
+   "type": "weeks",
+   "word": "victoire",
+   "weeks": [
+    [
+     "VICTOIRE 3",
+     "📈 Au jour 5, monte d'un cran",
+     "⚖️ Toujours réaliste"
+    ],
+    [
+     "JOUR 7",
+     "📜 Relis ta liste",
+     "🔥 Ces victoires sont les tiennes"
+    ]
+   ],
+   "vo": "Victoire numéro trois : au jour cinq, monte d'un cran, en restant réaliste. Au septième jour, relis ta liste : ces victoires sont les tiennes."
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "7",
+   "obj": "Objectif : **te faire confiance.**",
+   "ctas": [
+    "🔖 ENREGISTRE LE DÉFI",
+    "💬 COMMENTE « VICTOIRE »"
+   ],
+   "vo": "Objectif au jour sept : te faire un peu plus confiance. Enregistre le défi, et commente victoire si tu choisis ta promesse minuscule maintenant."
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R15",
+ "layout": "manifeste3d",
+ "music_seed": 715,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 7
+ },
+ "timeline": [
+  "J1",
+  "J2",
+  "J3-5",
+  "J6-7"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "7",
+   "unit": "JOURS",
+   "line": "**pour reprendre**<br>après avoir tout lâché.",
+   "sub": "sans rattraper, sans te punir",
+   "vo": "Tu as tout lâché ? Sept jours pour reprendre, sans rattraper le retard et sans te punir."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J7",
+   "notifs": [
+    "😔 J'ai tout arrêté",
+    "📉 Je dois tout rattraper",
+    "🔁 Je recommence à zéro"
+   ],
+   "kicker": "version",
+   "card_word": "version",
+   "no": "tout rattraper",
+   "yes": "une version minimale",
+   "vo": "Avant : tu veux compenser le temps perdu, et tu abandonnes encore. L'idée : reprends avec une version minimale de ton habitude."
+  },
+  {
+   "type": "weeks",
+   "word": "jour",
+   "weeks": [
+    [
+     "JOUR 1",
+     "🌱 Version minimale",
+     "⏱️ Cinq minutes suffisent"
+    ],
+    [
+     "JOUR 2",
+     "🕑 Même heure, même endroit",
+     "🔗 Colle-la à un geste du quotidien"
+    ]
+   ],
+   "vo": "Jour un : la version minimale, cinq minutes suffisent. Jour deux : même heure, même endroit, collée à un geste du quotidien."
+  },
+  {
+   "type": "weeks",
+   "word": "jour",
+   "weeks": [
+    [
+     "JOURS 3 À 5",
+     "📈 Monte d'un cran",
+     "🚫 Ne rattrape rien"
+    ],
+    [
+     "JOURS 6 ET 7",
+     "🔍 Regarde ce qui a tenu",
+     "🌿 Garde ce rythme"
+    ]
+   ],
+   "vo": "Du jour trois au jour cinq : monte d'un cran, sans rien rattraper. Aux jours six et sept : regarde ce qui a tenu, et garde ce rythme."
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "7",
+   "obj": "Objectif : **reprendre** sans te punir.",
+   "ctas": [
+    "🔖 ENREGISTRE LE PLAN",
+    "💬 COMMENTE « REPRISE »"
+   ],
+   "vo": "Objectif au jour sept : avoir repris, sans te punir. Enregistre ce plan pour la prochaine pause, et commente reprise si tu recommences maintenant."
+  }
+ ]
+}

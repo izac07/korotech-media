@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R22",
+ "layout": "manifeste3d",
+ "music_seed": 722,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 7
+ },
+ "timeline": [
+  "J1",
+  "J2-3",
+  "J4-6",
+  "J7"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "7",
+   "unit": "JOURS",
+   "line": "**POV : tu dis « je m'y mets »**<br>depuis des semaines.",
+   "sub": "une action de 10 minutes",
+   "vo": "POV : tu te dis je m'y mets depuis des semaines. Sept jours pour passer de l'intention à la première action."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J7",
+   "notifs": [
+    "🗓️ Je m'y mets demain",
+    "📝 Je prépare encore",
+    "🧠 Je réfléchis au plan parfait"
+   ],
+   "kicker": "action",
+   "card_word": "action",
+   "no": "préparer sans fin",
+   "yes": "passer à l'action",
+   "vo": "Avant : tu prépares, tu planifies, tu réfléchis, mais tu ne démarres pas. L'idée : la première action doit être minuscule et immédiate."
+  },
+  {
+   "type": "weeks",
+   "word": "minute",
+   "weeks": [
+    [
+     "MINUTE 1",
+     "🖱️ Ouvre le document",
+     "✍️ Écris une seule ligne"
+    ],
+    [
+     "MINUTE 2",
+     "⏱️ Minuteur de 10 minutes",
+     "📵 Rien d'autre"
+    ]
+   ],
+   "vo": "Minute un : ouvre le document, écris une seule ligne. Après la première minute, lance un minuteur de dix minutes, et ne fais rien d'autre."
+  },
+  {
+   "type": "weeks",
+   "word": "minute",
+   "weeks": [
+    [
+     "JOUR 4",
+     "📍 Même lieu, même heure",
+     "🔁 Dix minutes, chaque jour"
+    ],
+    [
+     "JOUR 7",
+     "📊 Compte tes sessions",
+     "🚀 Ajoute dix minutes"
+    ]
+   ],
+   "vo": "Au quatrième jour, même lieu, même heure, dix minutes chaque jour. Au septième jour, compte tes sessions et ajoute dix minutes. Chaque minute de démarrage compte."
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "7",
+   "obj": "Objectif : **passer** à l'action.",
+   "ctas": [
+    "🔖 ENREGISTRE LE PLAN",
+    "💬 COMMENTE « ACTION »"
+   ],
+   "vo": "Objectif au jour sept : être passé à l'action. Enregistre le plan, et commente action si tu fais ta première ligne maintenant."
+  }
+ ]
+}

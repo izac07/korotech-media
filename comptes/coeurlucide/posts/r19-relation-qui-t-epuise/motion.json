@@ -1,0 +1,51 @@
+{
+ "id": "CL-R19",
+ "layout": "nightchat",
+ "music_seed": 811,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Tu vas encore te plaindre ? 😒",
+   "vo": "Une relation peut t'épuiser sans que tu comprennes pourquoi. Voici des signes à écouter, sans te juger."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Je suis fatigué·e après chaque échange.",
+    "Je pèse chaque mot."
+   ],
+   "sent": "Je n'ose plus dire ce que je pense",
+   "ghost": "Vu 22:40",
+   "vo": "Quand tu évites de parler de peur de la réaction, c'est un signal à écouter. Ça ne dit pas tout, mais ça mérite ton attention."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Je me sens fatigué·e après nos échanges.",
+    "J'ai besoin qu'on en parle.",
+    "J'ai le droit de poser une limite."
+   ],
+   "vo": "Je me sens fatigué après nos échanges. J'ai besoin qu'on en parle. J'ai le droit de poser une limite. Dis-le, quand tu peux."
+  },
+  {
+   "type": "check",
+   "title": "Écoute-toi :",
+   "items": [
+    "Parle à quelqu'un de confiance",
+    "Note ce que tu ressens",
+    "Tu as le droit de poser une limite"
+   ],
+   "vo": "Écoute-toi : parle à quelqu'un de confiance, note ce que tu ressens. Si tu as peur, le trois, neuf, un, neuf est là pour toi."
+  },
+  {
+   "type": "cta",
+   "last": "Merci de m'avoir écouté·e 🤍",
+   "ctas": [
+    "🔖 Garde-le pour plus tard",
+    "↗️ 3919 si tu as peur"
+   ],
+   "vo": "Tu as le droit d'être bien. Si tu as peur, appelle le trois, neuf, un, neuf. Enregistre ce message pour t'écouter."
+  }
+ ]
+}

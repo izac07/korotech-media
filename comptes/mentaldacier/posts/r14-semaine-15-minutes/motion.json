@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R14",
+ "layout": "manifeste3d",
+ "music_seed": 714,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "MIN",
+  "short": "M",
+  "max": 15
+ },
+ "timeline": [
+  "0-3 min",
+  "3-8 min",
+  "8-12 min",
+  "12-15 min"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "15",
+   "unit": "MIN",
+   "line": "**le dimanche**<br>pour préparer ta semaine.",
+   "sub": "un rituel simple, une fois par semaine",
+   "vo": "Quinze minutes, le dimanche, pour préparer ta semaine. Ce petit rituel t'évite de subir la semaine au lieu de la choisir."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · LUNDI",
+   "bottom": "OBJECTIF · DIMANCHE",
+   "notifs": [
+    "📅 Je découvre ma semaine le lundi",
+    "📩 Tout me semble urgent",
+    "🌀 Je ne sais pas par où commencer"
+   ],
+   "kicker": "priorité",
+   "card_word": "priorité",
+   "no": "tout subir",
+   "yes": "choisir tes priorités",
+   "vo": "Avant : tu découvres ta semaine au fil de l'eau, et tout semble urgent. L'idée : choisir tes priorités avant que la semaine commence."
+  },
+  {
+   "type": "weeks",
+   "word": "étape",
+   "weeks": [
+    [
+     "ÉTAPE 1 · 3 MIN",
+     "📖 Relis ta semaine passée",
+     "✅ Ce qui a marché, ce qui a bloqué"
+    ],
+    [
+     "ÉTAPE 2 · 5 MIN",
+     "🎯 Choisis 3 priorités",
+     "✂️ Le reste peut attendre"
+    ]
+   ],
+   "vo": "Étape un, trois minutes : relis ta semaine passée, ce qui a marché, ce qui a bloqué. Étape deux, cinq minutes : choisis trois priorités, pas plus."
+  },
+  {
+   "type": "weeks",
+   "word": "étape",
+   "weeks": [
+    [
+     "ÉTAPE 3 · 4 MIN",
+     "🗓️ Place-les dans ton agenda",
+     "⏰ Un créneau précis chacune"
+    ],
+    [
+     "ÉTAPE 4 · 3 MIN",
+     "🎒 Prépare le lundi",
+     "🧭 Première action écrite"
+    ]
+   ],
+   "vo": "Étape trois, quatre minutes : place chaque priorité dans ton agenda, avec un créneau précis. Étape quatre : prépare le lundi, avec ta première action écrite."
+  },
+  {
+   "type": "cta",
+   "kicker": "MIN",
+   "big": "15",
+   "obj": "Objectif : une semaine **que tu choisis.**",
+   "ctas": [
+    "🔖 ENREGISTRE LE RITUEL",
+    "💬 COMMENTE « DIMANCHE »"
+   ],
+   "vo": "Objectif : une semaine que tu choisis. Enregistre ce rituel, et commente dimanche si tu le programmes dès ce week-end."
+  }
+ ]
+}

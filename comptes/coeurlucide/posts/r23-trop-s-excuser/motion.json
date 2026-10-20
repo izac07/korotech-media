@@ -1,0 +1,51 @@
+{
+ "id": "CL-R23",
+ "layout": "nightchat",
+ "music_seed": 815,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Désolé·e de te déranger… 🙏",
+   "vo": "Tu t'excuses tout le temps, même quand tu n'as rien fait ? Voici comment remplacer ces excuses par autre chose."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Désolé·e, je dérange.",
+    "Pardon, c'est ma faute."
+   ],
+   "sent": "Pardon pour tout",
+   "ghost": "Vu 21:20",
+   "vo": "S'excuser par réflexe peut venir d'un besoin de bien faire, ou de la peur de déranger. Ça se travaille doucement, une phrase à la fois."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Merci d'avoir attendu.",
+    "Merci de ta patience.",
+    "Je prends un moment pour réfléchir."
+   ],
+   "vo": "Remplace pardon par merci. Merci d'avoir attendu. Merci de ta patience. Je prends un moment pour réfléchir. Le sens change, et ta posture aussi."
+  },
+  {
+   "type": "check",
+   "title": "Avant d'écrire pardon :",
+   "items": [
+    "Ai-je vraiment fait une erreur ?",
+    "Un merci conviendrait-il ?",
+    "Qu'est-ce que je ressens ?"
+   ],
+   "vo": "Avant d'écrire pardon, demande-toi : ai-je vraiment fait une erreur ? Un merci conviendrait-il ? Qu'est-ce que je ressens ?"
+  },
+  {
+   "type": "cta",
+   "last": "Merci de ta patience 🤍",
+   "ctas": [
+    "🔖 Garde-le pour plus tard",
+    "↗️ Envoie-le à quelqu'un qui en a besoin"
+   ],
+   "vo": "Tu as le droit d'occuper ta place sans t'excuser. Enregistre ce message pour t'en souvenir."
+  }
+ ]
+}

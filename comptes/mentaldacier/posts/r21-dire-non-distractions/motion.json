@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R21",
+ "layout": "manifeste3d",
+ "music_seed": 721,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 7
+ },
+ "timeline": [
+  "J1",
+  "J2-3",
+  "J4-6",
+  "J7"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "7",
+   "unit": "JOURS",
+   "line": "**pour dire non**<br>à tes distractions.",
+   "sub": "identifie, coupe, remplace",
+   "vo": "Sept jours pour dire non à tes distractions. Tu n'en élimines pas tout, tu les empêches de choisir à ta place."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J7",
+   "notifs": [
+    "📱 Un coup d'œil rapide",
+    "🎬 Encore une vidéo",
+    "💬 Une réponse tout de suite"
+   ],
+   "kicker": "distraction",
+   "card_word": "distraction",
+   "no": "tout supprimer",
+   "yes": "garder la main",
+   "vo": "Avant : chaque distraction te prend dix minutes, puis vingt. L'idée : repère-les, et garde la main sur le moment où elles arrivent."
+  },
+  {
+   "type": "weeks",
+   "word": "distraction",
+   "weeks": [
+    [
+     "DISTRACTION 1",
+     "📋 Liste tes trois pires",
+     "🔍 Quand et où elles arrivent"
+    ],
+    [
+     "DISTRACTION 2",
+     "✂️ Coupe le déclencheur",
+     "🔕 Notification, onglet, bruit"
+    ]
+   ],
+   "vo": "Première distraction : liste tes trois pires, et repère quand elles arrivent. Deuxième distraction : coupe le déclencheur, une notification, un onglet, un bruit."
+  },
+  {
+   "type": "weeks",
+   "word": "distraction",
+   "weeks": [
+    [
+     "UNE PHRASE PRÊTE",
+     "🗣️ « Pas maintenant, après mon bloc »",
+     "⏰ Un moment prévu pour elles"
+    ],
+    [
+     "JOUR 7",
+     "📊 Garde ce qui marche",
+     "🔁 Remplace le reste"
+    ]
+   ],
+   "vo": "Prépare une phrase : pas maintenant, après mon bloc. Une distraction prévue perd son pouvoir. Au septième jour, garde ce qui marche, distraction après distraction."
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "7",
+   "obj": "Objectif : **garder la main.**",
+   "ctas": [
+    "🔖 ENREGISTRE LE PLAN",
+    "💬 COMMENTE « NON »"
+   ],
+   "vo": "Objectif au jour sept : garder la main sur ton attention. Enregistre le plan, et commente non si tu coupes ta première distraction aujourd'hui."
+  }
+ ]
+}

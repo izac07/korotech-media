@@ -1,0 +1,51 @@
+{
+ "id": "CL-R14",
+ "layout": "nightchat",
+ "music_seed": 806,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "On pourrait en parler… de nous ? 🤍",
+   "vo": "Avant de t'engager, trois questions simples peuvent t'éviter beaucoup de doutes. Pas pour tester l'autre, mais pour te respecter."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "On se voit depuis quelques mois.",
+    "Je ne sais pas ce qu'on est."
+   ],
+   "sent": "On est sur la même longueur d'onde ?",
+   "ghost": "Vu 19:30",
+   "vo": "S'engager, c'est choisir en connaissance de cause. Ça demande d'oser poser des questions, même quand on a peur de la réponse."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Qu'est-ce que tu cherches ?",
+    "Comment on gère un désaccord ?",
+    "Qu'est-ce qui est important pour toi ?"
+   ],
+   "vo": "Qu'est-ce que tu cherches ? Comment on gère un désaccord ? Qu'est-ce qui est important pour toi ? Des questions ouvertes, sans piège."
+  },
+  {
+   "type": "check",
+   "title": "Pour toi aussi :",
+   "items": [
+    "Ce que je veux vraiment",
+    "Ce que je refuse",
+    "Ce dont j'ai besoin"
+   ],
+   "vo": "Pose-les aussi à toi-même : ce que tu veux, ce que tu refuses, ce dont tu as besoin. Les réponses comptent autant que les siennes."
+  },
+  {
+   "type": "cta",
+   "last": "Merci d'avoir osé en parler 🤍",
+   "ctas": [
+    "🔖 Garde-le pour plus tard",
+    "↗️ Envoie-le à quelqu'un qui en a besoin"
+   ],
+   "vo": "S'engager, c'est un choix fait à deux, les yeux ouverts. Enregistre ces questions pour ta prochaine conversation."
+  }
+ ]
+}

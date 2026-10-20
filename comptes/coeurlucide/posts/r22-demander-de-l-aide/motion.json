@@ -1,0 +1,51 @@
+{
+ "id": "CL-R22",
+ "layout": "nightchat",
+ "music_seed": 814,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Tu es là ? J'ai besoin de parler 🤍",
+   "vo": "Demander de l'aide à un proche, ça fait peur. On craint de déranger. Voici comment le dire simplement."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Je ne veux pas déranger.",
+    "Je gère toute seule."
+   ],
+   "sent": "Tu as cinq minutes pour moi ?",
+   "ghost": "Vu 19:05",
+   "vo": "On croit devoir se débrouiller seul. Mais ceux qui t'aiment préfèrent souvent savoir. Demander, c'est aussi leur faire confiance."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "J'ai besoin de parler, tu as un moment ?",
+    "Pas besoin de solution, juste d'écoute.",
+    "Merci d'être là."
+   ],
+   "vo": "J'ai besoin de parler, tu as un moment ? Pas besoin de solution, juste d'écoute. Merci d'être là. Des mots simples, qui ouvrent la porte."
+  },
+  {
+   "type": "check",
+   "title": "Pour oser :",
+   "items": [
+    "Choisir une personne de confiance",
+    "Dire ce dont tu as besoin",
+    "Remercier après"
+   ],
+   "vo": "Pour oser : choisis une personne de confiance, dis ce dont tu as besoin, et remercie-la après. Tu n'es pas un poids."
+  },
+  {
+   "type": "cta",
+   "last": "Je suis là. Dis-moi tout 🤍",
+   "ctas": [
+    "🔖 Garde-le pour plus tard",
+    "↗️ Envoie-le à quelqu'un qui en a besoin"
+   ],
+   "vo": "Demander de l'aide n'est pas une faiblesse. Enregistre ces phrases, et envoie-les à quelqu'un qui n'ose pas."
+  }
+ ]
+}

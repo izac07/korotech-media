@@ -1,0 +1,51 @@
+{
+ "id": "CL-R18",
+ "layout": "nightchat",
+ "music_seed": 810,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Toujours rien… 😔",
+   "vo": "Tu vérifies ton téléphone toutes les cinq minutes, en attendant un message. Voici comment relâcher la pression."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Il n'a pas répondu.",
+    "Je regarde encore."
+   ],
+   "sent": "Je n'arrive pas à penser à autre chose",
+   "ghost": "Vu 20:50",
+   "vo": "Attendre un message, ça crée de la tension. Plus tu regardes, plus l'attente semble longue. C'est une réaction très courante, et tu peux l'apaiser avec de petits gestes."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Je pose le téléphone dans une autre pièce.",
+    "Je fais quelque chose de mes mains.",
+    "Je regarde dans une heure."
+   ],
+   "vo": "Pose ton téléphone dans une autre pièce. Occupe-toi les mains avec quelque chose de simple. Fixe-toi un moment pour regarder, dans une heure, pas avant."
+  },
+  {
+   "type": "check",
+   "title": "Pour relâcher :",
+   "items": [
+    "Téléphone dans une autre pièce",
+    "Une activité pour les mains",
+    "Un horaire pour regarder"
+   ],
+   "vo": "Pour relâcher : éloigne ton téléphone, occupe tes mains, et fixe un horaire pour regarder. L'attente pèse moins quand tu fais autre chose."
+  },
+  {
+   "type": "cta",
+   "last": "Message reçu. Mais j'ai déjà respiré 🤍",
+   "ctas": [
+    "🔖 Garde-le pour plus tard",
+    "↗️ Envoie-le à quelqu'un qui en a besoin"
+   ],
+   "vo": "Ta valeur ne dépend pas d'une réponse, ni de la vitesse d'un message. Enregistre ce message pour la prochaine attente."
+  }
+ ]
+}

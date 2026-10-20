@@ -1,0 +1,51 @@
+{
+ "id": "CL-R15",
+ "layout": "nightchat",
+ "music_seed": 807,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "On doit parler de quelque chose… 😬",
+   "vo": "Parler d'un sujet qui fâche, ça fait peur. Voici une façon de commencer sans que ça explose."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Il faut qu'on parle.",
+    "Encore ce sujet ?!"
+   ],
+   "sent": "Je préfère en parler calmement",
+   "ghost": "Vu 18:40",
+   "vo": "Le ton de départ décide souvent de la suite. Une phrase d'attaque ferme la porte, une phrase d'ouverture la laisse entrebâillée."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Ça me tient à cœur, on peut en parler ?",
+    "Je voudrais comprendre ta vision.",
+    "Je te dis ce que je ressens."
+   ],
+   "vo": "Ça me tient à cœur, on peut en parler ? Je voudrais comprendre ta vision. Je te dis ce que je ressens. Choisis le moment, et le ton."
+  },
+  {
+   "type": "check",
+   "title": "Avant de commencer :",
+   "items": [
+    "Choisir un moment calme",
+    "Parler de toi, pas de lui ou elle",
+    "Une seule question à la fois"
+   ],
+   "vo": "Avant de commencer : choisis un moment calme, parle de toi plutôt que de l'autre, et traite une seule question à la fois."
+  },
+  {
+   "type": "cta",
+   "last": "Merci d'en avoir parlé calmement 🤍",
+   "ctas": [
+    "🔖 Garde-le pour plus tard",
+    "↗️ Envoie-le à quelqu'un qui en a besoin"
+   ],
+   "vo": "Une conversation difficile se prépare. Enregistre ces phrases, et envoie-les à quelqu'un qui repousse ce moment."
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "id": "CL-R13",
+ "layout": "nightchat",
+ "music_seed": 805,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Hey… tu fais quoi ce soir ? 👀",
+   "vo": "Pourquoi retourne-t-on vers ce qui nous a fait du mal ? Souvent, ce n'est pas de la faiblesse, c'est un besoin."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Je sais que je ne devrais pas.",
+    "Mais il m'a écrit, et j'ai répondu."
+   ],
+   "sent": "Pourquoi je recommence ?",
+   "ghost": "Vu 00:12",
+   "vo": "On retourne vers le connu, par habitude, par manque, ou par espoir que ça change. Ce n'est pas un défaut, c'est humain."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Qu'est-ce que je cherche vraiment ?",
+    "Est-ce que quelque chose a changé ?",
+    "Je me protège ce soir."
+   ],
+   "vo": "Pose-toi trois questions : qu'est-ce que je cherche vraiment, est-ce que quelque chose a changé, et comment je me protège ce soir."
+  },
+  {
+   "type": "check",
+   "title": "Avant de répondre :",
+   "items": [
+    "Attendre dix minutes",
+    "Appeler une amie, un ami",
+    "Relire pourquoi c'est fini"
+   ],
+   "vo": "Avant de répondre : attends dix minutes, appelle une amie ou un ami, et relis pourquoi c'est fini. Tu gardes le droit de choisir."
+  },
+  {
+   "type": "cta",
+   "last": "Je ne réponds pas ce soir. Et c'est ok 🤍",
+   "ctas": [
+    "🔖 Garde-le pour plus tard",
+    "↗️ Envoie-le à quelqu'un qui en a besoin"
+   ],
+   "vo": "Tu n'es pas faible, tu es humain·e. Enregistre ce message pour les soirs où l'envie de répondre est forte."
+  }
+ ]
+}

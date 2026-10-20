@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R23",
+ "layout": "manifeste3d",
+ "music_seed": 723,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 7
+ },
+ "timeline": [
+  "J1",
+  "J2-3",
+  "J4-6",
+  "J7"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "7",
+   "unit": "JOURS",
+   "line": "**pour tenir**<br>tes promesses envers toi.",
+   "sub": "la discipline, c'est du respect",
+   "vo": "Sept jours pour tenir tes promesses envers toi. La discipline n'est pas une punition : c'est une façon de te respecter."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J7",
+   "notifs": [
+    "🤝 Je tiens mes promesses aux autres",
+    "🙈 Jamais celles que je me fais",
+    "🪞 Je ne m'écoute plus"
+   ],
+   "kicker": "promesse",
+   "card_word": "promesse",
+   "no": "te punir",
+   "yes": "te respecter",
+   "vo": "Avant : tu tiens tes engagements envers les autres, jamais envers toi. L'idée : traite une promesse faite à toi-même comme un rendez-vous."
+  },
+  {
+   "type": "weeks",
+   "word": "promesse",
+   "weeks": [
+    [
+     "PROMESSE 1",
+     "📆 Un rendez-vous avec toi",
+     "⏰ Dans ton agenda"
+    ],
+    [
+     "PROMESSE 2",
+     "📏 Assez petite pour être tenue",
+     "🎯 Une par jour"
+    ]
+   ],
+   "vo": "Première promesse : fixe un rendez-vous avec toi, dans ton agenda. Deuxième promesse : choisis-la assez petite pour la tenir, une seule par jour."
+  },
+  {
+   "type": "weeks",
+   "word": "promesse",
+   "weeks": [
+    [
+     "QUAND TU RATES",
+     "🙅 Zéro punition",
+     "🔁 Tu reprends demain"
+    ],
+    [
+     "JOUR 7",
+     "📜 Relis tes promesses tenues",
+     "🌱 Tu peux compter sur toi"
+    ]
+   ],
+   "vo": "Si tu rates, pas de punition : tu reprends demain. Au septième jour, relis tes promesses tenues. Chaque promesse tenue renforce ta confiance en toi."
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "7",
+   "obj": "Objectif : **compter sur toi.**",
+   "ctas": [
+    "🔖 ENREGISTRE LE DÉFI",
+    "💬 COMMENTE « PROMESSE »"
+   ],
+   "vo": "Objectif au jour sept : pouvoir compter sur toi. Enregistre le défi, et commente promesse si tu choisis la tienne ce soir."
+  }
+ ]
+}

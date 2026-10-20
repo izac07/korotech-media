@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R16",
+ "layout": "manifeste3d",
+ "music_seed": 716,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 7
+ },
+ "timeline": [
+  "J1",
+  "J2-3",
+  "J4-6",
+  "J7"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "7",
+   "unit": "JOURS",
+   "line": "**pour changer ton décor**<br>et faciliter le bon geste.",
+   "sub": "l'environnement bat la volonté",
+   "vo": "Sept jours pour changer ton décor. Quand le bon geste est facile, tu as moins besoin de volonté."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J7",
+   "notifs": [
+    "📱 Le téléphone est sur l'oreiller",
+    "🧦 La tenue de sport est introuvable",
+    "📚 Les livres sont au fond du placard"
+   ],
+   "kicker": "décor",
+   "card_word": "décor",
+   "no": "compter sur la volonté",
+   "yes": "arranger ton décor",
+   "vo": "Avant : tout ce qui te distrait est à portée de main. L'idée : arranger ton décor pour que le bon geste soit le plus simple."
+  },
+  {
+   "type": "weeks",
+   "word": "geste",
+   "weeks": [
+    [
+     "RENDS FACILE",
+     "👟 Tenue prête la veille",
+     "📖 Livre posé sur l'oreiller"
+    ],
+    [
+     "RENDS DIFFICILE",
+     "📵 Chargeur loin du lit",
+     "🗑️ Appli hors de l'accueil"
+    ]
+   ],
+   "vo": "Rends le bon geste facile : tenue prête, livre sur l'oreiller. Rends le mauvais geste difficile : chargeur loin du lit, appli cachée."
+  },
+  {
+   "type": "weeks",
+   "word": "geste",
+   "weeks": [
+    [
+     "UN COIN DÉDIÉ",
+     "🪑 Une table, une seule tâche",
+     "🧹 Rien d'autre dessus"
+    ],
+    [
+     "JOUR 7",
+     "🔍 Garde ce qui aide",
+     "🔧 Ajuste le reste"
+    ]
+   ],
+   "vo": "Crée un coin dédié : une table, une tâche. Au septième jour, garde le décor qui aide. Un geste à la fois, un geste de plus."
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "7",
+   "obj": "Objectif : un décor **qui t'aide.**",
+   "ctas": [
+    "🔖 ENREGISTRE LE PLAN",
+    "💬 COMMENTE « DÉCOR »"
+   ],
+   "vo": "Objectif au jour sept : un décor qui t'aide. Enregistre le plan, et commente décor si tu changes un seul geste ce soir."
+  }
+ ]
+}

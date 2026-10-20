@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R19",
+ "layout": "manifeste3d",
+ "music_seed": 719,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 7
+ },
+ "timeline": [
+  "J1",
+  "J2-3",
+  "J4-6",
+  "J7"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "7",
+   "unit": "JOURS",
+   "line": "**pour fixer un objectif**<br>que tu tiens vraiment.",
+   "sub": "un geste, pas un résultat",
+   "vo": "Sept jours pour fixer un objectif que tu tiens vraiment. La plupart échouent parce qu'ils visent un résultat, pas un geste."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J7",
+   "notifs": [
+    "🏆 Devenir une machine",
+    "📈 Tout changer en un mois",
+    "🌫️ Aucune date, aucun plan"
+   ],
+   "kicker": "geste",
+   "card_word": "geste",
+   "no": "viser un résultat",
+   "yes": "fixer un geste",
+   "vo": "Avant : un objectif flou, du genre devenir meilleur, sans date. L'idée : fixe un geste précis, que tu peux cocher chaque jour."
+  },
+  {
+   "type": "weeks",
+   "word": "règle",
+   "weeks": [
+    [
+     "RÈGLE 1",
+     "✍️ Écris un geste",
+     "📖 Lire 10 pages, pas « lire plus »"
+    ],
+    [
+     "RÈGLE 2",
+     "📍 Ajoute heure et lieu",
+     "🔗 Colle-le à une habitude"
+    ]
+   ],
+   "vo": "Règle un : écris un geste, comme lire dix pages. Règle deux : ajoute une heure et un lieu, collés à une habitude existante."
+  },
+  {
+   "type": "weeks",
+   "word": "règle",
+   "weeks": [
+    [
+     "RÈGLE 3",
+     "🧪 Teste deux jours",
+     "✂️ Trop dur ? Réduis-le"
+    ],
+    [
+     "JOUR 7",
+     "📅 Garde-le 30 jours",
+     "🎯 Puis seulement, ajoute"
+    ]
+   ],
+   "vo": "Règle trois : teste-le deux jours, réduis-le s'il est trop dur. Au septième jour, garde-le un mois avant d'ajouter. Dernière règle : la patience."
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "7",
+   "obj": "Objectif : un geste **que tu tiens.**",
+   "ctas": [
+    "🔖 ENREGISTRE LES 3 RÈGLES",
+    "💬 COMMENTE « GESTE »"
+   ],
+   "vo": "Objectif au jour sept : un geste que tu tiens. Enregistre les trois règles, et commente geste si tu écris le tien maintenant."
+  }
+ ]
+}

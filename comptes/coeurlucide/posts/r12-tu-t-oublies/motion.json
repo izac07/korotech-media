@@ -1,0 +1,51 @@
+{
+ "id": "CL-R12",
+ "layout": "nightchat",
+ "music_seed": 804,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Tu viens samedi ? On a prévu un truc 🙂",
+   "vo": "Tu t'oublies peut-être dans ta relation, sans t'en rendre compte. Voici trois signes à repérer, avec bienveillance."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Je n'ai plus vu mes amis.",
+    "Mes envies passent après les siennes."
+   ],
+   "sent": "Je ne sais plus ce que j'aime",
+   "ghost": "Vu 20:05",
+   "vo": "Premier signe : tu annules souvent tes projets. Deuxième signe : tu ne sais plus ce que tu aimes. Troisième signe : tu dis oui, alors que tu penses non."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Je garde ce créneau pour moi.",
+    "J'aimerais qu'on fasse aussi ce que j'aime.",
+    "Je préfère dire non cette fois."
+   ],
+   "vo": "Se retrouver commence petit : garder un créneau pour toi, proposer ton idée, dire non quand c'est non. Ce n'est pas un reproche, c'est un équilibre."
+  },
+  {
+   "type": "check",
+   "title": "Pour te retrouver :",
+   "items": [
+    "Un créneau rien qu'à toi",
+    "Une envie dite à voix haute",
+    "Un non assumé, doucement"
+   ],
+   "vo": "Pour te retrouver : un créneau rien qu'à toi, une envie dite à voix haute, et un non assumé, doucement. Un signe ne fait pas un verdict."
+  },
+  {
+   "type": "cta",
+   "last": "Je reprends un peu de place, et ça me fait du bien 🤍",
+   "ctas": [
+    "🔖 Garde-le pour plus tard",
+    "↗️ Envoie-le à quelqu'un qui en a besoin"
+   ],
+   "vo": "Une relation saine laisse de la place à chacun. Enregistre ce message, et envoie-le à quelqu'un qui s'oublie un peu."
+  }
+ ]
+}

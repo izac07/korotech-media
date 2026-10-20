@@ -1,0 +1,51 @@
+{
+ "id": "CL-R09",
+ "layout": "nightchat",
+ "music_seed": 801,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Désolé, je vois ton message que maintenant 🙈",
+   "vo": "Trois jours sans réponse, et ta tête tourne. Voici ce que ça peut dire, et surtout ce que ça ne dit pas."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Il est 23 h, toujours rien.",
+    "Il a lu, il ne répond pas."
+   ],
+   "sent": "Tout va bien de ton côté ?",
+   "ghost": "Vu hier, 22:14",
+   "vo": "Un long silence fait vite imaginer le pire. Mais il peut vouloir dire : une journée chargée, un oubli, ou un vrai manque d'intérêt."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Je repense à notre échange, et toi ?",
+    "Je préfère te le dire que deviner.",
+    "Peux-tu me dire où tu en es ?"
+   ],
+   "vo": "Ce qui compte, c'est ce qui se répète. Une fois, ça arrive. À chaque fois, il y a un sujet à poser, calmement."
+  },
+  {
+   "type": "check",
+   "title": "Avant de relancer :",
+   "items": [
+    "Un silence n'est pas un verdict",
+    "Dis simplement ce que tu ressens",
+    "Observe ce qui se répète"
+   ],
+   "vo": "Avant de relancer : un silence n'est pas un verdict. Dis ce que tu ressens, et observe ce qui se répète."
+  },
+  {
+   "type": "cta",
+   "last": "Merci de me répondre. J'avais besoin de savoir 🤍",
+   "ctas": [
+    "🔖 Garde-le pour plus tard",
+    "↗️ Envoie-le à quelqu'un qui en a besoin"
+   ],
+   "vo": "Tu mérites des réponses claires, pas des devinettes. Enregistre ce message pour la prochaine fois."
+  }
+ ]
+}

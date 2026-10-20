@@ -1,0 +1,51 @@
+{
+ "id": "CL-R11",
+ "layout": "nightchat",
+ "music_seed": 803,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Tu as bien dormi ? Je pense à toi 🤍",
+   "vo": "Après une rupture, les sept premiers jours sont les plus flous. Voici comment les traverser, doucement, sans te brusquer."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Je n'arrive pas à manger.",
+    "Je vérifie son profil encore une fois."
+   ],
+   "sent": "Je ne sais plus quoi faire de mes soirées",
+   "ghost": "Vu 23:10",
+   "vo": "Les premiers jours, tout est à vif. Il n'y a pas de bonne façon de vivre ça. Prends soin de toi, un jour après l'autre."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Je mange un vrai repas aujourd'hui.",
+    "Je préviens une personne de confiance.",
+    "Je mets le téléphone loin de moi."
+   ],
+   "vo": "Un repas, un message à une personne de confiance, et un peu de distance avec les réseaux de l'autre. C'est un début, c'est déjà beaucoup."
+  },
+  {
+   "type": "check",
+   "title": "Pour ce soir :",
+   "items": [
+    "Manger quelque chose",
+    "Parler à quelqu'un de confiance",
+    "Dormir, même peu"
+   ],
+   "vo": "Pour ce soir : mange quelque chose, parle à quelqu'un de confiance, et laisse-toi dormir, même un peu. Si tout devient trop lourd, parles-en à un professionnel."
+  },
+  {
+   "type": "cta",
+   "last": "Ça va aller, un jour à la fois 🤍",
+   "ctas": [
+    "🔖 Garde-le pour plus tard",
+    "↗️ Envoie-le à quelqu'un qui en a besoin"
+   ],
+   "vo": "Tu n'as pas à aller mieux en sept jours. Un jour à la fois suffit. Enregistre ce message pour les soirs difficiles."
+  }
+ ]
+}

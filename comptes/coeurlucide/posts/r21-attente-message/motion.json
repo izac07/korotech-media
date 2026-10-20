@@ -1,0 +1,51 @@
+{
+ "id": "CL-R21",
+ "layout": "nightchat",
+ "music_seed": 813,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Tu dors ? J'ai du mal à décrocher 🕚",
+   "vo": "L'attente d'un message peut faire monter l'anxiété. Voici comment l'apaiser, sans courir après une réponse."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Je recharge la conversation.",
+    "Je rejoue tout dans ma tête."
+   ],
+   "sent": "Tu es là ?",
+   "ghost": "Envoyé 23:02",
+   "vo": "Quand on attend, l'esprit invente des scénarios. Ce n'est pas la réalité, c'est de l'anxiété qui parle. Tu peux la calmer, doucement, sans courir après une réponse."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Je respire quatre secondes.",
+    "Je me demande ce que je sais vraiment.",
+    "Je reviens à ce que je contrôle."
+   ],
+   "vo": "Respire quatre secondes. Demande-toi ce que tu sais vraiment, pas ce que tu imagines. Reviens à ce que tu contrôles."
+  },
+  {
+   "type": "check",
+   "title": "Pour apaiser :",
+   "items": [
+    "Respirer lentement",
+    "Séparer faits et scénarios",
+    "Faire une activité calme"
+   ],
+   "vo": "Pour apaiser : respire lentement, sépare les faits des scénarios, et fais une activité calme. Si l'anxiété est très forte, parles-en à un professionnel."
+  },
+  {
+   "type": "cta",
+   "last": "J'ai respiré. Je verrai demain 🤍",
+   "ctas": [
+    "🔖 Garde-le pour plus tard",
+    "↗️ Envoie-le à quelqu'un qui en a besoin"
+   ],
+   "vo": "L'attente passe, et tu restes entier ou entière. Enregistre ce message pour la prochaine fois que tu attends."
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "id": "CL-R10",
+ "layout": "nightchat",
+ "music_seed": 802,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Tu me manques déjà 🤍",
+   "vo": "Certaines phrases rassurent vraiment, et ce ne sont pas toujours les plus grandes. Voici celles qui apaisent, sans promettre la lune."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Je sens que tu t'éloignes.",
+    "Tu es là, mais pas vraiment."
+   ],
+   "sent": "J'ai besoin d'être rassuré·e",
+   "ghost": "Vu 21:48",
+   "vo": "Quand l'autre doute, on répond souvent par des promesses énormes. Ce qui rassure, c'est plutôt la clarté et la présence."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Je suis là, et je tiens à toi.",
+    "Ce n'est pas ta faute.",
+    "Dis-moi ce dont tu as besoin."
+   ],
+   "vo": "Je suis là, et je tiens à toi. Ce n'est pas ta faute. Dis-moi ce dont tu as besoin. Des mots simples, dits avec sincérité."
+  },
+  {
+   "type": "check",
+   "title": "Pour que ça rassure :",
+   "items": [
+    "Dis-le avec ta voix, calmement",
+    "Reste précis·e, sans exagérer",
+    "Écoute la réponse"
+   ],
+   "vo": "Pour que ça rassure vraiment : dis-le calmement, reste précis, sans exagérer, et surtout, écoute la réponse."
+  },
+  {
+   "type": "cta",
+   "last": "Merci d'avoir dit ça. Ça m'a fait du bien 🤍",
+   "ctas": [
+    "🔖 Garde-le pour plus tard",
+    "↗️ Envoie-le à quelqu'un qui en a besoin"
+   ],
+   "vo": "Rassurer, ce n'est pas tout promettre. C'est être présent et sincère. Enregistre ces phrases pour le jour où quelqu'un en aura besoin."
+  }
+ ]
+}

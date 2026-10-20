@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R20",
+ "layout": "manifeste3d",
+ "music_seed": 720,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 7
+ },
+ "timeline": [
+  "J1",
+  "J2-3",
+  "J4-6",
+  "J7"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "7",
+   "unit": "JOURS",
+   "line": "**pour échouer**<br>sans tout arrêter.",
+   "sub": "un raté n'est pas la fin",
+   "vo": "Sept jours pour échouer sans tout arrêter. Un jour raté fait partie du chemin, tant que tu reviens le lendemain."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J7",
+   "notifs": [
+    "💥 J'ai raté un jour, tant pis",
+    "🪫 Tout est gâché",
+    "🚪 J'abandonne le défi"
+   ],
+   "kicker": "lendemain",
+   "card_word": "lendemain",
+   "no": "tout ou rien",
+   "yes": "revenir le lendemain",
+   "vo": "Avant : un jour raté, et tu arrêtes tout. L'idée : décide à l'avance de ce que tu fais le lendemain."
+  },
+  {
+   "type": "weeks",
+   "word": "règle",
+   "weeks": [
+    [
+     "RÈGLE 1",
+     "🛡️ Jamais deux jours de suite",
+     "📌 Écris-la au départ"
+    ],
+    [
+     "RÈGLE 2",
+     "🔍 Cherche la cause",
+     "🙅 Sans te juger"
+    ]
+   ],
+   "vo": "Règle un : ne rate jamais deux jours de suite, et écris-le dès le départ. Règle deux : cherche la cause du raté, sans te juger."
+  },
+  {
+   "type": "weeks",
+   "word": "règle",
+   "weeks": [
+    [
+     "RÈGLE 3",
+     "🔧 Ajuste le plan",
+     "📏 Plus petit, pas plus dur"
+    ],
+    [
+     "JOUR 7",
+     "📊 Regarde la série",
+     "🌱 Pas le jour raté"
+    ]
+   ],
+   "vo": "Règle trois : ajuste le plan, plus petit plutôt que plus dur. Au septième jour, regarde ta série entière, pas le jour raté. Règle d'or : reviens."
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "7",
+   "obj": "Objectif : **revenir** après un raté.",
+   "ctas": [
+    "🔖 ENREGISTRE LE PLAN",
+    "💬 COMMENTE « RETOUR »"
+   ],
+   "vo": "Objectif au jour sept : revenir après un raté. Enregistre ce plan pour les jours difficiles, et commente retour si tu en as besoin."
+  }
+ ]
+}

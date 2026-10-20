@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R18",
+ "layout": "manifeste3d",
+ "music_seed": 718,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 7
+ },
+ "timeline": [
+  "J1",
+  "J2-3",
+  "J4-6",
+  "J7"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "7",
+   "unit": "JOURS",
+   "line": "**pour préparer demain**<br>avant de dormir.",
+   "sub": "10 minutes à 22 h",
+   "vo": "Sept jours pour préparer demain avant de dormir. Dix minutes le soir peuvent changer la façon dont ta journée commence."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J7",
+   "notifs": [
+    "🌀 Je décide le matin, dans le flou",
+    "🔍 Je cherche mes affaires",
+    "📱 Je commence par le téléphone"
+   ],
+   "kicker": "veille",
+   "card_word": "veille",
+   "no": "improviser le matin",
+   "yes": "tout préparer la veille",
+   "vo": "Avant : tu improvises le matin, et ton téléphone décide à ta place. L'idée : prépare tout la veille, en dix minutes seulement."
+  },
+  {
+   "type": "weeks",
+   "word": "étape",
+   "weeks": [
+    [
+     "ÉTAPE 1",
+     "✍️ Écris 3 priorités",
+     "🎯 Sur papier"
+    ],
+    [
+     "ÉTAPE 2",
+     "🎒 Prépare tes affaires",
+     "👕 Tenue, sac, bouteille d'eau"
+    ]
+   ],
+   "vo": "Étape un : écris tes trois priorités du lendemain, sur papier. Étape deux : prépare tes affaires, ta tenue, ton sac, ta bouteille d'eau."
+  },
+  {
+   "type": "weeks",
+   "word": "étape",
+   "weeks": [
+    [
+     "ÉTAPE 3",
+     "🔌 Téléphone en charge",
+     "🚪 Hors de ton lit"
+    ],
+    [
+     "JOUR 7",
+     "🕙 Heure de coucher fixe",
+     "📊 Compare tes matins"
+    ]
+   ],
+   "vo": "Étape trois : mets ton téléphone en charge, loin du lit. Au septième jour, compare tes matins, et garde une heure de coucher fixe. Chaque étape te rend du temps."
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "7",
+   "obj": "Objectif : un matin **déjà prêt.**",
+   "ctas": [
+    "🔖 ENREGISTRE LA ROUTINE",
+    "💬 COMMENTE « VEILLE »"
+   ],
+   "vo": "Objectif au jour sept : un matin déjà prêt. Enregistre la routine du soir, et commente veille si tu commences ce soir."
+  }
+ ]
+}

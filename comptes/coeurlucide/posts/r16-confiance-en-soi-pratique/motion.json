@@ -1,0 +1,51 @@
+{
+ "id": "CL-R16",
+ "layout": "nightchat",
+ "music_seed": 808,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Tu peux le faire. Je crois en toi 🤍",
+   "vo": "La confiance en soi n'est pas un trait de caractère. C'est une pratique, qui se construit par de petits actes répétés."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Je ne suis pas assez.",
+    "Les autres y arrivent mieux."
+   ],
+   "sent": "Pourquoi je n'ose pas ?",
+   "ghost": "Vu 22:30",
+   "vo": "On croit que la confiance est un don. En réalité, elle grandit chaque fois que tu fais ce que tu t'étais promis, même une petite chose."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Je le fais, même imparfait.",
+    "J'ai tenu ma promesse.",
+    "Je suis fier·e de moi."
+   ],
+   "vo": "Je le fais, même imparfait. J'ai tenu ma promesse. Je suis fier ou fière de moi. Ces phrases se construisent par des actes concrets."
+  },
+  {
+   "type": "check",
+   "title": "Chaque jour :",
+   "items": [
+    "Une petite promesse tenue",
+    "Un compliment accepté",
+    "Un oui à ce qui t'importe"
+   ],
+   "vo": "Chaque jour : tiens une petite promesse, accepte un compliment sans le repousser, et dis oui à ce qui t'importe."
+  },
+  {
+   "type": "cta",
+   "last": "Je m'entraîne, et ça fonctionne un peu plus 🤍",
+   "ctas": [
+    "🔖 Garde-le pour plus tard",
+    "↗️ Envoie-le à quelqu'un qui en a besoin"
+   ],
+   "vo": "Tu n'as pas à être sûr·e de toi pour commencer. Commence, la confiance suit. Enregistre ce message pour t'en souvenir."
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "id": "CL-R17",
+ "layout": "nightchat",
+ "music_seed": 809,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Soirée seule ce soir ? Parfait 🤍",
+   "vo": "Être célibataire et bien, ça existe. Voici cinq rappels pour que cette période te serve, au lieu de te peser."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Tout le monde est en couple.",
+    "Je devrais déjà être casé·e."
+   ],
+   "sent": "Je me sens en retard",
+   "ghost": "Vu 21:15",
+   "vo": "Le célibat n'est pas un retard, c'est un temps pour toi. Tu n'as pas à justifier ton rythme, ni à rattraper quoi que ce soit."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Je peux choisir mon rythme.",
+    "Mes amis comptent aussi.",
+    "Je me connais mieux chaque jour."
+   ],
+   "vo": "Tu peux choisir ton rythme. Tes amis comptent. Tu te connais mieux chaque jour. Autant de choses que tu construis, même seul·e."
+  },
+  {
+   "type": "check",
+   "title": "Cinq rappels :",
+   "items": [
+    "Ton rythme est valide",
+    "Tes amis comptent",
+    "Une passion, rien que pour toi"
+   ],
+   "vo": "Rappelle-toi : ton rythme est valide, tes amis comptent, et une passion rien qu'à toi vaut toutes les comparaisons."
+  },
+  {
+   "type": "cta",
+   "last": "Ce soir, je suis bien, simplement 🤍",
+   "ctas": [
+    "🔖 Garde-le pour plus tard",
+    "↗️ Envoie-le à quelqu'un qui en a besoin"
+   ],
+   "vo": "Être bien seul·e, c'est aussi une forme d'amour. Enregistre ces rappels, et envoie-les à quelqu'un qui en a besoin."
+  }
+ ]
+}
