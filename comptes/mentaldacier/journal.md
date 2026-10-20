@@ -12,3 +12,4 @@
 | 2026-10-20 21:30 | MDA-R06 | Reel | 9 tâches max par jour : la méthode 1-3-5 — motion, remplace le carrousel MDA-C03 (plus de carrousels) |
 | 2026-10-18 16:31 | MDA-R08 | Reel | 7 jours de journal de 5 minutes (Habitudes & routines, manifeste3d) |
 | 2026-10-20 07:30 | MDA-R09 | Reel | 7 jours pour reprendre la main sur ton téléphone (3 réglages) (Habitudes & routines, manifeste3d) |
+| 2026-10-21 21:30 | MDA-R10 | Reel | Discipline plutôt que motivation : agir sans attendre l'envie (Mindset / phrases fortes, manifeste3d) |
