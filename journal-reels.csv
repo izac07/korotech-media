@@ -56,6 +56,7 @@ date;compte;id;layout;pilier;formule;sujet;hook
 2026-10-21 07:30;zerosallefit;ZSF-R07;sportmotion;;;Pas envie ? La séance minimum de 4 minutes (motion);
 2026-10-21 12:00;revenus_malins;RM-R10;malin;Démarches & cadre en France;question;Livret A ou LEP : la différence;Livret A ou LEP ? la différence en 40 secondes
 2026-10-21 12:15;korotech_fr;R16;;;;Son cours en podcast;
+2026-10-21 12:30;coeurlucide__;CL-R09;nightchat;Signaux (red flags / green flags) et dynamiques de couple;question;Il répond en 3 jours : ce que ça dit et ne dit pas;Désolé, je vois ton message que maintenant 🙈
 2026-10-21 12:30;lia.entrepreneur;LIA-R08;iceberg;;;La 1re réponse de l'IA est un brouillon : 3 relances;
 2026-10-21 18:00;zerosallefit;ZSF-R11;sportmotion;;;Zéro pompe ? Normal : 4 étapes pour ta première;
 2026-10-21 18:30;lia.entrepreneur;LIA-R12;iceberg;Erreurs et vérités;erreur;Pourquoi je relis encore tout ce que Claude écrit;ce qu'on te montre ./reveler --automatisation
@@ -63,34 +64,62 @@ date;compte;id;layout;pilier;formule;sujet;hook
 2026-10-21 19:30;revenus_malins;RM-R06;malin;;;Le message qui trouve tes 3 premiers clients;
 2026-10-21 21:00;coeurlucide__;CL-R06;nightchat;;;Dire ton besoin sans faire de reproche;
 2026-10-21 21:30;mentaldacier2030;MDA-R10;manifeste3d;Mindset / phrases fortes;defi;Discipline plutôt que motivation : agir sans attendre l'envie;7 JOURS pour agir sans attendre l'envie. la motivation est une météo
+2026-10-22 07:30;mentaldacier2030;MDA-R11;manifeste3d;Habitudes & routines concrètes;defi;Remplacer une mauvaise habitude (7 jours);7 JOURS pour remplacer une mauvaise habitude. on ne supprime pas, on remplace
 2026-10-22 12:00;revenus_malins;RM-R11;malin;Arnaques & pièges à éviter;liste;3 signaux d'une fausse offre d'emploi;Offre de job trop belle ? 3 signaux d'une fausse offre
 2026-10-22 12:15;korotech_fr;R25;cheatsheet;Études malin;liste;3 astuces IA pour retenir tes dates d'histoire;3 ASTUCES pour retenir tes dates 📅
 2026-10-22 12:15;korotech_fr;X04;cheatsheet;;;3 IA gratuites pour réviser (NotebookLM, Napkin, Perplexity);
+2026-10-22 12:30;coeurlucide__;CL-R10;nightchat;Communication;liste;Les phrases qui rassurent vraiment;Tu me manques déjà 🤍
 2026-10-22 12:30;lia.entrepreneur;LIA-R13;claudeflow;Tutos Claude;demo;Résumer une réunion et en sortir les actions;Ta réunion, en actions résumé + à-faire
 2026-10-22 18:30;lia.entrepreneur;LIA-R14;claudeflow;Automatisations Make / Instagram;demo;Publier sur Instagram avec Make : le schéma;Publier tout seul sur Instagram le schéma Make
 2026-10-22 19:15;korotech_fr;R22;cheatsheet;;;CV vide ? 3 étapes pour le remplir sans mentir;
 2026-10-22 19:30;revenus_malins;RM-R12;malin;Idées de side hustle;demo;Donner des cours particuliers : l'essentiel;Cours particuliers : par où commencer ? l'essentiel, sans te mentir
+2026-10-22 21:00;coeurlucide__;CL-R11;nightchat;Rupture, célibat, se reconstruire;pov;Après une rupture : les 7 premiers jours;Tu as bien dormi ? Je pense à toi 🤍
+2026-10-22 21:30;mentaldacier2030;MDA-R12;manifeste3d;POV / avant-après relatable;erreur;Pourquoi tu abandonnes au bout de 3 jours;7 JOURS pour tenir au-delà du jour 3. POV : t'as encore lâché
+2026-10-23 07:30;mentaldacier2030;MDA-R13;manifeste3d;Méthodes anti-procrastination;defi;Bloc de deep work de 90 minutes en 7 jours;90 MINUTES un bloc de focus sur une seule tâche. 7 jours pour y arriver
 2026-10-23 12:00;revenus_malins;RM-R13;malin;Organisation;chiffre;Combien de temps par semaine prévoir, honnêtement;Combien de temps faut-il vraiment ? honnêtement, sans promesse
 2026-10-23 12:15;korotech_fr;R23;cheatsheet;;;POV : exposé de groupe et personne ne bosse, 3 étapes;
+2026-10-23 12:30;coeurlucide__;CL-R12;nightchat;Signaux (red flags / green flags) et dynamiques de couple;liste;Signes que tu t'oublies dans ta relation;Tu viens samedi ? On a prévu un truc 🙂
 2026-10-23 12:30;lia.entrepreneur;LIA-R15;claudeflow;Tutos Claude;avant-apres;Transformer un vocal en devis propre;Un vocal devient un devis avant / après
 2026-10-23 18:30;lia.entrepreneur;LIA-R16;claudeflow;Coulisses du système;question;Le journal des sujets : comment Claude évite les doublons;Comment Claude évite de se répéter le journal des sujets
 2026-10-23 19:15;korotech_fr;R17;cheatsheet;;;Message gênant : 3 réflexes avec l'IA avant d'envoyer;
 2026-10-23 19:30;revenus_malins;RM-R14;malin;Arnaques & pièges à éviter;liste;Les erreurs du premier mois;Premier mois : les 4 erreurs à éviter pour te lancer mieux
+2026-10-23 21:00;coeurlucide__;CL-R13;nightchat;Rupture, célibat, se reconstruire;question;Pourquoi on retourne vers ce qui fait mal;Hey… tu fais quoi ce soir ? 👀
+2026-10-23 21:30;mentaldacier2030;MDA-R14;manifeste3d;Habitudes & routines concrètes;liste;Ta semaine en 15 minutes le dimanche;15 MIN le dimanche pour préparer ta semaine. un rituel simple, une fois par semaine
+2026-10-24 07:30;mentaldacier2030;MDA-R15;manifeste3d;Mindset / phrases fortes;defi;Reprendre après avoir tout lâché;7 JOURS pour reprendre après avoir tout lâché. sans rattraper, sans te punir
 2026-10-24 12:00;revenus_malins;RM-R15;malin;Organisation;chiffre;Fixer ses premiers prix;Fixer ton prix : la méthode simple sans te sous-payer
 2026-10-24 12:15;korotech_fr;R18;cheatsheet;;;POV : tu comprends rien au prof, 3 astuces;
+2026-10-24 12:30;coeurlucide__;CL-R14;nightchat;Signaux (red flags / green flags) et dynamiques de couple;liste;Questions à se poser avant de s'engager;On pourrait en parler… de nous ? 🤍
 2026-10-24 12:30;lia.entrepreneur;LIA-R17;iceberg;Erreurs et vérités;mythe;Mythe : l'IA va remplacer les freelances;ce qu'on te dit ./reveler --remplacement
 2026-10-24 18:30;lia.entrepreneur;LIA-R18;claudeflow;Automatisations Make / Instagram;stop;Créer une tâche planifiée avec Claude;Arrête de tout lancer la tâche planifiée
 2026-10-24 19:15;korotech_fr;R24;cheatsheet;;;Apprendre un truc en 10 min par jour avec l'IA;
 2026-10-24 19:30;revenus_malins;RM-R16;malin;Démarches & cadre en France;question;Side hustle et emploi salarié : les points à vérifier;Salarié et side hustle ? 3 points à vérifier d'abord
+2026-10-24 21:00;coeurlucide__;CL-R15;nightchat;Communication;demo;Comment parler d'un sujet qui fâche;On doit parler de quelque chose… 😬
+2026-10-24 21:30;mentaldacier2030;MDA-R16;manifeste3d;Habitudes & routines concrètes;defi;Créer un environnement qui t'aide;7 JOURS pour changer ton décor et faciliter le bon geste. l'environnement bat la volonté
+2026-10-25 07:30;mentaldacier2030;MDA-R17;manifeste3d;Mindset / phrases fortes;defi;Petites victoires qui construisent la confiance;7 JOURS de petites victoires pour te faire confiance. tiens une promesse minuscule
 2026-10-25 12:00;revenus_malins;RM-R17;malin;Idées de side hustle;demo;Montage vidéo pour créateurs : par où commencer;Monter des vidéos pour des créateurs par où commencer, honnêtement
+2026-10-25 12:30;coeurlucide__;CL-R16;nightchat;Confiance en soi & estime;mythe;La confiance en soi n'est pas un trait, c'est une pratique;Tu peux le faire. Je crois en toi 🤍
 2026-10-25 12:30;lia.entrepreneur;LIA-R19;claudeflow;Tutos Claude;pov;Répondre à un client mécontent sans s'énerver;Client mécontent ? Respire d'abord POV : le mail qui pique
 2026-10-25 18:30;lia.entrepreneur;LIA-R20;claudeflow;Coulisses du système;liste;Les outils derrière mes posts : Claude, tableau, ElevenLabs, Make;Les outils derrière les posts le système, sans magie
 2026-10-25 19:30;revenus_malins;RM-R18;malin;Démarches & cadre en France;pov;POV : ton premier client te paie;POV : ton 1er client te paie ce qu'il faut faire ensuite
+2026-10-25 21:00;coeurlucide__;CL-R17;nightchat;Rupture, célibat, se reconstruire;liste;Être célibataire et bien : 5 rappels;Soirée seule ce soir ? Parfait 🤍
+2026-10-25 21:30;mentaldacier2030;MDA-R18;manifeste3d;Habitudes & routines concrètes;defi;Préparer demain avant de dormir (10 minutes);7 JOURS pour préparer demain avant de dormir. 10 minutes à 22 h
+2026-10-26 07:30;mentaldacier2030;MDA-R19;manifeste3d;Méthodes anti-procrastination;defi;Se fixer un objectif qu'on tient vraiment;7 JOURS pour fixer un objectif que tu tiens vraiment. un geste, pas un résultat
 2026-10-26 12:00;revenus_malins;RM-R19;malin;Idées de side hustle;question;Gestion de réseaux sociaux pour commerçants;Les commerçants ont besoin de toi ? gérer leurs réseaux, pas à pas
+2026-10-26 12:30;coeurlucide__;CL-R18;nightchat;Confiance en soi & estime;pov;Arrêter de vérifier son téléphone toutes les 5 minutes;Toujours rien… 😔
 2026-10-26 12:30;lia.entrepreneur;LIA-R21;claudeflow;Tutos Claude;defi;Écrire ta page À propos en 10 minutes;Ta page « À propos » en 10 minutes défi : sans page blanche
 2026-10-26 18:30;lia.entrepreneur;LIA-R22;claudeflow;Erreurs et vérités;erreur;Ce qui peut casser dans une automatisation;Ton automatisation va casser et c'est normal
 2026-10-26 19:30;revenus_malins;RM-R20;malin;Idées de side hustle;liste;Créer un produit digital simple;Un produit digital simple ? l'idée, sans promesse de revenus
+2026-10-26 21:00;coeurlucide__;CL-R19;nightchat;Signaux (red flags / green flags) et dynamiques de couple;liste;Reconnaître une relation qui t'épuise;Tu vas encore te plaindre ? 😒
+2026-10-26 21:30;mentaldacier2030;MDA-R20;manifeste3d;Mindset / phrases fortes;defi;Échouer sans tout arrêter;7 JOURS pour échouer sans tout arrêter. un raté n'est pas la fin
+2026-10-27 07:30;mentaldacier2030;MDA-R21;manifeste3d;Méthodes anti-procrastination;defi;Dire non à tes distractions;7 JOURS pour dire non à tes distractions. identifie, coupe, remplace
 2026-10-27 12:00;revenus_malins;RM-R21;malin;Idées de side hustle;defi;Écrire pour le web (rédaction);Écrire pour le web sans être écrivain par où commencer
+2026-10-27 12:30;coeurlucide__;CL-R20;nightchat;Rupture, célibat, se reconstruire;liste;Se reconstruire : petites victoires quotidiennes;Une petite victoire aujourd'hui ? 🤍
 2026-10-27 12:30;lia.entrepreneur;LIA-R23;claudeflow;Tutos Claude;secret;Faire écrire un script de reel à Claude : le prompt;Un script de reel en 1 prompt le modèle à copier
 2026-10-27 18:30;lia.entrepreneur;LIA-R24;claudeflow;Tutos Claude;erreur;Mail de prospection à froid qui ne sent pas le spam;Mail de prospection sans spam l'erreur à éviter
 2026-10-27 19:30;revenus_malins;RM-R22;malin;Arnaques & pièges à éviter;mythe;Testeur de sites et d'apps;Testeur d'apps payé ? ce qui est vrai, ce qui est piège
+2026-10-27 21:00;coeurlucide__;CL-R21;nightchat;Confiance en soi & estime;pov;Apaiser l'anxiété de l'attente d'un message;Tu dors ? J'ai du mal à décrocher 🕚
+2026-10-27 21:30;mentaldacier2030;MDA-R22;manifeste3d;POV / avant-après relatable;pov;POV : je m'y mets depuis des semaines;7 JOURS POV : tu dis « je m'y mets » depuis des semaines. une action de 10 minutes
+2026-10-28 07:30;mentaldacier2030;MDA-R23;manifeste3d;Mindset / phrases fortes;defi;La discipline c'est se respecter;7 JOURS pour tenir tes promesses envers toi. la discipline, c'est du respect
+2026-10-28 12:30;coeurlucide__;CL-R22;nightchat;Communication;demo;Demander de l'aide à un proche;Tu es là ? J'ai besoin de parler 🤍
+2026-10-28 21:00;coeurlucide__;CL-R23;nightchat;Confiance en soi & estime;erreur;Arrêter de trop s'excuser;Désolé·e de te déranger… 🙏
+2026-10-28 21:30;mentaldacier2030;MDA-R24;manifeste3d;Méthodes anti-procrastination;defi;Commencer par le plus dur;7 JOURS pour commencer par le plus dur. la tâche qui te pèse d'abord

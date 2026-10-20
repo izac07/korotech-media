@@ -13,3 +13,17 @@
 | 2026-10-18 16:31 | MDA-R08 | Reel | 7 jours de journal de 5 minutes (Habitudes & routines, manifeste3d) |
 | 2026-10-20 07:30 | MDA-R09 | Reel | 7 jours pour reprendre la main sur ton téléphone (3 réglages) (Habitudes & routines, manifeste3d) |
 | 2026-10-21 21:30 | MDA-R10 | Reel | Discipline plutôt que motivation : agir sans attendre l'envie (Mindset / phrases fortes, manifeste3d) |
+| 2026-10-22 07:30 | MDA-R11 | Reel | Remplacer une mauvaise habitude (7 jours) (Habitudes & routines concrètes, manifeste3d) |
+| 2026-10-22 21:30 | MDA-R12 | Reel | Pourquoi tu abandonnes au bout de 3 jours (POV / avant-après relatable, manifeste3d) |
+| 2026-10-23 07:30 | MDA-R13 | Reel | Bloc de deep work de 90 minutes en 7 jours (Méthodes anti-procrastination, manifeste3d) |
+| 2026-10-23 21:30 | MDA-R14 | Reel | Ta semaine en 15 minutes le dimanche (Habitudes & routines concrètes, manifeste3d) |
+| 2026-10-24 07:30 | MDA-R15 | Reel | Reprendre après avoir tout lâché (Mindset / phrases fortes, manifeste3d) |
+| 2026-10-24 21:30 | MDA-R16 | Reel | Créer un environnement qui t'aide (Habitudes & routines concrètes, manifeste3d) |
+| 2026-10-25 07:30 | MDA-R17 | Reel | Petites victoires qui construisent la confiance (Mindset / phrases fortes, manifeste3d) |
+| 2026-10-25 21:30 | MDA-R18 | Reel | Préparer demain avant de dormir (10 minutes) (Habitudes & routines concrètes, manifeste3d) |
+| 2026-10-26 07:30 | MDA-R19 | Reel | Se fixer un objectif qu'on tient vraiment (Méthodes anti-procrastination, manifeste3d) |
+| 2026-10-26 21:30 | MDA-R20 | Reel | Échouer sans tout arrêter (Mindset / phrases fortes, manifeste3d) |
+| 2026-10-27 07:30 | MDA-R21 | Reel | Dire non à tes distractions (Méthodes anti-procrastination, manifeste3d) |
+| 2026-10-27 21:30 | MDA-R22 | Reel | POV : je m'y mets depuis des semaines (POV / avant-après relatable, manifeste3d) |
+| 2026-10-28 07:30 | MDA-R23 | Reel | La discipline c'est se respecter (Mindset / phrases fortes, manifeste3d) |
+| 2026-10-28 21:30 | MDA-R24 | Reel | Commencer par le plus dur (Méthodes anti-procrastination, manifeste3d) |
