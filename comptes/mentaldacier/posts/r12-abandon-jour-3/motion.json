@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R12",
+ "layout": "manifeste3d",
+ "music_seed": 703,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 7
+ },
+ "timeline": [
+  "J1",
+  "J2-3",
+  "J4-6",
+  "J7"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "7",
+   "unit": "JOURS",
+   "line": "**pour tenir**<br>au-delà du jour 3.",
+   "sub": "POV : t'as encore lâché",
+   "vo": "Sept jours pour tenir au-delà du troisième jour. Si tu lâches toujours là, ce n'est pas la volonté : c'est un plan trop lourd."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J7",
+   "notifs": [
+    "🏔️ Objectif trop gros",
+    "🌪️ Tout changer d'un coup",
+    "🕳️ Un jour raté, et j'arrête"
+   ],
+   "kicker": "plan",
+   "card_word": "plan",
+   "no": "plus de volonté",
+   "yes": "un plan plus petit",
+   "vo": "Avant : tu pars à fond, puis tu t'effondres. L'idée : un plan plus petit, qui survit aux mauvais jours."
+  },
+  {
+   "type": "weeks",
+   "word": "raison",
+   "weeks": [
+    [
+     "RAISON 1",
+     "🏔️ Objectif trop gros",
+     "✂️ Réduis-le de moitié"
+    ],
+    [
+     "RAISON 2",
+     "🌪️ Tout changer d'un coup",
+     "1️⃣ Une seule habitude"
+    ]
+   ],
+   "vo": "Première raison : l'objectif est trop gros, coupe-le de moitié. Deuxième raison : tu changes tout d'un coup, choisis une seule habitude."
+  },
+  {
+   "type": "weeks",
+   "word": "raison",
+   "weeks": [
+    [
+     "RAISON 3",
+     "🕳️ Aucun plan si tu rates",
+     "📏 Jamais deux jours de suite"
+    ],
+    [
+     "JOUR 7",
+     "🔧 Ajuste le plan",
+     "🚫 Ne repars pas de zéro"
+    ]
+   ],
+   "vo": "Troisième raison : aucun plan si tu rates. Seconde chance : ne rate jamais deux jours de suite. Raison de plus pour la règle. Au septième jour, ajuste le plan, sans repartir de zéro."
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "7",
+   "obj": "Objectif : un plan **qui survit.**",
+   "ctas": [
+    "🔖 ENREGISTRE LES 3 RAISONS",
+    "💬 COMMENTE « JOUR 3 »"
+   ],
+   "vo": "Objectif au jour sept : un plan qui survit. Enregistre les trois raisons, et commente jour trois si tu lâches toujours au même endroit."
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R10",
+ "layout": "manifeste3d",
+ "music_seed": 701,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 7
+ },
+ "timeline": [
+  "J1",
+  "J2-3",
+  "J4-6",
+  "J7"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "7",
+   "unit": "JOURS",
+   "line": "**pour agir sans attendre**<br>l'envie.",
+   "sub": "la motivation est une météo",
+   "vo": "Sept jours pour agir sans attendre l'envie. La motivation est une météo, la discipline est une décision prise à l'avance."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J7",
+   "notifs": [
+    "⏳ J'attends d'être motivé",
+    "🛋️ Demain ça ira mieux",
+    "📅 Lundi, je m'y mets"
+   ],
+   "kicker": "décision",
+   "card_word": "décision",
+   "no": "attendre l'envie",
+   "yes": "décider à l'avance",
+   "vo": "Avant : tu attends l'envie, et elle ne vient pas. L'idée : une décision prise à l'avance, qui ne dépend pas de ton humeur."
+  },
+  {
+   "type": "weeks",
+   "word": "règle",
+   "weeks": [
+    [
+     "RÈGLE 1",
+     "⏰ Fixe l'heure à l'avance",
+     "📍 Et l'endroit précis"
+    ],
+    [
+     "RÈGLE 2",
+     "🕔 Commence par 5 minutes",
+     "🚪 Tu peux t'arrêter ensuite"
+    ]
+   ],
+   "vo": "Règle un : fixe l'heure et l'endroit à l'avance. Règle deux : commence par cinq minutes seulement. Tu peux t'arrêter ensuite."
+  },
+  {
+   "type": "weeks",
+   "word": "règle",
+   "weeks": [
+    [
+     "RÈGLE 3",
+     "✅ Coche chaque jour tenu",
+     "🔁 Même sans envie"
+    ],
+    [
+     "JOUR 7",
+     "📊 Compte les jours tenus",
+     "🎯 Pas les jours motivés"
+    ]
+   ],
+   "vo": "Règle trois : coche chaque jour tenu, même sans envie. Au septième jour, compte les jours tenus, pas les jours où tu étais motivé. Dernière règle : n'attends pas le moment parfait."
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "7",
+   "obj": "Objectif : agir **sans l'envie.**",
+   "ctas": [
+    "🔖 ENREGISTRE LES 3 RÈGLES",
+    "💬 COMMENTE « DÉCISION »"
+   ],
+   "vo": "Objectif au jour sept : agir sans l'envie. Enregistre les trois règles, et commente décision si tu t'y mets aujourd'hui."
+  }
+ ]
+}

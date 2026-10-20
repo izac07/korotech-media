@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R11",
+ "layout": "manifeste3d",
+ "music_seed": 702,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 7
+ },
+ "timeline": [
+  "J1-2",
+  "J3-4",
+  "J5-6",
+  "J7"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "7",
+   "unit": "JOURS",
+   "line": "**pour remplacer**<br>une mauvaise habitude.",
+   "sub": "on ne supprime pas, on remplace",
+   "vo": "Sept jours pour remplacer une mauvaise habitude. Pas pour la combattre : pour lui donner une autre réponse."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J7",
+   "notifs": [
+    "📱 Je scrolle dès que je m'ennuie",
+    "🍪 Je grignote quand je stresse",
+    "🔁 Toujours le même déclencheur"
+   ],
+   "kicker": "déclencheur",
+   "card_word": "déclencheur",
+   "no": "lutter contre l'envie",
+   "yes": "changer la réponse",
+   "vo": "Avant : tu essaies d'arrêter, et tu craques. L'idée : repère le déclencheur, le moment où l'habitude démarre, et prépare une autre réponse."
+  },
+  {
+   "type": "weeks",
+   "word": "étape",
+   "weeks": [
+    [
+     "ÉTAPE 1",
+     "🔎 Note quand ça arrive",
+     "📝 Heure, lieu, émotion"
+    ],
+    [
+     "ÉTAPE 2",
+     "🔁 Choisis une réponse de rechange",
+     "🥤 Un verre d'eau, dix pas dehors"
+    ]
+   ],
+   "vo": "Étape un : note quand ça arrive, l'heure, le lieu, l'émotion. Étape deux : choisis une réponse de rechange, comme un verre d'eau ou dix pas dehors."
+  },
+  {
+   "type": "weeks",
+   "word": "étape",
+   "weeks": [
+    [
+     "ÉTAPE 3",
+     "🧱 Rends l'ancienne habitude difficile",
+     "🔌 Range-la, éloigne-la"
+    ],
+    [
+     "JOUR 7",
+     "✅ Compte tes remplacements",
+     "🌱 Recommence sans culpabiliser"
+    ]
+   ],
+   "vo": "Étape trois : rends l'ancienne habitude plus difficile, éloigne-la. Étape finale, au septième jour : compte tes remplacements et recommence demain, sans culpabiliser."
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "7",
+   "obj": "Objectif : une **autre réponse.**",
+   "ctas": [
+    "🔖 ENREGISTRE LE PLAN",
+    "💬 COMMENTE « REMPLACE »"
+   ],
+   "vo": "Objectif au jour sept : une autre réponse au même déclencheur. Enregistre le plan, et commente remplace si tu choisis ton habitude ce soir."
+  }
+ ]
+}

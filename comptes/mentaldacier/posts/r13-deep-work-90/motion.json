@@ -1,0 +1,87 @@
+{
+ "id": "MDA-R13",
+ "layout": "manifeste3d",
+ "music_seed": 704,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 7
+ },
+ "timeline": [
+  "J1-2",
+  "J3-4",
+  "J5-6",
+  "J7"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "90",
+   "unit": "MINUTES",
+   "line": "**un bloc de focus**<br>sur une seule tâche.",
+   "sub": "7 jours pour y arriver",
+   "vo": "Un bloc de quatre-vingt-dix minutes sur une seule tâche. Pas d'un coup : en sept jours, tu construis ta concentration."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J7",
+   "notifs": [
+    "🔔 Une notif toutes les 5 minutes",
+    "📑 Dix onglets ouverts",
+    "😵 Je saute d'une tâche à l'autre"
+   ],
+   "kicker": "bloc",
+   "card_word": "bloc",
+   "no": "tout faire en même temps",
+   "yes": "une tâche, un bloc",
+   "vo": "Avant : dix onglets, des notifications, zéro tâche terminée. L'idée : un seul bloc, une seule tâche, écrite avant de commencer."
+  },
+  {
+   "type": "weeks",
+   "word": "bloc",
+   "weeks": [
+    [
+     "JOURS 1-2",
+     "⏱️ Bloc de 30 minutes",
+     "📵 Téléphone dans une autre pièce"
+    ],
+    [
+     "JOURS 3-4",
+     "⏱️ Bloc de 45 minutes",
+     "📝 Tâche écrite avant de commencer"
+    ]
+   ],
+   "vo": "Premiers jours : un bloc de trente minutes, téléphone dans une autre pièce. Ensuite, un bloc de quarante-cinq minutes, tâche écrite avant."
+  },
+  {
+   "type": "weeks",
+   "word": "bloc",
+   "weeks": [
+    [
+     "JOURS 5-6",
+     "⏱️ Bloc de 60 minutes",
+     "☕ Vraie pause après"
+    ],
+    [
+     "JOUR 7",
+     "⏱️ Bloc de 90 minutes",
+     "📝 Note ce qui t'a coupé"
+    ]
+   ],
+   "vo": "Puis un bloc d'une heure, suivi d'une vraie pause. Au septième jour, ton bloc de quatre-vingt-dix minutes, et tu notes ce qui t'a coupé."
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "7",
+   "obj": "Objectif : **un bloc complet.**",
+   "ctas": [
+    "🔖 ENREGISTRE LA PROGRESSION",
+    "💬 COMMENTE « BLOC »"
+   ],
+   "vo": "Objectif au jour sept : un bloc complet. Enregistre la progression, et commente bloc si tu lances ton premier bloc demain."
+  }
+ ]
+}
