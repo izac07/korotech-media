@@ -1,0 +1,7 @@
+{
+ "id": "MDA-X02",
+ "layout": "duel3d",
+ "handle": "mentaldacier2030",
+ "note": "version 1 du duel (rendu avec la 1re version de tools/duel3d.py : hook, compteurs, fin « Fait > parfait »)",
+ "hook": "Qui finit le mur ?"
+}
