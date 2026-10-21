@@ -1,0 +1,12 @@
+{
+ "id": "MDA-X06",
+ "layout": "fable2d",
+ "handle": "mentaldacier2030",
+ "music_seed": 5,
+ "scenes": [
+  {"type": "portes", "textes": ["Ce soir, 22h.", "Petit choix. Grand écart."],
+   "portes": ["ENCORE UN ÉPISODE", "Épuisé demain", "DORMIR MAINTENANT", "En forme demain"]},
+  {"type": "sommet", "textes": ["Les petits choix s'additionnent.", "Un soir à la fois."]}
+ ],
+ "legende": "Ta journée de demain se décide ce soir à 22h. 🌙\n\n« Encore un épisode » ne coûte rien sur le moment. C'est demain matin que tu paies. Le vrai changement ne vient pas d'un grand déclic, mais de petits choix répétés, un soir à la fois.\n\nTu prends quelle porte ce soir ? Dis-le en commentaire 👇\n\n#mentaldacier #discipline #routinedusoir #habitudes #mindset"
+}

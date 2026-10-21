@@ -32,3 +32,4 @@
 | 2026-10-21 11:00 | MDA-X03 | Reel | Motivation contre discipline : même réveil, même pluie (duel 3D) (POV / avant-après relatable, duel3d) |
 | 2026-10-21 11:05 | MDA-X04 | Reel | Rumination nocturne : ce qui pèse dans ta tête à 3h07 (duel 3D) (Mindset / phrases fortes, duel3d) |
 | 2026-10-21 11:30 | MDA-X05 | Reel | Ta propre progression : escalier, piliers, deux portes, sommet (fable 2D) (Mindset / phrases fortes, fable2d) |
+| 2026-10-21 17:30 | MDA-X06 | Reel | Les petits choix du soir : encore un épisode ou dormir (fable 2D courte) (Habitudes & routines concrètes, fable2d) |
