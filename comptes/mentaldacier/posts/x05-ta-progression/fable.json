@@ -1,0 +1,14 @@
+{
+ "id": "MDA-X05",
+ "layout": "fable2d",
+ "handle": "mentaldacier2030",
+ "music_seed": 3,
+ "scenes": [
+  {"type": "escalier", "textes": ["J'abandonne.", "Une marche. Juste une."]},
+  {"type": "piliers", "textes": ["Ne te compare pas aux autres.", "Regarde d'où tu viens."]},
+  {"type": "portes", "textes": ["Chaque matin, deux portes.", "Choisis celle qui te construit."],
+   "portes": ["FACILE MAINTENANT", "Regret plus tard", "DUR MAINTENANT", "Fierté plus tard"]},
+  {"type": "sommet", "textes": ["C'était dur. J'ai continué.", "S'il l'a fait… moi aussi."]}
+ ],
+ "legende": "Ta seule vraie comparaison, c'est toi d'il y a 6 mois. 📈\n\nTu n'as pas besoin de monter tout l'escalier aujourd'hui. Juste une marche. Puis une autre. Et un jour, quelqu'un lèvera les yeux vers toi en se disant « moi aussi ».\n\nQuelle marche tu montes aujourd'hui ? Dis-le en commentaire 👇\n\n#mentaldacier #discipline #progression #mindset #motivation"
+}

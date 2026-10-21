@@ -384,17 +384,18 @@ def musique(out, dur, seed=0, pulse=True):
         b, a = butter(2, 900 / (SR / 2), "low"); return lfilter(b, a, s) * env
     shift = [0, -2, 3, -5][seed % 4]
     prog = [(45, [57, 60, 64]), (41, [57, 60, 65]), (48, [55, 60, 64]), (43, [55, 59, 62])]
-    bar = dur / 4; beat = bar / 4
+    nb = 4 * max(1, round(dur / 14))          # 4 mesures par tranche de ~14 s : même tempo pour un reel de 14 s ou de 40 s
+    bar = dur / nb; beat = bar / 4
     melo = [[76, None, 72, None], [72, None, 69, 71], [67, None, 72, None], [71, None, 74, 71]]
-    for k, (root, ch) in enumerate(prog):
-        t0 = k * bar
+    for k in range(nb):
+        root, ch = prog[k % 4]; t0 = k * bar
         add(pad([midi(m + shift - 12) for m in ch], bar + .4), t0, .22)
         sub_t = np.arange(int(bar * SR)) / SR
         add(np.sin(2 * np.pi * midi(root + shift - 12) * sub_t) * np.minimum(1, sub_t * 8) * np.exp(-sub_t * .4), t0, .28)
         arp = [ch[0] + 12, ch[1] + 12, ch[2] + 12, ch[1] + 12] * 2
         for j, m in enumerate(arp):
             add(piano(midi(m + shift)), t0 + j * beat / 2 + rng.uniform(0, .012), .07 + .03 * (j % 4 == 0))
-        for j, m in enumerate(melo[k]):
+        for j, m in enumerate(melo[k % 4]):
             if m: add(piano(midi(m + shift), 4.0), t0 + j * beat + .01, .16)
         if pulse:
             for b_ in (0, 2):
