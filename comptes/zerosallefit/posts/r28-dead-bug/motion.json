@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R28",
+ "layout": "sportmotion",
+ "music_seed": 616,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "deadbug",
+   "count": 0,
+   "title": "LE **DEAD BUG** : TU LE FAIS BIEN ?",
+   "sub": "⏱ 3 REPÈRES",
+   "vo": "Le dead bug a l'air facile, mais est-ce que tu le fais vraiment bien ? Voici trois repères."
+  },
+  {
+   "type": "erreur",
+   "pose": "deadbug",
+   "myth": "« PLUS VITE, PLUS EFFICACE »",
+   "stamp": "FAUX",
+   "text": "BAS DU DOS QUI DÉCOLLE ·<br>**L'EXERCICE PERD SON SENS**",
+   "vo": "L'erreur numéro un : aller trop vite et laisser le bas du dos se décoller du sol. À ce moment-là, l'exercice perd tout son intérêt."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "BAS DU DOS PLAQUÉ",
+    "BRAS ET JAMBE OPPOSÉS",
+    "MOUVEMENT LENT"
+   ],
+   "poses": [
+    "deadbug",
+    "deadbug",
+    "deadbug"
+   ],
+   "effort": "30 s",
+   "rest": "30 s",
+   "total": "3:00",
+   "vo": "Trois repères. Garde le bas du dos plaqué. Allonge un bras et la jambe opposée. Fais le mouvement lentement. Trente secondes d'effort, trente secondes de repos."
+  },
+  {
+   "type": "pourquoi",
+   "title": "ABDOS<br>**PROFONDS**",
+   "zones": [
+    "ABDOS",
+    "SANGLE",
+    "COORDINATION"
+   ],
+   "badges": [
+    "DOS PLAQUÉ",
+    "EXPIRE EN ALLONGEANT",
+    "TROP DUR ? BOUGE UN SEUL BRAS"
+   ],
+   "vo": "Tu travailles les abdos profonds, la sangle et la coordination. Expire en allongeant. Version facile : ne bouge qu'un bras à la fois. Une douleur ? Tu arrêtes et tu adaptes."
+  },
+  {
+   "type": "cta",
+   "title": "VÉRIFIE<br>**TON DOS**",
+   "ctas": [
+    "🔖 ENREGISTRE LE RAPPEL",
+    "💬 DIS-MOI SI C'ÉTAIT DUR"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Vérifie ton dos au prochain essai, enregistre ce rappel, et dis-moi si c'était plus dur que prévu."
+  }
+ ]
+}

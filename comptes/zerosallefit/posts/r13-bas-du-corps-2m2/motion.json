@@ -1,0 +1,68 @@
+{
+ "id": "ZSF-R13",
+ "layout": "sportmotion",
+ "music_seed": 601,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "squat",
+   "count": 2,
+   "title": "BAS DU CORPS<br>**2 M²**",
+   "sub": "⏱ 4 MIN · ZÉRO MATOS",
+   "vo": "Pas de place ? Deux mètres carrés suffisent pour une vraie séance de bas du corps. Voici comment faire."
+  },
+  {
+   "type": "erreur",
+   "pose": "fente",
+   "myth": "« IL FAUT DE LA PLACE »",
+   "stamp": "FAUX",
+   "text": "UN COIN DE SALON ·<br>**ÇA SUFFIT**",
+   "vo": "Beaucoup pensent qu'il faut un grand salon. C'est faux : tous ces exercices se font sur place, dans un simple coin de pièce."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "SQUAT LENT",
+    "FENTE ARRIÈRE",
+    "PONT FESSIER",
+    "SQUAT + PAUSE"
+   ],
+   "poses": [
+    "squat",
+    "fente",
+    "pont",
+    "squat"
+   ],
+   "effort": "40 s",
+   "rest": "20 s",
+   "total": "4:00",
+   "vo": "Quatre exercices, quarante secondes d'effort, vingt secondes de repos. Squat lent, fente arrière, pont fessier, puis squat avec pause en bas. Fais un tour, ou deux si tu te sens bien."
+  },
+  {
+   "type": "pourquoi",
+   "title": "CUISSES + FESSIERS<br>**EN DOUCEUR**",
+   "zones": [
+    "CUISSES",
+    "FESSIERS",
+    "ÉQUILIBRE"
+   ],
+   "badges": [
+    "GENOUX DANS L'AXE",
+    "DESCENDS À TA HAUTEUR",
+    "DOULEUR ? ON ARRÊTE"
+   ],
+   "vo": "Tu travailles les cuisses, les fessiers et l'équilibre. Genoux dans l'axe, descends à ta hauteur. Version facile : moins bas, ou appuie-toi à une chaise. Une douleur ? Tu arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "TON COIN<br>**DE SALON**",
+   "ctas": [
+    "🔖 ENREGISTRE LA SÉANCE",
+    "📲 PARTAGE-LA À UN AMI"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Enregistre la séance, trouve ton coin de salon, et partage-la à quelqu'un qui manque de place."
+  }
+ ]
+}

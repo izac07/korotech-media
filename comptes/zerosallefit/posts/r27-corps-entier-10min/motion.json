@@ -1,0 +1,70 @@
+{
+ "id": "ZSF-R27",
+ "layout": "sportmotion",
+ "music_seed": 615,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "pompe",
+   "count": 10,
+   "title": "CORPS ENTIER<br>**10 MIN**",
+   "sub": "⏱ DEBOUT, PUIS AU SOL",
+   "vo": "Dix minutes, tout le corps, aucun matériel. Une séance complète que tu peux faire avant ta douche."
+  },
+  {
+   "type": "erreur",
+   "pose": "squat",
+   "myth": "« 10 MIN, C'EST TROP PEU »",
+   "stamp": "FAUX",
+   "text": "DIX MINUTES BIEN FAITES ·<br>**VALENT MIEUX QUE RIEN**",
+   "vo": "On croit parfois que dix minutes, c'est trop peu pour compter. Dix minutes bien faites, c'est pourtant mieux que rien, et surtout ça se tient dans la durée."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "SQUAT",
+    "POMPE INCLINÉE",
+    "FENTE ARRIÈRE",
+    "PONT FESSIER",
+    "PLANCHE"
+   ],
+   "poses": [
+    "squat",
+    "pompe",
+    "fente",
+    "pont",
+    "planche"
+   ],
+   "effort": "40 s",
+   "rest": "20 s",
+   "total": "5:00",
+   "vo": "Cinq exercices, quarante secondes d'effort, vingt de repos, deux tours. Squat. Pompe inclinée. Fente arrière. Pont fessier. Et planche pour terminer."
+  },
+  {
+   "type": "pourquoi",
+   "title": "TOUT LE CORPS<br>**EN DOUCEUR**",
+   "zones": [
+    "JAMBES",
+    "BRAS",
+    "SANGLE"
+   ],
+   "badges": [
+    "2 TOURS = 10 MIN",
+    "TECHNIQUE D'ABORD",
+    "DOULEUR ? ARRÊTE"
+   ],
+   "vo": "Jambes, bras et sangle travaillent ensemble. Pense à la technique avant la vitesse. Version facile : un seul tour. Adapte à ton niveau, et si tu ressens une douleur, tu arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "TON 10 MIN<br>**DU JOUR**",
+   "ctas": [
+    "🔖 ENREGISTRE-LA",
+    "💬 ÉCRIS « 10 MIN »"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Enregistre cette séance et écris dix minutes en commentaire quand tu l'as faite."
+  }
+ ]
+}

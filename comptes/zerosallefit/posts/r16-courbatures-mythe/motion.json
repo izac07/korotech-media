@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R16",
+ "layout": "sportmotion",
+ "music_seed": 604,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "pont",
+   "count": 0,
+   "title": "COURBATURES = **PROGRÈS** ?",
+   "sub": "⏱ LA VRAIE RÉPONSE",
+   "vo": "Pas de courbatures, pas de progrès ? C'est une idée reçue très répandue. Voyons ce qu'il en est vraiment."
+  },
+  {
+   "type": "erreur",
+   "pose": "crunch",
+   "myth": "« SANS COURBATURES, RIEN »",
+   "stamp": "MYTHE",
+   "text": "CE N'EST PAS UN SCORE ·<br>**LA RÉGULARITÉ COMPTE**",
+   "vo": "Les courbatures ne mesurent pas la qualité d'une séance. Tu peux progresser sans en avoir, et en avoir sans avoir bien travaillé. Ce n'est pas un score."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "PONT FESSIER",
+    "SQUAT LENT",
+    "PLANCHE"
+   ],
+   "poses": [
+    "pont",
+    "squat",
+    "planche"
+   ],
+   "effort": "30 s",
+   "rest": "30 s",
+   "total": "3:00",
+   "vo": "Ce qui compte, c'est de revenir régulièrement. Trois exercices doux, pont fessier, squat lent et planche, valent mieux qu'un gros effort une fois par mois."
+  },
+  {
+   "type": "pourquoi",
+   "title": "PROGRESSER<br>**SANS TE DÉTRUIRE**",
+   "zones": [
+    "RÉGULARITÉ",
+    "TECHNIQUE",
+    "REPOS"
+   ],
+   "badges": [
+    "DOSE TON EFFORT",
+    "DORS ET BOIS",
+    "DOULEUR VIVE ? ON ARRÊTE"
+   ],
+   "vo": "Dose ton effort, soigne ta technique et laisse du temps au repos. Version facile : moins de répétitions. Une douleur vive ? Tu arrêtes et tu adaptes à ton niveau."
+  },
+  {
+   "type": "cta",
+   "title": "MOINS FORT<br>**MAIS SOUVENT**",
+   "ctas": [
+    "🔖 ENREGISTRE CE RAPPEL",
+    "📲 ENVOIE-LE À UN AMI"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Moins fort, mais plus souvent. Enregistre ce rappel et envoie-le à un ami qui se force trop."
+  }
+ ]
+}

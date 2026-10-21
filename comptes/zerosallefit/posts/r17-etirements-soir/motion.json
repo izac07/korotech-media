@@ -1,0 +1,70 @@
+{
+ "id": "ZSF-R17",
+ "layout": "sportmotion",
+ "music_seed": 605,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "pont",
+   "count": 5,
+   "title": "ÉTIREMENTS DU SOIR **EN 5 MIN**",
+   "sub": "⏱ SANS MATÉRIEL",
+   "vo": "Cinq minutes avant de te coucher, sans matériel. Voici une routine d'étirements simple pour finir ta journée en douceur."
+  },
+  {
+   "type": "erreur",
+   "pose": "creuse",
+   "myth": "« S'ÉTIRER, ÇA SERT À RIEN »",
+   "stamp": "FAUX",
+   "text": "UN MOMENT POUR SOUFFLER ·<br>**ET TERMINER LA JOURNÉE**",
+   "vo": "On pense souvent que s'étirer ne sert à rien. Ce n'est pas un miracle, mais c'est un vrai moment pour ralentir et respirer après une journée assise."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "BUSTE PENCHÉ",
+    "FENTE BASSE",
+    "PAPILLON",
+    "CHAT-VACHE",
+    "POSTURE DE L'ENFANT"
+   ],
+   "poses": [
+    "creuse",
+    "fente",
+    "pont",
+    "planche",
+    "creuse"
+   ],
+   "effort": "40 s",
+   "rest": "10 s",
+   "total": "4:10",
+   "vo": "Cinq postures, quarante secondes chacune, dix secondes pour changer. Buste penché. Fente basse. Papillon. Chat-vache. Et posture de l'enfant pour terminer."
+  },
+  {
+   "type": "pourquoi",
+   "title": "DOUCEUR<br>**ET RESPIRATION**",
+   "zones": [
+    "JAMBES",
+    "DOS",
+    "HANCHES"
+   ],
+   "badges": [
+    "SANS FORCER",
+    "SOUFFLE LENTEMENT",
+    "TIRAILLEMENT FORT ? RELÂCHE"
+   ],
+   "vo": "Tu détends les jambes, le dos et les hanches. Ne force jamais : une légère tension suffit. Version facile : reste moins longtemps ou moins bas. Un tiraillement fort, tu relâches."
+  },
+  {
+   "type": "cta",
+   "title": "TON RITUEL<br>**DU SOIR**",
+   "ctas": [
+    "🔖 ENREGISTRE LE RITUEL",
+    "💬 ÉCRIS « DÉTENDU »"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Enregistre ce rituel, fais-le ce soir, et écris détendu en commentaire une fois terminé."
+  }
+ ]
+}

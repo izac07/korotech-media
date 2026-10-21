@@ -1,0 +1,68 @@
+{
+ "id": "ZSF-R26",
+ "layout": "sportmotion",
+ "music_seed": 614,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "squat",
+   "count": 0,
+   "title": "L'ASTUCE POUR **TENIR** SANS EFFORT",
+   "sub": "⏱ 10 SECONDES",
+   "vo": "Voici une astuce pour rester régulier sans compter sur ta motivation. Elle tient en une phrase."
+  },
+  {
+   "type": "erreur",
+   "pose": "crunch",
+   "myth": "« IL FAUT DE LA MOTIVATION »",
+   "stamp": "FAUX",
+   "text": "LA MOTIVATION VA ET VIENT ·<br>**L'HABITUDE RESTE**",
+   "vo": "On pense qu'il faut de la motivation pour s'y mettre. Mais la motivation va et vient. Ce qui reste, c'est une habitude bien accrochée à ton quotidien."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "APRÈS LE CAFÉ",
+    "5 SQUATS",
+    "1 PLANCHE",
+    "C'EST TOUT"
+   ],
+   "poses": [
+    "squat",
+    "squat",
+    "planche",
+    "pont"
+   ],
+   "effort": "1 min",
+   "rest": "0 s",
+   "total": "1:00",
+   "vo": "La méthode : choisis un geste que tu fais déjà, comme le café du matin. Juste après, cinq squats et une planche. Une minute. Pas plus. Tu augmenteras plus tard."
+  },
+  {
+   "type": "pourquoi",
+   "title": "UN GESTE<br>**DÉCLENCHEUR**",
+   "zones": [
+    "HABITUDE",
+    "ÉNERGIE",
+    "RÉGULARITÉ"
+   ],
+   "badges": [
+    "TOUJOURS LE MÊME MOMENT",
+    "COMMENCE MINUSCULE",
+    "DOULEUR ? ON SE REPOSE"
+   ],
+   "vo": "Toujours le même moment, un départ minuscule, et l'habitude s'installe. Version facile : trois squats seulement. Adapte à ton niveau, et en cas de douleur, tu te reposes."
+  },
+  {
+   "type": "cta",
+   "title": "CHOISIS TON<br>**DÉCLENCHEUR**",
+   "ctas": [
+    "🔖 ENREGISTRE L'ASTUCE",
+    "💬 ÉCRIS TON GESTE"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Choisis ton geste déclencheur, enregistre l'astuce, et écris-le en commentaire pour t'engager."
+  }
+ ]
+}

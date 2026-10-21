@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R22",
+ "layout": "sportmotion",
+ "music_seed": 610,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "pompe",
+   "count": 3,
+   "title": "TA SEMAINE : **3 SÉANCES**",
+   "sub": "⏱ 20 MIN CHACUNE",
+   "vo": "Une semaine type pour débuter à la maison : trois séances, pas plus. Voici comment les placer."
+  },
+  {
+   "type": "erreur",
+   "pose": "climber",
+   "myth": "« TOUS LES JOURS »",
+   "stamp": "FAUX",
+   "text": "LE REPOS FAIT PARTIE ·<br>**DU PLAN**",
+   "vo": "On croit qu'il faut s'entraîner tous les jours pour avancer. Faux. Le repos fait partie du plan, et trois séances bien placées suffisent pour démarrer."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "LUNDI : BAS DU CORPS",
+    "MERCREDI : HAUT",
+    "VENDREDI : CORPS ENTIER"
+   ],
+   "poses": [
+    "squat",
+    "pompe",
+    "planche"
+   ],
+   "effort": "20 min",
+   "rest": "1 jour",
+   "total": "20:00",
+   "vo": "Lundi, bas du corps. Mercredi, haut du corps et gainage. Vendredi, corps entier. Vingt minutes à chaque fois, avec un jour de repos entre deux séances."
+  },
+  {
+   "type": "pourquoi",
+   "title": "SIMPLE ET<br>**TENABLE**",
+   "zones": [
+    "RÉGULARITÉ",
+    "RÉCUPÉRATION",
+    "FORCE"
+   ],
+   "badges": [
+    "JOURS FIXES",
+    "ÉCOUTE TON CORPS",
+    "TROP DUR ? RACCOURCIS"
+   ],
+   "vo": "Un rythme simple, tenable, avec de la récupération. Fixe tes jours à l'avance. Version facile : dix minutes au lieu de vingt. Adapte à ton niveau et s'il y a une douleur, tu arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "TA SEMAINE<br>**EST PRÊTE**",
+   "ctas": [
+    "🔖 ENREGISTRE LE PLAN",
+    "💬 CHOISIS TES JOURS"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Enregistre ce plan et dis-moi en commentaire quels jours tu choisis."
+  }
+ ]
+}

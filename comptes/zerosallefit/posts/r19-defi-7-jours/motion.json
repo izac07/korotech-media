@@ -1,0 +1,68 @@
+{
+ "id": "ZSF-R19",
+ "layout": "sportmotion",
+ "music_seed": 607,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "pompe",
+   "count": 7,
+   "title": "DÉFI **7 JOURS** · 10 MIN",
+   "sub": "⏱ ZÉRO MATOS",
+   "vo": "Sept jours, dix minutes par jour. C'est le défi le plus simple pour installer une habitude, et ça se fait chez toi."
+  },
+  {
+   "type": "erreur",
+   "pose": "squat",
+   "myth": "« JE N'AI PAS LE TEMPS »",
+   "stamp": "FAUX",
+   "text": "10 MINUTES ·<br>**ÇA SE TROUVE**",
+   "vo": "Pas le temps ? Dix minutes, ça se trouve : c'est une pause café. Le but n'est pas la performance, c'est de revenir chaque jour."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "JOUR 1-2 : BAS DU CORPS",
+    "JOUR 3 : GAINAGE",
+    "JOUR 4 : MARCHE ACTIVE",
+    "JOUR 5-6 : CORPS ENTIER"
+   ],
+   "poses": [
+    "squat",
+    "planche",
+    "climber",
+    "pompe"
+   ],
+   "effort": "10 min",
+   "rest": "1 jour",
+   "total": "10:00",
+   "vo": "Le plan : jours un et deux, bas du corps. Jour trois, gainage. Jour quatre, marche active. Jours cinq et six, corps entier. Le septième jour, tu te reposes."
+  },
+  {
+   "type": "pourquoi",
+   "title": "PETIT FORMAT<br>**GRANDE HABITUDE**",
+   "zones": [
+    "RÉGULARITÉ",
+    "FORCE DE BASE",
+    "ÉNERGIE"
+   ],
+   "badges": [
+    "MÊME HEURE CHAQUE JOUR",
+    "SAUTE UN JOUR SI BESOIN",
+    "DOULEUR ? REPOS"
+   ],
+   "vo": "Tu construis surtout une habitude et de la force de base. Choisis une heure fixe. Version facile : moins de répétitions. En cas de douleur, tu fais une pause."
+  },
+  {
+   "type": "cta",
+   "title": "TU RELÈVES<br>**LE DÉFI ?**",
+   "ctas": [
+    "🔖 ENREGISTRE-LE",
+    "💬 ÉCRIS « JOUR 1 »"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Enregistre le plan et écris jour un en commentaire pour lancer ton défi."
+  }
+ ]
+}

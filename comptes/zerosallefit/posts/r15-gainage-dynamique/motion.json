@@ -1,0 +1,70 @@
+{
+ "id": "ZSF-R15",
+ "layout": "sportmotion",
+ "music_seed": 603,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "planche",
+   "count": 5,
+   "title": "GAINAGE **DYNAMIQUE** EN 5 EXOS",
+   "sub": "⏱ 5 MIN · AU SOL",
+   "vo": "Le gainage, ce n'est pas que tenir la planche en regardant le chrono. Voici cinq exercices dynamiques, cinq minutes."
+  },
+  {
+   "type": "erreur",
+   "pose": "planche",
+   "myth": "« GAINER = TENIR IMMOBILE »",
+   "stamp": "FAUX",
+   "text": "LE GAINAGE BOUGE AUSSI ·<br>**TON CORPS RESTE STABLE**",
+   "vo": "On croit que gainer, c'est rester immobile. En réalité, ton corps peut bouger pendant que ton bassin reste stable. C'est ça, le gainage dynamique."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "PLANCHE",
+    "MONTAGNARDS LENTS",
+    "DEAD BUG",
+    "PLANCHE LATÉRALE",
+    "CREUX"
+   ],
+   "poses": [
+    "planche",
+    "climber",
+    "deadbug",
+    "lateral",
+    "creuse"
+   ],
+   "effort": "40 s",
+   "rest": "20 s",
+   "total": "5:00",
+   "vo": "Cinq exercices, quarante secondes d'effort, vingt secondes de repos. Planche. Montagnards lents. Dead bug. Planche latérale. Et le creux pour finir."
+  },
+  {
+   "type": "pourquoi",
+   "title": "SANGLE ABDO<br>**ET ÉPAULES**",
+   "zones": [
+    "ABDOS",
+    "ÉPAULES",
+    "FESSIERS"
+   ],
+   "badges": [
+    "BASSIN STABLE",
+    "RESPIRE",
+    "PLANCHE SUR LES GENOUX AU DÉBUT"
+   ],
+   "vo": "Tu travailles les abdos, les épaules et les fessiers. Garde le bassin stable et respire. Version facile : planche sur les genoux. Ajuste à ton niveau, et si ça fait mal, stop."
+  },
+  {
+   "type": "cta",
+   "title": "5 MIN<br>**CE SOIR ?**",
+   "ctas": [
+    "🔖 ENREGISTRE LA SÉANCE",
+    "💬 ÉCRIS « GAINÉ »"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Enregistre cette séance, fais-la ce soir, et écris gainé en commentaire quand c'est fini."
+  }
+ ]
+}

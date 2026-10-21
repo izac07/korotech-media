@@ -1,0 +1,68 @@
+{
+ "id": "ZSF-R23",
+ "layout": "sportmotion",
+ "music_seed": 611,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "climber",
+   "count": 4,
+   "title": "**4 EXOS** × **4 TOURS**",
+   "sub": "⏱ 16 MIN CHRONO",
+   "vo": "Quatre exercices, quatre tours. Un circuit facile à retenir, que tu peux faire n'importe où."
+  },
+  {
+   "type": "erreur",
+   "pose": "squat",
+   "myth": "« JE VAIS ME PERDRE »",
+   "stamp": "FAUX",
+   "text": "UN CIRCUIT SIMPLE ·<br>**QUATRE EXERCICES SEULEMENT**",
+   "vo": "Beaucoup se perdent dans des programmes compliqués. Là, tu retiens quatre exercices seulement, et tu les répètes. C'est tout."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "SQUAT",
+    "POMPE INCLINÉE",
+    "FENTE ARRIÈRE",
+    "PLANCHE"
+   ],
+   "poses": [
+    "squat",
+    "pompe",
+    "fente",
+    "planche"
+   ],
+   "effort": "30 s",
+   "rest": "15 s",
+   "total": "3:00",
+   "vo": "Squat. Pompe inclinée. Fente arrière. Planche. Trente secondes d'effort, quinze secondes de repos, puis tu recommences : quatre tours en tout, sans te précipiter."
+  },
+  {
+   "type": "pourquoi",
+   "title": "CORPS ENTIER<br>**EN 4 TOURS**",
+   "zones": [
+    "JAMBES",
+    "HAUT DU CORPS",
+    "SANGLE"
+   ],
+   "badges": [
+    "QUALITÉ AVANT VITESSE",
+    "2 TOURS SI BESOIN",
+    "DOULEUR ? STOP"
+   ],
+   "vo": "Tu fais travailler les jambes, le haut du corps et la sangle abdominale. Soigne la technique avant la vitesse. Version facile : deux tours au lieu de quatre. Une douleur ? Tu arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "4 TOURS<br>**C'EST PARTI**",
+   "ctas": [
+    "🔖 ENREGISTRE-LE",
+    "💬 ÉCRIS « 4 TOURS »"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Enregistre le circuit et écris quatre tours en commentaire quand tu as fini."
+  }
+ ]
+}

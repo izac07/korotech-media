@@ -1,0 +1,68 @@
+{
+ "id": "ZSF-R18",
+ "layout": "sportmotion",
+ "music_seed": 606,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "squat",
+   "count": 1,
+   "title": "POV : **JOUR 1** DE REPRISE",
+   "sub": "⏱ 10 MIN, PAS PLUS",
+   "vo": "Ça fait longtemps que tu n'as pas fait de sport, et tu veux reprendre. Voilà à quoi ressemble ton premier jour."
+  },
+  {
+   "type": "erreur",
+   "pose": "pompe",
+   "myth": "« JE DOIS TOUT DONNER »",
+   "stamp": "FAUX",
+   "text": "JOUR 1 = JUSTE COMMENCER ·<br>**PAS BATTRE UN RECORD**",
+   "vo": "Pas question de tout donner pour rattraper le temps perdu. Le premier jour sert juste à recommencer, doucement. C'est le meilleur moyen de revenir demain."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "MARCHE SUR PLACE",
+    "SQUAT SUR CHAISE",
+    "POMPE MURALE",
+    "PONT FESSIER"
+   ],
+   "poses": [
+    "climber",
+    "squat",
+    "pompe",
+    "pont"
+   ],
+   "effort": "30 s",
+   "rest": "30 s",
+   "total": "4:00",
+   "vo": "Quatre exercices faciles, trente secondes d'effort, trente de repos. Marche sur place. Squat sur chaise. Pompe contre un mur. Pont fessier. Tu t'arrêtes avant l'épuisement."
+  },
+  {
+   "type": "pourquoi",
+   "title": "PETIT DÉPART<br>**GRAND ÉLAN**",
+   "zones": [
+    "JAMBES",
+    "BRAS",
+    "FESSIERS"
+   ],
+   "badges": [
+    "STOPPE AVANT L'ÉPUISEMENT",
+    "BOIS DE L'EAU",
+    "LA DOULEUR, C'EST STOP"
+   ],
+   "vo": "Jambes, bras et fessiers sont sollicités sans te brusquer. Bois de l'eau, adapte à ton niveau, et s'il y a une douleur, tu arrêtes. Version facile : réduis les durées."
+  },
+  {
+   "type": "cta",
+   "title": "DEMAIN,<br>**ON RECOMMENCE**",
+   "ctas": [
+    "🔖 ENREGISTRE POUR DEMAIN",
+    "💬 ÉCRIS « JOUR 1 »"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Demain, tu recommences. Enregistre cette séance et écris jour un en commentaire pour t'engager."
+  }
+ ]
+}

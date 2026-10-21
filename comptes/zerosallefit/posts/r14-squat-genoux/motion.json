@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R14",
+ "layout": "sportmotion",
+ "music_seed": 602,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "squat",
+   "count": 3,
+   "title": "SQUAT :<br>**3 ERREURS**",
+   "sub": "⏱ 30 S POUR CORRIGER",
+   "vo": "Ton squat est peut-être mal réglé sans que tu le saches. Voici trois erreurs fréquentes, et comment les corriger."
+  },
+  {
+   "type": "erreur",
+   "pose": "squat",
+   "myth": "« PLUS BAS = MIEUX »",
+   "stamp": "FAUX",
+   "text": "GENOUX QUI RENTRENT ·<br>**TALONS EN L'AIR**",
+   "vo": "Première erreur : descendre le plus bas possible à tout prix. Les genoux rentrent vers l'intérieur et les talons décollent. Mieux vaut moins profond, mais propre."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "GENOUX DEHORS",
+    "TALONS AU SOL",
+    "DOS GAINÉ"
+   ],
+   "poses": [
+    "squat",
+    "squat",
+    "planche"
+   ],
+   "effort": "30 s",
+   "rest": "30 s",
+   "total": "3:00",
+   "vo": "Trois points à retenir. Genoux dehors, dans l'axe des pieds. Talons bien posés au sol. Dos gainé, poitrine ouverte. Fais trois séries de trente secondes, lentement."
+  },
+  {
+   "type": "pourquoi",
+   "title": "SQUAT PROPRE<br>**SANS FORCER**",
+   "zones": [
+    "CUISSES",
+    "FESSIERS",
+    "SANGLE"
+   ],
+   "badges": [
+    "GENOUX SUIVENT LES PIEDS",
+    "DESCENDS SANS DOULEUR",
+    "TROP DUR ? ASSIS-TOI SUR UNE CHAISE"
+   ],
+   "vo": "Tu cibles cuisses, fessiers et sangle abdominale. Descends seulement tant que c'est confortable. Version facile : assieds-toi sur une chaise puis relève-toi. Si ça fait mal, tu arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "TESTE-LE<br>**DEVANT UN MIROIR**",
+   "ctas": [
+    "🔖 ENREGISTRE LE RAPPEL",
+    "💬 DIS-MOI TON ERREUR"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Fais l'essai devant un miroir, enregistre ce rappel, et dis-moi en commentaire quelle erreur tu faisais."
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "id": "ZSF-R21",
+ "layout": "sportmotion",
+ "music_seed": 609,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "squat",
+   "count": 3,
+   "title": "SÉANCE **CANAPÉ** SANS PAUSE",
+   "sub": "⏱ PENDANT TA SÉRIE",
+   "vo": "Tu regardes ta série ce soir ? Fais de ce moment une mini séance, sans quitter ton salon."
+  },
+  {
+   "type": "erreur",
+   "pose": "crunch",
+   "myth": "« JE SUIS TROP FATIGUÉ »",
+   "stamp": "FAUX",
+   "text": "PETITS MOUVEMENTS ·<br>**PENDANT LES PUBS**",
+   "vo": "Tu es fatigué et tu n'as pas envie de t'entraîner ? Alors fais simple : petits mouvements pendant la pub ou entre deux épisodes, sans pression."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "SQUAT DEVANT LE CANAPÉ",
+    "POMPE INCLINÉE",
+    "PONT FESSIER",
+    "GAINAGE ASSIS"
+   ],
+   "poses": [
+    "squat",
+    "pompe",
+    "pont",
+    "planche"
+   ],
+   "effort": "30 s",
+   "rest": "30 s",
+   "total": "4:00",
+   "vo": "Quatre exercices, trente secondes chacun, trente de repos. Squat devant le canapé. Pompe inclinée, mains sur l'assise. Pont fessier au sol. Gainage assis, ventre serré."
+  },
+  {
+   "type": "pourquoi",
+   "title": "BOUGER SANS<br>**CHANGER TES PLANS**",
+   "zones": [
+    "JAMBES",
+    "POITRINE",
+    "ABDOS"
+   ],
+   "badges": [
+    "SOUFFLE NORMAL",
+    "SURFACE STABLE",
+    "DOULEUR ? ASSIS-TOI"
+   ],
+   "vo": "Tu fais travailler les jambes, la poitrine et les abdos. Choisis une surface stable et respire normalement. Version facile : moins de répétitions. Une douleur ? Tu t'assois et tu arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "TON PROCHAIN<br>**ÉPISODE ?**",
+   "ctas": [
+    "🔖 ENREGISTRE LA SÉANCE",
+    "💬 DIS-MOI TA SÉRIE"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Enregistre la séance et dis-moi en commentaire quelle série tu regardes en ce moment."
+  }
+ ]
+}

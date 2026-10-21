@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R25",
+ "layout": "sportmotion",
+ "music_seed": 613,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "pont",
+   "count": 3,
+   "title": "PONT FESSIER<br>**TU LE SENS ?**",
+   "sub": "⏱ 3 AJUSTEMENTS",
+   "vo": "Tu fais des ponts fessiers mais tu ne sens rien dans les fessiers ? Trois petits ajustements changent tout."
+  },
+  {
+   "type": "erreur",
+   "pose": "pont",
+   "myth": "« PLUS HAUT, C'EST MIEUX »",
+   "stamp": "FAUX",
+   "text": "DOS CAMBRÉ ·<br>**FESSIERS ABSENTS**",
+   "vo": "L'erreur classique : monter le plus haut possible en cambrant le dos. Du coup, ce sont les lombaires qui bossent, et pas les fessiers."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "PIEDS PROCHES",
+    "SERRE LES FESSIERS",
+    "PAUSE EN HAUT"
+   ],
+   "poses": [
+    "pont",
+    "pont",
+    "pont"
+   ],
+   "effort": "30 s",
+   "rest": "30 s",
+   "total": "3:00",
+   "vo": "Trois réglages. Rapproche les pieds des fesses. Serre les fessiers en montant. Marque une pause d'une seconde en haut. Trente secondes, trente secondes de repos."
+  },
+  {
+   "type": "pourquoi",
+   "title": "FESSIERS<br>**VRAIMENT ACTIFS**",
+   "zones": [
+    "FESSIERS",
+    "CUISSES",
+    "SANGLE"
+   ],
+   "badges": [
+    "BASSIN, PAS LE DOS",
+    "CÔTES RENTRÉES",
+    "DOULEUR AU DOS ? STOP"
+   ],
+   "vo": "Tu cibles fessiers, cuisses et sangle. Pousse avec le bassin, pas avec le dos, et rentre les côtes. Version facile : monte moins haut. Si le dos tire, tu arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "ESSAIE<br>**CE SOIR**",
+   "ctas": [
+    "🔖 ENREGISTRE LE RAPPEL",
+    "💬 DIS-MOI SI TU LE SENS"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Teste-le ce soir, enregistre ce rappel, et dis-moi en commentaire si tu sens enfin tes fessiers."
+  }
+ ]
+}

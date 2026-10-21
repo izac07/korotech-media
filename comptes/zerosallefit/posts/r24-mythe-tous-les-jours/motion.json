@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R24",
+ "layout": "sportmotion",
+ "music_seed": 612,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "creuse",
+   "count": 0,
+   "title": "TROP DOUX POUR **COMPTER** ?",
+   "sub": "⏱ SPOILER : NON",
+   "vo": "Si ce n'est pas dur, ça ne sert à rien ? C'est une idée reçue qui décourage beaucoup de débutants."
+  },
+  {
+   "type": "erreur",
+   "pose": "pompe",
+   "myth": "« PAS DUR = INUTILE »",
+   "stamp": "MYTHE",
+   "text": "UNE SÉANCE DOUCE ·<br>**VAUT MIEUX QUE ZÉRO**",
+   "vo": "Une séance douce vaut toujours mieux qu'aucune séance. Tu n'as pas besoin de finir à bout de souffle pour construire une habitude."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "MARCHE ACTIVE",
+    "SQUAT SUR CHAISE",
+    "PONT FESSIER"
+   ],
+   "poses": [
+    "climber",
+    "squat",
+    "pont"
+   ],
+   "effort": "30 s",
+   "rest": "30 s",
+   "total": "3:00",
+   "vo": "Un exemple : marche active, squat sur chaise, pont fessier. Trente secondes d'effort, trente secondes de repos. Simple, accessible, et tu peux le refaire demain."
+  },
+  {
+   "type": "pourquoi",
+   "title": "DOUX ET<br>**RÉGULIER**",
+   "zones": [
+    "HABITUDE",
+    "MOBILITÉ",
+    "ÉNERGIE"
+   ],
+   "badges": [
+    "ADAPTE À TON NIVEAU",
+    "TECHNIQUE PROPRE",
+    "DOULEUR ? STOP"
+   ],
+   "vo": "Tu installes l'habitude, tu entretiens ta mobilité et ton énergie. Adapte toujours l'effort à ton niveau, garde une bonne technique, et si quelque chose fait mal, tu arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "COMMENCE<br>**PETIT**",
+   "ctas": [
+    "🔖 ENREGISTRE CE RAPPEL",
+    "📲 PARTAGE-LE"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Commence petit. Enregistre ce rappel et partage-le à quelqu'un qui pense devoir tout donner."
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R20",
+ "layout": "sportmotion",
+ "music_seed": 608,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "fente",
+   "count": 8,
+   "title": "HANCHES **RAIDES** ASSIS ?",
+   "sub": "⏱ 3 MIN À TON BUREAU",
+   "vo": "Tu passes ta journée assis et tes hanches te le font sentir ? Voici une routine de trois minutes à faire au bureau."
+  },
+  {
+   "type": "erreur",
+   "pose": "fente",
+   "myth": "« C'EST NORMAL »",
+   "stamp": "FAUX",
+   "text": "ASSIS TOUTE LA JOURNÉE ·<br>**LES HANCHES SE FIGENT**",
+   "vo": "Rester assis des heures fige les hanches. On se dit que c'est normal, alors qu'un peu de mouvement régulier aide justement à retrouver de l'aisance."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "CERCLES DE HANCHES",
+    "FENTE BASSE",
+    "PAPILLON ASSIS"
+   ],
+   "poses": [
+    "fente",
+    "fente",
+    "pont"
+   ],
+   "effort": "40 s",
+   "rest": "20 s",
+   "total": "3:00",
+   "vo": "Trois exercices, quarante secondes d'effort, vingt secondes de repos. Cercles de hanches debout. Fente basse, une jambe devant. Puis papillon assis, plantes de pieds jointes."
+  },
+  {
+   "type": "pourquoi",
+   "title": "HANCHES<br>**PLUS LIBRES**",
+   "zones": [
+    "HANCHES",
+    "FESSIERS",
+    "BAS DU DOS"
+   ],
+   "badges": [
+    "SANS FORCER",
+    "SOUFFLE",
+    "DOULEUR ? ARRÊTE"
+   ],
+   "vo": "Tu mobilises les hanches, les fessiers et le bas du dos. Va doucement, sans forcer, et respire. Version facile : réduis l'amplitude. Si une douleur apparaît, tu arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "TOUTES LES<br>**2 HEURES**",
+   "ctas": [
+    "🔖 ENREGISTRE LA ROUTINE",
+    "📲 ENVOIE-LA À UN COLLÈGUE"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Fais ça toutes les deux heures. Enregistre la routine et envoie-la à un collègue qui reste assis."
+  }
+ ]
+}
