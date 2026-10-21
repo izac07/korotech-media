@@ -54,11 +54,13 @@ date;compte;id;layout;pilier;formule;sujet;hook
 2026-10-20 21:30;mentaldacier2030;MDA-R06;manifeste3d;;;9 tâches max par jour : la méthode 1-3-5;
 2026-10-21 07:30;mentaldacier2030;MDA-R07;manifeste3d;;;7 jours pour une routine du matin (sans te lever à 5 h);
 2026-10-21 07:30;zerosallefit;ZSF-R07;sportmotion;;;Pas envie ? La séance minimum de 4 minutes (motion);
+2026-10-21 11:00;mentaldacier2030;MDA-X03;duel3d;POV / avant-après relatable;avant-apres;Motivation contre discipline : même réveil, même pluie (duel 3D);
+2026-10-21 11:05;mentaldacier2030;MDA-X04;duel3d;Mindset / phrases fortes;histoire;Rumination nocturne : ce qui pèse dans ta tête à 3h07 (duel 3D);
 2026-10-21 12:00;revenus_malins;RM-R10;malin;Démarches & cadre en France;question;Livret A ou LEP : la différence;Livret A ou LEP ? la différence en 40 secondes
 2026-10-21 12:15;korotech_fr;R16;;;;Son cours en podcast;
 2026-10-21 12:30;coeurlucide__;CL-R09;nightchat;Signaux (red flags / green flags) et dynamiques de couple;question;Il répond en 3 jours : ce que ça dit et ne dit pas;Désolé, je vois ton message que maintenant 🙈
 2026-10-21 12:30;lia.entrepreneur;LIA-R08;iceberg;;;La 1re réponse de l'IA est un brouillon : 3 relances;
-2026-10-21 13:00;mentaldacier2030;MDA-X01;duel3d;POV / avant-après relatable;avant-apres;Perfectionnisme contre action : un mur, deux attitudes (duel 3D);
+2026-10-20 23:00;mentaldacier2030;MDA-X01;duel3d;POV / avant-après relatable;avant-apres;Perfectionnisme contre action : un mur, deux attitudes (duel 3D);
 2026-10-21 18:00;zerosallefit;ZSF-R11;sportmotion;;;Zéro pompe ? Normal : 4 étapes pour ta première;
 2026-10-21 18:30;lia.entrepreneur;LIA-R12;iceberg;Erreurs et vérités;erreur;Pourquoi je relis encore tout ce que Claude écrit;ce qu'on te montre ./reveler --automatisation
 2026-10-21 19:15;korotech_fr;R15;;;;Parents : préparer la réunion parents-profs;
@@ -72,7 +74,7 @@ date;compte;id;layout;pilier;formule;sujet;hook
 2026-10-22 12:15;korotech_fr;X04;cheatsheet;;;3 IA gratuites pour réviser (NotebookLM, Napkin, Perplexity);
 2026-10-22 12:30;coeurlucide__;CL-R10;nightchat;Communication;liste;Les phrases qui rassurent vraiment;Tu me manques déjà 🤍
 2026-10-22 12:30;lia.entrepreneur;LIA-R13;claudeflow;Tutos Claude;demo;Résumer une réunion et en sortir les actions;Ta réunion, en actions résumé + à-faire
-2026-10-22 13:00;mentaldacier2030;MDA-X02;duel3d;Mindset / phrases fortes;question;Perfectionnisme contre action : qui finit le mur (duel 3D v1);
+2026-10-20 23:00;mentaldacier2030;MDA-X02;duel3d;Mindset / phrases fortes;question;Perfectionnisme contre action : qui finit le mur (duel 3D v1);
 2026-10-22 18:00;zerosallefit;ZSF-R14;sportmotion;Technique;erreur;Le squat : 3 erreurs qui font souffrir les genoux;SQUAT : 3 ERREURS ⏱ 30 S POUR CORRIGER
 2026-10-22 18:30;lia.entrepreneur;LIA-R14;claudeflow;Automatisations Make / Instagram;demo;Publier sur Instagram avec Make : le schéma;Publier tout seul sur Instagram le schéma Make
 2026-10-22 19:15;korotech_fr;R22;cheatsheet;;;CV vide ? 3 étapes pour le remplir sans mentir;

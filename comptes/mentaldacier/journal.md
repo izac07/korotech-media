@@ -27,5 +27,7 @@
 | 2026-10-27 21:30 | MDA-R22 | Reel | POV : je m'y mets depuis des semaines (POV / avant-après relatable, manifeste3d) |
 | 2026-10-28 07:30 | MDA-R23 | Reel | La discipline c'est se respecter (Mindset / phrases fortes, manifeste3d) |
 | 2026-10-28 21:30 | MDA-R24 | Reel | Commencer par le plus dur (Méthodes anti-procrastination, manifeste3d) |
-| 2026-10-21 13:00 | MDA-X01 | Reel | Perfectionnisme contre action : un mur, deux attitudes (duel 3D) (POV / avant-après relatable, duel3d) |
-| 2026-10-22 13:00 | MDA-X02 | Reel | Perfectionnisme contre action : qui finit le mur (duel 3D v1) (Mindset / phrases fortes, duel3d) |
+| 2026-10-20 23:00 | MDA-X01 | Reel | Perfectionnisme contre action : un mur, deux attitudes (duel 3D) (POV / avant-après relatable, duel3d) |
+| 2026-10-20 23:00 | MDA-X02 | Reel | Perfectionnisme contre action : qui finit le mur (duel 3D v1) (Mindset / phrases fortes, duel3d) |
+| 2026-10-21 11:00 | MDA-X03 | Reel | Motivation contre discipline : même réveil, même pluie (duel 3D) (POV / avant-après relatable, duel3d) |
+| 2026-10-21 11:05 | MDA-X04 | Reel | Rumination nocturne : ce qui pèse dans ta tête à 3h07 (duel 3D) (Mindset / phrases fortes, duel3d) |

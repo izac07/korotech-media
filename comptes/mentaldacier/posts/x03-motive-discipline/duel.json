@@ -1,0 +1,11 @@
+{
+ "id": "MDA-X03",
+ "scene": "reveil",
+ "layout": "duel3d",
+ "music_seed": 1,
+ "handle": "mentaldacier2030",
+ "gauche": "MOTIVÉ",
+ "droite": "DISCIPLINÉ",
+ "textes": [[0.2, 99, 0, "MÊME RÉVEIL."], [2.6, 99, 1, "MÊME PLUIE."], [10.5, 99, 2, "PAS LE MÊME CORPS."]],
+ "legende": "La motivation regarde la météo. La discipline met ses baskets. 🌧️👟\n\nPersonne n'a envie de courir sous la pluie à 6 h. La différence, c'est ce que tu fais quand l'envie n'est pas là. Un footing de 10 minutes compte plus qu'un « demain, promis ».\n\nTu es lequel des deux ce matin ? Dis-le en commentaire 👇\n\n#mentaldacier #discipline #motivation #routinedumatin #mindset"
+}
