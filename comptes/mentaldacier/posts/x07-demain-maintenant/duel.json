@@ -1,0 +1,12 @@
+{
+ "id": "MDA-X07",
+ "scene": "reveil",
+ "layout": "duel3d",
+ "music_seed": 4,
+ "handle": "mentaldacier2030",
+ "gauche": "DEMAIN",
+ "droite": "MAINTENANT",
+ "textes": [[0.2, 99, 0, "MÊME FATIGUE."], [2.6, 99, 1, "MÊME PLUIE."], [10.5, 99, 2, "PAS LA MÊME VIE."]],
+ "publication": "manuelle (test : son tendance ajouté dans l'app)",
+ "legende": "« Je commence demain » est la phrase la plus confortable du monde. 🌧️\n\nLa fatigue et la pluie sont les mêmes pour tout le monde. Ce qui change, c'est ce que tu fais pendant les 10 minutes où tu n'as pas envie. Pas besoin d'un grand plan : juste commencer maintenant, même petit.\n\nTu es plutôt « demain » ou « maintenant » ? Dis-le en commentaire 👇\n\n#mentaldacier #discipline #motivation #passeralaction #mindset"
+}

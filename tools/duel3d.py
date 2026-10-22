@@ -477,7 +477,8 @@ def build(spec_path, out):
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-framerate", "30", "-i", f"{fr}/f_%04d.jpg", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "19", v], check=True)
     mu = os.path.join(tmp, "m.wav"); musique(mu, DUR, int(spec.get("music_seed", 0)), pulse=spec.get("pulse", True))
     fx = os.path.join(tmp, "fx.wav"); sfx(fx, sc)
-    fc = (f"[1]atrim=0:{DUR},volume=0.6[m];[2]atrim=0:{DUR}[f];"   # pas de fondu final : la vidéo doit boucler
+    vm = 0 if spec.get("sans_musique") else 0.6   # sans_musique : bruitages seuls, pour ajouter un son tendance dans l'app
+    fc = (f"[1]atrim=0:{DUR},volume={vm}[m];[2]atrim=0:{DUR}[f];"   # pas de fondu final : la vidéo doit boucler
           f"[m][f]amix=inputs=2:normalize=0,loudnorm=I=-15:TP=-1.5,alimiter=limit=0.95,apad=whole_dur={DUR+3},atrim=0:{DUR}[a]")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", v, "-i", mu, "-i", fx, "-filter_complex", fc, "-map", "0:v", "-map", "[a]",
                     "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", out], check=True)
