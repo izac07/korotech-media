@@ -1,0 +1,13 @@
+{
+ "id": "CL-X01",
+ "layout": "fable2d",
+ "handle": "coeurlucide__",
+ "music_seed": 6,
+ "accent": {"base": "#e0577a", "clair": "#ff9fb6", "pale": "#ffe3ea", "sombre": "#5a1426", "mauvais": "#8f8f8f"},
+ "scenes": [
+  {"type": "escalier", "textes": ["Je ne m'en remettrai jamais.", "Un jour après l'autre."]},
+  {"type": "portes", "textes": ["Son message, à 2h du matin.", "Choisis ta paix."],
+   "portes": ["RÉPONDRE", "Tout recommence", "TE CHOISIR", "Tu avances"]}
+ ],
+ "legende": "Le message de 2h du matin promet souvent ce que la journée n'a jamais tenu. 🌙\n\nTe choisir, ce n'est pas être dur·e. C'est arrêter de rouvrir une porte qui t'a déjà fait mal. Ton cœur se répare un jour après l'autre, et chaque « non » à ce qui te blesse est un « oui » à toi.\n\n🔖 Enregistre-le pour le soir où tu hésiteras.\n\n#coeurlucide #rupture #confianceensoi #relationsaines #prendresoindesoi"
+}

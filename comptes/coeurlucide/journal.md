@@ -28,3 +28,4 @@
 | 2026-10-27 21:00 | CL-R21 | Reel | Apaiser l'anxiété de l'attente d'un message (Confiance en soi & estime, nightchat) |
 | 2026-10-28 12:30 | CL-R22 | Reel | Demander de l'aide à un proche (Communication, nightchat) |
 | 2026-10-28 21:00 | CL-R23 | Reel | Arrêter de trop s'excuser (Confiance en soi & estime, nightchat) |
+| 2026-10-22 19:10 | CL-X01 | Reel | Choisis ta paix : se relever après une rupture, ne pas répondre au message de 2h (fable 2D) (Rupture, célibat, se reconstruire, fable2d) |

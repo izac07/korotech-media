@@ -13,7 +13,8 @@ Scènes (champ "type" de chaque scène du spec, textes modifiables) :
   sommet    il arrive en haut d'un grand escalier, bras levés ; en bas, quelqu'un lève la tête et commence à monter.
                                                                        textes : [t1, t2]
 Usage : python3 tools/fable2d.py <spec.json> <out.mp4>     (ou <spec.json> <page.html> --html)
-spec : {"id", "handle", "music_seed", "scenes": [{"type", "textes", ("portes")}, ...]}
+spec : {"id", "handle", "music_seed", "scenes": [{"type", "textes", ("portes")}, ...],
+        "accent": {"base", "clair", "pale", "sombre", "mauvais"}}   (couleurs du compte ; doré de Mental d'Acier par défaut)
 """
 import json, os, sys, subprocess, tempfile, shutil, asyncio
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -169,9 +170,9 @@ def page(spec):
         if s["type"] == "portes":
             g, ga, d, da = s["portes"]
             dl += (f"<div class='dl up' style='left:90px;width:360px'>{K.esc(g)}</div><div class='dl up' style='left:630px;width:360px'>{K.esc(d)}</div>"
-                   f"<div class='dl dn' style='left:90px;width:360px;color:#e0384a'>{K.esc(ga)}</div><div class='dl dn' style='left:640px;width:310px;color:#e8b84f'>{K.esc(da)}</div>")
+                   f"<div class='dl dn' style='left:90px;width:360px;color:__MAUVAIS__'>{K.esc(ga)}</div><div class='dl dn' style='left:640px;width:310px;color:#e8b84f'>{K.esc(da)}</div>")
     js = JS + "".join(LIB[s["type"]] for s in sc)
-    return f"""<!doctype html><html><head><meta charset='utf-8'><style>{fonts}
+    html = f"""<!doctype html><html><head><meta charset='utf-8'><style>{fonts}
 *{{margin:0;padding:0;box-sizing:border-box}}
 body{{width:{W}px;height:{H}px;background:#000;overflow:hidden;position:relative;color:#fff;font-family:Inter,sans-serif}}
 svg{{position:absolute;left:0;top:0}}
@@ -199,7 +200,12 @@ window.render=function(t){{
   let n=0;for(let k=1;k<=SCENES.length;k++){{const b=k*SD;n=Math.max(n,1-Math.min(1,Math.abs(t-b)/.35));}}
   if(t<.15)n=Math.max(n,1-t/.15);document.getElementById('noir').style.opacity=n;
 }};render(0);
-</script></body></html>""", total
+</script></body></html>"""
+    # couleurs du compte : l'accent doré par défaut (Mental d'Acier) est remplacé par celui du spec (« accent »)
+    pal = {"base": "#e8b84f", "clair": "#ffd877", "pale": "#fff2c4", "sombre": "#6b4d12", "mauvais": "#e0384a"} | spec.get("accent", {})
+    for ancien, cle in (("#e8b84f", "base"), ("#ffd877", "clair"), ("#f5c84b", "clair"), ("#fff2c4", "pale"), ("#6b4d12", "sombre"), ("__MAUVAIS__", "mauvais")):
+        html = html.replace(ancien, pal[cle])
+    return html, total
 
 
 def sfx(path, spec, total):
