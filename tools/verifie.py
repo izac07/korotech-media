@@ -244,6 +244,28 @@ def verifier(path):
         if not re.search(r"\benregistre", norm(sc[0].get("say") or sc[0]["vo"])):
             err.append("scène 0 : après l'accroche, la voix doit dire « Enregistre cette vidéo » (ex. « … Enregistre-la, tu vas en avoir besoin. »)")
 
+    # rétention et accroche (tools/MOTION.md, 23/10/2026)
+    if lay != "boucle" and sc and sc[0].get("vo"):
+        vo0 = (sc[0].get("say") or sc[0]["vo"]).strip()
+        phrase1 = re.split(r"(?<=[.!?…])\s+", vo0)[0]
+        if len(phrase1.split()) > 14:
+            att.append("scène 0 : 1re phrase de %d mots (14 max) : %s" % (len(phrase1.split()), phrase1))
+        if re.match(r"(salut|bonjour|hello|coucou|aujourd ?hui|dans cette vid[ée]o)\b", vo0.lower().replace("'", " ")):
+            err.append("scène 0 : la voix commence par une introduction (« %s ») ; entrer direct dans le sujet" % phrase1)
+        for k, s in enumerate(sc):
+            nv = len((s.get("say") or s.get("vo", "")).split())
+            if nv > 30:
+                att.append("scène %d : %d mots de voix (30 max, sinon l'écran reste trop longtemps sans changement)" % (k, nv))
+            ne = len(visible(" ".join(str(v) for c, v in s.items() if c not in ("vo", "say", "type", "cue", "ctas", "pose", "poses", "note"))
+                             .replace("[", " ").replace("]", " ")).split())
+            if ne > 25:
+                att.append("scène %d : %d mots affichés (viser 12 au même moment)" % (k, ne))
+        if lay in ("carnet", "malin"):
+            m = re.search(r"\b([2-9]|10)\b", visible(json.dumps({c: v for c, v in sc[0].items() if c not in ("vo", "say")}, ensure_ascii=False)))
+            listes = [len(s["items"]) for s in sc if isinstance(s.get("items"), list)]
+            if m and listes and int(m.group(1)) not in listes:
+                att.append("le hook annonce %s mais les listes ont %s éléments : tenir le nombre annoncé" % (m.group(1), listes))
+
     # mot-clé à commenter (ressources/mots-cles.json) : le dernier écran l'affiche et la voix le dit
     mc_f = os.path.join(RACINE, "ressources", "mots-cles.json")
     if os.path.exists(mc_f) and lay != "boucle" and sc and not spec.get("sans_mot_cle"):

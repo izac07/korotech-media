@@ -123,6 +123,18 @@ Scènes : 1 à 3 `{"type":"phrase","texte":"…"}`, 9 mots max par phrase (`**mo
 4. **Fin : le mot-clé** (« Commente <mot> pour recevoir <offre> »), voir ci-dessous. Ne pas redemander d'enregistrer à la fin : la dernière scène est réservée au mot-clé.
 Garder 100-120 mots au total : raccourcir les conseils plutôt que l'accroche.
 
+## Rétention et accroche (tous les comptes, depuis le 23/10/2026, tiré des cours La Fabrik)
+**Accroche** : écrire 3 accroches avec 3 techniques différentes parmi les 6 (rendre curieux, montrer le résultat d'abord, ouvrir une boucle, bousculer une croyance, prévenir d'une erreur, visuel fort), garder la plus naturelle à l'oral.
+- 1re phrase de la voix : **14 mots maximum**, et elle entre direct dans le sujet. Jamais « Salut », « Bonjour », « Aujourd'hui je… », « Dans cette vidéo… » (ERREUR de `verifie.py`).
+- Le texte de la scène 0 est lisible dès la 1re image (déjà contrôlé par `audit.py`).
+
+**Les 3 règles de rétention** :
+1. **Boucle ouverte** : l'accroche pose une question ou une promesse dont la réponse arrive seulement à la fin (« le 3e est celui que personne ne fait »). Ne jamais livrer la réponse dans la scène 0.
+2. **Un nombre annoncé, tenu exactement, le meilleur en dernier** : « 3 réglages » à l'écran = 3 éléments, pas 4. `verifie.py` signale (ATTENTION) un nombre du hook qui ne correspond pas au nombre d'éléments d'une liste (`carnet`, `malin`).
+3. **Un changement à l'écran toutes les 2 à 3 s** : texte qui apparaît, objet, couleur, cadrage. Donc des scènes courtes : **30 mots de voix maximum par scène** (≈ 12 s), mieux 15-25 ; et **12 mots affichés au même moment** visés (ATTENTION au-delà de 25 sur une scène). Utiliser `cue` / l'apparition progressive des éléments plutôt qu'un bloc de texte fixe.
+
+**Un seul changement testé par reel** : quand on essaie quelque chose de nouveau (format, accroche, durée, son), on ne change que ça, et on l'écrit dans la `note` de la file (« test : … ») pour le bilan.
+
 ## Mot-clé à commenter (tous les comptes, depuis le 23/10/2026)
 Chaque reel se termine par le mot-clé de son compte (`ressources/mots-cles.json` : `mot`, `offre`, `lien`). La **dernière scène** l'affiche (ex. `ctas` : « 💬 COMMENTE « PLAN » ») et sa `vo` dit « Commente plan pour recevoir le plan 7 jours gratuit ». `tools/verifie.py` met une ERREUR s'il n'est pas à l'écran **ou si la voix ne dit pas « Commente <mot> pour recevoir <offre> »** (obligatoire, décision de Goat du 23/10/2026). Mot long (PROGRAMME, PROMPTS…) : écrire « 💬 COMMENTE PROGRAMME » sans guillemets, sinon la ligne passe sous les boutons d'Instagram. `duel3d` et `fable2d` ajoutent eux-mêmes la carte de fin. Légende : finir par « 💬 Commente <MOT> et je t'envoie <offre> en DM » ; jamais le lien.
 
