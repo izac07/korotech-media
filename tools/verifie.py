@@ -238,6 +238,11 @@ def verifier(path):
     if handle == "coeurlucide__" and re.search(r"\b(pervers|narcissique|bipolaire|toxique pathologique|borderline)\b", tout):
         err.append("Cœur Lucide : pas de diagnostic psy")
 
+    # structure voulue par Goat (23/10/2026) : accroche, puis tout de suite « Enregistre cette vidéo », puis les conseils
+    if lay != "boucle" and sc and sc[0].get("vo") and not spec.get("sans_mot_cle"):
+        if not re.search(r"\benregistre", norm(sc[0].get("say") or sc[0]["vo"])):
+            err.append("scène 0 : après l'accroche, la voix doit dire « Enregistre cette vidéo » (ex. « … Enregistre-la, tu vas en avoir besoin. »)")
+
     # mot-clé à commenter (ressources/mots-cles.json) : le dernier écran l'affiche et la voix le dit
     mc_f = os.path.join(RACINE, "ressources", "mots-cles.json")
     if os.path.exists(mc_f) and lay != "boucle" and sc and not spec.get("sans_mot_cle"):

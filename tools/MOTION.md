@@ -116,5 +116,12 @@ Exemple : `tools/exemples/boucle-exemple/motion.json`. À tester sur 2-3 posts p
 Champs du haut : `pas` (secondes par mot, défaut 0.3), `tenue` (s de phrase complète, défaut 1.2), `couleurs` = 2 paires `[fond, texte]`, optionnels `police`, `taille` (px, défaut 120).
 Scènes : 1 à 3 `{"type":"phrase","texte":"…"}`, 9 mots max par phrase (`**mot**` = souligné). Mécanique tirée d'une source mesurée : un mot par pas, le fond bascule à chaque pas, coupes sèches, texte visible dès la 1re image, la fin retombe sur la 1re couleur pour boucler. Musique + bruitages, pas de voix ni de sous-titres. Mêmes règles éditoriales que le compte (aucun chiffre inventé).
 
+## Structure obligatoire de la voix (tous les comptes, depuis le 23/10/2026)
+1. **Accroche** (1re phrase de la scène 0).
+2. **Tout de suite après, dans la même scène 0 : « Enregistre cette vidéo, tu vas en avoir besoin. »** (ou une variante : « Enregistre-la pour ne pas l'oublier. »). `tools/verifie.py` met une ERREUR si la scène 0 ne contient pas « enregistre ».
+3. Les conseils (scènes suivantes).
+4. **Fin : le mot-clé** (« Commente <mot> pour recevoir <offre> »), voir ci-dessous. Ne pas redemander d'enregistrer à la fin : la dernière scène est réservée au mot-clé.
+Garder 100-120 mots au total : raccourcir les conseils plutôt que l'accroche.
+
 ## Mot-clé à commenter (tous les comptes, depuis le 23/10/2026)
 Chaque reel se termine par le mot-clé de son compte (`ressources/mots-cles.json` : `mot`, `offre`, `lien`). La **dernière scène** l'affiche (ex. `ctas` : « 💬 COMMENTE « PLAN » ») et sa `vo` dit « Commente plan pour recevoir le plan 7 jours gratuit ». `tools/verifie.py` met une ERREUR s'il n'est pas à l'écran **ou si la voix ne dit pas « Commente <mot> pour recevoir <offre> »** (obligatoire, décision de Goat du 23/10/2026). Mot long (PROGRAMME, PROMPTS…) : écrire « 💬 COMMENTE PROGRAMME » sans guillemets, sinon la ligne passe sous les boutons d'Instagram. `duel3d` et `fable2d` ajoutent eux-mêmes la carte de fin. Légende : finir par « 💬 Commente <MOT> et je t'envoie <offre> en DM » ; jamais le lien.
