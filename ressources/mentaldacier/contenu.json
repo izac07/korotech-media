@@ -1,0 +1,28 @@
+{
+ "fichier": "plan-7-jours-arreter-de-repousser",
+ "compte": "mentaldacier2030",
+ "mot_cle": "PLAN",
+ "titre": "Le plan 7 jours pour <span class='acc'>arrêter de repousser</span>",
+ "sous_titre": "Une action par jour, 10 à 20 minutes. Pas besoin de motivation : juste de suivre le plan.",
+ "couleurs": {"accent": "#c8102e", "fond_titre": "#0a0a0a", "texte_titre": "#ffffff", "police_titre": "Archivo Black"},
+ "intro": "Repousser, ce n'est pas de la paresse. La plupart du temps, la tâche est **trop floue**, **trop grosse** ou **inconfortable**. Ton cerveau choisit alors quelque chose de plus facile. Ce plan ne te demande pas d'être motivé : il rend la tâche tellement claire et petite que commencer devient facile.",
+ "blocs": [
+  {"h": "Les 7 jours"},
+  {"etapes": [
+   {"t": "Jour 1 — Vide ta tête", "d": "Écris tout ce que tu repousses en ce moment, sans trier. Puis entoure **une seule chose** : celle qui changerait le plus ta semaine si elle était faite.", "facile": "limite-toi à 5 lignes."},
+   {"t": "Jour 2 — Rends-la ridiculement petite", "d": "Découpe la tâche entourée en étapes de 10 minutes maximum. Écris la toute première, de façon très concrète : pas « faire mon dossier », mais « ouvrir le document et écrire le titre »."},
+   {"t": "Jour 3 — La règle des 2 minutes", "d": "Fais seulement 2 minutes de la première étape. Tu as le droit d'arrêter après. Souvent, tu continueras : le plus dur, c'est le démarrage, pas l'effort."},
+   {"t": "Jour 4 — Prépare ton terrain", "d": "Téléphone dans une autre pièce, un seul onglet ouvert, tout le matériel prêt la veille. Moins il y a d'obstacles entre toi et la tâche, moins tu repousses.", "facile": "mets juste ton téléphone en mode avion pendant 20 minutes."},
+   {"t": "Jour 5 — Donne-lui une heure", "d": "Bloque un créneau précis dans ta journée et écris une phrase « si… alors… » : **« Si il est 18 h, alors j'ouvre mon document. »** Une décision prise à l'avance n'a plus besoin d'être reprise."},
+   {"t": "Jour 6 — Repère ton moment de lâcher", "d": "Note le moment exact où tu as envie d'abandonner (fatigue, peur de mal faire, ennui) et prépare ta réponse : une pause de 5 minutes, une étape encore plus petite, ou finir « mal » plutôt que pas du tout."},
+   {"t": "Jour 7 — Bilan et suite", "d": "Coche ce que tu as fait cette semaine. Garde l'habitude qui t'a le plus aidé et recommence le plan avec la tâche suivante de ta liste du jour 1."}
+  ]},
+  {"note": "**Le principe à retenir :** tu n'as pas besoin d'avoir envie. Tu as besoin d'une prochaine étape **claire**, **petite** et **prévue**."},
+  {"saut": true},
+  {"h": "Ta fiche de suivi"},
+  {"tableau": {"colonnes": ["Jour", "Mon action", "Faite ?", "Ce qui m'a aidé / bloqué"], "lignes": [["1", "", "☐", ""], ["2", "", "☐", ""], ["3", "", "☐", ""], ["4", "", "☐", ""], ["5", "", "☐", ""], ["6", "", "☐", ""], ["7", "", "☐", ""]]}},
+  {"h": "Les phrases à garder en tête"},
+  {"ul": ["« Fait vaut mieux que parfait. »", "« Juste 2 minutes. »", "« Si je ne sais pas par où commencer, l'étape est trop grosse. »", "« Un mauvais jour, je fais la version minimum, pas zéro. »"]}
+ ],
+ "fin": "Ce plan t'a aidé ? Le **défi 30 jours** de Mental d'Acier arrive bientôt pour aller plus loin. Suis **@mentaldacier2030** pour ne pas le rater."
+}

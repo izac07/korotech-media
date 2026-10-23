@@ -1,0 +1,26 @@
+{
+ "fichier": "10-prompts-pour-reviser-avec-l-ia",
+ "compte": "korotech_fr",
+ "mot_cle": "PROMPTS",
+ "titre": "10 prompts pour <span class='acc'>réviser avec l'IA</span> (sans tricher)",
+ "sous_titre": "Fiches, quiz, explications : fais travailler l'IA pour que TOI tu retiennes mieux.",
+ "couleurs": {"accent": "#6a3cff", "fond_titre": "#14102b", "texte_titre": "#ffffff", "police_titre": "Poppins"},
+ "intro": "Ces prompts marchent avec ChatGPT, Claude, Gemini ou Le Chat. Remplace ce qui est entre [crochets]. **Le but n'est pas que l'IA fasse tes devoirs**, mais qu'elle t'aide à comprendre et à t'entraîner. Et vérifie toujours dans ton cours : l'IA peut se tromper, surtout sur les dates et les chiffres.",
+ "blocs": [
+  {"h": "Les 10 prompts"},
+  {"prompt": "Voici mon cours : [colle le cours]. Fais-en une fiche de révision d'une page : les notions clés, les définitions à connaître par cœur et 3 exemples.", "titre": "1. Transformer ton cours en fiche"},
+  {"prompt": "À partir de ce cours : [colle le cours], pose-moi 10 questions, une par une. Attends ma réponse avant la suivante, puis dis-moi si j'ai juste et explique mes erreurs.", "titre": "2. Te faire interroger"},
+  {"prompt": "Explique-moi [notion] comme si j'avais 12 ans, avec un exemple de la vie de tous les jours. Ensuite, pose-moi une question pour vérifier que j'ai compris.", "titre": "3. Comprendre une notion difficile"},
+  {"prompt": "Crée 15 cartes de révision (question au recto, réponse courte au verso) sur : [chapitre]. Présente-les dans un tableau à deux colonnes.", "titre": "4. Créer des flashcards"},
+  {"prompt": "J'ai un contrôle de [matière] dans [nombre] jours et [temps] par jour pour réviser. Voici les chapitres : [liste]. Fais-moi un planning de révision réaliste, avec des répétitions.", "titre": "5. Organiser tes révisions"},
+  {"prompt": "Voici ma rédaction : [colle le texte]. Ne la réécris pas. Liste mes 5 erreurs les plus importantes (orthographe, structure, arguments) et explique comment les corriger moi-même.", "titre": "6. Corriger sans réécrire"},
+  {"prompt": "Je vais t'expliquer [notion] avec mes mots. Dis-moi ce qui est juste, ce qui manque et ce qui est faux, sans me donner directement la réponse complète.", "titre": "7. La méthode Feynman"},
+  {"prompt": "Donne-moi 3 exemples concrets et différents de [notion ou règle], puis un exercice d'application avec la correction à part.", "titre": "8. Avoir des exemples et un exercice"},
+  {"prompt": "Fais une carte mentale en texte (avec des niveaux et des tirets) du chapitre : [chapitre]. Mets en avant les liens entre les idées.", "titre": "9. Faire une carte mentale"},
+  {"prompt": "Quelles sont les erreurs les plus fréquentes des élèves sur [chapitre] ? Pour chacune, donne un mini-exercice pour vérifier que je ne la fais pas.", "titre": "10. Éviter les pièges classiques"},
+  {"note": "**Bon réflexe :** compare toujours avec ton cours ou ton manuel, et demande à l'IA ses sources quand c'est possible. En cas de doute, c'est ton prof qui a raison."},
+  {"h": "Le plan de révision express"},
+  {"ul": ["**La veille** : fiche (prompt 1) puis interrogation (prompt 2).", "**3 jours avant** : flashcards (prompt 4) tous les jours, 10 minutes.", "**1 semaine avant** : planning (prompt 5) et notions difficiles (prompt 3)."]}
+ ],
+ "fin": "Une astuce IA par jour pour réviser plus malin : suis **@korotech_fr**."
+}

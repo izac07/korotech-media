@@ -1,0 +1,35 @@
+{
+ "fichier": "10-phrases-poser-une-limite",
+ "compte": "coeurlucide__",
+ "mot_cle": "LIMITE",
+ "titre": "10 phrases pour <i class='acc'>poser une limite</i> sans culpabiliser",
+ "sous_titre": "Des mots simples pour dire non, demander du respect et te choisir, avec douceur.",
+ "couleurs": {"accent": "#8c2340", "fond_titre": "#f7e4e7", "texte_titre": "#3a0f1c", "police_titre": "Playfair Display"},
+ "intro": "Poser une limite, ce n'est pas être égoïste ni méchant·e. C'est dire clairement **ce qui est ok pour toi, et ce qui ne l'est pas**. Plus c'est simple, plus c'est facile à entendre.",
+ "blocs": [
+  {"h": "3 principes avant de commencer"},
+  {"ul": ["**Court et calme** : une ou deux phrases suffisent. Pas besoin de te justifier pendant 10 minutes.", "**Parle de toi** (« j'ai besoin », « je préfère ») plutôt que de l'autre (« tu es toujours… »).", "**Répète si besoin**, avec les mêmes mots. Tu n'as pas à trouver un nouvel argument à chaque fois."]},
+  {"h": "Les 10 phrases"},
+  {"etapes": [
+   {"t": "« Je ne suis pas disponible ce soir, mais merci d'avoir pensé à moi. »", "d": "Pour refuser une invitation sans te sentir obligé·e d'inventer une excuse."},
+   {"t": "« J'ai besoin d'y réfléchir, je te réponds demain. »", "d": "Pour ne plus dire oui sous la pression du moment."},
+   {"t": "« Je ne vais pas pouvoir t'aider sur ce coup-là. »", "d": "Pour refuser un service sans culpabilité. Pas besoin d'ajouter « désolé·e » trois fois."},
+   {"t": "« Quand tu me parles sur ce ton, je n'arrive pas à t'écouter. On en reparle plus tard ? »", "d": "Pour arrêter une conversation qui dérape, sans attaquer."},
+   {"t": "« Ce sujet, je préfère ne pas en parler. »", "d": "Pour protéger ton intimité, même avec des proches."},
+   {"t": "« Je comprends que tu sois déçu·e, et ma réponse reste non. »", "d": "Pour accueillir l'émotion de l'autre sans revenir sur ta décision."},
+   {"t": "« J'ai besoin de temps pour moi ce week-end. »", "d": "Pour te reposer sans avoir à le mériter."},
+   {"t": "« Après 23 h, je ne réponds plus aux messages. On en parle demain. »", "d": "Pour protéger tes nuits et ta tranquillité."},
+   {"t": "« Ce n'est pas ok pour moi que tu lises mon téléphone. »", "d": "Pour poser une limite claire sur ta vie privée dans un couple."},
+   {"t": "« Je tiens à toi, et j'ai besoin que tu respectes ce non. »", "d": "Pour montrer que l'amour et les limites vont ensemble."}
+  ]},
+  {"saut": true},
+  {"h": "Si l'autre insiste"},
+  {"ul": ["Répète ta phrase, calmement, mot pour mot. C'est la technique du « disque rayé ».", "Tu n'as pas à convaincre l'autre que ta limite est juste. Elle est juste parce qu'elle est la tienne.", "Si la conversation devient blessante, tu as le droit de partir ou de raccrocher."]},
+  {"h": "Et la culpabilité après ?"},
+  {"p": "Elle est normale, surtout au début : tu changes une habitude. Elle ne veut pas dire que tu as eu tort. Avec le temps, elle diminue, et les relations qui comptent s'ajustent."},
+  {"h": "Ton exercice"},
+  {"tableau": {"colonnes": ["La situation où je dis oui alors que je pense non", "La phrase que je vais utiliser"], "lignes": [["", ""], ["", ""], ["", ""]]}},
+  {"note": "Si tu te sens en danger ou si tu subis des violences dans ton couple, tu n'es pas seul·e : appelle le **3919** (Violences Femmes Info, gratuit et anonyme, 24 h/24). En cas d'urgence, compose le **17**."}
+ ],
+ "fin": "Le guide **« Reprendre confiance après une rupture »** de Cœur Lucide arrive bientôt. Suis **@coeurlucide__** pour ne pas le rater."
+}

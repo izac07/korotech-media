@@ -1,0 +1,33 @@
+{
+ "fichier": "budget-simple-et-10-idees-de-revenus",
+ "compte": "revenus_malins",
+ "mot_cle": "BUDGET",
+ "titre": "Le budget simple <span class='acc'>+ 10 idées</span> de petits revenus réalistes",
+ "sous_titre": "Reprendre la main sur ton argent, puis trouver un complément honnête, sans formule magique.",
+ "couleurs": {"accent": "#1f7a5a", "fond_titre": "#123d2e", "texte_titre": "#f3ead8", "police_titre": "DM Serif Display"},
+ "intro": "Avant de chercher à gagner plus, il faut savoir **où va ton argent**. Ensuite seulement, un petit revenu en plus fait vraiment la différence. Ce guide ne promet aucun montant : tout dépend de ton temps, de ta ville et de tes compétences.",
+ "blocs": [
+  {"h": "Partie 1 — Le budget en 3 cases"},
+  {"p": "Un repère simple, à adapter à ta situation : la méthode **50 / 30 / 20**. Ce n'est pas une règle stricte, c'est un point de départ."},
+  {"ul": ["**Environ 50 % pour l'essentiel** : loyer, courses, transport, factures.", "**Environ 30 % pour tes envies** : sorties, abonnements, achats plaisir.", "**Environ 20 % pour l'avenir** : épargne de précaution, projets, remboursements."]},
+  {"tableau": {"colonnes": ["Ce mois-ci", "Montant prévu", "Montant réel"], "lignes": [["Revenus (salaire, aides…)", "", ""], ["Essentiel (loyer, courses, transport, factures)", "", ""], ["Envies (sorties, abonnements, plaisirs)", "", ""], ["Avenir (épargne, projets)", "", ""], ["Reste", "", ""]]}},
+  {"h": "3 astuces qui changent tout"},
+  {"ul": ["**Virement automatique le jour de la paie** vers ton épargne, même petit : ce que tu ne vois pas, tu ne le dépenses pas.", "**Fais le tri dans tes abonnements** une fois par trimestre : ceux que tu n'as pas utilisés le mois dernier peuvent souvent partir.", "**La règle des 48 h** : pour un achat non prévu, attends 48 heures. Si tu en as encore envie, tu décides."]},
+  {"saut": true},
+  {"h": "Partie 2 — 10 idées de petits revenus réalistes"},
+  {"etapes": [
+   {"t": "Cours particuliers ou soutien scolaire", "d": "Ce qu'il faut : être à l'aise dans une matière. Pour commencer : ton entourage, les plateformes de mise en relation. Piège : sous-estimer le temps de préparation."},
+   {"t": "Garde d'animaux", "d": "Ce qu'il faut : aimer les animaux et être fiable. Pour commencer : voisins, applis spécialisées. Piège : accepter trop de demandes en même temps."},
+   {"t": "Vendre ce que tu n'utilises plus", "d": "Ce qu'il faut : faire le tri. Pour commencer : belles photos, description honnête, prix vérifié sur des annonces similaires. Piège : ce n'est pas un revenu régulier."},
+   {"t": "Baby-sitting", "d": "Ce qu'il faut : sérieux et disponibilité le soir ou le week-end. Pour commencer : bouche-à-oreille, plateformes dédiées. Piège : ne pas fixer tes conditions dès le départ."},
+   {"t": "Petits travaux et montage de meubles", "d": "Ce qu'il faut : être bricoleur et avoir quelques outils. Pour commencer : voisinage, applis de services. Piège : promettre ce que tu ne sais pas faire."},
+   {"t": "Aide administrative ou rédaction", "d": "Ce qu'il faut : être organisé et à l'aise à l'écrit. Pour commencer : petits commerces, indépendants autour de toi. Piège : ne pas définir précisément la mission."},
+   {"t": "Montage vidéo simple", "d": "Ce qu'il faut : un logiciel gratuit et de la pratique. Pour commencer : créateurs locaux, associations. Piège : les retouches sans fin, à limiter dès le devis."},
+   {"t": "Photos produits pour commerces", "d": "Ce qu'il faut : un smartphone correct et un bon éclairage. Pour commencer : propose un essai à un commerçant près de chez toi. Piège : ne pas montrer d'exemples de ton travail."},
+   {"t": "Transcription ou saisie de données", "d": "Ce qu'il faut : rapidité au clavier et rigueur. Pour commencer : plateformes de micro-missions. Piège : les offres trop belles qui demandent de payer pour commencer (c'est une arnaque)."},
+   {"t": "Animer un atelier", "d": "Ce qu'il faut : une passion à partager (cuisine, couture, langue, musique…). Pour commencer : associations, médiathèques, tiers-lieux. Piège : vouloir tout préparer avant de tester avec quelques personnes."}
+  ]},
+  {"note": "**À savoir :** les revenus d'une activité, même petite, se déclarent. Si elle devient régulière, renseigne-toi sur le statut de micro-entrepreneur (sites officiels : **urssaf.fr** et **impots.gouv.fr**). Et méfie-toi de toute offre qui te demande de payer pour commencer à gagner de l'argent."}
+ ],
+ "fin": "Le guide **« Ton premier revenu en ligne en 30 jours »** de Revenus Malins arrive bientôt, avec les vraies étapes et les vrais pièges. Suis **@revenus_malins** pour ne pas le rater."
+}

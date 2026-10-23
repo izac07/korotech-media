@@ -1,0 +1,30 @@
+{
+ "fichier": "programme-7-jours-sans-materiel",
+ "compte": "zerosallefit",
+ "mot_cle": "PROGRAMME",
+ "titre": "Programme <span class='acc'>7 jours</span> sans matériel",
+ "sous_titre": "10 à 15 minutes par jour, dans ton salon, pour débutants ou reprise du sport.",
+ "couleurs": {"accent": "#e0222b", "fond_titre": "#0b0b0b", "texte_titre": "#ffffff", "police_titre": "Archivo Black"},
+ "intro": "Ce programme est fait pour **reprendre en douceur** et créer l'habitude de bouger. Chaque jour a son objectif. Fais les exercices lentement et proprement : la régularité compte plus que l'intensité.",
+ "blocs": [
+  {"note": "**Sécurité :** adapte toujours à ton niveau. Une douleur (différente d'un effort musculaire) = tu arrêtes. Si tu as un problème de santé ou si tu reprends après une longue pause, demande l'avis d'un professionnel de santé avant de commencer."},
+  {"h": "Avant chaque séance : échauffement de 3 minutes"},
+  {"ul": ["30 s de marche sur place en levant un peu les genoux", "30 s de cercles des bras (avant puis arrière)", "30 s de rotations des hanches", "30 s de squats très lents, à mi-hauteur", "1 min de marche sur place en balançant les bras"]},
+  {"h": "Le programme"},
+  {"etapes": [
+   {"t": "Jour 1 — Bas du corps", "d": "Squat, fente arrière (alternée), pont fessier, chaise contre le mur. **30 s d'effort / 30 s de repos**, 3 tours.", "facile": "squat sur une chaise (tu t'assois et te relèves), 2 tours."},
+   {"t": "Jour 2 — Haut du corps", "d": "Pompes inclinées (mains sur une table ou un plan de travail), superman au sol, planche sur les avant-bras, rotations des épaules. 30 s / 30 s, 3 tours.", "facile": "pompes contre un mur, planche sur les genoux."},
+   {"t": "Jour 3 — Mobilité (10 min)", "d": "Chat-vache à quatre pattes, ouverture des hanches en fente basse, rotation du buste au sol, étirement des ischios assis. 1 min par position, 2 tours. Respire lentement."},
+   {"t": "Jour 4 — Cardio sans sauter", "d": "Montées de genoux marchées rapides, squat + bras vers le haut, mountain climber lent, pas chassés. 30 s / 30 s, 3 tours. Parfait en appartement.", "facile": "20 s d'effort, 40 s de repos."},
+   {"t": "Jour 5 — Gainage", "d": "Planche, planche latérale (chaque côté), dead bug, pont fessier tenu. 25 s / 35 s, 3 tours.", "facile": "planches sur les genoux."},
+   {"t": "Jour 6 — Corps entier", "d": "Squat, pompe inclinée, fente arrière, pont fessier, planche. 40 s / 20 s, 2 tours (10 min).", "facile": "un seul tour, ou 30 s / 30 s."},
+   {"t": "Jour 7 — Repos actif", "d": "20 minutes de marche dehors, puis 5 minutes d'étirements doux. Le repos fait partie du programme : c'est là que ton corps récupère."}
+  ]},
+  {"saut": true},
+  {"h": "Ta fiche de suivi"},
+  {"tableau": {"colonnes": ["Jour", "Séance", "Faite ?", "Ressenti (facile / ok / dur)"], "lignes": [["1", "Bas du corps", "☐", ""], ["2", "Haut du corps", "☐", ""], ["3", "Mobilité", "☐", ""], ["4", "Cardio sans sauter", "☐", ""], ["5", "Gainage", "☐", ""], ["6", "Corps entier", "☐", ""], ["7", "Repos actif", "☐", ""]]}},
+  {"h": "Les 4 règles pour tenir"},
+  {"ul": ["**Même heure chaque jour** : colle la séance à une habitude (après le café, avant la douche).", "**Version minimum les mauvais jours** : 5 minutes valent mieux que zéro.", "**Technique d'abord** : lent et propre plutôt que vite et mal.", "**Note tes séances** : cocher une case motive plus qu'on ne le croit."]}
+ ],
+ "fin": "Tu as fini la semaine ? Recommence le programme en ajoutant un tour par séance. Le **programme 8 semaines** de Zéro Salle arrive bientôt : suis **@zerosallefit** pour ne pas le rater."
+}

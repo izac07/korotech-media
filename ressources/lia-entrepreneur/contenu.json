@@ -1,0 +1,26 @@
+{
+ "fichier": "10-taches-a-deleguer-a-l-ia",
+ "compte": "lia.entrepreneur",
+ "mot_cle": "IA",
+ "titre": "10 tâches à déléguer à l'IA <span class='acc'>(avec les prompts)</span>",
+ "sous_titre": "Pour freelances, indépendants et petites entreprises : copie, colle, adapte.",
+ "couleurs": {"accent": "#0f9d58", "fond_titre": "#070a08", "texte_titre": "#eafff2", "police_titre": "Archivo Black"},
+ "intro": "Ces prompts marchent avec Claude, ChatGPT ou Gemini. Remplace ce qui est entre [crochets]. **Règle d'or : l'IA fait le brouillon, toi tu relis et tu valides.** Et ne colle jamais de données sensibles (mots de passe, données clients personnelles, informations bancaires).",
+ "blocs": [
+  {"h": "Les 10 tâches"},
+  {"prompt": "Voici le message d'un client : [colle le message]. Rédige une réponse professionnelle et chaleureuse, en 5 lignes maximum, qui répond à sa question et propose la prochaine étape. Ton : [tutoiement / vouvoiement].", "titre": "1. Répondre à un e-mail client"},
+  {"prompt": "Voici mes notes en vrac d'une réunion : [colle les notes]. Fais-en un compte-rendu clair : décisions prises, tâches avec qui fait quoi, et questions encore ouvertes.", "titre": "2. Résumer une réunion ou une note vocale"},
+  {"prompt": "Je suis [ton métier] et je m'adresse à [ta cible]. Écris 3 légendes Instagram pour ce post : [décris le post]. Chacune commence par une phrase qui accroche, apporte une idée utile et finit par une question.", "titre": "3. Écrire tes légendes Instagram"},
+  {"prompt": "Voici un texte que j'ai écrit : [colle le texte]. Transforme-le en 5 idées de posts courts pour les réseaux, chacune avec un angle différent (conseil, erreur à éviter, mythe, exemple, question).", "titre": "4. Recycler un contenu en 5 posts"},
+  {"prompt": "Je dois envoyer une proposition à [client] pour [prestation]. Propose-moi une structure claire : contexte, objectif, ce que je fais, étapes, délais, ce dont j'ai besoin de sa part. Laisse les prix vides.", "titre": "5. Préparer une proposition commerciale"},
+  {"prompt": "Voici les questions que mes clients me posent souvent : [liste]. Rédige une FAQ claire et rassurante, avec des réponses de 3 lignes maximum.", "titre": "6. Créer ta FAQ client"},
+  {"prompt": "Je publie [nombre] fois par semaine sur [réseau] pour [cible]. Propose un planning de contenu pour la semaine : un thème par jour, un format, et l'idée principale de chaque post.", "titre": "7. Planifier ta semaine de contenu"},
+  {"prompt": "Relis ce texte : [colle le texte]. Corrige les fautes et rends-le plus clair, sans changer mon style ni ajouter d'informations. Montre-moi ensuite la liste des modifications.", "titre": "8. Relire et corriger un texte"},
+  {"prompt": "Voici des avis clients : [colle les avis, sans noms]. Résume ce qui revient le plus en positif, en négatif, et propose 3 améliorations concrètes.", "titre": "9. Analyser les avis clients"},
+  {"prompt": "Je veux [objectif : nouveau logo, site, vidéo…]. Pose-moi les questions nécessaires, une par une, puis rédige un brief clair que je pourrai envoyer à un prestataire.", "titre": "10. Rédiger un brief"},
+  {"note": "**Avant d'envoyer quoi que ce soit :** relis, vérifie les chiffres, les noms et les dates. L'IA peut se tromper avec beaucoup d'assurance."},
+  {"h": "Pour aller plus loin"},
+  {"ul": ["Garde tes meilleurs prompts dans une note : c'est ta boîte à outils.", "Donne toujours le contexte (qui tu es, pour qui, quel ton) : c'est ce qui fait la différence.", "Commence par une seule tâche cette semaine, celle qui te prend le plus de temps."]}
+ ],
+ "fin": "Le **kit Insta automatisé avec Claude** (modèles, instructions, schéma d'automatisation) arrive bientôt. Suis **@lia.entrepreneur** pour ne pas le rater."
+}
