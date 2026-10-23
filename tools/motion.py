@@ -1675,13 +1675,14 @@ def build(spec_path, out):
     dl = "".join(f"[{i+3}]adelay={int(t*1000)}|{int(t*1000)}[v{i}];" for i, (t, _) in enumerate(voice))
     vs = "".join(f"[v{i}]" for i in range(len(voice)))
     D = total
+    vm = 0 if spec.get("sans_musique") else 1   # sans_musique : voix + bruitages seuls, pour ajouter un son tendance dans l'app
     if voice:
         fc = (dl + f"{vs}amix=inputs={len(voice)}:normalize=0:duration=longest,apad=whole_dur={D+4},loudnorm=I=-15:TP=-1.5,atrim=0:{D}[vo];"
-              f"[vo]asplit=2[voa][sc];[1]apad=whole_dur={D+1},atrim=0:{D},afade=t=out:st={D-1.5}:d=1.5,volume=0.25[m];"
+              f"[vo]asplit=2[voa][sc];[1]apad=whole_dur={D+1},atrim=0:{D},afade=t=out:st={D-1.5}:d=1.5,volume={0.25*vm}[m];"
               f"[m][sc]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[md];[2]atrim=0:{D},volume=0.9[fx];"
               f"[voa][md][fx]amix=inputs=3:normalize=0:duration=longest,alimiter=limit=0.95,apad=whole_dur={D},atrim=0:{D}[a]")
     else:  # reel sans voix (layout boucle) : musique plus présente + bruitages, pas de fondu final (la boucle doit raccorder)
-        fc = (f"[1]apad=whole_dur={D+1},atrim=0:{D},volume=0.45[m];[2]atrim=0:{D},volume=0.6[fx];"
+        fc = (f"[1]apad=whole_dur={D+1},atrim=0:{D},volume={0.45*vm}[m];[2]atrim=0:{D},volume=0.6[fx];"
               f"[m][fx]amix=inputs=2:normalize=0:duration=longest,loudnorm=I=-16:TP=-1.5,alimiter=limit=0.95,apad=whole_dur={D},atrim=0:{D}[a]")
     subprocess.run(["ffmpeg", "-v", "error", "-y"] + inputs + ["-filter_complex", fc, "-map", "0:v", "-map", "[a]", "-c:v", "copy",
                     "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", out], check=True)

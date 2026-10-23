@@ -1,0 +1,71 @@
+{
+ "id": "ZSF-X01",
+ "layout": "sportmotion",
+ "music_seed": 641,
+ "handle": "zerosallefit",
+ "publication": "manuelle (test : son tendance ajouté dans l'app)",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "squat",
+   "count": 5,
+   "title": "RÉVEIL<br>**5 MIN**",
+   "sub": "⏱ AU SAUT DU LIT",
+   "vo": "Cinq minutes au réveil, sans sortir de ta chambre. De quoi réveiller tout ton corps avant le café."
+  },
+  {
+   "type": "erreur",
+   "pose": "planche",
+   "myth": "« IL FAUT 1 H DE SPORT »",
+   "stamp": "FAUX",
+   "text": "5 MIN LE MATIN ·<br>**TU BOUGES DÉJÀ**",
+   "vo": "On pense souvent qu'il faut une vraie séance d'une heure pour que ça compte. Le matin, cinq minutes douces suffisent pour te mettre en mouvement."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "SQUAT LENT",
+    "PONT FESSIER",
+    "FENTE ARRIÈRE",
+    "PLANCHE",
+    "CLIMBER LENT"
+   ],
+   "poses": [
+    "squat",
+    "pont",
+    "fente",
+    "planche",
+    "climber"
+   ],
+   "effort": "40 s",
+   "rest": "20 s",
+   "total": "5:00",
+   "vo": "Cinq exercices, quarante secondes chacun, vingt de pause. Squat lent. Pont fessier. Fente arrière. Planche. Et mountain climber tranquille pour finir."
+  },
+  {
+   "type": "pourquoi",
+   "title": "TOUT LE CORPS<br>**EN DOUCEUR**",
+   "zones": [
+    "JAMBES",
+    "FESSIERS",
+    "SANGLE"
+   ],
+   "badges": [
+    "VA LENTEMENT",
+    "VERSION FACILE : 30 S",
+    "DOULEUR ? ARRÊTE"
+   ],
+   "vo": "Jambes, fessiers et sangle se réveillent en douceur. Respire et va lentement. Version facile : trente secondes par exercice. Adapte à ton niveau, et en cas de douleur, tu arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "TON RÉVEIL<br>**DE DEMAIN**",
+   "ctas": [
+    "🔖 ENREGISTRE-LA",
+    "💬 ÉCRIS « RÉVEIL »"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Enregistre-la pour demain matin, et écris réveil en commentaire quand tu l'as faite."
+  }
+ ]
+}
