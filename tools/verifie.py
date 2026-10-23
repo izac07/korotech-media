@@ -238,6 +238,19 @@ def verifier(path):
     if handle == "coeurlucide__" and re.search(r"\b(pervers|narcissique|bipolaire|toxique pathologique|borderline)\b", tout):
         err.append("Cœur Lucide : pas de diagnostic psy")
 
+    # mot-clé à commenter (ressources/mots-cles.json) : le dernier écran l'affiche et la voix le dit
+    mc_f = os.path.join(RACINE, "ressources", "mots-cles.json")
+    if os.path.exists(mc_f) and lay != "boucle" and sc and not spec.get("sans_mot_cle"):
+        mc = json.load(open(mc_f, encoding="utf-8")).get(handle)
+        if mc:
+            mot = mc["mot"].lower()
+            fin = sc[-1]
+            ecran = norm(visible(json.dumps({k: v for k, v in fin.items() if k not in ("vo", "say")}, ensure_ascii=False)))
+            if not re.search(r"\b%s\b" % re.escape(mot), ecran):
+                err.append("dernière scène : le mot-clé « %s » doit être affiché (ex. ctas « 💬 COMMENTE « %s » »)" % (mc["mot"], mc["mot"]))
+            if not re.search(r"\b%s\b" % re.escape(mot), norm(fin.get("vo", ""))):
+                att.append("dernière scène : la voix devrait dire « commente %s » (et ce qu'on reçoit : %s)" % (mot, mc["offre"]))
+
     # musique : music_seed différent des autres reels
     seed = spec.get("music_seed")
     autres = []

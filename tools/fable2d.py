@@ -157,6 +157,21 @@ SCENES.push((function(T0){const g=el('g',{opacity:0});
 LIB = {"escalier": ESCALIER, "piliers": PILIERS, "portes": PORTES, "sommet": SOMMET}
 
 
+def carte_mot_cle(spec, top):
+    """Carte de fin « Commente « MOT » » (ressources/mots-cles.json, d'après le handle) : (css, html). Vide si
+    le compte n'a pas de mot-clé ou si le spec contient "sans_mot_cle"."""
+    f = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "ressources", "mots-cles.json")
+    mc = json.load(open(f, encoding="utf-8")).get(spec.get("handle")) if os.path.exists(f) else None
+    if not mc or spec.get("sans_mot_cle"):
+        return "", ""
+    css = (f"#mc{{position:absolute;left:140px;right:140px;top:{top}px;background:rgba(10,10,10,.88);border:3px solid #fff;border-radius:26px;"
+           "padding:22px 20px 20px;text-align:center;opacity:0;box-shadow:0 0 40px rgba(255,255,255,.18)}"
+           "#mc .a{font:700 54px/1.1 'JetBrains Mono';letter-spacing:1px;color:#fff}#mc .a b{color:__ACC__}"
+           "#mc .b{font:700 32px/1.3 'JetBrains Mono';color:#cfcfcf;margin-top:10px}")
+    html = f"<div id='mc'><div class='a'>💬 COMMENTE « <b>{K.esc(mc['mot'])}</b> »</div><div class='b'>et reçois {K.esc(mc['offre'])}</div></div>"
+    return css, html
+
+
 def page(spec):
     fonts = K._font_faces(["Inter", "JetBrains Mono"])
     sc = spec["scenes"]; total = SCENE_DUR * len(sc)
@@ -172,6 +187,8 @@ def page(spec):
             dl += (f"<div class='dl up' style='left:90px;width:360px'>{K.esc(g)}</div><div class='dl up' style='left:630px;width:360px'>{K.esc(d)}</div>"
                    f"<div class='dl dn' style='left:90px;width:360px;color:__MAUVAIS__'>{K.esc(ga)}</div><div class='dl dn' style='left:640px;width:310px;color:#e8b84f'>{K.esc(da)}</div>")
     js = JS + "".join(LIB[s["type"]] for s in sc)
+    mc_css, mc_html = carte_mot_cle(spec, 470)
+    mc_css = mc_css.replace('__ACC__', '#e8b84f')
     html = f"""<!doctype html><html><head><meta charset='utf-8'><style>{fonts}
 *{{margin:0;padding:0;box-sizing:border-box}}
 body{{width:{W}px;height:{H}px;background:#000;overflow:hidden;position:relative;color:#fff;font-family:Inter,sans-serif}}
@@ -181,6 +198,7 @@ svg{{position:absolute;left:0;top:0}}
 .dl.up{{top:850px}} .dl.dn{{top:1380px;font-weight:600;font-size:30px}}
 .hd{{position:absolute;left:0;right:0;top:250px;text-align:center;font:400 30px 'JetBrains Mono';letter-spacing:10px;color:#3a3a3a}}
 #noir{{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none}}
+{mc_css}
 </style></head><body>
 <svg id='sv' width='{W}' height='{H}' viewBox='0 0 {W} {H}'><defs>
 <linearGradient id='pil' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#a5a5a5'/><stop offset='1' stop-color='#0d0d0d'/></linearGradient>
@@ -189,13 +207,15 @@ svg{{position:absolute;left:0;top:0}}
 </defs></svg>
 {tx}{dl}
 <div class='hd'>{K.esc(spec['handle']).upper()}</div>
+{mc_html}
 <div id='noir'></div>
 <script>{js}
 const SD={SCENE_DUR}, D={total};
+const MC=document.getElementById('mc');function mcard(t,a){{if(!MC)return;const k=sm((t-a)/.4);MC.style.opacity=k;MC.style.transform=`scale(${{.92+.08*k}})`;}}
 window.render=function(t){{
   document.querySelectorAll('.dl').forEach(e=>e.style.opacity=0);   // étiquettes des portes : seulement dans leur scène
   SCENES.forEach((s,k)=>{{const a=k*SD,on=t>=a&&t<a+SD;s.g.setAttribute('opacity',on?1:0);if(on)s.draw(t-a);}});
-  texts(t);
+  texts(t);mcard(t,D-3.2);
   // fondu au noir entre deux scènes et en fin de boucle
   let n=0;for(let k=1;k<=SCENES.length;k++){{const b=k*SD;n=Math.max(n,1-Math.min(1,Math.abs(t-b)/.35));}}
   if(t<.15)n=Math.max(n,1-t/.15);document.getElementById('noir').style.opacity=n;

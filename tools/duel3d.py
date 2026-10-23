@@ -333,6 +333,21 @@ LABELS = {"mur": [("left:56px;top:640px", "gauche"), ("right:60px;top:330px", "d
           "poids": []}
 
 
+def carte_mot_cle(spec, top):
+    """Carte de fin « Commente « MOT » » (ressources/mots-cles.json, d'après le handle) : (css, html). Vide si
+    le compte n'a pas de mot-clé ou si le spec contient "sans_mot_cle"."""
+    f = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "ressources", "mots-cles.json")
+    mc = json.load(open(f, encoding="utf-8")).get(spec.get("handle")) if os.path.exists(f) else None
+    if not mc or spec.get("sans_mot_cle"):
+        return "", ""
+    css = (f"#mc{{position:absolute;left:140px;right:140px;top:{top}px;background:rgba(10,10,10,.88);border:3px solid #fff;border-radius:26px;"
+           "padding:22px 20px 20px;text-align:center;opacity:0;box-shadow:0 0 40px rgba(255,255,255,.18)}"
+           "#mc .a{font:700 54px/1.1 'JetBrains Mono';letter-spacing:1px;color:#fff}#mc .a b{color:__ACC__}"
+           "#mc .b{font:700 32px/1.3 'JetBrains Mono';color:#cfcfcf;margin-top:10px}")
+    html = f"<div id='mc'><div class='a'>💬 COMMENTE « <b>{K.esc(mc['mot'])}</b> »</div><div class='b'>et reçois {K.esc(mc['offre'])}</div></div>"
+    return css, html
+
+
 def page(spec):
     sc = spec.get("scene", "mur")
     three = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "three.min.js"), encoding="utf-8").read()
@@ -340,6 +355,8 @@ def page(spec):
     labs = "".join(f"<div class='lab' style='{pos}'>{K.esc(spec[k])}</div>" for pos, k in LABELS[sc] if spec.get(k))
     beats = "".join(f"<div class='beat' data-a='{a}' data-b='{b}' style='top:{212 + 66 * r}px'>{K.esc(txt)}</div>" for a, b, r, txt in spec.get("textes", []))
     hl = "".join(f"<div class='hl'>{K.esc(x)}</div>" for x in spec.get("poids", []))
+    mc_css, mc_html = carte_mot_cle(spec, 1230)
+    mc_css = mc_css.replace('__ACC__', '#e8b84f')
     js = (COMMUN + SCENES[sc]).replace("__DUR__", str(DUR)).replace("__W__", str(W)).replace("__H__", str(H)).replace("__POIDS__", json.dumps(spec.get("poids", [])))
     return f"""<!doctype html><html><head><meta charset='utf-8'><style>{fonts}
 *{{margin:0;padding:0;box-sizing:border-box}}
@@ -350,14 +367,17 @@ canvas{{position:absolute;left:0;top:0}}
 .hl{{position:absolute;font:700 32px 'JetBrains Mono';letter-spacing:3px;white-space:nowrap;opacity:0;background:rgba(0,0,0,.82);padding:4px 10px;border-radius:6px}}
 .hd{{position:absolute;left:0;right:0;top:1440px;text-align:center;font:400 30px 'JetBrains Mono';letter-spacing:10px;color:#3c3c3c}}
 #noir{{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none}}
+{mc_css}
 </style></head><body>
 <canvas id='cv' width='{W}' height='{H}'></canvas>
 {labs}{beats}{hl}
 <div class='hd'>{K.esc(spec['handle']).upper()}</div>
+{mc_html}
 <div id='noir'></div>
 <script>{three}</script>
 <script>{js}
-window.render=function(t){{update(t);beats(t);}};render(0);
+const MC=document.getElementById('mc');function mcard(t,a){{if(!MC)return;const k=sm((t-a)/.4);MC.style.opacity=k;MC.style.transform=`scale(${{.92+.08*k}})`;}}
+window.render=function(t){{update(t);beats(t);mcard(t,D-3.2);}};render(0);
 </script></body></html>"""
 
 
