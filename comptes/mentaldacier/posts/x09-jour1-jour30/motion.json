@@ -1,0 +1,47 @@
+{
+ "id": "MDA-X09",
+ "layout": "manifeste3d",
+ "music_seed": 9106,
+ "handle": "mentaldacier2030",
+ "counter": {"label": "JOUR", "short": "J", "max": 30},
+ "timeline": ["S1", "S2", "S3", "S4"],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "30",
+   "unit": "JOURS",
+   "line": "**Jour 1 : motivé.**<br>Jour 30 : discipliné.",
+   "sub": "ce qui change vraiment",
+   "vo": "Jour un : tu es motivé. Jour trente : tu n'as plus besoin de l'être. Enregistre cette vidéo, tu vas en avoir besoin."
+  },
+  {
+   "type": "avantapres",
+   "top": "JOUR 1",
+   "bottom": "OBJECTIF · J30",
+   "notifs": ["🔥 Motivation à fond", "📅 Plan parfait sur papier", "😮‍💨 Jour 3 : déjà la flemme"],
+   "kicker": "normal",
+   "card_word": "normal",
+   "no": "compter sur l'envie",
+   "yes": "rendre l'effort normal",
+   "vo": "Le jour un, tout est facile. Le jour trois, l'envie disparaît, et c'est souvent là qu'on lâche. L'objectif : que l'effort devienne normal."
+  },
+  {
+   "type": "weeks",
+   "weeks": [["SEMAINE 1", "📏 Version mini : 5 minutes", "✅ Coche chaque jour"], ["SEMAINE 2", "⏰ Même heure, même endroit", ""]],
+   "vo": "Semaine un : une version mini, cinq minutes, et tu coches chaque jour. Semaine deux : même heure, même endroit, pour ne plus avoir à décider."
+  },
+  {
+   "type": "weeks",
+   "weeks": [["SEMAINE 3", "🧱 Un raté ? Jamais deux de suite", ""], ["SEMAINE 4", "📈 Ajoute un peu, garde le rythme", ""]],
+   "vo": "Semaine trois : un jour raté, ça arrive, mais jamais deux de suite. Semaine quatre : ajoute un peu, sans casser le rythme."
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "30",
+   "obj": "L'effort devient **normal.**",
+   "ctas": ["🔖 ENREGISTRE LE PLAN", "💬 COMMENTE « PLAN »"],
+   "vo": "Jour trente : l'effort est devenu normal. Commente plan pour recevoir le plan sept jours gratuit, pour bien démarrer."
+  }
+ ]
+}
