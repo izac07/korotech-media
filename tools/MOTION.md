@@ -125,3 +125,13 @@ Garder 100-120 mots au total : raccourcir les conseils plutôt que l'accroche.
 
 ## Mot-clé à commenter (tous les comptes, depuis le 23/10/2026)
 Chaque reel se termine par le mot-clé de son compte (`ressources/mots-cles.json` : `mot`, `offre`, `lien`). La **dernière scène** l'affiche (ex. `ctas` : « 💬 COMMENTE « PLAN » ») et sa `vo` dit « Commente plan pour recevoir le plan 7 jours gratuit ». `tools/verifie.py` met une ERREUR s'il n'est pas à l'écran **ou si la voix ne dit pas « Commente <mot> pour recevoir <offre> »** (obligatoire, décision de Goat du 23/10/2026). Mot long (PROGRAMME, PROMPTS…) : écrire « 💬 COMMENTE PROGRAMME » sans guillemets, sinon la ligne passe sous les boutons d'Instagram. `duel3d` et `fable2d` ajoutent eux-mêmes la carte de fin. Légende : finir par « 💬 Commente <MOT> et je t'envoie <offre> en DM » ; jamais le lien.
+
+## carnet (PILOTE du 23/10/2026, tous comptes) — carnet manuscrit, couleurs claires
+Exemple : `comptes/mentaldacier/posts/x10-trois-non-negociables/motion.json`. Page de carnet à petits carreaux ; le texte s'écrit à la main au rythme de la voix (Caveat), `**mot**` = coup de surligneur (jaune / corail / menthe en rotation), cases qui se cochent, post-it, boutons dessinés ; chaque scène est une nouvelle page qui glisse. Ordre des scènes LIBRE (en général 5) :
+- `hook` : `titre` (`<br>` possible, ≤ 2 lignes), `sous` (optionnel)
+- `note` : `titre`, `lignes` (2 à 4 lignes courtes, ≤ 28 caractères, précédées d'une flèche)
+- `liste` : `titre`, `items` (2 à 4 cases qui se cochent, ≤ 30 caractères)
+- `postit` : `texte` (3 lignes courtes séparées par `
+`), `titre` (optionnel)
+- `cta` : `titre`, `ctas` (2 boutons : « 🔖 Enregistre », « 💬 Commente MOT » sans guillemets)
+Champ optionnel `couleurs` : {papier, encre, bureau, grille, postit, acc, surligneurs: [3 couleurs]}. Voix et structure obligatoire comme les autres formats.

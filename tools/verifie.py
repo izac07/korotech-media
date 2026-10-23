@@ -55,7 +55,9 @@ SCHEMA = {
         "step3": ["vo", "steps", "items"],
         "step45": ["vo", "steps", "progress", "callout"],
         "cta": ["vo", "title", "mark", "ctas"]}},
-    "boucle": {"ordre": None, "types": {"phrase": ["texte"]}},  # PILOTE : format court sans voix, 1 à 3 phrases
+    "boucle": {"ordre": None, "types": {"phrase": ["texte"]}},
+    "carnet": {"ordre": None, "types": {"hook": ["vo", "titre", "sous?"], "note": ["vo", "titre", "lignes"], "liste": ["vo", "titre", "items"],
+        "postit": ["vo", "texte", "titre?"], "cta": ["vo", "titre", "ctas"]}},  # PILOTE 23/10/2026 : carnet manuscrit, tous comptes  # PILOTE : format court sans voix, 1 à 3 phrases
     "malin": {"ordre": None, "types": {
         "hook": ["vo", "big", "sub"],
         "list": ["vo", "title", "items", "slots?"],
@@ -93,7 +95,7 @@ def verifier(path):
         if k not in spec:
             err.append("champ du haut manquant : %s" % k)
     handle = spec.get("handle", "")
-    if handle in LAYOUT_DU_COMPTE and lay != "boucle" and lay not in LAYOUT_DU_COMPTE[handle]:
+    if handle in LAYOUT_DU_COMPTE and lay not in ("boucle", "carnet") and lay not in LAYOUT_DU_COMPTE[handle]:
         err.append("le layout %s n'est pas celui de @%s (%s)" % (lay, handle, ", ".join(sorted(LAYOUT_DU_COMPTE[handle]))))
     theme = os.path.join(os.path.dirname(os.path.abspath(path)), "..", "..", "theme.json")
     if os.path.exists(theme):

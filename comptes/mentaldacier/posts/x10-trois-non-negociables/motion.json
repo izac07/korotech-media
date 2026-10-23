@@ -1,0 +1,37 @@
+{
+ "id": "MDA-X10",
+ "layout": "carnet",
+ "music_seed": 9107,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "type": "hook",
+   "titre": "Tes **3 non-négociables**<br>du jour",
+   "sous": "même les jours sans envie",
+   "vo": "Ta discipline tient sur trois lignes. Pas plus. Enregistre cette vidéo, et écris-les avec moi."
+  },
+  {
+   "type": "note",
+   "titre": "Pourquoi 3 ?",
+   "lignes": ["Assez pour **avancer**", "Assez peu pour **tenir**", "Zéro débat le matin"],
+   "vo": "Pourquoi trois ? Assez pour avancer, assez peu pour tenir, même les mauvais jours. Et le matin, plus besoin de réfléchir à ce que tu fais."
+  },
+  {
+   "type": "liste",
+   "titre": "Mes 3 du jour",
+   "items": ["Bouger **10 min**", "Avancer **1 tâche importante**", "Téléphone loin **avant de dormir**"],
+   "vo": "Un : bouger dix minutes. Deux : avancer sur une seule tâche importante. Trois : téléphone loin de toi avant de dormir. Tu coches, c'est tout."
+  },
+  {
+   "type": "postit",
+   "texte": "Jour raté ?\nFais la **version mini**.\nJamais zéro.",
+   "vo": "Et les jours ratés ? Tu fais la version mini de chaque ligne. Deux minutes valent mieux que zéro."
+  },
+  {
+   "type": "cta",
+   "titre": "Ton plan pour **démarrer**",
+   "ctas": ["🔖 Enregistre", "💬 Commente PLAN"],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit, avec ta fiche de suivi à cocher."
+  }
+ ]
+}

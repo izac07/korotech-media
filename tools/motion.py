@@ -1571,7 +1571,136 @@ window.render=function(t){{
 </script></body></html>"""
 
 
-LAYOUTS = {"boucle": boucle_page, "malin": malin_page, "claudeflow": claudeflow_page, "manifeste3d": manifeste3d_page, "messages": messages_page, "terminal": terminal_page, "cheatsheet": cheatsheet_page, "iceberg": iceberg_page, "sportmotion": sportmotion_page, "nightchat": nightchat_page, "notion": notion_page}
+# ------------------------------------------------------------------ layout « carnet » (PILOTE 23/10/2026, tous comptes)
+CARNET_TPL = r"""<!doctype html><html><head><meta charset='utf-8'><style>__FONTS__
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;overflow:hidden;background:__BUREAU__;position:relative;font-family:Inter,sans-serif;color:__ENCRE__}
+.cam{position:absolute;inset:0;transform-origin:50% 45%}
+.page{position:absolute;left:46px;right:46px;top:70px;bottom:120px;background-color:__PAPIER__;border-radius:18px;
+  background-image:linear-gradient(__GRILLE__ 2px,transparent 2px),linear-gradient(90deg,__GRILLE__ 2px,transparent 2px);background-size:56px 56px;background-position:-2px 30px;
+  box-shadow:0 30px 60px rgba(60,40,10,.28),0 4px 0 rgba(0,0,0,.05)}
+.marge{position:absolute;left:118px;top:0;bottom:0;width:3px;background:rgba(232,120,120,.55)}
+.ring{position:absolute;top:-22px;width:30px;height:62px;border-radius:15px;border:6px solid #8d8a86;background:transparent;z-index:70}
+.tape{position:absolute;z-index:70;width:190px;height:58px;background:rgba(255,214,120,.75);transform:rotate(-8deg);box-shadow:0 2px 6px rgba(0,0,0,.08)}
+.hd{position:absolute;left:150px;top:160px;font:700 46px Caveat;color:__ENCRE__;opacity:.75;z-index:60}
+/* chaque scène = une feuille opaque qui glisse par-dessus la précédente (page qu'on tourne) */
+.sc{position:absolute;left:0;right:0;top:0;bottom:0;border-radius:18px;opacity:0;padding:250px 70px 330px 150px;display:flex;flex-direction:column;justify-content:center;
+  background-color:__PAPIER__;background-image:linear-gradient(__GRILLE__ 2px,transparent 2px),linear-gradient(90deg,__GRILLE__ 2px,transparent 2px);background-size:56px 56px;background-position:-2px 30px;
+  box-shadow:-18px 0 40px rgba(60,40,10,.18)}
+.sc::before{content:'';position:absolute;left:118px;top:0;bottom:0;width:3px;background:rgba(232,120,120,.55)}
+.hw{font-family:Caveat;font-weight:700;color:__ENCRE__;display:block}
+.ln{display:inline-block;clip-path:inset(-20% 100% -20% 0)}
+.t1{font-size:136px;line-height:1.05}
+.t2{font-size:104px;line-height:1.12;margin-bottom:26px}
+.l{font-size:84px;line-height:1.25;margin-top:22px}
+.sub{font-size:70px;opacity:.8;margin-top:28px}
+mark{background:none;color:inherit;background-repeat:no-repeat;padding:0 6px;border-radius:6px;
+  background-image:linear-gradient(transparent 52%,var(--hl) 52%,var(--hl) 94%,transparent 94%);background-size:0% 100%}
+.it{display:flex;align-items:flex-start;gap:30px;margin-top:34px}
+.bx{flex:none;width:70px;height:70px;border:5px solid __ENCRE__;border-radius:10px;margin-top:14px;position:relative}
+.bx svg{position:absolute;left:-10px;top:-22px;width:90px;height:90px;overflow:visible}
+.pi{position:relative;margin:20px 0 0 -20px;width:760px;min-height:560px;background:__POSTIT__;padding:70px 56px 50px;transform:rotate(-3deg);
+  box-shadow:0 26px 40px rgba(80,60,0,.22);opacity:0}
+.pi .hw{font-size:92px;line-height:1.18}
+.pi .tp{position:absolute;left:250px;top:-26px;width:200px;height:56px;background:rgba(255,255,255,.55);transform:rotate(3deg)}
+.btn{display:inline-block;margin-top:44px;padding:22px 46px;border:5px solid __ENCRE__;border-radius:26px 18px 30px 16px;font:700 80px Caveat;white-space:nowrap;opacity:0}
+svg.doo{position:absolute;overflow:visible;pointer-events:none}
+svg.doo path{fill:none;stroke:__ENCRE__;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+.caps{position:absolute;left:60px;right:60px;top:1418px;text-align:center;z-index:9}
+.cap{display:none;background:#fff;border:4px solid __ENCRE__;border-radius:20px;padding:12px 30px;font:800 46px Inter;color:__ENCRE__;box-shadow:6px 6px 0 rgba(31,42,68,.18)}
+.cap span.on{color:__ACC__}
+.bar{position:absolute;left:46px;top:40px;height:8px;border-radius:4px;background:__ACC__;z-index:9}
+</style></head><body>
+<div class='cam' id='cam'><div class='page'><div class='marge'></div>__RINGS__
+<div class='tape' style='right:70px;top:150px'></div>
+<div class='hd'>@__HANDLE__</div>
+__SCENES__
+</div></div>
+<div class='caps'>__CAPS__</div><div class='bar' id='bar'></div>
+<script>
+const EV=__EV__; const D=__D__; const SC=__SC__; const EL=__EL__;
+const c=x=>Math.max(0,Math.min(1,x)), eo=x=>1-Math.pow(1-c(x),3), $=i=>document.getElementById(i);
+const back=x=>{x=c(x);const s=1.7;return 1+(s+1)*Math.pow(x-1,3)+s*Math.pow(x-1,2);};
+window.render=function(t){
+ const cam=$('cam');cam.style.transform=`rotate(${Math.sin(t/3.7)*.6}deg) scale(${1.015+.012*Math.sin(t/5.3)}) translate(${Math.sin(t/4.1)*6}px,${Math.cos(t/3.3)*5}px)`;
+ SC.forEach((s,k)=>{const el=$('s'+k);const on=t>=s.a-.001&&(t<s.b+.55||k==SC.length-1);
+   const kin=k==0?1:eo((t-s.a)/.5);el.style.zIndex=10+k;
+   el.style.opacity=on?1:0;el.style.transform=`translateX(${(1-kin)*1000}px) rotate(${(1-kin)*4}deg)`;});
+ for(const e of EL){const n=$(e.id);if(!n)continue;
+   if(e.k=='ln'){const k=c((t-e.at)/e.d);n.style.clipPath=`inset(-20% ${100-100*k}% -20% 0)`;
+     for(const m of n.querySelectorAll('mark'))m.style.backgroundSize=`${100*eo((t-e.at-e.d)/.45)}% 100%`;}
+   else if(e.k=='chk'){const p=n.querySelector('path');const L=150;p.style.strokeDasharray=L;p.style.strokeDashoffset=L*(1-eo((t-e.at)/.35));}
+   else if(e.k=='pi'){const k=back((t-e.at)/.45);n.style.opacity=c((t-e.at)/.12);n.style.transform=`rotate(-3deg) scale(${1.25-.25*k})`;}
+   else if(e.k=='btn'){const k=back((t-e.at)/.4);n.style.opacity=c((t-e.at)/.1);n.style.transform=`scale(${.6+.4*k}) rotate(${e.r||0}deg)`;}
+   else if(e.k=='doo'){const p=n.querySelector('path');const L=p.getTotalLength();p.style.strokeDasharray=L;p.style.strokeDashoffset=L*(1-eo((t-e.at)/e.d));}}
+ $('bar').style.width=(c(t/D)*988)+'px';
+ for(const cp of document.querySelectorAll('.cap')){const a=+cp.dataset.a,b=+cp.dataset.b;cp.style.display=(t>=a&&t<b)?'inline-block':'none';
+   for(const w of cp.querySelectorAll('[data-w]'))w.className=(t>=+w.dataset.w)?'on':'';}
+};render(0);
+</script></body></html>"""
+
+
+def carnet_page(spec, theme, starts, durs, caps, total):
+    """Carnet à petits carreaux : le texte s'écrit à la main au rythme de la voix, coups de surligneur (**mot**),
+    cases qui se cochent, post-it, boutons dessinés, doodles ; la page bouge doucement comme filmée au-dessus d'un bureau.
+    Scènes (ordre libre) : hook {titre, sous?}, note {titre, lignes}, liste {titre, items}, postit {texte, titre?}, cta {titre, ctas}."""
+    sc = spec["scenes"]; col = {"papier": "#fbf7ee", "encre": "#1f2a44", "bureau": "#d8ccb6", "grille": "rgba(120,150,190,.16)",
+                                 "postit": "#ffe98a", "acc": "#e8553d", "surligneurs": ["#ffe45c", "#ffb3a7", "#a8e8cc"]} | spec.get("couleurs", {})
+    HL = col["surligneurs"]; nh = [0]
+    def hl(s):  # **mot** -> surligneur (couleurs en rotation)
+        def rep(m):
+            nh[0] += 1; return f"<mark style='--hl:{HL[(nh[0] - 1) % len(HL)]}'>{m.group(1)}</mark>"
+        return re.sub(r"\*\*(.+?)\*\*", rep, K.esc(s))
+    html, EL, ev = [], [], []
+    for k, s in enumerate(sc):
+        a, d = starts[k], durs[k]; ty = s["type"]; parts = []; seq = []   # seq : (id, kind, poids)
+        def ln(txt, cls, ident):
+            parts.append(f"<span class='hw {cls}'><span class='ln' id='{ident}'>{hl(txt)}</span></span>"); seq.append((ident, "ln", max(1, len(txt) / 18)))
+        if ty in ("hook", "note", "liste", "cta") and s.get("titre"):
+            for j, part in enumerate(s["titre"].split("<br>")):
+                ln(part, "t1" if ty == "hook" else "t2", f"s{k}t{j}")
+            parts.append(f"<svg class='doo' id='s{k}u' style='left:0;width:640px;height:40px;margin-top:-6px;position:relative;display:block' viewBox='0 0 640 40'>"
+                         "<path d='M6 26 C 120 6, 260 34, 380 18 S 560 10, 630 22'/></svg>"); seq.append((f"s{k}u", "doo", .8))
+        if ty == "hook" and s.get("sous"):
+            ln(s["sous"], "sub", f"s{k}s")
+        if ty == "note":
+            for j, x in enumerate(s.get("lignes", [])): ln("→ " + x, "l", f"s{k}l{j}")
+        if ty == "liste":
+            for j, x in enumerate(s.get("items", [])):
+                parts.append(f"<div class='it'><div class='bx' id='s{k}b{j}'><svg viewBox='0 0 90 90'><path d='M14 48 L36 70 L84 6' stroke='{col['acc']}' stroke-width='11' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg></div>"
+                             f"<span class='hw l' style='margin-top:0'><span class='ln' id='s{k}i{j}'>{hl(x)}</span></span></div>")
+                seq.append((f"s{k}i{j}", "ln", max(1, len(x) / 18))); seq.append((f"s{k}b{j}", "chk", .35))
+        if ty == "postit":
+            if s.get("titre"): ln(s["titre"], "t2", f"s{k}t0")
+            parts.append(f"<div class='pi' id='s{k}p'><div class='tp'></div><span class='hw'>{hl(s['texte']).replace(chr(10), '<br>')}</span></div>"); seq.append((f"s{k}p", "pi", 1.2))
+        if ty == "cta":
+            for j, x in enumerate(s.get("ctas", [])[:2]):
+                parts.append(f"<div><span class='btn' id='s{k}c{j}' style='background:{HL[(j + 2) % len(HL)]}'>{K.esc(x)}</span></div>"); seq.append((f"s{k}c{j}", "btn", .6))
+        # minutage : les éléments se répartissent sur la scène, au rythme de la voix
+        tot = sum(w for _, _, w in seq) or 1; t0 = a + (0 if k == 0 else .5); span = max(1.0, d - (.9 if k < len(sc) - 1 else 1.4) - (t0 - a))
+        for ident, kind, w in seq:
+            dur = span * w / tot
+            e = {"id": ident, "k": kind, "at": round(t0, 3), "d": round(max(.35, dur * .8) if not (k == 0 and ident == 's0t0') else .4, 3)}
+            if kind == "btn": e["r"] = -2 if ident.endswith("0") else 2
+            EL.append(e)
+            ev.append({"k": {"ln": "line", "chk": "check", "pi": "pop", "btn": "pop", "doo": "line"}[kind], "at": round(t0, 3)})
+            t0 += dur
+        html.append(f"<div class='sc' id='s{k}'>{''.join(parts)}</div>")
+    if sc and sc[-1]["type"] == "cta": ev.append({"k": "sparkle", "at": round(starts[-1] + durs[-1] - 1.2, 3)})
+    cap_html = "".join(f"<span class='cap' data-a='{cc[0][1]:.3f}' data-b='{cn:.3f}'>" + " ".join(f"<span data-w='{t:.3f}'>{H.escape(w)}</span>" for w, t in cc) + "</span>"
+                       for cc, cn in caps)
+    rings = "".join(f"<div class='ring' style='left:{150 + 62 * i}px'></div>" for i in range(13))
+    S = [{"a": starts[k], "b": starts[k] + durs[k]} for k in range(len(sc))]
+    R = {"__FONTS__": K._font_faces(["Caveat", "Inter"]), "__BUREAU__": col["bureau"], "__PAPIER__": col["papier"], "__ENCRE__": col["encre"], "__GRILLE__": col["grille"],
+         "__POSTIT__": col["postit"], "__ACC__": col["acc"], "__RINGS__": rings, "__HANDLE__": H.escape(spec.get("handle", "")), "__SCENES__": "".join(html),
+         "__CAPS__": cap_html, "__EV__": json.dumps(ev), "__D__": str(total), "__SC__": json.dumps(S), "__EL__": json.dumps(EL)}
+    page = CARNET_TPL
+    for kk, v in R.items():
+        page = page.replace(kk, v)
+    return page
+
+
+LAYOUTS = {"carnet": carnet_page, "boucle": boucle_page, "malin": malin_page, "claudeflow": claudeflow_page, "manifeste3d": manifeste3d_page, "messages": messages_page, "terminal": terminal_page, "cheatsheet": cheatsheet_page, "iceberg": iceberg_page, "sportmotion": sportmotion_page, "nightchat": nightchat_page, "notion": notion_page}
 
 # ------------------------------------------------------------------ rendu
 def sfx_track(path, total, events, starts):
