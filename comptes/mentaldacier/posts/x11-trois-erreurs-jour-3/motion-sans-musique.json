@@ -1,0 +1,44 @@
+{
+ "id": "MDA-X11",
+ "layout": "carnet",
+ "music_seed": 9108, "sans_musique": true,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "type": "hook",
+   "titre": "Tu lâches<br>**au jour 3** ?",
+   "sous": "3 erreurs. La 3e est la pire.",
+   "vo": "Tu lâches au bout de trois jours ? Il y a trois erreurs. Enregistre cette vidéo, la troisième va te surprendre."
+  },
+  {
+   "type": "note",
+   "titre": "Erreur 1",
+   "lignes": ["Viser **trop gros**", "1 h dès lundi = 2 jours", "Commence par **10 min**"],
+   "vo": "Erreur un : viser trop gros. Une heure de sport dès lundi, tu tiens deux jours. Commence par dix minutes, impossible de dire non."
+  },
+  {
+   "type": "note",
+   "titre": "Erreur 2",
+   "lignes": ["Attendre **l'envie**", "L'envie vient **après**", "pas avant"],
+   "vo": "Erreur deux : attendre d'avoir envie. L'envie arrive souvent après avoir commencé, pas avant. Alors démarre, même sans envie."
+  },
+  {
+   "type": "postit",
+   "titre": "Erreur 3",
+   "texte": "Un jour raté ?\nTu **lâches tout**.\nJamais **2 de suite**.",
+   "vo": "Erreur trois, la plus sournoise : un jour raté, et tu te dis que tout est fichu. Un raté, ça arrive. Deux de suite, jamais."
+  },
+  {
+   "type": "liste",
+   "titre": "Ta règle",
+   "items": ["**10 min** par jour", "Go **sans envie**", "Jamais **2 ratés**"],
+   "vo": "Retiens : dix minutes par jour, démarrer sans attendre l'envie, et jamais deux ratés de suite."
+  },
+  {
+   "type": "cta",
+   "titre": "Ton plan pour **tenir**",
+   "ctas": ["🔖 Enregistre", "💬 Commente PLAN"],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit, avec ta fiche à cocher."
+  }
+ ]
+}
