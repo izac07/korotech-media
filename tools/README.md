@@ -28,7 +28,9 @@ URL publique d'un fichier : `https://izac07.github.io/korotech-media/<chemin>`
 | 12:15 | Reel | Études malin le plus souvent |
 | 19:15 | Reel | Vie étudiante, IA au quotidien, Humour/POV ou Parents (tourner) |
 
-Sur une semaine (14 posts) : 14 REELS, plus aucun carrousel (décision de Goat du 18/10/2026) ; 5-6 Études malin, 2-3 Vie étudiante, 2 IA au quotidien, 2 Humour/POV, 2 Parents.
+Sur une semaine (14 posts) : 14 REELS, plus aucun carrousel (décision de Goat du 18/10/2026).
+
+**TEST POV de la semaine du 24/10/2026 (décision de Goat du 23/10/2026)** : **7 reels sur 14 (un par jour)** ont une accroche « POV : [galère d'étudiant que tout le monde a vécue] », du type qu'on envoie à un pote. Pourquoi : le reel viral du compte (1 M vues) était un POV étudiant (« POV : moi après avoir oublié tout ce que j'ai appris pendant l'exam 😂 »), et « POV : exposé de groupe, et personne ne bosse à part toi 😤 » a fait 3 partages pour 89 vues, contre 0 partage pour le reel CV (112 vues). Règles du POV : la situation est dans le texte affiché dès la 1re image ET dans la 1re phrase de la voix ; elle vise une émotion partagée (flemme, panique la veille, prof, groupe, partiels, oubli) ; puis l'astuce IA qui règle la galère ; puis le mot-clé. Exemples de situations : la veille du partiel à 23 h, le prof qui rend les copies, le groupe WhatsApp de l'exposé, le réveil après 3 alarmes, la fiche de révision jamais finie. Les 7 autres : Études malin et IA au quotidien (moins de Vie étudiante / Parents cette semaine). Dans `journal.py ajouter`, mettre `--formule pov` pour les reels POV, afin que le bilan compare les partages POV vs non-POV.
 Le stock R11-R16 / C09-C12 couvre du 17 au 21/10/2026.
 
 Production À LA SEMAINE : la tâche « Korotech - production de la semaine » tourne le samedi vers 01:00 et remplit les créneaux encore vides des 7 jours suivants (du dimanche au samedi suivant) — voir « Lire / corriger la file ».
