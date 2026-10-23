@@ -25,3 +25,4 @@
 | 2026-10-26 19:30 | RM-R20 | Reel | Créer un produit digital simple (Idées de side hustle, malin) |
 | 2026-10-27 12:00 | RM-R21 | Reel | Écrire pour le web (rédaction) (Idées de side hustle, malin) |
 | 2026-10-27 19:30 | RM-R22 | Reel | Testeur de sites et d'apps (Arnaques & pièges à éviter, malin) |
+| 2026-10-23 13:34 | RM-X01 | Reel | 3 fuites d'argent invisibles : abonnements oubliés, achats impulsifs, épargne s'il reste (Organisation, malin) |

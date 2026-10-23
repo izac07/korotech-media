@@ -29,3 +29,4 @@
 | 2026-10-28 12:30 | CL-R22 | Reel | Demander de l'aide à un proche (Communication, nightchat) |
 | 2026-10-28 21:00 | CL-R23 | Reel | Arrêter de trop s'excuser (Confiance en soi & estime, nightchat) |
 | 2026-10-22 19:10 | CL-X01 | Reel | Choisis ta paix : se relever après une rupture, ne pas répondre au message de 2h (fable 2D) (Rupture, célibat, se reconstruire, fable2d) |
+| 2026-10-23 13:34 | CL-X02 | Reel | Dire non sans te justifier : une phrase courte, gentille, et la répéter si besoin (Communication, nightchat) |

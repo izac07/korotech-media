@@ -49,3 +49,4 @@ IA au quotidien : 3 choses que ChatGPT sait faire et que tu ne sais pas ; photo 
 POV / humour : ma mère découvre que je révise avec ChatGPT ; le prof qui rend les copies ; moi à 2h du mat vs moi le jour du contrôle.
 Parents : aider en maths ; outils gratuits ; parler d'IA à son ado.
 | 2026-10-22 12:15 | R25 | Reel | 3 astuces IA pour retenir tes dates d'histoire (Études malin, cheatsheet) | — |
+| 2026-10-23 13:34 | X05 | Reel | 3 prompts pour réviser sans tricher : fiche, carte mentale, interro (Études malin, cheatsheet) | — |

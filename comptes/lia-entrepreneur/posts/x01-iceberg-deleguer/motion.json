@@ -1,0 +1,78 @@
+{
+ "id": "LIA-X01",
+ "layout": "iceberg",
+ "music_seed": 9102,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "hook",
+   "cmd": "./reveler --gagner-du-temps",
+   "top": "ce qu'on te vend",
+   "bottom": "ce qui marche vraiment",
+   "vo": "On te vend l'IA comme un employé magique. Enregistre cette vidéo, et regarde ce qui fait vraiment gagner du temps."
+  },
+  {
+   "type": "surface",
+   "labels": [
+    "l'IA fait tout à ta place",
+    "zéro relecture",
+    "un outil par tâche"
+   ],
+   "text": "L'IA MAGIQUE",
+   "vo": "En surface : l'IA fait tout à ta place, sans relecture, avec un outil différent pour chaque tâche."
+  },
+  {
+   "type": "process",
+   "steps": [
+    "E-MAILS",
+    "RÉUNIONS",
+    "LÉGENDES"
+   ],
+   "chaos": "CHAOS",
+   "ok": "temps récupéré",
+   "text": "LES TÂCHES<br>QUI REVIENNENT",
+   "vo": "Sous l'eau : ce qui marche, c'est de déléguer les tâches qui reviennent. Les e-mails types, les comptes-rendus, les légendes."
+  },
+  {
+   "type": "logs",
+   "logs": [
+    [
+     "tout déléguer · erreurs envoyées",
+     "err"
+    ],
+    [
+     "aucune relecture · ton robotique",
+     "err"
+    ],
+    [
+     "brouillon IA + ta relecture ✓",
+     "ok"
+    ],
+    [
+     "chez moi, Claude écrit :",
+     "info"
+    ],
+    [
+     "les scripts de mes reels",
+     "item"
+    ],
+    [
+     "les légendes de mes posts",
+     "item"
+    ],
+    [
+     "le planning de la semaine",
+     "item"
+    ]
+   ],
+   "text": "CE QUI ME FAIT<br>GAGNER DU TEMPS",
+   "vo": "Tout déléguer sans relire, c'est envoyer des erreurs. Le bon combo : l'IA fait le brouillon, toi tu relis. Chez moi, Claude écrit les scripts, les légendes et le planning."
+  },
+  {
+   "type": "cta",
+   "task": "1 TÂCHE RÉPÉTITIVE",
+   "text": "💬 COMMENTE IA",
+   "vo": "Choisis une tâche répétitive cette semaine. Commente IA pour recevoir les dix tâches à déléguer, avec les prompts."
+  }
+ ]
+}

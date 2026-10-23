@@ -220,8 +220,7 @@ def verifier(path):
 
     # règles éditoriales des comptes
     tout = norm(json.dumps(sc, ensure_ascii=False))
-    if handle == "lia.entrepreneur" and re.search(r"\bcomment(e|es|ez|aire|aires)\b", tout):
-        err.append("LIA : pas de « commente X » tant que la réponse DM n'est pas branchée")
+    # (LIA : l'interdiction de « commente X » est levée depuis le 23/10/2026, Goat répond en DM à la main)
     if handle == "revenus_malins":
         if re.search(r"\b(epargne|épargne|placement|placements|livret|lep|pea|assurance vie|bourse|etf)\b", tout):
             notes = norm(" ".join(str(s.get("note", "")) for s in sc if s.get("type") == "cta") + " " + json.dumps(

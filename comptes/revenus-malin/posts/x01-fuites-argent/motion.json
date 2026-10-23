@@ -1,0 +1,71 @@
+{
+ "id": "RM-X01",
+ "layout": "malin",
+ "music_seed": 9103,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Ton argent<br>**disparaît** ?",
+   "sub": "3 fuites invisibles à couper",
+   "vo": "Ton argent disparaît avant la fin du mois ? Enregistre cette vidéo, voici trois fuites invisibles à couper dès maintenant."
+  },
+  {
+   "type": "list",
+   "title": "Les **3 fuites**",
+   "items": [
+    [
+     "Abonnements oubliés",
+     "à trier chaque trimestre"
+    ],
+    [
+     "Achats impulsifs",
+     "la règle des 48 heures"
+    ],
+    [
+     "Épargne « s'il reste »",
+     "virement auto le jour de paie"
+    ]
+   ],
+   "slots": 4,
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ],
+   "vo": "Un : les abonnements oubliés, à trier chaque trimestre. Deux : les achats impulsifs, avec la règle des quarante-huit heures. Trois : l'épargne faite seulement s'il reste quelque chose à la fin du mois."
+  },
+  {
+   "type": "math",
+   "title": "Exemple : **2 abonnements**",
+   "cells": [
+    [
+     "Streaming",
+     "13 €"
+    ],
+    [
+     "Appli sport",
+     "10 €",
+     "+"
+    ],
+    [
+     "Sur un an",
+     "276 €",
+     "="
+    ]
+   ],
+   "note": "Exemple pour illustrer, adapte à tes chiffres",
+   "vo": "Exemple : deux petits abonnements oubliés, treize et dix euros par mois. Sur un an, ça fait deux cent soixante-seize euros, sans même t'en rendre compte."
+  },
+  {
+   "type": "cta",
+   "big": "Un mois pour<br>**tout voir.**",
+   "ctas": [
+    "🔖 Enregistre la méthode",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "C'est un repère simple : programme un virement automatique le jour de la paie. Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

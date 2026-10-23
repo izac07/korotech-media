@@ -1,0 +1,61 @@
+{
+ "id": "X05",
+ "layout": "cheatsheet",
+ "music_seed": 9101,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**PROMPTS**",
+   "sub": "pour réviser sans tricher 🧠",
+   "vo": "Tu révises en relisant ton cours ? Voici trois prompts qui changent tout. Enregistre cette vidéo, tu vas en avoir besoin avant ton prochain contrôle."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Fiche express",
+   "file": "Chapitre_5.pdf",
+   "pills": [
+    "📌 Notions",
+    "📖 Définitions",
+    "💡 Exemples"
+   ],
+   "text": "Ton cours → **une fiche**",
+   "vo": "Un : la fiche express. Colle ton cours et demande une fiche d'une page, avec les notions clés, les définitions et des exemples."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Carte mentale",
+   "nodes": [
+    "Idée",
+    "Lien",
+    "Exemple"
+   ],
+   "text": "Ton chapitre → **une carte**",
+   "vo": "Deux : la carte mentale. Demande-lui de relier les idées de ton chapitre. Tu vois enfin la logique du cours."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "L'interro",
+   "q": "Pose-moi 10 questions, une par une",
+   "answers": [
+    "Question 1 / 10",
+    "Ta réponse…",
+    "✅ Juste, et pourquoi"
+   ],
+   "text": "L'IA **t'interroge**",
+   "vo": "Trois : l'interro. Demande-lui de te poser dix questions, une par une, et de corriger tes erreurs. Et vérifie toujours avec ton cours."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour tes révisions",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

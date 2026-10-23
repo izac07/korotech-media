@@ -407,11 +407,12 @@ window.render=function(t){{
       sr.style.background=`rgba(${{Math.round(123+103*g)}},${{Math.round(92-32*g)}},${{Math.round(255-55*g)}},${{.35+.5*g}})`;}}
     const bg=$('bg'+k);const kb=back((u-4.9)/.45);bg.style.opacity=c((u-4.9)/.1);bg.style.transform=`rotate(${{-6+0*kb}}deg) scale(${{1.8-.8*kb}})`;
     pop($('bt'+k),4.2,u,.8,0,40);}}
-  if(s.ty==='cta'){{for(let j=0;j<3;j++){{const m=$('mi'+j);const kf=back((u-.2-.15*j)/.5);const sh=eo((u-1.8)/.35);
-      m.style.opacity=c((u-.2-.15*j)/.1)*(1-sh);m.style.transform=`translateX(${{(j-1)*230*kf*(1-sh)}}px) rotate(${{(j-1)*14*kf*(1-sh)}}deg) scale(${{(.5+.5*kf)*(1-.7*sh)}})`;}}
-    const bm=$('bm');const kb=back((u-2.0)/.5);bm.style.opacity=c((u-2.0)/.1);bm.style.transform=`scale(${{.3+.7*kb}})`;
-    pop($('logo'),2.6,u,.8,0,30);const f=$('fol');const kf=back((u-2.9)/.4);f.style.transform=`scale(${{u>2.9?.5+.5*kf:0}})`;
-    pop($('ct0'),3.2,u,.7,0,40);pop($('ct1'),3.6,u,.7,0,40);}}
+  if(s.ty==='cta'){{const w=u*Math.max(1,9/(s.b-s.a));  // scène courte (voix brève) : l'animation est accélérée pour que les lignes (dont le mot-clé) s'affichent pendant la voix
+    for(let j=0;j<3;j++){{const m=$('mi'+j);const kf=back((w-.2-.15*j)/.5);const sh=eo((w-1.8)/.35);
+      m.style.opacity=c((w-.2-.15*j)/.1)*(1-sh);m.style.transform=`translateX(${{(j-1)*230*kf*(1-sh)}}px) rotate(${{(j-1)*14*kf*(1-sh)}}deg) scale(${{(.5+.5*kf)*(1-.7*sh)}})`;}}
+    const bm=$('bm');const kb=back((w-2.0)/.5);bm.style.opacity=c((w-2.0)/.1);bm.style.transform=`scale(${{.3+.7*kb}})`;
+    pop($('logo'),2.6,w,.8,0,30);const f=$('fol');const kf=back((w-2.9)/.4);f.style.transform=`scale(${{w>2.9?.5+.5*kf:0}})`;
+    pop($('ct0'),3.2,w,.7,0,40);pop($('ct1'),3.6,w,.7,0,40);}}
  }});
  const swe=$('sw');swe.style.opacity=sw>=0?Math.sin(sw*Math.PI):0;swe.style.left=(sw>=0?-700+sw*2480:-800)+'px';
  for(const cp of document.querySelectorAll('.cap')){{const a=+cp.dataset.a,b=+cp.dataset.b;cp.style.display=(t>=a&&t<b)?'inline-block':'none';

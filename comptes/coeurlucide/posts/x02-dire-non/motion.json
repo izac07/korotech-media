@@ -1,0 +1,51 @@
+{
+ "id": "CL-X02",
+ "layout": "nightchat",
+ "music_seed": 9105,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Tu peux me rendre un service ce soir ? 🙏",
+   "vo": "Tu dis oui alors que tu penses non ? Enregistre cette vidéo, voici comment dire non sans te justifier pendant dix minutes."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Allez, ça te prend 5 minutes 🙏",
+    "Tu dis jamais non de toute façon 😅"
+   ],
+   "sent": "Euh… oui, ok, pas de souci",
+   "ghost": "Vu 21:47",
+   "vo": "On te demande un service, on insiste, et tu cèdes. Oui, pas de souci. Alors qu'au fond, tu n'avais ni l'envie ni le temps."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Je ne vais pas pouvoir ce soir.",
+    "Merci d'avoir pensé à moi 🤍",
+    "Je te dis si je peux une autre fois."
+   ],
+   "vo": "À la place, essaie ça : je ne vais pas pouvoir ce soir, merci d'avoir pensé à moi. Court, gentil, et sans excuse inventée."
+  },
+  {
+   "type": "check",
+   "title": "Pour dire non :",
+   "items": [
+    "Court et calme",
+    "Sans trop te justifier",
+    "Répète si besoin"
+   ],
+   "vo": "Pour dire non : reste court et calme, ne te justifie pas trop, et si l'autre insiste, répète la même phrase."
+  },
+  {
+   "type": "cta",
+   "last": "Pas de souci, on fait autrement 🙂",
+   "ctas": [
+    "🔖 Garde-le pour la prochaine fois",
+    "💬 Commente LIMITE"
+   ],
+   "vo": "Commente limite pour recevoir les dix phrases pour poser une limite sans culpabiliser."
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "id": "MDA-X08",
+ "layout": "manifeste3d",
+ "music_seed": 9104,
+ "handle": "mentaldacier2030",
+ "counter": {
+  "label": "JOUR",
+  "short": "J",
+  "max": 7
+ },
+ "timeline": [
+  "J1-2",
+  "J3-4",
+  "J5-6",
+  "J7"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "7",
+   "unit": "JOURS",
+   "line": "**pour arrêter de repousser**<br>la tâche qui te pèse.",
+   "sub": "une action par jour",
+   "vo": "Sept jours pour arrêter de repousser la tâche qui te pèse. Enregistre cette vidéo, tu vas la suivre jour après jour."
+  },
+  {
+   "type": "avantapres",
+   "top": "AVANT · J1",
+   "bottom": "OBJECTIF · J7",
+   "notifs": [
+    "📌 « Je m'y mets demain »",
+    "📱 Encore 5 min de scroll",
+    "😩 La tâche traîne depuis des semaines"
+   ],
+   "kicker": "étape",
+   "card_word": "étape",
+   "no": "attendre la motivation",
+   "yes": "une étape de 10 minutes",
+   "vo": "Avant : tu attends d'avoir envie, et la tâche traîne depuis des semaines. L'idée : pas besoin de motivation, juste une étape de dix minutes à la fois."
+  },
+  {
+   "type": "weeks",
+   "word": "jour",
+   "weeks": [
+    [
+     "JOURS 1-2",
+     "📝 Liste ce que tu repousses",
+     "✂️ Découpe en étapes de 10 min"
+    ],
+    [
+     "JOURS 3-4",
+     "⏱️ 2 minutes pour démarrer",
+     "📵 Téléphone dans une autre pièce"
+    ]
+   ],
+   "vo": "Jour un et deux : liste ce que tu repousses, et découpe-le en petites étapes. Jour trois et quatre : fais juste deux minutes, téléphone dans une autre pièce."
+  },
+  {
+   "type": "weeks",
+   "word": "jour",
+   "weeks": [
+    [
+     "JOURS 5-6",
+     "🕕 Une heure fixe : si… alors…",
+     "🧠 Repère ton moment de lâcher"
+    ],
+    [
+     "JOUR 7",
+     "✅ Bilan : garde ce qui marche",
+     ""
+    ]
+   ],
+   "vo": "Jour cinq et six : fixe une heure précise, et repère le moment où tu lâches. Jour sept : fais le bilan, et garde ce qui marche."
+  },
+  {
+   "type": "cta",
+   "kicker": "JOUR",
+   "big": "7",
+   "obj": "Objectif : **commencer** sans attendre l'envie.",
+   "ctas": [
+    "🔖 ENREGISTRE LE PLAN",
+    "💬 COMMENTE « PLAN »"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit, avec ta fiche de suivi."
+  }
+ ]
+}

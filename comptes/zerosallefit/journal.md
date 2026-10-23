@@ -34,3 +34,4 @@
 | 2026-10-28 18:00 | ZSF-R26 | Reel | Astuce régularité : lier la séance à un geste quotidien (Motivation & régularité, sportmotion) |
 | 2026-10-29 07:30 | ZSF-R27 | Reel | Séance corps entier de 10 minutes (Séances complètes prêtes à faire, sportmotion) |
 | 2026-10-29 18:00 | ZSF-R28 | Reel | Le dead bug : abdos en gardant le dos plaqué (Technique, sportmotion) |
+| 2026-10-23 13:34 | ZSF-X03 | Reel | Réveil musculaire de 5 minutes au saut du lit, sans matériel (Séances complètes prêtes à faire, sportmotion) |
