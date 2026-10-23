@@ -248,8 +248,9 @@ def verifier(path):
             ecran = norm(visible(json.dumps({k: v for k, v in fin.items() if k not in ("vo", "say")}, ensure_ascii=False)))
             if not re.search(r"\b%s\b" % re.escape(mot), ecran):
                 err.append("dernière scène : le mot-clé « %s » doit être affiché (ex. ctas « 💬 COMMENTE « %s » »)" % (mc["mot"], mc["mot"]))
-            if not re.search(r"\b%s\b" % re.escape(mot), norm(fin.get("vo", ""))):
-                att.append("dernière scène : la voix devrait dire « commente %s » (et ce qu'on reçoit : %s)" % (mot, mc["offre"]))
+            vo_fin = norm(fin.get("say") or fin.get("vo", ""))
+            if any(s.get("vo") for s in sc) and not (re.search(r"\bcommente\b", vo_fin) and re.search(r"\b%s\b" % re.escape(mot), vo_fin)):
+                err.append("dernière scène : la voix doit dire « Commente %s pour recevoir %s » (décision de Goat du 23/10/2026)" % (mot, mc["offre"]))
 
     # musique : music_seed différent des autres reels
     seed = spec.get("music_seed")
