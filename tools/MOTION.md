@@ -147,3 +147,13 @@ Exemple : `comptes/mentaldacier/posts/x10-trois-non-negociables/motion.json`. Pa
 `), `titre` (optionnel)
 - `cta` : `titre`, `ctas` (2 boutons : « 🔖 Enregistre », « 💬 Commente MOT » sans guillemets)
 Champ optionnel `couleurs` : {papier, encre, bureau, grille, postit, acc, surligneurs: [3 couleurs]}. Voix et structure obligatoire comme les autres formats.
+
+## interface (PILOTE du 23/10/2026, tous comptes) — cartes d'appli animées, fond pastel
+Exemple : `posts/x06-pov-partiel-demain/motion.json`. Style « outil IA » : fond pastel qui bouge, une carte blanche par scène, une seule couleur d'accent, compteur de scènes en haut, sous-titres mot à mot (mot en cours en couleur). Un élément apparaît toutes les 1 à 2 s. Ordre des scènes LIBRE ; `titre` optionnel partout (`**mot**` = accent, `<br>` possible) :
+- `hook` : `titre`, `sous` (pastille), `notif` optionnel = [icône, appli, texte] (notification de téléphone)
+- `toggles` : `carte`, `carte_sous`, `items` (libellés ; `["Comprendre", false]` = reste « Toi ») : les interrupteurs basculent de « Toi » à « IA » un par un
+- `chat` : `messages` = [["moi"|"ia", texte]] tapés en direct
+- `grille` : `cartes` (4 tuiles colorées qui apparaissent)
+- `compteur` : `valeur` (chiffre réel uniquement), `label`, `lignes` = [[tag, texte]]
+- `cta` : `titre`, `ctas` (2 boutons, le 2e en couleur)
+Champ optionnel `couleurs` : {fond, encre, acc, tuiles: [4], blobs: [3], de: "Toi", a: "IA"}.

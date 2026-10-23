@@ -1,0 +1,50 @@
+{
+ "id": "KT-X06",
+ "layout": "interface",
+ "music_seed": 9109,
+ "handle": "korotech_fr",
+ "couleurs": {"acc": "#6d3df2", "tuiles": ["#6d3df2", "#ff5a36", "#f2a516", "#1f9d6e"]},
+ "scenes": [
+  {
+   "type": "hook",
+   "titre": "POV : partiel demain,<br>t'as **rien révisé**",
+   "sous": "23 h 04 · **3 étapes** avec l'IA",
+   "notif": ["📅", "Calendrier", "Partiel · demain 8 h 00"],
+   "vo": "Partiel demain, vingt-trois heures, et t'as rien révisé ? Enregistre cette vidéo : trois étapes avec l'IA, et la dernière change tout."
+  },
+  {
+   "type": "toggles",
+   "titre": "Qui fait **quoi** ce soir ?",
+   "carte": "Ce soir",
+   "carte_sous": "qui s'en occupe ?",
+   "items": ["Résumer le cours", "Faire les fiches", "Te poser les questions", ["Comprendre", false]],
+   "vo": "Le principe : l'IA fait le travail lourd. Résumer, faire les fiches, te poser les questions. Toi, tu te concentres sur comprendre."
+  },
+  {
+   "type": "chat",
+   "titre": "Étape 1 : **résume**",
+   "messages": [["moi", "Résume ce cours en 10 points clés, en phrases simples."], ["ia", "Voici les 10 points clés :\n1. …\n2. …"]],
+   "vo": "Étape un : colle ton cours et demande-lui les dix points clés, en phrases simples. Tu relis ça, pas quarante pages."
+  },
+  {
+   "type": "grille",
+   "titre": "Étape 2 : **les fiches**",
+   "cartes": ["Définitions", "Dates clés", "Formules", "Pièges"],
+   "vo": "Étape deux : demande-lui une fiche par thème. Définitions, dates, formules, et les pièges classiques."
+  },
+  {
+   "type": "compteur",
+   "titre": "Étape 3 : **l'interro**",
+   "valeur": 20,
+   "label": "questions,<br>une par une",
+   "lignes": [["Q1", "Explique sans tes notes"], ["Q2", "Donne un exemple"], ["Q3", "Corrige mon erreur"]],
+   "vo": "Étape trois, celle qu'on oublie : demande-lui de t'interroger, vingt questions, une par une. C'est là que tu retiens vraiment."
+  },
+  {
+   "type": "cta",
+   "titre": "Mes 10 prompts<br>**pour réviser**",
+   "ctas": ["🔖 Enregistre", "💬 Commente PROMPTS"],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

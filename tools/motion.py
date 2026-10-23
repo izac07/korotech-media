@@ -1700,7 +1700,158 @@ def carnet_page(spec, theme, starts, durs, caps, total):
     return page
 
 
-LAYOUTS = {"carnet": carnet_page, "boucle": boucle_page, "malin": malin_page, "claudeflow": claudeflow_page, "manifeste3d": manifeste3d_page, "messages": messages_page, "terminal": terminal_page, "cheatsheet": cheatsheet_page, "iceberg": iceberg_page, "sportmotion": sportmotion_page, "nightchat": nightchat_page, "notion": notion_page}
+# ------------------------------------------------------------------ layout « interface » (PILOTE 23/10/2026, tous comptes)
+INTERFACE_TPL = r"""<!doctype html><html><head><meta charset='utf-8'><style>__FONTS__
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;overflow:hidden;background:__FOND__;position:relative;font-family:Inter,sans-serif;color:__ENCRE__}
+.blob{position:absolute;border-radius:50%;filter:blur(120px);opacity:.75}
+.top{position:absolute;left:60px;right:60px;top:90px;display:flex;align-items:center;justify-content:space-between;z-index:30}
+.hdl{font:700 34px Inter;color:__ENCRE__;opacity:.55}
+.dots{display:flex;gap:10px}.dots i{display:block;width:16px;height:16px;border-radius:8px;background:rgba(27,27,34,.18)}.dots i.on{width:44px;background:__ACC__}
+.num{font:800 34px Inter;font-variant-numeric:tabular-nums;opacity:.6}
+.sc{position:absolute;left:60px;right:110px;top:190px;height:1150px;display:flex;flex-direction:column;justify-content:center;gap:46px;opacity:0}
+.ti{font:900 92px/1.04 Inter;letter-spacing:-3px;opacity:0}
+.ti.big{font-size:118px;letter-spacing:-4px}
+.ti em,.cta em{font-style:normal;color:__ACC__}
+.chip{align-self:flex-start;background:#fff;border-radius:999px;padding:18px 34px;font:800 44px Inter;box-shadow:0 14px 34px rgba(80,60,120,.16);opacity:0}
+.chip b{color:__ACC__}
+.card{background:#fff;border-radius:44px;padding:40px 46px;box-shadow:0 34px 80px rgba(80,60,120,.20);opacity:0}
+.ch{display:flex;align-items:center;gap:20px;margin-bottom:14px}.ch i{width:30px;height:30px;border-radius:15px;background:__ACC__}
+.ch b{font:800 48px Inter}.ch small{font:500 30px Inter;opacity:.45;margin-left:auto}
+.row{display:flex;align-items:center;gap:24px;padding:26px 0;border-top:2px solid #f0edf3;font:700 44px Inter;--k:0}
+.row .lb{flex:1}
+.who{position:relative;width:70px;height:40px;font:700 30px Inter;text-align:right}
+.who em{position:absolute;right:0;top:4px;font-style:normal}.who .w0{opacity:calc(1 - var(--k));color:#9a96a3}.who .w1{opacity:var(--k);color:__ACC__}
+.tg{position:relative;flex:none;width:100px;height:58px;border-radius:29px;background:#dcd7e3;overflow:hidden}
+.tg .on{position:absolute;inset:0;background:__ACC__;opacity:var(--k)}
+.tg .kn{position:absolute;left:6px;top:6px;width:46px;height:46px;border-radius:23px;background:#fff;box-shadow:0 3px 8px rgba(0,0,0,.2);transform:translateX(calc(var(--k)*42px))}
+.chat{display:flex;flex-direction:column;gap:24px}
+.bub{max-width:84%;padding:26px 34px;border-radius:36px;font:600 42px/1.3 Inter;opacity:0;white-space:pre-line}
+.bub.moi{align-self:flex-end;background:__ACC__;color:#fff;border-bottom-right-radius:10px}
+.bub.ia{align-self:flex-start;background:#f2eff6;border-bottom-left-radius:10px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.tile{height:230px;border-radius:30px;color:#fff;font:900 50px/1.05 Inter;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;text-transform:uppercase;opacity:0;box-shadow:0 14px 30px rgba(0,0,0,.12)}
+.cnt{display:flex;align-items:center;gap:40px;margin:10px 0 18px}
+.ring{position:relative;width:230px;height:230px;flex:none}.ring svg{position:absolute;inset:0;transform:rotate(-90deg)}
+.ring .n{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:900 100px Inter;font-variant-numeric:tabular-nums}
+.cl{font:800 50px/1.15 Inter}
+.tag{flex:none;color:__ACC__;font:800 40px Inter;min-width:80px}
+.lrow{opacity:0}
+.cta{display:flex;flex-direction:column;gap:34px;align-items:flex-start}
+.btn{padding:34px 54px;border-radius:999px;font:800 58px Inter;white-space:nowrap;opacity:0;box-shadow:0 18px 40px rgba(80,60,120,.18)}
+.btn.b0{background:#fff;border:5px solid __ENCRE__}.btn.b1{background:__ACC__;color:#fff}
+.nt{display:flex;gap:26px;align-items:center;background:rgba(255,255,255,.92);border-radius:36px;padding:30px 36px;box-shadow:0 24px 60px rgba(80,60,120,.18);opacity:0}
+.nt .ic{flex:none;width:96px;height:96px;border-radius:24px;background:__ACC__;display:flex;align-items:center;justify-content:center;font-size:56px}
+.nt b{display:block;font:800 34px Inter;opacity:.5;margin-bottom:6px}.nt span{font:700 44px/1.2 Inter}
+.caps{position:absolute;left:60px;right:60px;top:1370px;text-align:center;z-index:40}
+.cap{display:none;background:#fff;border-radius:22px;padding:14px 32px;font:800 52px Inter;color:__ENCRE__;box-shadow:0 10px 30px rgba(80,60,120,.18)}
+.cap span.on{color:__ACC__}
+</style></head><body>
+__BLOBS__
+<div class='top'><span class='hdl'>@__HANDLE__</span><span class='dots' id='dots'>__DOTS__</span><span class='num' id='num'></span></div>
+__SCENES__
+<div class='caps'>__CAPS__</div>
+<script>
+const EV=__EV__; const D=__D__; const SC=__SC__; const EL=__EL__; const BL=__BL__;
+const c=x=>Math.max(0,Math.min(1,x)), eo=x=>1-Math.pow(1-c(x),3), $=i=>document.getElementById(i);
+const back=x=>{x=c(x);const s=1.7;return 1+(s+1)*Math.pow(x-1,3)+s*Math.pow(x-1,2);};
+const RC=2*Math.PI*100;
+window.render=function(t){
+ BL.forEach((b,i)=>{$('bl'+i).style.transform=`translate(${Math.sin(t/b.p+i)*b.a}px,${Math.cos(t/(b.p*1.3)+i*2)*b.a}px)`;});
+ let cur=0;
+ SC.forEach((s,k)=>{const el=$('s'+k);const last=k==SC.length-1;if(t>=s.a)cur=k;
+   const kin=k==0?1:eo((t-s.a)/.4), kout=last?0:c((t-s.b)/.25);
+   el.style.opacity=(t>=s.a-.001&&(t<s.b+.25||last))?1-kout:0;
+   el.style.transform=`translateY(${(1-kin)*90-kout*70}px) scale(${.95+.05*kin})`;});
+ $('num').textContent=String(cur+1).padStart(2,'0')+' / '+String(SC.length).padStart(2,'0');
+ document.querySelectorAll('#dots i').forEach((d,k)=>d.className=k==cur?'on':'');
+ for(const e of EL){const n=$(e.id);if(!n)continue;const p=(t-e.at)/e.d;
+   if(e.k=='pop'){n.style.opacity=c(p*4);n.style.transform=`scale(${.7+.3*back(p)})`;}
+   else if(e.k=='rise'){const k=eo(p);n.style.opacity=k;n.style.transform=`translateY(${(1-k)*50}px)`;}
+   else if(e.k=='row'){const k=eo(p);n.style.opacity=k;n.style.transform=`translateX(${(1-k)*-60}px)`;}
+   else if(e.k=='tog'){n.style.setProperty('--k',eo(p));}
+   else if(e.k=='type'){n.style.opacity=t>=e.at?1:0;const f=n.dataset.full;n.textContent=f.slice(0,Math.round(f.length*c(p)));}
+   else if(e.k=='count'){const k=eo(p);n.querySelector('.n').textContent=Math.round(e.v*k);n.querySelector('circle.fg').style.strokeDashoffset=RC*(1-k);}}
+ for(const cp of document.querySelectorAll('.cap')){const a=+cp.dataset.a,b=+cp.dataset.b;cp.style.display=(t>=a&&t<b)?'inline-block':'none';
+   const ws=[...cp.querySelectorAll('[data-w]')];ws.forEach((w,i)=>{const nx=ws[i+1];w.className=(t>=+w.dataset.w&&(!nx||t<+nx.dataset.w))?'on':'';});}
+};render(0);
+</script></body></html>"""
+
+
+def interface_page(spec, theme, starts, durs, caps, total):
+    """Interfaces d'appli animées sur fond pastel (style « outil IA ») : une carte blanche par scène, un seul accent.
+    Scènes (ordre libre), toutes avec `titre` optionnel (**mot** = accent) :
+    hook {titre, sous?} ; toggles {carte, items: [libellé | [libellé, false]]} (Toi -> IA, false = reste « Toi ») ;
+    chat {messages: [["moi"|"ia", texte]]} ; grille {cartes: [4 textes]} ; compteur {valeur, label, lignes: [[tag, texte]]} ; cta {ctas}."""
+    sc = spec["scenes"]; col = {"fond": "#f4eff8", "encre": "#1b1b22", "acc": "#ff5a36", "tuiles": ["#ff5a36", "#3b5bdb", "#f2a516", "#1f9d6e"],
+                                 "blobs": ["#cdb9ff", "#ffc7a6", "#ffb6cf"], "de": "Toi", "a": "IA"} | spec.get("couleurs", {})
+    html, EL, ev = [], [], []
+    for k, s in enumerate(sc):
+        a, d = starts[k], durs[k]; ty = s["type"]; parts = []; seq = []   # seq : (id, kind, poids, extra)
+        if s.get("titre"):
+            parts.append(f"<div class='ti{' big' if ty == 'hook' else ''}' id='s{k}ti'>{rich(s['titre'])}</div>"); seq.append((f"s{k}ti", "rise", .5, {}))
+        if ty == "hook" and s.get("sous"):
+            parts.append(f"<div class='chip' id='s{k}so'>{rich(s['sous']).replace('<em>', '<b>').replace('</em>', '</b>')}</div>"); seq.append((f"s{k}so", "pop", .6, {}))
+        if ty == "hook" and s.get("notif"):  # notification façon téléphone : [icône, appli, texte]
+            ic, app, tx = (list(s["notif"]) + ["", "", ""])[:3]
+            parts.append(f"<div class='nt' id='s{k}nt'><div class='ic'>{K.esc(ic)}</div><div><b>{K.esc(app)}</b><span>{K.esc(tx)}</span></div></div>"); seq.append((f"s{k}nt", "pop", .7, {}))
+        if ty == "toggles":
+            rows = []
+            for j, it in enumerate(s.get("items", [])):
+                lb, flip = (it, True) if isinstance(it, str) else (it[0], it[1] if len(it) > 1 else True)
+                rows.append(f"<div class='row' id='s{k}r{j}'><span class='lb'>{K.esc(lb)}</span><span class='who'><em class='w0'>{K.esc(col['de'])}</em>"
+                            f"<em class='w1'>{K.esc(col['a'])}</em></span><span class='tg'><span class='on'></span><span class='kn'></span></span></div>")
+                seq.append((f"s{k}r{j}", "tog" if flip else "wait", .8, {}))
+            parts.append(f"<div class='card' id='s{k}c'><div class='ch'><i></i><b>{K.esc(s.get('carte', ''))}</b><small>{K.esc(s.get('carte_sous', ''))}</small></div>{''.join(rows)}</div>")
+            seq.insert(len(seq) - len(rows), (f"s{k}c", "pop", .5, {}))
+        if ty == "chat":
+            bubs = []
+            for j, (who, txt) in enumerate(s.get("messages", [])):
+                bubs.append(f"<div class='bub {'moi' if who == 'moi' else 'ia'}' id='s{k}m{j}' data-full='{H.escape(txt, quote=True)}'></div>")
+                seq.append((f"s{k}m{j}", "type", max(.8, len(txt) / 30), {"text": txt}))
+            parts.append(f"<div class='card chat' id='s{k}c'>{''.join(bubs)}</div>"); seq.insert(len(seq) - len(bubs), (f"s{k}c", "pop", .4, {}))
+        if ty == "grille":
+            tl = "".join(f"<div class='tile' id='s{k}g{j}' style='background:{col['tuiles'][j % len(col['tuiles'])]}'>{K.esc(x)}</div>" for j, x in enumerate(s.get("cartes", [])))
+            parts.append(f"<div class='grid'>{tl}</div>"); seq += [(f"s{k}g{j}", "pop", .7, {}) for j in range(len(s.get("cartes", [])))]
+        if ty == "compteur":
+            v = int(s.get("valeur", 0))
+            rows = "".join(f"<div class='row lrow' id='s{k}l{j}'><span class='tag'>{K.esc(tg)}</span><span class='lb'>{K.esc(tx)}</span></div>" for j, (tg, tx) in enumerate(s.get("lignes", [])))
+            parts.append(f"<div class='card' id='s{k}c'><div class='cnt' id='s{k}n'><div class='ring'><svg viewBox='0 0 230 230'><circle cx='115' cy='115' r='100' fill='none' stroke='#efeaf4' stroke-width='22'/>"
+                         f"<circle class='fg' cx='115' cy='115' r='100' fill='none' stroke='{col['acc']}' stroke-width='22' stroke-linecap='round' stroke-dasharray='628.3' stroke-dashoffset='628.3'/></svg>"
+                         f"<div class='n'>0</div></div><div class='cl'>{K.esc(s.get('label', ''))}</div></div>{rows}</div>")
+            seq += [(f"s{k}c", "pop", .4, {}), (f"s{k}n", "count", 1.4, {"v": v})] + [(f"s{k}l{j}", "row", .7, {}) for j in range(len(s.get("lignes", [])))]
+        if ty == "cta":
+            bt = "".join(f"<span class='btn b{j}' id='s{k}b{j}'>{K.esc(x)}</span>" for j, x in enumerate(s.get("ctas", [])[:2]))
+            parts.append(f"<div class='cta'>{bt}</div>"); seq += [(f"s{k}b{j}", "pop", .7, {}) for j in range(len(s.get("ctas", [])[:2]))]
+        # minutage : les éléments se répartissent sur la voix de la scène (un changement à l'écran toutes les 1 à 2 s)
+        tot = sum(w for _, _, w, _ in seq) or 1; t0 = a + (0 if k == 0 else .35); span = max(1.0, d - (.9 if k < len(sc) - 1 else 1.4) - (t0 - a))
+        for ident, kind, w, x in seq:
+            dur = span * w / tot
+            e = {"id": ident, "k": kind, "at": round(t0, 3), "d": round(.35 if kind in ("rise", "pop", "row") else max(.4, dur * .85), 3)}
+            if kind == "count": e["v"] = x["v"]
+            if kind != "wait": EL.append(e)
+            sfx = {"rise": "whoosh", "pop": "pop", "row": "line", "tog": "click", "count": "beep"}.get(kind)
+            if kind == "type": ev.append({"k": "type", "at": round(t0, 3), "end": round(t0 + e["d"], 3), "text": x["text"]})
+            elif kind == "count": ev.append({"k": "beep", "at": round(t0 + e["d"], 3)})
+            elif sfx and not (k == 0 and kind == "rise"): ev.append({"k": sfx, "at": round(t0, 3)})
+            t0 += dur
+        html.append(f"<div class='sc' id='s{k}'>{''.join(parts)}</div>")
+    if sc and sc[-1]["type"] == "cta": ev.append({"k": "sparkle", "at": round(starts[-1] + durs[-1] - 1.2, 3)})
+    cap_html = "".join(f"<span class='cap' data-a='{cc[0][1]:.3f}' data-b='{cn:.3f}'>" + " ".join(f"<span data-w='{t:.3f}'>{H.escape(w)}</span>" for w, t in cc) + "</span>"
+                       for cc, cn in caps)
+    pos = [(-180, 160, 760), (520, 700, 700), (60, 1300, 800)]
+    blobs = "".join(f"<div class='blob' id='bl{i}' style='left:{x}px;top:{y}px;width:{w}px;height:{w}px;background:{col['blobs'][i % len(col['blobs'])]}'></div>" for i, (x, y, w) in enumerate(pos))
+    S = [{"a": starts[k], "b": starts[k] + durs[k]} for k in range(len(sc))]
+    R = {"__FONTS__": K._font_faces(["Inter"]), "__FOND__": col["fond"], "__ENCRE__": col["encre"], "__ACC__": col["acc"], "__BLOBS__": blobs,
+         "__DOTS__": "<i></i>" * len(sc), "__HANDLE__": H.escape(spec.get("handle", "")), "__SCENES__": "".join(html), "__CAPS__": cap_html,
+         "__EV__": json.dumps(ev), "__D__": str(total), "__SC__": json.dumps(S), "__EL__": json.dumps(EL), "__BL__": json.dumps([{"p": 3.1 + i, "a": 70 + 20 * i} for i in range(len(pos))])}
+    page = INTERFACE_TPL
+    for kk, v in R.items():
+        page = page.replace(kk, v)
+    return page
+
+
+LAYOUTS = {"interface": interface_page, "carnet": carnet_page,"boucle": boucle_page, "malin": malin_page, "claudeflow": claudeflow_page, "manifeste3d": manifeste3d_page, "messages": messages_page, "terminal": terminal_page, "cheatsheet": cheatsheet_page, "iceberg": iceberg_page, "sportmotion": sportmotion_page, "nightchat": nightchat_page, "notion": notion_page}
 
 # ------------------------------------------------------------------ rendu
 def sfx_track(path, total, events, starts):
