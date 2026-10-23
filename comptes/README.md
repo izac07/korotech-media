@@ -6,7 +6,7 @@ URL publique : `https://izac07.github.io/korotech-media/comptes/<slug>/posts/<do
 
 ## Règles communes
 - Rythme (décision de Goat du 18/10/2026) : 2 posts par jour sur chaque compte (les 2 créneaux du README), UNIQUEMENT DES REELS motion. Plus aucun carrousel. Soit 14 reels par semaine et par compte. Varier les sujets et les angles d'un reel à l'autre (les 2 reels d'une même journée ne doivent pas se ressembler).
-- Accroche forte, une seule idée par post, contenu exact et utile, aucun chiffre / test / témoignage inventé. Fin = action (enregistrer, partager, suivre, commenter si naturel ; jamais de promesse d'envoi en DM).
+- Accroche forte, une seule idée par post, contenu exact et utile, aucun chiffre / test / témoignage inventé. Fin = **mot-clé à commenter** du compte (décision du 23/10/2026, `ressources/mots-cles.json`) : la dernière scène l'affiche, la voix le dit (« Commente PLAN pour recevoir le plan 7 jours ») et la légende finit par « 💬 Commente <MOT> et je t'envoie <offre> en DM ». Goat envoie le lien en DM à la main (`ressources/messages-dm.md`) ; jamais le lien dans la légende.
 - Légende : accroche + bénéfice + appel à l'action + 5 à 7 hashtags de la niche (pas de hashtags génériques type #instagood).
 - Pas de contenu identique entre comptes : chaque compte a ses sujets, son ton, son visuel.
 - Reels : 40-45 s (100-120 mots de voix off), format motion de `tools/MOTION.md`, voix off ElevenLabs (scénario Make 9977445, champ `voix` = ID indiqué dans le README du compte), chemins `comptes/<slug>/posts/<dossier>/vo_<k>.mp3`.

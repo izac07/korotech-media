@@ -16,7 +16,7 @@ URL publique d'un fichier : `https://izac07.github.io/korotech-media/<chemin>`
 - **Accroches** : jamais « voici une méthode ». Priorité à l'émotion, la situation vécue, la curiosité ou le défi : « POV : … », « Personne ne t'a dit que… », « Arrête de… », « Le truc que je fais quand… ». Hook ≤ 3 lignes courtes.
 - **Varier la structure** : pas toujours « colle ce prompt ». Alterner : mini-histoire (problème → astuce → résultat), liste de 3, avant/après, mythe vs réalité, démonstration. Le prompt peut apparaître, mais ce n'est pas obligatoire.
 - **Reels = format motion « cheatsheet » validé par Goat le 16/10/2026** : 40-45 s, 5 scènes, 100-120 mots de voix off, une seule idée par reel. Spec et rendu : voir `tools/MOTION.md` (remplace l'ancien format `korotech.py reel`).
-- Chaque post finit par une action : enregistrer, partager à un ami, suivre, ou commenter (le mot-clé seulement si c'est naturel ; on ne promet PAS d'envoyer quelque chose en DM).
+- Chaque post finit par le **mot-clé à commenter** du compte (décision du 23/10/2026, voir `ressources/mots-cles.json`) : « 💬 Commente PROMPTS et je t'envoie les 10 prompts pour réviser en DM ». Goat répond en DM avec le lien (`ressources/messages-dm.md`). Jamais le lien dans la légende.
 - Reels : texte animé + **voix off ElevenLabs « Brian » (modèle Eleven v4)** sur TOUS les reels + musique lo-fi originale en fond (baissée automatiquement sous la voix).
 - Carrousels : sans musique (l'API Instagram ne le permet pas). Le contenu complet (prompt, liste) est DANS le carrousel.
 - Rester exact : pas de chiffres, résultats de « tests » ou anecdotes personnelles inventés. Ne jamais présenter un test comme réalisé s'il ne l'a pas été. Ajouter « l'IA peut se tromper » quand c'est pertinent.

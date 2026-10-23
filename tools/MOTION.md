@@ -115,3 +115,6 @@ Règles : information générale uniquement, jamais de promesse de rendement ni 
 Exemple : `tools/exemples/boucle-exemple/motion.json`. À tester sur 2-3 posts par semaine maximum, à côté des 40-45 s, puis comparer au bilan (x médiane).
 Champs du haut : `pas` (secondes par mot, défaut 0.3), `tenue` (s de phrase complète, défaut 1.2), `couleurs` = 2 paires `[fond, texte]`, optionnels `police`, `taille` (px, défaut 120).
 Scènes : 1 à 3 `{"type":"phrase","texte":"…"}`, 9 mots max par phrase (`**mot**` = souligné). Mécanique tirée d'une source mesurée : un mot par pas, le fond bascule à chaque pas, coupes sèches, texte visible dès la 1re image, la fin retombe sur la 1re couleur pour boucler. Musique + bruitages, pas de voix ni de sous-titres. Mêmes règles éditoriales que le compte (aucun chiffre inventé).
+
+## Mot-clé à commenter (tous les comptes, depuis le 23/10/2026)
+Chaque reel se termine par le mot-clé de son compte (`ressources/mots-cles.json` : `mot`, `offre`, `lien`). La **dernière scène** l'affiche (ex. `ctas` : « 💬 COMMENTE « PLAN » ») et sa `vo` dit « Commente plan pour recevoir le plan 7 jours gratuit ». `tools/verifie.py` met une ERREUR s'il n'est pas à l'écran. `duel3d` et `fable2d` ajoutent eux-mêmes la carte de fin. Légende : finir par « 💬 Commente <MOT> et je t'envoie <offre> en DM » ; jamais le lien.
