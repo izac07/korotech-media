@@ -20,19 +20,19 @@ body{width:1080px;height:1920px;overflow:hidden;background:__NUIT__;position:rel
 canvas#cv{position:absolute;left:0;top:0}
 .hdl{position:absolute;left:56px;top:70px;font:700 32px Inter;color:#fff;opacity:.55;z-index:5}
 .band{position:absolute;left:50%;top:235px;transform:translateX(-50%);z-index:6;white-space:nowrap;opacity:0}
-.band span{display:block;background:__PAPIER__;color:__ENCRE__;font:400 76px/1 Anton;letter-spacing:1px;text-transform:uppercase;padding:22px 64px 18px;
+.band span{display:block;background:__BANDFOND__;color:__BANDTEXTE__;font:400 76px/1 Anton;letter-spacing:1px;text-transform:uppercase;padding:22px 64px 18px;
   box-shadow:0 10px 0 rgba(0,0,0,.25);clip-path:polygon(0 0,100% 0,96% 50%,100% 100%,0 100%,4% 50%)}
-.badge{position:absolute;right:120px;top:390px;z-index:6;background:#fff;border:5px solid __ENCRE__;border-radius:18px;padding:10px 22px 6px;
+.badge{position:absolute;right:120px;top:390px;z-index:6;background:__BADGEFOND__;border:5px solid __BADGETEXTE__;border-radius:18px;padding:10px 22px 6px;
   display:flex;align-items:baseline;gap:16px;box-shadow:6px 6px 0 __ENCRE__;opacity:0;transform:rotate(3deg)}
-.badge b{font:400 34px Anton;color:__ENCRE__;letter-spacing:1px}.badge i{font:400 92px/1 Anton;font-style:normal;color:__ACC__;font-variant-numeric:tabular-nums}
+.badge b{font:400 34px Anton;color:__BADGETEXTE__;letter-spacing:1px}.badge i{font:400 92px/1 Anton;font-style:normal;color:__ACC__;font-variant-numeric:tabular-nums}
 .caps{position:absolute;left:70px;right:120px;top:1180px;z-index:7;display:flex;flex-wrap:wrap;justify-content:center;gap:12px 14px}
 .cap{display:none;flex-wrap:wrap;justify-content:center;gap:12px 14px}
 .stk{display:inline-block;font:400 70px/1.1 'Archivo Black';padding:8px 18px 10px;border-radius:10px;box-shadow:5px 5px 0 __ENCRE__;opacity:0}
-.stk.o{background:__ACC__;color:#fff}.stk.y{background:__JAUNE__;color:__ENCRE__}
+.stk.o{background:__ACC__;color:__TEXTEO__}.stk.y{background:__JAUNE__;color:__ENCRE__}
 .tampon{position:absolute;left:50%;top:960px;z-index:8;transform:translateX(-50%) rotate(-7deg);border:9px solid __VERT__;color:__VERT__;border-radius:18px;
   padding:8px 34px 4px;font:400 104px/1 Anton;letter-spacing:2px;white-space:nowrap;opacity:0;background:rgba(10,14,30,.55)}
 .fin{position:absolute;left:90px;right:140px;top:640px;z-index:8;display:flex;flex-direction:column;align-items:center;gap:22px;opacity:0}
-.fin b{font:400 112px/1 Anton;background:__ACC__;color:#fff;padding:16px 44px 10px;border-radius:18px;box-shadow:8px 8px 0 __ENCRE__;transform:rotate(-2deg)}
+.fin b{font:400 112px/1 Anton;background:__ACC__;color:__TEXTEO__;padding:16px 44px 10px;border-radius:18px;box-shadow:8px 8px 0 __ENCRE__;transform:rotate(-2deg)}
 .fin span{font:400 54px/1.15 'Archivo Black';background:__JAUNE__;color:__ENCRE__;padding:10px 26px;border-radius:12px;box-shadow:6px 6px 0 __ENCRE__;text-align:center;transform:rotate(1.5deg)}
 .cf{position:absolute;width:18px;height:26px;z-index:4;opacity:0}
 </style></head><body>
@@ -80,6 +80,11 @@ const DECORS={
   plans:{large:[[.2,2.5,9.2],[.2,1.5,-.8]],ecran:[[1.7,2.35,5.0],[1.7,2.4,-3.1]],mascotte:[[.3,1.55,5.6],[.3,.6,.8]],telephone:[[1.0,1.25,4.2],[1.05,.75,1.35]]},
   meubles:[['loungeSofa',{h:1.0,x:-1.7,z:-2.45}],['lampRoundFloor',{h:2.1,x:-3.15,z:-2.15}],['pottedPlant',{h:1.8,x:3.0,z:-2.4}],['tableCoffee',{h:.45,x:-1.7,z:-1.2}],
    ['rugRound',{w:3.4,x:.3,y:.004,z:.8}]]},
+ chambre_mda:{ciel:'nuit',ciel2:'aube',fen:[-1.25,3.4,3.2,3.1],M:[.6,0,.7],lit:[-1.75,0,-1.05],sol:[.55,0,.65],ecran:{type:'tableau',x:2.0,y:2.7,z:-3.18,w:2.1,h:1.31},tel:[1.35,0,1.25],lampe:[-3.0,1.15,-2.6],horloge:[2.95,4.75],
+  poussiere:[-3.4,.8,-2.9,1.2,1.4,.8],halteres:[1.55,0,-.35],
+  plans:{large:[[.1,2.3,8.8],[-.3,1.25,-.9]],ecran:[[2.0,2.6,5.2],[2.0,2.6,-3.1]],mascotte:[[.3,1.55,5.6],[.3,.6,.7]],telephone:[[1.15,1.25,4.2],[1.2,.75,1.25]]},
+  meubles:[['bedSingle',{h:.95,x:-1.75,z:-2.05},'#4a4a4a'],['sideTable',{h:.55,x:-3.0,z:-2.7}],['lampRoundTable',{h:.6,x:-3.0,y:.55,z:-2.7}],['rugRounded',{w:3.0,x:.5,y:.004,z:.6},'#3a3a3a'],
+   ['pottedPlant',{h:1.7,x:3.05,z:-2.45},'#3f5a46']]},
  chambre_nuit:{ciel:'nuit',fen:[1.4,3.4,3.4,3.0],M:[-.6,.5,-.9],ecran:{type:'mobile',x:1.25,y:1.18,z:-.2,w:.62,h:1.1},tel:null,lampe:[-2.25,1.15,-2.55],
   poussiere:[-3,.7,-2.6,1.4,1.2,1],
   plans:{large:[[0,2.4,9.0],[-.2,1.3,-.9]],ecran:[[1.25,1.25,2.6],[1.25,1.18,-.2]],mascotte:[[-.5,1.8,5.0],[-.6,1.05,-.9]],telephone:[[1.25,1.25,2.6],[1.25,1.18,-.2]]},
@@ -116,6 +121,10 @@ const city=canvasTex(1024,700);{const x=city.userData.x;const CI={nuit:[['#0b0f2
   for(const [[cl,lit],hmin,hmax] of [[BAT[0],250,520],[BAT[1],150,420]]){let px=-20;while(px<1024){const w=60+rnd()*110,h=hmin+rnd()*(hmax-hmin);x.fillStyle=cl;x.fillRect(px,700-h,w,h);
     for(let wy=700-h+18;wy<690;wy+=34)for(let wx=px+12;wx<px+w-16;wx+=26){x.fillStyle=rnd()<lit?'#ffd27a':(DEC.ciel=='jour'?'#dbe8f7':'#2f3770');x.fillRect(wx,wy,12,18);}px+=w+6;}}}
 mk(new THREE.PlaneGeometry(fw,fh),new THREE.MeshBasicMaterial({map:city}),fx,fy,-3.25);
+let ciel2=null;if(DEC.ciel2){const c2=canvasTex(1024,700);const x=c2.userData.x;const g=x.createLinearGradient(0,0,0,700);g.addColorStop(0,'#3a3478');g.addColorStop(.62,'#ff8f6b');g.addColorStop(1,'#ffd08a');
+  x.fillStyle=g;x.fillRect(0,0,1024,700);x.fillStyle='#ffe6b0';x.beginPath();x.arc(690,560,80,0,7);x.fill();
+  for(const [cl,hmin,hmax] of [['#3b2f5e',250,520],['#523a6a',150,420]]){let px=-20;while(px<1024){const w=60+rnd()*110,h=hmin+rnd()*(hmax-hmin);x.fillStyle=cl;x.fillRect(px,700-h,w,h);px+=w+6;}}
+  ciel2=mk(new THREE.PlaneGeometry(fw,fh),new THREE.MeshBasicMaterial({map:c2,transparent:true,opacity:0}),fx,fy,-3.24);}
 for(const [w,h,x,y] of [[fw+.4,.22,fx,fy+fh/2+.1],[fw+.4,.22,fx,fy-fh/2-.1],[.22,fh+.3,fx-fw/2-.1,fy],[.22,fh+.3,fx+fw/2+.1,fy],[.12,fh,fx,fy],[fw+.2,.1,fx,fy]])mk(B(w,h,.18),toon(COL.cadre),x,y,-3.2);
 // horloge
 let hhP=null,mhP=null;if(DEC.horloge){const clock=new THREE.Group();clock.position.set(DEC.horloge[0],DEC.horloge[1],-3.05);scene.add(clock);
@@ -151,6 +160,37 @@ const mouth=mk(B(.18,.045,.02),new THREE.MeshBasicMaterial({color:0x14141e}),0,.
 for(const sx of [-1,1])mk(B(.12,.06,.02),new THREE.MeshBasicMaterial({color:0xff9a8a}),sx*.36,.38,.432,M);
 const arms=[-1,1].map(sx=>{const p=new THREE.Group();p.position.set(sx*.6,.62,.05);M.add(p);mk(RB(.16,.44,.16,.07),toon(COL.mascotte),0,-.19,0,p,1.08);
   if(COL.accessoire=='serre')mk(RB(.19,.09,.19,.04),toon(COL.bandeau||'#ffffff'),0,-.33,0,p);return p;});
+// ---- personnage humain articulé (Mental d'Acier) : silhouette gris clair, poses selon l'humeur
+const HUM=COL.personnage=='humain';let F=null;const NV=(x=0,y=0,z=0)=>new THREE.Vector3(x,y,z);
+function ik(S,T,a,b,hint){const d0=NV().subVectors(T,S);let d=d0.length();const dir=d0.clone().normalize();d=Math.min(d,a+b-.001);
+  const x_=(a*a-b*b+d*d)/(2*d);const h=Math.sqrt(Math.max(0,a*a-x_*x_));const p=hint.clone().addScaledVector(dir,-hint.dot(dir)).normalize();return S.clone().addScaledVector(dir,x_).addScaledVector(p,h);}
+function setL(m,a,b){const d=NV().subVectors(b,a);const L=Math.max(.001,d.length());m.position.copy(a).addScaledVector(d,.5);m.quaternion.setFromUnitVectors(NV(0,1,0),d.clone().normalize());m.scale.set(1,L/m.userData.L+.1,1);}
+if(HUM){M.visible=false;const MH=new THREE.MeshStandardMaterial({color:LIN(COL.humain||'#d9d9d9'),roughness:.42,metalness:.05});
+  const cap=r=>{const m=new THREE.Mesh(new THREE.CapsuleGeometry(r,1,8,18),MH);m.userData.L=1+2*r;m.castShadow=true;scene.add(m);return m;};
+  const bal=r=>{const m=new THREE.Mesh(new THREE.SphereGeometry(r,32,24),MH);m.castShadow=true;scene.add(m);return m;};
+  F={torso:cap(.13),head:bal(.2),arms:[[cap(.062),cap(.056)],[cap(.062),cap(.056)]],legs:[[cap(.085),cap(.075)],[cap(.085),cap(.075)]],mains:[bal(.062),bal(.062)],pieds:[cap(.068),cap(.068)]};
+  F.phone=mk(B(.09,.17,.016),new THREE.MeshBasicMaterial({color:0x8fa3c8}),0,-10,0);F.pl=new THREE.PointLight(0xcfe0ff,0,2.6,2);scene.add(F.pl);}
+function poseF(P){setL(F.torso,P.hip,P.sh);const sd=P.side.clone().normalize();const up=NV().subVectors(P.sh,P.hip).normalize();
+  F.head.position.copy(P.sh).addScaledVector(up,.28).add(P.look||NV());
+  [0,1].forEach(i=>{const s_=i?1:-1;const S=P.sh.clone().addScaledVector(sd,.17*s_);const E_=ik(S,P.hands[i],.32,.3,P.elbow.clone().addScaledVector(sd,.5*s_));
+    setL(F.arms[i][0],S,E_);setL(F.arms[i][1],E_,P.hands[i]);F.mains[i].position.copy(P.hands[i]);
+    const Hp=P.hip.clone().addScaledVector(sd,.1*s_);const K=P.knees?P.knees[i]:ik(Hp,P.feet[i],.45,.45,P.knee);setL(F.legs[i][0],Hp,K);setL(F.legs[i][1],K,P.feet[i]);
+    const fw=(P.toe||NV(0,0,1)).clone().normalize();setL(F.pieds[i],P.feet[i].clone().addScaledVector(fw,-.03),P.feet[i].clone().addScaledVector(fw,.12));});}
+function baseHum(hu){return (hu=='telephone'||hu=='fatigue'||hu=='dort'||hu=='triste')?DEC.lit:DEC.sol;}
+function poseHum(hu,t){const b=baseHum(hu);const W=(x,y,z)=>NV(b[0]+x,b[1]+y,b[2]+z);let P;F.phone.position.set(0,-10,0);F.pl.intensity=0;
+  if(b===DEC.lit){const br=Math.sin(t*1.6)*.01;const ph=W(0,.98,.4);
+    P={hip:W(0,.62,0),sh:W(0,1.1+br,.15),hands:[W(-.05,.95,.36),W(.05,.95,.36)],feet:[W(-.15,.07,.52),W(.15,.07,.52)],knees:[W(-.14,.6,.45),W(.14,.6,.45)],
+       knee:NV(0,0,1),elbow:NV(0,-1,.3),side:NV(1,0,0),look:NV(0,-.07,.09)};
+    if(hu!='triste'){F.phone.position.copy(ph);F.phone.lookAt(F.head.position);const fl=.85+.15*Math.sin(t*7.3)*Math.sin(t*2.1);F.pl.position.copy(ph).add(NV(0,.08,.12));F.pl.intensity=.7*fl;}}
+  else if(hu=='sport'){const u=.5+.5*Math.cos(t*2*Math.PI/1.6);const h=.3+.36*u;const F0=W(-.62,.07,0);const L=1.12;const th=Math.asin(Math.min(.95,(h-.07)/L));
+    const dir=NV(Math.cos(th),Math.sin(th),0);const S=F0.clone().addScaledVector(dir,L);
+    const HP=F0.clone().addScaledVector(dir,.55);P={hip:HP,sh:S,knees:[0,1].map(i=>NV((HP.x+F0.x)/2,(HP.y+F0.y)/2,b[2]+(i?.1:-.1))),hands:[NV(S.x+.04,.04,b[2]-.26),NV(S.x+.04,.04,b[2]+.26)],feet:[NV(F0.x,.05,b[2]-.1),NV(F0.x,.05,b[2]+.1)],
+       knee:NV(0,1,0),elbow:NV(-1,0,0),side:NV(0,0,1),look:dir.clone().multiplyScalar(.04),toe:NV(0,-1,0)};}
+  else{const jump=hu=='content'?Math.abs(Math.sin(t*5))*.12:0;const sw=Math.sin(t*1.3)*.02;
+    const up_=hu=='content';
+    P={hip:W(0,.95+jump,0),sh:W(sw,1.45+jump,0),hands:up_?[W(-.42,1.95+jump+.04*Math.sin(t*8),.05),W(.42,1.95+jump,.05)]:[W(-.28,.95+jump,.06),W(.28,.95+jump,.06)],
+       feet:[W(-.13,.05+jump,0),W(.13,.05+jump,0)],knee:NV(0,0,1),elbow:up_?NV(0,0,-1):NV(0,-1,-.4),side:NV(1,0,0),look:NV(0,up_?.04:0,.02)};}
+  poseF(P);}
 // ---- téléphone (fin)
 const P=new THREE.Group();P.position.set(...(DEC.tel||[0,-20,0]));scene.add(P);
 mk(B(.7,1.3,.07),toon(0x111320),0,.65,0,P,1.03);
@@ -187,7 +227,7 @@ async function charger(){
 
 const PLANS=DEC.plans;
 const V=(a)=>new THREE.Vector3(a[0],a[1],a[2]);
-function plan(k){return PLANS[SC[k].plan]||PLANS.large;}
+function plan(k){if(HUM&&SC[k].plan=='mascotte'){const b=baseHum(SC[k].humeur);return [[b[0]+.55,1.55,b[2]+4.0],[b[0],.9,b[2]]];}return PLANS[SC[k].plan]||PLANS.large;}
 // ---- dessin de l'écran selon la scène
 function rr(x,X,Y,W,H,r,f){x.beginPath();x.roundRect(X,Y,W,H,r);x.fillStyle=f;x.fill();}
 function screenDraw(k,p,t){let kk=k;while(kk>0&&!SC[kk].ecran)kk--;if(kk!=k)p=1;const s=SC[kk].ecran||{type:'vide'};const x=scr.userData.x,SW=scr.userData.cv.width,SH=scr.userData.cv.height;
@@ -246,8 +286,11 @@ const RENDER=function(t){
   mouth.scale.set(hu=='content'?1.6:(hu=='sport'?1.2:1),hu=='content'?2.4:(hu=='sport'?1.8:(tired?.7:1)),1);
   arms.forEach((a,i)=>{a.rotation.x=hu=='travail'?-1.1+Math.sin(t*16+i*2)*.25:(hu=='sport'?-1.45*squat:(hu=='pensif'&&i?-1.9:0));
     a.rotation.z=hu=='content'?(i?-1:1)*(1.9+Math.sin(t*9)*.3):(hu=='triste'?(i?.04:-.04):(i?.12:-.12));});
+  if(HUM)poseHum(hu,t);
+  if(ciel2){let aube=0;SC.forEach((z,i)=>{if(i<=k&&z.lumiere=='aube')aube=i==k?c(tl/1.5):1;});ciel2.material.opacity=aube;
+    key.color.setRGB(.55+.45*aube,.62+.2*aube,.85-.3*aube);key.intensity=.9+1.9*aube;lamp.intensity=3.2*(1-aube)+.4;}
   // téléphone : visible quand la scène le demande
-  const showP=(s.plan=='telephone'||s.tampon)&&DEC.tel;P.visible=!!showP;if(showP){P.scale.setScalar(back(tl/.5));phoneDraw(p,t);}
+  const showP=(s.plan=='telephone'||(s.tampon&&!HUM))&&DEC.tel;P.visible=!!showP;if(showP){P.scale.setScalar(back(tl/.5));phoneDraw(p,t);}
   screenDraw(k,p,t);
   const dp=dust.geometry.attributes.position;for(let i=0;i<NP;i++){dp.array[i*3+1]=DEC.poussiere[1]+((pp[i*3+1]-DEC.poussiere[1]+t*.05*(1+i%3))%DEC.poussiere[4]);}dp.needsUpdate=true;
   composer.render();
@@ -322,9 +365,10 @@ def page(spec, theme, starts, durs, caps, total):
             ta = starts[k] + .25 * durs[k]
             ev += [{"k": "impact", "at": round(ta, 3)}, {"k": "sparkle", "at": round(ta + .1, 3)}]
     colj = dict(col, decor=spec.get("decor", "bureau"))
+    S = [dict(z, lumiere=sc[i].get("lumiere")) for i, z in enumerate(S)]
     colj["bois_hex"] = col["bois"]
     R = {"__FONTS__": K._font_faces(["Anton", "Archivo Black", "Inter"]), "__NUIT__": col["nuit"], "__PAPIER__": col["papier"], "__ENCRE__": col["encre"],
-         "__ACC__": col["acc"], "__JAUNE__": col["jaune"], "__VERT__": col["vert"], "__HANDLE__": H.escape(spec.get("handle", "")),
+         "__ACC__": col["acc"], "__JAUNE__": col["jaune"], "__VERT__": col["vert"], "__BANDFOND__": col.get("bandeau_fond", col["papier"]), "__BANDTEXTE__": col.get("bandeau_texte", col["encre"]), "__BADGEFOND__": col.get("badge_fond", "#ffffff"), "__BADGETEXTE__": col.get("badge_texte", col["encre"]), "__TEXTEO__": col.get("texte_o", "#ffffff"), "__HANDLE__": H.escape(spec.get("handle", "")),
          "__BANDS__": bands, "__BADGES__": badges, "__CAPS__": cap_html, "__TAMPONS__": tampons, "__FINS__": fins, "__CONFETTIS__": conf,
          "__IMPORTMAP__": import_map(), "__MODELES__": modeles(), "__D__": str(total), "__SC__": json.dumps(S, ensure_ascii=False), "__EV__": json.dumps(ev), "__COL__": json.dumps(colj)}
     out = TPL
