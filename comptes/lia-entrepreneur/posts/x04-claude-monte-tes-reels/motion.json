@@ -1,0 +1,95 @@
+{
+ "id": "LIA-X04",
+ "layout": "studio3d",
+ "music_seed": 9113,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Tes montages t'épuisent",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "HEURES",
+    "de": 0,
+    "a": 5
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "sans titre (47) — NE PAS FERMER"
+   },
+   "vo": "Cinq heures de montage pour un reel de quarante secondes ? Enregistre cette vidéo, il y a plus simple."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Tu donnes ton script",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Voici mon script et ma voix off. Monte le reel."
+     ],
+     [
+      "ia",
+      "C'est parti : coupes, sous-titres, musique."
+     ]
+    ]
+   },
+   "vo": "Un : tu donnes à Claude ton script et ta voix off. Pas de logiciel, pas de timeline."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Claude fait le montage",
+   "humeur": "travail",
+   "compteur": {
+    "label": "ÉTAPES",
+    "de": 0,
+    "a": 3,
+    "fmt": "#/3"
+   },
+   "ecran": {
+    "type": "montage",
+    "titre": "Claude — montage auto"
+   },
+   "vo": "Deux : Claude écrit le montage en code. Il coupe, il pose les sous-titres, il cale la musique sous la voix."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Il se relit",
+   "humeur": "normal",
+   "ecran": {
+    "type": "verif",
+    "titre": "Contrôle avant export",
+    "lignes": [
+     "Rien ne déborde",
+     "Lisible dès la 1re seconde",
+     "Mot-clé à la fin"
+    ]
+   },
+   "vo": "Trois : avant l'export, il vérifie que rien ne déborde et que le texte se lit dès la première seconde."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Toi, tu postes",
+   "humeur": "content",
+   "tampon": "PRÊT À POSTER",
+   "ecran": {
+    "type": "export",
+    "titre": "Claude — export"
+   },
+   "vo": "Toi, tu relis, et tu postes. Chez moi, quatorze reels par semaine sortent comme ça."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

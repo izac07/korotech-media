@@ -61,6 +61,7 @@ SCHEMA = {
     "interface": {"ordre": None, "types": {"hook": ["vo", "titre", "sous?", "notif?"], "toggles": ["vo", "carte", "items", "titre?"], "chat": ["vo", "messages", "titre?"],
         "grille": ["vo", "cartes", "titre?"], "compteur": ["vo", "valeur", "label", "lignes?", "titre?"], "cta": ["vo", "titre", "ctas"],
         "duo": ["vo", "qui", "bulle"], "punch": ["vo", "titre", "sous?"], "jauge": ["vo", "labels", "a", "de?", "unite?", "titre?"]}},  # PILOTE 23/10/2026 : cartes d'appli, tous comptes
+    "studio3d": {"ordre": None, "types": {p: ["vo", "bandeau", "ecran?", "compteur?", "humeur?", "tampon?", "carte?"] for p in ("large", "ecran", "mascotte", "telephone")}},  # PILOTE 24/10/2026 : scène 3D (LIA)
     "malin": {"ordre": None, "types": {
         "hook": ["vo", "big", "sub"],
         "list": ["vo", "title", "items", "slots?"],
@@ -98,7 +99,7 @@ def verifier(path):
         if k not in spec:
             err.append("champ du haut manquant : %s" % k)
     handle = spec.get("handle", "")
-    if handle in LAYOUT_DU_COMPTE and lay not in ("boucle", "carnet", "interface") and lay not in LAYOUT_DU_COMPTE[handle]:
+    if handle in LAYOUT_DU_COMPTE and lay not in ("boucle", "carnet", "interface", "studio3d") and lay not in LAYOUT_DU_COMPTE[handle]:
         err.append("le layout %s n'est pas celui de @%s (%s)" % (lay, handle, ", ".join(sorted(LAYOUT_DU_COMPTE[handle]))))
     theme = os.path.join(os.path.dirname(os.path.abspath(path)), "..", "..", "theme.json")
     if os.path.exists(theme):

@@ -179,3 +179,10 @@ Exemple : `comptes/lia-entrepreneur/posts/x03-14-reels-sans-monter/motion.json`.
 - `couleurs.sous_titres` : taille des sous-titres en px (64 conseillé, défaut 52).
 - `de` / `a` sur une scène `toggles` : libellés des interrupteurs pour cette scène (« Refusé » → « Validé »).
 - **Le cadeau = la chose exacte montrée dans la vidéo** (le prompt, le skill). Mot-clé propre au reel : champ `"mot_cle": {"mot", "offre", "lien"}` (remplace celui de `ressources/mots-cles.json` pour ce reel ; `verifie.py` le contrôle) + ajouter le message DM dans `ressources/messages-dm.md`.
+
+## studio3d (PILOTE du 24/10/2026, rebranding L'IA Entrepreneur) — petite scène 3D low poly
+Moteur : `tools/studio3d.py` (appelé par `motion.py`, layout `"studio3d"`). Exemple : `comptes/lia-entrepreneur/posts/x04-claude-monte-tes-reels/motion.json`.
+Bureau de nuit (ville, horloge qui s'emballe pendant le « bazar »), mascotte cube orange « Claude », écran qui change selon la scène, téléphone pour la fin ; la caméra glisse d'un plan à l'autre. Habillage : bandeau papier en haut, badge compteur, sous-titres en étiquettes orange et jaune (un mot à la fois), tampon vert + confettis, carte de fin.
+Scènes : `type` = plan (`large` | `ecran` | `mascotte` | `telephone`), `vo`, `bandeau` (court, majuscules automatiques), optionnels :
+`ecran` {type: `bazar` | `chat` (messages) | `montage` | `verif` (lignes) | `export`, titre}, `compteur` {label, de, a, fmt « #/3 »}, `humeur` (`fatigue` | `normal` | `travail` | `content`), `tampon` (« PRÊT À POSTER »), `carte` [ligne 1, ligne 2] (carte de fin du mot-clé).
+Histoire conseillée en 5-6 scènes, 30-45 s : problème (large, fatigue, bazar, compteur) → étapes où Claude fait (ecran / mascotte) → résultat (telephone, tampon) → mot-clé (carte).
