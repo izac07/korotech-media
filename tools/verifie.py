@@ -61,7 +61,7 @@ SCHEMA = {
     "interface": {"ordre": None, "types": {"hook": ["vo", "titre", "sous?", "notif?"], "toggles": ["vo", "carte", "items", "titre?"], "chat": ["vo", "messages", "titre?"],
         "grille": ["vo", "cartes", "titre?"], "compteur": ["vo", "valeur", "label", "lignes?", "titre?"], "cta": ["vo", "titre", "ctas"],
         "duo": ["vo", "qui", "bulle"], "punch": ["vo", "titre", "sous?"], "jauge": ["vo", "labels", "a", "de?", "unite?", "titre?"]}},  # PILOTE 23/10/2026 : cartes d'appli, tous comptes
-    "studio3d": {"ordre": None, "types": {p: ["vo", "bandeau", "ecran?", "compteur?", "humeur?", "tampon?", "carte?"] for p in ("large", "ecran", "mascotte", "telephone")}},  # PILOTE 24/10/2026 : scène 3D (LIA)
+    "studio3d": {"ordre": None, "types": {p: ["vo", "bandeau", "ecran?", "compteur?", "humeur?", "tampon?", "carte?", "qui?", "bocal?", "lumiere?"] for p in ("large", "ecran", "mascotte", "telephone", "toi")}},  # PILOTE 24/10/2026 : scène 3D (LIA)
     "malin": {"ordre": None, "types": {
         "hook": ["vo", "big", "sub"],
         "list": ["vo", "title", "items", "slots?"],
@@ -133,7 +133,7 @@ def verifier(path):
         if not 6 <= duree <= 10: att.append("boucle : durée estimée %.1f s (cible 6-10 s)" % duree)
         for k, s in enumerate(sc):
             if len(s.get("texte", "").split()) > 9: att.append("scène %d : plus de 9 mots, la phrase ne tiendra pas en 3 lignes" % k)
-    elif any(s.get("type") == "duo" for s in sc):  # format dialogue (questions qui relancent) : plus long, 50-80 s
+    elif any(s.get("type") == "duo" or s.get("qui") == "claude" for s in sc):  # format dialogue (interface duo, ou studio3d avec qui) (questions qui relancent) : plus long, 50-80 s
         if not 120 <= n <= 200:
             err.append("dialogue : %d mots de voix (cible 120-200, soit 50-80 s)" % n)
         for k, s in enumerate(sc):
@@ -251,7 +251,7 @@ def verifier(path):
 
     # structure voulue par Goat (23/10/2026) : accroche, puis tout de suite « Enregistre cette vidéo », puis les conseils
     if lay != "boucle" and sc and sc[0].get("vo") and not spec.get("sans_mot_cle"):
-        debut = sc[:2] if sc[0].get("type") == "duo" else sc[:1]  # dialogue : la question, puis la réponse qui dit « enregistre »
+        debut = sc[:2] if (sc[0].get("type") == "duo" or sc[0].get("qui")) else sc[:1]  # dialogue : la question, puis la réponse qui dit « enregistre »
         if not any(re.search(r"\benregistre", norm(s.get("say") or s.get("vo", ""))) for s in debut):
             err.append("scène 0 : après l'accroche, la voix doit dire « Enregistre cette vidéo » (ex. « … Enregistre-la, tu vas en avoir besoin. »)")
 

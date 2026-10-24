@@ -1,0 +1,161 @@
+{
+ "id": "LIA-X05",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 9118,
+ "handle": "lia.entrepreneur",
+ "couleurs": {
+  "personnage": "humain",
+  "les_deux": true,
+  "humain": "#d7c8b6"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "qui": "moi",
+   "bandeau": "Claude perd le fil ?",
+   "vo": "Claude… pourquoi tu perds le fil au bout d'une heure ?"
+  },
+  {
+   "type": "mascotte",
+   "qui": "claude",
+   "bandeau": "Il déborde",
+   "humeur": "normal",
+   "bocal": {
+    "de": 0,
+    "a": 12
+   },
+   "vo": "Je ne perds pas le fil, je déborde. Enregistre cette vidéo : quatre réflexes, et t'as rien à noter, tout est à la fin."
+  },
+  {
+   "type": "mascotte",
+   "qui": "claude",
+   "bandeau": "Sa mémoire",
+   "humeur": "triste",
+   "bocal": {
+    "de": 12,
+    "a": 92,
+    "labels": [
+     "consignes",
+     "fichiers",
+     "commandes",
+     "conversation"
+    ]
+   },
+   "vo": "À chaque message, je relis tout : tes consignes, les fichiers ouverts, toute la conversation. Plus ça se remplit, plus j'oublie."
+  },
+  {
+   "type": "toi",
+   "qui": "moi",
+   "bandeau": "Je fais quoi ?",
+   "vo": "Ok… je fais quoi, alors ?"
+  },
+  {
+   "type": "ecran",
+   "qui": "claude",
+   "bandeau": "Réflexe 1 : /context",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "/context"
+     ],
+     [
+      "ia",
+      "Voici ce qui remplit ma mémoire, et la place qui reste."
+     ]
+    ]
+   },
+   "vo": "Réflexe un : tape slash context. Je te montre ce qui remplit ma mémoire, et la place qui reste."
+  },
+  {
+   "type": "toi",
+   "qui": "moi",
+   "bandeau": "Presque plein ?",
+   "vo": "Et quand c'est presque plein ?"
+  },
+  {
+   "type": "mascotte",
+   "qui": "claude",
+   "bandeau": "Réflexe 2 : /compact",
+   "humeur": "normal",
+   "bocal": {
+    "de": 92,
+    "a": 35
+   },
+   "vo": "Réflexe deux : slash compact. Je résume la conversation et je repars du résumé. Dis-moi quoi garder : les décisions, les fichiers modifiés."
+  },
+  {
+   "type": "toi",
+   "qui": "moi",
+   "bandeau": "Il tourne en rond ?",
+   "vo": "Et si tu tournes en rond ?"
+  },
+  {
+   "type": "mascotte",
+   "qui": "claude",
+   "bandeau": "Réflexe 3 : /clear",
+   "humeur": "content",
+   "bocal": {
+    "de": 35,
+    "a": 5
+   },
+   "vo": "Réflexe trois : demande-moi une passation en cinq lignes, tape slash clear, et colle-la. Tu repars avec moi, tout neuf."
+  },
+  {
+   "type": "toi",
+   "qui": "moi",
+   "bandeau": "Plein de fichiers ?",
+   "vo": "Et pour fouiller plein de fichiers ?"
+  },
+  {
+   "type": "ecran",
+   "qui": "claude",
+   "bandeau": "Réflexe 4 : sous-agent",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Utilise un sous-agent pour trouver où on gère les factures."
+     ],
+     [
+      "ia",
+      "Le sous-agent a fouillé. Voici son résumé."
+     ]
+    ]
+   },
+   "vo": "Réflexe quatre : un sous-agent. Il fouille les fichiers avec sa propre mémoire, et moi, je reçois juste son résumé."
+  },
+  {
+   "type": "ecran",
+   "qui": "claude",
+   "bandeau": "Les 4 réflexes",
+   "ecran": {
+    "type": "verif",
+    "titre": "À garder sous la main",
+    "lignes": [
+     "/context : voir",
+     "/compact : résumer",
+     "/clear : repartir",
+     "Sous-agent : fouiller"
+    ]
+   },
+   "vo": "Slash context pour voir, slash compact pour résumer, slash clear pour repartir, un sous-agent pour fouiller."
+  },
+  {
+   "type": "mascotte",
+   "qui": "claude",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à me déléguer"
+   ],
+   "vo": "Commente IA pour recevoir les dix tâches à me déléguer, prêtes à copier."
+  }
+ ]
+}

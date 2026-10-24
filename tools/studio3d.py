@@ -64,9 +64,9 @@ const back=x=>{x=c(x);const s=1.7;return 1+(s+1)*Math.pow(x-1,3)+s*Math.pow(x-1,
 const $=i=>document.getElementById(i);
 const LIN=c_=>new THREE.Color(c_);
 const DECORS={
- bureau:{ciel:'nuit',fen:[0,3.5,7.4,5],M:[-.8,1.08,-.15],ecran:{type:'moniteur',x:.75,y:2.05,z:-.55,w:1.9,h:1.19},tel:[-.05,1.08,.5],lampe:[1.85,1.78,-.35],horloge:[-2.2,4.7],objetsBureau:true,
+ bureau:{ciel:'nuit',fen:[0,3.5,7.4,5],M:[-.8,1.08,-.15],sol:[1.55,0,1.45],humRy:-.75,lit:[1.55,0,1.45],ecran:{type:'moniteur',x:.75,y:2.05,z:-.55,w:1.9,h:1.19},tel:[-.05,1.08,.5],lampe:[1.85,1.78,-.35],horloge:[-2.2,4.7],objetsBureau:true,
   poussiere:[1.45,1.2,-.7,1.1,1.6,1.3],
-  plans:{large:[[-.1,2.5,8.6],[-.1,1.85,-.4]],ecran:[[.75,2.0,4.6],[.75,1.9,-.5]],mascotte:[[-.6,1.9,5.0],[-.6,1.55,-.15]],telephone:[[-.05,1.9,3.9],[-.05,1.6,.5]]},
+  plans:{large:[[-.1,2.5,8.6],[-.1,1.85,-.4]],ecran:[[.75,2.0,4.6],[.75,1.9,-.5]],mascotte:[[-.7,2.0,5.9],[-.75,1.75,-.15]],telephone:[[-.05,1.9,3.9],[-.05,1.6,.5]]},
   meubles:[['desk',{libre:true,w:4.4,h:1.08,d:1.8,x:0,z:0},'BOIS'],['chairDesk',{h:1.35,x:2.15,z:1.25,ry:-2.4}],['computerKeyboard',{w:.95,x:.75,y:1.08,z:.28},'#2b2f45'],
    ['computerMouse',{w:.16,x:1.38,y:1.08,z:.32},'#2b2f45'],['lampRoundTable',{h:.85,x:1.85,y:1.08,z:-.42}],['pottedPlant',{h:1.8,x:-2.9,z:.9}],
    ['plantSmall2',{h:.5,x:-1.45,y:1.08,z:-.55}],['bookcaseOpenLow',{h:1.45,x:3.05,z:-2.55}]]},
@@ -165,7 +165,7 @@ const HUM=COL.personnage=='humain';let F=null;const NV=(x=0,y=0,z=0)=>new THREE.
 function ik(S,T,a,b,hint){const d0=NV().subVectors(T,S);let d=d0.length();const dir=d0.clone().normalize();d=Math.min(d,a+b-.001);
   const x_=(a*a-b*b+d*d)/(2*d);const h=Math.sqrt(Math.max(0,a*a-x_*x_));const p=hint.clone().addScaledVector(dir,-hint.dot(dir)).normalize();return S.clone().addScaledVector(dir,x_).addScaledVector(p,h);}
 function setL(m,a,b){const d=NV().subVectors(b,a);const L=Math.max(.001,d.length());m.position.copy(a).addScaledVector(d,.5);m.quaternion.setFromUnitVectors(NV(0,1,0),d.clone().normalize());m.scale.set(1,L/m.userData.L+.1,1);}
-if(HUM){M.visible=false;const MH=new THREE.MeshStandardMaterial({color:LIN(COL.humain||'#d9d9d9'),roughness:.42,metalness:.05});
+const DUO=!!COL.les_deux;if(HUM){if(!DUO)M.visible=false;const MH=new THREE.MeshStandardMaterial({color:LIN(COL.humain||'#d9d9d9'),roughness:.42,metalness:.05});
   const cap=r=>{const m=new THREE.Mesh(new THREE.CapsuleGeometry(r,1,8,18),MH);m.userData.L=1+2*r;m.castShadow=true;scene.add(m);return m;};
   const bal=r=>{const m=new THREE.Mesh(new THREE.SphereGeometry(r,32,24),MH);m.castShadow=true;scene.add(m);return m;};
   F={torso:cap(.13),head:bal(.2),arms:[[cap(.062),cap(.056)],[cap(.062),cap(.056)]],legs:[[cap(.085),cap(.075)],[cap(.085),cap(.075)]],mains:[bal(.062),bal(.062)],pieds:[cap(.068),cap(.068)]};
@@ -188,9 +188,32 @@ function poseHum(hu,t){const b=baseHum(hu);const W=(x,y,z)=>NV(b[0]+x,b[1]+y,b[2
        knee:NV(0,1,0),elbow:NV(-1,0,0),side:NV(0,0,1),look:dir.clone().multiplyScalar(.04),toe:NV(0,-1,0)};}
   else{const jump=hu=='content'?Math.abs(Math.sin(t*5))*.12:0;const sw=Math.sin(t*1.3)*.02;
     const up_=hu=='content';
-    P={hip:W(0,.95+jump,0),sh:W(sw,1.45+jump,0),hands:up_?[W(-.42,1.95+jump+.04*Math.sin(t*8),.05),W(.42,1.95+jump,.05)]:[W(-.28,.95+jump,.06),W(.28,.95+jump,.06)],
+    const parle=hu=='parle';P={hip:W(0,.95+jump,0),sh:W(sw,1.45+jump,0),hands:parle?[W(-.28,.95,.06),W(.3,1.28+.07*Math.sin(t*5.5),.3)]:up_?[W(-.42,1.95+jump+.04*Math.sin(t*8),.05),W(.42,1.95+jump,.05)]:[W(-.28,.95+jump,.06),W(.28,.95+jump,.06)],
        feet:[W(-.13,.05+jump,0),W(.13,.05+jump,0)],knee:NV(0,0,1),elbow:up_?NV(0,0,-1):NV(0,-1,-.4),side:NV(1,0,0),look:NV(0,up_?.04:0,.02)};}
+  const ry=DEC.humRy||0;if(ry){const Bv=NV(...b),Y=NV(0,1,0);const R_=p=>p.clone().sub(Bv).applyAxisAngle(Y,ry).add(Bv);const Rv=v=>v&&v.clone().applyAxisAngle(Y,ry);
+    P.hip=R_(P.hip);P.sh=R_(P.sh);P.hands=P.hands.map(R_);P.feet=P.feet.map(R_);if(P.knees)P.knees=P.knees.map(R_);P.side=Rv(P.side);P.knee=Rv(P.knee);P.elbow=Rv(P.elbow);P.look=Rv(P.look);P.toe=Rv(P.toe||NV(0,0,1));}
   poseF(P);}
+// ---- bocal de mémoire autour de Claude (scènes avec « bocal » : {de, a, labels}) : l'eau monte, les étiquettes tombent, le compteur suit
+let BOC=null;if(SC.some(z=>z.bocal)){const g=new THREE.Group();g.position.set(DEC.M[0],DEC.M[1],DEC.M[2]);scene.add(g);const R0=.92,H0=1.6;
+  mk(new THREE.CylinderGeometry(1.0,1.04,.14,48),toon('#c8693c'),0,-.06,0,g,1.02);
+  mk(new THREE.CylinderGeometry(R0,R0,H0,48,1,true),new THREE.MeshStandardMaterial({color:0xd8ecff,transparent:true,opacity:.17,roughness:.04,metalness:.1,side:THREE.DoubleSide,depthWrite:false}),0,H0/2,0,g);
+  mk(new THREE.TorusGeometry(R0,.025,10,48),new THREE.MeshStandardMaterial({color:0xe8f4ff,transparent:true,opacity:.5}),0,H0,0,g).rotation.x=Math.PI/2;
+  const water=mk(new THREE.CylinderGeometry(R0*.96,R0*.96,1,48),new THREE.MeshStandardMaterial({color:0x3d8be0,transparent:true,opacity:.38,roughness:.08,depthWrite:false}),0,.5,0,g);
+  const pl=canvasTex(512,128);const plate=mk(new THREE.PlaneGeometry(.9,.225),new THREE.MeshBasicMaterial({map:pl,transparent:true}),0,.04,1.05,g);plate.rotation.x=-.25;
+  const labs=[];SC.forEach(z=>{if(z.bocal&&z.bocal.labels)z.bocal.labels.forEach(l=>{if(!labs.find(x=>x.txt==l)){const tx=canvasTex(320,96);const x=tx.userData.x;
+    x.fillStyle='#e9e4dc';x.beginPath();x.roundRect(4,4,312,88,22);x.fill();x.strokeStyle=COL.acc;x.lineWidth=6;x.stroke();x.fillStyle='#1b2147';x.font='800 40px Inter';x.textAlign='center';x.fillText(l,160,62);tx.needsUpdate=true;
+    const m=mk(new THREE.PlaneGeometry(.62,.19),new THREE.MeshBasicMaterial({map:tx,transparent:true,depthWrite:false}),0,-5,0,g);m.renderOrder=3;labs.push({txt:l,m,i:labs.length});}});});
+  BOC={g,water,pl,labs,H0};g.visible=false;}
+function bocal(t,k){if(!BOC)return 0;let niv=0,vu=false,maj=null;
+  SC.forEach((z,i)=>{if(!z.bocal||t<z.a)return;vu=true;const q=eo((t-z.a-.3)/Math.max(.5,(z.b-z.a)*.8));niv=(z.bocal.de+(z.bocal.a-z.bocal.de)*q)/100;maj=z;});
+  BOC.g.visible=vu;if(!vu)return 0;const h=Math.max(.001,niv*BOC.H0);BOC.water.scale.y=h;BOC.water.position.y=h/2;
+  // étiquettes : elles tombent une à une pendant la scène qui les ajoute, restent tant que le bocal est plein, disparaissent quand il se vide
+  BOC.labs.forEach((L,j)=>{let t0=null;SC.forEach(z=>{if(z.bocal&&z.bocal.labels&&t0===null){const n=z.bocal.labels.indexOf(L.txt);if(n>=0)t0=z.a+.5+n*((z.b-z.a-1)/z.bocal.labels.length);}});
+    const on=t0!==null&&t>=t0&&niv>.3;const ang=j*1.9;const yy=.35+((j*.37)%1)*.9;const fall=back((t-t0)/.6);
+    L.m.visible=on;if(on){L.m.position.set((j%2?1:-1)*(.52+.08*(j>>1)),yy+(1-fall)*1.4+Math.sin(t*1.3+j)*.03,.42-.12*(j>>1));L.m.rotation.z=Math.sin(t*.9+j)*.08;}});
+  const x=BOC.pl.userData.x;x.clearRect(0,0,512,128);x.fillStyle='#e8ded0';x.beginPath();x.roundRect(4,4,504,120,20);x.fill();x.strokeStyle='#1b2147';x.lineWidth=6;x.stroke();
+  x.fillStyle='#1b2147';x.font='800 44px Inter';x.fillText('mémoire',36,82);x.fillStyle=niv>.75?'#e5383b':(niv>.5?COL.acc:'#2fd36b');x.font='900 64px Inter';x.textAlign='right';x.fillText(Math.round(niv*100)+' %',480,88);x.textAlign='left';BOC.pl.needsUpdate=true;
+  return niv;}
 // ---- téléphone (fin)
 const P=new THREE.Group();P.position.set(...(DEC.tel||[0,-20,0]));scene.add(P);
 mk(B(.7,1.3,.07),toon(0x111320),0,.65,0,P,1.03);
@@ -227,7 +250,8 @@ async function charger(){
 
 const PLANS=DEC.plans;
 const V=(a)=>new THREE.Vector3(a[0],a[1],a[2]);
-function plan(k){if(HUM&&SC[k].plan=='mascotte'){const b=baseHum(SC[k].humeur);return [[b[0]+.55,1.55,b[2]+4.0],[b[0],.9,b[2]]];}return PLANS[SC[k].plan]||PLANS.large;}
+function plan(k){if(HUM&&SC[k].plan=='toi'){const b=DEC.sol;return [[b[0]-1.1,1.75,b[2]+3.4],[b[0]-.15,1.25,b[2]]];}
+  if(HUM&&!DUO&&SC[k].plan=='mascotte'){const b=baseHum(SC[k].humeur);return [[b[0]+.55,1.55,b[2]+4.0],[b[0],.9,b[2]]];}return PLANS[SC[k].plan]||PLANS.large;}
 // ---- dessin de l'écran selon la scène
 function rr(x,X,Y,W,H,r,f){x.beginPath();x.roundRect(X,Y,W,H,r);x.fillStyle=f;x.fill();}
 function screenDraw(k,p,t){let kk=k;while(kk>0&&!SC[kk].ecran)kk--;if(kk!=k)p=1;const s=SC[kk].ecran||{type:'vide'};const x=scr.userData.x,SW=scr.userData.cv.width,SH=scr.userData.cv.height;
@@ -286,7 +310,10 @@ const RENDER=function(t){
   mouth.scale.set(hu=='content'?1.6:(hu=='sport'?1.2:1),hu=='content'?2.4:(hu=='sport'?1.8:(tired?.7:1)),1);
   arms.forEach((a,i)=>{a.rotation.x=hu=='travail'?-1.1+Math.sin(t*16+i*2)*.25:(hu=='sport'?-1.45*squat:(hu=='pensif'&&i?-1.9:0));
     a.rotation.z=hu=='content'?(i?-1:1)*(1.9+Math.sin(t*9)*.3):(hu=='triste'?(i?.04:-.04):(i?.12:-.12));});
-  if(HUM)poseHum(hu,t);
+  const niv=bocal(t,k);if(BOC)M.position.y+=Math.max(0,niv*1.6-.55)*.55;
+  const parleC=s.qui=='claude'&&tl>.25&&t<s.b-.6, parleM=s.qui=='moi'&&tl>.25&&t<s.b-.6;
+  if(parleC)mouth.scale.y*=1+2.2*Math.abs(Math.sin(t*14));
+  if(HUM){poseHum(DUO?(parleM?'parle':'normal'):hu,t);if(parleM)F.head.position.y+=Math.abs(Math.sin(t*9))*.018;}
   if(ciel2){let aube=0;SC.forEach((z,i)=>{if(i<=k&&z.lumiere=='aube')aube=i==k?c(tl/1.5):1;});ciel2.material.opacity=aube;
     key.color.setRGB(.55+.45*aube,.62+.2*aube,.85-.3*aube);key.intensity=.9+1.9*aube;lamp.intensity=3.2*(1-aube)+.4;}
   // téléphone : visible quand la scène le demande
@@ -365,7 +392,7 @@ def page(spec, theme, starts, durs, caps, total):
             ta = starts[k] + .25 * durs[k]
             ev += [{"k": "impact", "at": round(ta, 3)}, {"k": "sparkle", "at": round(ta + .1, 3)}]
     colj = dict(col, decor=spec.get("decor", "bureau"))
-    S = [dict(z, lumiere=sc[i].get("lumiere")) for i, z in enumerate(S)]
+    S = [dict(z, lumiere=sc[i].get("lumiere"), qui=sc[i].get("qui"), bocal=sc[i].get("bocal")) for i, z in enumerate(S)]
     colj["bois_hex"] = col["bois"]
     R = {"__FONTS__": K._font_faces(["Anton", "Archivo Black", "Inter"]), "__NUIT__": col["nuit"], "__PAPIER__": col["papier"], "__ENCRE__": col["encre"],
          "__ACC__": col["acc"], "__JAUNE__": col["jaune"], "__VERT__": col["vert"], "__BANDFOND__": col.get("bandeau_fond", col["papier"]), "__BANDTEXTE__": col.get("bandeau_texte", col["encre"]), "__BADGEFOND__": col.get("badge_fond", "#ffffff"), "__BADGETEXTE__": col.get("badge_texte", col["encre"]), "__TEXTEO__": col.get("texte_o", "#ffffff"), "__HANDLE__": H.escape(spec.get("handle", "")),
