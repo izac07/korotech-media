@@ -1,61 +1,64 @@
-# L'IA Entrepreneur — @lia.entrepreneur
+# L'IA Entrepreneur · Claude au boulot — @lia.entrepreneur
 
 - ID Instagram : 17841420788582578  ·  préfixe des posts : LIA
 - Créneaux : 12:30 et 18:30 — 2 REELS par jour (décision de Goat du 18/10/2026 : plus aucun carrousel)
-- Voix off : nPczCjzI2devNBz1zQrb (Brian)
-- Cible : Freelances, indépendants, créateurs et gérants de TPE (25-45 ans) qui veulent automatiser leur Instagram et leur business avec Claude. Tutoiement.
-- Concept (décision de Goat du 17/10/2026, inspiré de comptes type « business avec Claude ») : « J'automatise mon Instagram avec Claude, je te montre comment ». On montre le VRAI système de Goat (Claude écrit et rend les posts, file d'attente avec veto, Make publie, bilan du dimanche) — coulisses réelles, jamais de résultat inventé.
-- Objectif : VENDRE. Produit prévu : « Kit Insta automatisé avec Claude » (instructions Claude, modèles de reels/carrousels, schéma Make, guide pas à pas) puis offre « je l'installe pour toi ». Tant que le kit n'existe pas : pas de « lien en bio » ni de prix ; on construit l'audience et la confiance. Quand il existera, 1 post sur 4 environ y mène naturellement.
+- Voix off : nPczCjzI2devNBz1zQrb (Brian). Dans les dialogues, Claude = Alice (Xb7hH8MSUJpSbSDYk0k2).
+- Cible : freelances, indépendants, créateurs et gérants de TPE (25-45 ans) qui veulent gagner du temps avec Claude. Tutoiement.
+
+## Rebranding du 24/10/2026 (validé par Goat) : « Claude au boulot »
+Chaque reel montre **Claude faire une vraie tâche d'entrepreneur**, chez Goat, et comment le refaire. Détail : `rebranding.md`.
+- La preuve, c'est le vrai système de Goat (6 comptes, 14 reels par semaine et par compte, écrits par Claude, montés en code, publiés par Make, avec veto). Jamais de résultat, de chiffre ou de témoignage inventé.
+- La voix dit **« Claude »**, jamais « l'IA » (règle du 24/10/2026, contrôlée par `verifie.py`).
+- Univers : un petit bureau de nuit où travaille **la mascotte Claude** (cube orange, visage en pixels). Pas de logo Claude/Anthropic : seulement le nom et notre mascotte.
+- Couleurs : nuit `#141a3a`, orange `#ff7a3d`, jaune `#ffd23f`, vert `#2fd36b`, papier `#f4e7cf`, encre `#1b2147`.
+
+## Formats (voir tools/MOTION.md)
+1. **`studio3d`** — le visage du compte. **3 reels par semaine** (lundi, mercredi, vendredi à 18:30). 5-6 scènes, 30-45 s : problème (plan `large`, humeur `fatigue`, écran `bazar`, compteur) → Claude fait (plans `ecran` / `mascotte`, humeur `travail`) → résultat (`telephone`, `tampon`) → mot-clé (`carte`). Exemple : `posts/x04-claude-monte-tes-reels/motion.json`. Rendu lent sans carte graphique (environ 25 min par reel dans le cloud) : ne jamais dépasser 3 par semaine dans la routine.
+2. **Tuto en étapes** (`interface` + `etape` + écrans `punch`) — exemple `posts/x03-14-reels-sans-monter/motion.json`.
+3. **Dialogue toi ↔ Claude** (`interface` + `duo`, 2 voix) — exemple `posts/x02-claude-deborde/motion.json`.
+Les formats 2 et 3 prennent **les couleurs du rebranding** : copier ce bloc dans le motion.json :
+```
+"couleurs": {"fond": "linear-gradient(180deg,#141a3a,#232a5c)", "encre": "#f4e7cf", "acc": "#ff7a3d", "acc_texte": "#ff9a63",
+  "carte": "#1d2450", "carte_encre": "#f4e7cf", "ligne": "rgba(244,231,207,.12)", "ligne2": "#2e3670", "doux": "#9aa3c7",
+  "sur": "#ffffff", "bulle": "#2a3166", "tuile_encre": "#1b2147", "tuiles": ["#ff7a3d", "#ffd23f", "#ffd23f", "#ff7a3d"],
+  "bord": "2px solid rgba(255,122,61,.35)", "blobs": ["rgba(255,122,61,.25)", "rgba(255,210,63,.14)", "rgba(123,92,255,.22)"],
+  "police": "Archivo Black", "espacement": "0px", "sous_titres": 64, "mascotte": "#e8794a"}
+```
+Alterner les formats 2 et 3 sur les 11 autres créneaux ; jamais deux fois le même format le même jour.
 
 ## Piliers
-- Coulisses du système (ce reel s'est fait tout seul, la semaine générée en une nuit, la file et le veto, ce que ça coûte) — 35 %
-- Tutos Claude (prompts, instructions de projet, tâches planifiées, faire écrire légendes/scripts/carrousels) — 30 %
-- Automatisations Make / Instagram (publier automatiquement, récupérer ses stats, bilan hebdo, outils) — 20 %
-- Erreurs et vérités (ce qui casse, les coûts réels, pourquoi relire, mythes) — 15 %
+- **Claude fait à ta place** (40 %) : monter un reel, répondre à un client, faire un devis, trier ses mails, préparer sa semaine, relancer une facture.
+- **Tutos Claude** (30 %) : projets, instructions, skills, connecteurs, tâches planifiées, Claude Code, les réflexes (/context, /compact, /clear, sous-agents).
+- **Coulisses de mon système** (20 %) : ce qui tourne chez Goat, ce que ça coûte, ce qui casse et comment c'est réparé.
+- **Erreurs et vérités** (10 %) : ce que Claude fait mal, pourquoi relire, les mythes.
 
-## Formats
-- Reels : layout `claudeflow` (coulisses : conversation Claude → file d'attente → publication) en priorité ; layout `iceberg` pour les mythes / vérités. Voir tools/MOTION.md.
-- Carrousels : PLUS DE CARROUSELS (décision du 18/10/2026).
+## Fin de chaque reel
+- Par défaut : « Commente IA pour recevoir les dix tâches à déléguer à Claude » (`ressources/mots-cles.json`).
+- Quand la vidéo montre un prompt, un skill ou un modèle précis : le cadeau = cette chose, avec un mot-clé propre au reel (`"mot_cle"` dans le motion.json + message dans `ressources/messages-dm.md`, voir LIA-X03 / PROMPT). Ne créer un nouveau mot-clé que si la ressource existe vraiment (fichier écrit et en ligne).
 
 ## Règles spécifiques
-- Pas de promesse de revenus ni de « deviens riche avec l'IA ». Pas de chiffres d'abonnés/vues inventés : uniquement ce qui est vrai chez Goat.
-- Toujours rappeler de relire / vérifier ce que produit l'IA quand c'est pertinent.
-- Ne jamais inventer d'études ou de témoignages. Pas de logo Claude/Anthropic, seulement le nom.
-- Pas d'« écris X en commentaire » tant que la réponse automatique en DM n'est pas branchée (décision de Goat : on attend l'engagement).
+- Pas de promesse de revenus ni de « deviens riche avec Claude ». Pas de chiffres d'abonnés/vues inventés : uniquement ce qui est vrai chez Goat.
+- Toujours rappeler de relire / vérifier ce que produit Claude quand c'est pertinent.
+- Ne jamais inventer d'études, de témoignages, ni de fonctions de Claude qui n'existent pas.
 
 ## Banque d'idées (rayer / retirer quand c'est fait)
-- Comment Claude prépare 14 posts en une nuit (coulisses)
-- La file d'attente : mon droit de veto avant publication
-- Les instructions que je donne à Claude pour un compte
-- Ce que me coûte vraiment ce système chaque mois
-- Ce qui a cassé cette semaine (et comment je l'ai réparé)
-- Faire écrire un carrousel à Claude : le prompt
-- Le bilan du dimanche : Claude lit mes stats
-- Publier sur Instagram avec Make : le schéma
-- Pourquoi je relis encore tout (erreurs réelles de l'IA)
-- Créer une tâche planifiée avec Claude
-- Le prompt qui écrit tes relances de factures impayées
-- Transformer un vocal de 2 min en devis propre
-- 5 tâches à déléguer à l'IA dès lundi
-- Répondre à un client mécontent sans s'énerver
-- Trouver 20 prospects avec l'IA (méthode éthique)
-- Écrire ta page « À propos » en 10 minutes
-- Préparer un rendez-vous client avec l'IA
-- Le prompt « consultant » pour challenger ton idée
-- Résumer une réunion et en sortir les actions
-- Créer une semaine de posts LinkedIn en 15 minutes
-- Fixer ses prix : le prompt qui fait l'étude de marché de base
-- Les 3 erreurs qui rendent tes prompts nuls
-- Mythe : l'IA va remplacer les freelances
-- Rédiger des CGV de base (à faire valider par un pro)
-- Analyser les avis de tes concurrents
-- Créer une offre irrésistible : la structure
-- Mail de prospection à froid qui ne sent pas le spam
-- Transformer un article en 5 contenus
-- Organiser ta semaine d'entrepreneur avec l'IA
-- POV : tu découvres que tu passais 6 h par semaine sur des mails
-- Créer un script de vidéo de vente
-- Le prompt pour traiter une objection « c'est trop cher »
-- Faire une FAQ client automatiquement
-- Rédiger une proposition commerciale structurée
-- Trier 200 mails avec l'IA (méthode)
+- Claude répond à ton client mécontent (sans que tu t'énerves)
+- Claude transforme un vocal de 2 min en devis propre
+- Claude relance tes factures impayées (poliment)
+- Claude trie 200 mails en 10 minutes : la méthode
+- Claude prépare ton rendez-vous client
+- Claude écrit ta page « À propos » en 10 minutes
+- Claude résume une réunion et sort les actions
+- Claude fait la FAQ de ta boutique
+- Claude challenge ton idée : le prompt « consultant »
+- Claude organise ta semaine en 3 piles (ce qui rapporte, ce qu'on délègue, ce qu'on supprime)
+- Ma file d'attente : mon droit de veto avant publication (coulisses)
+- Ce que me coûte vraiment ce système chaque mois (coulisses, chiffres réels seulement)
+- Ce qui a cassé cette semaine, et comment Claude l'a réparé (coulisses)
+- Le bilan du dimanche : Claude lit mes stats (coulisses)
+- Créer une tâche planifiée avec Claude (tuto)
+- Les instructions de projet que je donne à Claude (tuto)
+- Claude perd le fil : /context, /compact, /clear (tuto, déjà fait en dialogue : refaire sous un autre angle)
+- Les 3 erreurs qui rendent tes prompts nuls (erreurs)
+- Mythe : Claude va remplacer les freelances (vérités)
+- Pourquoi je relis encore tout : les vraies erreurs de Claude (vérités)

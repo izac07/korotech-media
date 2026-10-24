@@ -1,4 +1,4 @@
-# Rebranding @lia.entrepreneur — PROPOSITION (24/10/2026, à valider par Goat)
+# Rebranding @lia.entrepreneur — VALIDÉ par Goat le 24/10/2026
 
 Rien n'est encore appliqué au README du compte ni à la routine du lundi : on valide d'abord la vidéo test
 `posts/x04-claude-monte-tes-reels/reel.mp4` (format `studio3d`).

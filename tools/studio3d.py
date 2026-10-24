@@ -120,6 +120,10 @@ const composer=new EffectComposer(R);composer.addPass(new RenderPass(scene,CAM))
 const bloom=new UnrealBloomPass(new THREE.Vector2(1080,1920),.38,.5,.86);composer.addPass(bloom);
 const bokeh=new BokehPass(scene,CAM,{focus:5,aperture:.0022,maxblur:.007});composer.addPass(bokeh);
 composer.addPass(new ShaderPass(GammaCorrectionShader));
+// mode allégé sans carte graphique (rendu logiciel SwiftShader, routines cloud) : pas de flou, ombres plus simples
+const gl_=R.getContext(),dbg=gl_.getExtension('WEBGL_debug_renderer_info');
+const LEGER=/swiftshader|llvmpipe|software/i.test(dbg?gl_.getParameter(dbg.UNMASKED_RENDERER_WEBGL):'');
+if(LEGER){bokeh.enabled=false;key.shadow.mapSize.set(1024,1024);R.shadowMap.type=THREE.PCFShadowMap;bloom.resolution.set(540,960);}
 // ampoule de la lampe (brille grâce au bloom) + poussière dans la lumière
 mk(new THREE.SphereGeometry(.07,16,12),new THREE.MeshBasicMaterial({color:0xffe2b0}),1.85,1.78,-.38);
 const NP=140,pp=new Float32Array(NP*3);for(let i=0;i<NP;i++){pp[i*3]=1.45+rnd()*1.1;pp[i*3+1]=1.2+rnd()*1.6;pp[i*3+2]=-.7+rnd()*1.3;}

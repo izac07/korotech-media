@@ -15,6 +15,8 @@ Contrôles, à chaque instant (début / milieu / fin de chaque scène) :
 Les sous-titres (classe .cap) sont contrôlés à part : ils peuvent chevaucher le contenu, pas les zones masquées.
 """
 import os, sys, json, subprocess, tempfile, shutil
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import korotech as K
 
 HAUT, BAS, BORD, PETIT = 200, 1500, 20, 30  # < 30 px : illisible sur téléphone (les « chromes » d'interface type heure/batterie font 30-38 px)
 COL_X, COL_Y0, COL_Y1 = 960, 1000, 1750
@@ -61,7 +63,7 @@ def auditer(html_path, starts, total, planche=None):
     tmp = tempfile.mkdtemp() if planche else None
     with sync_playwright() as p:
         gl = "WebGLRenderer" in open(html_path, encoding="utf-8").read()
-        kw = {"args": ["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"]} if gl else {}
+        kw = {"args": K.gl_args()} if gl else {}
         if os.environ.get("PW_CHROMIUM"):
             kw["executable_path"] = os.environ["PW_CHROMIUM"]  # Chromium préinstallé (voir tools/setup.sh)
         b = p.chromium.launch(**kw)
