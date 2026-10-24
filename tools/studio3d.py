@@ -102,8 +102,16 @@ key.castShadow=true;key.shadow.mapSize.set(2048,2048);Object.assign(key.shadow.c
 const rim=new THREE.DirectionalLight(0x7f95ff,1.7);rim.position.set(4,3,-3);scene.add(rim);
 const lamp=new THREE.PointLight(0xffa860,3.2,7,2);lamp.position.set(...DEC.lampe);scene.add(lamp);
 const GRAD=new THREE.DataTexture(new Uint8Array([110,185,255]),3,1,THREE.RedFormat);GRAD.minFilter=GRAD.magFilter=THREE.NearestFilter;GRAD.needsUpdate=true;
-const toon=c_=>new THREE.MeshStandardMaterial({color:LIN(c_),roughness:.6,metalness:0});
-const OLM=new THREE.MeshBasicMaterial({color:0x0b0d1a,side:THREE.BackSide});
+// style visuel du reel (couleurs.style) : jouet (défaut), bd, facettes, argile, neon, noirblanc, miniature
+const STYLE=COL.style||'jouet';const NEONC=new THREE.Color(COL.neon||'#3df2ff');
+function matStyle(c_){const col=LIN(c_);
+  if(STYLE=='bd')return new THREE.MeshToonMaterial({color:col,gradientMap:GRAD});
+  if(STYLE=='facettes')return new THREE.MeshStandardMaterial({color:col,roughness:.78,metalness:0,flatShading:true});
+  if(STYLE=='argile')return new THREE.MeshStandardMaterial({color:col.clone().lerp(new THREE.Color(.75,.62,.5),.18),roughness:1,metalness:0});
+  if(STYLE=='neon')return new THREE.MeshStandardMaterial({color:col.clone().multiplyScalar(.1),roughness:.35,metalness:.3});
+  return new THREE.MeshStandardMaterial({color:col,roughness:.6,metalness:0});}
+const toon=c_=>matStyle(c_);
+const OLM=new THREE.MeshBasicMaterial({color:STYLE=='neon'?NEONC:0x0b0d1a,side:THREE.BackSide});
 function mk(geo,mat,x,y,z,parent,ol){const m=new THREE.Mesh(geo,mat);m.position.set(x,y,z);(parent||scene).add(m);
   if(ol){const o=new THREE.Mesh(geo,OLM);o.scale.setScalar(ol);m.add(o);}return m;}
 const B=(w,h,d)=>new THREE.BoxGeometry(w,h,d);
@@ -225,6 +233,12 @@ const gtao=new GTAOPass(scene,CAM,1080,1920);gtao.updateGtaoMaterial({radius:.35
 const bloom=new UnrealBloomPass(new THREE.Vector2(1080,1920),.32,.45,.9);composer.addPass(bloom);
 const bokeh=new BokehPass(scene,CAM,{focus:5,aperture:.0022,maxblur:.007});composer.addPass(bokeh);
 composer.addPass(new OutputPass());
+const VS='varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}';
+let NBP=null;if(STYLE=='noirblanc'){NBP=new ShaderPass({uniforms:{tDiffuse:{value:null},t:{value:0}},vertexShader:VS,
+  fragmentShader:'uniform sampler2D tDiffuse;uniform float t;varying vec2 vUv;float h(vec2 p){return fract(sin(dot(p,vec2(12.9898,78.233))+t)*43758.5453);}void main(){vec3 c=texture2D(tDiffuse,vUv).rgb;float g=dot(c,vec3(.299,.587,.114));g=smoothstep(.03,.95,g);g=pow(g,1.2);g*=1.-.6*pow(length(vUv-.5)*1.3,2.2);g+=(h(vUv*1000.)-.5)*.08;gl_FragColor=vec4(vec3(g),1.);}'});composer.addPass(NBP);}
+if(STYLE=='miniature'){composer.addPass(new ShaderPass({uniforms:{tDiffuse:{value:null},px:{value:new THREE.Vector2(1/1080,1/1920)}},vertexShader:VS,
+  fragmentShader:'uniform sampler2D tDiffuse;uniform vec2 px;varying vec2 vUv;void main(){float a=smoothstep(.1,.4,abs(vUv.y-.5))*5.;vec3 s=vec3(0.);for(int i=-4;i<=4;i++)for(int j=-4;j<=4;j++)s+=texture2D(tDiffuse,vUv+vec2(float(i),float(j))*px*a).rgb;vec3 c=s/81.;c=mix(vec3(dot(c,vec3(.333))),c,1.3);gl_FragColor=vec4(c,1.);}'}));}
+if(STYLE=='neon'){bloom.strength=1.15;bloom.threshold=.18;bloom.radius=.6;}
 // mode allégé sans carte graphique (rendu logiciel SwiftShader, routines cloud) : pas de flou, ombres plus simples
 const gl_=R.getContext(),dbg=gl_.getExtension('WEBGL_debug_renderer_info');
 const LEGER=/swiftshader|llvmpipe|software/i.test(dbg?gl_.getParameter(dbg.UNMASKED_RENDERER_WEBGL):'');
@@ -238,7 +252,12 @@ const dust=new THREE.Points(dustG,new THREE.PointsMaterial({color:0xffd9a0,size:
 const LD=new GLTFLoader();
 function b64buf(s_){const bin=atob(s_);const u=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)u[i]=bin.charCodeAt(i);return u.buffer;}
 function modele(nom){return new Promise((ok,ko)=>LD.parse(b64buf(MODELES[nom]),'',g=>ok(g.scene),ko));}
-function toonify(o,teinte){o.traverse(m=>{if(m.isMesh){const c_=teinte?LIN(teinte):(m.material.color?m.material.color.clone():new THREE.Color(1,1,1));m.material=new THREE.MeshStandardMaterial({color:c_,roughness:.62,metalness:0});}});}
+function toonify(o,teinte){o.traverse(m=>{if(m.isMesh){const c_=teinte?LIN(teinte):(m.material.color?m.material.color.clone():new THREE.Color(1,1,1));m.material=matStyle(c_);}});}
+// contours (styles bd et néon) : coque extrudée le long des normales, rendue de dos
+function contours(){const mat=new THREE.ShaderMaterial({uniforms:{c:{value:STYLE=='neon'?NEONC:new THREE.Color(0x0b0d1a)},w:{value:STYLE=='neon'?.012:.017}},side:THREE.BackSide,
+    vertexShader:'uniform float w;void main(){vec3 p=position+normal*w;gl_Position=projectionMatrix*modelViewMatrix*vec4(p,1.);}',fragmentShader:'uniform vec3 c;void main(){gl_FragColor=vec4(c,1.);}'});
+  const L=[];scene.traverse(o=>{if(o.isMesh&&o.material&&!o.material.isMeshBasicMaterial&&!o.material.isShaderMaterial&&o.material!==OLM&&!o.material.transparent&&o.geometry.attributes.normal&&!o.userData.contour)L.push(o);});
+  L.forEach(o=>{const h=new THREE.Mesh(o.geometry,mat);h.userData.contour=true;o.add(h);});}
 function poser(o,q){let b=new THREE.Box3().setFromObject(o);const sz=b.getSize(new THREE.Vector3());
   if(q.libre)o.scale.set(q.w/sz.x,q.h/sz.y,q.d/sz.z);else{const k_=q.h?q.h/sz.y:q.w/sz.x;o.scale.setScalar(k_);}
   const g=new THREE.Group();g.add(o);b=new THREE.Box3().setFromObject(o);const c2=b.getCenter(new THREE.Vector3());o.position.sub(new THREE.Vector3(c2.x,b.min.y,c2.z));
@@ -246,11 +265,13 @@ function poser(o,q){let b=new THREE.Box3().setFromObject(o);const sz=b.getSize(n
 async function charger(){
   const P_=DEC.meubles;
   for(const [n,q,teinte] of P_){if(!MODELES[n])continue;const o=await modele(n);toonify(o,teinte=='BOIS'?COL.bois:teinte);poser(o,q);}
-  scene.traverse(o=>{if(o.isMesh&&o.material!==OLM&&!(o.material&&o.material.isMeshBasicMaterial)){o.castShadow=true;o.receiveShadow=true;}});}
+  scene.traverse(o=>{if(o.isMesh&&o.material!==OLM&&!(o.material&&o.material.isMeshBasicMaterial)){o.castShadow=true;o.receiveShadow=true;}});
+  if(STYLE=='bd'||STYLE=='neon')contours();}
 
 const PLANS=DEC.plans;
 const V=(a)=>new THREE.Vector3(a[0],a[1],a[2]);
-function plan(k){if(HUM&&SC[k].plan=='toi'){const b=DEC.sol;return [[b[0]-1.1,1.75,b[2]+3.4],[b[0]-.15,1.25,b[2]]];}
+function plan(k){const pl=plan0(k);if(STYLE!='miniature')return pl;return [[pl[1][0]+(pl[0][0]-pl[1][0])*.85,pl[1][1]+5.2,pl[1][2]+(pl[0][2]-pl[1][2])*.7],pl[1]];}
+function plan0(k){if(HUM&&SC[k].plan=='toi'){const b=DEC.sol;return [[b[0]-1.1,1.75,b[2]+3.4],[b[0]-.15,1.25,b[2]]];}
   if(HUM&&!DUO&&SC[k].plan=='mascotte'){const b=baseHum(SC[k].humeur);return [[b[0]+.55,1.55,b[2]+4.0],[b[0],.9,b[2]]];}return PLANS[SC[k].plan]||PLANS.large;}
 // ---- dessin de l'écran selon la scène
 function rr(x,X,Y,W,H,r,f){x.beginPath();x.roundRect(X,Y,W,H,r);x.fillStyle=f;x.fill();}
@@ -290,6 +311,7 @@ function phoneDraw(p,t){const x=ph.userData.x;const g=x.createLinearGradient(0,0
   rr(x,110,620,200,64,32,'#2fd36b');x.fillStyle='#fff';x.font='800 32px Inter';x.fillText('POSTÉ ✓',140,664);ph.needsUpdate=true;}
 const CF=[...document.querySelectorAll('.cf')];
 const RENDER=function(t){
+  if(STYLE=='argile')t=Math.floor(t*12)/12;if(NBP)NBP.uniforms.t.value=t;
   let k=0;SC.forEach((s,i)=>{if(t>=s.a)k=i;});const s=SC[k],p=c((t-s.a)/Math.max(.1,s.b-s.a)),tl=t-s.a;
   // caméra : glisse du plan précédent au plan de la scène, avec une petite respiration
   const to=plan(k),fr=k>0?plan(k-1):[[to[0][0],to[0][1]+.3,to[0][2]*1.12],to[1]];const q=sm(tl/.8);
