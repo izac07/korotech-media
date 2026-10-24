@@ -1,0 +1,62 @@
+{
+ "id": "R38",
+ "layout": "cheatsheet",
+ "music_seed": 1038,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**ÉTAPES**",
+   "sub": "POV : t'as raté un cours 😬",
+   "vo": "POV : t'as raté le cours, et le prof dit « ça tombe ». Enregistre cette vidéo, trois étapes pour rattraper."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Récupère",
+   "file": "Cours_manque",
+   "ext": "PDF",
+   "pills": [
+    "📸 Notes d'un ami",
+    "📑 Diapos",
+    "🎥 Replay"
+   ],
+   "text": "Récupère **le contenu**",
+   "vo": "Un : récupère les notes d'un camarade ou les diapos, et demande à l'IA un résumé en dix lignes. Ça prend deux minutes."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Les trous",
+   "nodes": [
+    "Compris",
+    "Flou",
+    "Perdu"
+   ],
+   "text": "Repère **tes trous**",
+   "vo": "Deux : demande-lui de lister ce que tu dois savoir expliquer, puis trie ce que tu comprends et ce qui reste flou. Reste jusqu'à la fin."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Poser la question",
+   "q": "Explique ce point simplement, avec un exemple",
+   "answers": [
+    "Point flou",
+    "Explication simple",
+    "✅ Exemple"
+   ],
+   "text": "Demande **simple**",
+   "vo": "Trois : pour chaque point flou, demande une explication simple avec un exemple. Si ça reste flou, pose la question à ton prof, c'est normal."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour tes révisions",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

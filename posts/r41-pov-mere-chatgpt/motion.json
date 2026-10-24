@@ -1,0 +1,62 @@
+{
+ "id": "R41",
+ "layout": "cheatsheet",
+ "music_seed": 1041,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**RÉPONSES**",
+   "sub": "POV : ma mère voit ChatGPT 😂",
+   "vo": "POV : ta mère te voit sur ChatGPT et pense que tu triches. Enregistre cette vidéo : trois réponses qui la rassurent."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Je ne triche pas",
+   "file": "Conversation",
+   "ext": "CHAT",
+   "pills": [
+    "🧠 Comprendre",
+    "❓ Questions",
+    "✅ Vérifier"
+   ],
+   "text": "Il **m'explique**",
+   "vo": "Un : montre-lui que tu demandes des explications, pas des réponses toutes faites. Comprendre, ce n'est pas tricher. Ça prend deux minutes."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Je me teste",
+   "nodes": [
+    "Cours",
+    "Quiz",
+    "Corrigé"
+   ],
+   "text": "Il **m'interroge**",
+   "vo": "Deux : montre le quiz qu'il te pose sur ton cours. Elle verra que tu travailles, et que tu te corriges. Reste jusqu'à la fin."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Je vérifie",
+   "q": "Source ? Je vérifie dans mon cours",
+   "answers": [
+    "Réponse IA",
+    "Mon cours",
+    "✅ Pareil ?"
+   ],
+   "text": "Je **vérifie toujours**",
+   "vo": "Trois : explique que l'IA peut se tromper, donc tu vérifies toujours dans ton cours. Là, elle sera vraiment rassurée."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour ta mère",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

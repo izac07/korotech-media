@@ -1,0 +1,62 @@
+{
+ "id": "R40",
+ "layout": "cheatsheet",
+ "music_seed": 1040,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**ÉTAPES**",
+   "sub": "retenir du vocabulaire 🇬🇧",
+   "vo": "Tu apprends des mots d'anglais et ils s'envolent aussitôt ? Enregistre cette vidéo : trois étapes pour les garder. Reste jusqu'à la fin, c'est là que ça se joue."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Des phrases",
+   "file": "Vocabulaire",
+   "ext": "LISTE",
+   "pills": [
+    "📌 Mot",
+    "💬 Phrase",
+    "🌍 Contexte"
+   ],
+   "text": "Un mot → **une phrase**",
+   "vo": "Un : donne tes mots à l'IA et demande une phrase simple pour chacun. Un mot dans une phrase, ça reste mieux. Ça te prend deux minutes."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Une histoire",
+   "nodes": [
+    "Mots",
+    "Mini texte",
+    "Toi"
+   ],
+   "text": "Tes mots → **un mini texte**",
+   "vo": "Deux : demande un petit texte qui utilise tous tes mots. Tu le lis à voix haute."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Le quiz",
+   "q": "Fais-moi un quiz sur ces mots",
+   "answers": [
+    "Traduis : …",
+    "Ta réponse…",
+    "✅ Corrigé"
+   ],
+   "text": "Reviens **demain**",
+   "vo": "Trois : refais le quiz demain, puis dans quelques jours. Revoir à intervalles, c'est ce qui ancre les mots. Simple, et ça prend deux minutes."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour tes révisions",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

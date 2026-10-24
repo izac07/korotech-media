@@ -1,0 +1,62 @@
+{
+ "id": "R29",
+ "layout": "cheatsheet",
+ "music_seed": 1029,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**RÉFLEXES**",
+   "sub": "POV : copies rendues 😬",
+   "vo": "POV : le prof rend les copies et ta note te laisse sans voix. Enregistre cette vidéo, trois réflexes valent mieux que la panique."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Lis les erreurs",
+   "file": "Copie_corrigee",
+   "ext": "PDF",
+   "pills": [
+    "🔴 Erreurs",
+    "📝 Remarques",
+    "❓ Pourquoi"
+   ],
+   "text": "Ta copie → **tes erreurs**",
+   "vo": "Un : écris tes erreurs et les remarques du prof, et demande à l'IA de t'expliquer pourquoi c'était faux. Pas de panique, juste comprendre."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Le type d'erreur",
+   "nodes": [
+    "Étourderie",
+    "Cours",
+    "Méthode"
+   ],
+   "text": "Trie **tes erreurs**",
+   "vo": "Deux : classe chaque erreur. Une étourderie, un trou dans le cours, ou un problème de méthode. Ça change ce que tu dois travailler."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Le refaire",
+   "q": "Donne-moi un exercice du même type",
+   "answers": [
+    "Exercice 1",
+    "Ta réponse…",
+    "✅ Corrigé"
+   ],
+   "text": "Refais-le **sans stress**",
+   "vo": "Trois : demande un exercice du même type, et refais-le. La prochaine fois, tu ne tomberas plus dans le même piège. Compare toujours avec la correction du prof."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour la prochaine copie",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

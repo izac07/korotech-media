@@ -1,0 +1,62 @@
+{
+ "id": "R31",
+ "layout": "cheatsheet",
+ "music_seed": 1031,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**RÈGLES**",
+   "sub": "POV : il est 2 h du mat 😵‍💫",
+   "vo": "POV : il est deux heures du matin, et ton contrôle est demain. Enregistre cette vidéo, trois règles, la dernière surprend."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Trie",
+   "file": "Cours_nuit",
+   "ext": "PDF",
+   "pills": [
+    "🎯 Essentiel",
+    "🚫 Détails",
+    "⏱ Temps"
+   ],
+   "text": "Ce qui **compte vraiment**",
+   "vo": "Un : demande à l'IA les notions les plus importantes de ton chapitre. Tu ne vas pas tout voir cette nuit, alors tu choisis. Ça prend deux minutes."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Un mini plan",
+   "nodes": [
+    "20 min",
+    "Pause",
+    "20 min"
+   ],
+   "text": "Des blocs **courts**",
+   "vo": "Deux : un plan en blocs courts, avec des pauses. Demande-lui de le construire avec ce qu'il te reste de temps. Reste jusqu'à la fin."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Le sommeil",
+   "q": "Plan de révision avec heure de coucher",
+   "answers": [
+    "Révision jusqu'à…",
+    "Dernière relecture",
+    "✅ Dodo"
+   ],
+   "text": "Dormir **fait partie du plan**",
+   "vo": "Trois : fixe une heure de coucher dans ton plan. Fatigué, tu retiens moins bien. Dormir fait partie de la révision."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour la veille",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

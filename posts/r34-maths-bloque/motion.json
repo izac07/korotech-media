@@ -1,0 +1,62 @@
+{
+ "id": "R34",
+ "layout": "cheatsheet",
+ "music_seed": 1034,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**QUESTIONS**",
+   "sub": "sans copier la réponse 🧮",
+   "vo": "Bloqué sur un exercice de maths, tu veux juste la réponse ? Enregistre cette vidéo : trois questions à poser à l'IA à la place."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Par où commencer",
+   "file": "Exo_maths",
+   "ext": "PDF",
+   "pills": [
+    "🧭 Départ",
+    "❓ Données",
+    "🎯 Demandé"
+   ],
+   "text": "Pas la réponse, **le départ**",
+   "vo": "Un : demande par quoi commencer, sans la solution. Quelles données j'ai, et qu'est-ce qu'on me demande ? Ça prend deux minutes."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Un indice",
+   "nodes": [
+    "Indice",
+    "Essai",
+    "Indice"
+   ],
+   "text": "Un indice **à la fois**",
+   "vo": "Deux : demande un seul indice, essaie, puis redemande si tu bloques. Tu avances toi-même. Reste jusqu'à la fin."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Où je me trompe",
+   "q": "Voici mon calcul, où est mon erreur ?",
+   "answers": [
+    "Ligne 1 ✅",
+    "Ligne 2 ❌",
+    "✅ Pourquoi"
+   ],
+   "text": "Il **trouve l'erreur**",
+   "vo": "Trois : montre ton calcul et demande où est l'erreur. C'est le meilleur moyen de progresser. L'IA peut se tromper en maths, alors vérifie."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour tes révisions",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

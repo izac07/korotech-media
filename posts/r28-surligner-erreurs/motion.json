@@ -1,0 +1,62 @@
+{
+ "id": "R28",
+ "layout": "cheatsheet",
+ "music_seed": 1028,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**ERREURS**",
+   "sub": "quand tu surlignes ton cours",
+   "vo": "Ton cours est tout jaune, et tu ne retiens rien ? Enregistre cette vidéo : trois erreurs de surlignage, la dernière est la plus facile à corriger."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Tout surligner",
+   "file": "Cours_jaune",
+   "ext": "PDF",
+   "pills": [
+    "🟨 Tout en jaune",
+    "🤷 Rien ne ressort",
+    "⏱ Temps perdu"
+   ],
+   "text": "Tout surligner = **rien**",
+   "vo": "Un : tout surligner. Quand tout est jaune, rien ne ressort. Garde deux ou trois mots par paragraphe, pas plus."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Relire sans tester",
+   "nodes": [
+    "Surligner",
+    "Relire",
+    "Oublier"
+   ],
+   "text": "Relire ne **suffit pas**",
+   "vo": "Deux : surligner puis relire en boucle. Ça donne l'impression de savoir. Demande plutôt à l'IA de transformer tes passages en questions."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Se tester",
+   "q": "Fais-moi 5 questions sur ce passage",
+   "answers": [
+    "Question 1",
+    "Ta réponse…",
+    "✅ Corrigé"
+   ],
+   "text": "Des questions, **pas du jaune**",
+   "vo": "Trois : ne jamais s'arrêter au surligneur. Réponds aux questions sans regarder ton cours. C'est là que ça rentre vraiment."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour tes révisions",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

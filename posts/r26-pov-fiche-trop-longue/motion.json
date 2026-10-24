@@ -1,0 +1,62 @@
+{
+ "id": "R26",
+ "layout": "cheatsheet",
+ "music_seed": 1026,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**PROMPTS**",
+   "sub": "POV : fiche de 4 pages 😵",
+   "vo": "POV : ta fiche de révision est trop longue pour être une fiche. Enregistre cette vidéo : trois prompts la réduisent, et le dernier est le plus malin."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Garde l'essentiel",
+   "file": "Fiche_brouillon",
+   "ext": "DOC",
+   "pills": [
+    "✂️ Coupe",
+    "📌 Notions clés",
+    "🔎 Ce qui tombe"
+   ],
+   "text": "Une page, **pas quatre**",
+   "vo": "Un : colle ta fiche et demande-lui de la réduire à une page, en gardant seulement les notions clés. Tu coupes sans stress."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Un schéma",
+   "nodes": [
+    "Notion",
+    "Lien",
+    "Exemple"
+   ],
+   "text": "La fiche devient **un schéma**",
+   "vo": "Deux : demande-lui de transformer la fiche en schéma, avec les liens entre les notions. C'est plus facile à retenir que des phrases."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Le test",
+   "q": "Teste-moi sur ma fiche",
+   "answers": [
+    "Question 1",
+    "Ta réponse…",
+    "✅ Corrigé + pourquoi"
+   ],
+   "text": "La fiche **se teste**",
+   "vo": "Trois : demande-lui de t'interroger sur ta fiche. Si tu bloques, c'est qu'il manque quelque chose. Et vérifie avec ton cours, l'IA peut se tromper."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour tes révisions",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

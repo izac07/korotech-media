@@ -1,0 +1,62 @@
+{
+ "id": "R37",
+ "layout": "cheatsheet",
+ "music_seed": 1037,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**ÉTAPES**",
+   "sub": "préparer un voyage ✈️",
+   "vo": "Un week-end entre potes, petit budget, aucune idée ? Enregistre cette vidéo : trois étapes pour tout préparer."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Tes contraintes",
+   "file": "Voyage_potes",
+   "ext": "NOTE",
+   "pills": [
+    "💶 Budget",
+    "📅 Dates",
+    "👥 Qui vient"
+   ],
+   "text": "Donne **tes contraintes**",
+   "vo": "Un : dis ton budget, tes dates, le nombre de personnes, et demande trois destinations. Plus tu précises, plus c'est utile. Ça prend deux minutes."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Un programme",
+   "nodes": [
+    "Jour 1",
+    "Jour 2",
+    "Retour"
+   ],
+   "text": "Un programme **simple**",
+   "vo": "Deux : demande un programme jour par jour, avec des activités gratuites ou pas chères. Reste jusqu'à la fin."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Vérifier",
+   "q": "Que vérifier avant de réserver ?",
+   "answers": [
+    "Prix des trains",
+    "Horaires",
+    "✅ Annulation"
+   ],
+   "text": "Vérifie **avant de payer**",
+   "vo": "Trois : vérifie prix, horaires et conditions d'annulation sur les vrais sites. L'IA peut se tromper sur les tarifs, ne réserve jamais sur sa seule parole."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour ton prochain voyage",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

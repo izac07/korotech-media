@@ -1,0 +1,62 @@
+{
+ "id": "R35",
+ "layout": "cheatsheet",
+ "music_seed": 1035,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**QUESTIONS**",
+   "sub": "POV : choisir sa formation 😵",
+   "vo": "POV : tu dois choisir ta formation et tout te semble pareil. Enregistre cette vidéo, trois questions à poser à l'IA."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Ce qui te plaît",
+   "file": "Mes_envies",
+   "ext": "NOTE",
+   "pills": [
+    "❤️ Goûts",
+    "💪 Points forts",
+    "🚫 Ce que tu fuis"
+   ],
+   "text": "Pars **de toi**",
+   "vo": "Un : décris ce qui te plaît et ce que tu fuis, et demande-lui des pistes de formations. Ce sont des idées, pas un verdict."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Les métiers",
+   "nodes": [
+    "Formation",
+    "Métier",
+    "Débouchés"
+   ],
+   "text": "Formation → **métier**",
+   "vo": "Deux : pour chaque piste, demande les métiers possibles et ce qu'on y apprend. Puis vérifie sur les sites officiels des écoles et de l'orientation."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Les questions",
+   "q": "Quelles questions poser en portes ouvertes ?",
+   "answers": [
+    "Le quotidien ?",
+    "Les stages ?",
+    "✅ La suite ?"
+   ],
+   "text": "Prépare **tes questions**",
+   "vo": "Trois : demande-lui les questions à poser aux portes ouvertes. Parler à de vrais étudiants vaut plus que n'importe quel conseil."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour ton orientation",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

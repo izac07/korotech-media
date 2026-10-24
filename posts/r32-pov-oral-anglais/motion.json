@@ -1,0 +1,62 @@
+{
+ "id": "R32",
+ "layout": "cheatsheet",
+ "music_seed": 1032,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**ASTUCES**",
+   "sub": "POV : oral d'anglais 😰",
+   "vo": "POV : ton oral d'anglais est dans dix minutes. Enregistre cette vidéo, trois astuces pour parler sans paniquer."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Ta présentation",
+   "file": "Oral_EN",
+   "ext": "DOC",
+   "pills": [
+    "🗣 Phrases simples",
+    "🔗 Liaisons",
+    "📌 Mots clés"
+   ],
+   "text": "Parle **simple**",
+   "vo": "Un : donne ton texte à l'IA et demande-lui de le simplifier. De courtes phrases que tu maîtrises valent mieux qu'un discours compliqué. Ça prend deux minutes."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Les questions",
+   "nodes": [
+    "Question",
+    "Réponse",
+    "Relance"
+   ],
+   "text": "Prévois **les questions**",
+   "vo": "Deux : demande-lui les questions que le jury pourrait poser. Prépare deux phrases de réponse pour chacune. Reste jusqu'à la fin."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Mode vocal",
+   "q": "Fais l'examinateur, corrige-moi après",
+   "answers": [
+    "Examinateur : Hello!",
+    "Toi, à voix haute",
+    "✅ Corrections après"
+   ],
+   "text": "Entraîne-toi **à voix haute**",
+   "vo": "Trois : passe en mode vocal et demande-lui de jouer l'examinateur. Tu réponds à voix haute, il te corrige à la fin."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour tes révisions",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

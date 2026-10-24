@@ -1,0 +1,62 @@
+{
+ "id": "R36",
+ "layout": "cheatsheet",
+ "music_seed": 1036,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**TRUCS**",
+   "sub": "retenir une liste 🧠",
+   "vo": "Tu relis dix fois la même liste sans la retenir ? Enregistre cette vidéo : trois trucs, et le dernier est le plus efficace."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "L'acronyme",
+   "file": "Liste_a_retenir",
+   "ext": "NOTE",
+   "pills": [
+    "🔤 Initiales",
+    "💬 Phrase",
+    "😄 Absurde"
+   ],
+   "text": "Une liste → **une phrase**",
+   "vo": "Un : donne ta liste et demande un acronyme ou une phrase avec les initiales. Plus c'est bête, mieux ça marche. Ça prend deux minutes."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "L'histoire",
+   "nodes": [
+    "Mot 1",
+    "Mot 2",
+    "Mot 3"
+   ],
+   "text": "Liste → **histoire**",
+   "vo": "Deux : demande une mini histoire qui relie tous les éléments. Souvent, on retient mieux une histoire qu'une liste. Reste jusqu'à la fin."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Le rappel",
+   "q": "Fais-moi réciter la liste, sans indice",
+   "answers": [
+    "Premier ?",
+    "Ta réponse…",
+    "✅ Il en manque un"
+   ],
+   "text": "Puis **teste-toi**",
+   "vo": "Trois, le plus efficace : demande-lui de te faire réciter la liste, sans indice. Se tester, ça fixe le souvenir."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour tes révisions",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "id": "R30",
+ "layout": "cheatsheet",
+ "music_seed": 1030,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**ÉTAPES**",
+   "sub": "intro sans page blanche ✍️",
+   "vo": "Page blanche devant ton introduction de dissertation ? Enregistre cette vidéo : trois étapes, la dernière évite le hors-sujet."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Le sujet",
+   "file": "Sujet_dissert",
+   "ext": "DOC",
+   "pills": [
+    "🔍 Mots du sujet",
+    "❓ Problème",
+    "🎯 Limites"
+   ],
+   "text": "Ton sujet → **sa question**",
+   "vo": "Un : colle ton sujet et demande-lui quels mots comptent, et quel problème il pose. Tu comprends ce qu'on te demande. Ça prend deux minutes."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Le plan",
+   "nodes": [
+    "Idée",
+    "Argument",
+    "Exemple"
+   ],
+   "text": "Ton plan, **pas son plan**",
+   "vo": "Deux : écris ton plan toi-même, puis demande-lui de le critiquer. Où c'est flou, où il manque un exemple. Reste jusqu'à la fin."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "L'intro",
+   "q": "Relis mon intro et dis ce qui manque",
+   "answers": [
+    "Accroche ✅",
+    "Problématique ❓",
+    "✅ Annonce du plan"
+   ],
+   "text": "Elle **te corrige**",
+   "vo": "Trois : écris ton introduction, puis demande ce qui manque, accroche, problématique ou annonce du plan. L'IA corrige, mais c'est toi qui écris."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour tes révisions",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

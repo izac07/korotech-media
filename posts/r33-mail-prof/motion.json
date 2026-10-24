@@ -1,0 +1,62 @@
+{
+ "id": "R33",
+ "layout": "cheatsheet",
+ "music_seed": 1033,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**RÈGLES**",
+   "sub": "ton mail à un prof ✉️",
+   "vo": "Tu hésites à écrire à ton prof, de peur de mal faire ? Enregistre cette vidéo : trois règles, la dernière est la plus oubliée."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Objet clair",
+   "file": "Mail_prof",
+   "ext": "MAIL",
+   "pills": [
+    "📌 Objet précis",
+    "🙂 Politesse",
+    "🎯 Une demande"
+   ],
+   "text": "Un mail, **une demande**",
+   "vo": "Un : un objet précis et une seule demande. Donne ta situation à l'IA et demande-lui un brouillon court et poli. Ça prend deux minutes."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Ton ton",
+   "nodes": [
+    "Bonjour",
+    "Demande",
+    "Merci"
+   ],
+   "text": "Poli, **pas pompeux**",
+   "vo": "Deux : vérifie le ton. Demande-lui de supprimer les phrases trop lourdes. Un prof lit vite, donc va droit au but. Reste jusqu'à la fin."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Relire",
+   "q": "Relis ce mail avant l'envoi",
+   "answers": [
+    "Nom du prof ✅",
+    "Fautes ✅",
+    "✅ Ta signature"
+   ],
+   "text": "Relis **avant d'envoyer**",
+   "vo": "Trois : relis tout toi-même, nom du prof, classe, fautes. Ne copie jamais le mail sans le lire."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour ton prochain mail",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

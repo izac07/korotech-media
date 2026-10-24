@@ -1,0 +1,62 @@
+{
+ "id": "R27",
+ "layout": "cheatsheet",
+ "music_seed": 1027,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**ÉTAPES**",
+   "sub": "photo du frigo → recette 🍳",
+   "vo": "Un frigo presque vide et zéro idée pour ce soir ? Enregistre cette vidéo : trois étapes, et la dernière évite le gaspillage."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Prends une photo",
+   "file": "Frigo",
+   "ext": "JPG",
+   "pills": [
+    "📸 Photo",
+    "🥕 Ingrédients",
+    "🧂 Placard"
+   ],
+   "text": "Ton frigo → **la liste**",
+   "vo": "Un : prends ton frigo en photo et envoie-la. Dis aussi ce qu'il y a dans ton placard, l'IA fait la liste."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Une recette",
+   "nodes": [
+    "Frigo",
+    "Recette",
+    "Dîner"
+   ],
+   "text": "Tes restes → **une recette**",
+   "vo": "Deux : demande une recette simple avec seulement ce que tu as. Tu précises ton matériel, par exemple juste une poêle."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Zéro gaspi",
+   "q": "Que faire des restes demain ?",
+   "answers": [
+    "Reste du riz ?",
+    "Idée : riz sauté",
+    "✅ Rien jeté"
+   ],
+   "text": "Rien ne **se perd**",
+   "vo": "Trois : demande quoi faire des restes pour demain. Tu cuisines deux fois avec les mêmes ingrédients. Vérifie juste les dates et la cuisson toi-même."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour ce soir",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}
