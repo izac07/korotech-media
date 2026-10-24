@@ -9,7 +9,7 @@ Scènes : {"type": plan ("large" | "ecran" | "mascotte" | "telephone"), "vo", "b
           "ecran": {"type": "bazar"|"chat"|"montage"|"verif"|"export", "titre"?, "messages"?: [["moi"|"ia", texte]], "lignes"?: [..]},
           "compteur"?: {"label", "de", "a"}, "humeur"?: "fatigue"|"normal"|"travail"|"content", "tampon"?: "PRÊT À POSTER"}
 """
-import json, os, html as H
+import json, os, re, base64, html as H
 import korotech as K
 
 DOSSIER = os.path.dirname(os.path.abspath(__file__))
@@ -44,20 +44,31 @@ __BADGES__
 __TAMPONS__
 __FINS__
 __CONFETTIS__
-<script>__THREE__</script>
-<script>
+<script type='importmap'>__IMPORTMAP__</script>
+<script type='module'>
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js';
+import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
+import {ShaderPass} from 'three/addons/postprocessing/ShaderPass.js';
+import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
+import {BokehPass} from 'three/addons/postprocessing/BokehPass.js';
+import {GammaCorrectionShader} from 'three/addons/shaders/GammaCorrectionShader.js';
+import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
+const MODELES=__MODELES__;
 const EV=__EV__; const D=__D__, SC=__SC__, COL=__COL__;
 const c=x=>Math.max(0,Math.min(1,x)), sm=x=>{x=c(x);return x*x*(3-2*x);}, eo=x=>1-Math.pow(1-c(x),3);
 const back=x=>{x=c(x);const s=1.7;return 1+(s+1)*Math.pow(x-1,3)+s*Math.pow(x-1,2);};
 const $=i=>document.getElementById(i);
 const LIN=c_=>new THREE.Color(c_).convertSRGBToLinear();
 const R=new THREE.WebGLRenderer({canvas:$('cv'),antialias:true,preserveDrawingBuffer:true});
-R.setSize(1080,1920,false);R.outputEncoding=THREE.sRGBEncoding;
+R.setSize(1080,1920,false);R.outputEncoding=THREE.LinearEncoding;R.shadowMap.enabled=true;R.shadowMap.type=THREE.PCFSoftShadowMap;
 const scene=new THREE.Scene();scene.background=LIN(COL.nuit);scene.fog=new THREE.Fog(LIN(COL.nuit),16,34);
 scene.add(new THREE.HemisphereLight(0xa9b8ff,0x3a2414,.45));
-const key=new THREE.DirectionalLight(0xffe0bf,.95);key.position.set(-3,6,5);scene.add(key);
+const key=new THREE.DirectionalLight(0xffe0bf,.95);key.position.set(-3,6,5);scene.add(key);key.target.position.set(0,1,0);scene.add(key.target);
+key.castShadow=true;key.shadow.mapSize.set(2048,2048);Object.assign(key.shadow.camera,{left:-6,right:6,top:6,bottom:-3,near:1,far:22});key.shadow.normalBias=.03;key.shadow.radius=4;
 const rim=new THREE.DirectionalLight(0x7f95ff,.55);rim.position.set(4,3,-3);scene.add(rim);
-const lamp=new THREE.PointLight(0xffa860,.9,7);lamp.position.set(1.9,2.6,.8);scene.add(lamp);
+const lamp=new THREE.PointLight(0xffa860,1.3,6);lamp.position.set(1.85,1.78,-.35);scene.add(lamp);
 const GRAD=new THREE.DataTexture(new Uint8Array([110,185,255]),3,1,THREE.RedFormat);GRAD.minFilter=GRAD.magFilter=THREE.NearestFilter;GRAD.needsUpdate=true;
 const toon=c_=>new THREE.MeshToonMaterial({color:LIN(c_),gradientMap:GRAD});
 const OLM=new THREE.MeshBasicMaterial({color:0x0b0d1a,side:THREE.BackSide});
@@ -80,8 +91,6 @@ mk(new THREE.CylinderGeometry(.55,.55,.08,40),toon(0xf3e6cf),0,0,0,clock,1.06).r
 const hh=mk(B(.06,.3,.02),toon(0x1b1b22),0,.12,.06,clock),mh=mk(B(.04,.44,.02),toon(0x1b1b22),0,.19,.07,clock);
 const hhP=new THREE.Group();clock.add(hhP);hhP.add(hh);const mhP=new THREE.Group();clock.add(mhP);mhP.add(mh);
 // ---- bureau
-mk(B(4.4,.16,1.8),toon(COL.bois),0,1.0,0,null,1.02);
-mk(B(4.4,.95,.08),toon(COL.bois2),0,.5,.86);
 // écran
 mk(B(.14,.45,.14),toon(0x2a2e44),.75,1.3,-.5);mk(B(.6,.05,.4),toon(0x2a2e44),.75,1.1,-.5);
 mk(B(2.05,1.3,.1),toon(0x1a1d2e),.75,2.05,-.55,null,1.02);
@@ -92,20 +101,46 @@ mk(new THREE.TorusGeometry(.08,.025,10,20),toon(COL.tasse),2.0,1.24,.35);
 [0x4f7cff,0xffd23f,0xff6b6b,0x2fd36b].forEach((cl,i)=>mk(B(.7-i*.05,.1,.45),toon(cl),-1.75,1.13+i*.105,.15,null,1.04).rotation.y=(i%2?.12:-.08));
 // ---- mascotte « Claude »
 const M=new THREE.Group();M.position.set(-.8,1.08,-.15);scene.add(M);
-const body=mk(B(1.05,.95,.85),toon(COL.mascotte),0,.475,0,M,1.04);
+const RB=(w,h,d,r)=>new RoundedBoxGeometry(w,h,d,5,r);
+const body=mk(RB(1.05,.95,.85,.15),toon(COL.mascotte),0,.475,0,M,1.035);
 const eyes=[],lids=[],pups=[];
-for(const sx of [-1,1]){const e=mk(B(.24,.28,.02),new THREE.MeshBasicMaterial({color:0xffffff}),sx*.22,.56,.43,M);eyes.push(e);
+for(const sx of [-1,1]){const e=mk(B(.24,.28,.02),new THREE.MeshBasicMaterial({color:0xd9d9d9}),sx*.22,.56,.43,M);eyes.push(e);
   pups.push(mk(B(.1,.15,.02),new THREE.MeshBasicMaterial({color:0x14141e}),sx*.22+.02,.54,.442,M));
   lids.push(mk(B(.26,.3,.03),toon(COL.mascotte),sx*.22,.72,.445,M));}
 const mouth=mk(B(.18,.045,.02),new THREE.MeshBasicMaterial({color:0x14141e}),0,.32,.435,M);
 for(const sx of [-1,1])mk(B(.12,.06,.02),new THREE.MeshBasicMaterial({color:0xff9a8a}),sx*.36,.38,.432,M);
-const arms=[-1,1].map(sx=>{const p=new THREE.Group();p.position.set(sx*.6,.62,.05);M.add(p);mk(B(.15,.42,.15),toon(COL.mascotte),0,-.19,0,p,1.08);return p;});
+const arms=[-1,1].map(sx=>{const p=new THREE.Group();p.position.set(sx*.6,.62,.05);M.add(p);mk(RB(.16,.44,.16,.07),toon(COL.mascotte),0,-.19,0,p,1.08);return p;});
 // ---- téléphone (fin)
 const P=new THREE.Group();P.position.set(-.05,1.08,.5);scene.add(P);
 mk(B(.7,1.3,.07),toon(0x111320),0,.65,0,P,1.03);
 const ph=canvasTex(420,780);const phs=mk(new THREE.PlaneGeometry(.62,1.16),new THREE.MeshBasicMaterial({map:ph}),0,.66,.036,P);
 // ---- confettis 3D (en plus des confettis CSS)
 const CAM=new THREE.PerspectiveCamera(36,1080/1920,.1,60);
+const composer=new EffectComposer(R);composer.addPass(new RenderPass(scene,CAM));
+const bloom=new UnrealBloomPass(new THREE.Vector2(1080,1920),.38,.5,.86);composer.addPass(bloom);
+const bokeh=new BokehPass(scene,CAM,{focus:5,aperture:.0022,maxblur:.007});composer.addPass(bokeh);
+composer.addPass(new ShaderPass(GammaCorrectionShader));
+// ampoule de la lampe (brille grâce au bloom) + poussière dans la lumière
+mk(new THREE.SphereGeometry(.07,16,12),new THREE.MeshBasicMaterial({color:0xffe2b0}),1.85,1.78,-.38);
+const NP=140,pp=new Float32Array(NP*3);for(let i=0;i<NP;i++){pp[i*3]=1.45+rnd()*1.1;pp[i*3+1]=1.2+rnd()*1.6;pp[i*3+2]=-.7+rnd()*1.3;}
+const dustG=new THREE.BufferGeometry();dustG.setAttribute('position',new THREE.BufferAttribute(pp,3));
+const dust=new THREE.Points(dustG,new THREE.PointsMaterial({color:0xffd9a0,size:.022,transparent:true,opacity:.75,depthWrite:false}));scene.add(dust);
+// modèles CC0 (Kenney Furniture Kit), passés en matériau cartoon, posés à la bonne taille
+const LD=new GLTFLoader();
+function b64buf(s_){const bin=atob(s_);const u=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)u[i]=bin.charCodeAt(i);return u.buffer;}
+function modele(nom){return new Promise((ok,ko)=>LD.parse(b64buf(MODELES[nom]),'',g=>ok(g.scene),ko));}
+function toonify(o,teinte){o.traverse(m=>{if(m.isMesh){const c_=teinte?LIN(teinte):(m.material.color?m.material.color.clone():new THREE.Color(1,1,1));m.material=new THREE.MeshToonMaterial({color:c_,gradientMap:GRAD});}});}
+function poser(o,q){let b=new THREE.Box3().setFromObject(o);const sz=b.getSize(new THREE.Vector3());
+  if(q.libre)o.scale.set(q.w/sz.x,q.h/sz.y,q.d/sz.z);else{const k_=q.h?q.h/sz.y:q.w/sz.x;o.scale.setScalar(k_);}
+  const g=new THREE.Group();g.add(o);b=new THREE.Box3().setFromObject(o);const c2=b.getCenter(new THREE.Vector3());o.position.sub(new THREE.Vector3(c2.x,b.min.y,c2.z));
+  g.position.set(q.x,q.y||0,q.z);g.rotation.y=q.ry||0;scene.add(g);return g;}
+async function charger(){
+  const P_=[['desk',{libre:true,w:4.4,h:1.08,d:1.8,x:0,z:0},COL.bois_hex],['chairDesk',{h:1.35,x:2.15,z:1.25,ry:-2.4}],['computerKeyboard',{w:.95,x:.75,y:1.08,z:.28},'#2b2f45'],
+    ['computerMouse',{w:.16,x:1.38,y:1.08,z:.32},'#2b2f45'],['lampRoundTable',{h:.85,x:1.85,y:1.08,z:-.42}],['pottedPlant',{h:1.8,x:-2.9,z:.9}],
+    ['plantSmall2',{h:.5,x:-1.45,y:1.08,z:-.55}],['bookcaseOpenLow',{h:1.45,x:3.05,z:-2.55}]];
+  for(const [n,q,teinte] of P_){if(!MODELES[n])continue;const o=await modele(n);toonify(o,teinte);poser(o,q);}
+  scene.traverse(o=>{if(o.isMesh&&o.material!==OLM&&!(o.material&&o.material.isMeshBasicMaterial)){o.castShadow=true;o.receiveShadow=true;}});}
+
 const PLANS={large:[[-.1,2.5,8.6],[-.1,1.85,-.4]],ecran:[[.75,2.0,4.6],[.75,1.9,-.5]],mascotte:[[-.6,1.9,5.0],[-.6,1.55,-.15]],telephone:[[-.05,1.9,3.9],[-.05,1.6,.5]]};
 const V=(a)=>new THREE.Vector3(a[0],a[1],a[2]);
 function plan(k){return PLANS[SC[k].plan]||PLANS.large;}
@@ -139,25 +174,28 @@ function phoneDraw(p,t){const x=ph.userData.x;const g=x.createLinearGradient(0,0
   x.fillStyle='#fff';x.font='800 30px Inter';x.fillText('♥ '+(1+Math.floor(eo(p)*120)/10).toFixed(1)+' k',150,500);
   rr(x,110,620,200,64,32,'#2fd36b');x.fillStyle='#fff';x.font='800 32px Inter';x.fillText('POSTÉ ✓',140,664);ph.needsUpdate=true;}
 const CF=[...document.querySelectorAll('.cf')];
-window.render=function(t){
+const RENDER=function(t){
   let k=0;SC.forEach((s,i)=>{if(t>=s.a)k=i;});const s=SC[k],p=c((t-s.a)/Math.max(.1,s.b-s.a)),tl=t-s.a;
   // caméra : glisse du plan précédent au plan de la scène, avec une petite respiration
   const to=plan(k),fr=k>0?plan(k-1):[[to[0][0],to[0][1]+.3,to[0][2]*1.12],to[1]];const q=sm(tl/.8);
   CAM.position.copy(V(fr[0]).lerp(V(to[0]),q)).add(new THREE.Vector3(Math.sin(t*.5)*.08,Math.sin(t*.7)*.04,-p*.25));
-  CAM.lookAt(V(fr[1]).lerp(V(to[1]),q));
+  const LA=V(fr[1]).lerp(V(to[1]),q);CAM.lookAt(LA);bokeh.uniforms.focus.value=CAM.position.distanceTo(LA);
+  CAM.position.x+=Math.sin(t*1.7)*.012+Math.sin(t*3.1)*.006;CAM.position.y+=Math.sin(t*2.3)*.01;  // caméra « tenue à la main »
   // horloge (les heures défilent pendant la scène « bazar »)
   const sp=(s.ecran&&s.ecran.type=='bazar')?2.2:.05;hhP.rotation.z=-t*sp/12;mhP.rotation.z=-t*sp;
   // mascotte selon l'humeur
   const hu=s.humeur||'normal';const tired=hu=='fatigue'?1:0;
   lids.forEach(l=>{l.position.y=.72-(tired?.12:0)-((t%3.3)<.12?.17:0);});
   pups.forEach((pp,i)=>{pp.position.x=(i?1:-1)*.22+.02+Math.sin(t*.9)*.015*(1-tired);pp.position.y=.54-(tired?.05:0);});
-  body.rotation.z=tired?Math.sin(t*1.2)*.04:0;M.position.y=1.08+(hu=='content'?Math.abs(Math.sin(t*6))*.12:0);M.rotation.y=hu=='travail'?.32:(hu=='content'?Math.sin(t*3)*.12:.12);
+  body.rotation.z=tired?Math.sin(t*1.2)*.04:0;const jump=hu=='content'?Math.abs(Math.sin(t*6)):0;M.position.y=1.08+jump*.14;
+  const sq=hu=='content'?(jump<.25?1-(.25-jump)*.5:1+jump*.05):1+Math.sin(t*2.2)*.012;M.scale.set(1/Math.sqrt(sq),sq,1/Math.sqrt(sq));  // écrasement / étirementM.rotation.y=hu=='travail'?.32:(hu=='content'?Math.sin(t*3)*.12:.12);
   mouth.scale.set(hu=='content'?1.6:1,hu=='content'?2.4:(tired?.7:1),1);
   arms.forEach((a,i)=>{a.rotation.x=hu=='travail'?-1.1+Math.sin(t*16+i*2)*.25:0;a.rotation.z=hu=='content'?(i?-1:1)*(1.9+Math.sin(t*9)*.3):(i?.12:-.12);});
   // téléphone : visible quand la scène le demande
   const showP=s.plan=='telephone'||s.tampon;P.visible=!!showP;if(showP){P.scale.setScalar(back(tl/.5));phoneDraw(p,t);}
   screenDraw(k,p,t);
-  R.render(scene,CAM);
+  const dp=dust.geometry.attributes.position;for(let i=0;i<NP;i++){dp.array[i*3+1]=1.2+((pp[i*3+1]-1.2+t*.05*(1+i%3))%1.6);}dp.needsUpdate=true;
+  composer.render();
   // habillage HTML
   SC.forEach((z,i)=>{const b=$('bd'+i);if(b){const on=i==k;const kk=back((t-z.a)/.4);b.style.opacity=on?1:0;b.style.transform=`translateX(-50%) rotate(-1.5deg) scale(${on?.6+.4*kk:1})`;}
     const g=$('bg'+i);if(g){const on=i==k;g.style.opacity=on?c((t-z.a-.2)/.2):0;const cc=z.compteur;g.querySelector('i').textContent=cc.fmt?cc.fmt.replace('#',Math.round(cc.de+(cc.a-cc.de)*sm(p*1.15))):Math.round(cc.de+(cc.a-cc.de)*sm(p*1.15));}
@@ -167,8 +205,33 @@ window.render=function(t){
     for(const w of cp.querySelectorAll('.stk')){const wt=+w.dataset.w;const kk=back((t-wt)/.22);w.style.opacity=t>=wt?1:0;w.style.transform=`rotate(${w.dataset.r}deg) scale(${t>=wt?.5+.5*kk:.5})`;}}
   const ct=SC.findIndex(z=>z.tampon);if(ct>=0){const t0=SC[ct].a+.25*(SC[ct].b-SC[ct].a);CF.forEach((f,i)=>{const u=t-t0-(i%7)*.05;const on=u>0;f.style.opacity=on?1:0;
     if(on){f.style.left=(+f.dataset.x+Math.sin(u*3+i)*40)+'px';f.style.top=(-60+u*(380+(i%5)*60))+'px';f.style.transform=`rotate(${u*(200+i*17)}deg)`;}});}
-};render(0);
+};
+charger().then(()=>{window.render=RENDER;RENDER(0);});
 </script></body></html>"""
+
+
+ASSETS = os.path.join(DOSSIER, "assets")
+
+
+def import_map():
+    """three.module.js + modules complémentaires (r149) en data: URLs ; les imports relatifs sont réécrits en 'three/addons/...'."""
+    base = os.path.join(ASSETS, "three149")
+    def url(txt):
+        return "data:text/javascript;base64," + base64.b64encode(txt.encode("utf-8")).decode()
+    m = {"three": url(open(os.path.join(base, "build", "three.module.js"), encoding="utf-8").read())}
+    jsm = os.path.join(base, "jsm")
+    for d in sorted(os.listdir(jsm)):
+        for f in sorted(os.listdir(os.path.join(jsm, d))):
+            txt = open(os.path.join(jsm, d, f), encoding="utf-8").read()
+            txt = re.sub(r"from '\./([\w]+\.js)'", lambda x: f"from 'three/addons/{d}/{x.group(1)}'", txt)
+            txt = re.sub(r"from '\.\./(\w+)/([\w]+\.js)'", lambda x: f"from 'three/addons/{x.group(1)}/{x.group(2)}'", txt)
+            m[f"three/addons/{d}/{f}"] = url(txt)
+    return json.dumps({"imports": m})
+
+
+def modeles():
+    d = os.path.join(ASSETS, "modeles")
+    return json.dumps({f[:-4]: base64.b64encode(open(os.path.join(d, f), "rb").read()).decode() for f in sorted(os.listdir(d)) if f.endswith(".glb")})
 
 
 def page(spec, theme, starts, durs, caps, total):
@@ -203,13 +266,13 @@ def page(spec, theme, starts, durs, caps, total):
             ta = starts[k] + .25 * durs[k]
             ev += [{"k": "impact", "at": round(ta, 3)}, {"k": "sparkle", "at": round(ta + .1, 3)}]
     colj = {kk: (hexi(v) if kk in ("nuit", "sol", "mur", "cadre", "bois", "bois2", "tasse", "mascotte") else v) for kk, v in col.items()}
-    three = open(os.path.join(DOSSIER, "three.min.js"), encoding="utf-8").read()
+    colj["bois_hex"] = col["bois"]
     R = {"__FONTS__": K._font_faces(["Anton", "Archivo Black", "Inter"]), "__NUIT__": col["nuit"], "__PAPIER__": col["papier"], "__ENCRE__": col["encre"],
          "__ACC__": col["acc"], "__JAUNE__": col["jaune"], "__VERT__": col["vert"], "__HANDLE__": H.escape(spec.get("handle", "")),
          "__BANDS__": bands, "__BADGES__": badges, "__CAPS__": cap_html, "__TAMPONS__": tampons, "__FINS__": fins, "__CONFETTIS__": conf,
-         "__D__": str(total), "__SC__": json.dumps(S, ensure_ascii=False), "__EV__": json.dumps(ev), "__COL__": json.dumps(colj)}
+         "__IMPORTMAP__": import_map(), "__MODELES__": modeles(), "__D__": str(total), "__SC__": json.dumps(S, ensure_ascii=False), "__EV__": json.dumps(ev), "__COL__": json.dumps(colj)}
     out = TPL
     for kk, v in R.items():
         if kk != "__THREE__":
             out = out.replace(kk, v)
-    return out.replace("__THREE__", three)
+    return out

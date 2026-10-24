@@ -66,7 +66,7 @@ def auditer(html_path, starts, total, planche=None):
             kw["executable_path"] = os.environ["PW_CHROMIUM"]  # Chromium préinstallé (voir tools/setup.sh)
         b = p.chromium.launch(**kw)
         pg = b.new_page(viewport={"width": 1080, "height": 1920})
-        pg.goto("file://" + os.path.abspath(html_path)); pg.wait_for_timeout(500)
+        pg.goto("file://" + os.path.abspath(html_path)); pg.wait_for_function("typeof window.render==='function'", timeout=120000); pg.wait_for_timeout(300)
         args = [HAUT, BAS, BORD, PETIT, COL_X, COL_Y0, COL_Y1]
         # hook : premier instant avec un texte lisible (hors sous-titres)
         t = 0.0

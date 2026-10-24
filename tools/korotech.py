@@ -278,7 +278,7 @@ async def _frames(html_path, fr, dur, fps=30):
     async with async_playwright() as p:
         gl = "WebGLRenderer" in open(html_path).read()  # WebGL (3D) seulement : swiftshader ralentit les pages 2D
         b = await p.chromium.launch(**chromium_args(["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"] if gl else None)); pg = await b.new_page(viewport={"width": 1080, "height": 1920})
-        await pg.goto("file://" + os.path.abspath(html_path)); await pg.wait_for_timeout(500)
+        await pg.goto("file://" + os.path.abspath(html_path)); await pg.wait_for_function("typeof window.render==='function'", timeout=120000); await pg.wait_for_timeout(300)
         for i in range(int(dur * fps)):
             await pg.evaluate(f"render({i / fps})")
             await pg.screenshot(path=f"{fr}/f_{i:04d}.jpg", type="jpeg", quality=90)
