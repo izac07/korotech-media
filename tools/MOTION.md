@@ -171,3 +171,11 @@ Exemple : `comptes/lia-entrepreneur/posts/x02-claude-deborde/motion.json` (aux c
 Scènes en plus : `duo` {qui: "moi"|"claude", bulle (phrase courte affichée, `**mot**`, `<br>`)} : deux personnages, celui qui parle bouge la bouche ; `jauge` {labels, de, a, unite?, titre?}.
 Chaque scène a `qui` (voix) : **moi = Brian (nPczCjzI2devNBz1zQrb), claude = Alice (Xb7hH8MSUJpSbSDYk0k2)**. Dialogue : 120 à 200 mots de voix.
 Thème sombre / couleurs d'un compte : `couleurs` accepte aussi carte, carte_encre, ligne, ligne2, doux, sur (texte sur l'accent), bulle, tuile_encre, bord, acc_texte, police, espacement, peau, cheveux, pull, mascotte, noms. `fond` accepte un fond CSS complet (dégradés, quadrillage).
+
+### interface + tuto en étapes (PILOTE du 24/10/2026)
+Exemple : `comptes/lia-entrepreneur/posts/x03-14-reels-sans-monter/motion.json`. Tiré de deux reels qui ont fait plus de commentaires que de likes (3 200 et 10 400 commentaires) :
+- `"etape": "2/6"` sur n'importe quelle scène → en-tête « ÉTAPE 2 / 6 » + barre en segments (les étapes faites sont pleines).
+- Scène `punch` {titre, sous?} : écran plein cadre sur la couleur d'accent (« 14 reels par semaine. », « C'est tout. »). Une en accroche, une avant la fin.
+- `couleurs.sous_titres` : taille des sous-titres en px (64 conseillé, défaut 52).
+- `de` / `a` sur une scène `toggles` : libellés des interrupteurs pour cette scène (« Refusé » → « Validé »).
+- **Le cadeau = la chose exacte montrée dans la vidéo** (le prompt, le skill). Mot-clé propre au reel : champ `"mot_cle": {"mot", "offre", "lien"}` (remplace celui de `ressources/mots-cles.json` pour ce reel ; `verifie.py` le contrôle) + ajouter le message DM dans `ressources/messages-dm.md`.

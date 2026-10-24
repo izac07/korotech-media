@@ -62,3 +62,13 @@ Salut ! Voici tes 10 prompts pour réviser avec l'IA (sans tricher) 👇
 https://izac07.github.io/korotech-media/ressources/korotech/10-prompts-pour-reviser-avec-l-ia.pdf
 Commence par le prompt 2 avant ton prochain contrôle 😉
 ```
+
+## L'IA Entrepreneur — reel LIA-X03 (« 14 reels par semaine ») — mot-clé **PROMPT**
+Mot-clé propre à ce reel (le cadeau est le prompt montré dans la vidéo). Les autres reels LIA gardent **IA**.
+Réponse publique : `Envoyé en DM 📩 Dis-moi ce que Claude t'a sorti 👀`
+DM :
+```
+Salut ! Comme promis, voici le prompt qui écrit ma semaine de reels 👇
+https://github.com/izac07/korotech-media/blob/main/ressources/lia-entrepreneur/prompt-14-reels.md
+Commence par la fiche de marque, c'est elle qui fait que ça sonne comme toi. Tu fais des reels sur quel sujet ?
+```

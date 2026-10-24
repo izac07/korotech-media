@@ -1745,8 +1745,14 @@ body{width:1080px;height:1920px;overflow:hidden;background:__FOND__;position:rel
 .nt .ic{flex:none;width:96px;height:96px;border-radius:24px;background:__ACC__;display:flex;align-items:center;justify-content:center;font-size:56px}
 .nt b{display:block;font:800 34px Inter;opacity:.5;margin-bottom:6px}.nt span{font:700 44px/1.2 Inter}
 .caps{position:absolute;left:60px;right:60px;top:1370px;text-align:center;z-index:40}
-.cap{display:none;background:var(--carte);border-radius:22px;padding:14px 32px;font:800 52px Inter;color:var(--carte-encre);border:var(--bord);box-shadow:0 10px 30px rgba(80,60,120,.18)}
+.cap{display:none;background:var(--carte);border-radius:22px;padding:14px 32px;font:800 __CAPPX__px Inter;color:var(--carte-encre);border:var(--bord);box-shadow:0 10px 30px rgba(80,60,120,.18)}
 .cap span.on{color:var(--acc-texte)}
+/* tuto en étapes : en-tête ÉTAPE X/N + barre en segments */
+.step{display:flex;flex-direction:column;gap:16px;opacity:0}.step b{font:800 36px Inter;letter-spacing:3px;color:var(--acc-texte)}
+.segs{display:flex;gap:10px}.segs i{flex:1;height:12px;border-radius:6px;background:var(--ligne2)}.segs i.f{background:__ACC__}
+/* écran coup de poing plein cadre */
+.punch{position:absolute;left:-60px;top:-190px;width:1080px;height:1920px;background:__ACC__;color:var(--sur);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:40px;z-index:35;opacity:0;padding:80px}
+.punch .pt{font:900 150px/1 __TFONT__;letter-spacing:__TLS__;text-align:center}.punch .ps{font:800 64px/1.15 Inter;text-align:center;opacity:.85}
 /* scène duo : deux personnages qui se parlent */
 .duo{position:relative;flex:1;display:flex;flex-direction:column;justify-content:flex-start;gap:0}
 .nom{font:800 36px Inter;color:var(--acc-texte);margin:0 10px 12px;opacity:0}
@@ -1842,7 +1848,14 @@ def interface_page(spec, theme, starts, durs, caps, total):
                          f"<text x='310' y='853' font-family='Inter' font-weight='700' font-size='34' fill='{col['carte_encre']}' opacity='.6'>{K.esc(s.get('unite', 'mémoire'))}</text>"
                          f"<text id='s{k}jp' x='650' y='858' text-anchor='end' font-family='Inter' font-weight='800' font-size='56' fill='{col['acc_texte']}'>{int(s.get('de', 0))} %</text></svg></div>")
             seq += [(f"s{k}j{i}", "drop", .8, {}) for i in range(len(labs))]
-        if s.get("titre"):
+        if s.get("etape"):  # « 2/6 » -> ÉTAPE 2/6 + barre en segments (les étapes faites sont pleines)
+            n_, N_ = (int(x) for x in str(s["etape"]).split("/"))
+            segs = "".join(f"<i class='{'f' if j < n_ else ''}'></i>" for j in range(N_))
+            parts.append(f"<div class='step' id='s{k}st'><b>ÉTAPE {n_} / {N_}</b><span class='segs'>{segs}</span></div>"); seq.append((f"s{k}st", "rise", .3, {}))
+        if ty == "punch":  # écran plein cadre, gros texte sur l'accent (« C'est tout. », « SEULEMENT 6 »)
+            parts.append(f"<div class='punch' id='s{k}pu'><div class='pt'>{rich(s.get('titre', ''))}</div>" + (f"<div class='ps'>{rich(s['sous'])}</div>" if s.get('sous') else '') + "</div>")
+            seq.append((f"s{k}pu", "pop", 1, {}))
+        if s.get("titre") and ty != "punch":
             parts.append(f"<div class='ti{' big' if ty == 'hook' else ''}' id='s{k}ti'>{rich(s['titre'])}</div>"); seq.append((f"s{k}ti", "rise", .5, {}))
         if ty == "hook" and s.get("sous"):
             parts.append(f"<div class='chip' id='s{k}so'>{rich(s['sous']).replace('<em>', '<b>').replace('</em>', '</b>')}</div>"); seq.append((f"s{k}so", "pop", .6, {}))
@@ -1853,8 +1866,8 @@ def interface_page(spec, theme, starts, durs, caps, total):
             rows = []
             for j, it in enumerate(s.get("items", [])):
                 lb, flip = (it, True) if isinstance(it, str) else (it[0], it[1] if len(it) > 1 else True)
-                rows.append(f"<div class='row' id='s{k}r{j}'><span class='lb'>{K.esc(lb)}</span><span class='who'><em class='w0'>{K.esc(col['de'])}</em>"
-                            f"<em class='w1'>{K.esc(col['a'])}</em></span><span class='tg'><span class='on'></span><span class='kn'></span></span></div>")
+                rows.append(f"<div class='row' id='s{k}r{j}'><span class='lb'>{K.esc(lb)}</span><span class='who'><em class='w0'>{K.esc(s.get('de', col['de']))}</em>"
+                            f"<em class='w1'>{K.esc(s.get('a', col['a']))}</em></span><span class='tg'><span class='on'></span><span class='kn'></span></span></div>")
                 seq.append((f"s{k}r{j}", "tog" if flip else "wait", .8, {}))
             parts.append(f"<div class='card' id='s{k}c'><div class='ch'><i></i><b>{K.esc(s.get('carte', ''))}</b><small>{K.esc(s.get('carte_sous', ''))}</small></div>{''.join(rows)}</div>")
             seq.insert(len(seq) - len(rows), (f"s{k}c", "pop", .5, {}))
@@ -1902,7 +1915,7 @@ def interface_page(spec, theme, starts, durs, caps, total):
     S = [{"a": starts[k], "b": starts[k] + durs[k]} for k in range(len(sc))]
     vars_ = {"--carte": col["carte"], "--carte-encre": col["carte_encre"], "--ligne": col["ligne"], "--ligne2": col["ligne2"], "--doux": col["doux"], "--sur": col["sur"],
              "--bulle": col["bulle"], "--tuile-encre": col["tuile_encre"], "--bord": col["bord"], "--acc-texte": col["acc_texte"]}
-    R = {"__VARS__": ";".join(f"{kk}:{v}" for kk, v in vars_.items()), "__TFONT__": f"'{col['police']}',Inter", "__TLS__": col["espacement"],
+    R = {"__VARS__": ";".join(f"{kk}:{v}" for kk, v in vars_.items()), "__TFONT__": f"'{col['police']}',Inter", "__CAPPX__": str(col.get("sous_titres", 52)), "__TLS__": col["espacement"],
          "__FONTS__": K._font_faces(sorted({"Inter", col["police"]})), "__FOND__": col["fond"], "__ENCRE__": col["encre"], "__ACC__": col["acc"], "__BLOBS__": blobs,
          "__DOTS__": "<i></i>" * len(sc), "__HANDLE__": H.escape(spec.get("handle", "")), "__SCENES__": "".join(html), "__CAPS__": cap_html,
          "__EV__": json.dumps(ev), "__D__": str(total), "__SC__": json.dumps(S), "__EL__": json.dumps(EL), "__BL__": json.dumps([{"p": 3.1 + i, "a": 70 + 20 * i} for i in range(len(pos))])}

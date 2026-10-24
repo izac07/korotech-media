@@ -1,0 +1,39 @@
+{
+ "id": "LIA-X03",
+ "layout": "interface",
+ "music_seed": 9112,
+ "handle": "lia.entrepreneur",
+ "mot_cle": {"mot": "PROMPT", "offre": "le prompt qui écrit ma semaine de reels", "lien": "https://github.com/izac07/korotech-media/blob/main/ressources/lia-entrepreneur/prompt-14-reels.md"},
+ "couleurs": {
+  "fond": "linear-gradient(rgba(57,255,136,.06) 1px,transparent 1px) 0 0/54px 54px,linear-gradient(90deg,rgba(57,255,136,.06) 1px,transparent 1px) 0 0/54px 54px,#070a08",
+  "encre": "#eafff2", "acc": "#39ff88", "acc_texte": "#39ff88", "carte": "#0e1712", "carte_encre": "#eafff2",
+  "ligne": "rgba(57,255,136,.14)", "ligne2": "#1f3a2a", "doux": "#7fa891", "sur": "#04140a", "bulle": "#14251b",
+  "tuile_encre": "#04140a", "tuiles": ["#39ff88", "#b6ff3b", "#b6ff3b", "#39ff88"], "bord": "2px solid rgba(57,255,136,.35)",
+  "blobs": ["rgba(57,255,136,.30)", "rgba(182,255,59,.16)", "rgba(57,255,136,.16)"],
+  "police": "Archivo Black", "espacement": "0px", "sous_titres": 64
+ },
+ "scenes": [
+  {"type": "punch", "titre": "14 reels<br>par semaine.", "sous": "**Sans monter** une seule vidéo.",
+   "vo": "Quatorze reels par semaine, sans monter une seule vidéo. Enregistre, le prompt est à la fin."},
+  {"type": "grille", "etape": "1/6", "titre": "Ma **fiche** de marque", "cartes": ["Ma cible", "Mon ton", "Mes piliers", "Mes interdits"],
+   "vo": "Étape un : une fiche de marque. Ma cible, mon ton, mes piliers, mes interdits."},
+  {"type": "compteur", "etape": "2/6", "titre": "Claude écrit **la semaine**", "valeur": 14, "label": "scripts<br>chaque semaine",
+   "lignes": [["1", "L'accroche"], ["2", "La voix off"], ["3", "Le texte à l'écran"]],
+   "vo": "Étape deux : chaque semaine, Claude écrit les quatorze scripts. Accroche, voix off, texte à l'écran."},
+  {"type": "toggles", "etape": "3/6", "titre": "Il se **relit**", "carte": "Contrôle", "carte_sous": "avant la voix", "de": "…", "a": "OK",
+   "items": ["Mot-clé à la fin", "« Enregistre » au début", "Bonne longueur"],
+   "vo": "Étape trois : un contrôle relit chaque script. Pas de mot-clé ? Le reel est refusé."},
+  {"type": "chat", "etape": "4/6", "titre": "Voix + **montage**", "messages": [["moi", "Voix : Brian · 5 scènes"], ["ia", "Voix générée. Vidéo montée."]],
+   "vo": "Étape quatre : la voix sort d'ElevenLabs, la vidéo est montée par du code."},
+  {"type": "toggles", "etape": "5/6", "titre": "La file + **mon veto**", "carte": "File d'attente", "carte_sous": "je valide", "de": "Refusé", "a": "Validé",
+   "items": ["Lundi · 12:30", "Lundi · 18:30", ["Mardi · 12:30", false]],
+   "vo": "Étape cinq : tout arrive dans un tableau. Je peux refuser n'importe quel reel avant sa sortie."},
+  {"type": "compteur", "etape": "6/6", "titre": "Make **publie**", "valeur": 2, "label": "reels par jour,<br>à heure fixe",
+   "lignes": [["Dim", "Claude lit mes stats"]],
+   "vo": "Étape six : Make publie deux reels par jour. Et le dimanche, Claude lit mes stats."},
+  {"type": "punch", "titre": "C'est<br>tout.",
+   "vo": "C'est tout."},
+  {"type": "cta", "titre": "Le **prompt**<br>de ma semaine", "ctas": ["🔖 Enregistre", "💬 Commente PROMPT"],
+   "vo": "Commente prompt pour recevoir le prompt qui écrit ma semaine de reels."}
+ ]
+}

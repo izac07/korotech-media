@@ -60,7 +60,7 @@ SCHEMA = {
         "postit": ["vo", "texte", "titre?"], "cta": ["vo", "titre", "ctas"]}},  # PILOTE 23/10/2026 : carnet manuscrit, tous comptes  # PILOTE : format court sans voix, 1 à 3 phrases
     "interface": {"ordre": None, "types": {"hook": ["vo", "titre", "sous?", "notif?"], "toggles": ["vo", "carte", "items", "titre?"], "chat": ["vo", "messages", "titre?"],
         "grille": ["vo", "cartes", "titre?"], "compteur": ["vo", "valeur", "label", "lignes?", "titre?"], "cta": ["vo", "titre", "ctas"],
-        "duo": ["vo", "qui", "bulle"], "jauge": ["vo", "labels", "a", "de?", "unite?", "titre?"]}},  # PILOTE 23/10/2026 : cartes d'appli, tous comptes
+        "duo": ["vo", "qui", "bulle"], "punch": ["vo", "titre", "sous?"], "jauge": ["vo", "labels", "a", "de?", "unite?", "titre?"]}},  # PILOTE 23/10/2026 : cartes d'appli, tous comptes
     "malin": {"ordre": None, "types": {
         "hook": ["vo", "big", "sub"],
         "list": ["vo", "title", "items", "slots?"],
@@ -287,7 +287,7 @@ def verifier(path):
     # mot-clé à commenter (ressources/mots-cles.json) : le dernier écran l'affiche et la voix le dit
     mc_f = os.path.join(RACINE, "ressources", "mots-cles.json")
     if os.path.exists(mc_f) and lay != "boucle" and sc and not spec.get("sans_mot_cle"):
-        mc = json.load(open(mc_f, encoding="utf-8")).get(handle)
+        mc = spec.get("mot_cle") or json.load(open(mc_f, encoding="utf-8")).get(handle)  # mot_cle : cadeau propre à ce reel (ex. le prompt montré)
         if mc:
             mot = mc["mot"].lower()
             fin = sc[-1]
