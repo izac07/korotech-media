@@ -1,0 +1,99 @@
+{
+ "id": "ZSF-X04",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 9115,
+ "handle": "zerosallefit",
+ "couleurs": {
+  "mascotte": "#2fbf71",
+  "accessoire": "serre",
+  "bandeau": "#ffffff",
+  "acc": "#ff6a3d",
+  "mur": "#e9dcc6",
+  "sol": "#b98b62",
+  "cadre": "#ffffff",
+  "nuit": "#cfe8ff",
+  "tapis": "#3b82f6"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Pas le temps ?",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "MINUTES",
+    "de": 0,
+    "a": 5
+   },
+   "ecran": {
+    "type": "timer",
+    "titre": "Séance",
+    "exo": "Prêt ?",
+    "secondes": 5,
+    "sous": "sans matériel"
+   },
+   "vo": "Pas le temps pour le sport ? Cinq minutes au réveil suffisent pour commencer. Enregistre cette vidéo, on le fait ensemble."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. Squats",
+   "humeur": "sport",
+   "ecran": {
+    "type": "timer",
+    "titre": "Séance",
+    "exo": "Squats",
+    "secondes": 40,
+    "sous": "version facile : sur une chaise"
+   },
+   "vo": "Un : quarante secondes de squats. Version facile : assieds-toi et relève-toi d'une chaise."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "2. Pompes inclinées",
+   "humeur": "sport",
+   "ecran": {
+    "type": "timer",
+    "titre": "Séance",
+    "exo": "Pompes inclinées",
+    "secondes": 40,
+    "sous": "mains sur le canapé"
+   },
+   "vo": "Deux : des pompes, mains sur le canapé. Plus c'est haut, plus c'est facile."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "3. Gainage",
+   "humeur": "normal",
+   "ecran": {
+    "type": "timer",
+    "titre": "Séance",
+    "exo": "Planche",
+    "secondes": 30,
+    "sous": "version facile : sur les genoux"
+   },
+   "vo": "Trois : trente secondes de planche. Sur les genoux si c'est trop dur. Tu respires, et tu tiens."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Circuit x2",
+   "humeur": "content",
+   "tampon": "SÉANCE FAITE",
+   "compteur": {
+    "label": "MINUTES",
+    "de": 5,
+    "a": 5
+   },
+   "vo": "Tu recommences le circuit deux fois, et c'est fini. Adapte à ton niveau, et arrête si ça fait mal."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PROGRAMME",
+   "humeur": "content",
+   "carte": [
+    "💬 COMMENTE PROGRAMME",
+    "le programme 7 jours gratuit"
+   ],
+   "vo": "Commente programme pour recevoir le programme sept jours gratuit, sans matériel."
+  }
+ ]
+}

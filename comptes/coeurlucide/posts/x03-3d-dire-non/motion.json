@@ -1,0 +1,107 @@
+{
+ "id": "CL-X03",
+ "layout": "studio3d",
+ "decor": "chambre_nuit",
+ "music_seed": 9116,
+ "handle": "coeurlucide__",
+ "couleurs": {
+  "mascotte": "#b79cff",
+  "arrondi": 0.3,
+  "acc": "#ff7aa8",
+  "mur": "#2a2350",
+  "sol": "#221c40",
+  "cadre": "#3a2f5a",
+  "nuit": "#120f26"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "23 h. Tu n'oses pas.",
+   "humeur": "triste",
+   "ecran": {
+    "type": "chat",
+    "titre": "Messages",
+    "messages": [
+     [
+      "ia",
+      "Tu peux me rendre un service demain ? 🙏"
+     ]
+    ]
+   },
+   "vo": "Il est vingt-trois heures, et tu n'oses toujours pas dire non. Enregistre cette vidéo, elle va t'aider."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Pas besoin de te justifier",
+   "humeur": "pensif",
+   "ecran": {
+    "type": "chat",
+    "titre": "Messages",
+    "messages": [
+     [
+      "ia",
+      "Tu peux me rendre un service demain ? 🙏"
+     ],
+     [
+      "moi",
+      "Non, je ne peux pas demain."
+     ]
+    ]
+   },
+   "vo": "Un : tu n'as pas besoin de te justifier. Une phrase courte suffit : non, je ne peux pas."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Prends ton temps",
+   "humeur": "pensif",
+   "vo": "Deux : tu as le droit de dire « je te réponds demain ». Ça te laisse le temps de savoir ce que tu veux."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Propose ce qui te va",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Messages",
+    "messages": [
+     [
+      "moi",
+      "Pas demain, mais samedi je peux t'aider une heure."
+     ]
+    ]
+   },
+   "vo": "Trois : si tu veux aider, propose ce qui te va, à toi. Une heure, pas toute ta journée."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Limite posée",
+   "humeur": "content",
+   "tampon": "LIMITE POSÉE",
+   "ecran": {
+    "type": "chat",
+    "titre": "Messages",
+    "messages": [
+     [
+      "moi",
+      "Pas demain, mais samedi je peux t'aider une heure."
+     ],
+     [
+      "ia",
+      "Ok, samedi c'est parfait, merci ! 💛"
+     ]
+    ]
+   },
+   "vo": "Dire non, ce n'est pas être méchant. C'est te respecter."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente LIMITE",
+   "humeur": "content",
+   "carte": [
+    "💬 COMMENTE LIMITE",
+    "les 10 phrases pour poser une limite"
+   ],
+   "vo": "Commente limite pour recevoir les dix phrases pour poser une limite, sans culpabiliser."
+  }
+ ]
+}

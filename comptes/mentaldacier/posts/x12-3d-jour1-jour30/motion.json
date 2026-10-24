@@ -1,0 +1,94 @@
+{
+ "id": "MDA-X12",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 9114,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "mascotte": "#8fa0b8",
+  "accessoire": "bandeau",
+  "bandeau": "#e8553d",
+  "acc": "#e8553d",
+  "mur": "#3d3566",
+  "sol": "#2c2448",
+  "cadre": "#2a2240",
+  "nuit": "#1d1838"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "6 h. Aucune envie.",
+   "humeur": "dort",
+   "compteur": {
+    "label": "JOUR",
+    "de": 1,
+    "a": 1
+   },
+   "ecran": {
+    "type": "calendrier",
+    "titre": "30 JOURS",
+    "jusqua": 0
+   },
+   "vo": "Six heures, le réveil sonne, et tu n'as aucune envie. Enregistre cette vidéo : voilà comment tenir trente jours."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "La version mini",
+   "humeur": "normal",
+   "ecran": {
+    "type": "liste",
+    "titre": "MA VERSION MINI",
+    "lignes": [
+     "10 min de sport",
+     "1 page lue",
+     "Téléphone loin le soir"
+    ]
+   },
+   "vo": "Un : une version mini de ton habitude. Dix minutes, pas une heure. C'est trop petit pour que tu dises non."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Même heure, même endroit",
+   "humeur": "sport",
+   "vo": "Deux : même heure, même endroit, chaque jour. Tu ne décides plus, tu fais."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Jamais deux ratés",
+   "humeur": "normal",
+   "compteur": {
+    "label": "JOUR",
+    "de": 1,
+    "a": 18
+   },
+   "ecran": {
+    "type": "calendrier",
+    "titre": "30 JOURS",
+    "jusqua": 18
+   },
+   "vo": "Trois, le plus important : un jour raté, ça arrive. Deux de suite, jamais. C'est ça qui casse une habitude."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Jour 30",
+   "humeur": "content",
+   "tampon": "JOUR 30 TENU",
+   "compteur": {
+    "label": "JOUR",
+    "de": 30,
+    "a": 30
+   },
+   "vo": "Au jour trente, l'effort est devenu normal. Tu ne te bats plus contre toi-même."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit, avec ta fiche à cocher."
+  }
+ ]
+}
