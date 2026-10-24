@@ -12,19 +12,10 @@ Chaque reel montre **Claude faire une vraie tâche d'entrepreneur**, chez Goat, 
 - Univers : un petit bureau de nuit où travaille **la mascotte Claude** (cube orange, visage en pixels). Pas de logo Claude/Anthropic : seulement le nom et notre mascotte.
 - Couleurs : nuit `#141a3a`, orange `#ff7a3d`, jaune `#ffd23f`, vert `#2fd36b`, papier `#f4e7cf`, encre `#1b2147`.
 
-## Formats (voir tools/MOTION.md)
-1. **`studio3d`** — le visage du compte. **3 reels par semaine** (lundi, mercredi, vendredi à 18:30). 5-6 scènes, 30-45 s : problème (plan `large`, humeur `fatigue`, écran `bazar`, compteur) → Claude fait (plans `ecran` / `mascotte`, humeur `travail`) → résultat (`telephone`, `tampon`) → mot-clé (`carte`). Exemple : `posts/x04-claude-monte-tes-reels/motion.json`. Rendu lent sans carte graphique (environ 25 min par reel dans le cloud) : ne jamais dépasser 3 par semaine dans la routine.
-2. **Tuto en étapes** (`interface` + `etape` + écrans `punch`) — exemple `posts/x03-14-reels-sans-monter/motion.json`.
-3. **Dialogue toi ↔ Claude** (`interface` + `duo`, 2 voix) — exemple `posts/x02-claude-deborde/motion.json`.
-Les formats 2 et 3 prennent **les couleurs du rebranding** : copier ce bloc dans le motion.json :
-```
-"couleurs": {"fond": "linear-gradient(180deg,#141a3a,#232a5c)", "encre": "#f4e7cf", "acc": "#ff7a3d", "acc_texte": "#ff9a63",
-  "carte": "#1d2450", "carte_encre": "#f4e7cf", "ligne": "rgba(244,231,207,.12)", "ligne2": "#2e3670", "doux": "#9aa3c7",
-  "sur": "#ffffff", "bulle": "#2a3166", "tuile_encre": "#1b2147", "tuiles": ["#ff7a3d", "#ffd23f", "#ffd23f", "#ff7a3d"],
-  "bord": "2px solid rgba(255,122,61,.35)", "blobs": ["rgba(255,122,61,.25)", "rgba(255,210,63,.14)", "rgba(123,92,255,.22)"],
-  "police": "Archivo Black", "espacement": "0px", "sous_titres": 64, "mascotte": "#e8794a"}
-```
-Alterner les formats 2 et 3 sur les 11 autres créneaux ; jamais deux fois le même format le même jour.
+## Format : 100 % studio3d (décision de Goat du 24/10/2026)
+**Tous les reels LIA sont en `studio3d`** (voir tools/MOTION.md), comme `posts/x04-claude-monte-tes-reels/motion.json`. Pas de tuto, pas de dialogue, pas d'autre layout pour l'instant.
+- 5-6 scènes, 30-45 s : problème (plan `large`, humeur `fatigue`, écran `bazar`, compteur) → Claude fait (plans `ecran` / `mascotte`, humeur `travail`, écrans `chat` / `montage` / `verif` / `export`) → résultat (`telephone`, `tampon`) → mot-clé (`carte`). Varier les plans, les écrans, les compteurs et les tampons d'un reel à l'autre.
+- **Rendu sur le PC de Goat, pas dans le cloud** (carte graphique : ~3 min par reel contre ~25 min sans) : la routine du lundi écrit le motion.json, génère les voix et liste le reel dans `a-rendre/LIA-<date>.json` (statut `a_rendre`), sans rendre ni mettre en file. La tâche planifiée locale « Rendu 3D LIA » (lundi 8h, appli Claude ouverte sur le PC) lance `tools/rendre_lot.py`, regarde les images de contrôle, puis ajoute chaque reel à la file Make.
 
 ## Piliers
 - **Claude fait à ta place** (40 %) : monter un reel, répondre à un client, faire un devis, trier ses mails, préparer sa semaine, relancer une facture.
