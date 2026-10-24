@@ -50,3 +50,19 @@ POV / humour : ma mère découvre que je révise avec ChatGPT ; le prof qui rend
 Parents : aider en maths ; outils gratuits ; parler d'IA à son ado.
 | 2026-10-22 12:15 | R25 | Reel | 3 astuces IA pour retenir tes dates d'histoire (Études malin, cheatsheet) | — |
 | 2026-10-23 13:34 | X05 | Reel | 3 prompts pour réviser sans tricher : fiche, carte mentale, interro (Études malin, cheatsheet) | — |
+| 2026-10-25 12:15 | R26 | Reel | POV : ta fiche de révision est trop longue (Études malin, cheatsheet) | — |
+| 2026-10-25 19:15 | R27 | Reel | Photo du frigo → recette (L'IA au quotidien, cheatsheet) | — |
+| 2026-10-26 12:15 | R28 | Reel | Arrêter de tout surligner (Études malin, cheatsheet) | — |
+| 2026-10-26 19:15 | R29 | Reel | POV : le prof rend les copies (Humour / POV, cheatsheet) | — |
+| 2026-10-27 12:15 | R30 | Reel | Introduction de dissertation sans page blanche (Études malin, cheatsheet) | — |
+| 2026-10-27 19:15 | R31 | Reel | POV : 2 h du mat et contrôle demain (Humour / POV, cheatsheet) | — |
+| 2026-10-28 12:15 | R32 | Reel | POV : oral d'anglais dans dix minutes (Études malin, cheatsheet) | — |
+| 2026-10-28 19:15 | R33 | Reel | Écrire un mail à un prof (Vie étudiante, cheatsheet) | — |
+| 2026-10-29 12:15 | R34 | Reel | Bloqué en maths : poser des questions sans copier la réponse (Études malin, cheatsheet) | — |
+| 2026-10-29 19:15 | R35 | Reel | POV : choisir sa formation (Vie étudiante, cheatsheet) | — |
+| 2026-10-30 12:15 | R36 | Reel | Retenir une liste avec l'IA (Études malin, cheatsheet) | — |
+| 2026-10-30 19:15 | R37 | Reel | Préparer un week-end pas cher (L'IA au quotidien, cheatsheet) | — |
+| 2026-10-31 12:15 | R38 | Reel | POV : tu as raté un cours (Études malin, cheatsheet) | — |
+| 2026-10-31 19:15 | R39 | Reel | Budget étudiant du mois en 3 étapes (Vie étudiante, cheatsheet) | — |
+| 2026-11-01 12:15 | R40 | Reel | Retenir du vocabulaire d'anglais (Études malin, cheatsheet) | — |
+| 2026-11-01 19:15 | R41 | Reel | POV : ta mère te voit réviser avec ChatGPT (Humour / POV, cheatsheet) | — |
