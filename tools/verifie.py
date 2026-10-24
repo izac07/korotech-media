@@ -59,7 +59,8 @@ SCHEMA = {
     "carnet": {"ordre": None, "types": {"hook": ["vo", "titre", "sous?"], "note": ["vo", "titre", "lignes"], "liste": ["vo", "titre", "items"],
         "postit": ["vo", "texte", "titre?"], "cta": ["vo", "titre", "ctas"]}},  # PILOTE 23/10/2026 : carnet manuscrit, tous comptes  # PILOTE : format court sans voix, 1 à 3 phrases
     "interface": {"ordre": None, "types": {"hook": ["vo", "titre", "sous?", "notif?"], "toggles": ["vo", "carte", "items", "titre?"], "chat": ["vo", "messages", "titre?"],
-        "grille": ["vo", "cartes", "titre?"], "compteur": ["vo", "valeur", "label", "lignes?", "titre?"], "cta": ["vo", "titre", "ctas"]}},  # PILOTE 23/10/2026 : cartes d'appli, tous comptes
+        "grille": ["vo", "cartes", "titre?"], "compteur": ["vo", "valeur", "label", "lignes?", "titre?"], "cta": ["vo", "titre", "ctas"],
+        "duo": ["vo", "qui", "bulle"], "jauge": ["vo", "labels", "a", "de?", "unite?", "titre?"]}},  # PILOTE 23/10/2026 : cartes d'appli, tous comptes
     "malin": {"ordre": None, "types": {
         "hook": ["vo", "big", "sub"],
         "list": ["vo", "title", "items", "slots?"],
@@ -131,6 +132,12 @@ def verifier(path):
         if not 6 <= duree <= 10: att.append("boucle : durée estimée %.1f s (cible 6-10 s)" % duree)
         for k, s in enumerate(sc):
             if len(s.get("texte", "").split()) > 9: att.append("scène %d : plus de 9 mots, la phrase ne tiendra pas en 3 lignes" % k)
+    elif any(s.get("type") == "duo" for s in sc):  # format dialogue (questions qui relancent) : plus long, 50-80 s
+        if not 120 <= n <= 200:
+            err.append("dialogue : %d mots de voix (cible 120-200, soit 50-80 s)" % n)
+        for k, s in enumerate(sc):
+            if s.get("qui") not in ("moi", "claude"):
+                err.append("scène %d : « qui » doit valoir « moi » ou « claude » (choisit la voix)" % k)
     elif n < MOTS_MIN - 10 or n > MOTS_MAX + 10:
         err.append("voix off : %d mots (cible %d-%d, soit 40-45 s)" % (n, MOTS_MIN, MOTS_MAX))
     elif not MOTS_MIN <= n <= MOTS_MAX:
@@ -243,7 +250,8 @@ def verifier(path):
 
     # structure voulue par Goat (23/10/2026) : accroche, puis tout de suite « Enregistre cette vidéo », puis les conseils
     if lay != "boucle" and sc and sc[0].get("vo") and not spec.get("sans_mot_cle"):
-        if not re.search(r"\benregistre", norm(sc[0].get("say") or sc[0]["vo"])):
+        debut = sc[:2] if sc[0].get("type") == "duo" else sc[:1]  # dialogue : la question, puis la réponse qui dit « enregistre »
+        if not any(re.search(r"\benregistre", norm(s.get("say") or s.get("vo", ""))) for s in debut):
             err.append("scène 0 : après l'accroche, la voix doit dire « Enregistre cette vidéo » (ex. « … Enregistre-la, tu vas en avoir besoin. »)")
 
     # dire « Claude » et pas « l'IA » (décision de Goat du 24/10/2026)

@@ -1,0 +1,42 @@
+{
+ "id": "LIA-X02",
+ "layout": "interface",
+ "music_seed": 9111,
+ "handle": "lia.entrepreneur",
+ "couleurs": {
+  "fond": "linear-gradient(rgba(57,255,136,.06) 1px,transparent 1px) 0 0/54px 54px,linear-gradient(90deg,rgba(57,255,136,.06) 1px,transparent 1px) 0 0/54px 54px,#070a08",
+  "encre": "#eafff2", "acc": "#39ff88", "acc_texte": "#39ff88", "carte": "#0e1712", "carte_encre": "#eafff2",
+  "ligne": "rgba(57,255,136,.14)", "ligne2": "#1f3a2a", "doux": "#7fa891", "sur": "#04140a", "bulle": "#14251b",
+  "tuile_encre": "#04140a", "tuiles": ["#39ff88", "#b6ff3b", "#b6ff3b", "#39ff88"], "bord": "2px solid rgba(57,255,136,.35)",
+  "blobs": ["rgba(57,255,136,.30)", "rgba(182,255,59,.16)", "rgba(57,255,136,.16)"],
+  "police": "Archivo Black", "espacement": "0px", "mascotte": "#39ff88", "pull": "#1c2b22", "cheveux": "#1a120c"
+ },
+ "scenes": [
+  {"type": "duo", "qui": "moi", "bulle": "Claude… pourquoi tu perds le fil au bout d'**une heure** ?",
+   "vo": "Claude… pourquoi tu perds le fil au bout d'une heure ?"},
+  {"type": "duo", "qui": "claude", "bulle": "Je perds pas le fil.<br>**Je déborde.**",
+   "vo": "Je ne perds pas le fil, je déborde. Enregistre cette vidéo : quatre réflexes, et t'as rien à noter, tout est à la fin."},
+  {"type": "jauge", "qui": "claude", "titre": "Ma **mémoire** de travail", "labels": ["consignes", "fichiers", "commandes", "conversation"], "de": 0, "a": 92, "unite": "mémoire",
+   "vo": "À chaque message, je relis tout : tes consignes, les fichiers ouverts, toute la conversation. Plus ça se remplit, plus j'oublie."},
+  {"type": "duo", "qui": "moi", "bulle": "Ok… je fais **quoi** alors ?",
+   "vo": "Ok… je fais quoi, alors ?"},
+  {"type": "chat", "qui": "claude", "titre": "Réflexe 1 : **/context**", "messages": [["moi", "/context"], ["ia", "Voici ce qui remplit ma mémoire, et la place qui reste."]],
+   "vo": "Réflexe un : tape slash context. Je te montre ce qui remplit ma mémoire, et la place qui reste."},
+  {"type": "duo", "qui": "moi", "bulle": "Et quand c'est **presque plein** ?",
+   "vo": "Et quand c'est presque plein ?"},
+  {"type": "chat", "qui": "claude", "titre": "Réflexe 2 : **/compact**", "messages": [["moi", "/compact garde seulement les décisions et les fichiers modifiés"]],
+   "vo": "Réflexe deux : slash compact. Je résume la conversation et je repars du résumé. Dis-moi quoi garder : les décisions, les fichiers modifiés."},
+  {"type": "duo", "qui": "moi", "bulle": "Et si tu **tournes en rond** ?",
+   "vo": "Et si tu tournes en rond ?"},
+  {"type": "chat", "qui": "claude", "titre": "Réflexe 3 : **/clear**", "messages": [["moi", "Fais-moi une passation en 5 lignes."], ["ia", "Objectif · Fait · Décisions · Reste à faire · Fichiers"], ["moi", "/clear"]],
+   "vo": "Réflexe trois : demande-moi une passation en cinq lignes, tape slash clear, et colle-la. Tu repars avec moi, tout neuf."},
+  {"type": "duo", "qui": "moi", "bulle": "Et pour fouiller **plein de fichiers** ?",
+   "vo": "Et pour fouiller plein de fichiers ?"},
+  {"type": "chat", "qui": "claude", "titre": "Réflexe 4 : **sous-agent**", "messages": [["moi", "Utilise un sous-agent pour trouver où on gère les factures."], ["ia", "Le sous-agent a fouillé. Voici son résumé :"]],
+   "vo": "Réflexe quatre : un sous-agent. Il fouille les fichiers avec sa propre mémoire, et moi, je reçois juste son résumé."},
+  {"type": "grille", "qui": "claude", "titre": "Les **4 réflexes**", "cartes": ["/context", "/compact", "/clear", "Sous-agent"],
+   "vo": "Slash context pour voir, slash compact pour résumer, slash clear pour repartir, un sous-agent pour fouiller."},
+  {"type": "cta", "qui": "claude", "titre": "**10 tâches**<br>à me déléguer", "ctas": ["🔖 Enregistre", "💬 Commente IA"],
+   "vo": "Commente IA pour recevoir les dix tâches à me déléguer, prêtes à copier."}
+ ]
+}

@@ -160,3 +160,14 @@ Exemple : `posts/x06-pov-partiel-demain/motion.json`. Style « outil IA » : fon
 - `compteur` : `valeur` (chiffre réel uniquement), `label`, `lignes` = [[tag, texte]]
 - `cta` : `titre`, `ctas` (2 boutons, le 2e en couleur)
 Champ optionnel `couleurs` : {fond, encre, acc, tuiles: [4], blobs: [3], de: "Toi", a: "Claude"}.
+
+### interface + dialogue (PILOTE du 24/10/2026) — « toi ↔ Claude », 2 voix
+Exemple : `comptes/lia-entrepreneur/posts/x02-claude-deborde/motion.json` (aux couleurs de LIA, fond sombre). Construction tirée d'un reel à environ 200 000 vues (titouan.ia), RÉÉCRITE avec nos mots (jamais copier un script mot pour mot) :
+1. L'accroche = une question que tout le monde pose à Claude, avec ses mots (« Claude… pourquoi tu perds le fil au bout d'une heure ? »).
+2. Claude répond à la 1re personne, puis « Enregistre cette vidéo… t'as rien à noter, tout est à la fin » (la scène 1 peut porter le « enregistre »).
+3. Une image qu'on comprend tout de suite (scène `jauge` : un bocal qui se remplit).
+4. Chaque partie est ouverte par une question courte de « toi » (« Et si tu tournes en rond ? ») : c'est ce qui fait tenir 50 à 80 s.
+5. Carte récap (`grille`), puis le mot-clé.
+Scènes en plus : `duo` {qui: "moi"|"claude", bulle (phrase courte affichée, `**mot**`, `<br>`)} : deux personnages, celui qui parle bouge la bouche ; `jauge` {labels, de, a, unite?, titre?}.
+Chaque scène a `qui` (voix) : **moi = Brian (nPczCjzI2devNBz1zQrb), claude = Alice (Xb7hH8MSUJpSbSDYk0k2)**. Dialogue : 120 à 200 mots de voix.
+Thème sombre / couleurs d'un compte : `couleurs` accepte aussi carte, carte_encre, ligne, ligne2, doux, sur (texte sur l'accent), bulle, tuile_encre, bord, acc_texte, police, espacement, peau, cheveux, pull, mascotte, noms. `fond` accepte un fond CSS complet (dégradés, quadrillage).

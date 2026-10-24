@@ -1703,34 +1703,35 @@ def carnet_page(spec, theme, starts, durs, caps, total):
 # ------------------------------------------------------------------ layout « interface » (PILOTE 23/10/2026, tous comptes)
 INTERFACE_TPL = r"""<!doctype html><html><head><meta charset='utf-8'><style>__FONTS__
 *{margin:0;padding:0;box-sizing:border-box}
+:root{__VARS__}
 body{width:1080px;height:1920px;overflow:hidden;background:__FOND__;position:relative;font-family:Inter,sans-serif;color:__ENCRE__}
 .blob{position:absolute;border-radius:50%;filter:blur(120px);opacity:.75}
 .top{position:absolute;left:60px;right:60px;top:90px;display:flex;align-items:center;justify-content:space-between;z-index:30}
 .hdl{font:700 34px Inter;color:__ENCRE__;opacity:.55}
-.dots{display:flex;gap:10px}.dots i{display:block;width:16px;height:16px;border-radius:8px;background:rgba(27,27,34,.18)}.dots i.on{width:44px;background:__ACC__}
+.dots{display:flex;gap:10px}.dots i{display:block;width:16px;height:16px;border-radius:8px;background:var(--ligne2)}.dots i.on{width:44px;background:__ACC__}
 .num{font:800 34px Inter;font-variant-numeric:tabular-nums;opacity:.6}
 .sc{position:absolute;left:60px;right:110px;top:190px;height:1150px;display:flex;flex-direction:column;justify-content:center;gap:46px;opacity:0}
-.ti{font:900 92px/1.04 Inter;letter-spacing:-3px;opacity:0}
-.ti.big{font-size:118px;letter-spacing:-4px}
+.ti{font:900 92px/1.04 __TFONT__;letter-spacing:__TLS__;opacity:0}
+.ti.big{font-size:118px}
 .ti em,.cta em{font-style:normal;color:__ACC__}
-.chip{align-self:flex-start;background:#fff;border-radius:999px;padding:18px 34px;font:800 44px Inter;box-shadow:0 14px 34px rgba(80,60,120,.16);opacity:0}
+.chip{align-self:flex-start;background:var(--carte);color:var(--carte-encre);border-radius:999px;padding:18px 34px;font:800 44px Inter;box-shadow:0 14px 34px rgba(80,60,120,.16);opacity:0}
 .chip b{color:__ACC__}
-.card{background:#fff;border-radius:44px;padding:40px 46px;box-shadow:0 34px 80px rgba(80,60,120,.20);opacity:0}
+.card{background:var(--carte);color:var(--carte-encre);border:var(--bord);border-radius:44px;padding:40px 46px;box-shadow:0 34px 80px rgba(80,60,120,.20);opacity:0}
 .ch{display:flex;align-items:center;gap:20px;margin-bottom:14px}.ch i{width:30px;height:30px;border-radius:15px;background:__ACC__}
 .ch b{font:800 48px Inter}.ch small{font:500 30px Inter;opacity:.45;margin-left:auto}
-.row{display:flex;align-items:center;gap:24px;padding:26px 0;border-top:2px solid #f0edf3;font:700 44px Inter;--k:0}
+.row{display:flex;align-items:center;gap:24px;padding:26px 0;border-top:2px solid var(--ligne);font:700 44px Inter;--k:0}
 .row .lb{flex:1}
 .who{position:relative;width:120px;height:40px;font:700 30px Inter;text-align:right}
-.who em{position:absolute;right:0;top:4px;font-style:normal}.who .w0{opacity:calc(1 - var(--k));color:#9a96a3}.who .w1{opacity:var(--k);color:__ACC__}
-.tg{position:relative;flex:none;width:100px;height:58px;border-radius:29px;background:#dcd7e3;overflow:hidden}
+.who em{position:absolute;right:0;top:4px;font-style:normal}.who .w0{opacity:calc(1 - var(--k));color:var(--doux)}.who .w1{opacity:var(--k);color:__ACC__}
+.tg{position:relative;flex:none;width:100px;height:58px;border-radius:29px;background:var(--ligne2);overflow:hidden}
 .tg .on{position:absolute;inset:0;background:__ACC__;opacity:var(--k)}
 .tg .kn{position:absolute;left:6px;top:6px;width:46px;height:46px;border-radius:23px;background:#fff;box-shadow:0 3px 8px rgba(0,0,0,.2);transform:translateX(calc(var(--k)*42px))}
 .chat{display:flex;flex-direction:column;gap:24px}
 .bub{max-width:84%;padding:26px 34px;border-radius:36px;font:600 42px/1.3 Inter;opacity:0;white-space:pre-line}
-.bub.moi{align-self:flex-end;background:__ACC__;color:#fff;border-bottom-right-radius:10px}
-.bub.ia{align-self:flex-start;background:#f2eff6;border-bottom-left-radius:10px}
+.bub.moi{align-self:flex-end;background:__ACC__;color:var(--sur);border-bottom-right-radius:10px}
+.bub.ia{align-self:flex-start;background:var(--bulle);border-bottom-left-radius:10px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
-.tile{height:230px;border-radius:30px;color:#fff;font:900 50px/1.05 Inter;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;text-transform:uppercase;opacity:0;box-shadow:0 14px 30px rgba(0,0,0,.12)}
+.tile{height:230px;border-radius:30px;color:var(--tuile-encre);font:900 50px/1.05 Inter;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;text-transform:uppercase;opacity:0;box-shadow:0 14px 30px rgba(0,0,0,.12)}
 .cnt{display:flex;align-items:center;gap:40px;margin:10px 0 18px}
 .ring{position:relative;width:230px;height:230px;flex:none}.ring svg{position:absolute;inset:0;transform:rotate(-90deg)}
 .ring .n{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:900 100px Inter;font-variant-numeric:tabular-nums}
@@ -1739,13 +1740,21 @@ body{width:1080px;height:1920px;overflow:hidden;background:__FOND__;position:rel
 .lrow{opacity:0}
 .cta{display:flex;flex-direction:column;gap:34px;align-items:flex-start}
 .btn{padding:34px 54px;border-radius:999px;font:800 58px Inter;white-space:nowrap;opacity:0;box-shadow:0 18px 40px rgba(80,60,120,.18)}
-.btn.b0{background:#fff;border:5px solid __ENCRE__}.btn.b1{background:__ACC__;color:#fff}
-.nt{display:flex;gap:26px;align-items:center;background:rgba(255,255,255,.92);border-radius:36px;padding:30px 36px;box-shadow:0 24px 60px rgba(80,60,120,.18);opacity:0}
+.btn.b0{background:var(--carte);color:var(--carte-encre);border:5px solid var(--carte-encre)}.btn.b1{background:__ACC__;color:var(--sur)}
+.nt{display:flex;gap:26px;align-items:center;background:var(--carte);color:var(--carte-encre);border:var(--bord);border-radius:36px;padding:30px 36px;box-shadow:0 24px 60px rgba(80,60,120,.18);opacity:0}
 .nt .ic{flex:none;width:96px;height:96px;border-radius:24px;background:__ACC__;display:flex;align-items:center;justify-content:center;font-size:56px}
 .nt b{display:block;font:800 34px Inter;opacity:.5;margin-bottom:6px}.nt span{font:700 44px/1.2 Inter}
 .caps{position:absolute;left:60px;right:60px;top:1370px;text-align:center;z-index:40}
-.cap{display:none;background:#fff;border-radius:22px;padding:14px 32px;font:800 52px Inter;color:__ENCRE__;box-shadow:0 10px 30px rgba(80,60,120,.18)}
-.cap span.on{color:__ACC__}
+.cap{display:none;background:var(--carte);border-radius:22px;padding:14px 32px;font:800 52px Inter;color:var(--carte-encre);border:var(--bord);box-shadow:0 10px 30px rgba(80,60,120,.18)}
+.cap span.on{color:var(--acc-texte)}
+/* scène duo : deux personnages qui se parlent */
+.duo{position:relative;flex:1;display:flex;flex-direction:column;justify-content:flex-start;gap:0}
+.nom{font:800 36px Inter;color:var(--acc-texte);margin:0 10px 12px;opacity:0}
+.bul{position:relative;max-width:900px;background:var(--carte);color:var(--carte-encre);border:var(--bord);border-radius:48px;padding:40px 50px;font:800 66px/1.12 __TFONT__;letter-spacing:__TLS__;box-shadow:0 30px 70px rgba(0,0,0,.25);opacity:0}
+.bul em{font-style:normal;color:var(--acc-texte)}
+.duo.m .nom,.duo.m .bul{align-self:flex-start}.duo.c .nom,.duo.c .bul{align-self:flex-end}
+.duo svg.pp{position:absolute;left:-60px;width:1080px;height:760px;bottom:-90px}
+.jar{position:relative;width:100%;height:900px}.jar svg{position:absolute;inset:0;width:100%;height:100%}
 </style></head><body>
 __BLOBS__
 <div class='top'><span class='hdl'>@__HANDLE__</span><span class='dots' id='dots'>__DOTS__</span><span class='num' id='num'></span></div>
@@ -1771,6 +1780,13 @@ window.render=function(t){
    else if(e.k=='row'){const k=eo(p);n.style.opacity=k;n.style.transform=`translateX(${(1-k)*-60}px)`;}
    else if(e.k=='tog'){n.style.setProperty('--k',eo(p));}
    else if(e.k=='type'){n.style.opacity=t>=e.at?1:0;const f=n.dataset.full;n.textContent=f.slice(0,Math.round(f.length*c(p)));}
+   else if(e.k=='talk'){const sp=t>=e.at&&t<e.at+e.d, o=e.who, x=o=='m'?'c':'m';
+     $(e.id+'m'+o).setAttribute('ry',sp?5+15*Math.abs(Math.sin(t*16.5)):3);
+     $(e.id+'g'+o).style.transform=`translateY(${sp?-Math.abs(Math.sin(t*8.3))*12:0}px)`;$(e.id+'g'+o).style.opacity=1;$(e.id+'g'+x).style.opacity=.5;
+     for(const w of ['m','c']){const ey=$(e.id+'e'+w);if(ey)ey.style.transform=`scaleY(${((t+(w=='c'?1.3:0))%3.4)<.13?.1:1})`;}}
+   else if(e.k=='drop'){const k=back(p);n.style.opacity=c(p*5);n.style.transform=`translateY(${(1-k)*-420}px)`;}
+   else if(e.k=='fill'){const k=eo(p), v=e.de+(e.a-e.de)*k, h=e.H*v/100;const w=$(e.id+'w');w.setAttribute('y',e.Y+e.H-h);w.setAttribute('height',h);
+     $(e.id+'p').textContent=Math.round(v)+' %';}
    else if(e.k=='count'){const k=eo(p);n.querySelector('.n').textContent=Math.round(e.v*k);n.querySelector('circle.fg').style.strokeDashoffset=RC*(1-k);}}
  for(const cp of document.querySelectorAll('.cap')){const a=+cp.dataset.a,b=+cp.dataset.b;cp.style.display=(t>=a&&t<b)?'inline-block':'none';
    const ws=[...cp.querySelectorAll('[data-w]')];ws.forEach((w,i)=>{const nx=ws[i+1];w.className=(t>=+w.dataset.w&&(!nx||t<+nx.dataset.w))?'on':'';});}
@@ -1784,10 +1800,48 @@ def interface_page(spec, theme, starts, durs, caps, total):
     hook {titre, sous?} ; toggles {carte, items: [libellé | [libellé, false]]} (Toi -> IA, false = reste « Toi ») ;
     chat {messages: [["moi"|"ia", texte]]} ; grille {cartes: [4 textes]} ; compteur {valeur, label, lignes: [[tag, texte]]} ; cta {ctas}."""
     sc = spec["scenes"]; col = {"fond": "#f4eff8", "encre": "#1b1b22", "acc": "#ff5a36", "tuiles": ["#ff5a36", "#3b5bdb", "#f2a516", "#1f9d6e"],
-                                 "blobs": ["#cdb9ff", "#ffc7a6", "#ffb6cf"], "de": "Toi", "a": "Claude"} | spec.get("couleurs", {})
+                                 "blobs": ["#cdb9ff", "#ffc7a6", "#ffb6cf"], "de": "Toi", "a": "Claude",
+                                 "carte": "#fff", "carte_encre": "#1b1b22", "ligne": "#f0edf3", "ligne2": "#dcd7e3", "doux": "#9a96a3", "sur": "#fff",
+                                 "bulle": "#f2eff6", "tuile_encre": "#fff", "bord": "none", "police": "Inter", "espacement": "-3px",
+                                 "peau": "#f1c39b", "cheveux": "#2b1d14", "pull": "#2f3e66", "mascotte": "#e8763a", "noms": {"m": "Toi", "c": "Claude"}} | spec.get("couleurs", {})
+    col.setdefault("acc_texte", col["acc"])
     html, EL, ev = [], [], []
     for k, s in enumerate(sc):
         a, d = starts[k], durs[k]; ty = s["type"]; parts = []; seq = []   # seq : (id, kind, poids, extra)
+        if ty == "duo":  # deux personnages, celui qui parle (qui = "moi" | "claude") bouge la bouche ; `bulle` = phrase courte affichée
+            w = "c" if s.get("qui") == "claude" else "m"; mc = col["mascotte"]
+            svg = (f"<svg class='pp' viewBox='0 0 1080 760'><ellipse cx='300' cy='752' rx='230' ry='22' fill='#000' opacity='.18'/><ellipse cx='790' cy='745' rx='190' ry='20' fill='#000' opacity='.18'/>"
+                   f"<g id='s{k}gm' style='transform-box:fill-box;transform-origin:50% 100%'>"
+                   f"<path d='M110 760 C110 600 170 560 300 560 C430 560 490 600 490 760 Z' fill='{col['pull']}'/><rect x='272' y='500' width='56' height='80' rx='20' fill='{col['peau']}'/>"
+                   f"<circle cx='300' cy='410' r='125' fill='{col['peau']}'/>"
+                   f"<path d='M176 398 C166 300 230 262 305 268 C386 270 434 322 424 402 C402 346 360 330 300 336 C244 339 204 354 176 398 Z' fill='{col['cheveux']}'/>"
+                   f"<g id='s{k}em' style='transform-box:fill-box;transform-origin:50% 50%'><ellipse cx='255' cy='428' rx='13' ry='17' fill='#1b1b22'/><ellipse cx='345' cy='428' rx='13' ry='17' fill='#1b1b22'/></g>"
+                   f"<path d='M232 392 Q255 381 278 392 M322 392 Q345 381 368 392' stroke='{col['cheveux']}' stroke-width='9' fill='none' stroke-linecap='round'/>"
+                   f"<ellipse id='s{k}mm' cx='300' cy='487' rx='28' ry='3' fill='#5a2626'/></g>"
+                   f"<g id='s{k}gc' style='transform-box:fill-box;transform-origin:50% 100%'>"
+                   f"<line x1='790' y1='385' x2='790' y2='318' stroke='{mc}' stroke-width='12' stroke-linecap='round'/><circle cx='790' cy='306' r='22' fill='{mc}'/>"
+                   f"<rect x='604' y='520' width='42' height='96' rx='21' fill='{mc}'/><rect x='934' y='520' width='42' height='96' rx='21' fill='{mc}'/>"
+                   f"<rect x='630' y='380' width='320' height='330' rx='96' fill='{mc}'/>"
+                   f"<g id='s{k}ec' style='transform-box:fill-box;transform-origin:50% 50%'><circle cx='735' cy='505' r='36' fill='#fff'/><circle cx='845' cy='505' r='36' fill='#fff'/>"
+                   f"<circle cx='741' cy='511' r='17' fill='#141414'/><circle cx='851' cy='511' r='17' fill='#141414'/></g>"
+                   f"<ellipse id='s{k}mc' cx='790' cy='612' rx='34' ry='3' fill='#141414' opacity='.85'/></g></svg>")
+            parts.append(f"<div class='duo {w}'><div class='nom' id='s{k}no'>{K.esc(col['noms'][w])}</div><div class='bul' id='s{k}bu'>{rich(s.get('bulle', ''))}</div>{svg}</div>")
+            seq += [(f"s{k}bu", "pop", 1, {}), (f"s{k}no", "rise", .3, {})]
+            EL.append({"id": f"s{k}", "k": "talk", "who": w, "at": round(a + .25, 3), "d": round(max(.5, d - .9), 3)})
+        if ty == "jauge":  # bocal qui se remplit (métaphore) : `labels` tombent dedans, le niveau monte de `de` à `a` %
+            mc = col["mascotte"]; labs = s.get("labels", [])
+            chips = "".join(f"<g id='s{k}j{i}' style='opacity:0'><rect x='{235 + (i % 2) * 260}' y='{205 + i * 92}' width='{min(250, 40 + 22 * len(x))}' height='70' rx='18' fill='{col['carte']}' stroke='{col['acc']}' stroke-width='4'/>"
+                            f"<text x='{255 + (i % 2) * 260}' y='{252 + i * 92}' font-family='Inter' font-weight='800' font-size='36' fill='{col['carte_encre']}'>{K.esc(x)}</text></g>" for i, x in enumerate(labs))
+            parts.append(f"<div class='jar'><svg id='s{k}j' viewBox='0 0 960 900'><defs><clipPath id='s{k}cl'><rect x='190' y='140' width='580' height='620' rx='110'/></clipPath></defs>"
+                         f"<rect x='190' y='140' width='580' height='620' rx='110' fill='{col['encre']}' fill-opacity='.05'/>"
+                         f"<g><rect x='385' y='430' width='190' height='180' rx='60' fill='{mc}'/><circle cx='445' cy='500' r='22' fill='#fff'/><circle cx='515' cy='500' r='22' fill='#fff'/>"
+                         f"<circle cx='448' cy='504' r='10' fill='#141414'/><circle cx='518' cy='504' r='10' fill='#141414'/></g>"
+                         f"<g clip-path='url(#s{k}cl)'><rect id='s{k}jw' x='190' y='760' width='580' height='0' fill='{col['acc']}' fill-opacity='.42'/></g>"
+                         f"<rect x='190' y='140' width='580' height='620' rx='110' fill='none' stroke='{col['encre']}' stroke-opacity='.35' stroke-width='8'/>{chips}"
+                         f"<rect x='280' y='790' width='400' height='96' rx='24' fill='{col['carte']}'/>"
+                         f"<text x='310' y='853' font-family='Inter' font-weight='700' font-size='34' fill='{col['carte_encre']}' opacity='.6'>{K.esc(s.get('unite', 'mémoire'))}</text>"
+                         f"<text id='s{k}jp' x='650' y='858' text-anchor='end' font-family='Inter' font-weight='800' font-size='56' fill='{col['acc_texte']}'>{int(s.get('de', 0))} %</text></svg></div>")
+            seq += [(f"s{k}j{i}", "drop", .8, {}) for i in range(len(labs))]
         if s.get("titre"):
             parts.append(f"<div class='ti{' big' if ty == 'hook' else ''}' id='s{k}ti'>{rich(s['titre'])}</div>"); seq.append((f"s{k}ti", "rise", .5, {}))
         if ty == "hook" and s.get("sous"):
@@ -1816,7 +1870,7 @@ def interface_page(spec, theme, starts, durs, caps, total):
         if ty == "compteur":
             v = int(s.get("valeur", 0))
             rows = "".join(f"<div class='row lrow' id='s{k}l{j}'><span class='tag'>{K.esc(tg)}</span><span class='lb'>{K.esc(tx)}</span></div>" for j, (tg, tx) in enumerate(s.get("lignes", [])))
-            parts.append(f"<div class='card' id='s{k}c'><div class='cnt' id='s{k}n'><div class='ring'><svg viewBox='0 0 230 230'><circle cx='115' cy='115' r='100' fill='none' stroke='#efeaf4' stroke-width='22'/>"
+            parts.append(f"<div class='card' id='s{k}c'><div class='cnt' id='s{k}n'><div class='ring'><svg viewBox='0 0 230 230'><circle cx='115' cy='115' r='100' fill='none' style='stroke:var(--ligne2)' stroke-width='22'/>"
                          f"<circle class='fg' cx='115' cy='115' r='100' fill='none' stroke='{col['acc']}' stroke-width='22' stroke-linecap='round' stroke-dasharray='628.3' stroke-dashoffset='628.3'/></svg>"
                          f"<div class='n'>0</div></div><div class='cl'>{K.esc(s.get('label', ''))}</div></div>{rows}</div>")
             seq += [(f"s{k}c", "pop", .4, {}), (f"s{k}n", "count", 1.4, {"v": v})] + [(f"s{k}l{j}", "row", .7, {}) for j in range(len(s.get("lignes", [])))]
@@ -1830,11 +1884,15 @@ def interface_page(spec, theme, starts, durs, caps, total):
             e = {"id": ident, "k": kind, "at": round(t0, 3), "d": round(.35 if kind in ("rise", "pop", "row") else max(.4, dur * .85), 3)}
             if kind == "count": e["v"] = x["v"]
             if kind != "wait": EL.append(e)
-            sfx = {"rise": "whoosh", "pop": "pop", "row": "line", "tog": "click", "count": "beep"}.get(kind)
+            sfx = {"rise": "whoosh", "pop": "pop", "row": "line", "tog": "click", "count": "beep", "drop": "pop"}.get(kind)
             if kind == "type": ev.append({"k": "type", "at": round(t0, 3), "end": round(t0 + e["d"], 3), "text": x["text"]})
             elif kind == "count": ev.append({"k": "beep", "at": round(t0 + e["d"], 3)})
             elif sfx and not (k == 0 and kind == "rise"): ev.append({"k": sfx, "at": round(t0, 3)})
             t0 += dur
+        if ty == "jauge":
+            dr = [e for e in EL if e["k"] == "drop" and e["id"].startswith(f"s{k}j")]
+            f0 = dr[0]["at"] if dr else a + .3; f1 = (dr[-1]["at"] + dr[-1]["d"]) if dr else a + d - 1
+            EL.append({"id": f"s{k}j", "k": "fill", "at": round(f0, 3), "d": round(max(.5, f1 - f0), 3), "de": float(s.get("de", 0)), "a": float(s.get("a", 70)), "Y": 140, "H": 620})
         html.append(f"<div class='sc' id='s{k}'>{''.join(parts)}</div>")
     if sc and sc[-1]["type"] == "cta": ev.append({"k": "sparkle", "at": round(starts[-1] + durs[-1] - 1.2, 3)})
     cap_html = "".join(f"<span class='cap' data-a='{cc[0][1]:.3f}' data-b='{cn:.3f}'>" + " ".join(f"<span data-w='{t:.3f}'>{H.escape(w)}</span>" for w, t in cc) + "</span>"
@@ -1842,7 +1900,10 @@ def interface_page(spec, theme, starts, durs, caps, total):
     pos = [(-180, 160, 760), (520, 700, 700), (60, 1300, 800)]
     blobs = "".join(f"<div class='blob' id='bl{i}' style='left:{x}px;top:{y}px;width:{w}px;height:{w}px;background:{col['blobs'][i % len(col['blobs'])]}'></div>" for i, (x, y, w) in enumerate(pos))
     S = [{"a": starts[k], "b": starts[k] + durs[k]} for k in range(len(sc))]
-    R = {"__FONTS__": K._font_faces(["Inter"]), "__FOND__": col["fond"], "__ENCRE__": col["encre"], "__ACC__": col["acc"], "__BLOBS__": blobs,
+    vars_ = {"--carte": col["carte"], "--carte-encre": col["carte_encre"], "--ligne": col["ligne"], "--ligne2": col["ligne2"], "--doux": col["doux"], "--sur": col["sur"],
+             "--bulle": col["bulle"], "--tuile-encre": col["tuile_encre"], "--bord": col["bord"], "--acc-texte": col["acc_texte"]}
+    R = {"__VARS__": ";".join(f"{kk}:{v}" for kk, v in vars_.items()), "__TFONT__": f"'{col['police']}',Inter", "__TLS__": col["espacement"],
+         "__FONTS__": K._font_faces(sorted({"Inter", col["police"]})), "__FOND__": col["fond"], "__ENCRE__": col["encre"], "__ACC__": col["acc"], "__BLOBS__": blobs,
          "__DOTS__": "<i></i>" * len(sc), "__HANDLE__": H.escape(spec.get("handle", "")), "__SCENES__": "".join(html), "__CAPS__": cap_html,
          "__EV__": json.dumps(ev), "__D__": str(total), "__SC__": json.dumps(S), "__EL__": json.dumps(EL), "__BL__": json.dumps([{"p": 3.1 + i, "a": 70 + 20 * i} for i in range(len(pos))])}
     page = INTERFACE_TPL
