@@ -123,6 +123,9 @@ Scènes : 1 à 3 `{"type":"phrase","texte":"…"}`, 9 mots max par phrase (`**mo
 4. **Fin : le mot-clé** (« Commente <mot> pour recevoir <offre> »), voir ci-dessous. Ne pas redemander d'enregistrer à la fin : la dernière scène est réservée au mot-clé.
 Garder 100-120 mots au total : raccourcir les conseils plutôt que l'accroche.
 
+## Dire « Claude », pas « l'IA » (tous les comptes, décision de Goat du 24/10/2026)
+Quand la voix parle de l'assistant qu'on utilise, elle dit **« Claude »** : « mets ton cours dans Claude », « demande à Claude », « Claude te fait les fiches ». Jamais « l'IA », « une IA », « l'intelligence artificielle » dans ce sens. Même chose à l'écran (titres, interrupteurs « Toi → Claude », chat). Seule exception : une comparaison de plusieurs outils (« 3 IA gratuites ») où « IA » désigne une catégorie ; on écrit alors le nom de chaque outil. `tools/verifie.py` met une ERREUR si une `vo` contient « l'IA » ou « l'intelligence artificielle », une ATTENTION pour « une IA ». Attention aux exemples de Claude : ne lui prêter que ce qu'il sait vraiment faire (aucune fonction inventée).
+
 ## Rétention et accroche (tous les comptes, depuis le 23/10/2026, tiré des cours La Fabrik)
 **Accroche** : écrire 3 accroches avec 3 techniques différentes parmi les 6 (rendre curieux, montrer le résultat d'abord, ouvrir une boucle, bousculer une croyance, prévenir d'une erreur, visuel fort), garder la plus naturelle à l'oral.
 - 1re phrase de la voix : **14 mots maximum**, et elle entre direct dans le sujet. Jamais « Salut », « Bonjour », « Aujourd'hui je… », « Dans cette vidéo… » (ERREUR de `verifie.py`).
@@ -151,9 +154,9 @@ Champ optionnel `couleurs` : {papier, encre, bureau, grille, postit, acc, surlig
 ## interface (PILOTE du 23/10/2026, tous comptes) — cartes d'appli animées, fond pastel
 Exemple : `posts/x06-pov-partiel-demain/motion.json`. Style « outil IA » : fond pastel qui bouge, une carte blanche par scène, une seule couleur d'accent, compteur de scènes en haut, sous-titres mot à mot (mot en cours en couleur). Un élément apparaît toutes les 1 à 2 s. Ordre des scènes LIBRE ; `titre` optionnel partout (`**mot**` = accent, `<br>` possible) :
 - `hook` : `titre`, `sous` (pastille), `notif` optionnel = [icône, appli, texte] (notification de téléphone)
-- `toggles` : `carte`, `carte_sous`, `items` (libellés ; `["Comprendre", false]` = reste « Toi ») : les interrupteurs basculent de « Toi » à « IA » un par un
+- `toggles` : `carte`, `carte_sous`, `items` (libellés ; `["Comprendre", false]` = reste « Toi ») : les interrupteurs basculent de « Toi » à « Claude » un par un
 - `chat` : `messages` = [["moi"|"ia", texte]] tapés en direct
 - `grille` : `cartes` (4 tuiles colorées qui apparaissent)
 - `compteur` : `valeur` (chiffre réel uniquement), `label`, `lignes` = [[tag, texte]]
 - `cta` : `titre`, `ctas` (2 boutons, le 2e en couleur)
-Champ optionnel `couleurs` : {fond, encre, acc, tuiles: [4], blobs: [3], de: "Toi", a: "IA"}.
+Champ optionnel `couleurs` : {fond, encre, acc, tuiles: [4], blobs: [3], de: "Toi", a: "Claude"}.

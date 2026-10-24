@@ -1720,7 +1720,7 @@ body{width:1080px;height:1920px;overflow:hidden;background:__FOND__;position:rel
 .ch b{font:800 48px Inter}.ch small{font:500 30px Inter;opacity:.45;margin-left:auto}
 .row{display:flex;align-items:center;gap:24px;padding:26px 0;border-top:2px solid #f0edf3;font:700 44px Inter;--k:0}
 .row .lb{flex:1}
-.who{position:relative;width:70px;height:40px;font:700 30px Inter;text-align:right}
+.who{position:relative;width:120px;height:40px;font:700 30px Inter;text-align:right}
 .who em{position:absolute;right:0;top:4px;font-style:normal}.who .w0{opacity:calc(1 - var(--k));color:#9a96a3}.who .w1{opacity:var(--k);color:__ACC__}
 .tg{position:relative;flex:none;width:100px;height:58px;border-radius:29px;background:#dcd7e3;overflow:hidden}
 .tg .on{position:absolute;inset:0;background:__ACC__;opacity:var(--k)}
@@ -1784,7 +1784,7 @@ def interface_page(spec, theme, starts, durs, caps, total):
     hook {titre, sous?} ; toggles {carte, items: [libellé | [libellé, false]]} (Toi -> IA, false = reste « Toi ») ;
     chat {messages: [["moi"|"ia", texte]]} ; grille {cartes: [4 textes]} ; compteur {valeur, label, lignes: [[tag, texte]]} ; cta {ctas}."""
     sc = spec["scenes"]; col = {"fond": "#f4eff8", "encre": "#1b1b22", "acc": "#ff5a36", "tuiles": ["#ff5a36", "#3b5bdb", "#f2a516", "#1f9d6e"],
-                                 "blobs": ["#cdb9ff", "#ffc7a6", "#ffb6cf"], "de": "Toi", "a": "IA"} | spec.get("couleurs", {})
+                                 "blobs": ["#cdb9ff", "#ffc7a6", "#ffb6cf"], "de": "Toi", "a": "Claude"} | spec.get("couleurs", {})
     html, EL, ev = [], [], []
     for k, s in enumerate(sc):
         a, d = starts[k], durs[k]; ty = s["type"]; parts = []; seq = []   # seq : (id, kind, poids, extra)

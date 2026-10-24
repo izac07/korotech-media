@@ -246,6 +246,14 @@ def verifier(path):
         if not re.search(r"\benregistre", norm(sc[0].get("say") or sc[0]["vo"])):
             err.append("scène 0 : après l'accroche, la voix doit dire « Enregistre cette vidéo » (ex. « … Enregistre-la, tu vas en avoir besoin. »)")
 
+    # dire « Claude » et pas « l'IA » (décision de Goat du 24/10/2026)
+    for k, s in enumerate(sc):
+        v = (s.get("say") or s.get("vo", "")).lower().replace("’", "'")
+        if re.search(r"\bl'ia\b|\bl'intelligence artificielle\b", v):
+            err.append("scène %d : la voix dit « l'IA » ; dire « Claude » (« mets ton cours dans Claude », « demande à Claude »)" % k)
+        elif re.search(r"\bune ia\b", v):
+            att.append("scène %d : « une IA » dans la voix ; dire « Claude » sauf comparaison de plusieurs outils" % k)
+
     # rétention et accroche (tools/MOTION.md, 23/10/2026)
     if lay != "boucle" and sc and sc[0].get("vo"):
         vo0 = (sc[0].get("say") or sc[0]["vo"]).strip()
