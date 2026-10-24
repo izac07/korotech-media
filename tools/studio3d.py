@@ -53,29 +53,32 @@ import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
 import {ShaderPass} from 'three/addons/postprocessing/ShaderPass.js';
 import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
 import {BokehPass} from 'three/addons/postprocessing/BokehPass.js';
-import {GammaCorrectionShader} from 'three/addons/shaders/GammaCorrectionShader.js';
+import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
+import {GTAOPass} from 'three/addons/postprocessing/GTAOPass.js';
+import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
 import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
 const MODELES=__MODELES__;
 const EV=__EV__; const D=__D__, SC=__SC__, COL=__COL__;
 const c=x=>Math.max(0,Math.min(1,x)), sm=x=>{x=c(x);return x*x*(3-2*x);}, eo=x=>1-Math.pow(1-c(x),3);
 const back=x=>{x=c(x);const s=1.7;return 1+(s+1)*Math.pow(x-1,3)+s*Math.pow(x-1,2);};
 const $=i=>document.getElementById(i);
-const LIN=c_=>new THREE.Color(c_).convertSRGBToLinear();
+const LIN=c_=>new THREE.Color(c_);
 const R=new THREE.WebGLRenderer({canvas:$('cv'),antialias:true,preserveDrawingBuffer:true});
-R.setSize(1080,1920,false);R.outputEncoding=THREE.LinearEncoding;R.shadowMap.enabled=true;R.shadowMap.type=THREE.PCFSoftShadowMap;
+R.setSize(1080,1920,false);R.outputColorSpace=THREE.SRGBColorSpace;R.toneMapping=THREE.NeutralToneMapping;R.toneMappingExposure=1.05;R.shadowMap.enabled=true;R.shadowMap.type=THREE.PCFSoftShadowMap;
 const scene=new THREE.Scene();scene.background=LIN(COL.nuit);scene.fog=new THREE.Fog(LIN(COL.nuit),16,34);
-scene.add(new THREE.HemisphereLight(0xa9b8ff,0x3a2414,.45));
-const key=new THREE.DirectionalLight(0xffe0bf,.95);key.position.set(-3,6,5);scene.add(key);key.target.position.set(0,1,0);scene.add(key.target);
+scene.add(new THREE.HemisphereLight(0xa9b8ff,0x3a2414,1.1));
+const PM=new THREE.PMREMGenerator(R);scene.environment=PM.fromScene(new RoomEnvironment(),.04).texture;scene.environmentIntensity=.32;
+const key=new THREE.DirectionalLight(0xffe0bf,2.6);key.position.set(-3,6,5);scene.add(key);key.target.position.set(0,1,0);scene.add(key.target);
 key.castShadow=true;key.shadow.mapSize.set(2048,2048);Object.assign(key.shadow.camera,{left:-6,right:6,top:6,bottom:-3,near:1,far:22});key.shadow.normalBias=.03;key.shadow.radius=4;
-const rim=new THREE.DirectionalLight(0x7f95ff,.55);rim.position.set(4,3,-3);scene.add(rim);
-const lamp=new THREE.PointLight(0xffa860,1.3,6);lamp.position.set(1.85,1.78,-.35);scene.add(lamp);
+const rim=new THREE.DirectionalLight(0x7f95ff,1.7);rim.position.set(4,3,-3);scene.add(rim);
+const lamp=new THREE.PointLight(0xffa860,3.2,7,2);lamp.position.set(1.85,1.78,-.35);scene.add(lamp);
 const GRAD=new THREE.DataTexture(new Uint8Array([110,185,255]),3,1,THREE.RedFormat);GRAD.minFilter=GRAD.magFilter=THREE.NearestFilter;GRAD.needsUpdate=true;
-const toon=c_=>new THREE.MeshToonMaterial({color:LIN(c_),gradientMap:GRAD});
+const toon=c_=>new THREE.MeshStandardMaterial({color:LIN(c_),roughness:.6,metalness:0});
 const OLM=new THREE.MeshBasicMaterial({color:0x0b0d1a,side:THREE.BackSide});
 function mk(geo,mat,x,y,z,parent,ol){const m=new THREE.Mesh(geo,mat);m.position.set(x,y,z);(parent||scene).add(m);
   if(ol){const o=new THREE.Mesh(geo,OLM);o.scale.setScalar(ol);m.add(o);}return m;}
 const B=(w,h,d)=>new THREE.BoxGeometry(w,h,d);
-function canvasTex(w,h){const cv=document.createElement('canvas');cv.width=w;cv.height=h;const t=new THREE.CanvasTexture(cv);t.encoding=THREE.sRGBEncoding;t.userData={cv,x:cv.getContext('2d')};return t;}
+function canvasTex(w,h){const cv=document.createElement('canvas');cv.width=w;cv.height=h;const t=new THREE.CanvasTexture(cv);t.colorSpace=THREE.SRGBColorSpace;t.userData={cv,x:cv.getContext('2d')};return t;}
 let seed=7;const rnd=()=>{seed=(seed*16807)%2147483647;return seed/2147483647;};
 // ---- pièce : sol, mur, fenêtre sur la ville la nuit
 mk(new THREE.PlaneGeometry(40,40),toon(COL.sol),0,0,0).rotation.x=-Math.PI/2;
@@ -117,13 +120,14 @@ const ph=canvasTex(420,780);const phs=mk(new THREE.PlaneGeometry(.62,1.16),new T
 // ---- confettis 3D (en plus des confettis CSS)
 const CAM=new THREE.PerspectiveCamera(36,1080/1920,.1,60);
 const composer=new EffectComposer(R);composer.addPass(new RenderPass(scene,CAM));
-const bloom=new UnrealBloomPass(new THREE.Vector2(1080,1920),.38,.5,.86);composer.addPass(bloom);
+const gtao=new GTAOPass(scene,CAM,1080,1920);gtao.updateGtaoMaterial({radius:.35,distanceExponent:1,thickness:1,scale:1});gtao.blendIntensity=.9;composer.addPass(gtao);
+const bloom=new UnrealBloomPass(new THREE.Vector2(1080,1920),.32,.45,.9);composer.addPass(bloom);
 const bokeh=new BokehPass(scene,CAM,{focus:5,aperture:.0022,maxblur:.007});composer.addPass(bokeh);
-composer.addPass(new ShaderPass(GammaCorrectionShader));
+composer.addPass(new OutputPass());
 // mode allégé sans carte graphique (rendu logiciel SwiftShader, routines cloud) : pas de flou, ombres plus simples
 const gl_=R.getContext(),dbg=gl_.getExtension('WEBGL_debug_renderer_info');
 const LEGER=/swiftshader|llvmpipe|software/i.test(dbg?gl_.getParameter(dbg.UNMASKED_RENDERER_WEBGL):'');
-if(LEGER){bokeh.enabled=false;key.shadow.mapSize.set(1024,1024);R.shadowMap.type=THREE.PCFShadowMap;bloom.resolution.set(540,960);}
+if(LEGER){bokeh.enabled=false;gtao.enabled=false;key.shadow.mapSize.set(1024,1024);R.shadowMap.type=THREE.PCFShadowMap;bloom.resolution.set(540,960);}
 // ampoule de la lampe (brille grâce au bloom) + poussière dans la lumière
 mk(new THREE.SphereGeometry(.07,16,12),new THREE.MeshBasicMaterial({color:0xffe2b0}),1.85,1.78,-.38);
 const NP=140,pp=new Float32Array(NP*3);for(let i=0;i<NP;i++){pp[i*3]=1.45+rnd()*1.1;pp[i*3+1]=1.2+rnd()*1.6;pp[i*3+2]=-.7+rnd()*1.3;}
@@ -133,7 +137,7 @@ const dust=new THREE.Points(dustG,new THREE.PointsMaterial({color:0xffd9a0,size:
 const LD=new GLTFLoader();
 function b64buf(s_){const bin=atob(s_);const u=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)u[i]=bin.charCodeAt(i);return u.buffer;}
 function modele(nom){return new Promise((ok,ko)=>LD.parse(b64buf(MODELES[nom]),'',g=>ok(g.scene),ko));}
-function toonify(o,teinte){o.traverse(m=>{if(m.isMesh){const c_=teinte?LIN(teinte):(m.material.color?m.material.color.clone():new THREE.Color(1,1,1));m.material=new THREE.MeshToonMaterial({color:c_,gradientMap:GRAD});}});}
+function toonify(o,teinte){o.traverse(m=>{if(m.isMesh){const c_=teinte?LIN(teinte):(m.material.color?m.material.color.clone():new THREE.Color(1,1,1));m.material=new THREE.MeshStandardMaterial({color:c_,roughness:.62,metalness:0});}});}
 function poser(o,q){let b=new THREE.Box3().setFromObject(o);const sz=b.getSize(new THREE.Vector3());
   if(q.libre)o.scale.set(q.w/sz.x,q.h/sz.y,q.d/sz.z);else{const k_=q.h?q.h/sz.y:q.w/sz.x;o.scale.setScalar(k_);}
   const g=new THREE.Group();g.add(o);b=new THREE.Box3().setFromObject(o);const c2=b.getCenter(new THREE.Vector3());o.position.sub(new THREE.Vector3(c2.x,b.min.y,c2.z));
@@ -219,10 +223,11 @@ ASSETS = os.path.join(DOSSIER, "assets")
 
 def import_map():
     """three.module.js + modules complémentaires (r149) en data: URLs ; les imports relatifs sont réécrits en 'three/addons/...'."""
-    base = os.path.join(ASSETS, "three149")
+    base = os.path.join(ASSETS, "three186")
     def url(txt):
         return "data:text/javascript;base64," + base64.b64encode(txt.encode("utf-8")).decode()
-    m = {"three": url(open(os.path.join(base, "build", "three.module.js"), encoding="utf-8").read())}
+    mod = open(os.path.join(base, "build", "three.module.js"), encoding="utf-8").read().replace("'./three.core.js'", "'three/core'")
+    m = {"three": url(mod), "three/core": url(open(os.path.join(base, "build", "three.core.js"), encoding="utf-8").read())}
     jsm = os.path.join(base, "jsm")
     for d in sorted(os.listdir(jsm)):
         for f in sorted(os.listdir(os.path.join(jsm, d))):
