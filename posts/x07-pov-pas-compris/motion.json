@@ -1,0 +1,42 @@
+{
+ "id": "KT-X07",
+ "layout": "interface",
+ "music_seed": 9110,
+ "handle": "korotech_fr",
+ "couleurs": {"acc": "#6d3df2", "tuiles": ["#6d3df2", "#ff5a36", "#f2a516", "#1f9d6e"]},
+ "scenes": [
+  {
+   "type": "hook",
+   "titre": "POV : t'as rien compris<br>et t'oses **pas demander**",
+   "sous": "**3 messages** pour Claude",
+   "notif": ["💬", "Groupe classe", "Qqn a compris le cours ??"],
+   "vo": "T'as rien compris au cours, et t'oses pas lever la main ? Enregistre cette vidéo : trois messages à envoyer à Claude."
+  },
+  {
+   "type": "chat",
+   "titre": "Message 1 : **simplifie**",
+   "messages": [["moi", "Explique-moi ce cours comme si j'avais 10 ans."], ["ia", "Ok ! Imagine que…"]],
+   "vo": "Message un : colle ton cours et demande-lui de t'expliquer comme si tu avais dix ans. Pas de honte, c'est juste entre toi et Claude."
+  },
+  {
+   "type": "chat",
+   "titre": "Message 2 : **un exemple**",
+   "messages": [["moi", "Donne-moi un exemple concret, tiré de la vraie vie."], ["ia", "Par exemple, dans ton quotidien…"]],
+   "vo": "Message deux : demande un exemple concret, tiré de la vraie vie. Avec un bon exemple, la notion devient évidente."
+  },
+  {
+   "type": "compteur",
+   "titre": "Message 3 : **teste-moi**",
+   "valeur": 5,
+   "label": "questions<br>pour vérifier",
+   "lignes": [["Q1", "Explique avec tes mots"], ["Q2", "Trouve l'erreur"], ["Q3", "Applique à un exo"]],
+   "vo": "Message trois, le plus important : demande-lui cinq questions pour vérifier que t'as compris. Si tu bloques, il te réexplique autrement, autant de fois que tu veux."
+  },
+  {
+   "type": "cta",
+   "titre": "Mes 10 prompts<br>**pour réviser**",
+   "ctas": ["🔖 Enregistre", "💬 Commente PROMPTS"],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

@@ -9,7 +9,7 @@
    "big": "3",
    "title": "**ÉTAPES**",
    "sub": "ton budget du mois 💶",
-   "vo": "Fin de mois, compte vide, et tu ne sais pas où c'est parti ? Enregistre cette vidéo : trois étapes avec l'IA."
+   "vo": "Fin de mois, compte vide, et tu ne sais pas où c'est parti ? Enregistre cette vidéo : trois étapes avec Claude."
   },
   {
    "type": "pills",
@@ -23,7 +23,7 @@
     "🎉 Sorties"
    ],
    "text": "Trie **tes dépenses**",
-   "vo": "Un : note tes dépenses du mois et demande à l'IA de les classer, fixes, courses, sorties. Tu vois où ça part. Ça prend deux minutes."
+   "vo": "Un : note tes dépenses du mois et demande à Claude de les classer, fixes, courses, sorties. Tu vois où ça part. Ça prend deux minutes."
   },
   {
    "type": "diagram",

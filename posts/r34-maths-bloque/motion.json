@@ -9,7 +9,7 @@
    "big": "3",
    "title": "**QUESTIONS**",
    "sub": "sans copier la réponse 🧮",
-   "vo": "Bloqué sur un exercice de maths, tu veux juste la réponse ? Enregistre cette vidéo : trois questions à poser à l'IA à la place."
+   "vo": "Bloqué sur un exercice de maths, tu veux juste la réponse ? Enregistre cette vidéo : trois questions à poser à Claude à la place."
   },
   {
    "type": "pills",
@@ -48,7 +48,7 @@
     "✅ Pourquoi"
    ],
    "text": "Il **trouve l'erreur**",
-   "vo": "Trois : montre ton calcul et demande où est l'erreur. C'est le meilleur moyen de progresser. L'IA peut se tromper en maths, alors vérifie."
+   "vo": "Trois : montre ton calcul et demande où est l'erreur. C'est le meilleur moyen de progresser. Claude peut se tromper en maths, alors vérifie."
   },
   {
    "type": "cta",

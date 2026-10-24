@@ -23,7 +23,7 @@
     "🎯 Une demande"
    ],
    "text": "Un mail, **une demande**",
-   "vo": "Un : un objet précis et une seule demande. Donne ta situation à l'IA et demande-lui un brouillon court et poli. Ça prend deux minutes."
+   "vo": "Un : un objet précis et une seule demande. Donne ta situation à Claude et demande-lui un brouillon court et poli. Ça prend deux minutes."
   },
   {
    "type": "diagram",

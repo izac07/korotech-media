@@ -48,7 +48,7 @@
     "✅ Annulation"
    ],
    "text": "Vérifie **avant de payer**",
-   "vo": "Trois : vérifie prix, horaires et conditions d'annulation sur les vrais sites. L'IA peut se tromper sur les tarifs, ne réserve jamais sur sa seule parole."
+   "vo": "Trois : vérifie prix, horaires et conditions d'annulation sur les vrais sites. Claude peut se tromper sur les tarifs, ne réserve jamais sur sa seule parole."
   },
   {
    "type": "cta",

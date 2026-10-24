@@ -23,7 +23,7 @@
     "🎥 Replay"
    ],
    "text": "Récupère **le contenu**",
-   "vo": "Un : récupère les notes d'un camarade ou les diapos, et demande à l'IA un résumé en dix lignes. Ça prend deux minutes."
+   "vo": "Un : récupère les notes d'un camarade ou les diapos, et demande à Claude un résumé en dix lignes. Ça prend deux minutes."
   },
   {
    "type": "diagram",
