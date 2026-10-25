@@ -1,0 +1,17 @@
+{
+ "id": "CL-X04",
+ "layout": "nightchat",
+ "music_seed": 9301,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {"type": "lock", "notif": "Vu à 23:14 · toujours rien", "vo": "Vu à vingt-trois heures quatorze. Toujours pas de réponse. Premier réflexe : tu ne relances pas ce soir."},
+  {"type": "msgs", "bubbles": ["Il est sûrement occupé…", "Ou j'ai dit un truc de travers ?"], "sent": "Tu dors ?", "ghost": "Vu 23:14",
+   "vo": "Ton cerveau écrit déjà trois scénarios. Ce sont des hypothèses, pas des faits. Enregistre ça pour la prochaine fois."},
+  {"type": "msgs2", "bubbles": ["1 · « T'as vu mon message ? »", "2 · « Bonne nuit 🙂 »", "3 · Rien. Je pose le téléphone."],
+   "vo": "Là, tu fais quoi ? Un, deux ou trois ? Dis-le en commentaire, sois honnête."},
+  {"type": "check", "title": "La réponse lucide :", "items": ["Rien ce soir", "Une phrase simple demain", "Son délai ≠ ta valeur"],
+   "vo": "La plus lucide, c'est souvent la trois. Demain, une phrase simple si tu en as besoin. Son délai ne dit rien de ta valeur."},
+  {"type": "cta", "last": "Je pose le téléphone 🤍", "ctas": ["💬 COMMENTE LIMITE", "les 10 phrases pour poser une limite"],
+   "vo": "Commente limite pour recevoir les dix phrases pour poser une limite."}
+ ]
+}
