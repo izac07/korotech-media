@@ -735,6 +735,8 @@ def nightchat_page(spec, theme, starts, durs, caps, total):
     sc = spec["scenes"]; ev = []; PINK = "#f4b6c6"; BOR = "#7a1f35"
     S = [{"a": starts[k], "b": starts[k] + durs[k], "ty": s["type"]} for k, s in enumerate(sc)]
     blocks = []
+    # déclencheur d'interaction (25/10/2026) : question en gros au milieu de l'écran (« Tu fais quoi ? 1, 2 ou 3 ? »)
+    questions = "".join(f"<div class='qq' id='qq{k}'><span>{H.escape(s['question'])}</span></div>" for k, s in enumerate(sc) if s.get("question"))
     def B(k, j, txt, extra=""):
         return f"<div class='b' id='b{k}_{j}' {extra}>{H.escape(txt)}</div>"
     for k, s in enumerate(sc):
@@ -783,7 +785,7 @@ body{{width:1080px;height:1920px;overflow:hidden;background:#1e0d14;color:#fbe9e
 .hav{{width:96px;height:96px;border-radius:50%;background:{BOR};color:#fff;font:800 52px/96px Georgia,serif;text-align:center}}
 .hn{{font:700 34px Inter}} .hs2{{font:500 26px Inter;color:#d9b3bf}}
 .chat{{position:absolute;left:46px;right:46px;top:320px;display:flex;flex-direction:column;gap:22px;opacity:0;z-index:3}}
-.b{{align-self:flex-start;max-width:880px;background:#3a1a26;border-radius:46px;border-bottom-left-radius:12px;padding:30px 40px;font:500 50px/1.32 Inter;display:none;transform-origin:left bottom}}
+.b{{align-self:flex-start;max-width:900px;background:#3a1a26;border-radius:46px;border-bottom-left-radius:12px;padding:32px 42px;font:500 58px/1.3 Inter;display:none;transform-origin:left bottom}}
 .b.big{{font:700 84px/1.2 Inter;background:{BOR};color:#fff;margin-top:230px}}
 .chk{{font:600 48px/1.5 Inter}} .bx{{display:inline-block;color:{PINK};width:66px}}
 .typ{{align-self:flex-start;background:#3a1a26;border-radius:40px;padding:26px 34px;display:none;gap:12px}}
@@ -803,8 +805,10 @@ body{{width:1080px;height:1920px;overflow:hidden;background:#1e0d14;color:#fbe9e
 .cap{{display:none;background:rgba(30,13,20,.85);border:2px solid rgba(244,182,198,.45);border-radius:24px;padding:14px 30px;font:700 46px Inter}}
 .cap .on{{color:{PINK}}}
 .bar{{position:absolute;left:0;top:0;height:8px;background:{PINK}}}
+.qq{{position:absolute;left:50px;right:50px;top:1130px;text-align:center;z-index:6;opacity:0}}
+.qq span{{display:inline-block;background:{PINK};color:#2a0d16;font:800 68px/1.15 Inter;padding:24px 38px;border-radius:30px;box-shadow:0 12px 40px rgba(0,0,0,.55)}}
 """
-    page = f"""<!doctype html><html><head><meta charset='utf-8'><style>{css}</style></head><body>
+    page = f"""<!doctype html><html><head><meta charset='utf-8'><style>{K._font_faces(["Inter"])}{css}</style></head><body>
 <div class='halo' id='halo'></div>
 <div class='stat'><span id='clk'>23:47</span><span>●●● 🔋</span></div>
 <div class='lock' id='lock'><div class='ldate'>Ce soir</div><div class='ltime'>23:47</div>
@@ -813,7 +817,7 @@ body{{width:1080px;height:1920px;overflow:hidden;background:#1e0d14;color:#fbe9e
 <div class='hdr' id='hdr'><div class='hav'>C</div><div class='hn'>Cœur Lucide</div><div class='hs2' id='hst'>en ligne</div></div>
 {''.join(blocks)}
 <div class='inp' id='inp'>iMessage</div><div class='dim' id='dim'></div>{hearts}{share}
-<div class='capw'>{cap_html}</div><div class='bar' id='bar'></div>
+{questions}<div class='capw'>{cap_html}</div><div class='bar' id='bar'></div>
 <script>
 const EV={json.dumps(ev, ensure_ascii=False)}; const D={total}; const SC={json.dumps(S)};
 const c=x=>Math.max(0,Math.min(1,x)), eo=x=>1-Math.pow(1-c(x),3), back=x=>{{x=c(x);const s=1.5;return 1+(s+1)*Math.pow(x-1,3)+s*Math.pow(x-1,2);}};
@@ -825,6 +829,7 @@ window.render=function(t){{
  $('bar').style.width=(c(t/D)*1080)+'px';
  let k=0;for(let i=0;i<SC.length;i++)if(t>=SC[i].a)k=i;const s=SC[k],u=t-s.a,d=s.b-s.a;
  $('halo').style.transform=`scale(${{1+.06*Math.sin(t*1.2)}})`;$('halo').style.opacity=k==2&&u>3.2?1:.8;
+ SC.forEach((x,i)=>{{const q=$('qq'+i);if(q){{const on=i==k&&u>.5;q.style.opacity=on?1:0;q.style.transform=`rotate(-2deg) scale(${{on?.7+.3*back((u-.5)/.4):.7}})`;}}}});
  $('clk').textContent=t<20?'23:47':'23:48';
  // lock
  const L=$('lock');const op=k==0?1-eo((u-3.3)/.4):0;L.style.opacity=op;L.style.transform=`scale(${{k==0?1+.15*eo((u-3.3)/.4):1}})`;
@@ -837,10 +842,11 @@ window.render=function(t){{
  const ty=s.ty;
  if(ty==='msgs'){{typing=typ('ty1_0',.2,1.0,u)||typ('ty1_1',3.4,4.2,u);bub('b1_0',1.0,u);bub('b1_1',4.2,u);
    const g=$('gh1');g.style.opacity=u>1.6&&u<3.4?(u<3.0?.75:.75*(1-(u-3.0)/.4)):0;g.style.filter=`blur(${{3+8*c((u-2.8)/.6)}}px)`;g.style.transform=`translateY(${{-c((u-2.8)/.6)*60}}px)`;}}
- if(ty==='msgs2'){{typing=typ('ty2_0',.2,.9,u)||typ('ty2_1',2.6,3.2,u)||typ('ty2_2',4.8,5.5,u);bub('b2_0',.9,u);bub('b2_1',3.2,u);bub('b2_2',5.5,u);
-   const hs=$('hs2'),b=$('b2_1');if(hs&&u>=3.6){{hs.style.opacity=1;hs.style.left=(b.offsetLeft+b.offsetWidth+20)+'px';hs.style.top=(b.offsetTop+b.offsetHeight/2-55)+'px';
-     const p=$('hp2'),Lp=p.getTotalLength();p.style.strokeDasharray=Lp;p.style.strokeDashoffset=Lp*(1-eo((u-3.6)/.8));p.setAttribute('fill',u>4.4?'rgba(244,182,198,.9)':'none');
-     hs.style.transform=`scale(${{u>4.4?1+.15*Math.max(0,Math.sin((u-4.4)*6))*(u<5?1:0):1}})`;}}else if(hs)hs.style.opacity=0;}}
+ if(ty==='msgs2'){{const uu=u/Math.min(1,d*.55/5.5);   // bulles calées sur la durée de la scène (scène courte = bulles plus rapprochées)
+   typing=typ('ty2_0',.2,.9,uu)||typ('ty2_1',2.6,3.2,uu)||typ('ty2_2',4.8,5.5,uu);bub('b2_0',.9,uu);bub('b2_1',3.2,uu);bub('b2_2',5.5,uu);
+   const hs=$('hs2'),b=$('b2_2');if(hs&&uu>=5.9){{hs.style.opacity=1;hs.style.left=(b.offsetLeft+b.offsetWidth+20)+'px';hs.style.top=(b.offsetTop+b.offsetHeight/2-55)+'px';
+     const p=$('hp2'),Lp=p.getTotalLength();p.style.strokeDasharray=Lp;p.style.strokeDashoffset=Lp*(1-eo((uu-5.9)/.8));p.setAttribute('fill',uu>6.7?'rgba(244,182,198,.9)':'none');
+     hs.style.transform=`scale(${{uu>6.7?1+.15*Math.max(0,Math.sin((uu-6.7)*6))*(uu<7.3?1:0):1}})`;}}else if(hs)hs.style.opacity=0;}}
  if(ty==='check'){{typing=typ('ty3_0',.2,.8,u);bub('b3_0',.8,u);bub('b3_1',1.6,u);
    [2.4,3.6,5.4].forEach((tt,j)=>{{const bx=$('bx3_'+j);bx.textContent=u>=tt?'☑':'☐';bx.style.transform=`scale(${{u>=tt?1+.5*(1-eo((u-tt)/.3)):1}})`;$('ci3_'+j).style.opacity=u>=tt?1:.6;}});
    const br=u>3.6&&u<5.3?1+.06*Math.sin((u-3.6)/1.7*Math.PI):1;const bb=$('b3_1');if(u>=2)bb.style.transform=`scale(${{br}})`;}}

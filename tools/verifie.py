@@ -40,9 +40,9 @@ SCHEMA = {
         "cta": ["vo", "title", "ctas", "ticker"]}},
     "nightchat": {"ordre": ["lock", "msgs", "msgs2", "check", "cta"], "types": {
         "lock": ["vo", "notif"],
-        "msgs": ["vo", "bubbles", "sent?", "ghost"],
-        "msgs2": ["vo", "bubbles"],
-        "check": ["vo", "title", "items"],
+        "msgs": ["vo", "bubbles", "sent?", "ghost", "question?"],
+        "msgs2": ["vo", "bubbles", "question?"],
+        "check": ["vo", "title", "items", "question?"],
         "cta": ["vo", "last", "ctas"]}},
     "manifeste3d": {"ordre": ["hook", "avantapres", "weeks", "weeks", "cta"], "haut": ["counter", "timeline"], "types": {
         "hook": ["vo", "big", "unit", "line", "sub"],
