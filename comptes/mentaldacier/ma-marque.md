@@ -41,7 +41,7 @@ Fiche lue par les skills (createur-reel, legende-instagram, usine-contenu…) av
 1. **Accroche** (une phrase qui arrête le pouce).
 2. **Tout de suite le 1er conseil** (pas de « voici 3 règles ») ; scène 0 = 18 mots max, changement de plan vers 3 s.
 3. **Puis, en scène 1 ou 2 : « Enregistre cette vidéo »** dans une phrase courte qui relance. Jamais juste après l'accroche : sur X13, 75 % des gens étaient là à 3 s et 30 % à 6 s, pile pendant ce « Enregistre ».
-4. **Les autres conseils** (une idée nouvelle par phrase, le meilleur en dernier). Total 70-90 mots, ~25-30 s.
+4. **Les autres conseils** (une idée nouvelle par phrase, le meilleur en dernier), avec **un déclencheur d'interaction au milieu**, écrit à l'écran et dit par la voix (« Team snooze ou team debout ? Commente 1 ou 2. », « Identifie le pote qui fait ça 😂 » ; voir tools/MOTION.md « Déclencheur d'interaction »). Total 70-90 mots, ~25-30 s.
 5. **Fin : « Commente plan pour recevoir le plan 7 jours gratuit. »** (écran + voix)
 
 Légende : accroche (le double sens peut y rester), bénéfice, « 🔖 Enregistre… », puis « 💬 Commente PLAN et je t'envoie le plan 7 jours gratuit en DM. », et 5 hashtags max (#mentaldacier #discipline #routinedusoir #selfcontrol #procrastination…).

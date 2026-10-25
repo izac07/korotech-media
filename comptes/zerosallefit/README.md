@@ -7,6 +7,13 @@
 - Promesse : Des séances maison simples, sans matériel, pour bouger régulièrement et progresser.
 - Produit prévu : Programme 8 semaines à la maison (19-39 €).
 
+## Nouvelle DA à tester (décision de Goat du 25/10/2026, pas encore produite)
+Constat : tous les reels plafonnent à ~120-140 vues (stats du 25/10), sans écart entre les sujets : changer de DA, pas seulement de sujet. Recette reprise de Mental d'Acier (MDA-X13 : 1 300 vues) : accroche drôle dans laquelle on se reconnaît, ambiance forte, 25-30 s, 1er conseil avant « Enregistre » (tools/MOTION.md), et un **déclencheur d'interaction au milieu** (MOTION.md « Déclencheur d'interaction »).
+- **DA A — « Le corps du quotidien » (studio3d)** : personnage 3D dans une pièce, accroche drôle sur un petit mal de tous les jours, puis l'exercice qui règle le problème (avec sa version facile). Accroches : « Ton dos après 8 h de chaise. », « Deux étages et t'es essoufflé ? », « Tes genoux font du bruit en te levant ? ». Déclencheur : **identifier** (« Identifie ton collègue de bureau 😂 »).
+- **DA B — « Fais-le avec moi » (studio3d + chrono)** : un chrono à l'écran (`ecran` type `timer`), le personnage fait l'exercice en même temps que le spectateur. Accroche : « Tiens 30 secondes avec moi. Si tu lâches avant, commente. » Déclencheur : **score** (« Écris ton temps 👇 » / « Combien tu en as fait ? »). Rappeler la version facile et de s'arrêter en cas de douleur.
+- Test prévu : 1 reel par DA, à la place de 2 anciens reels de la file, comparaison à 48-72 h (vues, courbe des 3 premières secondes, commentaires), on garde la gagnante. Ne rien produire avant le feu vert de Goat.
+- Interdits inchangés (règles ci-dessous) ; l'humour vise la situation, jamais le corps ou le poids de quelqu'un.
+
 ## Piliers
 - Séances complètes prêtes à faire (circuits, durée, répétitions) — 45 %
 - Technique : bien faire un exercice, erreurs fréquentes — 25 %

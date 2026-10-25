@@ -140,6 +140,16 @@ Quand la voix parle de l'assistant qu'on utilise, elle dit **« Claude »** : «
 
 **Un seul changement testé par reel** : quand on essaie quelque chose de nouveau (format, accroche, durée, son), on ne change que ça, et on l'écrit dans la `note` de la file (« test : … ») pour le bilan.
 
+## Déclencheur d'interaction (tous les comptes, décision de Goat du 25/10/2026)
+Pourquoi : les commentaires, partages et identifications disent à Instagram de pousser un reel ; or le mot-clé de fin n'est vu que par 5-10 % des spectateurs (courbe de MDA-X13), d'où 0 commentaire PLAN sur 1 300 vues.
+Chaque reel contient **UN déclencheur d'interaction posé au milieu** (scène 2 ou 3, jamais seulement à la fin), **écrit en gros à l'écran** (bandeau ou écran) et **dit par la voix en une phrase courte**, puis **repris en 1re ou 2e ligne de la légende**. Choisir celui qui colle au sujet :
+1. **Choisir son camp** : « Team réveil à 6 h ou team snooze ? Commente 1 ou 2. » (zéro effort, le plus de réponses)
+2. **Donner son score** : « Tu as tenu combien de secondes ? Écris ton temps. » (défis, chronos)
+3. **Identifier quelqu'un** : « Identifie le pote qui fait ça tous les soirs 😂 » (partages, nouveaux spectateurs)
+4. **Avouer** : « Sois honnête : ton record de snooze ? » (marche très bien avec l'humour)
+5. **Débattre** : une phrase qui bouscule un peu (« Le sport le matin, c'est surcoté »), sans insulter ni viser une personne.
+Le mot-clé (section suivante) reste dans la dernière scène : le déclencheur fait réagir, le mot-clé apporte le cadeau. Une seule question par reel (pas de déclencheur + 3 autres questions). Noter le déclencheur choisi dans la `note` de la file (« interaction : score ») pour comparer au bilan.
+
 ## Mot-clé à commenter (tous les comptes, depuis le 23/10/2026)
 Chaque reel se termine par le mot-clé de son compte (`ressources/mots-cles.json` : `mot`, `offre`, `lien`). La **dernière scène** l'affiche (ex. `ctas` : « 💬 COMMENTE « PLAN » ») et sa `vo` dit « Commente plan pour recevoir le plan 7 jours gratuit ». `tools/verifie.py` met une ERREUR s'il n'est pas à l'écran **ou si la voix ne dit pas « Commente <mot> pour recevoir <offre> »** (obligatoire, décision de Goat du 23/10/2026). Mot long (PROGRAMME, PROMPTS…) : écrire « 💬 COMMENTE PROGRAMME » sans guillemets, sinon la ligne passe sous les boutons d'Instagram. `duel3d` et `fable2d` ajoutent eux-mêmes la carte de fin. Légende : finir par « 💬 Commente <MOT> et je t'envoie <offre> en DM » ; jamais le lien.
 
