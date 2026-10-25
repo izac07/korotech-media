@@ -2,7 +2,7 @@
 """Rendu par lot des reels 3D (studio3d) sur le PC de Goat, avec la carte graphique (~3 min par reel au lieu de ~25 dans le cloud).
 
 La routine cloud écrit les reels (motion.json + voix) et les liste dans a-rendre/<COMPTE>-<AAAA-MM-JJ>.json sans les rendre ;
-la tâche planifiée locale « Rendu 3D LIA » lance ce script, vérifie les images, puis ajoute chaque reel à la file Make.
+la tâche planifiée locale « Rendu 3D LIA + MDA » (lundi et mardi 8h) lance ce script, vérifie les images, puis ajoute chaque reel à la file Make.
 
 Usage : py -3.13 tools/rendre_lot.py            -> rend tous les reels « a_rendre » de a-rendre/*.json, pousse, affiche le bilan
         py -3.13 tools/rendre_lot.py --liste    -> affiche seulement ce qui reste à faire
