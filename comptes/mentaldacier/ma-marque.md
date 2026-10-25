@@ -39,14 +39,15 @@ Fiche lue par les skills (createur-reel, legende-instagram, usine-contenu…) av
 
 ## Structure obligatoire de chaque reel (voix)
 1. **Accroche** (une phrase qui arrête le pouce).
-2. **Tout de suite après : « Enregistre cette vidéo, tu vas en avoir besoin. »**
-3. **Les conseils** (une idée nouvelle par phrase).
-4. **Fin : « Commente plan pour recevoir le plan 7 jours gratuit. »** (écran + voix)
+2. **Tout de suite le 1er conseil** (pas de « voici 3 règles ») ; scène 0 = 18 mots max, changement de plan vers 3 s.
+3. **Puis, en scène 1 ou 2 : « Enregistre cette vidéo »** dans une phrase courte qui relance. Jamais juste après l'accroche : sur X13, 75 % des gens étaient là à 3 s et 30 % à 6 s, pile pendant ce « Enregistre ».
+4. **Les autres conseils** (une idée nouvelle par phrase, le meilleur en dernier). Total 70-90 mots, ~25-30 s.
+5. **Fin : « Commente plan pour recevoir le plan 7 jours gratuit. »** (écran + voix)
 
 Légende : accroche (le double sens peut y rester), bénéfice, « 🔖 Enregistre… », puis « 💬 Commente PLAN et je t'envoie le plan 7 jours gratuit en DM. », et 5 hashtags max (#mentaldacier #discipline #routinedusoir #selfcontrol #procrastination…).
 
 ## Formats
-- **Format principal depuis le 25/10/2026 : studio3d « chambre sombre »** (layout `studio3d`, décor `chambre_mda`, personnage humain gris, lumière nuit → aube, habillage noir / blanc / or, voix Brian). 100-120 mots, 5-6 scènes, ~40 s. Exemples complets : `posts/x13-3d-22h/motion.json` (~900 vues) et `posts/x14-3d-jour1-sans-br/motion.json`. Rendu sur le PC de Goat (carte graphique) : la routine cloud l'écrit et le liste dans `a-rendre/MDA-<date>.json`.
+- **Format principal depuis le 25/10/2026 : studio3d « chambre sombre »** (layout `studio3d`, décor `chambre_mda`, personnage humain gris, lumière nuit → aube, habillage noir / blanc / or, voix Brian). 70-90 mots, 4-5 scènes, ~25-30 s (X13 et X14 suivent encore l'ancienne structure : copier leurs couleurs et décors, pas leur scène 0). Exemples complets : `posts/x13-3d-22h/motion.json` (~900 vues) et `posts/x14-3d-jour1-sans-br/motion.json`. Rendu sur le PC de Goat (carte graphique) : la routine cloud l'écrit et le liste dans `a-rendre/MDA-<date>.json`.
   - Scènes : `large` (accroche, souvent au lit avec `humeur: telephone`, `lumiere: nuit`), `mascotte` (plan sur le personnage), `ecran` (tableau au mur : `liste` {titre, lignes}, `calendrier` {jours, jusqua}, `timer` {exo, secondes}), fin en `lumiere: aube` avec `humeur` `sport` puis `content` + `carte` du mot-clé. `tampon` pour une victoire (« 7 / 7 »).
   - Humeurs du personnage : `telephone` / `fatigue` / `dort` / `triste` (au lit), `normal` (debout), `sport` (pompes), `content` (bras levés).
 - Anciens formats (ne plus produire sauf demande de Goat) : `manifeste3d`, duel 3D (`tools/duel3d.py`), fable 2D, carnet.

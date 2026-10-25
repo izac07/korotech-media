@@ -9,7 +9,7 @@ URL publique : `https://izac07.github.io/korotech-media/comptes/<slug>/posts/<do
 - Accroche forte, une seule idée par post, contenu exact et utile, aucun chiffre / test / témoignage inventé. Fin = **mot-clé à commenter** du compte (décision du 23/10/2026, `ressources/mots-cles.json`) : la dernière scène l'affiche, la voix le dit (« Commente PLAN pour recevoir le plan 7 jours ») et la légende finit par « 💬 Commente <MOT> et je t'envoie <offre> en DM ». Goat envoie le lien en DM à la main (`ressources/messages-dm.md`) ; jamais le lien dans la légende.
 - Légende : accroche + bénéfice + appel à l'action + 5 à 7 hashtags de la niche (pas de hashtags génériques type #instagood).
 - Pas de contenu identique entre comptes : chaque compte a ses sujets, son ton, son visuel.
-- Reels : 40-45 s (100-120 mots de voix off), format motion de `tools/MOTION.md`, voix off ElevenLabs (scénario Make 9977445, champ `voix` = ID indiqué dans le README du compte), chemins `comptes/<slug>/posts/<dossier>/vo_<k>.mp3`.
+- Reels : 25-30 s (70-90 mots de voix off, revu le 25/10/2026), format motion de `tools/MOTION.md`, voix off ElevenLabs (scénario Make 9977445, champ `voix` = ID indiqué dans le README du compte), chemins `comptes/<slug>/posts/<dossier>/vo_<k>.mp3`.
 - Contrôles obligatoires (depuis le 18/10/2026, détail dans `tools/MOTION.md` « Chaîne de contrôle ») : `tools/journal.py` (sujet pas déjà traité, 2 reels du jour différents), `tools/verifie.py` (0 erreur avant de payer les voix), `tools/audit.py --estime` (hook ≤ 0,5 s, zones sûres), puis `tools/journal.py ajouter` après l'ajout à la file. Bilan : `tools/bilan.py` (tous les comptes, x fois la médiane).
 
 ## File d'attente

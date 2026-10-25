@@ -7,7 +7,7 @@ python3 tools/motion.py <dossier>/motion.json <dossier>/reel.mp4
 ```
 
 - Les voix doivent exister AVANT le rendu : `<dossier>/vo_0.mp3`, `vo_1.mp3`… (une par scène, même ordre que `scenes`).
-- La durée de chaque scène = durée de sa voix + 0,9 s. Cible : **40 à 45 s au total**, soit **100 à 120 mots de voix off** au total sur les 5 scènes.
+- La durée de chaque scène = durée de sa voix + 0,9 s. Cible : **25 à 30 s au total**, soit **70 à 90 mots de voix off** au total (revu le 25/10/2026, voir « Structure obligatoire de la voix »).
 - Les sous-titres mot à mot, la musique (`music_seed`, différent à chaque reel) et les bruitages sont automatiques.
 - Toujours **5 scènes**, dans l'ordre indiqué pour le layout. Tous les champs texte sont obligatoires sauf mention contraire. Textes courts : ils sont affichés en gros.
 - `**mot**` = mise en valeur (couleur / bandeau selon le layout).
@@ -18,7 +18,7 @@ python3 tools/motion.py <dossier>/motion.json <dossier>/reel.mp4
 ## Chaîne de contrôle (depuis le 18/10/2026) — dans cet ordre
 Python **3.12 minimum** (`motion.py` ne tourne pas en 3.11). Machine neuve / routine cloud : `source tools/setup.sh` puis utiliser `"$PY"` à la place de `python3`.
 1. **Sujet** : `"$PY" tools/journal.py sujets --compte <handle>` puis `"$PY" tools/journal.py verifier --compte <handle> --sujet "…"` (alerte si sujet déjà traité).
-2. **motion.json écrit** → `"$PY" tools/verifie.py <dossier>/motion.json` : 0 ERREUR obligatoire, corriger les ATTENTION. Un champ manquant n'est jamais anodin : le moteur afficherait le texte par défaut de l'exemple (ex. « STOP AUX 100 CRUNCHS »). Vérifie aussi 100-120 mots, longueurs, mots déclencheurs présents dans `vo`, règles du compte, `music_seed` jamais utilisé.
+2. **motion.json écrit** → `"$PY" tools/verifie.py <dossier>/motion.json` : 0 ERREUR obligatoire, corriger les ATTENTION. Un champ manquant n'est jamais anodin : le moteur afficherait le texte par défaut de l'exemple (ex. « STOP AUX 100 CRUNCHS »). Vérifie aussi 70-90 mots, longueurs, mots déclencheurs présents dans `vo`, règles du compte, `music_seed` jamais utilisé.
 3. **Avant les voix** → `"$PY" tools/audit.py <dossier>/motion.json --estime --planche /tmp/audit.jpg` puis lire la planche (outil Read). Hook lisible ≤ 0,5 s, texte ≥ 30 px, rien sous les boutons d'Instagram (x > 960, y 1000-1750).
 4. Voix (scénario 9977445) → rendu `"$PY" tools/motion.py …` : l'audit est relancé tout seul avec les vraies durées et s'affiche avant le rendu.
 5. **Après ajout à la file** → `"$PY" tools/journal.py ajouter <dossier>/motion.json --date "AAAA-MM-JJ HH:MM" --pilier "<pilier du README>" --formule <pov|question|stop|secret|chiffre|avant-apres|mythe|liste|defi|histoire|demo|erreur> --sujet "…"` (remplit `journal-reels.csv` ET le journal.md du compte, et contrôle que les 2 reels du jour ne se ressemblent pas : pas le même pilier ET la même formule).
@@ -112,16 +112,18 @@ Exemple validé : `comptes/revenus-malin/posts/r04-budget-50-30-20/motion.json`.
 Règles : information générale uniquement, jamais de promesse de rendement ni de conseil d'achat d'un placement précis ; pas de taux ou plafonds qui changent sans vérifier ; mettre « Information générale, pas un conseil personnalisé » dans la note du `cta` dès qu'on parle d'épargne/placements. Les chiffres d'exemple sont présentés comme des exemples.
 
 ## boucle (PILOTE, tous comptes) — boucle courte de 6 à 10 s, sans voix
-Exemple : `tools/exemples/boucle-exemple/motion.json`. À tester sur 2-3 posts par semaine maximum, à côté des 40-45 s, puis comparer au bilan (x médiane).
+Exemple : `tools/exemples/boucle-exemple/motion.json`. À tester sur 2-3 posts par semaine maximum, à côté des reels de 25-30 s, puis comparer au bilan (x médiane).
 Champs du haut : `pas` (secondes par mot, défaut 0.3), `tenue` (s de phrase complète, défaut 1.2), `couleurs` = 2 paires `[fond, texte]`, optionnels `police`, `taille` (px, défaut 120).
 Scènes : 1 à 3 `{"type":"phrase","texte":"…"}`, 9 mots max par phrase (`**mot**` = souligné). Mécanique tirée d'une source mesurée : un mot par pas, le fond bascule à chaque pas, coupes sèches, texte visible dès la 1re image, la fin retombe sur la 1re couleur pour boucler. Musique + bruitages, pas de voix ni de sous-titres. Mêmes règles éditoriales que le compte (aucun chiffre inventé).
 
-## Structure obligatoire de la voix (tous les comptes, depuis le 23/10/2026)
-1. **Accroche** (1re phrase de la scène 0).
-2. **Tout de suite après, dans la même scène 0 : « Enregistre cette vidéo, tu vas en avoir besoin. »** (ou une variante : « Enregistre-la pour ne pas l'oublier. »). `tools/verifie.py` met une ERREUR si la scène 0 ne contient pas « enregistre ».
-3. Les conseils (scènes suivantes).
-4. **Fin : le mot-clé** (« Commente <mot> pour recevoir <offre> »), voir ci-dessous. Ne pas redemander d'enregistrer à la fin : la dernière scène est réservée au mot-clé.
-Garder 100-120 mots au total : raccourcir les conseils plutôt que l'accroche.
+## Structure obligatoire de la voix (tous les comptes, revue le 25/10/2026)
+Pourquoi elle a changé : courbe de rétention de MDA-X13 (1 003 vues, 11 enregistrements) : 75 % des gens encore là à 3 s, **30 % à 6 s**, pile pendant « Enregistre cette vidéo, et garde ces trois règles » dit juste après l'accroche ; après 6 s la courbe est presque plate. Le spectateur attend la réponse à l'accroche : lui demander d'enregistrer à ce moment-là le fait partir.
+1. **Accroche** (1re phrase de la scène 0, 14 mots max).
+2. **Tout de suite le 1er conseil / la 1re info concrète**, sans phrase d'annonce (« voici 3 règles », « garde bien ça »). La scène 0 fait **18 mots de voix au plus** pour que le plan change vers 3-4 s.
+3. **Après le 1er conseil, en scène 1 ou 2 : « Enregistre cette vidéo »** dans une phrase courte qui relance (« Enregistre-la, la suite est pire. », « Enregistre, tu en auras besoin vers 23 h. »). `tools/verifie.py` met une ERREUR si « enregistre » est en scène 0 (hors dialogue) ou absent des scènes 1-2.
+4. Les autres conseils (le meilleur en dernier).
+5. **Fin : le mot-clé** (« Commente <mot> pour recevoir <offre> »), voir ci-dessous. Ne pas redemander d'enregistrer à la fin : la dernière scène est réservée au mot-clé.
+Viser **70-90 mots au total (~25-30 s)** : la fin retient peu de monde, mieux vaut 2-3 conseils forts que 5. Dialogue toi ↔ Claude : la question en scène 0, la réponse commence en scène 1 et « enregistre » vient en scène 1 ou 2.
 
 ## Dire « Claude », pas « l'IA » (tous les comptes, décision de Goat du 24/10/2026)
 Quand la voix parle de l'assistant qu'on utilise, elle dit **« Claude »** : « mets ton cours dans Claude », « demande à Claude », « Claude te fait les fiches ». Jamais « l'IA », « une IA », « l'intelligence artificielle » dans ce sens. Même chose à l'écran (titres, interrupteurs « Toi → Claude », chat). Seule exception : une comparaison de plusieurs outils (« 3 IA gratuites ») où « IA » désigne une catégorie ; on écrit alors le nom de chaque outil. `tools/verifie.py` met une ERREUR si une `vo` contient « l'IA » ou « l'intelligence artificielle », une ATTENTION pour « une IA ». Attention aux exemples de Claude : ne lui prêter que ce qu'il sait vraiment faire (aucune fonction inventée).

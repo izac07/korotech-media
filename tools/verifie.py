@@ -9,7 +9,7 @@ Règles : tools/MOTION.md, comptes/README.md et le README de chaque compte.
 import json, os, re, sys, glob
 
 RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MOTS_MIN, MOTS_MAX = 100, 120
+MOTS_MIN, MOTS_MAX = 70, 90  # revu le 25/10/2026 (courbe de rétention MDA-X13) : ~25-30 s
 
 # Champs obligatoires par layout et par type de scène ; "ordre" = ordre imposé des 5 scènes (None = libre).
 # Les champs suivis de "?" sont optionnels (seulement contrôlés s'ils sont là).
@@ -123,7 +123,7 @@ def verifier(path):
         if lay == "cheatsheet" and ty == "hook" and not (s.get("title") and s.get("sub")):
             att.append("scène %d : hook sans title/sub, le défaut « 3 IA GRATUITES / que presque personne n'utilise » sera affiché" % k)
 
-    # voix off : 100-120 mots, nombres en lettres (boucle : 1 à 3 phrases, 6 à 10 s, pas de voix)
+    # voix off : 70-90 mots, nombres en lettres (boucle : 1 à 3 phrases, 6 à 10 s, pas de voix)
     vo_all = " ".join(s.get("vo", "") for s in sc)
     n = len(vo_all.split())
     if lay == "boucle":
@@ -140,7 +140,7 @@ def verifier(path):
             if s.get("qui") not in ("moi", "claude"):
                 err.append("scène %d : « qui » doit valoir « moi » ou « claude » (choisit la voix)" % k)
     elif n < MOTS_MIN - 10 or n > MOTS_MAX + 10:
-        err.append("voix off : %d mots (cible %d-%d, soit 40-45 s)" % (n, MOTS_MIN, MOTS_MAX))
+        err.append("voix off : %d mots (cible %d-%d, soit 25-30 s)" % (n, MOTS_MIN, MOTS_MAX))
     elif not MOTS_MIN <= n <= MOTS_MAX:
         att.append("voix off : %d mots (cible %d-%d)" % (n, MOTS_MIN, MOTS_MAX))
     for k, s in enumerate(sc):
@@ -249,11 +249,17 @@ def verifier(path):
     if handle == "coeurlucide__" and re.search(r"\b(pervers|narcissique|bipolaire|toxique pathologique|borderline)\b", tout):
         err.append("Cœur Lucide : pas de diagnostic psy")
 
-    # structure voulue par Goat (23/10/2026) : accroche, puis tout de suite « Enregistre cette vidéo », puis les conseils
+    # structure (règle revue le 25/10/2026) : accroche, PREMIER CONSEIL tout de suite, puis « Enregistre cette vidéo » en scène 1 ou 2.
+    # Courbe de MDA-X13 : 75 % encore là à 3 s, 30 % à 6 s, pile pendant « Enregistre cette vidéo » dit juste après l'accroche.
     if lay != "boucle" and sc and sc[0].get("vo") and not spec.get("sans_mot_cle"):
-        debut = sc[:2] if (sc[0].get("type") == "duo" or sc[0].get("qui")) else sc[:1]  # dialogue : la question, puis la réponse qui dit « enregistre »
-        if not any(re.search(r"\benregistre", norm(s.get("say") or s.get("vo", ""))) for s in debut):
-            err.append("scène 0 : après l'accroche, la voix doit dire « Enregistre cette vidéo » (ex. « … Enregistre-la, tu vas en avoir besoin. »)")
+        dit = lambda s: re.search(r"\benregistre", norm(s.get("say") or s.get("vo", "")))
+        dialogue = sc[0].get("type") == "duo" or bool(sc[0].get("qui"))
+        if dit(sc[0]) and not dialogue:
+            err.append("scène 0 : « Enregistre » est trop tôt (les spectateurs partent entre 3 et 6 s) ; donne d'abord le 1er conseil, puis dis « Enregistre » en scène 1 ou 2")
+        elif not any(dit(s) for s in sc[:3]):
+            err.append("scènes 1-2 : après le 1er conseil, la voix doit dire « Enregistre cette vidéo » (ex. « … Enregistre-la, la suite est encore mieux. »)")
+        if not dialogue and len((sc[0].get("say") or sc[0]["vo"]).split()) > 18:
+            att.append("scène 0 : %d mots de voix ; viser 18 au plus pour changer de plan vers 3-4 s" % len((sc[0].get("say") or sc[0]["vo"]).split()))
 
     # dire « Claude » et pas « l'IA » (décision de Goat du 24/10/2026)
     for k, s in enumerate(sc):

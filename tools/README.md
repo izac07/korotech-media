@@ -15,7 +15,7 @@ URL publique d'un fichier : `https://izac07.github.io/korotech-media/<chemin>`
   5. **Parents** (≈ 1/10).
 - **Accroches** : jamais « voici une méthode ». Priorité à l'émotion, la situation vécue, la curiosité ou le défi : « POV : … », « Personne ne t'a dit que… », « Arrête de… », « Le truc que je fais quand… ». Hook ≤ 3 lignes courtes.
 - **Varier la structure** : pas toujours « colle ce prompt ». Alterner : mini-histoire (problème → astuce → résultat), liste de 3, avant/après, mythe vs réalité, démonstration. Le prompt peut apparaître, mais ce n'est pas obligatoire.
-- **Reels = format motion « cheatsheet » validé par Goat le 16/10/2026** : 40-45 s, 5 scènes, 100-120 mots de voix off, une seule idée par reel. Spec et rendu : voir `tools/MOTION.md` (remplace l'ancien format `korotech.py reel`).
+- **Reels = format motion « cheatsheet » validé par Goat le 16/10/2026** : 25-30 s (revu le 25/10/2026), 4-5 scènes, 70-90 mots de voix off, une seule idée par reel. Spec et rendu : voir `tools/MOTION.md` (remplace l'ancien format `korotech.py reel`).
 - Chaque post finit par le **mot-clé à commenter** du compte (décision du 23/10/2026, voir `ressources/mots-cles.json`) : « 💬 Commente PROMPTS et je t'envoie les 10 prompts pour réviser en DM ». Goat répond en DM avec le lien (`ressources/messages-dm.md`). Jamais le lien dans la légende.
 - Reels : texte animé + **voix off ElevenLabs « Brian » (modèle Eleven v4)** sur TOUS les reels + musique lo-fi originale en fond (baissée automatiquement sous la voix).
 - Carrousels : sans musique (l'API Instagram ne le permet pas). Le contenu complet (prompt, liste) est DANS le carrousel.
@@ -80,7 +80,7 @@ Dépendances : `pip install --break-system-packages playwright scipy numpy pillo
 Chaque scène accepte `"dur"` (secondes). Hook : 3 lignes courtes max, ≤ 14 caractères par ligne.
 
 ### Voix off (tous les reels)
-Chaque scène porte un champ `"vo"` : la phrase dite par Brian pendant cette scène (français oral, naturel, tutoiement pour les élèves / vouvoiement pour les parents ; écrire les nombres en lettres ; total 100-120 mots par reel motion).
+Chaque scène porte un champ `"vo"` : la phrase dite par Brian pendant cette scène (français oral, naturel, tutoiement pour les élèves / vouvoiement pour les parents ; écrire les nombres en lettres ; total 70-90 mots par reel motion).
 Avant de générer la vidéo, pour chaque scène k qui a un `vo`, lancer le scénario Make **9977445** (« Korotech - Voix off ElevenLabs ») avec :
 `texte` = la phrase, `chemin` = `posts/<dossier>/vo_<k>.mp3` (k = index de la scène, à partir de 0), `voix` = `nPczCjzI2devNBz1zQrb` (Brian), `modele` = `eleven_v4` (ce sont aussi les valeurs par défaut du scénario). Make ne peut PAS écraser un fichier existant dans GitHub : toujours écrire vers un chemin nouveau (pour refaire une voix, supprimer d'abord l'ancien fichier du dépôt et pousser).
 Puis `git pull` : les `vo_<k>.mp3` arrivent dans le dossier du post. `tools/motion.py` les détecte, allonge chaque scène pour caler la voix, et mixe la musique en dessous. S'il manque un fichier, le script s'arrête avec une erreur : relancer la génération de cette scène.
