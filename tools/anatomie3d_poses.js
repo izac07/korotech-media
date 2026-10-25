@@ -61,13 +61,16 @@ function creerPoses(THREE, corps, m, clips, scene, mat){
       cote.forEach(s=>{const [a,b]=bras(s);const f=V(sg[s]*.1,-.25+.25*u,1);aim(a,f);aim(b,f);});
     }else if(nom=='suspension'){
       barre.visible=true;const S0=wp(B('upper_arm.L')).y;
-      // en montant, le corps passe derrière la barre et se penche un peu en arrière : la tête passe sans la toucher
-      const bal=Math.sin(tt*1.6)*.035*(1-u);   // balancement de pendule autour de la barre, amorti quand on tire
-      corps.position.set(0,BARRE-.09-THREE.MathUtils.lerp(.53,-.02,u)-S0,-.24*u+bal);corps.rotation.x=-.1*u-bal*.6;corps.updateMatrixWorld(true);
-      cote.forEach(s=>{const [a,b,h]=bras(s);const prise=V(sg[s]*.3,BARRE,0);let T=V(prise.x,BARRE-.09,-.03);
-        // la barre doit passer dans le creux du poing, paume vers l'avant : on recale le poignet sur l'erreur, 4 passes
-        for(let i=0;i<4;i++){ik(a,b,h,T,V(sg[s]*1,-.7,-.12));aim(h,V(0,1,0));tordre(h,V(0,0,1));T.add(prise.clone().sub(creux(h)));}});
-      cote.forEach(s=>{const [a,b,h]=jambe(s);const H=wp(a);ik(a,b,h,V(H.x-sg[s]*.03,H.y-.83+.03*u,H.z+.04-.06*u),V(0,0,1));});   // jambes serrées, genoux un peu fléchis
+      // prise large (bras en V), montée presque verticale, poitrine sortie et léger recul ; tête en arrière en haut pour passer la barre
+      const bal=Math.sin(tt*1.6)*.03*(1-u);
+      corps.position.set(0,BARRE-.09-THREE.MathUtils.lerp(.45,-.03,u)-S0,-.13*u+bal);corps.rotation.x=-.09*u-bal*.6;corps.updateMatrixWorld(true);
+      aim(B('spine.003'),V(0,1,-.28*u));
+      cote.forEach(s=>{const [a,b,h]=bras(s);const prise=V(sg[s]*.48,BARRE,0);let T=V(prise.x,BARRE-.09,-.03);
+        // la barre doit passer dans le creux du poing, paume vers l'avant : on recale le poignet sur l'erreur, 4 passes ; coudes écartés sur les côtés
+        for(let i=0;i<4;i++){ik(a,b,h,T,V(sg[s]*1,-.35,-.05));aim(h,V(0,1,0));tordre(h,V(0,0,1));T.add(prise.clone().sub(creux(h)));}});
+      aim(B('neck'),V(0,1,-.12*u));aim(B('head'),V(0,1,-.5*u));
+      // jambes tendues et serrées, pieds légèrement devant (gainage)
+      cote.forEach(s=>{const [a,b,h]=jambe(s);const H=wp(a);ik(a,b,h,V(H.x-sg[s]*.035,H.y-.86,H.z+.07+.05*u),V(0,0,1));});
     }
   }
   return {poser,barre,B,wp};
