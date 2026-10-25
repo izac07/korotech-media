@@ -61,10 +61,11 @@ function creerPoses(THREE, corps, m, clips, scene, mat){
       cote.forEach(s=>{const [a,b]=bras(s);const f=V(sg[s]*.1,-.25+.25*u,1);aim(a,f);aim(b,f);});
     }else if(nom=='suspension'){
       barre.visible=true;const S0=wp(B('upper_arm.L')).y;
-      corps.position.y=BARRE-.09-THREE.MathUtils.lerp(.53,.2,u)-S0;corps.updateMatrixWorld(true);
+      // en montant, le corps passe derrière la barre et se penche un peu en arrière : la tête passe sans la toucher
+      corps.position.set(0,BARRE-.09-THREE.MathUtils.lerp(.53,-.02,u)-S0,-.24*u);corps.rotation.x=-.1*u;corps.updateMatrixWorld(true);
       cote.forEach(s=>{const [a,b,h]=bras(s);const prise=V(sg[s]*.3,BARRE,0);let T=V(prise.x,BARRE-.09,-.03);
         // la barre doit passer dans le creux du poing, paume vers l'avant : on recale le poignet sur l'erreur, 4 passes
-        for(let i=0;i<4;i++){ik(a,b,h,T,V(sg[s]*1,0,-.35));aim(h,V(0,1,0));tordre(h,V(0,0,1));T.add(prise.clone().sub(creux(h)));}});
+        for(let i=0;i<4;i++){ik(a,b,h,T,V(sg[s]*1,-.45,.3));aim(h,V(0,1,0));tordre(h,V(0,0,1));T.add(prise.clone().sub(creux(h)));}});
       cote.forEach(s=>{const [a,b,h]=jambe(s);const H=wp(a);ik(a,b,h,V(H.x,H.y-.83,H.z+.06),V(0,0,1));});
     }
   }

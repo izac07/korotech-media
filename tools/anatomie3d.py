@@ -75,7 +75,7 @@ const scene=new THREE.Scene();
  const t=new THREE.CanvasTexture(cv);t.colorSpace=THREE.SRGBColorSpace;scene.background=t;}
 const pm=new THREE.PMREMGenerator(R);scene.environment=pm.fromScene(new RoomEnvironment(),.04).texture;scene.environmentIntensity=.22;
 const key=new THREE.DirectionalLight(0xffe6cc,3.0);key.position.set(2.5,4.5,3);key.castShadow=true;key.shadow.mapSize.set(2048,2048);
-Object.assign(key.shadow.camera,{left:-3,right:3,top:3,bottom:-3});key.shadow.bias=-.0004;scene.add(key);
+Object.assign(key.shadow.camera,{left:-3,right:3,top:3,bottom:-3});key.shadow.bias=-.0004;key.shadow.normalBias=.025;scene.add(key);
 const rim1=new THREE.DirectionalLight(0xffb27a,4);rim1.position.set(-3,2.5,-3);scene.add(rim1);
 const rim2=new THREE.DirectionalLight(0xffd6b0,2.2);rim2.position.set(3,2,-3);scene.add(rim2);
 scene.add(new THREE.HemisphereLight(0x3a2a20,0x050403,.6));
@@ -114,7 +114,7 @@ function plan(s,t,p){P.poser(s.exercice||'Idle_Loop',s.u,t);box.setFromObject(co
   if(s.plan=='muscle'&&s.muscle){const zs=MUSCLES[s.muscle]||[],zl=zs.filter(n=>n.endsWith('.L'));const os=(zl.length?zl:zs).map(n=>P.B(n)).filter(Boolean);const mp=new THREE.Vector3();os.forEach(b=>mp.add(P.wp(b)));mp.divideScalar(Math.max(1,os.length));
     // gros plan sur un seul côté (sinon on vise le milieu, la tête), de 3/4, un peu au-dessus quand la zone est haute
     l.copy(mp);const a=(zl.length?.95:.6)+.25*p;o.set(Math.sin(a),mp.y>ctr.y+.3?.3:.15,Math.cos(a)).normalize().multiplyScalar(1.05);}
-  else if(s.plan=='cote'){o.set(dist*.97,h*.12,dist*.22);}
+  else if(s.plan=='cote'){o.set(dist*.88,h*.12,dist*.48);}
   else if(s.plan=='face'){o.set(dist*.08,h*.1,dist);}
   else if(s.plan=='orbite'){const a=-.6+1.2*p;o.set(Math.sin(a)*dist,h*.15,Math.cos(a)*dist);}
   else{o.set(dist*.55,h*.18,dist*.84);}
