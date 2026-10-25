@@ -1,0 +1,74 @@
+{
+ "id": "MDA-X15",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9151,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "4 h 20. Encore dessus.",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Quatre heures vingt, et tu es encore dessus. Ton pouce scrolle, ton cerveau ne dort pas."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Règle 1 : il dort dehors",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE SOIR",
+    "lignes": [
+     "Téléphone hors de la chambre",
+     "Vrai réveil sur la table"
+    ]
+   },
+   "vo": "Règle un : le téléphone charge hors de la chambre. Enregistre, tu en auras besoin ce soir."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Règle 2 : un vrai réveil",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Règle deux : un vrai réveil sur la table de nuit. Plus d'excuse du genre : c'est pour l'alarme."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "7 h. Pouce reposé.",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "tampon": "NUIT GAGNÉE",
+   "vo": "Le lendemain, ton pouce est reposé. Et toi aussi, pour une fois."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

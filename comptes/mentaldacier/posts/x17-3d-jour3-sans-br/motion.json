@@ -1,0 +1,84 @@
+{
+ "id": "MDA-X17",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9153,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Jour 3 sans la BR.",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "calendrier",
+    "jours": 7,
+    "jusqua": 2
+   },
+   "vo": "Jour trois sans la bé-erre. Ton cerveau va dire : juste une fois. C'est faux."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Quand ça monte",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "liste",
+    "titre": "QUAND ÇA MONTE",
+    "lignes": [
+     "Téléphone hors de la chambre",
+     "10 pompes, direct"
+    ]
+   },
+   "vo": "Quand l'envie monte, sors le téléphone de la chambre. Tout de suite. Enregistre, pour le prochain soir difficile."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "10 pompes. Direct.",
+   "humeur": "sport",
+   "lumiere": "nuit",
+   "vo": "Puis dix pompes, direct. L'envie redescend quand ton corps a autre chose à faire."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Jour 3 : validé",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "ecran": {
+    "type": "calendrier",
+    "jours": 7,
+    "jusqua": 3
+   },
+   "tampon": "3 / 7",
+   "vo": "Jour trois validé. Et rappelle-toi : le plus dur, c'est cette semaine, pas toute ta vie."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

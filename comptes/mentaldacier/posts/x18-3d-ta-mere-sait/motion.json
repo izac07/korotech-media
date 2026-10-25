@@ -1,0 +1,72 @@
+{
+ "id": "MDA-X18",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9154,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "23 h. Toujours dessus.",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Ta mère sait ce que tu fais à vingt-trois heures ? Tu regardes des vidéos de motivation."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "3 h de motivation",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Trois heures à te motiver, zéro minute à agir. Enregistre ça, c'est pour toi."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "La règle des 2 minutes",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "timer",
+    "exo": "LA VRAIE TÂCHE",
+    "secondes": 120,
+    "sous": "juste 2 minutes"
+   },
+   "vo": "La règle : quand une vidéo te motive, tu la coupes et tu fais deux minutes de la vraie tâche."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "2 min > ton feed",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "tampon": "FAIT",
+   "vo": "Deux minutes, c'est rien. Mais c'est deux minutes de plus que ton feed."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}
