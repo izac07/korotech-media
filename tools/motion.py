@@ -1930,7 +1930,12 @@ def studio3d_page(*a):
     return studio3d.page(*a)
 
 
-LAYOUTS = {"studio3d": studio3d_page, "interface": interface_page, "carnet": carnet_page,"boucle": boucle_page, "malin": malin_page, "claudeflow": claudeflow_page, "manifeste3d": manifeste3d_page, "messages": messages_page, "terminal": terminal_page, "cheatsheet": cheatsheet_page, "iceberg": iceberg_page, "sportmotion": sportmotion_page, "nightchat": nightchat_page, "notion": notion_page}
+def anatomie3d_page(*a):
+    import anatomie3d
+    return anatomie3d.page(*a)
+
+
+LAYOUTS = {"studio3d": studio3d_page, "anatomie3d": anatomie3d_page, "interface": interface_page, "carnet": carnet_page,"boucle": boucle_page, "malin": malin_page, "claudeflow": claudeflow_page, "manifeste3d": manifeste3d_page, "messages": messages_page, "terminal": terminal_page, "cheatsheet": cheatsheet_page, "iceberg": iceberg_page, "sportmotion": sportmotion_page, "nightchat": nightchat_page, "notion": notion_page}
 
 # ------------------------------------------------------------------ rendu
 def sfx_track(path, total, events, starts):

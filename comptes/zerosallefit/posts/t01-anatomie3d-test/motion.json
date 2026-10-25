@@ -1,0 +1,9 @@
+{"id":"ZSF-T01","layout":"anatomie3d","handle":"zerosallefit","music_seed":9202,
+ "serie":{"label":"DAY","de":0,"a":30},
+ "scenes":[
+  {"type":"large","exercice":"suspension","reps":0,"jour":1,"vo":"Pends-toi à une barre trente secondes par jour. Regarde ce qui change en un mois."},
+  {"type":"muscle","exercice":"suspension","reps":0,"muscle":"avant-bras","jour":7,"vo":"Semaine un : ta prise lâche vite, tes avant-bras brûlent. Enregistre, et commence ce soir."},
+  {"type":"orbite","exercice":"suspension","reps":0,"muscle":"epaules","jour":14,"question":"Tu tiens combien ? Écris ton temps 👇","vo":"Semaine deux : tu tiens plus longtemps. Et toi, tu tiens combien ? Écris ton temps en commentaire."},
+  {"type":"cote","exercice":"suspension","reps":1,"muscle":"bras","jour":30,"vo":"Semaine quatre : tes épaules et ton dos travaillent à chaque séance. Version facile : garde les pieds au sol."},
+  {"type":"face","exercice":"Idle_Loop","carte":["💬 COMMENTE PROGRAMME","le programme 7 jours gratuit"],"vo":"Commente programme pour recevoir le programme sept jours gratuit."}
+ ]}
