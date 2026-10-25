@@ -1,0 +1,151 @@
+{
+ "id": "LIA-X06",
+ "layout": "studio3d",
+ "music_seed": 9401,
+ "handle": "lia.entrepreneur",
+ "mot_cle": {
+  "mot": "MONTAGE",
+  "offre": "mon skill de montage et mon guide de style",
+  "lien": "https://github.com/izac07/korotech-media/blob/main/ressources/lia-entrepreneur/skill-montage-video.md"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Monter avec Claude",
+   "humeur": "normal",
+   "compteur": {
+    "label": "ÉTAPE",
+    "de": 1,
+    "a": 1,
+    "fmt": "#/7"
+   },
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude Code",
+    "messages": [
+     [
+      "moi",
+      "On monte une vidéo ?"
+     ],
+     [
+      "ia",
+      "Envoie tes fichiers."
+     ]
+    ]
+   },
+   "vo": "Monter tes vidéos avec Claude, en sept étapes. Un : ouvre Claude Code."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. Ton guide de style",
+   "humeur": "travail",
+   "compteur": {
+    "label": "ÉTAPE",
+    "de": 2,
+    "a": 2,
+    "fmt": "#/7"
+   },
+   "ecran": {
+    "type": "verif",
+    "titre": "guide-style.md",
+    "lignes": [
+     "Accroche en 1 s",
+     "1 coupe par phrase",
+     "Sous-titres mot à mot"
+    ]
+   },
+   "vo": "Deux : ton guide de style. Enregistre, tu vas t'en servir."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "3. Un skill montage",
+   "humeur": "travail",
+   "compteur": {
+    "label": "ÉTAPE",
+    "de": 3,
+    "a": 3,
+    "fmt": "#/7"
+   },
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude Code",
+    "messages": [
+     [
+      "moi",
+      "Crée un skill montage"
+     ],
+     [
+      "ia",
+      "Skill prêt ✓"
+     ]
+    ]
+   },
+   "vo": "Trois : un skill de montage, pour refaire pareil à chaque fois."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "4. Rushs, images, voix",
+   "humeur": "content",
+   "compteur": {
+    "label": "ÉTAPE",
+    "de": 4,
+    "a": 4,
+    "fmt": "#/7"
+   },
+   "vo": "Quatre : glisse tes rushs, tes images et ta voix."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "5 et 6. Envoie, demande",
+   "humeur": "normal",
+   "compteur": {
+    "label": "ÉTAPE",
+    "de": 6,
+    "a": 6,
+    "fmt": "#/7"
+   },
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude Code",
+    "messages": [
+     [
+      "moi",
+      "Monte la vidéo selon mon guide"
+     ],
+     [
+      "ia",
+      "Je monte."
+     ]
+    ]
+   },
+   "vo": "Cinq et six : envoie tout, puis demande : monte la vidéo selon mon guide."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "7. Il monte, tu attends",
+   "humeur": "travail",
+   "compteur": {
+    "label": "ÉTAPE",
+    "de": 7,
+    "a": 7,
+    "fmt": "#/7"
+   },
+   "ecran": {
+    "type": "montage",
+    "titre": "Claude — montage en code"
+   },
+   "vo": "Sept : Claude monte, tu attends. Tu montes encore à la main ? Dis-le en commentaire."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Commente MONTAGE",
+   "humeur": "content",
+   "tampon": "VIDÉO PRÊTE",
+   "carte": [
+    "💬 COMMENTE MONTAGE",
+    "mon skill + mon guide de style"
+   ],
+   "vo": "Commente montage pour recevoir mon skill de montage et mon guide de style."
+  }
+ ]
+}
