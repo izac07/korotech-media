@@ -61,7 +61,7 @@ import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
 import {BokehPass} from 'three/addons/postprocessing/BokehPass.js';
 import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
 import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
-const D=__D__, SC=__SC__, COL=__COL__, SERIE=__SERIE__, MUSCLES=__MUSCLES__;
+const EV=[]; const D=__D__, SC=__SC__, COL=__COL__, SERIE=__SERIE__, MUSCLES=__MUSCLES__;
 const c=x=>Math.max(0,Math.min(1,x)), sm=x=>{x=c(x);return x*x*(3-2*x);};
 const back=x=>{x=c(x);const s=1.7;return 1+(s+1)*Math.pow(x-1,3)+s*Math.pow(x-1,2);};
 const $=i=>document.getElementById(i);
@@ -132,7 +132,7 @@ const RENDER=function(t){
   // compteur DAY + semaine
   const hud=$('hud');if(SERIE){let j0=SERIE.de,j1=SERIE.de;SC.forEach((z,i)=>{if(i<k&&z.jour!=null)j0=z.jour;});j1=s.jour??j0;
     const j=Math.round(j0+(j1-j0)*sm(p*1.4));hud.style.opacity=s.carte?0:c(t/.3);$('hn').textContent=String(j).padStart(2,'0');
-    $('hb').style.width=(100*j/Math.max(1,SERIE.a))+'%';const wk=$('wk');wk.style.opacity=hud.style.opacity;wk.textContent='WEEK '+Math.max(1,Math.ceil(Math.max(j,1)/7));}
+    $('hb').style.width=(100*j/Math.max(1,SERIE.a))+'%';const wk=$('wk');wk.style.opacity=hud.style.opacity;wk.textContent='WEEK '+Math.max(1,Math.ceil(j*Math.round(SERIE.a/7)/Math.max(1,SERIE.a)));}
   else{hud.style.opacity=0;$('wk').style.opacity=0;}
   SC.forEach((z,i)=>{const b=$('bd'+i);if(b){b.style.opacity=i==k?c(tl/.25):0;}
     const q=$('q'+i);if(q){const on=i==k&&tl>.2;q.style.opacity=on?1:0;q.style.transform=`scale(${on?.6+.4*back((tl-.2)/.4):.6}) rotate(-2deg)`;}
