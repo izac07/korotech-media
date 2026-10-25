@@ -1,7 +1,7 @@
 # Mental d'Acier — @mentaldacier2030
 
 - ID Instagram : 17841429867473189 (relié à Make le 17/10/2026)  ·  préfixe des posts : MDA
-- Créneaux : 07:30 et 21:30 — 2 REELS par jour (décision de Goat du 18/10/2026 : plus aucun carrousel)
+- Créneaux : 07:30, 17:30 et 21:30 — 3 REELS par jour (test décidé par Goat le 25/10/2026, tant que le compte a de l'élan ; bilan le 01/11 ; plus aucun carrousel)
 - Voix off : nPczCjzI2devNBz1zQrb (Brian)
 - Cible : 16-30 ans qui veulent plus de discipline (études, sport, projets). Tutoiement.
 - Promesse : Construire de la discipline et des habitudes qui tiennent, sans dépendre de la motivation.

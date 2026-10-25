@@ -81,5 +81,5 @@ Légende : accroche (le double sens peut y rester), bénéfice, « 🔖 Enregist
 - Seul dans ta chambre, tu es un autre homme. (→ la discipline quand personne ne regarde)
 
 ## Publication
-- 2 reels par jour au maximum (créneaux 07:30 et 21:30), espacés d'au moins 6 h. Pas de rafale.
+- 3 reels par jour (créneaux 07:30, 17:30 et 21:30 ; test depuis le 26/10/2026, bilan le 01/11), espacés d'au moins 4 h, tous dans la nouvelle DA. Pas de rafale (4 posts d'affilée le 21/10 avaient fait chuter le compte).
 - Rien n'est publié sans passer par la file Make (veto de Goat) ou sans son accord explicite.
