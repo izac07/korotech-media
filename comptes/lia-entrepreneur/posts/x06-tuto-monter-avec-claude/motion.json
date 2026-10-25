@@ -134,13 +134,13 @@
     "type": "montage",
     "titre": "Claude — montage en code"
    },
-   "vo": "Sept : Claude monte, tu attends. Tu montes encore à la main ? Dis-le en commentaire."
+   "vo": "Sept : Claude monte, tu attends. Tu montes encore à la main ? Dis-le en commentaire.",
+   "tampon": "VIDÉO PRÊTE"
   },
   {
    "type": "telephone",
    "bandeau": "Commente MONTAGE",
    "humeur": "content",
-   "tampon": "VIDÉO PRÊTE",
    "carte": [
     "💬 COMMENTE MONTAGE",
     "mon skill + mon guide de style"

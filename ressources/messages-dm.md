@@ -72,3 +72,13 @@ Salut ! Comme promis, voici le prompt qui écrit ma semaine de reels 👇
 https://github.com/izac07/korotech-media/blob/main/ressources/lia-entrepreneur/prompt-14-reels.md
 Commence par la fiche de marque, c'est elle qui fait que ça sonne comme toi. Tu fais des reels sur quel sujet ?
 ```
+
+## L'IA Entrepreneur — reel LIA-X06 (« monter avec Claude en 7 étapes ») — mot-clé **MONTAGE**
+Mot-clé propre à ce reel (le cadeau est le skill + le guide de style montrés dans la vidéo).
+Réponse publique : `Envoyé en DM 📩 Commence par le guide de style, c'est lui qui fait tout.`
+DM :
+```
+Salut ! Voici mon skill de montage et mon guide de style, prêts à copier dans Claude Code 👇
+https://github.com/izac07/korotech-media/blob/main/ressources/lia-entrepreneur/skill-montage-video.md
+Adapte d'abord les couleurs de ta marque. Tu montes quel type de vidéo ?
+```
