@@ -1,0 +1,84 @@
+{
+ "id": "MDA-X19",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9155,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Lundi, promis.",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "calendrier",
+    "jours": 7,
+    "jusqua": 0
+   },
+   "vo": "Lundi, promis, tu commences. Il est dix-sept heures trente, et toujours rien."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Une seule action",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE SOIR",
+    "lignes": [
+     "1 seule action",
+     "Avant 20 h"
+    ]
+   },
+   "vo": "Oublie le grand départ. Choisis une seule action, faisable avant vingt heures. Enregistre, c'est ton nouveau lundi."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Petit, mais fait",
+   "humeur": "sport",
+   "lumiere": "nuit",
+   "vo": "Dix pompes, une page lue, un bureau rangé. Petit, mais fait aujourd'hui, pas lundi prochain."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Le vrai lundi",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "ecran": {
+    "type": "calendrier",
+    "jours": 7,
+    "jusqua": 1
+   },
+   "tampon": "LUNDI ✓",
+   "vo": "Le vrai lundi, ce n'est pas une date. C'est le jour où tu bouges, même un peu."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}
