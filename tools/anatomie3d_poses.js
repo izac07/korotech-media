@@ -17,12 +17,21 @@ function creerPoses(THREE, corps, m, clips, scene, mat){
     const pm=pole.clone().sub(n.clone().multiplyScalar(pole.dot(n))).normalize();
     const E=S.clone().add(n.clone().multiplyScalar(a*ca)).add(pm.multiplyScalar(a*sa));
     aim(up,E.clone().sub(S));aim(lo,T.clone().sub(wp(lo)));}
+  // paume : direction vers laquelle les doigts se replient (du poignet vers le bout du majeur, sans la composante le long de la main)
+  function paume(h){const ax=V(0,1,0).applyQuaternion(wq(h));const s=h.name.slice(-1);const tip=wp(os['DEF-f_middle03'+s]).sub(wp(h));
+    return tip.sub(ax.clone().multiplyScalar(tip.dot(ax))).normalize();}
+  // creux du poing : là où passe la barre
+  function creux(h){const ax=V(0,1,0).applyQuaternion(wq(h));return wp(h).add(ax.multiplyScalar(.075)).add(paume(h).multiplyScalar(.03));}
+  // tourne la main autour de son axe pour que la paume regarde « vers »
+  function tordre(h,vers){const ax=V(0,1,0).applyQuaternion(wq(h)).normalize();const p=paume(h);const v=vers.clone().sub(ax.clone().multiplyScalar(vers.dot(ax))).normalize();
+    const ang=Math.atan2(ax.dot(p.clone().cross(v)),p.dot(v));const q=new THREE.Quaternion().setFromAxisAngle(ax,ang).multiply(wq(h));
+    h.quaternion.copy(wq(h.parent).invert().multiply(q));h.updateWorldMatrix(false,true);}
   const cote=['L','R'],sg={L:1,R:-1};
   const bras=s=>[B('upper_arm.'+s),B('forearm.'+s),B('hand.'+s)];
   const jambe=s=>[B('thigh.'+s),B('shin.'+s),B('foot.'+s)];
   function base(nom,t){mix.stopAllAction();const c=THREE.AnimationClip.findByName(clips,nom);if(!c)return false;mix.clipAction(c).play();mix.setTime(t||0);m.updateMatrixWorld(true);return true;}
   // barre de traction (suspension)
-  const BARRE=2.32,barre=new THREE.Group();const metal=new THREE.MeshStandardMaterial({color:0x1b1715,roughness:.35,metalness:.8});
+  const BARRE=2.55,barre=new THREE.Group();const metal=new THREE.MeshStandardMaterial({color:0x1b1715,roughness:.35,metalness:.8});
   const cyl=(r,h)=>new THREE.CylinderGeometry(r,r,h,24);
   [-.78,.78].forEach(x=>{const p=new THREE.Mesh(cyl(.035,BARRE+.05),metal);p.position.set(x,(BARRE+.05)/2,0);p.castShadow=true;barre.add(p);});
   const tb=new THREE.Mesh(cyl(.022,1.62),metal);tb.rotation.z=Math.PI/2;tb.position.y=BARRE;tb.castShadow=true;barre.add(tb);barre.visible=false;scene.add(barre);
@@ -52,9 +61,11 @@ function creerPoses(THREE, corps, m, clips, scene, mat){
       cote.forEach(s=>{const [a,b]=bras(s);const f=V(sg[s]*.1,-.25+.25*u,1);aim(a,f);aim(b,f);});
     }else if(nom=='suspension'){
       barre.visible=true;const S0=wp(B('upper_arm.L')).y;
-      corps.position.y=BARRE-THREE.MathUtils.lerp(.5,.16,u)-S0;corps.updateMatrixWorld(true);
-      cote.forEach(s=>{const [a,b,h]=bras(s);ik(a,b,h,V(sg[s]*.3,BARRE-.02,0),V(sg[s]*1,0,-.35));});
-      cote.forEach(s=>{const [a,b,h]=jambe(s);const H=wp(a);ik(a,b,h,V(H.x,H.y-.8,H.z+.12),V(0,0,1));});
+      corps.position.y=BARRE-.09-THREE.MathUtils.lerp(.53,.2,u)-S0;corps.updateMatrixWorld(true);
+      cote.forEach(s=>{const [a,b,h]=bras(s);const prise=V(sg[s]*.3,BARRE,0);let T=V(prise.x,BARRE-.09,-.03);
+        // la barre doit passer dans le creux du poing, paume vers l'avant : on recale le poignet sur l'erreur, 4 passes
+        for(let i=0;i<4;i++){ik(a,b,h,T,V(sg[s]*1,0,-.35));aim(h,V(0,1,0));tordre(h,V(0,0,1));T.add(prise.clone().sub(creux(h)));}});
+      cote.forEach(s=>{const [a,b,h]=jambe(s);const H=wp(a);ik(a,b,h,V(H.x,H.y-.83,H.z+.06),V(0,0,1));});
     }
   }
   return {poser,barre,B,wp};
