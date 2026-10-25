@@ -107,7 +107,11 @@ const charger=()=>new Promise(ok=>new GLTFLoader().parse(buf,'',gl=>{const m=gl.
   corps=new THREE.Group();corps.add(m);scene.add(corps);P=creerPoses(THREE,corps,m,gl.animations,scene,metal);ok();}));
 // plans de caméra (cadrés sur le corps), transitions douces entre scènes
 const box=new THREE.Box3(),ctr=new THREE.Vector3(),siz=new THREE.Vector3();
-function plan(s,t,p){P.poser(s.exercice||'Idle_Loop',s.u,t);box.setFromObject(corps,true);if(P.barre.visible)box.expandByObject(P.barre);box.getCenter(ctr);box.getSize(siz);
+// cadrage calculé une seule fois par scène (pose de départ) : la caméra ne suit pas les mouvements du corps, c'est le mannequin qui bouge
+function plan(s,t,p){if(!s.cadre){P.poser(s.exercice||'Idle_Loop',0,0,0);box.setFromObject(corps,true);if(P.barre.visible)box.expandByObject(P.barre);
+    if(s.exercice=='suspension'){const b2=box.clone();P.poser('suspension',1,0,0);box.setFromObject(corps,true);box.union(b2);}
+    s.cadre=[box.getCenter(new THREE.Vector3()),box.getSize(new THREE.Vector3())];}
+  ctr.copy(s.cadre[0]);siz.copy(s.cadre[1]);P.poser(s.exercice||'Idle_Loop',s.u,t,t);
   // recul nécessaire en hauteur ET en largeur (format vertical 9:16) : un corps allongé (pompes) se cadre par sa longueur
   const lw=s.plan=='cote'?siz.z:s.plan=='face'?siz.x:Math.max(siz.x,siz.z*.8),h=Math.max(siz.y,lw/cam.aspect*.92,.9),dist=h/(2*Math.tan(THREE.MathUtils.degToRad(15)))*1.12;
   const o=new THREE.Vector3(),l=ctr.clone();
@@ -122,7 +126,8 @@ function plan(s,t,p){P.poser(s.exercice||'Idle_Loop',s.u,t);box.setFromObject(co
 const RENDER=function(t){
   let k=SC.findIndex(z=>t>=z.a&&t<z.b);if(k<0)k=t<SC[0].a?0:SC.length-1;const s=SC[k],tl=t-s.a,p=c(tl/Math.max(.1,s.b-s.a));
   // mouvement de l'exercice : répétitions (aller-retour) ou position tenue avec un léger tremblement
-  const reps=s.reps??0;s.u=reps>0?.5-.5*Math.cos(2*Math.PI*reps*p):(s.exercice=='suspension'?0:s.exercice=='squat'?.95:0)+.012*Math.sin(t*9);
+  // répétition : montée ~40 % du temps, petit arrêt en haut, descente lente et contrôlée ; sinon position tenue (le corps respire / se balance dans poser)
+  const reps=s.reps??0;let u=0;if(reps>0){const f=(reps*p)%1;u=f<.38?sm(f/.38):f<.46?1:1-sm((f-.46)/.54);}else u=s.exercice=='squat'?.95:0;s.u=u;
   const [cp,cl]=plan(s,t,p);   // coupe franche entre les scènes (comme la référence), mouvement lent à l'intérieur
   cam.position.copy(cp);cam.lookAt(cl);window.DBG={k,cp:cp.toArray().map(v=>+v.toFixed(2)),cl:cl.toArray().map(v=>+v.toFixed(2)),ctr:ctr.toArray().map(v=>+v.toFixed(2)),siz:siz.toArray().map(v=>+v.toFixed(2))};if(bokeh)bokeh.uniforms.focus.value=cp.distanceTo(cl);
   // muscle : indices des os de la zone, s'allume en entrant dans la scène et pulse avec l'effort

@@ -35,7 +35,7 @@ function creerPoses(THREE, corps, m, clips, scene, mat){
   const cyl=(r,h)=>new THREE.CylinderGeometry(r,r,h,24);
   [-.78,.78].forEach(x=>{const p=new THREE.Mesh(cyl(.035,BARRE+.05),metal);p.position.set(x,(BARRE+.05)/2,0);p.castShadow=true;barre.add(p);});
   const tb=new THREE.Mesh(cyl(.022,1.62),metal);tb.rotation.z=Math.PI/2;tb.position.y=BARRE;tb.castShadow=true;barre.add(tb);barre.visible=false;scene.add(barre);
-  function poser(nom,u,t){
+  function poser(nom,u,t,tt){tt=tt||0;
     corps.position.set(0,0,0);corps.rotation.set(0,0,0);corps.updateMatrixWorld(true);barre.visible=false;
     if(!['pompes','gainage','squat','suspension'].includes(nom)){base(nom,t);return;}
     base('Idle_Loop',0);
@@ -62,11 +62,12 @@ function creerPoses(THREE, corps, m, clips, scene, mat){
     }else if(nom=='suspension'){
       barre.visible=true;const S0=wp(B('upper_arm.L')).y;
       // en montant, le corps passe derrière la barre et se penche un peu en arrière : la tête passe sans la toucher
-      corps.position.set(0,BARRE-.09-THREE.MathUtils.lerp(.53,-.02,u)-S0,-.24*u);corps.rotation.x=-.1*u;corps.updateMatrixWorld(true);
+      const bal=Math.sin(tt*1.6)*.035*(1-u);   // balancement de pendule autour de la barre, amorti quand on tire
+      corps.position.set(0,BARRE-.09-THREE.MathUtils.lerp(.53,-.02,u)-S0,-.24*u+bal);corps.rotation.x=-.1*u-bal*.6;corps.updateMatrixWorld(true);
       cote.forEach(s=>{const [a,b,h]=bras(s);const prise=V(sg[s]*.3,BARRE,0);let T=V(prise.x,BARRE-.09,-.03);
         // la barre doit passer dans le creux du poing, paume vers l'avant : on recale le poignet sur l'erreur, 4 passes
-        for(let i=0;i<4;i++){ik(a,b,h,T,V(sg[s]*1,-.45,.3));aim(h,V(0,1,0));tordre(h,V(0,0,1));T.add(prise.clone().sub(creux(h)));}});
-      cote.forEach(s=>{const [a,b,h]=jambe(s);const H=wp(a);ik(a,b,h,V(H.x,H.y-.83,H.z+.06),V(0,0,1));});
+        for(let i=0;i<4;i++){ik(a,b,h,T,V(sg[s]*1,-.7,-.12));aim(h,V(0,1,0));tordre(h,V(0,0,1));T.add(prise.clone().sub(creux(h)));}});
+      cote.forEach(s=>{const [a,b,h]=jambe(s);const H=wp(a);ik(a,b,h,V(H.x-sg[s]*.03,H.y-.83+.03*u,H.z+.04-.06*u),V(0,0,1));});   // jambes serrées, genoux un peu fléchis
     }
   }
   return {poser,barre,B,wp};
