@@ -1,0 +1,90 @@
+{
+ "id": "RM-R23",
+ "layout": "malin",
+ "music_seed": 2701,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Garde de **plantes**<br>et d'animaux",
+   "sub": "un petit revenu, sans promesse",
+   "vo": "Garder les plantes ou les animaux des voisins, ça peut rapporter un peu ?"
+  },
+  {
+   "type": "list",
+   "title": "Par où **commencer**",
+   "items": [
+    [
+     "Préviens ton entourage",
+     "voisins, amis, famille"
+    ],
+    [
+     "Propose un essai",
+     "une visite, un compte rendu"
+    ],
+    [
+     "Annonce ton tarif",
+     "écrit avant la garde"
+    ]
+   ],
+   "slots": 3,
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ],
+   "vo": "Un : préviens ton entourage. Enregistre cette vidéo. Deux : propose un essai. Trois : annonce ton tarif avant la garde."
+  },
+  {
+   "type": "list",
+   "title": "Avant de **garder**",
+   "items": [
+    [
+     "Consignes écrites",
+     "clés, repas, arrosage"
+    ],
+    [
+     "Un animal malade",
+     "numéro du vétérinaire"
+    ],
+    [
+     "Un imprévu",
+     "prévenir tout de suite"
+    ]
+   ],
+   "slots": 3,
+   "note": "Team chats ou team plantes ? Commente 1 ou 2.",
+   "vo": "Prépare les consignes écrites, le numéro du vétérinaire, et préviens vite en cas d'imprévu. Team chats ou team plantes ? Commente un ou deux."
+  },
+  {
+   "type": "list",
+   "title": "Si ça devient **régulier**",
+   "items": [
+    [
+     "Renseigne-toi",
+     "sites officiels"
+    ],
+    [
+     "Déclare tes revenus",
+     "impots.gouv.fr"
+    ],
+    [
+     "Garde un registre",
+     "dates et montants"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Si ça devient régulier, renseigne-toi sur le cadre officiel et déclare tes revenus."
+  },
+  {
+   "type": "cta",
+   "big": "Un service<br>**simple.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

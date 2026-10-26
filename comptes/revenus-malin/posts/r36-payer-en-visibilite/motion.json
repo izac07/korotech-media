@@ -1,0 +1,90 @@
+{
+ "id": "RM-R36",
+ "layout": "malin",
+ "music_seed": 2714,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "« Ça te fera<br>**de l'expérience** »",
+   "sub": "payé en visibilité ?",
+   "vo": "Un client te paie en visibilité ou en expérience ? Réfléchis avant d'accepter."
+  },
+  {
+   "type": "list",
+   "title": "Pose-toi **3 questions**",
+   "items": [
+    [
+     "Ça me coûte quoi ?",
+     "temps, matériel"
+    ],
+    [
+     "Ça m'apporte quoi ?",
+     "du concret vérifiable"
+    ],
+    [
+     "Un cadre écrit ?",
+     "livrable et délai"
+    ]
+   ],
+   "slots": 3,
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ],
+   "vo": "Un : ça me coûte quoi ? Enregistre cette vidéo. Deux : ça m'apporte quoi ? Trois : y a-t-il un cadre écrit ?"
+  },
+  {
+   "type": "list",
+   "title": "Ce qui est **acceptable**",
+   "items": [
+    [
+     "Un échange clair",
+     "écrit, limité dans le temps"
+    ],
+    [
+     "Une vraie référence",
+     "avec ton accord"
+    ],
+    [
+     "Un tarif réduit",
+     "mais un tarif"
+    ]
+   ],
+   "slots": 3,
+   "note": "Déjà bossé gratuitement ? Commente OUI ou NON.",
+   "vo": "Un échange clair et limité, une vraie référence, ou un tarif réduit, mais un tarif. Tu as déjà bossé gratuitement ? Commente oui ou non."
+  },
+  {
+   "type": "list",
+   "title": "Le **mot** de fin",
+   "items": [
+    [
+     "Ton travail",
+     "a de la valeur"
+    ],
+    [
+     "Pose un tarif",
+     "même petit au début"
+    ],
+    [
+     "Dis non",
+     "sans te justifier"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Ton travail a de la valeur : pose un tarif, même petit."
+  },
+  {
+   "type": "cta",
+   "big": "Ton travail<br>**a un prix.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

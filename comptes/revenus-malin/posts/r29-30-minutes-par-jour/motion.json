@@ -1,0 +1,90 @@
+{
+ "id": "RM-R29",
+ "layout": "malin",
+ "music_seed": 2707,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "30 minutes<br>par **jour**",
+   "sub": "un side hustle sans te cramer",
+   "vo": "Pas le temps pour un side hustle ? Trente minutes par jour, ça se planifie."
+  },
+  {
+   "type": "list",
+   "title": "Ton **créneau**",
+   "items": [
+    [
+     "Choisis l'heure",
+     "toujours la même"
+    ],
+    [
+     "Prépare la veille",
+     "une seule tâche"
+    ],
+    [
+     "Coupe les notifications",
+     "trente minutes seules"
+    ]
+   ],
+   "slots": 3,
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ],
+   "vo": "Un : choisis une heure fixe. Enregistre cette vidéo. Deux : prépare une seule tâche la veille. Trois : coupe les notifications."
+  },
+  {
+   "type": "list",
+   "title": "Ta **semaine** type",
+   "items": [
+    [
+     "Lundi",
+     "chercher des clients"
+    ],
+    [
+     "Mercredi",
+     "faire le travail"
+    ],
+    [
+     "Vendredi",
+     "faire le point"
+    ]
+   ],
+   "slots": 3,
+   "note": "Team matin ou team soir ? Commente 1 ou 2.",
+   "vo": "Lundi, chercher des clients. Mercredi, faire le travail. Vendredi, faire le point. Team matin ou team soir ? Commente un ou deux."
+  },
+  {
+   "type": "list",
+   "title": "Reste **honnête**",
+   "items": [
+    [
+     "Un jour raté ?",
+     "tu reprends demain"
+    ],
+    [
+     "Pas de culpabilité",
+     "un jour ne ruine rien"
+    ],
+    [
+     "Reste régulier",
+     "plus que parfait"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Un jour raté ? Tu reprends demain. Régulier vaut mieux que parfait."
+  },
+  {
+   "type": "cta",
+   "big": "Petit pas,<br>**chaque jour.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

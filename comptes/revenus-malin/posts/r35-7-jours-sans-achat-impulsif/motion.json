@@ -1,0 +1,90 @@
+{
+ "id": "RM-R35",
+ "layout": "malin",
+ "music_seed": 2713,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Une semaine sans<br>**achat impulsif**",
+   "sub": "le défi",
+   "vo": "Une semaine sans achat impulsif : tu relèves le défi ? Voici les règles."
+  },
+  {
+   "type": "list",
+   "title": "Les **règles**",
+   "items": [
+    [
+     "Une liste avant d'acheter",
+     "ce qui est vraiment utile"
+    ],
+    [
+     "Attendre 48 heures",
+     "avant tout achat non prévu"
+    ],
+    [
+     "Noter chaque envie",
+     "dans ton téléphone"
+    ]
+   ],
+   "slots": 3,
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ],
+   "vo": "Un : fais une liste avant d'acheter. Enregistre cette vidéo. Deux : attends quarante-huit heures. Trois : note chaque envie."
+  },
+  {
+   "type": "list",
+   "title": "Ce que tu **gagnes**",
+   "items": [
+    [
+     "Du recul",
+     "sur tes envies"
+    ],
+    [
+     "Une habitude",
+     "plus facile à garder"
+    ],
+    [
+     "Un montant de côté",
+     "si tu le vires"
+    ]
+   ],
+   "slots": 3,
+   "note": "Tu tiens combien de jours ? Écris ton score.",
+   "vo": "Tu gagnes du recul, une habitude, et un petit montant de côté si tu le vires. Tu tiens combien de jours ? Écris ton score."
+  },
+  {
+   "type": "list",
+   "title": "Si tu **craques**",
+   "items": [
+    [
+     "Pas grave",
+     "tu reprends demain"
+    ],
+    [
+     "Note pourquoi",
+     "pour comprendre l'envie"
+    ],
+    [
+     "Recommence",
+     "sans te juger"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Si tu craques, ce n'est pas grave : note pourquoi, et recommence sans te juger."
+  },
+  {
+   "type": "cta",
+   "big": "Un défi,<br>**sept jours.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

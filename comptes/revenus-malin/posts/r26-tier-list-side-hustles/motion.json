@@ -1,0 +1,87 @@
+{
+ "id": "RM-R26",
+ "layout": "malin",
+ "music_seed": 2704,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Ta tier list<br>**side hustle**",
+   "sub": "du plus facile au plus compliqué",
+   "vo": "Quel side hustle est le plus facile à lancer ? Voici ma tier list, sans promesse."
+  },
+  {
+   "type": "tier",
+   "title": "Facile à **lancer** ?",
+   "rows": {
+    "S": [
+     "Garde de plantes",
+     "Aide aux voisins"
+    ],
+    "A": [
+     "Relecture",
+     "Cours"
+    ],
+    "B": [
+     "Réseaux locaux"
+    ],
+    "C": [
+     "Montage vidéo"
+    ]
+   },
+   "note": "Classement perso, sur la facilité de démarrage",
+   "vo": "En S : peu de matériel, comme garder des plantes. Enregistre cette vidéo, la suite se discute."
+  },
+  {
+   "type": "list",
+   "title": "Ce qui le fait **monter**",
+   "items": [
+    [
+     "Peu de matériel",
+     "démarrage simple"
+    ],
+    [
+     "Clients faciles à trouver",
+     "près de chez toi"
+    ],
+    [
+     "Peu de paperasse",
+     "à vérifier ensuite"
+    ]
+   ],
+   "slots": 3,
+   "note": "Ton side hustle : S ou C ? Commente la lettre.",
+   "vo": "Il monte avec peu de matériel et des clients faciles à trouver. Ton side hustle serait en S ou en C ? Commente la lettre."
+  },
+  {
+   "type": "list",
+   "title": "Ce qui le fait **descendre**",
+   "items": [
+    [
+     "Beaucoup de matériel",
+     "avant le premier client"
+    ],
+    [
+     "Aucun client en vue",
+     "tu démarres à zéro"
+    ],
+    [
+     "Beaucoup de paperasse",
+     "avant de gagner"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Il descend avec trop de matériel, aucun client en vue, ou trop de paperasse."
+  },
+  {
+   "type": "cta",
+   "big": "À toi de<br>**classer.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

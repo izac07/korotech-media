@@ -1,0 +1,90 @@
+{
+ "id": "RM-R34",
+ "layout": "malin",
+ "music_seed": 2712,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Relire des textes<br>**pour de l'argent**",
+   "sub": "ce qui est vrai",
+   "vo": "Tu repères les fautes en un coup d'œil ? Relire des textes peut devenir un service."
+  },
+  {
+   "type": "list",
+   "title": "Pour **démarrer**",
+   "items": [
+    [
+     "Choisis ta cible",
+     "étudiants, auteurs, petites boîtes"
+    ],
+    [
+     "Montre un avant / après",
+     "sur un court texte"
+    ],
+    [
+     "Annonce ton tarif",
+     "clair dès le départ"
+    ]
+   ],
+   "slots": 3,
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ],
+   "vo": "Un : choisis ta cible. Enregistre cette vidéo. Deux : montre un avant et après. Trois : annonce ton tarif clairement."
+  },
+  {
+   "type": "list",
+   "title": "L'**erreur** à éviter",
+   "items": [
+    [
+     "Tout réécrire",
+     "tu corriges, tu ne réinventes pas"
+    ],
+    [
+     "Aucune consigne",
+     "demande le ton voulu"
+    ],
+    [
+     "Aucun délai",
+     "annonce la date"
+    ]
+   ],
+   "slots": 3,
+   "note": "Quelle faute t'énerve le plus ? Écris-la 👇",
+   "vo": "L'erreur classique : réécrire tout au lieu de corriger. Quelle faute t'énerve le plus ? Écris-la en commentaire."
+  },
+  {
+   "type": "list",
+   "title": "Et **ensuite**",
+   "items": [
+    [
+     "Demande un avis honnête",
+     "après le premier client"
+    ],
+    [
+     "Garde tes exemples",
+     "avant / après"
+    ],
+    [
+     "Ajuste ton tarif",
+     "avec l'expérience"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Après ton premier client, demande un avis honnête et ajuste ton tarif."
+  },
+  {
+   "type": "cta",
+   "big": "Des fautes,<br>**un service.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

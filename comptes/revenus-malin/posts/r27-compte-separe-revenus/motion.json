@@ -1,0 +1,90 @@
+{
+ "id": "RM-R27",
+ "layout": "malin",
+ "music_seed": 2705,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Mélanger tes<br>**comptes** ?",
+   "sub": "revenus annexes : pourquoi séparer",
+   "vo": "Tes revenus annexes arrivent sur ton compte perso ? Voici pourquoi les séparer."
+  },
+  {
+   "type": "list",
+   "title": "Pourquoi **séparer**",
+   "items": [
+    [
+     "Y voir clair",
+     "ce qui rentre, ce qui sort"
+    ],
+    [
+     "Préparer ta déclaration",
+     "tout au même endroit"
+    ],
+    [
+     "Éviter les mélanges",
+     "dépenses perso et pro"
+    ]
+   ],
+   "slots": 3,
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ],
+   "vo": "Un : y voir clair sur ce qui rentre. Enregistre cette vidéo. Deux : préparer ta déclaration. Trois : éviter de mélanger perso et pro."
+  },
+  {
+   "type": "list",
+   "title": "Comment **faire**",
+   "items": [
+    [
+     "Compare les offres",
+     "frais et services"
+    ],
+    [
+     "Ouvre un compte dédié",
+     "ou un sous-compte"
+    ],
+    [
+     "Fais-y arriver tes revenus",
+     "dès réception"
+    ]
+   ],
+   "slots": 3,
+   "note": "Compte unique ou séparé ? Commente 1 ou 2.",
+   "vo": "Compare les frais, ouvre un compte dédié, et fais arriver tes revenus dessus. Compte unique ou séparé ? Commente un ou deux."
+  },
+  {
+   "type": "list",
+   "title": "À **vérifier**",
+   "items": [
+    [
+     "Les règles de ton statut",
+     "autoentrepreneur.urssaf.fr"
+    ],
+    [
+     "Ta déclaration",
+     "impots.gouv.fr"
+    ],
+    [
+     "Ta banque",
+     "conditions du compte"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Vérifie les règles de ton statut sur les sites officiels, et les conditions de ta banque."
+  },
+  {
+   "type": "cta",
+   "big": "Des comptes<br>**clairs.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

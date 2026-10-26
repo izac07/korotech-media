@@ -1,0 +1,95 @@
+{
+ "id": "RM-R28",
+ "layout": "malin",
+ "music_seed": 2706,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Tu as déjà<br>**3 compétences**",
+   "sub": "qui peuvent se vendre",
+   "vo": "Tu penses ne rien savoir vendre ? Tu as sûrement déjà trois compétences utiles."
+  },
+  {
+   "type": "list",
+   "title": "Tes **3 compétences**",
+   "items": [
+    [
+     "Organiser",
+     "planning, rangement, papiers"
+    ],
+    [
+     "Écrire",
+     "mails, textes, relecture"
+    ],
+    [
+     "Expliquer",
+     "aider à comprendre"
+    ]
+   ],
+   "slots": 3,
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ],
+   "vo": "Un : organiser, comme un planning ou des papiers. Enregistre cette vidéo. Deux : écrire. Trois : expliquer clairement."
+  },
+  {
+   "type": "list",
+   "title": "En **services**",
+   "items": [
+    [
+     "Organiser",
+     "aide administrative"
+    ],
+    [
+     "Écrire",
+     "relecture de textes"
+    ],
+    [
+     "Expliquer",
+     "cours particuliers"
+    ]
+   ],
+   "slots": 3,
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ],
+   "note": "Ta force ? Commente 1, 2 ou 3.",
+   "vo": "Organiser devient aide administrative, écrire devient relecture, expliquer devient cours. Laquelle est ta force ? Commente un, deux ou trois."
+  },
+  {
+   "type": "list",
+   "title": "Ton **premier pas**",
+   "items": [
+    [
+     "Choisis-en une seule",
+     "pas trois à la fois"
+    ],
+    [
+     "Parles-en autour de toi",
+     "quelques personnes"
+    ],
+    [
+     "Fixe un tarif",
+     "clair"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Choisis-en une seule, parles-en autour de toi, et fixe un tarif clair."
+  },
+  {
+   "type": "cta",
+   "big": "Tu sais déjà<br>**faire.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

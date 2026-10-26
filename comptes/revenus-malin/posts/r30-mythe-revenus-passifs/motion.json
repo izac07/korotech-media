@@ -1,0 +1,90 @@
+{
+ "id": "RM-R30",
+ "layout": "malin",
+ "music_seed": 2708,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Les **revenus passifs**<br>en un clic ?",
+   "sub": "le mythe qui coûte cher",
+   "vo": "Revenus passifs sans effort, promis en un clic ? C'est le mythe qui coûte cher."
+  },
+  {
+   "type": "list",
+   "title": "Ce qu'on te **promet**",
+   "items": [
+    [
+     "Des gains garantis",
+     "personne ne peut"
+    ],
+    [
+     "Zéro effort",
+     "il y a toujours du travail"
+    ],
+    [
+     "Une formation payante",
+     "avant de voir le contenu"
+    ]
+   ],
+   "slots": 3,
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ],
+   "vo": "Un : des gains garantis. Enregistre cette vidéo. Deux : zéro effort. Trois : une formation payante avant de voir le contenu."
+  },
+  {
+   "type": "list",
+   "title": "Ce qui est **vrai**",
+   "items": [
+    [
+     "Un revenu se construit",
+     "avec du temps"
+    ],
+    [
+     "Les premiers clients",
+     "demandent de l'effort"
+    ],
+    [
+     "Aucune garantie",
+     "jamais"
+    ]
+   ],
+   "slots": 3,
+   "note": "Tu y as déjà cru ? Commente OUI ou NON.",
+   "vo": "Un revenu se construit avec du temps, et les premiers clients demandent de l'effort. Tu as déjà cru à ces promesses ? Commente oui ou non."
+  },
+  {
+   "type": "list",
+   "title": "Avant de **payer**",
+   "items": [
+    [
+     "Cherche le nom",
+     "+ avis + arnaque"
+    ],
+    [
+     "Demande le contenu",
+     "détaillé"
+    ],
+    [
+     "Lis les avis",
+     "sur plusieurs sites"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Avant de payer : cherche le nom plus arnaque, lis les avis, demande le contenu."
+  },
+  {
+   "type": "cta",
+   "big": "Fais confiance<br>**aux preuves.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "id": "RM-R33",
+ "layout": "malin",
+ "music_seed": 2711,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "POV : tu aides<br>**ta voisine**",
+   "sub": "avec son téléphone",
+   "vo": "POV : ta voisine ne sait plus envoyer une photo, et tu lui montres."
+  },
+  {
+   "type": "list",
+   "title": "Ce que tu peux **proposer**",
+   "items": [
+    [
+     "Prise en main du téléphone",
+     "photos, messages"
+    ],
+    [
+     "Démarches en ligne",
+     "accompagner, pas faire à sa place"
+    ],
+    [
+     "Sécurité de base",
+     "repérer les faux messages"
+    ]
+   ],
+   "slots": 3,
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ],
+   "vo": "Un : prise en main du téléphone. Enregistre cette vidéo. Deux : accompagner ses démarches en ligne. Trois : repérer les faux messages."
+  },
+  {
+   "type": "list",
+   "title": "Trouver des **clients**",
+   "items": [
+    [
+     "Famille et voisins",
+     "bouche à oreille"
+    ],
+    [
+     "Mairie ou association",
+     "affiche, flyer"
+    ],
+    [
+     "Tarif clair",
+     "à la séance"
+    ]
+   ],
+   "slots": 3,
+   "note": "Identifie quelqu'un qui en aurait besoin 👇",
+   "vo": "Commence par ton entourage, une association ou une mairie, avec un tarif clair. Identifie quelqu'un qui aurait besoin de ce service."
+  },
+  {
+   "type": "list",
+   "title": "Une règle d'**or**",
+   "items": [
+    [
+     "Jamais ses codes",
+     "ni ses mots de passe"
+    ],
+    [
+     "Tu expliques",
+     "sans faire à sa place"
+    ],
+    [
+     "Tu restes patient",
+     "et bienveillant"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Une règle d'or : jamais ses codes, et tu expliques sans faire à sa place."
+  },
+  {
+   "type": "cta",
+   "big": "Un vrai **service**<br>de proximité.",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

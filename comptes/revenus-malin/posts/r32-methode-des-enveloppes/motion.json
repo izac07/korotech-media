@@ -1,0 +1,87 @@
+{
+ "id": "RM-R32",
+ "layout": "malin",
+ "music_seed": 2710,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Ton budget<br>**en enveloppes**",
+   "sub": "simple et visuel",
+   "vo": "Tu dépenses sans savoir où ça part ? Essaie la méthode des enveloppes."
+  },
+  {
+   "type": "math",
+   "title": "Exemple : **courses**",
+   "cells": [
+    [
+     "Enveloppe du mois",
+     "300 €"
+    ],
+    [
+     "Déjà dépensé",
+     "180 €",
+     "−"
+    ],
+    [
+     "Il reste",
+     "120 €",
+     "="
+    ]
+   ],
+   "note": "Exemple pour illustrer, adapte à tes chiffres",
+   "vo": "Exemple : trois cents euros pour les courses. Tu retires ce que tu dépenses, et il reste cent vingt euros. Enregistre cette vidéo."
+  },
+  {
+   "type": "list",
+   "title": "Tes **enveloppes**",
+   "items": [
+    [
+     "Courses",
+     "un montant fixe"
+    ],
+    [
+     "Sorties",
+     "un montant fixe"
+    ],
+    [
+     "Imprévus",
+     "un petit montant"
+    ]
+   ],
+   "slots": 3,
+   "note": "Team espèces ou team appli ? Commente 1 ou 2.",
+   "vo": "Une enveloppe par catégorie : courses, sorties, imprévus. Team espèces ou team appli ? Commente un ou deux."
+  },
+  {
+   "type": "list",
+   "title": "La **règle**",
+   "items": [
+    [
+     "Enveloppe vide ?",
+     "tu attends le mois suivant"
+    ],
+    [
+     "Il en reste ?",
+     "tu le mets de côté"
+    ],
+    [
+     "Tu ajustes",
+     "chaque mois"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Enveloppe vide ? Tu attends le mois suivant. S'il en reste, tu le mets de côté."
+  },
+  {
+   "type": "cta",
+   "big": "Chaque euro<br>**a sa place.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

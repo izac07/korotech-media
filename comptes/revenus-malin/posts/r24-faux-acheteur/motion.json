@@ -1,0 +1,90 @@
+{
+ "id": "RM-R24",
+ "layout": "malin",
+ "music_seed": 2702,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Un acheteur<br>**trop pressé** ?",
+   "sub": "l'arnaque du faux acheteur",
+   "vo": "Tu vends un objet en ligne et l'acheteur est très pressé ? Méfie-toi."
+  },
+  {
+   "type": "list",
+   "title": "Les **signaux**",
+   "items": [
+    [
+     "Paiement hors plateforme",
+     "lien ou mail à part"
+    ],
+    [
+     "Un lien à cliquer",
+     "pour « recevoir l'argent »"
+    ],
+    [
+     "Aucune question",
+     "ni sur l'objet, ni sur l'état"
+    ]
+   ],
+   "slots": 3,
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ],
+   "vo": "Un : il veut payer en dehors de la plateforme. Enregistre cette vidéo. Deux : il t'envoie un lien à cliquer. Trois : il ne pose aucune question."
+  },
+  {
+   "type": "list",
+   "title": "Les bons **réflexes**",
+   "items": [
+    [
+     "Reste sur la plateforme",
+     "messages et paiement"
+    ],
+    [
+     "Ne clique sur aucun lien",
+     "jamais"
+    ],
+    [
+     "Signale le profil",
+     "bouton dédié"
+    ]
+   ],
+   "slots": 3,
+   "note": "Déjà croisé un faux acheteur ? Commente OUI ou NON.",
+   "vo": "Reste sur la plateforme, ne clique sur aucun lien, signale le profil. Déjà croisé un faux acheteur ? Commente oui ou non."
+  },
+  {
+   "type": "list",
+   "title": "Un **doute** ?",
+   "items": [
+    [
+     "Tu arrêtes la discussion",
+     "un vrai acheteur comprendra"
+    ],
+    [
+     "Tu ne donnes aucun code",
+     "ni mail, ni identité"
+    ],
+    [
+     "Tu gardes les messages",
+     "preuve utile"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Un doute ? Arrête la discussion, ne donne aucun code, garde les messages."
+  },
+  {
+   "type": "cta",
+   "big": "Pressé = **méfiance.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

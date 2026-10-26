@@ -1,0 +1,90 @@
+{
+ "id": "RM-R25",
+ "layout": "malin",
+ "music_seed": 2703,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Un imprévu,<br>et **là** ?",
+   "sub": "ton matelas de sécurité",
+   "vo": "Une panne de voiture, et tu fais comment ? C'est à ça que sert un matelas."
+  },
+  {
+   "type": "list",
+   "title": "Le **principe**",
+   "items": [
+    [
+     "De l'argent de côté",
+     "pour les imprévus"
+    ],
+    [
+     "Séparé du quotidien",
+     "un compte à part"
+    ],
+    [
+     "Jamais pour les envies",
+     "seulement l'imprévu"
+    ]
+   ],
+   "slots": 3,
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ],
+   "vo": "Un : de l'argent de côté pour les imprévus. Enregistre cette vidéo. Deux : sur un compte à part. Trois : pas pour les envies."
+  },
+  {
+   "type": "list",
+   "title": "Comment **commencer**",
+   "items": [
+    [
+     "Calcule tes dépenses du mois",
+     "loyer, courses, transport"
+    ],
+    [
+     "Choisis un objectif",
+     "plusieurs mois de dépenses"
+    ],
+    [
+     "Vire un petit montant",
+     "dès la paie"
+    ]
+   ],
+   "slots": 3,
+   "note": "Tu as déjà un matelas ? Commente OUI ou NON.",
+   "vo": "Calcule tes dépenses, vise plusieurs mois de dépenses, vire un petit montant dès la paie. Déjà un matelas ? Commente oui ou non."
+  },
+  {
+   "type": "list",
+   "title": "Où le **mettre**",
+   "items": [
+    [
+     "Un support disponible",
+     "accessible à tout moment"
+    ],
+    [
+     "Sans risque de perte",
+     "vérifie les conditions"
+    ],
+    [
+     "Compare les offres",
+     "sites officiels"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Choisis un support disponible, sans risque de perte, et compare sur les sites officiels."
+  },
+  {
+   "type": "cta",
+   "big": "Prévoir, c'est<br>**respirer.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "id": "RM-R31",
+ "layout": "malin",
+ "music_seed": 2709,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Ta première<br>**facture**",
+   "sub": "ce qu'on y vérifie",
+   "vo": "Ton premier client veut une facture, et tu ne sais pas quoi écrire ? Voici les bases."
+  },
+  {
+   "type": "list",
+   "title": "En **général**",
+   "items": [
+    [
+     "Qui tu es",
+     "nom et coordonnées"
+    ],
+    [
+     "Pour qui",
+     "ton client"
+    ],
+    [
+     "Quoi et combien",
+     "prestation, prix, date"
+    ]
+   ],
+   "slots": 3,
+   "cue": [
+    "un",
+    "deux",
+    "trois"
+   ],
+   "vo": "Un : qui tu es. Enregistre cette vidéo. Deux : pour qui est la facture. Trois : la prestation, le prix et la date."
+  },
+  {
+   "type": "list",
+   "title": "Avant d'**envoyer**",
+   "items": [
+    [
+     "Relis les chiffres",
+     "total, dates"
+    ],
+    [
+     "Numérote",
+     "un numéro par facture"
+    ],
+    [
+     "Garde une copie",
+     "pour ta déclaration"
+    ]
+   ],
+   "slots": 3,
+   "note": "Une facture avec une erreur ? Commente OUI ou NON.",
+   "vo": "Relis les chiffres, numérote, garde une copie. Tu as déjà envoyé une facture avec une erreur ? Commente oui ou non."
+  },
+  {
+   "type": "list",
+   "title": "Les **mentions** exactes",
+   "items": [
+    [
+     "Elles dépendent de ton statut",
+     "vérifie les sites officiels"
+    ],
+    [
+     "Un modèle fiable",
+     "pris sur un site officiel"
+    ],
+    [
+     "Une copie gardée",
+     "pour ta déclaration"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Les mentions exactes dépendent de ton statut : vérifie-les sur les sites officiels."
+  },
+  {
+   "type": "cta",
+   "big": "Une facture<br>**claire.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}
