@@ -26,3 +26,17 @@
 | 2026-10-27 12:00 | RM-R21 | Reel | Écrire pour le web (rédaction) (Idées de side hustle, malin) |
 | 2026-10-27 19:30 | RM-R22 | Reel | Testeur de sites et d'apps (Arnaques & pièges à éviter, malin) |
 | 2026-10-23 13:34 | RM-X01 | Reel | 3 fuites d'argent invisibles : abonnements oubliés, achats impulsifs, épargne s'il reste (Organisation, malin) |
+| 2026-10-28 12:00 | RM-R23 | Reel | Garde de plantes et d'animaux : par où commencer (Idées de side hustle, malin) |
+| 2026-10-28 19:30 | RM-R24 | Reel | L'arnaque du faux acheteur en ligne (Arnaques & pièges à éviter, malin) |
+| 2026-10-29 12:00 | RM-R25 | Reel | Le matelas de sécurité : à quoi ça sert (Organisation, malin) |
+| 2026-10-29 19:30 | RM-R26 | Reel | Tier list des side hustles faciles à lancer (Idées de side hustle, malin) |
+| 2026-10-30 12:00 | RM-R27 | Reel | Séparer ses revenus annexes de son compte perso (Démarches & cadre en France, malin) |
+| 2026-10-30 19:30 | RM-R28 | Reel | Trois compétences que tu as déjà et qui se vendent (Idées de side hustle, malin) |
+| 2026-10-31 12:00 | RM-R29 | Reel | Trente minutes par jour pour un side hustle (Organisation, malin) |
+| 2026-10-31 19:30 | RM-R30 | Reel | Le mythe des revenus passifs sans effort (Arnaques & pièges à éviter, malin) |
+| 2026-11-01 12:00 | RM-R31 | Reel | Ta première facture : les bases à vérifier (Démarches & cadre en France, malin) |
+| 2026-11-01 19:30 | RM-R32 | Reel | La méthode des enveloppes pour suivre son budget (Organisation, malin) |
+| 2026-11-02 12:00 | RM-R33 | Reel | Aide numérique pour les voisins et les seniors (Idées de side hustle, malin) |
+| 2026-11-02 19:30 | RM-R34 | Reel | Relire des textes pour de l'argent : par où commencer (Idées de side hustle, malin) |
+| 2026-11-03 12:00 | RM-R35 | Reel | Défi sept jours sans achat impulsif (Organisation, malin) |
+| 2026-11-03 19:30 | RM-R36 | Reel | Un client te paie en visibilité ou en expérience (Arnaques & pièges à éviter, malin) |
