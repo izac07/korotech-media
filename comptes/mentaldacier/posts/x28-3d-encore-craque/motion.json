@@ -1,0 +1,64 @@
+{
+ "id": "MDA-X28",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9168,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Tu as encore craqué hier.",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Tu as encore craqué hier soir. Ce n'est pas grave. La règle : jamais deux fois de suite."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Jamais deux fois",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "calendrier",
+    "jours": 14,
+    "jusqua": 9
+   },
+   "vo": "Un écart, c'est un accident. Deux, ça devient une habitude. Enregistre cette règle, elle sauve tout. Ce n'est pas l'erreur qui compte, c'est la suite."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Tu reprends quand ?",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Tu reprends quand, toi ? Écris « ce soir » en commentaire si tu t'y remets aujourd'hui. Tomber, ça arrive. Rester par terre, c'est un choix.",
+   "tampon": "REPARTI"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

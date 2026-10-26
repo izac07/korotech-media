@@ -1,0 +1,63 @@
+{
+ "id": "MDA-X31",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9171,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Ton futur toi te regarde.",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Ton futur toi te regarde scroller. Et il n'est pas content. Pose le téléphone dix minutes."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Le choix de 22 h",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "calendrier",
+    "jours": 30,
+    "jusqua": 1
+   },
+   "vo": "Pense au toi de dans un an. Qu'est-ce qu'il voudrait que tu fasses ce soir ? Enregistre, et fais-le. Il compte sur toi, pas sur ta motivation."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Lui ou toi ?",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Ton futur toi, il te dirait quoi là ? Écris-le en commentaire. Dans un an, il te remerciera pour ce soir."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

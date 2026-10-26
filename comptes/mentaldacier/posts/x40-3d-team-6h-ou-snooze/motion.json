@@ -1,0 +1,67 @@
+{
+ "id": "MDA-X40",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9180,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Team 6 h ou team snooze ?",
+   "humeur": "dort",
+   "lumiere": "aube",
+   "vo": "Team réveil à six heures, ou team snooze ? Le vrai secret, ce n'est pas l'heure, c'est la régularité."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Le vrai secret",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "ecran": {
+    "type": "liste",
+    "titre": "LA RÉGULARITÉ",
+    "lignes": [
+     "Même heure",
+     "Week-end compris",
+     "± 30 minutes"
+    ]
+   },
+   "vo": "Même heure tous les jours, week-end compris, à une demi-heure près. Enregistre, ton corps va suivre. Se lever tôt, c'est bien. Se lever pareil, c'est mieux."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "1 ou 2 ?",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Alors, team un, réveil tôt, ou team deux, snooze ? Réponds un ou deux. La régularité gagne, quelle que soit ton équipe."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

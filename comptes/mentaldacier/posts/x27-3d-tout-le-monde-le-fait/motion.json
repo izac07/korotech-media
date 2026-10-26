@@ -1,0 +1,65 @@
+{
+ "id": "MDA-X27",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9167,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Tout le monde le fait…",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Tout le monde le fait, personne n'en parle : passer une heure à s'organiser."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "La règle des 10 minutes",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "timer",
+    "exo": "PLAN : 10 MIN MAX",
+    "secondes": 600,
+    "sous": "puis tu commences"
+   },
+   "vo": "Dix minutes de plan maximum, puis tu commences. Le reste s'organise en avançant. Enregistre ça. Un plan parfait qui ne démarre jamais, ça ne vaut rien."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Coupable ?",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Tu as déjà passé plus de temps sur ton planning que sur la tâche ? Avoue en commentaire. Avancer mal, c'est déjà mieux que planifier bien.",
+   "tampon": "COMMENCÉ"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

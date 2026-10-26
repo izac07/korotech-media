@@ -1,0 +1,67 @@
+{
+ "id": "MDA-X36",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9176,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "47 onglets dans ta tête.",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Tu as quarante-sept onglets ouverts dans ta tête. Ferme-les : écris tout sur une feuille."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Vide-la sur papier",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "liste",
+    "titre": "VIDE TA TÊTE",
+    "lignes": [
+     "Tout écrire",
+     "Entourer 1 chose",
+     "Dormir"
+    ]
+   },
+   "vo": "Tout ce qui traîne : tâches, idées, inquiétudes. Ensuite, entoure une seule chose pour demain. Enregistre. Une tête vide, c'est une nuit plus calme."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Combien ?",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Ta tête, là, c'est combien d'onglets ouverts ? Écris ton chiffre en commentaire. Sur papier, ça devient une simple liste, plus un nuage d'angoisse."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

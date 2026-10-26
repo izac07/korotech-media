@@ -1,0 +1,64 @@
+{
+ "id": "MDA-X24",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9164,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Tu finis toujours trop vite.",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Tu finis toujours trop vite. Trois jours de motivation, puis plus rien. Commence plus petit que tu crois."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Version minimum",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "calendrier",
+    "jours": 30,
+    "jusqua": 3
+   },
+   "vo": "Prévois une version minimum pour les mauvais jours : deux minutes, pas zéro. Enregistre, c'est la clé. La régularité bat l'intensité, à chaque fois."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Jour 3 ou jour 30 ?",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "D'habitude, tu lâches au jour combien ? Avoue en commentaire, on est entre nous. Petit mais tous les jours, ça gagne toujours.",
+   "tampon": "PAS ZÉRO"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

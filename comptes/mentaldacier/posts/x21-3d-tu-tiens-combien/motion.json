@@ -1,0 +1,65 @@
+{
+ "id": "MDA-X21",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9161,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Tu tiens combien ?",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Tu tiens combien de temps sans regarder ton téléphone ? Teste ce soir : écran retourné, une heure."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Le défi des 60 minutes",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "timer",
+    "exo": "SANS TÉLÉPHONE",
+    "secondes": 60,
+    "sous": "écran retourné"
+   },
+   "vo": "Chaque fois que ta main part toute seule, note-le sur un papier. Enregistre, et compare demain. Tu vas être surpris du nombre de traits."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Écris ton temps",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Moi je parie que tu ne passes pas vingt minutes. Écris ton temps en commentaire. Le premier qui tient l'heure entière a gagné mon respect.",
+   "tampon": "1 H TENUE"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

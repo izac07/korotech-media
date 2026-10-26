@@ -1,0 +1,67 @@
+{
+ "id": "MDA-X23",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9163,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "L'onglet privé…",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "L'onglet privé ne protège pas de ça. Le temps perdu, lui, est bien enregistré. Ouvre ton temps d'écran."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Le vrai compteur",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "liste",
+    "titre": "TEMPS D'ÉCRAN",
+    "lignes": [
+     "Ouvrir Réglages",
+     "Temps d'écran",
+     "Total de la semaine"
+    ]
+   },
+   "vo": "Regarde le total de la semaine, sans te juger. C'est ton point de départ. Enregistre, et refais-le dimanche. On ne change pas ce qu'on ne regarde pas."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Combien d'heures ?",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Ton temps d'écran d'hier, c'était combien d'heures ? Écris-le en commentaire, sans tricher. Pas pour te juger : pour savoir d'où tu pars."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

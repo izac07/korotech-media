@@ -1,0 +1,68 @@
+{
+ "id": "MDA-X35",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9175,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Tu attends d'être motivé ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Tu attends d'être motivé ? Elle ne viendra pas. L'action vient d'abord, la motivation suit."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "L'action d'abord",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "ecran": {
+    "type": "liste",
+    "titre": "LE 1er GESTE",
+    "lignes": [
+     "Baskets enfilées",
+     "Document ouvert",
+     "Minuteur lancé"
+    ]
+   },
+   "vo": "Fais le premier geste, tout petit : enfile tes baskets, ouvre le document. Enregistre, et fais-le maintenant. Le premier pas est minuscule, le reste suit tout seul."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Ce soir, quoi ?",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Ton premier geste ce soir, c'est quoi ? Écris-le en commentaire. Personne n'a envie au début. Ceux qui avancent commencent quand même, sans attendre l'envie.",
+   "tampon": "EN ROUTE"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

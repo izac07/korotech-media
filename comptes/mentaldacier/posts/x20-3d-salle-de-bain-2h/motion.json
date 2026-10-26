@@ -1,0 +1,67 @@
+{
+ "id": "MDA-X20",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9160,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Salle de bain, 2 h du mat'",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "La salle de bain à deux heures du matin, sérieux ? Premier réflexe : le téléphone reste dehors."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Règle : il reste dehors",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "liste",
+    "titre": "SES CACHETTES",
+    "lignes": [
+     "Toilettes",
+     "Douche",
+     "Lit"
+    ]
+   },
+   "vo": "Aux toilettes, sous la douche, au lit : ce sont ses trois cachettes préférées. Enregistre, et ferme-les une par une. Ta vessie n'a pas besoin de TikTok."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Ton record ?",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Ton record de temps aux toilettes avec le téléphone ? Sois honnête en commentaire. Moins de cachettes, plus de sommeil."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

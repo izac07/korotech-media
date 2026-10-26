@@ -1,0 +1,64 @@
+{
+ "id": "MDA-X25",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9165,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Jour 7 sans la BR.",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Jour sept sans la bé-erre. Le plus dur est derrière toi. Garde le téléphone hors de la chambre."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Ce qui a changé",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "ecran": {
+    "type": "calendrier",
+    "jours": 7,
+    "jusqua": 7
+   },
+   "vo": "Tu as récupéré du temps le soir. Mets-le quelque part : sport, lecture, un projet. Enregistre, pour tenir. Le vide, il faut le remplir."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'en es où ?",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Et toi, tu en es à quel jour ? Écris ton chiffre en commentaire, on avance ensemble. Une semaine tenue, c'est une promesse tenue envers toi.",
+   "tampon": "7 / 7"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

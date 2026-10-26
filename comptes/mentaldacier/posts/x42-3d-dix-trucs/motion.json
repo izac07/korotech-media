@@ -1,0 +1,68 @@
+{
+ "id": "MDA-X42",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9182,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Tu commences 10 trucs…",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Tu commences dix trucs, tu n'en finis aucun. Choisis-en un seul, les neuf autres attendent."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Une seule à la fois",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "liste",
+    "titre": "PLUS TARD",
+    "lignes": [
+     "Projet 2",
+     "Projet 3",
+     "Projet 4…"
+    ]
+   },
+   "vo": "Une chose finie vaut plus que dix commencées. Mets les autres sur une liste « plus tard ». Enregistre. Ton énergie n'aime pas être coupée en dix."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Tu en as combien ?",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Tu as combien de projets commencés en ce moment ? Avoue en commentaire. Finir une chose, ça donne envie d'en finir une autre.",
+   "tampon": "FINI"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

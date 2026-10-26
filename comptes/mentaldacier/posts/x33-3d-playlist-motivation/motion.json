@@ -1,0 +1,68 @@
+{
+ "id": "MDA-X33",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9173,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Ta playlist motivation…",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Ta playlist motivation a plus d'heures que tes séances. Règle simple : un son, une action."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1 son = 1 action",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "ecran": {
+    "type": "liste",
+    "titre": "1 SON = 1 ACTION",
+    "lignes": [
+     "Son lancé",
+     "Tenue mise",
+     "Ça commence"
+    ]
+   },
+   "vo": "La musique démarre, tu démarres. Elle ne sert plus à rêver, elle sert de départ. Enregistre ça. Écouter, c'est rêver. Bouger, c'est construire."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Team quoi ?",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "C'est quoi le son qui te met en mode guerrier ? Mets-le en commentaire. Moins de playlists, plus de séances : c'est tout.",
+   "tampon": "C'EST PARTI"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

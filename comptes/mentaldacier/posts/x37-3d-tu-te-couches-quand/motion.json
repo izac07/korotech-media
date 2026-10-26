@@ -1,0 +1,64 @@
+{
+ "id": "MDA-X37",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9177,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Tu te couches à quelle heure ?",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Tu te couches à quelle heure, vraiment ? Mets une alarme… pour aller te coucher."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "L'alarme du coucher",
+   "humeur": "dort",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "timer",
+    "exo": "ALARME COUCHER",
+    "secondes": 30,
+    "sous": "23 h, tout s'arrête"
+   },
+   "vo": "Quand elle sonne, tout s'arrête : écrans, discussions, séries. Enregistre, c'est le plus simple à tenir. Le coucher, c'est le début de ta journée de demain."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Vraiment ?",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Ton heure de coucher réelle, pas celle que tu dis ? Avoue en commentaire. Une heure fixe le soir, et tes matins changent complètement."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

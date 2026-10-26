@@ -1,0 +1,68 @@
+{
+ "id": "MDA-X38",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9178,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Insta avant d'ouvrir les yeux.",
+   "humeur": "dort",
+   "lumiere": "aube",
+   "vo": "Tu ouvres Insta avant d'ouvrir les yeux. Défi : trente minutes sans téléphone au réveil."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "30 minutes sans",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "ecran": {
+    "type": "liste",
+    "titre": "AU RÉVEIL",
+    "lignes": [
+     "Debout",
+     "Un verre d'eau",
+     "Fenêtre ouverte"
+    ]
+   },
+   "vo": "Lève-toi, bois de l'eau, ouvre la fenêtre. Ta tête démarre avant les notifications. Enregistre ce défi. Ta journée t'appartient, pas à ton feed."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Ton premier geste ?",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Ton premier geste au réveil, c'est quoi honnêtement ? Écris-le en commentaire. Trente minutes à toi avant d'être à tout le monde.",
+   "tampon": "30 MIN SANS"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}
