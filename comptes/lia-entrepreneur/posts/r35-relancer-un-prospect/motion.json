@@ -1,0 +1,85 @@
+{
+ "id": "LIA-R35",
+ "layout": "studio3d",
+ "music_seed": 2611,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Silence radio",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "JOURS",
+    "de": 0,
+    "a": 9
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "Dernier message : il y a 9 jours"
+   },
+   "vo": "Un prospect ne répond plus et tu n'oses pas relancer ? Claude s'en charge."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Tu donnes l'historique",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Écris une relance sans pression."
+     ],
+     [
+      "ia",
+      "Trois lignes, ton cool."
+     ]
+    ]
+   },
+   "vo": "Un : tu colles l'échange avec ce prospect. Enregistre, tu en auras besoin cette semaine."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Identifie ce freelance",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "Ta relance",
+    "lignes": [
+     "Rappel du contexte",
+     "Une question simple",
+     "Porte ouverte"
+    ]
+   },
+   "vo": "Deux : la relance reste courte et sans reproche. Identifie le freelance qui n'ose jamais relancer."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Tu adaptes à ta façon",
+   "humeur": "normal",
+   "vo": "Trois : tu ajoutes ta touche perso avant d'envoyer."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Envoyé",
+   "humeur": "content",
+   "ecran": {
+    "type": "export",
+    "titre": "Relance envoyée"
+   },
+   "tampon": "RELANCE PARTIE",
+   "vo": "Tu envoies, et tu passes à autre chose."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

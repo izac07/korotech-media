@@ -1,0 +1,85 @@
+{
+ "id": "LIA-R32",
+ "layout": "studio3d",
+ "music_seed": 2608,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Un chiffre sorti d'où ?",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "SOURCES",
+    "de": 0,
+    "a": 0
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "« 87 % des clients… » ???"
+   },
+   "vo": "Claude peut inventer un chiffre, avec un aplomb total. Voici le réflexe à avoir."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Demande la source",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "D'où vient ce chiffre ?"
+     ],
+     [
+      "ia",
+      "Je ne peux pas le confirmer. Retire-le."
+     ]
+    ]
+   },
+   "vo": "Un : pour chaque chiffre, demande la source. Pas de source, pas de chiffre. Enregistre cette vidéo."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Ton dernier chiffre ?",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "Contrôle d'un chiffre",
+    "lignes": [
+     "Source trouvée ?",
+     "Date récente ?",
+     "Lue par toi ?"
+    ]
+   },
+   "vo": "Deux : ouvre la source toi-même. Sois honnête : tu as déjà publié un chiffre sans le vérifier ?"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Pas de source, on retire",
+   "humeur": "normal",
+   "vo": "Trois, le meilleur réflexe : pas de source vérifiable, on supprime la phrase."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Tu publies sans risque",
+   "humeur": "content",
+   "ecran": {
+    "type": "export",
+    "titre": "Texte vérifié"
+   },
+   "tampon": "VÉRIFIÉ",
+   "vo": "Tu publies seulement ce que tu as vérifié."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

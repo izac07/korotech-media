@@ -1,0 +1,85 @@
+{
+ "id": "LIA-R28",
+ "layout": "studio3d",
+ "music_seed": 2604,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Tout est urgent",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "TÂCHES",
+    "de": 0,
+    "a": 63
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "TODO (63 lignes)"
+   },
+   "vo": "Ta to-do fait trois pages et tout est urgent ? Claude la découpe en trois piles."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Tu vides ta liste",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Trie ma to-do."
+     ],
+     [
+      "ia",
+      "Trois piles."
+     ]
+    ]
+   },
+   "vo": "Un : tu colles ta liste dans Claude. Enregistre-la, tu referas ça dimanche soir."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Team 1 ou team 2 ?",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "Tes trois piles",
+    "lignes": [
+     "Ce qui rapporte",
+     "Ce qu'on délègue",
+     "Ce qu'on supprime"
+    ]
+   },
+   "vo": "Deux : ce qui rapporte, ce qu'on délègue, ce qu'on supprime. Team to-do géante ou trois priorités ? Commente un ou deux."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Tu gardes le dernier mot",
+   "humeur": "normal",
+   "vo": "Trois : tu décides, Claude propose."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Lundi, c'est clair",
+   "humeur": "content",
+   "ecran": {
+    "type": "export",
+    "titre": "Plan de la semaine"
+   },
+   "tampon": "SEMAINE CLAIRE",
+   "vo": "Lundi matin, trois priorités et c'est tout."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

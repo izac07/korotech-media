@@ -1,0 +1,85 @@
+{
+ "id": "LIA-R40",
+ "layout": "studio3d",
+ "music_seed": 2616,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Claude fait tout ?",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "TÂCHES",
+    "de": 0,
+    "a": 3
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "« Claude fait tout » ???"
+   },
+   "vo": "Trois choses que je ne confie pas à Claude, et la dernière surprend."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1 : l'avis final",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Tu publies ça ?"
+     ],
+     [
+      "ia",
+      "Non, c'est à toi de valider."
+     ]
+    ]
+   },
+   "vo": "Un : la décision finale. Claude propose, c'est moi qui tranche. Enregistre cette vidéo."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Sans relire ?",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "Jamais sans relire",
+    "lignes": [
+     "Message client",
+     "Chiffres",
+     "Promesses"
+    ]
+   },
+   "vo": "Deux : un message client sans relecture. Débat : tu laisserais Claude écrire à tes clients sans relire ?"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "3 : ma voix",
+   "humeur": "normal",
+   "vo": "Trois, celle qui surprend : mes opinions. Elles restent les miennes."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Je garde le contrôle",
+   "humeur": "content",
+   "ecran": {
+    "type": "export",
+    "titre": "Validé par moi"
+   },
+   "tampon": "JE VALIDE",
+   "vo": "Gagner du temps, oui. Lâcher le contrôle, non."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

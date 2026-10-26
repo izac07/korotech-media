@@ -1,0 +1,94 @@
+{
+ "id": "LIA-R27",
+ "layout": "studio3d",
+ "music_seed": 2603,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Mêmes questions, chaque jour",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "QUESTIONS",
+    "de": 0,
+    "a": 25
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "DM : « c'est livré quand ? »"
+   },
+   "vo": "Les mêmes questions clients, tous les jours ? Claude écrit ta FAQ une bonne fois."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Tu listes les questions",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Écris ma FAQ."
+     ],
+     [
+      "ia",
+      "Réponses courtes. Je commence."
+     ]
+    ]
+   },
+   "vo": "Un : tu listes les questions qu'on te pose. Enregistre cette vidéo, la suite te fera gagner du temps."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Identifie ce commerçant",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "Ta FAQ",
+    "lignes": [
+     "Livraison : délais et suivi",
+     "Retours : mode d'emploi",
+     "Paiement : moyens acceptés"
+    ]
+   },
+   "vo": "Deux : Claude rédige chaque réponse. Identifie le commerçant qui répond encore à tout à la main."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Tu vérifies les infos",
+   "humeur": "normal",
+   "ecran": {
+    "type": "verif",
+    "titre": "À vérifier par toi",
+    "lignes": [
+     "Délais",
+     "Prix",
+     "Conditions de retour"
+    ]
+   },
+   "vo": "Trois : tu vérifies les délais et les prix. Claude ne les connaît que si tu les donnes."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "FAQ en ligne",
+   "humeur": "content",
+   "ecran": {
+    "type": "export",
+    "titre": "FAQ publiée"
+   },
+   "tampon": "FAQ PRÊTE",
+   "vo": "Tu publies la page, et les questions diminuent."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

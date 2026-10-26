@@ -1,0 +1,89 @@
+{
+ "id": "LIA-R29",
+ "layout": "studio3d",
+ "music_seed": 2605,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Tu répètes tout",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "FOIS",
+    "de": 0,
+    "a": 12
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "Copier-coller (encore)"
+   },
+   "vo": "Tu réexpliques ton métier à Claude à chaque conversation ? Il y a un secret."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Un projet, une fois",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Projet Claude",
+    "messages": [
+     [
+      "moi",
+      "Je suis graphiste, je tutoie."
+     ],
+     [
+      "ia",
+      "Compris, pour ce projet."
+     ]
+    ]
+   },
+   "vo": "Un : crée un projet dans Claude et écris tes instructions une seule fois. Enregistre, c'est le gain de temps."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Ta consigne retapée ?",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "Instructions du projet",
+    "lignes": [
+     "Mon métier",
+     "Mon ton",
+     "Mes règles"
+    ]
+   },
+   "vo": "Deux : ajoute ton ton et tes règles. Sois honnête : combien de fois as-tu retapé la même consigne ?"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Chaque chat repart bien",
+   "humeur": "normal",
+   "ecran": {
+    "type": "montage",
+    "titre": "Projet — instructions"
+   },
+   "vo": "Trois : chaque nouvelle conversation du projet démarre avec tout ça."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Tu gagnes du temps",
+   "humeur": "content",
+   "ecran": {
+    "type": "export",
+    "titre": "Projet prêt"
+   },
+   "tampon": "C'EST FAIT",
+   "vo": "Tu ne répètes plus rien."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

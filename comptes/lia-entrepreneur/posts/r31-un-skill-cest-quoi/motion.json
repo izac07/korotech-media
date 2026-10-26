@@ -1,0 +1,89 @@
+{
+ "id": "LIA-R31",
+ "layout": "studio3d",
+ "music_seed": 2607,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Même demande, encore",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "RELANCES",
+    "de": 0,
+    "a": 7
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "prompt_final_v7"
+   },
+   "vo": "C'est quoi un skill Claude, et pourquoi ça te fait gagner du temps ?"
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Une recette écrite",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Ma méthode de relance."
+     ],
+     [
+      "ia",
+      "Rangée en recette."
+     ]
+    ]
+   },
+   "vo": "Un : c'est une recette que tu écris une fois, pour une tâche précise. Enregistre, tu vas en vouloir un."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Identifie ce collègue",
+   "humeur": "travail",
+   "ecran": {
+    "type": "montage",
+    "titre": "Skill — relance facture"
+   },
+   "vo": "Deux : Claude la relit à chaque fois et l'applique. Identifie celui qui refait la même demande tous les jours."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Tu lances, il applique",
+   "humeur": "normal",
+   "ecran": {
+    "type": "verif",
+    "titre": "Ton skill",
+    "lignes": [
+     "Ta méthode",
+     "Ton ton",
+     "Ton format"
+    ]
+   },
+   "vo": "Trois : tu lances ton skill, et Claude suit ta méthode."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Résultat identique",
+   "humeur": "content",
+   "ecran": {
+    "type": "export",
+    "titre": "Relance prête"
+   },
+   "tampon": "SKILL PRÊT",
+   "vo": "Même qualité à chaque fois, sans retaper."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

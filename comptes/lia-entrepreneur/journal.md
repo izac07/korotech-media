@@ -29,3 +29,19 @@
 | 2026-10-27 12:30 | LIA-R23 | Reel | Faire écrire un script de reel à Claude : le prompt (Tutos Claude, claudeflow) |
 | 2026-10-27 18:30 | LIA-R24 | Reel | Mail de prospection à froid qui ne sent pas le spam (Tutos Claude, claudeflow) |
 | 2026-10-23 13:34 | LIA-X01 | Reel | Ce qu'on te vend sur l'IA vs ce qui fait vraiment gagner du temps : déléguer les tâches qui reviennent (Erreurs et vérités, iceberg) |
+| 2026-10-26 12:30 | LIA-R25 | Reel | Claude trie 200 mails en trois piles (Claude fait à ta place, studio3d) |
+| 2026-10-26 18:30 | LIA-R26 | Reel | Claude prépare ton rendez-vous client (Claude fait à ta place, studio3d) |
+| 2026-10-27 12:30 | LIA-R27 | Reel | Claude écrit la FAQ de ta boutique (Claude fait à ta place, studio3d) |
+| 2026-10-27 18:30 | LIA-R28 | Reel | Claude organise ta semaine en 3 piles (Claude fait à ta place, studio3d) |
+| 2026-10-28 12:30 | LIA-R29 | Reel | Les instructions de projet qui évitent de tout répéter à Claude (Tutos Claude, studio3d) |
+| 2026-10-28 18:30 | LIA-R30 | Reel | Les 3 erreurs qui rendent tes demandes à Claude nulles (Erreurs et vérités, studio3d) |
+| 2026-10-29 12:30 | LIA-R31 | Reel | Un skill Claude, c'est une recette qu'on réutilise (Tutos Claude, studio3d) |
+| 2026-10-29 18:30 | LIA-R32 | Reel | Claude peut inventer un chiffre : la règle de la source (Erreurs et vérités, studio3d) |
+| 2026-10-30 12:30 | LIA-R33 | Reel | Claude écrit ta réponse à un avis négatif (Claude fait à ta place, studio3d) |
+| 2026-10-30 18:30 | LIA-R34 | Reel | Six comptes, un seul humain : ce que je fais à la main (Coulisses de mon système, studio3d) |
+| 2026-10-31 12:30 | LIA-R35 | Reel | Claude relance un prospect qui ne répond plus (Claude fait à ta place, studio3d) |
+| 2026-10-31 18:30 | LIA-R36 | Reel | Demande à Claude de te poser des questions avant de répondre (Tutos Claude, studio3d) |
+| 2026-11-01 12:30 | LIA-R37 | Reel | Claude transforme un article en idées de reels (Claude fait à ta place, studio3d) |
+| 2026-11-01 18:30 | LIA-R38 | Reel | Claude Code ou Claude en conversation : lequel pour quoi (Tutos Claude, studio3d) |
+| 2026-11-02 12:30 | LIA-R39 | Reel | Claude compare deux devis de prestataires dans un tableau (Claude fait à ta place, studio3d) |
+| 2026-11-02 18:30 | LIA-R40 | Reel | Ce que je ne confie pas à Claude (Erreurs et vérités, studio3d) |

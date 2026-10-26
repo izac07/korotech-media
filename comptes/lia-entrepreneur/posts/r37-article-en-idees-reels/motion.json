@@ -1,0 +1,85 @@
+{
+ "id": "LIA-R37",
+ "layout": "studio3d",
+ "music_seed": 2613,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Page blanche",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "IDÉES",
+    "de": 0,
+    "a": 3
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "Idées reels : (vide)"
+   },
+   "vo": "Pas d'idée de reel cette semaine ? Un seul article t'en donne trois."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Tu colles ton article",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Trois idées de reels ?"
+     ],
+     [
+      "ia",
+      "Trois angles, trois accroches."
+     ]
+    ]
+   },
+   "vo": "Un : colle un de tes articles dans Claude. Enregistre-la, les idées arrivent."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Team 1 ou team 2 ?",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "Tes trois idées",
+    "lignes": [
+     "Idée 1",
+     "Idée 2",
+     "Idée 3"
+    ]
+   },
+   "vo": "Deux : chaque idée vient avec une accroche. Team écrire d'abord ou filmer d'abord ? Commente un ou deux."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Tu choisis la meilleure",
+   "humeur": "normal",
+   "vo": "Trois : tu gardes la meilleure, la dernière est souvent celle qui plaît."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Prêt à tourner",
+   "humeur": "content",
+   "ecran": {
+    "type": "export",
+    "titre": "Idée choisie"
+   },
+   "tampon": "IDÉE TROUVÉE",
+   "vo": "Tu tournes, tu postes."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

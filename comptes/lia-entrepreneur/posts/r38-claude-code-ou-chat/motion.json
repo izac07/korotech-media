@@ -1,0 +1,88 @@
+{
+ "id": "LIA-R38",
+ "layout": "studio3d",
+ "music_seed": 2614,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Lequel choisir ?",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "ONGLETS",
+    "de": 0,
+    "a": 8
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "Quel outil ouvrir ?"
+   },
+   "vo": "Claude Code ou Claude en conversation : lequel pour quoi ? Réponse en deux phrases."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Le chat pour écrire",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Aide-moi à reformuler mon offre."
+     ],
+     [
+      "ia",
+      "Voici trois versions."
+     ]
+    ]
+   },
+   "vo": "Un : la conversation sert à écrire, réfléchir, reformuler. Enregistre cette vidéo."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Chat ou terminal ?",
+   "humeur": "travail",
+   "ecran": {
+    "type": "montage",
+    "titre": "Claude Code — fichiers"
+   },
+   "vo": "Deux : Claude Code agit sur tes fichiers. Débat : chat ou terminal, tu préfères quoi ?"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Choisis selon la tâche",
+   "humeur": "normal",
+   "ecran": {
+    "type": "verif",
+    "titre": "Ton choix",
+    "lignes": [
+     "Écrire : conversation",
+     "Agir sur fichiers : Claude Code"
+    ]
+   },
+   "vo": "Trois : tu choisis selon la tâche, pas selon la mode."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Bon outil",
+   "humeur": "content",
+   "ecran": {
+    "type": "export",
+    "titre": "Tâche terminée"
+   },
+   "tampon": "BON OUTIL",
+   "vo": "Le bon outil, et tu avances plus vite."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "id": "LIA-R26",
+ "layout": "studio3d",
+ "music_seed": 2602,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "RDV dans une heure",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "MINUTES",
+    "de": 0,
+    "a": 60
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "notes-client-VRAIMENT-final"
+   },
+   "vo": "Rendez-vous client dans une heure et rien de prêt ? Claude te sort une fiche."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Tu colles tes notes",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Prépare mon rendez-vous."
+     ],
+     [
+      "ia",
+      "Voilà ta fiche."
+     ]
+    ]
+   },
+   "vo": "Un : tu colles tes notes, Claude écrit le contexte et l'objectif du rendez-vous. Enregistre, tu en auras besoin lundi."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Ta question oubliée ?",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "Ta fiche de rendez-vous",
+    "lignes": [
+     "Contexte du client",
+     "Objectif du rendez-vous",
+     "Trois questions à poser"
+    ]
+   },
+   "vo": "Deux : il propose trois questions à poser. Sois honnête : laquelle tu oublies toujours ? Écris-la en commentaire."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Il repère les freins",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "Objections possibles",
+    "lignes": [
+     "Le prix",
+     "Le délai"
+    ]
+   },
+   "vo": "Trois : il repère les objections possibles, le prix ou le délai."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Tu arrives serein",
+   "humeur": "content",
+   "ecran": {
+    "type": "export",
+    "titre": "Fiche de rendez-vous"
+   },
+   "tampon": "RDV PRÉPARÉ",
+   "vo": "Toi, tu relis la fiche et tu arrives serein."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

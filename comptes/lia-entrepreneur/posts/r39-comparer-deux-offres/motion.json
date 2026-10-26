@@ -1,0 +1,85 @@
+{
+ "id": "LIA-R39",
+ "layout": "studio3d",
+ "music_seed": 2615,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Deux devis, une migraine",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "PAGES",
+    "de": 0,
+    "a": 12
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "devis_A.pdf  devis_B.pdf"
+   },
+   "vo": "Deux devis de six pages chacun ? Claude te les compare dans un tableau."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Tu colles les devis",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Compare ces devis."
+     ],
+     [
+      "ia",
+      "Prix, délais, inclus."
+     ]
+    ]
+   },
+   "vo": "Un : tu colles les deux devis dans Claude. Enregistre, ça évite les mauvaises surprises."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Identifie ce collègue",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "Le tableau",
+    "lignes": [
+     "Prix",
+     "Délai",
+     "Ce qui est inclus"
+    ]
+   },
+   "vo": "Deux : le tableau montre ce qui est inclus ou non. Identifie celui qui choisit toujours le moins cher sans lire."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Tu relis les lignes",
+   "humeur": "normal",
+   "vo": "Trois : tu vérifies les lignes importantes dans les vrais devis."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Tu décides",
+   "humeur": "content",
+   "ecran": {
+    "type": "export",
+    "titre": "Comparatif"
+   },
+   "tampon": "COMPARAISON FAITE",
+   "vo": "Tu décides avec toutes les infos."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

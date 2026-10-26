@@ -1,0 +1,93 @@
+{
+ "id": "LIA-R30",
+ "layout": "studio3d",
+ "music_seed": 2606,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Réponses décevantes",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "ESSAIS",
+    "de": 0,
+    "a": 3
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "Réponse : hors sujet"
+   },
+   "vo": "Claude te répond à côté ? Trois erreurs, la dernière est la plus courante."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Erreur 1 : zéro contexte",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Écris un mail."
+     ],
+     [
+      "ia",
+      "À qui ? Pour quoi ?"
+     ]
+    ]
+   },
+   "vo": "Un : zéro contexte. Dis qui tu es et pour qui c'est. Enregistre cette vidéo."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Un long prompt = mieux ?",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "Erreur 2",
+    "lignes": [
+     "Pas d'exemple",
+     "Pas de modèle",
+     "Pas de ton"
+    ]
+   },
+   "vo": "Deux : aucun exemple du résultat voulu. Débat : un long prompt vaut mieux qu'un court ? Dis ton avis."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Erreur 3 : pas de format",
+   "humeur": "normal",
+   "ecran": {
+    "type": "verif",
+    "titre": "Erreur 3",
+    "lignes": [
+     "Pas de format demandé",
+     "Liste ? Tableau ?"
+    ]
+   },
+   "vo": "Trois, la plus courante : ne pas préciser le format. Liste, tableau, trois lignes ?"
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Contexte, exemple, format",
+   "humeur": "content",
+   "ecran": {
+    "type": "export",
+    "titre": "Demande claire"
+   },
+   "tampon": "PROMPT CORRIGÉ",
+   "vo": "Contexte, exemple, format, et ça change tout."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

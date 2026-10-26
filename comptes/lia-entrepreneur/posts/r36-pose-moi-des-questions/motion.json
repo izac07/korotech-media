@@ -1,0 +1,89 @@
+{
+ "id": "LIA-R36",
+ "layout": "studio3d",
+ "music_seed": 2612,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Réponse trop vague",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "ESSAIS",
+    "de": 0,
+    "a": 4
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "Réponse : trop générale"
+   },
+   "vo": "Une seule phrase fait mieux répondre Claude : demande-lui de te poser des questions."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Tu ajoutes une phrase",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Pose-moi des questions d'abord."
+     ],
+     [
+      "ia",
+      "Quelle cible ?"
+     ]
+    ]
+   },
+   "vo": "Un : ajoute « pose-moi d'abord les questions utiles ». Enregistre cette vidéo."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Assez de contexte ?",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "Ses questions",
+    "lignes": [
+     "Ta cible ?",
+     "Ton prix ?",
+     "Ton délai ?"
+    ]
+   },
+   "vo": "Deux : tu réponds à ses questions. Sois honnête : tu donnes assez de contexte, d'habitude ?"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Il écrit, tu relis",
+   "humeur": "normal",
+   "ecran": {
+    "type": "montage",
+    "titre": "Claude — offre"
+   },
+   "vo": "Trois : il écrit avec tes vraies réponses."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Texte qui te ressemble",
+   "humeur": "content",
+   "ecran": {
+    "type": "export",
+    "titre": "Offre prête"
+   },
+   "tampon": "BIEN PLUS PRÉCIS",
+   "vo": "Le texte colle enfin à ton besoin."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,79 @@
+{
+ "id": "LIA-R25",
+ "layout": "studio3d",
+ "music_seed": 2601,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "200 mails non lus",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "MAILS",
+    "de": 0,
+    "a": 200
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "Boîte de réception (200)"
+   },
+   "vo": "Deux cents mails non lus un lundi matin ? Claude les range en trois piles."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Tu colles tes mails",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Trie mes mails en 3 piles."
+     ],
+     [
+      "ia",
+      "Fait. Une ligne par mail."
+     ]
+    ]
+   },
+   "vo": "Un : tu colles tes mails dans Claude et tu demandes trois piles : urgent, à déléguer, à ignorer. Enregistre cette vidéo."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Team 1 ou team 2 ?",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "Les trois piles",
+    "lignes": [
+     "Urgent",
+     "À déléguer",
+     "À ignorer"
+    ]
+   },
+   "vo": "Deux : pour chaque mail urgent, un brouillon de réponse. Team boîte vide ou boîte pleine ? Commente un ou deux."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Toi, tu relis",
+   "humeur": "content",
+   "ecran": {
+    "type": "export",
+    "titre": "Brouillons prêts"
+   },
+   "tampon": "BOÎTE TRIÉE",
+   "vo": "Trois : tu relis, tu corriges, tu envoies."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}
