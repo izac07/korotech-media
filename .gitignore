@@ -1,2 +1,5 @@
 __pycache__/
 controle/
+
+# Mixamo : fichiers bruts interdits de redistribution (licence), gardés seulement sur le PC de Goat
+tools/assets/humains/mixamo/*.fbx
