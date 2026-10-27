@@ -9,7 +9,11 @@ Spec : {"layout": "anatomie3d", "serie"?: {"label": "DAY", "de": 0, "a": 30}, "c
         "scenes": [{"type": plan ("large" | "face" | "cote" | "muscle" | "orbite"), "vo", "exercice": "pompes" | "gainage" | "squat" |
                     "suspension" | <clip> ("Idle_Loop", "Sitting_Idle_Loop", "Crouch_Idle_Loop", "Jump_Loop", "Jog_Fwd_Loop"…),
                     "reps"?: répétitions pendant la scène (0 = position tenue), "muscle"?: "avant-bras" | "bras" | "epaules" | "pectoraux" |
-                    "abdos" | "cuisses" | "mollets" | "fessiers", "jour"?: valeur du compteur à la fin de la scène, "bandeau"?, "question"?, "carte"?}]}
+                    "abdos" | "cuisses" | "mollets" | "fessiers", "jour"?: valeur du compteur à la fin de la scène, "bandeau"?, "question"?, "carte"?,
+                    "badge"?: [gros, petit] (chiffre ou mot-choc au centre), "source"?: étude réelle et vérifiée en bas d'écran,
+                    "compteur"?: true (compteur REP qui suit les répétitions)}],
+        "sous_titres"?: "mot" (un seul mot à la fois, en gros en haut ; le compteur DAY passe en bas)}
+Exercices : "pompes", "pompes_diamant" (mains jointes sous la poitrine), "gainage", "squat", "suspension", ou un clip.
 """
 import json, os, base64, html as H
 import korotech as K
@@ -42,13 +46,24 @@ canvas#cv{position:absolute;left:0;top:0}
 .fin{position:absolute;left:90px;right:90px;top:1180px;z-index:8;display:flex;flex-direction:column;align-items:center;gap:22px;opacity:0}
 .fin b{font:400 108px/1 Anton;background:__ACC__;color:#fff;padding:16px 44px 10px;border-radius:18px;box-shadow:0 10px 0 rgba(0,0,0,.45)}
 .fin span{font:400 52px/1.15 'Archivo Black';background:#fff;color:#111;padding:10px 26px;border-radius:12px;text-align:center}
-</style></head><body>
+.mot{position:absolute;left:30px;right:30px;top:250px;z-index:7;text-align:center;font:400 150px/1 'Archivo Black';color:#fff;text-transform:lowercase;
+  text-shadow:0 8px 0 rgba(0,0,0,.5),0 0 40px rgba(0,0,0,.6);white-space:nowrap}
+.mot.h{color:__JAUNE__}
+.bg{position:absolute;left:0;right:0;top:450px;z-index:7;text-align:center;opacity:0}
+.bg b{display:block;font:400 150px/1 Anton;color:__JAUNE__;text-shadow:0 8px 0 rgba(0,0,0,.5)}.bg span{display:block;margin-top:10px;font:700 40px Inter;color:#fff;letter-spacing:2px;text-transform:uppercase}
+.src{position:absolute;left:60px;right:60px;bottom:330px;z-index:7;text-align:center;font:500 28px Inter;color:rgba(255,255,255,.6);opacity:0}
+.rc{position:absolute;right:80px;bottom:430px;z-index:7;width:190px;padding:18px 0 12px;border-radius:26px;background:rgba(10,12,20,.82);border:3px solid rgba(255,255,255,.18);text-align:center;opacity:0}
+.rc i{display:block;font:700 26px Inter;font-style:normal;letter-spacing:4px;color:rgba(255,255,255,.7)}.rc b{display:block;font:400 110px/1 Anton;color:#fff;font-variant-numeric:tabular-nums}
+body.motmode .caps{display:none}body.motmode .hud{top:auto;bottom:210px;left:60px;right:60px}body.motmode .hud .bar{width:auto}body.motmode .wk{top:auto;bottom:250px}
+</style></head><body class='__MODE__'>
 <canvas id='cv' width='1080' height='1920'></canvas>
 <div class='hdl'>@__HANDLE__</div>
 <div class='hud' id='hud'><div class='l'>__LABEL__</div><div class='n' id='hn'>00</div><div class='bar'><i id='hb'></i></div></div>
 <div class='wk' id='wk'>WEEK 1</div>
 <div class='caps'>__CAPS__</div>
 __BANDS__
+<div class='mot' id='mot'></div>
+__BADGES__
 __QUESTIONS__
 __FINS__
 <script type='importmap'>__IMPORTMAP__</script>
@@ -61,7 +76,7 @@ import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
 import {BokehPass} from 'three/addons/postprocessing/BokehPass.js';
 import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
 import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
-const EV=[]; const D=__D__, SC=__SC__, COL=__COL__, SERIE=__SERIE__, MUSCLES=__MUSCLES__;
+const EV=[]; const D=__D__, SC=__SC__, COL=__COL__, SERIE=__SERIE__, MUSCLES=__MUSCLES__, MOTS=__MOTS__;
 const c=x=>Math.max(0,Math.min(1,x)), sm=x=>{x=c(x);return x*x*(3-2*x);};
 const back=x=>{x=c(x);const s=1.7;return 1+(s+1)*Math.pow(x-1,3)+s*Math.pow(x-1,2);};
 const $=i=>document.getElementById(i);
@@ -141,7 +156,13 @@ const RENDER=function(t){
   else{hud.style.opacity=0;$('wk').style.opacity=0;}
   SC.forEach((z,i)=>{const b=$('bd'+i);if(b){b.style.opacity=i==k?c(tl/.25):0;}
     const q=$('q'+i);if(q){const on=i==k&&tl>.2;q.style.opacity=on?1:0;q.style.transform=`scale(${on?.6+.4*back((tl-.2)/.4):.6}) rotate(-2deg)`;}
-    const fn=$('fn'+i);if(fn){fn.style.opacity=i==k?c((tl-.15)/.15):0;fn.style.transform=`scale(${.6+.4*back((tl-.15)/.45)})`;}});
+    const fn=$('fn'+i);if(fn){fn.style.opacity=i==k?c((tl-.15)/.15):0;fn.style.transform=`scale(${.6+.4*back((tl-.15)/.45)})`;}
+    const bg=$('bg'+i);if(bg){const on=i==k&&tl>.4;bg.style.opacity=on?1:0;bg.style.transform=`scale(${on?.6+.4*back((tl-.4)/.4):.6})`;}
+    const sr=$('src'+i);if(sr)sr.style.opacity=i==k?c((tl-.4)/.3):0;
+    const rc=$('rc'+i);if(rc){rc.style.opacity=i==k?c(tl/.3):0;if(i==k)$('rn'+i).textContent=Math.min(z.reps,1+Math.floor(z.reps*p));}});
+  // sous-titres « un mot à la fois », en gros en haut (comme les comptes d'anatomie qui marchent) ; le mot avec un chiffre passe en jaune
+  if(MOTS){let w=null;for(const m of MOTS){if(m[1]<=t)w=m;else break;}const el=$('mot');el.textContent=w&&!s.carte?w[0]:'';el.className='mot'+(w&&w[2]?' h':'');
+    el.style.transform=w?`scale(${.85+.15*back((t-w[1])/.15)})`:'';}
   for(const cp_ of document.querySelectorAll('.cap')){const a=+cp_.dataset.a,b=+cp_.dataset.b;const on=t>=a&&t<b&&!s.carte;cp_.style.display=on?'flex':'none';
     if(on)for(const w of cp_.querySelectorAll('.w')){const wt=+w.dataset.w;const kk=back((t-wt)/.18);w.style.opacity=t>=wt?1:0;w.style.transform=`scale(${t>=wt?.7+.3*kk:.7})`;}}
 };
@@ -161,7 +182,11 @@ def page(spec, theme, starts, durs, caps, total):
     bands = "".join(f"<div class='band' id='bd{k}'>{K.esc(s['bandeau'])}</div>" for k, s in enumerate(sc) if s.get("bandeau"))
     qs = "".join(f"<div class='q' id='q{k}'><span>{K.esc(s['question'])}</span></div>" for k, s in enumerate(sc) if s.get("question"))
     fins = "".join(f"<div class='fin' id='fn{k}'><b>{K.esc(s['carte'][0])}</b>" + (f"<span>{K.esc(s['carte'][1])}</span>" if len(s['carte']) > 1 else '') + "</div>" for k, s in enumerate(sc) if s.get("carte"))
+    badges = "".join((f"<div class='bg' id='bg{k}'><b>{K.esc(s['badge'][0])}</b>" + (f"<span>{K.esc(s['badge'][1])}</span>" if len(s['badge']) > 1 else '') + "</div>" if s.get("badge") else "")
+                     + (f"<div class='src' id='src{k}'>{K.esc(s['source'])}</div>" if s.get("source") else "")
+                     + (f"<div class='rc' id='rc{k}'><i>REP</i><b id='rn{k}'>1</b></div>" if s.get("compteur") else "") for k, s in enumerate(sc))
     fort = lambda w: any(ch.isdigit() for ch in w) or w.lower().strip(".,!?") in {"jours", "days", "secondes", "minutes", "semaines"}
+    mots = [[w.strip(",.;:"), round(tt, 3), fort(w)] for cc, _ in caps for w, tt in cc] if spec.get("sous_titres") == "mot" else None
     cap_html = "".join(f"<div class='cap' data-a='{cc[0][1]:.3f}' data-b='{cn:.3f}'>" + "".join(
         f"<span class='w{' h' if fort(w) else ''}' data-w='{tt:.3f}'>{H.escape(w)}</span>" for w, tt in cc) + "</div>" for cc, cn in caps)
     R = {"__FONTS__": K._font_faces(["Anton", "Archivo Black", "Inter"]), "__FOND__": col["fond"], "__ACC__": col["acc"], "__JAUNE__": col["jaune"],
@@ -169,7 +194,8 @@ def page(spec, theme, starts, durs, caps, total):
          "__CAPS__": cap_html, "__BANDS__": bands, "__QUESTIONS__": qs, "__FINS__": fins, "__POSES__": poses_js(),
          "__IMPORTMAP__": S3.import_map(), "__GLB__": base64.b64encode(open(MANNEQUIN, "rb").read()).decode(),
          "__D__": str(total), "__SC__": json.dumps(S, ensure_ascii=False), "__COL__": json.dumps(col), "__SERIE__": json.dumps(spec.get("serie")),
-         "__MUSCLES__": json.dumps(MUSCLES)}
+         "__MUSCLES__": json.dumps(MUSCLES), "__BADGES__": badges, "__MOTS__": json.dumps(mots, ensure_ascii=False),
+         "__MODE__": "motmode" if mots else ""}
     out = TPL
     for kk, v in R.items():
         out = out.replace(kk, v)

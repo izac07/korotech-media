@@ -37,8 +37,10 @@ function creerPoses(THREE, corps, m, clips, scene, mat){
   const tb=new THREE.Mesh(cyl(.022,1.62),metal);tb.rotation.z=Math.PI/2;tb.position.y=BARRE;tb.castShadow=true;barre.add(tb);barre.visible=false;scene.add(barre);
   function poser(nom,u,t,tt){tt=tt||0;
     corps.position.set(0,0,0);corps.rotation.set(0,0,0);corps.updateMatrixWorld(true);barre.visible=false;
-    if(!['pompes','gainage','squat','suspension'].includes(nom)){base(nom,t);return;}
+    if(!['pompes','pompes_diamant','gainage','squat','suspension'].includes(nom)){base(nom,t);return;}
     base('Idle_Loop',0);
+    // pompes diamant : mêmes calculs que les pompes, mains jointes sous la poitrine et coudes vers l'arrière
+    const dia=nom=='pompes_diamant';if(dia)nom='pompes';
     if(nom=='pompes'||nom=='gainage'){
       // hauteur d'épaule voulue (bras tendus → bras pliés) ; on cherche l'inclinaison du corps qui la donne, pivot sur la pointe des pieds
       // jambes tendues, pieds à plat vers l'avant : une fois le corps basculé, les orteils se retrouvent plantés au sol
@@ -49,8 +51,8 @@ function creerPoses(THREE, corps, m, clips, scene, mat){
       for(let i=0;i<6;i++){place();const S=wp(B('upper_arm.L')),L=Math.hypot(S.y,S.z);rx-=Math.asin(Math.max(-1,Math.min(1,(hv-S.y)/L)));}
       place();
       cote.forEach(s=>{const [a,b,h]=bras(s);const S=wp(a);
-        const T=nom=='pompes'?V(S.x*1.35,.04,S.z+.04):V(S.x*.9,.035,S.z+.3);
-        const pole=nom=='pompes'?V(sg[s]*1,.2,-.7):V(sg[s]*.2,-1,-.4);ik(a,b,h,T,pole);});
+        const T=dia?V(sg[s]*.07,.04,S.z+.1):nom=='pompes'?V(S.x*1.35,.04,S.z+.04):V(S.x*.9,.035,S.z+.3);
+        const pole=dia?V(sg[s]*.45,.25,-1):nom=='pompes'?V(sg[s]*1,.2,-.7):V(sg[s]*.2,-1,-.4);ik(a,b,h,T,pole);});
     }else if(nom=='squat'){
       // mélange « debout » → « assis » (vrai clip), puis on retire la chaise : pieds recalés au sol, buste penché, bras devant
       mix.stopAllAction();const ai=mix.clipAction(THREE.AnimationClip.findByName(clips,'Idle_Loop')),as=mix.clipAction(THREE.AnimationClip.findByName(clips,'Sitting_Idle_Loop'));

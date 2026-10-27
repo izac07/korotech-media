@@ -1,0 +1,9 @@
+{"id":"ZSF-T02","layout":"anatomie3d","handle":"zerosallefit","music_seed":9203,"sous_titres":"mot",
+ "serie":{"label":"DAY","de":0,"a":30},
+ "scenes":[
+  {"type":"large","exercice":"pompes_diamant","reps":2,"jour":1,"vo":"Dix pompes diamant par jour, pendant trente jours. Voilà le plan."},
+  {"type":"cote","exercice":"pompes_diamant","reps":3,"muscle":"bras","jour":7,"compteur":true,"vo":"Jour un à sept : mains en losange, coudes serrés, et ce sont tes triceps qui prennent."},
+  {"type":"large","exercice":"pompes_diamant","reps":2,"muscle":"bras","jour":14,"vo":"Jour huit à quatorze : descends en trois secondes, et genoux au sol si c'est trop dur. Enregistre ça pour ce soir."},
+  {"type":"orbite","exercice":"pompes_diamant","reps":3,"muscle":"pectoraux","jour":30,"badge":["+ TRICEPS","mains serrées vs mains écartées"],"source":"Source : Cogley et al., 2005 (J. Strength Cond. Res.)","question":"Tu en fais combien ? 👇","vo":"Jour quinze à trente : deux de plus chaque semaine. Une étude mesure plus de triceps qu'en prise large. Toi, tu en fais combien ?"},
+  {"type":"face","exercice":"Idle_Loop","carte":["💬 COMMENTE PROGRAMME","le programme 7 jours gratuit"],"vo":"Commente programme pour recevoir le programme sept jours gratuit. Tu commences demain ?"}
+ ]}
