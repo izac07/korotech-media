@@ -117,9 +117,18 @@ const metal=new THREE.MeshStandardMaterial({color:0x1b1715,roughness:.35,metalne
 const buf=Uint8Array.from(atob('__GLB__'),ch=>ch.charCodeAt(0)).buffer;
 __POSES__
 let P=null,MESH=null,BONE=null,corps=null;
-const charger=()=>new Promise(ok=>new GLTFLoader().parse(buf,'',gl=>{const m=gl.scene;
+const MX=__MX__;
+const charger=()=>new Promise(ok=>{
+  if(MX){import('three/addons/loaders/FBXLoader.js').then(({FBXLoader})=>{
+    // Y Bot Mixamo (FBX en centimètres) ramené à 1,80 m ; une animation par exercice
+    const L=new FBXLoader(),b64=s=>Uint8Array.from(atob(s),ch=>ch.charCodeAt(0)).buffer;const m=L.parse(b64(MX.modele),'');
+    const clips={idle:m.animations[0]};for(const [k,v] of Object.entries(MX.clips))clips[k]=L.parse(b64(v),'').animations[0];
+    m.updateMatrixWorld(true);const bb=new THREE.Box3().setFromObject(m);m.scale.multiplyScalar(1.8/Math.max(.01,bb.max.y-bb.min.y));
+    m.traverse(o=>{if(o.isMesh){o.material=argile;o.castShadow=true;o.receiveShadow=true;o.frustumCulled=false;if(o.isSkinnedMesh&&!MESH)MESH=o;}});
+    corps=new THREE.Group();corps.add(m);scene.add(corps);P=creerPosesMixamo(THREE,corps,m,clips,scene,metal);ok();});return;}
+  new GLTFLoader().parse(buf,'',gl=>{const m=gl.scene;
   m.traverse(o=>{if(o.isMesh){o.material=argile;o.castShadow=true;o.receiveShadow=true;o.frustumCulled=false;if(o.isSkinnedMesh)MESH=o;}});
-  corps=new THREE.Group();corps.add(m);scene.add(corps);P=creerPoses(THREE,corps,m,gl.animations,scene,metal);ok();}));
+  corps=new THREE.Group();corps.add(m);scene.add(corps);P=creerPoses(THREE,corps,m,gl.animations,scene,metal);ok();});});
 // plans de caméra (cadrés sur le corps), transitions douces entre scènes
 const box=new THREE.Box3(),ctr=new THREE.Vector3(),siz=new THREE.Vector3();
 // cadrage calculé une seule fois par scène (pose de départ) : la caméra ne suit pas les mouvements du corps, c'est le mannequin qui bouge
@@ -170,8 +179,24 @@ charger().then(()=>{window.render=RENDER;RENDER(0);});
 </script></body></html>"""
 
 
+MIXAMO = os.path.join(DOSSIER, "assets", "humains", "mixamo")
+MUSCLES_MX = {"avant-bras": ["LeftForeArm", "RightForeArm", "LeftHand", "RightHand"], "bras": ["LeftArm", "RightArm"],
+              "epaules": ["LeftShoulder", "RightShoulder"], "pectoraux": ["Spine2"], "abdos": ["Spine", "Spine1"],
+              "cuisses": ["LeftUpLeg", "RightUpLeg"], "mollets": ["LeftLeg", "RightLeg"], "fessiers": ["Hips"]}
+
+
 def poses_js():
-    return open(os.path.join(DOSSIER, "anatomie3d_poses.js"), encoding="utf-8").read()
+    return open(os.path.join(DOSSIER, "anatomie3d_poses.js"), encoding="utf-8").read() + "\n" + \
+        open(os.path.join(DOSSIER, "anatomie3d_mixamo.js"), encoding="utf-8").read()
+
+
+def mixamo(spec):
+    """Y Bot + les animations utilisées par le reel (fichiers de tools/assets/humains/mixamo, voir LICENCE-mixamo.txt)."""
+    if spec.get("mannequin") != "ybot":
+        return None
+    lit = lambda n: base64.b64encode(open(os.path.join(MIXAMO, n + ".fbx"), "rb").read()).decode()
+    cles = {("pompes" if s.get("exercice") == "pompes_diamant" else s.get("exercice")) for s in spec["scenes"]}
+    return {"modele": lit("ybot"), "clips": {k: lit(k) for k in sorted(cles) if k and os.path.exists(os.path.join(MIXAMO, k + ".fbx"))}}
 
 
 def page(spec, theme, starts, durs, caps, total):
@@ -187,6 +212,7 @@ def page(spec, theme, starts, durs, caps, total):
                      + (f"<div class='rc' id='rc{k}'><i>REP</i><b id='rn{k}'>1</b></div>" if s.get("compteur") else "") for k, s in enumerate(sc))
     fort = lambda w: any(ch.isdigit() for ch in w) or w.lower().strip(".,!?") in {"jours", "days", "secondes", "minutes", "semaines"}
     mots = [[w.strip(",.;:"), round(tt, 3), fort(w)] for cc, _ in caps for w, tt in cc] if spec.get("sous_titres") == "mot" else None
+    mx = mixamo(spec)
     cap_html = "".join(f"<div class='cap' data-a='{cc[0][1]:.3f}' data-b='{cn:.3f}'>" + "".join(
         f"<span class='w{' h' if fort(w) else ''}' data-w='{tt:.3f}'>{H.escape(w)}</span>" for w, tt in cc) + "</div>" for cc, cn in caps)
     R = {"__FONTS__": K._font_faces(["Anton", "Archivo Black", "Inter"]), "__FOND__": col["fond"], "__ACC__": col["acc"], "__JAUNE__": col["jaune"],
@@ -194,7 +220,7 @@ def page(spec, theme, starts, durs, caps, total):
          "__CAPS__": cap_html, "__BANDS__": bands, "__QUESTIONS__": qs, "__FINS__": fins, "__POSES__": poses_js(),
          "__IMPORTMAP__": S3.import_map(), "__GLB__": base64.b64encode(open(MANNEQUIN, "rb").read()).decode(),
          "__D__": str(total), "__SC__": json.dumps(S, ensure_ascii=False), "__COL__": json.dumps(col), "__SERIE__": json.dumps(spec.get("serie")),
-         "__MUSCLES__": json.dumps(MUSCLES), "__BADGES__": badges, "__MOTS__": json.dumps(mots, ensure_ascii=False),
+         "__MUSCLES__": json.dumps(MUSCLES_MX if mx else MUSCLES), "__MX__": json.dumps(mx), "__BADGES__": badges, "__MOTS__": json.dumps(mots, ensure_ascii=False),
          "__MODE__": "motmode" if mots else ""}
     out = TPL
     for kk, v in R.items():

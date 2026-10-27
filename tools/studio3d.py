@@ -371,8 +371,8 @@ def import_map():
     for d in sorted(os.listdir(jsm)):
         for f in sorted(os.listdir(os.path.join(jsm, d))):
             txt = open(os.path.join(jsm, d, f), encoding="utf-8").read()
-            txt = re.sub(r"from '\./([\w]+\.js)'", lambda x: f"from 'three/addons/{d}/{x.group(1)}'", txt)
-            txt = re.sub(r"from '\.\./(\w+)/([\w]+\.js)'", lambda x: f"from 'three/addons/{x.group(1)}/{x.group(2)}'", txt)
+            txt = re.sub(r"from '\./([\w.]+\.js)'", lambda x: f"from 'three/addons/{d}/{x.group(1)}'", txt)
+            txt = re.sub(r"from '\.\./(\w+)/([\w.]+\.js)'", lambda x: f"from 'three/addons/{x.group(1)}/{x.group(2)}'", txt)
             m[f"three/addons/{d}/{f}"] = url(txt)
     return json.dumps({"imports": m})
 

@@ -1,0 +1,14 @@
+Personnage « Y Bot » et animations Mixamo (Adobe), téléchargés le 27/10/2026 depuis le compte Adobe de Goat.
+Licence Mixamo : usage gratuit, sans redevance, commercial ou non (vidéos Instagram OK) ; interdit de revendre ou redistribuer les fichiers bruts seuls.
+FAQ : https://community.adobe.com/questions-696/mixamo-faq-licensing-royalties-ownership-eula-and-tos-589400
+
+Fichiers (FBX binaire, 30 i/s, sans réduction d'images clés, « In Place » quand l'animation le permet) :
+- ybot.fbx          : Y Bot avec maillage + animation « Idle » (Standing Idle)
+- pompes.fbx        : « Push Up » (Basic Push Up), sans maillage
+- gainage.fbx       : « Plank » (Plank Position)
+- squat.fbx         : « Air Squat » (Air Squat Workout)
+- burpee.fbx        : « Burpee » (Burpee Workout)
+- jumping_jacks.fbx : « Jumping Jacks » (Standard Jumping Jacks)
+- abdos.fbx         : « Situps »
+- crunch_velo.fbx   : « Bicycle Crunch » (Crunch Position With Cycling Legs)
+Absents de Mixamo : pompes diamant (à faire en resserrant les mains sur « Push Up »), tractions (garder le mannequin Quaternius).
