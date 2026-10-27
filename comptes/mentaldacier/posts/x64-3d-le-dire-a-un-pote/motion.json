@@ -27,7 +27,7 @@
    "bandeau": "Un seul pote.",
    "humeur": "normal",
    "lumiere": "nuit",
-   "vo": "Dis ton objectif à un seul pote, pas au monde entier. Ça change tout."
+   "vo": "Annoncer ton objectif à tout le monde ? Mauvaise idée. Dis-le à un seul pote."
   },
   {
    "type": "ecran",
@@ -43,7 +43,7 @@
      "Un objectif précis"
     ]
    },
-   "vo": "Choisis un pote de confiance, et fais un point par semaine avec lui. Enregistre cette vidéo, et envoie-la-lui pour lancer le truc. Pas de public, juste un témoin."
+   "vo": "Choisis quelqu'un de confiance et faites un point chaque semaine. Enregistre ça, et envoie-lui cette vidéo pour lancer le truc."
   },
   {
    "type": "mascotte",
@@ -51,7 +51,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "ENGAGÉ",
-   "vo": "Annoncer ses objectifs à tout le monde, c'est se faire plaisir sans avancer. D'accord ou pas ? Un seul témoin suffit."
+   "vo": "Parce qu'un témoin qui te demande où t'en es, c'est plus dur à esquiver que des likes. D'accord ou pas : un seul témoin suffit ? Écris oui ou non."
   },
   {
    "type": "mascotte",
@@ -60,9 +60,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

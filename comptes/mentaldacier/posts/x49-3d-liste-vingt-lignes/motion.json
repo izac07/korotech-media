@@ -27,7 +27,7 @@
    "bandeau": "20 lignes. 0 fait.",
    "humeur": "telephone",
    "lumiere": "nuit",
-   "vo": "Ta liste fait vingt lignes. Tu en fais zéro. Ce n'est pas un manque de volonté."
+   "vo": "Ta liste fait vingt lignes et t'en coches zéro. Normal : elle est trop longue."
   },
   {
    "type": "ecran",
@@ -43,7 +43,7 @@
      "5 petites"
     ]
    },
-   "vo": "Méthode un, trois, cinq : une grosse tâche, trois moyennes, cinq petites. Pas une de plus. Enregistre, et fais-le dès ce soir pour demain."
+   "vo": "Du coup, garde un, trois, cinq : une grosse tâche, trois moyennes, cinq petites, pas une de plus. Enregistre ça et prépare la liste de demain ce soir."
   },
   {
    "type": "mascotte",
@@ -51,7 +51,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "CHOISI",
-   "vo": "C'est quoi ta grosse tâche de demain ? Écris-la en commentaire. Une seule, la plus importante, pas dix. Le reste attendra, il a l'habitude."
+   "vo": "Avec neuf lignes, tu vois enfin le bout, donc tu t'y mets. Alors, c'est quoi ta grosse tâche de demain ?"
   },
   {
    "type": "mascotte",
@@ -60,9 +60,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

@@ -24,10 +24,10 @@
  "scenes": [
   {
    "type": "large",
-   "bandeau": "Pas un manque de volonté.",
+   "bandeau": "Pas la volonté.",
    "humeur": "normal",
    "lumiere": "nuit",
-   "vo": "Tu n'as pas un problème de volonté. Tu as un problème de plan."
+   "vo": "Ton problème, c'est pas la volonté. C'est que tu décides tout au dernier moment."
   },
   {
    "type": "ecran",
@@ -43,7 +43,7 @@
      "Envie : verre d'eau"
     ]
    },
-   "vo": "Écris tes règles sous la forme : si ceci, alors cela. Enregistre cette vidéo. Ton cerveau n'a plus à décider, il exécute. C'est un plan, pas de la chance."
+   "vo": "Du coup, écris tes règles en « si… alors… » : si c'est vingt-deux heures, alors le téléphone sort. Enregistre ça pour tes soirées."
   },
   {
    "type": "mascotte",
@@ -51,7 +51,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "ÉCRIT",
-   "vo": "Écris ta règle « si… alors… » en commentaire. Une phrase, et tu as déjà un plan. Décider une fois, c'est de la discipline."
+   "vo": "Quand la décision est déjà prise, t'as plus à négocier avec toi-même, tu suis. Alors, écris ta règle « si… alors… » en commentaire."
   },
   {
    "type": "mascotte",
@@ -60,9 +60,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

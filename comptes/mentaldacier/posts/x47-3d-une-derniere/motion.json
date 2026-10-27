@@ -24,10 +24,10 @@
  "scenes": [
   {
    "type": "large",
-   "bandeau": "« Une dernière. »",
+   "bandeau": "« Une dernière. » Spoiler.",
    "humeur": "telephone",
    "lumiere": "nuit",
-   "vo": "Tu as dit « une dernière » il y a deux heures. Elle n'était pas la dernière."
+   "vo": "Tu as dit « une dernière » il y a deux heures. Spoiler : c'était pas la dernière."
   },
   {
    "type": "ecran",
@@ -40,7 +40,7 @@
     "secondes": 600,
     "sous": "dix minutes, puis stop"
    },
-   "vo": "Règle simple : mets un minuteur de dix minutes avant de commencer. Quand il sonne, tu poses tout. Enregistre cette vidéo, ton moi de demain matin te dira merci."
+   "vo": "Le truc, c'est qu'en plein scroll, tu ne décides jamais d'arrêter. Alors décide avant : minuteur de dix minutes, et quand il sonne, tu poses. Enregistre ça pour ce soir."
   },
   {
    "type": "mascotte",
@@ -48,7 +48,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "FAIT",
-   "vo": "Team stop au minuteur, ou team encore une ? Commente un ou deux. Le minuteur ne juge pas, il sonne, c'est tout."
+   "vo": "Le minuteur ne négocie pas, lui, et c'est exactement ce qu'il te faut. Alors, team stop au minuteur ou team encore une ? Commente un ou deux."
   },
   {
    "type": "mascotte",
@@ -57,9 +57,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

@@ -125,6 +125,19 @@ Pourquoi elle a changé : courbe de rétention de MDA-X13 (1 003 vues, 11 enregi
 5. **Fin : le mot-clé** (« Commente <mot> pour recevoir <offre> »), voir ci-dessous. Ne pas redemander d'enregistrer à la fin : la dernière scène est réservée au mot-clé.
 Viser **70-90 mots au total (~25-30 s)** : la fin retient peu de monde, mieux vaut 2-3 conseils forts que 5. Dialogue toi ↔ Claude : la question en scène 0, la réponse commence en scène 1 et « enregistre » vient en scène 1 ou 2.
 
+## Écriture parlée et fluide (Mental d'Acier depuis le 27/10/2026, règles travaillées avec Gemini, validées par Goat)
+Pourquoi : Goat a regardé les reels X20-X43 : « l'enchaînement des phrases n'est pas fluide ». Les scripts empilaient des phrases-chocs sans lien (« Commence plus petit que tu crois. Prévois une version minimum… La régularité bat l'intensité. ») : ça sonne récité, pas parlé.
+1. **Cause → conséquence → solution**, et chaque phrase s'accroche à la précédente par un lien oral (« parce que », « alors », « du coup », « comme ça », « le truc, c'est que »). Test : si on enlève une phrase, la suivante ne veut plus rien dire.
+2. **Parler de ce que vit le spectateur**, pas de vérités générales : pas « L'organisation excessive bloque l'action », mais « Ton cerveau adore s'organiser, parce que ça a l'air de bosser sans rien risquer ».
+3. **Le punch reste dans les 6 premiers mots** (image drôle ou piquante : « Ton chargeur dort mieux que toi », « Tu cours un marathon en claquettes »), puis la phrase enchaîne sans coupure sur la cause ou le conseil.
+4. **« Enregistre ça » + à quoi ça sert, à la fin du conseil** : « Enregistre ça pour tes mauvais jours », « …avant ton prochain coup de flemme ». Jamais seul, jamais au milieu d'une idée.
+5. **Le bloc 3 explique pourquoi ça marche avec du bon sens** (« Éloigner la tentation, c'est plus simple que compter sur ta volonté quand t'es crevé »), **zéro pseudo-science** (« recâbler le cerveau », dopamine, hormones).
+6. **La question d'interaction vient en dernier, juste avant le mot-clé**, comme une relance de conversation : « Et toi, honnêtement… », « Dis-moi… ». Une seule question, pas de morale après.
+7. Une seule phrase-choc par reel, au plus. Plus de citations empilées.
+Gabarit (70-90 mots) : scène 0 = punch + cause (≤ 18 mots) · scène 1 = conseil concret + « Enregistre ça pour… » · scène 2 = pourquoi ça marche + question · scène 3 = mot-clé.
+Exemple validé : « Ton lit t'a encore eu ce matin ? Tu relances le réveil trois fois et tu émerges en retard. / Pose ton réveil de l'autre côté de la pièce et prépare tes fringues la veille. Ça t'oblige à te lever direct sans réfléchir. Enregistre ça pour casser la mauvaise habitude. / En supprimant la réflexion au réveil, tu évites le débat qui te renvoie sous la couette. Tu relances le réveil combien de fois, d'habitude ? »
+Gemini refuse les sujets à double sens (« la BR ») : il a servi à fixer ces règles, c'est Claude qui écrit les scripts.
+
 ## Dire « Claude », pas « l'IA » (tous les comptes, décision de Goat du 24/10/2026)
 Quand la voix parle de l'assistant qu'on utilise, elle dit **« Claude »** : « mets ton cours dans Claude », « demande à Claude », « Claude te fait les fiches ». Jamais « l'IA », « une IA », « l'intelligence artificielle » dans ce sens. Même chose à l'écran (titres, interrupteurs « Toi → Claude », chat). Seule exception : une comparaison de plusieurs outils (« 3 IA gratuites ») où « IA » désigne une catégorie ; on écrit alors le nom de chaque outil. `tools/verifie.py` met une ERREUR si une `vo` contient « l'IA » ou « l'intelligence artificielle », une ATTENTION pour « une IA ». Attention aux exemples de Claude : ne lui prêter que ce qu'il sait vraiment faire (aucune fonction inventée).
 

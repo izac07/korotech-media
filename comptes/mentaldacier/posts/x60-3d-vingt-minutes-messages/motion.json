@@ -27,7 +27,7 @@
    "bandeau": "Vingt minutes d'abord.",
    "humeur": "telephone",
    "lumiere": "nuit",
-   "vo": "Tes messages attendront vingt minutes. Ta tâche importante, elle, n'attend pas."
+   "vo": "Tes messages peuvent attendre vingt minutes. Ta tâche importante, elle, non."
   },
   {
    "type": "ecran",
@@ -40,7 +40,7 @@
     "secondes": 1200,
     "sous": "messages après le minuteur"
    },
-   "vo": "Avant d'ouvrir un seul message, fais vingt minutes sur ta tâche importante. Enregistre cette vidéo. Ensuite seulement, tu réponds à tout le monde. Personne n'est mort d'attendre."
+   "vo": "Du coup, le matin, avant d'ouvrir un seul message, tu fais vingt minutes sur ta tâche importante. Enregistre ça pour demain matin."
   },
   {
    "type": "mascotte",
@@ -48,7 +48,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "FAIT",
-   "vo": "Tu ouvres d'abord les messages ou ta tâche ? Commente un pour messages, deux pour tâche. Les messages ne s'envolent pas. Ta concentration, si."
+   "vo": "Parce qu'une fois dans les messages, ta matinée appartient aux autres. Dis-moi, tu ouvres d'abord les messages ou ta tâche ? Commente un ou deux."
   },
   {
    "type": "mascotte",
@@ -57,9 +57,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

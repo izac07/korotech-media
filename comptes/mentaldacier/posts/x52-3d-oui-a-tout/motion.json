@@ -27,7 +27,7 @@
    "bandeau": "Oui. Oui. Oui.",
    "humeur": "normal",
    "lumiere": "nuit",
-   "vo": "Tu dis oui à tout le monde, sauf à toi. Et ta journée disparaît."
+   "vo": "Tu dis oui à tout le monde sauf à toi, et ta journée disparaît."
   },
   {
    "type": "ecran",
@@ -43,7 +43,7 @@
      "« Plus tard »"
     ]
    },
-   "vo": "Dis non à une seule chose par jour. Une distraction, une demande de trop. Enregistre, et commence par la plus facile. Ça se pratique, comme un muscle."
+   "vo": "Alors entraîne-toi à dire non à une seule chose par jour, en commençant par la plus facile. Enregistre ça pour la prochaine demande de trop."
   },
   {
    "type": "mascotte",
@@ -51,7 +51,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "NON",
-   "vo": "À quoi tu dis non demain ? Écris-le en commentaire. Un petit non protège un gros oui. Ton temps a de la valeur."
+   "vo": "Parce que chaque petit non, c'est du temps que tu rends à ce qui compte vraiment pour toi. Dis-moi, à quoi tu dis non demain ?"
   },
   {
    "type": "mascotte",
@@ -60,9 +60,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

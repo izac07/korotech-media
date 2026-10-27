@@ -37,14 +37,14 @@ Fiche lue par les skills (createur-reel, legende-instagram, usine-contenu…) av
 - **Ressource :** « Le plan 7 jours pour arrêter de repousser » (PDF gratuit) : https://izac07.github.io/korotech-media/ressources/mentaldacier/plan-7-jours-arreter-de-repousser.pdf
 - Envoyée **en DM** par Goat (message prêt dans `ressources/messages-dm.md`). **Jamais le lien dans la légende.**
 
-## Structure obligatoire de chaque reel (voix)
-1. **Accroche** (une phrase qui arrête le pouce).
-2. **Tout de suite le 1er conseil** (pas de « voici 3 règles ») ; scène 0 = 18 mots max, changement de plan vers 3 s.
-3. **Puis, en scène 1 ou 2 : « Enregistre cette vidéo »** dans une phrase courte qui relance. Jamais juste après l'accroche : sur X13, 75 % des gens étaient là à 3 s et 30 % à 6 s, pile pendant ce « Enregistre ».
-4. **Les autres conseils** (une idée nouvelle par phrase, le meilleur en dernier), avec **un déclencheur d'interaction au milieu**, écrit à l'écran et dit par la voix (« Team snooze ou team debout ? Commente 1 ou 2. », « Identifie le pote qui fait ça 😂 » ; voir tools/MOTION.md « Déclencheur d'interaction »). Total 70-90 mots, ~25-30 s.
-5. **Fin : « Commente plan pour recevoir le plan 7 jours gratuit. »** (écran + voix)
+## Structure obligatoire de chaque reel (voix) — revue le 27/10/2026
+**Écrire parlé et fluide** : règles complètes dans tools/MOTION.md « Écriture parlée et fluide » (Goat trouvait X20-X43 « pas fluides » : phrases-chocs empilées).
+1. **Scène 0 : punch dans les 6 premiers mots** (image drôle ou à double sens), **puis la cause** dans la même respiration (« Ton lit t'a encore eu ce matin ? Tu relances le réveil trois fois et tu émerges en retard. ») ; 18 mots max, changement de plan vers 3 s. Jamais « Enregistre » ici (X13 : 30 % de rétention à 6 s pendant ce mot).
+2. **Scène 1 : le conseil concret, relié par « du coup / alors »**, qui finit par **« Enregistre ça pour… »** + son utilité (« …pour tes mauvais jours »).
+3. **Scène 2 : pourquoi ça marche, avec du bon sens** (zéro pseudo-science), **puis la question d'interaction en dernier** (« Et toi, honnêtement, ton record de snooze ? »), écrite à l'écran aussi. Pas de morale après la question.
+4. **Scène 3 : le mot-clé qui dit ce qu'on reçoit** : « Commente plan pour recevoir mon plan de 7 jours pour arrêter de repousser. » (écran + voix ; offre dans ressources/mots-cles.json). Les phrases s'enchaînent avec des liens oraux, 70-90 mots, ~25-30 s.
 
-Légende : accroche (le double sens peut y rester), bénéfice, « 🔖 Enregistre… », puis « 💬 Commente PLAN et je t'envoie le plan 7 jours gratuit en DM. », et 5 hashtags max (#mentaldacier #discipline #routinedusoir #selfcontrol #procrastination…).
+Légende : accroche (le double sens peut y rester), bénéfice, « 🔖 Enregistre… », puis « 💬 Commente PLAN et je t'envoie mon plan de 7 jours pour arrêter de repousser (gratuit) en DM. », et 5 hashtags max (#mentaldacier #discipline #routinedusoir #selfcontrol #procrastination…).
 
 ## Formats
 - **Format principal depuis le 25/10/2026 : studio3d « chambre sombre »** (layout `studio3d`, décor `chambre_mda`, personnage humain gris, lumière nuit → aube, habillage noir / blanc / or, voix Brian). 70-90 mots, 4-5 scènes, ~25-30 s (X13 et X14 suivent encore l'ancienne structure : copier leurs couleurs et décors, pas leur scène 0). Exemples complets : `posts/x13-3d-22h/motion.json` (~900 vues) et `posts/x14-3d-jour1-sans-br/motion.json`. Rendu sur le PC de Goat (carte graphique) : la routine cloud l'écrit et le liste dans `a-rendre/MDA-<date>.json`.

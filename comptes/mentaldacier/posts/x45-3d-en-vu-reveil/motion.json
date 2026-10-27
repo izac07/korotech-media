@@ -27,7 +27,7 @@
    "bandeau": "En vu. Encore.",
    "humeur": "dort",
    "lumiere": "nuit",
-   "vo": "Elle t'a laissé en vu. Ton réveil aussi. Cinq minutes de plus, dit le snooze."
+   "vo": "Elle t'a laissé en vu. Ton réveil aussi, et toi, tu appuies sur snooze."
   },
   {
    "type": "ecran",
@@ -43,7 +43,7 @@
      "Lit fait"
     ]
    },
-   "vo": "Le snooze te prend dix minutes et t'en fait perdre une heure. Règle : pieds au sol, verre d'eau, lit fait. Enregistre, et essaie dès demain."
+   "vo": "Le souci, c'est que chaque snooze rouvre le débat avec ta couette. Alors dès que ça sonne : pieds au sol, verre d'eau, lit fait. Enregistre ça pour demain matin."
   },
   {
    "type": "mascotte",
@@ -51,7 +51,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "FAIT",
-   "vo": "Combien de fois tu repousses ton réveil, en vrai ? Écris ton score en commentaire. Pas de jugement, juste un point de départ."
+   "vo": "Une fois debout, il n'y a plus rien à négocier : la couette a perdu. Alors avoue, ton record de snooze, c'est combien ?"
   },
   {
    "type": "mascotte",
@@ -60,9 +60,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

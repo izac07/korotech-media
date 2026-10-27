@@ -27,7 +27,7 @@
    "bandeau": "Au lit, plutôt ça.",
    "humeur": "telephone",
    "lumiere": "nuit",
-   "vo": "Au lit, il y a mieux que ton écran. Cinq minutes, un carnet, trois lignes."
+   "vo": "Au lit, ton écran te remplit la tête au lieu de la vider. Essaie plutôt trois lignes."
   },
   {
    "type": "ecran",
@@ -43,7 +43,7 @@
      "Ma tâche de demain"
     ]
    },
-   "vo": "Écris ce qui a marché, ce qui a coincé, et ta tâche de demain. Enregistre cette vidéo, c'est le journal de cinq minutes. Ça vide la tête avant de dormir."
+   "vo": "Prends un carnet et écris ce qui a marché, ce qui a coincé, et ta tâche de demain. Enregistre ça pour ce soir, ça prend cinq minutes."
   },
   {
    "type": "mascotte",
@@ -51,7 +51,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "NOTÉ",
-   "vo": "Quelle est ta ligne de ce soir ? Écris la première en commentaire. Une phrase suffit."
+   "vo": "Une fois que c'est sur le papier, t'as plus besoin de le ruminer sous la couette. Allez, écris ta première ligne de ce soir en commentaire."
   },
   {
    "type": "mascotte",
@@ -60,9 +60,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

@@ -27,7 +27,7 @@
    "bandeau": "Ce week-end, promis.",
    "humeur": "fatigue",
    "lumiere": "nuit",
-   "vo": "« Ce week-end, je m'y mets. » Tu l'as dit trois fois ce mois-ci. Rien n'a changé."
+   "vo": "« Ce week-end, je m'y mets. » Tu l'as dit trois fois ce mois-ci."
   },
   {
    "type": "ecran",
@@ -43,7 +43,7 @@
      "Un lieu précis"
     ]
    },
-   "vo": "Un projet sans jour ni heure ne se fait pas. Écris le jour, l'heure et le lieu. Enregistre cette vidéo, et mets-le dans ton agenda maintenant."
+   "vo": "Le problème, c'est qu'un projet sans jour ni heure ne se fait jamais. Alors écris le jour, l'heure et le lieu. Enregistre ça et mets-le dans ton agenda maintenant."
   },
   {
    "type": "mascotte",
@@ -51,7 +51,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "NOTÉ",
-   "vo": "Quel est ton créneau ? Écris jour et heure en commentaire. Une date précise, c'est déjà moitié fait."
+   "vo": "Avec un créneau précis, t'as plus à te demander quand, t'as juste à y aller. Alors, c'est quoi ton créneau ? Écris le jour et l'heure."
   },
   {
    "type": "mascotte",
@@ -60,9 +60,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

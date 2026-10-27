@@ -24,10 +24,10 @@
  "scenes": [
   {
    "type": "large",
-   "bandeau": "Tu as tout lâché.",
+   "bandeau": "Tu as tout lâché ?",
    "humeur": "fatigue",
    "lumiere": "nuit",
-   "vo": "Cinq jours sans rien faire. Normal. Voilà comment on reprend sans repartir de zéro."
+   "vo": "Cinq jours sans rien faire ? Normal, et tu n'as pas besoin de repartir de zéro."
   },
   {
    "type": "ecran",
@@ -43,7 +43,7 @@
      "Aujourd'hui seulement"
     ]
    },
-   "vo": "Reprends avec la version ridicule : une tâche, dix minutes, aujourd'hui seulement. Enregistre-la, le jour où tu auras envie de tout abandonner."
+   "vo": "Reprends juste avec la version ridicule : une tâche, dix minutes, aujourd'hui seulement. Enregistre ça pour le jour où t'auras envie de tout lâcher."
   },
   {
    "type": "mascotte",
@@ -51,7 +51,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "REPRIS",
-   "vo": "C'est quoi, ta version ridicule de la reprise ? Écris-la en commentaire. Dix minutes, et tu es déjà reparti. Pas de honte, juste un départ."
+   "vo": "Parce que ce qui bloque la reprise, c'est la montagne que tu imagines, pas les dix minutes. Alors dis-moi, c'est quoi ta version ridicule pour reprendre ?"
   },
   {
    "type": "mascotte",
@@ -60,9 +60,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

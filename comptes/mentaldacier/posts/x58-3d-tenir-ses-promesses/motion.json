@@ -27,7 +27,7 @@
    "bandeau": "Et à toi ?",
    "humeur": "normal",
    "lumiere": "nuit",
-   "vo": "Tu tiens tes promesses aux autres. Et à toi ? Réponds sincèrement."
+   "vo": "Tu tiens tes promesses aux autres. Et celles que tu te fais à toi ?"
   },
   {
    "type": "ecran",
@@ -43,7 +43,7 @@
      "Tenue aujourd'hui"
     ]
    },
-   "vo": "Fais une promesse minuscule à toi-même chaque jour, et tiens-la. Enregistre cette vidéo. C'est comme ça qu'on se refait confiance, une promesse à la fois."
+   "vo": "Alors commence petit : une promesse minuscule et précise, tenue aujourd'hui, comme dix pompes avant la douche. Enregistre ça pour ce soir."
   },
   {
    "type": "mascotte",
@@ -51,7 +51,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "TENU",
-   "vo": "Se respecter, c'est tenir ses promesses même quand personne ne regarde. D'accord ou pas ? Écris oui ou non. Et le premier qui te croira, ce sera toi."
+   "vo": "Chaque promesse tenue, même minuscule, te prouve que ta parole vaut quelque chose. D'accord ou pas : se respecter, c'est tenir parole même seul ? Écris oui ou non."
   },
   {
    "type": "mascotte",
@@ -60,9 +60,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

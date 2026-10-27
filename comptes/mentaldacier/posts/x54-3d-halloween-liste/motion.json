@@ -27,7 +27,7 @@
    "bandeau": "Plus flippant qu'un film.",
    "humeur": "telephone",
    "lumiere": "nuit",
-   "vo": "Ce qui fait vraiment peur, c'est pas un film d'horreur. C'est ta liste de tâches."
+   "vo": "Le vrai film d'horreur d'Halloween ? Ta liste de tâches, pas Netflix."
   },
   {
    "type": "ecran",
@@ -43,7 +43,7 @@
      "Rien d'autre"
     ]
    },
-   "vo": "Pour la dompter, écris seulement la prochaine action physique : ouvrir le fichier, écrire une phrase. Enregistre. Une action, pas un monstre."
+   "vo": "Elle fait peur parce qu'elle est floue. Alors écris juste la prochaine action physique : ouvrir le fichier, écrire une phrase. Enregistre ça pour ta prochaine panique."
   },
   {
    "type": "mascotte",
@@ -51,7 +51,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "FAIT",
-   "vo": "Team film d'horreur ou team tâches à finir ? Commente un ou deux. Les deux font peur, un seul se règle. Même les monstres commencent petit."
+   "vo": "Une action précise, ça ne fait plus peur à personne, même à toi. Alors, team film d'horreur ou team tâches à finir ? Commente un ou deux."
   },
   {
    "type": "mascotte",
@@ -60,9 +60,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

@@ -27,7 +27,7 @@
    "bandeau": "Arrêter d'un coup ?",
    "humeur": "fatigue",
    "lumiere": "nuit",
-   "vo": "Arrêter d'un coup, ça ne marche jamais. Ton cerveau déteste le vide, alors donne-lui autre chose."
+   "vo": "Arrêter de scroller d'un coup ne marche jamais : tu laisses un trou."
   },
   {
    "type": "ecran",
@@ -43,7 +43,7 @@
      "Trois lignes écrites"
     ]
    },
-   "vo": "Remplace, ne supprime pas. Au lieu de scroller, dix pompes, un verre d'eau ou trois lignes écrites. Enregistre, et choisis ton remplaçant maintenant."
+   "vo": "Du coup, remplace au lieu de supprimer : dix pompes, un verre d'eau ou trois lignes écrites. Enregistre ça et choisis ton remplaçant maintenant."
   },
   {
    "type": "mascotte",
@@ -51,7 +51,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "CHOISI",
-   "vo": "C'est quoi ton remplaçant à toi ? Écris-le en commentaire. Il doit tenir en moins de deux minutes. Sinon, il est trop gros."
+   "vo": "Quand l'envie arrive, t'as déjà quelque chose à faire, donc tu n'as plus à résister. Alors, c'est quoi ton remplaçant à toi ?"
   },
   {
    "type": "mascotte",
@@ -60,9 +60,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

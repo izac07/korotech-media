@@ -27,7 +27,7 @@
    "bandeau": "Moutons ou notifs ?",
    "humeur": "telephone",
    "lumiere": "nuit",
-   "vo": "Tu comptes les moutons ou les notifications ? Ton téléphone vibre, ton sommeil attend."
+   "vo": "Tu comptes les moutons ou les notifications ? Parce que ton téléphone, lui, vibre encore."
   },
   {
    "type": "ecran",
@@ -43,7 +43,7 @@
      "Réveil à l'ancienne"
     ]
    },
-   "vo": "Active le mode ne pas déranger dès vingt-deux heures, charge le téléphone loin du lit. Enregistre cette vidéo. Ton réveil, lui, ne dépend pas d'internet."
+   "vo": "Du coup, dès vingt-deux heures, mode ne pas déranger, et le chargeur loin du lit. Enregistre ça pour ce soir."
   },
   {
    "type": "mascotte",
@@ -51,7 +51,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "FAIT",
-   "vo": "Team moutons ou team notifications ? Commente un ou deux. Dis la vérité, on ne dira rien. Promis, ça reste entre nous."
+   "vo": "Sans vibration à côté de toi, il n'y a plus rien pour te tirer de ta nuit. Alors avoue : team moutons ou team notifications ? Commente un ou deux."
   },
   {
    "type": "mascotte",
@@ -60,9 +60,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

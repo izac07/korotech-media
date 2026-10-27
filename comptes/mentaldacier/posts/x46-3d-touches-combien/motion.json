@@ -24,10 +24,10 @@
  "scenes": [
   {
    "type": "large",
-   "bandeau": "Tu le touches combien ?",
+   "bandeau": "Ton pouce décide",
    "humeur": "telephone",
    "lumiere": "nuit",
-   "vo": "Tu le touches combien de fois par jour ? Pas besoin de répondre, ton pouce le sait."
+   "vo": "Ton pouce l'attrape sans même te demander ton avis. Le coupable : tout ce qui clignote."
   },
   {
    "type": "ecran",
@@ -43,7 +43,7 @@
      "Écran d'accueil vide"
     ]
    },
-   "vo": "Trois réglages qui te rendent du temps : coupe les notifications, passe l'écran en noir et blanc, vide ton écran d'accueil. Enregistre, ça prend cinq minutes."
+   "vo": "Du coup, rends-le ennuyeux : notifications coupées, écran en noir et blanc, écran d'accueil vide. Enregistre ça, les trois réglages prennent cinq minutes."
   },
   {
    "type": "mascotte",
@@ -51,7 +51,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "FAIT",
-   "vo": "Identifie le pote qui regarde son téléphone toutes les trois minutes. Il te remerciera. Peut-être. Pas tout de suite."
+   "vo": "Un téléphone gris et silencieux, ça donne beaucoup moins envie de le vérifier. Et identifie le pote qui regarde le sien toutes les trois minutes."
   },
   {
    "type": "mascotte",
@@ -60,9 +60,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

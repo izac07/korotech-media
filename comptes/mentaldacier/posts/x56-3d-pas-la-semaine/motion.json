@@ -27,7 +27,7 @@
    "bandeau": "Un jour raté.",
    "humeur": "fatigue",
    "lumiere": "nuit",
-   "vo": "Tu as raté un jour. Pas la semaine. Ton cerveau veut te faire croire l'inverse."
+   "vo": "Tu as raté un jour. Pas la semaine, même si ta tête te dit l'inverse."
   },
   {
    "type": "ecran",
@@ -39,7 +39,7 @@
     "jours": 7,
     "jusqua": 2
    },
-   "vo": "La règle : jamais deux fois de suite. Un jour raté, ça arrive. Deux, c'est le début d'une habitude. Enregistre cette vidéo pour le prochain jour raté."
+   "vo": "Alors garde une seule règle : jamais deux fois de suite. Un jour raté, ça arrive ; deux, ça devient une habitude. Enregistre ça pour ton prochain jour raté."
   },
   {
    "type": "mascotte",
@@ -47,7 +47,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "REPRIS",
-   "vo": "Raconte ton dernier jour raté en une phrase. Écris-le en commentaire. On en a tous, et on repart. Le jour d'après compte plus que celui d'avant."
+   "vo": "Ce qui compte, c'est pas le jour raté, c'est le jour d'après. Raconte ton dernier jour raté en une phrase, on en a tous un."
   },
   {
    "type": "mascotte",
@@ -56,9 +56,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

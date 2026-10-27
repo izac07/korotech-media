@@ -27,7 +27,7 @@
    "bandeau": "Pause de cinq minutes.",
    "humeur": "telephone",
    "lumiere": "nuit",
-   "vo": "POV : tu fais une pause de cinq minutes. Une heure plus tard, tu es toujours dessus."
+   "vo": "POV : tu fais une pause de cinq minutes. Une heure plus tard, t'es toujours dessus."
   },
   {
    "type": "ecran",
@@ -40,7 +40,7 @@
     "secondes": 300,
     "sous": "ça sonne, tu reprends"
    },
-   "vo": "Une pause sans fin n'est pas une pause. Mets un minuteur de cinq minutes. Enregistre cette vidéo, et lève-toi pendant la pause, pas pour scroller."
+   "vo": "Le problème, c'est une pause sans fin. Alors mets un minuteur de cinq minutes et lève-toi, pas pour scroller. Enregistre ça pour ta prochaine pause."
   },
   {
    "type": "mascotte",
@@ -48,7 +48,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "FAIT",
-   "vo": "Identifie le pote dont la pause dure une heure. Tu le connais, il se reconnaîtra. Le minuteur ne triche pas."
+   "vo": "Debout et loin de l'écran, la pause se termine toute seule quand ça sonne. Et identifie le pote dont la pause dure une heure."
   },
   {
    "type": "mascotte",
@@ -57,9 +57,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

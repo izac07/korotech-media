@@ -27,7 +27,7 @@
    "bandeau": "Personne ne voit ça.",
    "humeur": "normal",
    "lumiere": "nuit",
-   "vo": "Personne ne voit ce que tu fais quand tu t'y mets. Mais ta confiance, elle, le voit."
+   "vo": "Personne ne voit ce que tu fais quand tu t'y mets. Toi, si, et ça compte."
   },
   {
    "type": "ecran",
@@ -43,7 +43,7 @@
      "Un mail envoyé"
     ]
    },
-   "vo": "Chaque soir, note trois petites victoires. Même minuscules. Enregistre cette vidéo, et regarde la liste après une semaine. Elle est plus longue que tu crois."
+   "vo": "Du coup, chaque soir, note trois petites victoires, même minuscules : lit fait, dix minutes de sport, un mail envoyé. Enregistre ça et relis la liste dans une semaine."
   },
   {
    "type": "mascotte",
@@ -51,7 +51,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "3 / 3",
-   "vo": "C'est quoi ta petite victoire d'aujourd'hui ? Écris-la en commentaire. Les autres ont besoin de l'idée. Et toi, de la fierté."
+   "vo": "Tu verras qu'elle est bien plus longue que ce que ta tête te raconte les mauvais jours. Alors, c'est quoi ta petite victoire d'aujourd'hui ?"
   },
   {
    "type": "mascotte",
@@ -60,9 +60,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

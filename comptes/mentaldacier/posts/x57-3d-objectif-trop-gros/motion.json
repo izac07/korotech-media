@@ -27,7 +27,7 @@
    "bandeau": "Trop gros. Trop vite.",
    "humeur": "telephone",
    "lumiere": "nuit",
-   "vo": "Ton objectif est trop gros. C'est pour ça que tu lâches au bout de trois jours."
+   "vo": "Tu lâches au bout de trois jours ? Normal, ton objectif est beaucoup trop gros."
   },
   {
    "type": "ecran",
@@ -43,7 +43,7 @@
      "Version ridicule"
     ]
    },
-   "vo": "Découpe-le en trois versions : normale, minimum, ridicule. Les jours difficiles, tu fais la ridicule. Enregistre, ça sauve les mauvais jours."
+   "vo": "Du coup, découpe-le en trois versions : normale, minimum et ridicule. Les jours difficiles, tu fais la ridicule. Enregistre ça pour tes mauvais jours."
   },
   {
    "type": "mascotte",
@@ -51,7 +51,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "TENU",
-   "vo": "C'est quoi ta version ridicule ? Écris-la en commentaire. Deux minutes, pas plus. Les gros objectifs se gagnent par petits morceaux. Un petit pas vaut mieux qu'un plan jamais lancé."
+   "vo": "Parce que deux minutes, ça se fait même crevé, et c'est ce qui garde ta série en vie. Alors, c'est quoi ta version ridicule ?"
   },
   {
    "type": "mascotte",
@@ -60,9 +60,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

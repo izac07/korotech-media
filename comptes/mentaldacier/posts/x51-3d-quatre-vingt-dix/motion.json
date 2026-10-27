@@ -27,7 +27,7 @@
    "bandeau": "90 minutes sans lui.",
    "humeur": "telephone",
    "lumiere": "nuit",
-   "vo": "Quatre-vingt-dix minutes sans toucher à lui. Tu tiens ? La plupart des gens craquent à dix."
+   "vo": "Quatre-vingt-dix minutes sans lui. Tu tiens, ou ton pouce part le chercher à dix ?"
   },
   {
    "type": "ecran",
@@ -40,7 +40,7 @@
     "secondes": 900,
     "sous": "téléphone dans l'autre pièce"
    },
-   "vo": "Un bloc de quatre-vingt-dix minutes : une seule tâche, téléphone dans l'autre pièce. Enregistre, et commence par quinze minutes si tu n'y arrives pas."
+   "vo": "Du coup, fais un seul bloc : une tâche, et le téléphone dans l'autre pièce. Si c'est trop, commence par quinze minutes. Enregistre ça pour ta prochaine séance de boulot."
   },
   {
    "type": "mascotte",
@@ -48,7 +48,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "TENU",
-   "vo": "Tu tiens combien de minutes sans ton téléphone ? Écris ton temps en commentaire. On se bat avec le sien. Le perdant paie les cafés."
+   "vo": "Quand il est hors de portée, t'as plus à lutter, tu bosses, c'est tout. Alors sois honnête, tu tiens combien de minutes sans lui ?"
   },
   {
    "type": "mascotte",
@@ -57,9 +57,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

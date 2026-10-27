@@ -27,7 +27,7 @@
    "bandeau": "Jour 1 : le salon.",
    "humeur": "telephone",
    "lumiere": "nuit",
-   "vo": "Jour un : ton téléphone dort dans le salon. Ton cerveau va protester, c'est normal."
+   "vo": "Jour un : ton téléphone dort au salon, et toi, tu fixes le plafond."
   },
   {
    "type": "ecran",
@@ -39,7 +39,7 @@
     "jours": 7,
     "jusqua": 0
    },
-   "vo": "Sept nuits d'affilée, téléphone hors de la chambre. Achète un réveil à quelques euros si besoin. Enregistre cette vidéo, tu en auras besoin vers minuit."
+   "vo": "Normal, la première nuit, ça gratte. Du coup, tiens sept nuits d'affilée, avec un vrai réveil à quelques euros. Enregistre ça pour le moment où tu voudras aller le chercher."
   },
   {
    "type": "mascotte",
@@ -47,7 +47,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "JOUR 1",
-   "vo": "Tu commences quand ? Écris ton jour de départ en commentaire. Dire une date, c'est déjà s'engager. Le canapé, lui, ne dira rien."
+   "vo": "Au bout de quelques nuits, la chambre redevient l'endroit où on dort, point. Alors, tu commences quand ? Écris ton jour de départ."
   },
   {
    "type": "mascotte",
@@ -56,9 +56,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

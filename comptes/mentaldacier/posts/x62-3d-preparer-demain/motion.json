@@ -27,7 +27,7 @@
    "bandeau": "Dix minutes ce soir.",
    "humeur": "fatigue",
    "lumiere": "nuit",
-   "vo": "Ce que tu prépares ce soir, tu n'as plus à le décider demain matin."
+   "vo": "Ton matin se joue la veille. Ce que tu prépares ce soir, t'as plus à le décider."
   },
   {
    "type": "ecran",
@@ -43,7 +43,7 @@
      "Première tâche écrite"
     ]
    },
-   "vo": "Dix minutes ce soir : vêtements sortis, sac prêt, première tâche écrite. Enregistre cette vidéo. Le matin se fait presque tout seul. Tu gagnes dix minutes de sommeil mental."
+   "vo": "Du coup, prends dix minutes ce soir : vêtements sortis, sac prêt, première tâche écrite. Enregistre ça pour ta routine du soir."
   },
   {
    "type": "mascotte",
@@ -51,7 +51,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "PRÊT",
-   "vo": "C'est quoi ta première tâche de demain ? Écris-la en commentaire, et fais-la en premier. Ton futur toi t'en sera reconnaissant."
+   "vo": "Le matin, t'as plus qu'à suivre, sans réfléchir alors que t'es encore à moitié endormi. Alors, c'est quoi ta première tâche de demain ?"
   },
   {
    "type": "mascotte",
@@ -60,9 +60,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

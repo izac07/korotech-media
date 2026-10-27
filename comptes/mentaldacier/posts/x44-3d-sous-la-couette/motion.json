@@ -27,7 +27,7 @@
    "bandeau": "Minuit. Sous la couette.",
    "humeur": "telephone",
    "lumiere": "nuit",
-   "vo": "Sous la couette, à minuit, tu fais quoi vraiment ? Tu scrolles, et tu le sais."
+   "vo": "Sous la couette à minuit, tu fais quoi ? Tu scrolles, et ton lit a oublié son métier."
   },
   {
    "type": "ecran",
@@ -43,7 +43,7 @@
      "Rien d'autre"
     ]
    },
-   "vo": "Ton lit sert à dormir. Pas à scroller. Enregistre cette vidéo, et pose ton téléphone à l'autre bout de la pièce ce soir. Ton lit redevient un lit."
+   "vo": "Du coup, ce soir, pose ton téléphone à l'autre bout de la pièce avant de te coucher. Enregistre ça pour le moment où t'auras la flemme de te relever."
   },
   {
    "type": "mascotte",
@@ -51,7 +51,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "FAIT",
-   "vo": "Sois honnête : ta dernière nuit sans téléphone au lit, c'était quand ? Écris-le en commentaire. Une nuit comme ça, et le matin change."
+   "vo": "Parce que s'il faut se lever pour l'attraper, la flemme joue enfin dans ton camp. Sois honnête : ta dernière nuit sans téléphone au lit, c'était quand ?"
   },
   {
    "type": "mascotte",
@@ -60,9 +60,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }

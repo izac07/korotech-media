@@ -27,7 +27,7 @@
    "bandeau": "Ton écran d'accueil.",
    "humeur": "telephone",
    "lumiere": "nuit",
-   "vo": "Ton écran d'accueil en dit long sur toi. Combien d'applications te font perdre du temps dessus ?"
+   "vo": "Ton écran d'accueil en dit long sur toi. Combien d'applis te volent du temps dessus ?"
   },
   {
    "type": "ecran",
@@ -43,7 +43,7 @@
      "Rien d'autre"
     ]
    },
-   "vo": "Garde seulement les applications utiles sur la première page. Les autres, dans un dossier, loin du pouce. Enregistre cette vidéo, ça prend deux minutes. Moins de tentations, plus de calme."
+   "vo": "Du coup, sur la première page, garde seulement l'utile, et range le reste dans un dossier, loin du pouce. Enregistre ça, ça prend deux minutes."
   },
   {
    "type": "mascotte",
@@ -51,7 +51,7 @@
    "humeur": "content",
    "lumiere": "aube",
    "tampon": "FAIT",
-   "vo": "Identifie le pote qui a quatre-vingts applications sur son écran d'accueil. Il comprendra le message. Ton pouce ira ailleurs."
+   "vo": "Ce que tu ne vois pas, tu l'ouvres beaucoup moins souvent, c'est aussi simple que ça. Et identifie le pote qui a quatre-vingts applis sur son accueil."
   },
   {
    "type": "mascotte",
@@ -60,9 +60,9 @@
    "lumiere": "aube",
    "carte": [
     "💬 COMMENTE PLAN",
-    "le plan 7 jours gratuit"
+    "7 jours pour arrêter de repousser"
    ],
-   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+   "vo": "Commente plan pour recevoir mon plan de sept jours pour arrêter de repousser."
   }
  ]
 }
