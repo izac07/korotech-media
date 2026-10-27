@@ -35,3 +35,27 @@
 | 2026-10-21 17:30 | MDA-X06 | Reel | Les petits choix du soir : encore un épisode ou dormir (fable 2D courte) (Habitudes & routines concrètes, fable2d) |
 | 2026-10-22 22:59 | MDA-X07 | Reel | Demain contre maintenant : même fatigue, même pluie (duel 3D, publié à la main avec son tendance) (POV / avant-après relatable, duel3d) |
 | 2026-10-23 13:34 | MDA-X08 | Reel | 7 jours pour arrêter de repousser : une étape de 10 minutes à la fois (Méthodes anti-procrastination, manifeste3d) |
+| 2026-10-27 21:30 | MDA-X44 | Reel | Sous la couette à minuit, tu fais quoi vraiment ? (POV du soir / habitudes cachées, studio3d) |
+| 2026-10-28 07:30 | MDA-X45 | Reel | Elle t'a laissé en vu. Ton réveil aussi. (Méthodes anti-procrastination, studio3d) |
+| 2026-10-28 17:30 | MDA-X46 | Reel | Tu le touches combien de fois par jour ? (Méthodes anti-procrastination, studio3d) |
+| 2026-10-28 21:30 | MDA-X47 | Reel | Tu as dit « une dernière » il y a deux heures (POV du soir / habitudes cachées, studio3d) |
+| 2026-10-29 07:30 | MDA-X48 | Reel | Tu as tout lâché ? Voilà comment on reprend (Phrases fortes / vérités qui piquent, studio3d) |
+| 2026-10-29 17:30 | MDA-X49 | Reel | Ta liste fait vingt lignes. Tu en fais zéro. (Méthodes anti-procrastination, studio3d) |
+| 2026-10-29 21:30 | MDA-X50 | Reel | Au lit, ce carnet vaut mieux que ton écran (POV du soir / habitudes cachées, studio3d) |
+| 2026-10-30 07:30 | MDA-X51 | Reel | Quatre-vingt-dix minutes sans lui. Tu tiens ? (Méthodes anti-procrastination, studio3d) |
+| 2026-10-30 17:30 | MDA-X52 | Reel | Tu dis oui à tout, sauf à toi (Phrases fortes / vérités qui piquent, studio3d) |
+| 2026-10-30 21:30 | MDA-X53 | Reel | Personne ne voit ça. Ta confiance, si. (Jour 1 sans… / défis en N jours, studio3d) |
+| 2026-10-31 07:30 | MDA-X54 | Reel | Ce qui fait peur ce soir : ta liste de tâches (Méthodes anti-procrastination, studio3d) |
+| 2026-10-31 17:30 | MDA-X55 | Reel | Arrêter d'un coup ne marche jamais (Jour 1 sans… / défis en N jours, studio3d) |
+| 2026-10-31 21:30 | MDA-X56 | Reel | Tu as raté un jour. Pas la semaine. (Phrases fortes / vérités qui piquent, studio3d) |
+| 2026-11-01 07:30 | MDA-X57 | Reel | Ton objectif est trop gros. C'est pour ça que tu lâches. (Méthodes anti-procrastination, studio3d) |
+| 2026-11-01 17:30 | MDA-X58 | Reel | Tu tiens tes promesses aux autres. Et à toi ? (Phrases fortes / vérités qui piquent, studio3d) |
+| 2026-11-01 21:30 | MDA-X59 | Reel | Jour 1 : ton téléphone dort dans le salon (Jour 1 sans… / défis en N jours, studio3d) |
+| 2026-11-02 07:30 | MDA-X60 | Reel | Tes messages attendront vingt minutes (Méthodes anti-procrastination, studio3d) |
+| 2026-11-02 17:30 | MDA-X61 | Reel | POV : ta pause de cinq minutes dure une heure (POV du soir / habitudes cachées, studio3d) |
+| 2026-11-02 21:30 | MDA-X62 | Reel | Ce que tu prépares ce soir, tu ne le décides pas demain (Méthodes anti-procrastination, studio3d) |
+| 2026-11-03 07:30 | MDA-X63 | Reel | Ton écran d'accueil en dit long sur toi (POV du soir / habitudes cachées, studio3d) |
+| 2026-11-03 17:30 | MDA-X64 | Reel | Dis ton objectif à un seul pote, pas à tout le monde (Phrases fortes / vérités qui piquent, studio3d) |
+| 2026-11-03 21:30 | MDA-X65 | Reel | Tu comptes les moutons ou les notifications ? (POV du soir / habitudes cachées, studio3d) |
+| 2026-11-04 07:30 | MDA-X66 | Reel | « Ce week-end, je m'y mets » : la phrase qui ment (Méthodes anti-procrastination, studio3d) |
+| 2026-11-04 17:30 | MDA-X67 | Reel | Tu as de la discipline, il te manque un plan (Phrases fortes / vérités qui piquent, studio3d) |
