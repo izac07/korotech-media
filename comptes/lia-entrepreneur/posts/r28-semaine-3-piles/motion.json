@@ -17,7 +17,7 @@
     "type": "bazar",
     "titre": "TODO (63 lignes)"
    },
-   "vo": "Ta to-do fait trois pages et tout est urgent ? Claude la découpe en trois piles."
+   "vo": "Ta to-do fait trois pages et tout est urgent ? Personne ne peut suivre ça."
   },
   {
    "type": "ecran",
@@ -37,7 +37,7 @@
      ]
     ]
    },
-   "vo": "Un : tu colles ta liste dans Claude. Enregistre-la, tu referas ça dimanche soir."
+   "vo": "Alors donne-la à Claude : il la trie en ce qui rapporte, ce qu'on délègue et ce qu'on supprime. Enregistre ça pour ton dimanche soir."
   },
   {
    "type": "ecran",
@@ -52,24 +52,7 @@
      "Ce qu'on supprime"
     ]
    },
-   "vo": "Deux : ce qui rapporte, ce qu'on délègue, ce qu'on supprime. Team to-do géante ou trois priorités ? Commente un ou deux."
-  },
-  {
-   "type": "mascotte",
-   "bandeau": "Tu gardes le dernier mot",
-   "humeur": "normal",
-   "vo": "Trois : tu décides, Claude propose."
-  },
-  {
-   "type": "telephone",
-   "bandeau": "Lundi, c'est clair",
-   "humeur": "content",
-   "ecran": {
-    "type": "export",
-    "titre": "Plan de la semaine"
-   },
-   "tampon": "SEMAINE CLAIRE",
-   "vo": "Lundi matin, trois priorités et c'est tout."
+   "vo": "Lui propose, toi tu décides, et lundi matin il ne reste que trois priorités. Avoue : ta to-do fait combien de pages aujourd'hui ?"
   },
   {
    "type": "ecran",

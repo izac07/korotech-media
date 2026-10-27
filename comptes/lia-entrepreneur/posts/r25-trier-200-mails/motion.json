@@ -17,7 +17,7 @@
     "type": "bazar",
     "titre": "Boîte de réception (200)"
    },
-   "vo": "Deux cents mails non lus un lundi matin ? Claude les range en trois piles."
+   "vo": "Deux cents mails non lus ? Ta boîte ressemble à un lendemain de soirée."
   },
   {
    "type": "ecran",
@@ -37,7 +37,7 @@
      ]
     ]
    },
-   "vo": "Un : tu colles tes mails dans Claude et tu demandes trois piles : urgent, à déléguer, à ignorer. Enregistre cette vidéo."
+   "vo": "Alors colle-les à Claude : il les trie en trois piles, urgent, à déléguer, à ignorer, et prépare les brouillons urgents. Enregistre ça pour lundi matin."
   },
   {
    "type": "ecran",
@@ -52,18 +52,7 @@
      "À ignorer"
     ]
    },
-   "vo": "Deux : pour chaque mail urgent, un brouillon de réponse. Team boîte vide ou boîte pleine ? Commente un ou deux."
-  },
-  {
-   "type": "telephone",
-   "bandeau": "Toi, tu relis",
-   "humeur": "content",
-   "ecran": {
-    "type": "export",
-    "titre": "Brouillons prêts"
-   },
-   "tampon": "BOÎTE TRIÉE",
-   "vo": "Trois : tu relis, tu corriges, tu envoies."
+   "vo": "Toi, tu n'as plus qu'à relire et envoyer, café à la main. Et toi, tu as combien de mails non lus, là, maintenant ?"
   },
   {
    "type": "mascotte",

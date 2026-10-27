@@ -17,7 +17,7 @@
     "type": "bazar",
     "titre": "notes-client-VRAIMENT-final"
    },
-   "vo": "Rendez-vous client dans une heure et rien de prêt ? Claude te sort une fiche."
+   "vo": "Rendez-vous client dans une heure, et ta tête est un grenier en pagaille ?"
   },
   {
    "type": "ecran",
@@ -37,7 +37,7 @@
      ]
     ]
    },
-   "vo": "Un : tu colles tes notes, Claude écrit le contexte et l'objectif du rendez-vous. Enregistre, tu en auras besoin lundi."
+   "vo": "Du coup, colle tes notes en vrac à Claude : il te sort le contexte, l'objectif et trois questions à poser. Enregistre ça pour ton prochain rendez-vous."
   },
   {
    "type": "ecran",
@@ -52,32 +52,7 @@
      "Trois questions à poser"
     ]
    },
-   "vo": "Deux : il propose trois questions à poser. Sois honnête : laquelle tu oublies toujours ? Écris-la en commentaire."
-  },
-  {
-   "type": "mascotte",
-   "bandeau": "Il repère les freins",
-   "humeur": "travail",
-   "ecran": {
-    "type": "verif",
-    "titre": "Objections possibles",
-    "lignes": [
-     "Le prix",
-     "Le délai"
-    ]
-   },
-   "vo": "Trois : il repère les objections possibles, le prix ou le délai."
-  },
-  {
-   "type": "telephone",
-   "bandeau": "Tu arrives serein",
-   "humeur": "content",
-   "ecran": {
-    "type": "export",
-    "titre": "Fiche de rendez-vous"
-   },
-   "tampon": "RDV PRÉPARÉ",
-   "vo": "Toi, tu relis la fiche et tu arrives serein."
+   "vo": "Il repère même les objections probables, comme le prix ou le délai, alors tu arrives prêt. Tu prépares tes rendez-vous combien de temps avant, toi ?"
   },
   {
    "type": "ecran",

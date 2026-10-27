@@ -17,7 +17,7 @@
     "type": "bazar",
     "titre": "Réponse : hors sujet"
    },
-   "vo": "Claude te répond à côté ? Trois erreurs, la dernière est la plus courante."
+   "vo": "Claude te répond à côté ? Souvent, c'est la demande qui est bancale."
   },
   {
    "type": "ecran",
@@ -37,7 +37,7 @@
      ]
     ]
    },
-   "vo": "Un : zéro contexte. Dis qui tu es et pour qui c'est. Enregistre cette vidéo."
+   "vo": "Alors ajoute trois choses : qui tu es et pour qui c'est, un exemple du résultat voulu, et surtout le format. Enregistre ça pour ta prochaine demande."
   },
   {
    "type": "ecran",
@@ -52,32 +52,7 @@
      "Pas de ton"
     ]
    },
-   "vo": "Deux : aucun exemple du résultat voulu. Débat : un long prompt vaut mieux qu'un court ? Dis ton avis."
-  },
-  {
-   "type": "mascotte",
-   "bandeau": "Erreur 3 : pas de format",
-   "humeur": "normal",
-   "ecran": {
-    "type": "verif",
-    "titre": "Erreur 3",
-    "lignes": [
-     "Pas de format demandé",
-     "Liste ? Tableau ?"
-    ]
-   },
-   "vo": "Trois, la plus courante : ne pas préciser le format. Liste, tableau, trois lignes ?"
-  },
-  {
-   "type": "telephone",
-   "bandeau": "Contexte, exemple, format",
-   "humeur": "content",
-   "ecran": {
-    "type": "export",
-    "titre": "Demande claire"
-   },
-   "tampon": "PROMPT CORRIGÉ",
-   "vo": "Contexte, exemple, format, et ça change tout."
+   "vo": "Le format, c'est l'oubli le plus courant : liste, tableau ou trois lignes, dis-le. Et toi, c'est quoi l'erreur que tu fais le plus ?"
   },
   {
    "type": "mascotte",

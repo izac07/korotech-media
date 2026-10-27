@@ -17,7 +17,7 @@
     "type": "bazar",
     "titre": "devis_A.pdf  devis_B.pdf"
    },
-   "vo": "Deux devis de six pages chacun ? Claude te les compare dans un tableau."
+   "vo": "Deux devis de six pages ? Personne n'a envie de lire ce roman deux fois."
   },
   {
    "type": "ecran",
@@ -37,7 +37,7 @@
      ]
     ]
    },
-   "vo": "Un : tu colles les deux devis dans Claude. Enregistre, ça évite les mauvaises surprises."
+   "vo": "Alors colle-les dans Claude : il te fait un tableau de ce qui est inclus ou non. Enregistre ça pour ton prochain achat."
   },
   {
    "type": "ecran",
@@ -52,24 +52,7 @@
      "Ce qui est inclus"
     ]
    },
-   "vo": "Deux : le tableau montre ce qui est inclus ou non. Identifie celui qui choisit toujours le moins cher sans lire."
-  },
-  {
-   "type": "mascotte",
-   "bandeau": "Tu relis les lignes",
-   "humeur": "normal",
-   "vo": "Trois : tu vérifies les lignes importantes dans les vrais devis."
-  },
-  {
-   "type": "telephone",
-   "bandeau": "Tu décides",
-   "humeur": "content",
-   "ecran": {
-    "type": "export",
-    "titre": "Comparatif"
-   },
-   "tampon": "COMPARÉ",
-   "vo": "Tu décides avec toutes les infos."
+   "vo": "Tu vérifies ensuite les lignes importantes dans les vrais devis, et tu décides en connaissant tout. Identifie le pote qui choisit toujours le moins cher sans lire."
   },
   {
    "type": "mascotte",

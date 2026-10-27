@@ -17,7 +17,7 @@
     "type": "bazar",
     "titre": "6 comptes, 1 humain"
    },
-   "vo": "Six comptes Instagram et un seul humain ? Voici ce que je fais encore moi-même."
+   "vo": "Six comptes Instagram et un seul humain ? Voilà comment je tiens le rythme."
   },
   {
    "type": "ecran",
@@ -37,7 +37,7 @@
      ]
     ]
    },
-   "vo": "Un : Claude écrit et prépare les reels. Enregistre cette vidéo, la suite surprend."
+   "vo": "Claude écrit et prépare les vidéos, puis un outil les publie tout seul depuis une file d'attente. Enregistre ça si tu gères plusieurs comptes."
   },
   {
    "type": "ecran",
@@ -52,24 +52,7 @@
      "Moi : veto"
     ]
    },
-   "vo": "Deux : Make publie depuis la file. Débat : tout automatiser, bonne ou mauvaise idée ? Dis ton avis."
-  },
-  {
-   "type": "mascotte",
-   "bandeau": "Moi, j'ai le veto",
-   "humeur": "normal",
-   "vo": "Trois, ce que je garde : le dernier mot. Je peux tout refuser avant publication."
-  },
-  {
-   "type": "telephone",
-   "bandeau": "Sorti de la file",
-   "humeur": "content",
-   "ecran": {
-    "type": "export",
-    "titre": "File d'attente"
-   },
-   "tampon": "VETO GARDÉ",
-   "vo": "Rien ne part sans mon accord."
+   "vo": "Mais je garde le dernier mot : rien ne part sans mon accord, et je peux tout refuser. Débat : tout automatiser, bonne ou mauvaise idée ?"
   },
   {
    "type": "ecran",

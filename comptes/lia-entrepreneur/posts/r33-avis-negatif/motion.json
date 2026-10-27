@@ -17,7 +17,7 @@
     "type": "bazar",
     "titre": "Avis : ★☆☆☆☆"
    },
-   "vo": "Un avis à une étoile, et tu as envie de répondre sec ? Respire, Claude arrive."
+   "vo": "Un avis une étoile tombe, et ton sang ne fait qu'un tour ?"
   },
   {
    "type": "ecran",
@@ -37,7 +37,7 @@
      ]
     ]
    },
-   "vo": "Un : tu donnes à Claude les faits, sans colère. Enregistre, ça sauve des nerfs."
+   "vo": "Du coup, donne les faits à Claude, sans ta colère, et il t'écrit une réponse polie et posée. Enregistre ça pour le prochain client fâché."
   },
   {
    "type": "ecran",
@@ -52,24 +52,7 @@
      "Ton calme"
     ]
    },
-   "vo": "Deux : il écrit une réponse polie. Team répondre tout de suite ou attendre demain ? Commente un ou deux."
-  },
-  {
-   "type": "mascotte",
-   "bandeau": "Tu relis et tu ajustes",
-   "humeur": "normal",
-   "vo": "Trois : tu relis, tu ajustes avec tes mots."
-  },
-  {
-   "type": "telephone",
-   "bandeau": "Tu publies",
-   "humeur": "content",
-   "ecran": {
-    "type": "export",
-    "titre": "Réponse envoyée"
-   },
-   "tampon": "RÉPONSE CALME",
-   "vo": "Tu publies une réponse dont tu es fier."
+   "vo": "Tu n'as plus qu'à l'ajuster avec tes mots, à froid, sans la réponse que tu regretterais. Team réponse tout de suite ou team demain ? Commente un ou deux."
   },
   {
    "type": "ecran",

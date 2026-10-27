@@ -17,7 +17,7 @@
     "type": "bazar",
     "titre": "« 87 % des clients… » ???"
    },
-   "vo": "Claude peut inventer un chiffre, avec un aplomb total. Voici le réflexe à avoir."
+   "vo": "Claude peut sortir un chiffre bidon avec l'assurance d'un prof sûr de lui."
   },
   {
    "type": "ecran",
@@ -37,7 +37,7 @@
      ]
     ]
    },
-   "vo": "Un : pour chaque chiffre, demande la source. Pas de source, pas de chiffre. Enregistre cette vidéo."
+   "vo": "Alors pour chaque chiffre, demande la source et ouvre-la toi-même. Pas de source vérifiable, tu supprimes la phrase. Enregistre ça pour tes prochains posts."
   },
   {
    "type": "ecran",
@@ -52,24 +52,7 @@
      "Lue par toi ?"
     ]
    },
-   "vo": "Deux : ouvre la source toi-même. Sois honnête : tu as déjà publié un chiffre sans le vérifier ?"
-  },
-  {
-   "type": "mascotte",
-   "bandeau": "Pas de source, on retire",
-   "humeur": "normal",
-   "vo": "Trois, le meilleur réflexe : pas de source vérifiable, on supprime la phrase."
-  },
-  {
-   "type": "telephone",
-   "bandeau": "Tu publies sans risque",
-   "humeur": "content",
-   "ecran": {
-    "type": "export",
-    "titre": "Texte vérifié"
-   },
-   "tampon": "VÉRIFIÉ",
-   "vo": "Tu publies seulement ce que tu as vérifié."
+   "vo": "Parce que c'est ton nom qui est sur la publication, pas le sien. Sois honnête : tu as déjà publié un chiffre sans le vérifier ?"
   },
   {
    "type": "mascotte",

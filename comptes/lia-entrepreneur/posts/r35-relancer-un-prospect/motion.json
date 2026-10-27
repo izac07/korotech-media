@@ -17,7 +17,7 @@
     "type": "bazar",
     "titre": "Dernier message : il y a 9 jours"
    },
-   "vo": "Un prospect ne répond plus et tu n'oses pas relancer ? Claude s'en charge."
+   "vo": "Ton prospect fait le mort, et toi, tu n'oses pas relancer ?"
   },
   {
    "type": "ecran",
@@ -37,7 +37,7 @@
      ]
     ]
    },
-   "vo": "Un : tu colles l'échange avec ce prospect. Enregistre, tu en auras besoin cette semaine."
+   "vo": "Alors colle l'échange à Claude : il t'écrit une relance courte, polie et sans reproche, qui rouvre la discussion. Enregistre ça pour cette semaine."
   },
   {
    "type": "ecran",
@@ -52,24 +52,7 @@
      "Porte ouverte"
     ]
    },
-   "vo": "Deux : la relance reste courte et sans reproche. Identifie le freelance qui n'ose jamais relancer."
-  },
-  {
-   "type": "mascotte",
-   "bandeau": "Tu adaptes à ta façon",
-   "humeur": "normal",
-   "vo": "Trois : tu ajoutes ta touche perso avant d'envoyer."
-  },
-  {
-   "type": "telephone",
-   "bandeau": "Envoyé",
-   "humeur": "content",
-   "ecran": {
-    "type": "export",
-    "titre": "Relance envoyée"
-   },
-   "tampon": "RELANCE PARTIE",
-   "vo": "Tu envoies, et tu passes à autre chose."
+   "vo": "Tu ajoutes ta touche perso, tu envoies, et tu passes à autre chose au lieu de ruminer. Tu relances combien de fois avant d'abandonner ?"
   },
   {
    "type": "mascotte",

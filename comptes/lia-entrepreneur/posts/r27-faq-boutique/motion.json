@@ -17,7 +17,7 @@
     "type": "bazar",
     "titre": "DM : « c'est livré quand ? »"
    },
-   "vo": "Les mêmes questions clients, tous les jours ? Claude écrit ta FAQ une bonne fois."
+   "vo": "La même question client, encore ? Ça donne envie de jeter ton clavier."
   },
   {
    "type": "ecran",
@@ -37,7 +37,7 @@
      ]
     ]
    },
-   "vo": "Un : tu listes les questions qu'on te pose. Enregistre cette vidéo, la suite te fera gagner du temps."
+   "vo": "Alors liste toutes les questions qu'on te pose, et Claude rédige ta page de questions-réponses d'un seul coup. Enregistre ça pour ton site."
   },
   {
    "type": "ecran",
@@ -52,33 +52,7 @@
      "Paiement : moyens acceptés"
     ]
    },
-   "vo": "Deux : Claude rédige chaque réponse. Identifie le commerçant qui répond encore à tout à la main."
-  },
-  {
-   "type": "mascotte",
-   "bandeau": "Tu vérifies les infos",
-   "humeur": "normal",
-   "ecran": {
-    "type": "verif",
-    "titre": "À vérifier par toi",
-    "lignes": [
-     "Délais",
-     "Prix",
-     "Conditions de retour"
-    ]
-   },
-   "vo": "Trois : tu vérifies les délais et les prix. Claude ne les connaît que si tu les donnes."
-  },
-  {
-   "type": "telephone",
-   "bandeau": "FAQ en ligne",
-   "humeur": "content",
-   "ecran": {
-    "type": "export",
-    "titre": "FAQ publiée"
-   },
-   "tampon": "FAQ PRÊTE",
-   "vo": "Tu publies la page, et les questions diminuent."
+   "vo": "Vérifie juste tes prix et tes délais, parce qu'il ne les connaît que si tu les lui donnes. Quelle question client te rend le plus fou ?"
   },
   {
    "type": "mascotte",

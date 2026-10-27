@@ -17,7 +17,7 @@
     "type": "bazar",
     "titre": "Idées reels : (vide)"
    },
-   "vo": "Pas d'idée de reel cette semaine ? Un seul article t'en donne trois."
+   "vo": "Plus aucune idée de vidéo cette semaine ? Ton dernier article en cache trois."
   },
   {
    "type": "ecran",
@@ -37,7 +37,7 @@
      ]
     ]
    },
-   "vo": "Un : colle un de tes articles dans Claude. Enregistre-la, les idées arrivent."
+   "vo": "Colle-le dans Claude et demande trois idées de reels, chacune avec son accroche. Enregistre ça pour ta prochaine panne d'inspiration."
   },
   {
    "type": "ecran",
@@ -52,24 +52,7 @@
      "Idée 3"
     ]
    },
-   "vo": "Deux : chaque idée vient avec une accroche. Team écrire d'abord ou filmer d'abord ? Commente un ou deux."
-  },
-  {
-   "type": "mascotte",
-   "bandeau": "Tu choisis la meilleure",
-   "humeur": "normal",
-   "vo": "Trois : tu gardes la meilleure, la dernière est souvent celle qui plaît."
-  },
-  {
-   "type": "telephone",
-   "bandeau": "Prêt à tourner",
-   "humeur": "content",
-   "ecran": {
-    "type": "export",
-    "titre": "Idée choisie"
-   },
-   "tampon": "IDÉE TROUVÉE",
-   "vo": "Tu tournes, tu postes."
+   "vo": "Tu ne repars jamais d'une page blanche, puisque le fond est déjà écrit. Team écrire d'abord ou team filmer d'abord ? Commente un ou deux."
   },
   {
    "type": "mascotte",

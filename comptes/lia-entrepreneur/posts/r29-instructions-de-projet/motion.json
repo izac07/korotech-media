@@ -17,7 +17,7 @@
     "type": "bazar",
     "titre": "Copier-coller (encore)"
    },
-   "vo": "Tu réexpliques ton métier à Claude à chaque conversation ? Il y a un secret."
+   "vo": "Tu réexpliques ton métier à Claude à chaque fois ? Un vrai poisson rouge."
   },
   {
    "type": "ecran",
@@ -37,7 +37,7 @@
      ]
     ]
    },
-   "vo": "Un : crée un projet dans Claude et écris tes instructions une seule fois. Enregistre, c'est le gain de temps."
+   "vo": "Du coup, crée un projet et écris tes instructions une seule fois, avec ton ton et tes règles. Enregistre ça pour ne plus te répéter."
   },
   {
    "type": "ecran",
@@ -52,28 +52,7 @@
      "Mes règles"
     ]
    },
-   "vo": "Deux : ajoute ton ton et tes règles. Sois honnête : combien de fois as-tu retapé la même consigne ?"
-  },
-  {
-   "type": "mascotte",
-   "bandeau": "Chaque chat repart bien",
-   "humeur": "normal",
-   "ecran": {
-    "type": "montage",
-    "titre": "Projet — instructions"
-   },
-   "vo": "Trois : chaque nouvelle conversation du projet démarre avec tout ça."
-  },
-  {
-   "type": "telephone",
-   "bandeau": "Tu gagnes du temps",
-   "humeur": "content",
-   "ecran": {
-    "type": "export",
-    "titre": "Projet prêt"
-   },
-   "tampon": "C'EST FAIT",
-   "vo": "Tu ne répètes plus rien."
+   "vo": "Chaque nouvelle conversation du projet démarre avec tout ça, alors tu entres direct dans le vif. Sois honnête : combien de fois tu as retapé la même consigne ?"
   },
   {
    "type": "ecran",

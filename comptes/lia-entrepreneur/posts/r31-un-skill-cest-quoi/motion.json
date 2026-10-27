@@ -17,7 +17,7 @@
     "type": "bazar",
     "titre": "prompt_final_v7"
    },
-   "vo": "C'est quoi un skill Claude, et pourquoi ça te fait gagner du temps ?"
+   "vo": "Un skill Claude, ça sonne comme du jargon de sorcier. En vrai, c'est simple."
   },
   {
    "type": "ecran",
@@ -37,7 +37,7 @@
      ]
     ]
    },
-   "vo": "Un : c'est une recette que tu écris une fois, pour une tâche précise. Enregistre, tu vas en vouloir un."
+   "vo": "C'est une recette que tu écris une fois pour une tâche précise, et Claude la suit à chaque fois. Enregistre ça pour ta tâche la plus répétitive."
   },
   {
    "type": "ecran",
@@ -47,33 +47,7 @@
     "type": "montage",
     "titre": "Skill — relance facture"
    },
-   "vo": "Deux : Claude la relit à chaque fois et l'applique. Identifie celui qui refait la même demande tous les jours."
-  },
-  {
-   "type": "mascotte",
-   "bandeau": "Tu lances, il applique",
-   "humeur": "normal",
-   "ecran": {
-    "type": "verif",
-    "titre": "Ton skill",
-    "lignes": [
-     "Ta méthode",
-     "Ton ton",
-     "Ton format"
-    ]
-   },
-   "vo": "Trois : tu lances ton skill, et Claude suit ta méthode."
-  },
-  {
-   "type": "telephone",
-   "bandeau": "Résultat identique",
-   "humeur": "content",
-   "ecran": {
-    "type": "export",
-    "titre": "Relance prête"
-   },
-   "tampon": "SKILL PRÊT",
-   "vo": "Même qualité à chaque fois, sans retaper."
+   "vo": "Comme ça, tu obtiens la même qualité sans retaper la même consigne tous les jours. Tu lui écrirais quelle recette en premier ?"
   },
   {
    "type": "ecran",

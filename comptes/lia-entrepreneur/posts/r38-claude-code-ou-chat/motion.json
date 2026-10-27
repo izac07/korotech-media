@@ -17,7 +17,7 @@
     "type": "bazar",
     "titre": "Quel outil ouvrir ?"
    },
-   "vo": "Claude Code ou Claude en conversation : lequel pour quoi ? Réponse en deux phrases."
+   "vo": "Claude Code ou Claude en conversation ? C'est comme confondre tournevis et marteau."
   },
   {
    "type": "ecran",
@@ -37,7 +37,7 @@
      ]
     ]
    },
-   "vo": "Un : la conversation sert à écrire, réfléchir, reformuler. Enregistre cette vidéo."
+   "vo": "La conversation, c'est pour écrire et réfléchir ; Claude Code, lui, agit directement sur tes fichiers. Enregistre ça pour choisir le bon outil."
   },
   {
    "type": "ecran",
@@ -47,32 +47,7 @@
     "type": "montage",
     "titre": "Claude Code — fichiers"
    },
-   "vo": "Deux : Claude Code agit sur tes fichiers. Débat : chat ou terminal, tu préfères quoi ?"
-  },
-  {
-   "type": "mascotte",
-   "bandeau": "Choisis selon la tâche",
-   "humeur": "normal",
-   "ecran": {
-    "type": "verif",
-    "titre": "Ton choix",
-    "lignes": [
-     "Écrire : conversation",
-     "Agir sur fichiers : Claude Code"
-    ]
-   },
-   "vo": "Trois : tu choisis selon la tâche, pas selon la mode."
-  },
-  {
-   "type": "telephone",
-   "bandeau": "Bon outil",
-   "humeur": "content",
-   "ecran": {
-    "type": "export",
-    "titre": "Tâche terminée"
-   },
-   "tampon": "BON OUTIL",
-   "vo": "Le bon outil, et tu avances plus vite."
+   "vo": "Du coup, tu choisis selon la tâche, pas selon la mode, et tu avances plus vite. Et toi, tu es plutôt conversation ou plutôt terminal ?"
   },
   {
    "type": "ecran",

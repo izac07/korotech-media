@@ -17,7 +17,7 @@
     "type": "bazar",
     "titre": "Réponse : trop générale"
    },
-   "vo": "Une seule phrase fait mieux répondre Claude : demande-lui de te poser des questions."
+   "vo": "Tes demandes à Claude, c'est de la devinette ? Résultat : ça tombe à côté."
   },
   {
    "type": "ecran",
@@ -37,7 +37,7 @@
      ]
     ]
    },
-   "vo": "Un : ajoute « pose-moi d'abord les questions utiles ». Enregistre cette vidéo."
+   "vo": "Alors ajoute une phrase : « pose-moi d'abord les questions utiles ». Il te questionne, tu réponds. Enregistre ça pour ta prochaine demande."
   },
   {
    "type": "ecran",
@@ -52,28 +52,7 @@
      "Ton délai ?"
     ]
    },
-   "vo": "Deux : tu réponds à ses questions. Sois honnête : tu donnes assez de contexte, d'habitude ?"
-  },
-  {
-   "type": "mascotte",
-   "bandeau": "Il écrit, tu relis",
-   "humeur": "normal",
-   "ecran": {
-    "type": "montage",
-    "titre": "Claude — offre"
-   },
-   "vo": "Trois : il écrit avec tes vraies réponses."
-  },
-  {
-   "type": "telephone",
-   "bandeau": "Texte qui te ressemble",
-   "humeur": "content",
-   "ecran": {
-    "type": "export",
-    "titre": "Offre prête"
-   },
-   "tampon": "BIEN PLUS PRÉCIS",
-   "vo": "Le texte colle enfin à ton besoin."
+   "vo": "Du coup, il écrit avec tes vraies réponses, et le texte colle enfin à ton besoin. Tu connaissais cette phrase, ou c'est nouveau pour toi ?"
   },
   {
    "type": "ecran",
