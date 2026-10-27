@@ -1,0 +1,51 @@
+{
+ "id": "CL-R33",
+ "layout": "nightchat",
+ "music_seed": 839,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "On reste amis ? 🌙",
+   "vo": "Rester amis avec un ex, c'est possible. Mais pose-toi d'abord trois questions honnêtes."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "On peut rester amis ?",
+    "Je ne veux pas te perdre."
+   ],
+   "sent": "Je ne sais pas si c'est une bonne idée",
+   "ghost": "Vu 22:40",
+   "vo": "Ni oui ni non tout de suite. Prends du recul avant de répondre. Enregistre cette vidéo pour ne pas décider sur un coup de tête."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Est-ce que j'ai encore de l'espoir ?",
+    "Est-ce que ça me fait du bien ?",
+    "Est-ce que j'ai besoin de temps ?"
+   ],
+   "vo": "Ces trois questions t'aident à voir clair. Il n'y a pas de bonne réponse universelle, seulement la tienne."
+  },
+  {
+   "type": "check",
+   "title": "Et toi, amis ou pas ? 1 ou 2",
+   "items": [
+    "1 · Amis",
+    "2 · Distance",
+    "Pas encore"
+   ],
+   "vo": "Amis ou distance avec un ex ? Commente un ou deux. Chaque histoire est différente, sans jugement."
+  },
+  {
+   "type": "cta",
+   "last": "Je prends le temps qu'il me faut 🤍",
+   "ctas": [
+    "🔖 Enregistre",
+    "💬 COMMENTE LIMITE"
+   ],
+   "vo": "Commente limite pour recevoir les dix phrases pour poser une limite."
+  }
+ ]
+}

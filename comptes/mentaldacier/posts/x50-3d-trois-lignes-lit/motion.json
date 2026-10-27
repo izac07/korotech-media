@@ -1,0 +1,68 @@
+{
+ "id": "MDA-X50",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9506,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Au lit, plutôt ça.",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Au lit, il y a mieux que ton écran. Cinq minutes, un carnet, trois lignes."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Trois lignes",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE SOIR",
+    "lignes": [
+     "Ce qui a marché",
+     "Ce qui a coincé",
+     "Ma tâche de demain"
+    ]
+   },
+   "vo": "Écris ce qui a marché, ce qui a coincé, et ta tâche de demain. Enregistre cette vidéo, c'est le journal de cinq minutes. Ça vide la tête avant de dormir."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Ta ligne",
+   "humeur": "content",
+   "lumiere": "aube",
+   "tampon": "NOTÉ",
+   "vo": "Quelle est ta ligne de ce soir ? Écris la première en commentaire. Une phrase suffit."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

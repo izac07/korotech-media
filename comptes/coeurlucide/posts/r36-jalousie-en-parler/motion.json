@@ -1,0 +1,51 @@
+{
+ "id": "CL-R36",
+ "layout": "nightchat",
+ "music_seed": 842,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Tu parlais de qui, tout à l'heure ? 😶",
+   "vo": "Tu ressens de la jalousie ? Parle de ta peur, pas de ses torts."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Tu parlais de qui ?",
+    "Ce n'est rien, je te jure."
+   ],
+   "sent": "Je me sens un peu bête",
+   "ghost": "Vu 21:36",
+   "vo": "La jalousie cache souvent un besoin de rassurance. Enregistre cette vidéo pour la prochaine fois. Dire la peur plutôt que l'accusation calme la discussion."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Je me sens un peu inquiet·e.",
+    "J'ai besoin d'être rassuré·e.",
+    "Peux-tu m'aider à comprendre ?"
+   ],
+   "vo": "Dis ce que tu ressens, ce dont tu as besoin, et demande de l'aide. Pas de procès, pas de fouille."
+  },
+  {
+   "type": "check",
+   "title": "Tu en parles ? 1 ou 2",
+   "items": [
+    "1 · J'en parle",
+    "2 · Je garde",
+    "Je respire d'abord"
+   ],
+   "vo": "Tu en parles ou tu gardes pour toi ? Commente un ou deux. Parler aide presque toujours."
+  },
+  {
+   "type": "cta",
+   "last": "Merci de me le dire 🤍",
+   "ctas": [
+    "🔖 Enregistre",
+    "💬 COMMENTE LIMITE"
+   ],
+   "vo": "Commente limite pour recevoir les dix phrases pour poser une limite."
+  }
+ ]
+}

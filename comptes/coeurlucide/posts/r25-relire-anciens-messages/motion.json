@@ -1,0 +1,51 @@
+{
+ "id": "CL-R25",
+ "layout": "nightchat",
+ "music_seed": 831,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Tu te souviens de ce soir-là ? 💭",
+   "vo": "Tu relis vos anciens messages la nuit ? Pose le téléphone et change de pièce."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "On se retrouve où ?",
+    "Peu importe, avec toi."
+   ],
+   "sent": "Tu penses à moi ?",
+   "ghost": "Vu 23:08",
+   "vo": "Relire rouvre la blessure, c'est humain. Enregistre cette vidéo pour le prochain soir difficile. Cache la conversation, sans la supprimer."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Je respire un grand coup.",
+    "Je bois un verre d'eau.",
+    "J'écris ce que je ressens, sans l'envoyer."
+   ],
+   "vo": "Respire, bois un verre d'eau, puis écris ce que tu ressens sans l'envoyer. Le message reste à toi, pas à lui."
+  },
+  {
+   "type": "check",
+   "title": "Ton rituel du soir ? Écris-le",
+   "items": [
+    "Ranger le téléphone",
+    "Écrire trois lignes",
+    "Se coucher plus tôt"
+   ],
+   "vo": "Quel est ton petit rituel pour les soirs difficiles ? Écris-le en commentaire. Ton idée peut aider quelqu'un d'autre."
+  },
+  {
+   "type": "cta",
+   "last": "Ce soir, je prends soin de moi 🤍",
+   "ctas": [
+    "🔖 Enregistre",
+    "💬 COMMENTE LIMITE"
+   ],
+   "vo": "Commente limite pour recevoir les dix phrases pour poser une limite."
+  }
+ ]
+}

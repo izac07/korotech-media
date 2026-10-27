@@ -1,0 +1,51 @@
+{
+ "id": "CL-R28",
+ "layout": "nightchat",
+ "music_seed": 834,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "D'accord, pas de souci 🌿",
+   "vo": "Un vrai green flag accepte ton non sans te le faire payer."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Tu ne viens pas ce soir ?",
+    "D'accord, on fait ça une autre fois."
+   ],
+   "sent": "Merci de comprendre",
+   "ghost": "Lu 19:30",
+   "vo": "Respecter un non, c'est ne pas insister, ne pas bouder, ne pas culpabiliser. Enregistre cette vidéo pour te rappeler ce que tu mérites."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Je respecte ton choix.",
+    "Dis-moi si tu changes d'avis.",
+    "On se voit quand tu veux."
+   ],
+   "vo": "Observe ce qui se passe après ton non. La réaction montre beaucoup plus que les belles paroles."
+  },
+  {
+   "type": "check",
+   "title": "Ton plus beau green flag ? Écris-le",
+   "items": [
+    "Il accepte ton non",
+    "Il ne boude pas",
+    "Il te remercie"
+   ],
+   "vo": "C'est quoi le plus beau green flag que tu aies vu ? Écris-le en commentaire. On a tous besoin d'exemples positifs."
+  },
+  {
+   "type": "cta",
+   "last": "Merci de me respecter 🤍",
+   "ctas": [
+    "🔖 Enregistre",
+    "💬 COMMENTE LIMITE"
+   ],
+   "vo": "Commente limite pour recevoir les dix phrases pour poser une limite."
+  }
+ ]
+}

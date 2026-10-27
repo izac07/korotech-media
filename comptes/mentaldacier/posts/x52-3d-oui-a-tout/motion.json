@@ -1,0 +1,68 @@
+{
+ "id": "MDA-X52",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9508,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Oui. Oui. Oui.",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Tu dis oui à tout le monde, sauf à toi. Et ta journée disparaît."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Dire non",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "liste",
+    "titre": "UN NON",
+    "lignes": [
+     "Distraction",
+     "Demande de trop",
+     "« Plus tard »"
+    ]
+   },
+   "vo": "Dis non à une seule chose par jour. Une distraction, une demande de trop. Enregistre, et commence par la plus facile. Ça se pratique, comme un muscle."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "À quoi tu dis non ?",
+   "humeur": "content",
+   "lumiere": "aube",
+   "tampon": "NON",
+   "vo": "À quoi tu dis non demain ? Écris-le en commentaire. Un petit non protège un gros oui. Ton temps a de la valeur."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

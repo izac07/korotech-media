@@ -1,0 +1,51 @@
+{
+ "id": "CL-R31",
+ "layout": "nightchat",
+ "music_seed": 837,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Tu as fait un super travail ✨",
+   "vo": "On te fait un compliment et tu réponds « mais non » ? Essaie simplement : merci."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Tu as été super aujourd'hui.",
+    "Mais non, c'était pas grand-chose."
+   ],
+   "sent": "Pourquoi je réponds ça ?",
+   "ghost": "Vu 22:10",
+   "vo": "Minimiser protège de la gêne, mais ça repousse aussi la fierté. Enregistre cette vidéo, et entraîne-toi demain. Dire merci est un acte de confiance."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Merci, ça me fait plaisir.",
+    "Je suis contente de l'entendre.",
+    "Merci de l'avoir remarqué."
+   ],
+   "vo": "Trois réponses possibles : merci, ça me fait plaisir. Je suis contente de l'entendre. Merci de l'avoir remarqué."
+  },
+  {
+   "type": "check",
+   "title": "Ton dernier compliment ? Écris-le",
+   "items": [
+    "Dire merci",
+    "Respirer",
+    "Garder le sourire"
+   ],
+   "vo": "C'est quoi le dernier compliment qu'on t'ait fait ? Écris-le ici. Tu as le droit d'en être fier ou fière."
+  },
+  {
+   "type": "cta",
+   "last": "Merci, ça me touche 🤍",
+   "ctas": [
+    "🔖 Enregistre",
+    "💬 COMMENTE LIMITE"
+   ],
+   "vo": "Commente limite pour recevoir les dix phrases pour poser une limite."
+  }
+ ]
+}

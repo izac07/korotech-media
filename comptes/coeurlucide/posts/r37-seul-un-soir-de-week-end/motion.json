@@ -1,0 +1,51 @@
+{
+ "id": "CL-R37",
+ "layout": "nightchat",
+ "music_seed": 843,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Tout le monde sort ce soir… 🌃",
+   "vo": "Seul un soir de week-end ? Ça peut être doux, si tu t'y prépares un peu."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Tout le monde est sorti.",
+    "Et moi je suis là."
+   ],
+   "sent": "Je n'ai pas envie de me comparer",
+   "ghost": "Vu 20:12",
+   "vo": "Être seul n'est pas être abandonné. Prépare ce moment comme un rendez-vous avec toi. Enregistre cette vidéo pour ce soir."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Un film que j'aime.",
+    "Un plat que j'adore.",
+    "Un appel à une personne qui compte."
+   ],
+   "vo": "Choisis un film, un plat, et un appel à quelqu'un de bienveillant. Le soir devient un cadeau."
+  },
+  {
+   "type": "check",
+   "title": "Ton plan solo ? Dis-le",
+   "items": [
+    "Un film",
+    "Un bon repas",
+    "Un appel"
+   ],
+   "vo": "C'est quoi ton plan solo préféré ? Écris-le en commentaire. Tu inspireras quelqu'un qui est seul ce soir."
+  },
+  {
+   "type": "cta",
+   "last": "Ce soir, c'est mon soir 🤍",
+   "ctas": [
+    "🔖 Enregistre",
+    "💬 COMMENTE LIMITE"
+   ],
+   "vo": "Commente limite pour recevoir les dix phrases pour poser une limite."
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "id": "MDA-X55",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9511,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Arrêter d'un coup ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Arrêter d'un coup, ça ne marche jamais. Ton cerveau déteste le vide, alors donne-lui autre chose."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Remplacer",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "liste",
+    "titre": "AU LIEU DE SCROLLER",
+    "lignes": [
+     "Dix pompes",
+     "Un verre d'eau",
+     "Trois lignes écrites"
+    ]
+   },
+   "vo": "Remplace, ne supprime pas. Au lieu de scroller, dix pompes, un verre d'eau ou trois lignes écrites. Enregistre, et choisis ton remplaçant maintenant."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Ton remplaçant ?",
+   "humeur": "content",
+   "lumiere": "aube",
+   "tampon": "CHOISI",
+   "vo": "C'est quoi ton remplaçant à toi ? Écris-le en commentaire. Il doit tenir en moins de deux minutes. Sinon, il est trop gros."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

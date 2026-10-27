@@ -1,0 +1,68 @@
+{
+ "id": "MDA-X45",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9501,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "En vu. Encore.",
+   "humeur": "dort",
+   "lumiere": "nuit",
+   "vo": "Elle t'a laissé en vu. Ton réveil aussi. Cinq minutes de plus, dit le snooze."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Pieds au sol",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "liste",
+    "titre": "LE MATIN",
+    "lignes": [
+     "Pieds au sol",
+     "Un verre d'eau",
+     "Lit fait"
+    ]
+   },
+   "vo": "Le snooze te prend dix minutes et t'en fait perdre une heure. Règle : pieds au sol, verre d'eau, lit fait. Enregistre, et essaie dès demain."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Ton record de snooze ?",
+   "humeur": "content",
+   "lumiere": "aube",
+   "tampon": "FAIT",
+   "vo": "Combien de fois tu repousses ton réveil, en vrai ? Écris ton score en commentaire. Pas de jugement, juste un point de départ."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

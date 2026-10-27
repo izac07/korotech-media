@@ -1,0 +1,68 @@
+{
+ "id": "MDA-X49",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9505,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "20 lignes. 0 fait.",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Ta liste fait vingt lignes. Tu en fais zéro. Ce n'est pas un manque de volonté."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "La méthode un-trois-cinq",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "liste",
+    "titre": "1-3-5",
+    "lignes": [
+     "1 grosse tâche",
+     "3 moyennes",
+     "5 petites"
+    ]
+   },
+   "vo": "Méthode un, trois, cinq : une grosse tâche, trois moyennes, cinq petites. Pas une de plus. Enregistre, et fais-le dès ce soir pour demain."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Ta grosse tâche ?",
+   "humeur": "content",
+   "lumiere": "aube",
+   "tampon": "CHOISI",
+   "vo": "C'est quoi ta grosse tâche de demain ? Écris-la en commentaire. Une seule, la plus importante, pas dix. Le reste attendra, il a l'habitude."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

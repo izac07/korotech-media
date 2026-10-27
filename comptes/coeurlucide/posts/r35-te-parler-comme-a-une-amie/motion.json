@@ -1,0 +1,51 @@
+{
+ "id": "CL-R35",
+ "layout": "nightchat",
+ "music_seed": 841,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Tu aurais pu mieux faire 😞",
+   "vo": "Tu te parles plus durement qu'à une amie ? Essaie la phrase qu'elle aurait méritée."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Tu aurais pu mieux faire.",
+    "Tu n'es jamais à la hauteur."
+   ],
+   "sent": "Pourquoi je me parle comme ça ?",
+   "ghost": "Vu 23:20",
+   "vo": "On est souvent plus dur avec soi qu'avec les autres. Enregistre cette vidéo, et prends l'habitude de te répondre avec douceur."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Tu as fait de ton mieux.",
+    "Ça n'a pas marché, et c'est OK.",
+    "On reprend demain, doucement."
+   ],
+   "vo": "Réponds à ta critique intérieure comme tu répondrais à une amie : avec douceur, sans excuse, sans reproche."
+  },
+  {
+   "type": "check",
+   "title": "Ta phrase douce ? Écris-la",
+   "items": [
+    "Dire merci",
+    "Se pardonner",
+    "Reprendre demain"
+   ],
+   "vo": "Quelle phrase douce dirais-tu à une amie qui a douté ? Écris-la en commentaire, tu pourras te l'offrir."
+  },
+  {
+   "type": "cta",
+   "last": "Tu as fait de ton mieux 🤍",
+   "ctas": [
+    "🔖 Enregistre",
+    "💬 COMMENTE LIMITE"
+   ],
+   "vo": "Commente limite pour recevoir les dix phrases pour poser une limite."
+  }
+ ]
+}

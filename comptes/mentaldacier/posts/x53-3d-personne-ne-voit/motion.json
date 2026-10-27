@@ -1,0 +1,68 @@
+{
+ "id": "MDA-X53",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9509,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Personne ne voit ça.",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Personne ne voit ce que tu fais quand tu t'y mets. Mais ta confiance, elle, le voit."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Trois victoires",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE SOIR",
+    "lignes": [
+     "Lit fait ce matin",
+     "Dix minutes de sport",
+     "Un mail envoyé"
+    ]
+   },
+   "vo": "Chaque soir, note trois petites victoires. Même minuscules. Enregistre cette vidéo, et regarde la liste après une semaine. Elle est plus longue que tu crois."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Ta victoire du jour",
+   "humeur": "content",
+   "lumiere": "aube",
+   "tampon": "3 / 3",
+   "vo": "C'est quoi ta petite victoire d'aujourd'hui ? Écris-la en commentaire. Les autres ont besoin de l'idée. Et toi, de la fierté."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

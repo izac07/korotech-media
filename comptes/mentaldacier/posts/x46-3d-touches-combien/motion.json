@@ -1,0 +1,68 @@
+{
+ "id": "MDA-X46",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9502,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Tu le touches combien ?",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Tu le touches combien de fois par jour ? Pas besoin de répondre, ton pouce le sait."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Trois réglages",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "liste",
+    "titre": "3 RÉGLAGES",
+    "lignes": [
+     "Notifications coupées",
+     "Écran en noir et blanc",
+     "Écran d'accueil vide"
+    ]
+   },
+   "vo": "Trois réglages qui te rendent du temps : coupe les notifications, passe l'écran en noir et blanc, vide ton écran d'accueil. Enregistre, ça prend cinq minutes."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Identifie-le",
+   "humeur": "content",
+   "lumiere": "aube",
+   "tampon": "FAIT",
+   "vo": "Identifie le pote qui regarde son téléphone toutes les trois minutes. Il te remerciera. Peut-être. Pas tout de suite."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

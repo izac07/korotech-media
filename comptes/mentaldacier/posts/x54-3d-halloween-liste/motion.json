@@ -1,0 +1,68 @@
+{
+ "id": "MDA-X54",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9510,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Plus flippant qu'un film.",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Ce qui fait vraiment peur, c'est pas un film d'horreur. C'est ta liste de tâches."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "La prochaine action",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "liste",
+    "titre": "LA PROCHAINE ACTION",
+    "lignes": [
+     "Ouvrir le fichier",
+     "Écrire une phrase",
+     "Rien d'autre"
+    ]
+   },
+   "vo": "Pour la dompter, écris seulement la prochaine action physique : ouvrir le fichier, écrire une phrase. Enregistre. Une action, pas un monstre."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Team horreur ou team netflix ?",
+   "humeur": "content",
+   "lumiere": "aube",
+   "tampon": "FAIT",
+   "vo": "Team film d'horreur ou team tâches à finir ? Commente un ou deux. Les deux font peur, un seul se règle. Même les monstres commencent petit."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

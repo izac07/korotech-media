@@ -1,0 +1,51 @@
+{
+ "id": "CL-R30",
+ "layout": "nightchat",
+ "music_seed": 836,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Tu viens samedi, hein ? 🎉",
+   "vo": "Tu dis oui par peur de décevoir ? Refuser gentiment, ça s'apprend avec une phrase."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Tu viens samedi, hein ?",
+    "On compte sur toi !"
+   ],
+   "sent": "Je ne sais pas comment dire non",
+   "ghost": "Vu 17:44",
+   "vo": "Dire oui quand on pense non, ça coûte plus cher à la fin. Enregistre cette vidéo, la phrase est dedans. Un non clair vaut mieux qu'un oui forcé."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Merci de m'avoir invité·e.",
+    "Cette fois, je ne pourrai pas.",
+    "Profitez bien, racontez-moi !"
+   ],
+   "vo": "Remercie, dis non simplement, puis souhaite-leur une bonne soirée. Pas besoin de justifier longuement."
+  },
+  {
+   "type": "check",
+   "title": "Tu dis oui trop vite ? 1 ou 2",
+   "items": [
+    "1 · Oui par réflexe",
+    "2 · Non poli",
+    "Merci puis non"
+   ],
+   "vo": "Tu dis oui trop vite ? Commente un si c'est souvent, deux si tu sais déjà dire non. Aucune honte."
+  },
+  {
+   "type": "cta",
+   "last": "Merci, mais cette fois non 🤍",
+   "ctas": [
+    "🔖 Enregistre",
+    "💬 COMMENTE LIMITE"
+   ],
+   "vo": "Commente limite pour recevoir les dix phrases pour poser une limite."
+  }
+ ]
+}

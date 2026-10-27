@@ -1,0 +1,51 @@
+{
+ "id": "CL-R27",
+ "layout": "nightchat",
+ "music_seed": 833,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Tu m'en veux ? 😕",
+   "vo": "Besoin de souffler sans blesser l'autre ? Dis-lui que tu reviens, et quand."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Tu m'en veux ?",
+    "Tu ne me réponds plus."
+   ],
+   "sent": "J'ai juste besoin de temps",
+   "ghost": "Vu 21:15",
+   "vo": "Disparaître sans prévenir inquiète l'autre. Dire que tu as besoin de temps, et quand tu reviens, rassure. Enregistre cette vidéo pour la prochaine fois."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "J'ai besoin d'un moment pour moi.",
+    "Je te réponds demain soir.",
+    "Ce n'est pas contre toi."
+   ],
+   "vo": "Voilà une phrase possible : j'ai besoin d'un moment pour moi, je te réponds demain soir, ce n'est pas contre toi."
+  },
+  {
+   "type": "check",
+   "title": "Tu as déjà fait ça ? Avoue",
+   "items": [
+    "Dire que tu reviens",
+    "Donner un moment",
+    "Rassurer l'autre"
+   ],
+   "vo": "Tu as déjà disparu sans prévenir ? Avoue en commentaire, sans honte. Prévenir, c'est une preuve de respect."
+  },
+  {
+   "type": "cta",
+   "last": "Merci de me prévenir, je comprends 🤍",
+   "ctas": [
+    "🔖 Enregistre",
+    "💬 COMMENTE LIMITE"
+   ],
+   "vo": "Commente limite pour recevoir les dix phrases pour poser une limite."
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "id": "MDA-X58",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9514,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Et à toi ?",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Tu tiens tes promesses aux autres. Et à toi ? Réponds sincèrement."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Une promesse minuscule",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "liste",
+    "titre": "UNE PROMESSE",
+    "lignes": [
+     "Petite",
+     "Précise",
+     "Tenue aujourd'hui"
+    ]
+   },
+   "vo": "Fais une promesse minuscule à toi-même chaque jour, et tiens-la. Enregistre cette vidéo. C'est comme ça qu'on se refait confiance, une promesse à la fois."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Débat",
+   "humeur": "content",
+   "lumiere": "aube",
+   "tampon": "TENU",
+   "vo": "Se respecter, c'est tenir ses promesses même quand personne ne regarde. D'accord ou pas ? Écris oui ou non. Et le premier qui te croira, ce sera toi."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

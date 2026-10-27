@@ -1,0 +1,65 @@
+{
+ "id": "MDA-X47",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9503,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "« Une dernière. »",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Tu as dit « une dernière » il y a deux heures. Elle n'était pas la dernière."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Le minuteur",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "timer",
+    "exo": "UNE DERNIÈRE",
+    "secondes": 600,
+    "sous": "dix minutes, puis stop"
+   },
+   "vo": "Règle simple : mets un minuteur de dix minutes avant de commencer. Quand il sonne, tu poses tout. Enregistre cette vidéo, ton moi de demain matin te dira merci."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Team stop ou team encore ?",
+   "humeur": "content",
+   "lumiere": "aube",
+   "tampon": "FAIT",
+   "vo": "Team stop au minuteur, ou team encore une ? Commente un ou deux. Le minuteur ne juge pas, il sonne, c'est tout."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "id": "CL-R26",
+ "layout": "nightchat",
+ "music_seed": 832,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Elle a l'air tellement heureuse 😔",
+   "vo": "Tu te compares aux autres sur les réseaux ? Souviens-toi : tu vois leur vitrine, pas leur quotidien."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Regarde comme leur vie est parfaite.",
+    "Et moi, je fais quoi de la mienne ?"
+   ],
+   "sent": "Pourquoi je n'y arrive pas ?",
+   "ghost": "Vu 18:02",
+   "vo": "Les photos sont choisies et retouchées. Comparer ta coulisse à leur vitrine, c'est perdre d'avance. Enregistre cette vidéo pour ces moments-là."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Je mets le fil en pause dix minutes.",
+    "Je note trois choses dont je suis fière.",
+    "Je fais une chose pour moi."
+   ],
+   "vo": "Mets le fil en pause, note trois choses dont tu es fier ou fière, fais une chose pour toi."
+  },
+  {
+   "type": "check",
+   "title": "Ton compte à retirer ? Dis-le",
+   "items": [
+    "Couper les notifs",
+    "Désactiver un compte",
+    "Suivre du soutien"
+   ],
+   "vo": "Un compte te fait te sentir moins bien ? Mets-le en sourdine. Dis-nous si tu l'as fait."
+  },
+  {
+   "type": "cta",
+   "last": "Je suis déjà assez 🤍",
+   "ctas": [
+    "🔖 Enregistre",
+    "💬 COMMENTE LIMITE"
+   ],
+   "vo": "Commente limite pour recevoir les dix phrases pour poser une limite."
+  }
+ ]
+}

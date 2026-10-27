@@ -1,0 +1,68 @@
+{
+ "id": "MDA-X44",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9500,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Minuit. Sous la couette.",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Sous la couette, à minuit, tu fais quoi vraiment ? Tu scrolles, et tu le sais."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Le lit sert à dormir",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "liste",
+    "titre": "LE LIT",
+    "lignes": [
+     "Dormir",
+     "Lire dix minutes",
+     "Rien d'autre"
+    ]
+   },
+   "vo": "Ton lit sert à dormir. Pas à scroller. Enregistre cette vidéo, et pose ton téléphone à l'autre bout de la pièce ce soir. Ton lit redevient un lit."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Ta dernière nuit ?",
+   "humeur": "content",
+   "lumiere": "aube",
+   "tampon": "FAIT",
+   "vo": "Sois honnête : ta dernière nuit sans téléphone au lit, c'était quand ? Écris-le en commentaire. Une nuit comme ça, et le matin change."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "id": "MDA-X63",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9519,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Ton écran d'accueil.",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Ton écran d'accueil en dit long sur toi. Combien d'applications te font perdre du temps dessus ?"
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Vider l'accueil",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "liste",
+    "titre": "SUR L'ACCUEIL",
+    "lignes": [
+     "Une application utile",
+     "Un agenda",
+     "Rien d'autre"
+    ]
+   },
+   "vo": "Garde seulement les applications utiles sur la première page. Les autres, dans un dossier, loin du pouce. Enregistre cette vidéo, ça prend deux minutes. Moins de tentations, plus de calme."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Identifie-le",
+   "humeur": "content",
+   "lumiere": "aube",
+   "tampon": "FAIT",
+   "vo": "Identifie le pote qui a quatre-vingts applications sur son écran d'accueil. Il comprendra le message. Ton pouce ira ailleurs."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

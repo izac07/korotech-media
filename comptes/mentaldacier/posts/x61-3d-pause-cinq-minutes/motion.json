@@ -1,0 +1,65 @@
+{
+ "id": "MDA-X61",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9517,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Pause de cinq minutes.",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "POV : tu fais une pause de cinq minutes. Une heure plus tard, tu es toujours dessus."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Pause avec fin",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "timer",
+    "exo": "LA PAUSE",
+    "secondes": 300,
+    "sous": "ça sonne, tu reprends"
+   },
+   "vo": "Une pause sans fin n'est pas une pause. Mets un minuteur de cinq minutes. Enregistre cette vidéo, et lève-toi pendant la pause, pas pour scroller."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Identifie-le",
+   "humeur": "content",
+   "lumiere": "aube",
+   "tampon": "FAIT",
+   "vo": "Identifie le pote dont la pause dure une heure. Tu le connais, il se reconnaîtra. Le minuteur ne triche pas."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

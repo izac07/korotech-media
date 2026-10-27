@@ -1,0 +1,68 @@
+{
+ "id": "MDA-X57",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9513,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Trop gros. Trop vite.",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Ton objectif est trop gros. C'est pour ça que tu lâches au bout de trois jours."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Version ridicule",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "liste",
+    "titre": "TON OBJECTIF",
+    "lignes": [
+     "Version normale",
+     "Version minimum",
+     "Version ridicule"
+    ]
+   },
+   "vo": "Découpe-le en trois versions : normale, minimum, ridicule. Les jours difficiles, tu fais la ridicule. Enregistre, ça sauve les mauvais jours."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Ta version ridicule",
+   "humeur": "content",
+   "lumiere": "aube",
+   "tampon": "TENU",
+   "vo": "C'est quoi ta version ridicule ? Écris-la en commentaire. Deux minutes, pas plus. Les gros objectifs se gagnent par petits morceaux. Un petit pas vaut mieux qu'un plan jamais lancé."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

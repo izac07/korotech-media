@@ -1,0 +1,64 @@
+{
+ "id": "MDA-X59",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9515,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Jour 1 : le salon.",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Jour un : ton téléphone dort dans le salon. Ton cerveau va protester, c'est normal."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Sept nuits",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "ecran": {
+    "type": "calendrier",
+    "jours": 7,
+    "jusqua": 0
+   },
+   "vo": "Sept nuits d'affilée, téléphone hors de la chambre. Achète un réveil à quelques euros si besoin. Enregistre cette vidéo, tu en auras besoin vers minuit."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Ton jour",
+   "humeur": "content",
+   "lumiere": "aube",
+   "tampon": "JOUR 1",
+   "vo": "Tu commences quand ? Écris ton jour de départ en commentaire. Dire une date, c'est déjà s'engager. Le canapé, lui, ne dira rien."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente PLAN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "le plan 7 jours gratuit"
+   ],
+   "vo": "Commente plan pour recevoir le plan sept jours gratuit."
+  }
+ ]
+}

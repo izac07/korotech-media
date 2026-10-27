@@ -1,0 +1,51 @@
+{
+ "id": "CL-R24",
+ "layout": "nightchat",
+ "music_seed": 830,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Je te rappelle demain, promis 🙏",
+   "vo": "Il promet beaucoup, mais les actes suivent peu ? Regarde d'abord ce qu'il fait, pas ce qu'il dit."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Je te rappelle demain.",
+    "Promis, cette fois c'est sûr."
+   ],
+   "sent": "Tu as pu m'appeler ?",
+   "ghost": "Vu 20:41",
+   "vo": "Une promesse non tenue, ça arrive. Plusieurs de suite, c'est un signal à noter. Enregistre cette vidéo pour t'en souvenir."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Tu avais dit que tu m'appellerais.",
+    "Ça me fait quelque chose quand ça se répète.",
+    "Qu'est-ce qui rend ça difficile pour toi ?"
+   ],
+   "vo": "Nomme le fait, dis ce que ça te fait, puis pose une question ouverte. Pas de reproche, juste de la clarté."
+  },
+  {
+   "type": "check",
+   "title": "Les mots ou les actes ? Commente 1 ou 2",
+   "items": [
+    "1 · Les mots",
+    "2 · Les actes",
+    "Les deux comptent"
+   ],
+   "vo": "Team les mots ou team les actes ? Commente un ou deux. Les actes parlent plus fort."
+  },
+  {
+   "type": "cta",
+   "last": "Merci d'avoir été clair avec moi 🤍",
+   "ctas": [
+    "🔖 Enregistre",
+    "💬 COMMENTE LIMITE"
+   ],
+   "vo": "Commente limite pour recevoir les dix phrases pour poser une limite."
+  }
+ ]
+}

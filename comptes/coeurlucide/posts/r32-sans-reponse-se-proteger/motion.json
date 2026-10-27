@@ -1,0 +1,51 @@
+{
+ "id": "CL-R32",
+ "layout": "nightchat",
+ "music_seed": 838,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Toujours pas de nouvelles 😶",
+   "vo": "Sans nouvelles depuis des jours ? Ne cherche pas de raison, occupe d'abord ton énergie."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Tout va bien ?",
+    "Tu as vu mon message ?"
+   ],
+   "sent": "Je m'inquiète un peu",
+   "ghost": "Envoyé 13:02",
+   "vo": "Imaginer des scénarios fatigue. Un seul message clair suffit, puis tu laisses de l'espace. Enregistre cette vidéo si l'attente t'use."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Je pense à toi.",
+    "Dis-moi quand tu veux en parler.",
+    "Je suis là, sans pression."
+   ],
+   "vo": "Envoie un seul message calme, puis occupe-toi de toi. Si l'attente devient lourde, parles-en à un ami."
+  },
+  {
+   "type": "check",
+   "title": "Tu attends ou tu avances ? 1 ou 2",
+   "items": [
+    "1 · J'attends",
+    "2 · J'avance",
+    "Je prends soin de moi"
+   ],
+   "vo": "Tu attends ou tu avances pendant le silence ? Commente un ou deux. Les deux sont humains."
+  },
+  {
+   "type": "cta",
+   "last": "Je suis là quand tu veux 🤍",
+   "ctas": [
+    "🔖 Enregistre",
+    "💬 COMMENTE LIMITE"
+   ],
+   "vo": "Commente limite pour recevoir les dix phrases pour poser une limite."
+  }
+ ]
+}

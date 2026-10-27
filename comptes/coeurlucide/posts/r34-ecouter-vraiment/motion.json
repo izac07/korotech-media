@@ -1,0 +1,51 @@
+{
+ "id": "CL-R34",
+ "layout": "nightchat",
+ "music_seed": 840,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Tu m'écoutes ? 🙁",
+   "vo": "Écouter vraiment, c'est plus que se taire. Trois gestes suffisent pour que l'autre se sente entendu."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Tu m'écoutes ?",
+    "Tu regardes ton téléphone."
+   ],
+   "sent": "Je me sens seul·e",
+   "ghost": "Vu 19:18",
+   "vo": "Poser le téléphone, regarder la personne, reformuler ce qu'elle dit. Enregistre cette vidéo, c'est le premier geste de la confiance."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Je pose mon téléphone.",
+    "Je te regarde.",
+    "Si je comprends bien, tu te sens…"
+   ],
+   "vo": "Reformuler montre que tu as compris. Pas besoin de conseil tout de suite, juste de présence."
+  },
+  {
+   "type": "check",
+   "title": "Tu écoutes comment ? Dis-le",
+   "items": [
+    "Poser le téléphone",
+    "Regarder",
+    "Reformuler"
+   ],
+   "vo": "Quel geste te manque le plus quand on ne t'écoute pas ? Écris-le. Ça aide à mieux écouter les autres."
+  },
+  {
+   "type": "cta",
+   "last": "Merci de m'avoir écouté·e 🤍",
+   "ctas": [
+    "🔖 Enregistre",
+    "💬 COMMENTE LIMITE"
+   ],
+   "vo": "Commente limite pour recevoir les dix phrases pour poser une limite."
+  }
+ ]
+}

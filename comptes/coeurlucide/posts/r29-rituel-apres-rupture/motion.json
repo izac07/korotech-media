@@ -1,0 +1,51 @@
+{
+ "id": "CL-R29",
+ "layout": "nightchat",
+ "music_seed": 835,
+ "handle": "coeurlucide__",
+ "scenes": [
+  {
+   "type": "lock",
+   "notif": "Ce soir, quelque chose pour moi 🕯️",
+   "vo": "Après une rupture, les soirées sont longues. Crée-toi un petit rituel rien qu'à toi."
+  },
+  {
+   "type": "msgs",
+   "bubbles": [
+    "Je ne sais plus quoi faire de mes soirées.",
+    "Elles étaient à nous."
+   ],
+   "sent": "Et maintenant ?",
+   "ghost": "Vu 20:55",
+   "vo": "Le rituel remplit le vide sans le nier. Un thé, une playlist, une marche. Enregistre cette vidéo, et choisis le tien ce soir."
+  },
+  {
+   "type": "msgs2",
+   "bubbles": [
+    "Un thé chaud.",
+    "Une playlist douce.",
+    "Une courte marche."
+   ],
+   "vo": "Choisis trois choses simples et fais la même chaque soir. La répétition rassure quand tout bouge autour."
+  },
+  {
+   "type": "check",
+   "title": "Ton rituel ? Écris-le",
+   "items": [
+    "Un thé",
+    "Une playlist",
+    "Une marche"
+   ],
+   "vo": "C'est quoi ton rituel à toi ? Écris-le en commentaire. Ton idée peut en inspirer d'autres."
+  },
+  {
+   "type": "cta",
+   "last": "Ce soir, c'est pour moi 🤍",
+   "ctas": [
+    "🔖 Enregistre",
+    "💬 COMMENTE LIMITE"
+   ],
+   "vo": "Commente limite pour recevoir les dix phrases pour poser une limite."
+  }
+ ]
+}
