@@ -3,7 +3,7 @@
 // Pompes diamant : animation « Push Up » + mains ramenées en losange sous la poitrine par cinématique inverse (Mixamo n'a pas de pompes diamant).
 function creerPosesMixamo(THREE, corps, m, clips, scene, mat){
   // le Y Bot a deux maillages (surface + articulations) avec chacun son jeu d'os du même nom : on retouche le premier, puis on recopie
-  const tous={};m.traverse(o=>{if(o.isBone){const k=o.name.replace(/^mixamorig:?/,'');(tous[k]=tous[k]||[]).push(o);}});
+  const tous={};m.traverse(o=>{if(o.isBone){const k=o.name.replace(/^mixamorig\d*:?/,'');(tous[k]=tous[k]||[]).push(o);}});
   const B=(n,i)=>(tous[n]||[])[i||0];
   const jeux=Math.max(...Object.values(tous).map(l=>l.length));
   const mix=new THREE.AnimationMixer(m);

@@ -192,11 +192,14 @@ def poses_js():
 
 def mixamo(spec):
     """Y Bot + les animations utilisées par le reel (fichiers de tools/assets/humains/mixamo, voir LICENCE-mixamo.txt)."""
-    if spec.get("mannequin") != "ybot":
+    # "ybot" : robot segmenté (dossier mixamo/) ; "mannequin" : mannequin lisse et musclé, le plus proche des comptes d'anatomie (mixamo/mannequin/)
+    nom = spec.get("mannequin")
+    if nom not in ("ybot", "mannequin"):
         return None
-    lit = lambda n: base64.b64encode(open(os.path.join(MIXAMO, n + ".fbx"), "rb").read()).decode()
+    d = MIXAMO if nom == "ybot" else os.path.join(MIXAMO, nom)
+    lit = lambda n: base64.b64encode(open(os.path.join(d, n + ".fbx"), "rb").read()).decode()
     cles = {("pompes" if s.get("exercice") == "pompes_diamant" else s.get("exercice")) for s in spec["scenes"]}
-    return {"modele": lit("ybot"), "clips": {k: lit(k) for k in sorted(cles) if k and os.path.exists(os.path.join(MIXAMO, k + ".fbx"))}}
+    return {"modele": lit("ybot" if nom == "ybot" else "modele"), "clips": {k: lit(k) for k in sorted(cles) if k and os.path.exists(os.path.join(d, k + ".fbx"))}}
 
 
 def page(spec, theme, starts, durs, caps, total):
