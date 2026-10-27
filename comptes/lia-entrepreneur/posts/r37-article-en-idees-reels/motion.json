@@ -41,7 +41,7 @@
   },
   {
    "type": "ecran",
-   "bandeau": "Team 1 ou team 2 ?",
+   "bandeau": "Écrire ou filmer ?",
    "humeur": "travail",
    "ecran": {
     "type": "verif",

@@ -41,7 +41,7 @@
   },
   {
    "type": "ecran",
-   "bandeau": "Team 1 ou team 2 ?",
+   "bandeau": "Tes mails non lus ?",
    "humeur": "travail",
    "ecran": {
     "type": "verif",

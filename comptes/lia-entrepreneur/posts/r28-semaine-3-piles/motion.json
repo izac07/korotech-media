@@ -41,7 +41,7 @@
   },
   {
    "type": "ecran",
-   "bandeau": "Team 1 ou team 2 ?",
+   "bandeau": "Ta to-do : combien de pages ?",
    "humeur": "travail",
    "ecran": {
     "type": "verif",

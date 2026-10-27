@@ -41,7 +41,7 @@
   },
   {
    "type": "ecran",
-   "bandeau": "Ta question oubliée ?",
+   "bandeau": "Tu prépares quand ?",
    "humeur": "travail",
    "ecran": {
     "type": "verif",

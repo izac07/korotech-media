@@ -41,7 +41,7 @@
   },
   {
    "type": "ecran",
-   "bandeau": "Identifie ce commerçant",
+   "bandeau": "La question qui t'agace ?",
    "humeur": "travail",
    "ecran": {
     "type": "verif",

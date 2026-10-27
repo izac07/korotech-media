@@ -41,7 +41,7 @@
   },
   {
    "type": "ecran",
-   "bandeau": "Identifie ce collègue",
+   "bandeau": "Identifie ce pote",
    "humeur": "travail",
    "ecran": {
     "type": "verif",

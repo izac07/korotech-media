@@ -41,7 +41,7 @@
   },
   {
    "type": "ecran",
-   "bandeau": "Identifie ce freelance",
+   "bandeau": "Combien de relances ?",
    "humeur": "travail",
    "ecran": {
     "type": "verif",
