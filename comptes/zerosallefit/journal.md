@@ -43,3 +43,7 @@
 | 2026-11-01 18:00 | ZSF-R34 | Reel | Anti-flemme : préparer sa tenue la veille au soir (Motivation & régularité, sportmotion) |
 | 2026-11-02 07:30 | ZSF-R35 | Reel | Séance au sol : 4 exercices en 8 minutes, sans matériel (Séances complètes prêtes à faire, sportmotion) |
 | 2026-11-02 18:00 | ZSF-R36 | Reel | Mythe : sans salle, impossible de devenir plus fort (Idées reçues sur le sport, sportmotion) |
+| 2026-11-03 07:30 | ZSF-R37 | Reel | Neuf minutes, trois tours : l'erreur d'aller trop vite (Séances complètes prêtes à faire, sportmotion) |
+| 2026-11-03 18:00 | ZSF-R38 | Reel | Reprise après une pause : la règle de la moitié (Motivation & régularité, sportmotion) |
+| 2026-11-04 07:30 | ZSF-R39 | Reel | Séance silencieuse d'appartement : 6 minutes sans un saut (Séances complètes prêtes à faire, sportmotion) |
+| 2026-11-04 18:00 | ZSF-R40 | Reel | Planche latérale : la hanche qui tombe (Technique, sportmotion) |
