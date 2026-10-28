@@ -35,3 +35,7 @@
 | 2026-10-29 07:30 | ZSF-R27 | Reel | Séance corps entier de 10 minutes (Séances complètes prêtes à faire, sportmotion) |
 | 2026-10-29 18:00 | ZSF-R28 | Reel | Le dead bug : abdos en gardant le dos plaqué (Technique, sportmotion) |
 | 2026-10-23 13:34 | ZSF-X03 | Reel | Réveil musculaire de 5 minutes au saut du lit, sans matériel (Séances complètes prêtes à faire, sportmotion) |
+| 2026-10-30 07:30 | ZSF-R29 | Reel | Pompes : les coudes à 45° pour ménager les épaules (Technique, sportmotion) |
+| 2026-10-30 18:00 | ZSF-R30 | Reel | POV : le canapé t'appelle, fais juste 3 minutes (Motivation & régularité, sportmotion) |
+| 2026-10-31 07:30 | ZSF-R31 | Reel | Fessiers sans matériel : 3 exercices en 6 minutes (Séances complètes prêtes à faire, sportmotion) |
+| 2026-10-31 18:00 | ZSF-R32 | Reel | Mythe : tenir la planche plus longtemps, c'est toujours mieux (Idées reçues sur le sport, sportmotion) |
