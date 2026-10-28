@@ -47,3 +47,5 @@
 | 2026-11-03 18:00 | ZSF-R38 | Reel | Reprise après une pause : la règle de la moitié (Motivation & régularité, sportmotion) |
 | 2026-11-04 07:30 | ZSF-R39 | Reel | Séance silencieuse d'appartement : 6 minutes sans un saut (Séances complètes prêtes à faire, sportmotion) |
 | 2026-11-04 18:00 | ZSF-R40 | Reel | Planche latérale : la hanche qui tombe (Technique, sportmotion) |
+| 2026-11-05 07:30 | ZSF-R41 | Reel | Une séance jambes, deux niveaux : facile ou costaud (Séances complètes prêtes à faire, sportmotion) |
+| 2026-11-05 18:00 | ZSF-R42 | Reel | Bilan de la semaine : compte tes séances, sans culpabilité (Motivation & régularité, sportmotion) |
