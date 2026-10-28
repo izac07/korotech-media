@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R38",
+ "layout": "sportmotion",
+ "music_seed": 8710,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "fente",
+   "count": 0,
+   "title": "**REPRISE** APRÈS PAUSE",
+   "sub": "⏱ LA RÈGLE DE LA MOITIÉ",
+   "vo": "Tu reprends après une pause ? Fais seulement la moitié de ta dernière séance."
+  },
+  {
+   "type": "erreur",
+   "pose": "fente",
+   "myth": "« JE RATTRAPE TOUT »",
+   "stamp": "FAUX",
+   "text": "TROP FORT ·<br>**ON ABANDONNE VITE**",
+   "vo": "Tout rattraper d'un coup, c'est le meilleur moyen d'abandonner. Reprends doucement. Enregistre ça pour ton prochain retour."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "MOITIÉ DES SÉRIES",
+    "MOITIÉ DU TEMPS",
+    "REPOS PLUS LONGS"
+   ],
+   "poses": [
+    "fente",
+    "squat",
+    "pont"
+   ],
+   "effort": "30 s",
+   "rest": "30 s",
+   "total": "6:00",
+   "vo": "Moitié des séries, moitié du temps, repos plus longs. Deux ou trois séances comme ça, puis tu remontes petit à petit."
+  },
+  {
+   "type": "pourquoi",
+   "title": "REPRENDRE<br>**SANS T'ÉPUISER**",
+   "zones": [
+    "HABITUDE",
+    "PLAISIR",
+    "PROGRESSION"
+   ],
+   "badges": [
+    "ÉCOUTE TON CORPS",
+    "FACILE : ENCORE MOINS",
+    "TA PLUS LONGUE PAUSE ?"
+   ],
+   "vo": "Ton repère, c'est ta dernière séance, pas tes meilleurs jours. Sois honnête : ta plus longue pause ?"
+  },
+  {
+   "type": "cta",
+   "title": "REPRENDS<br>**DOUCEMENT**",
+   "ctas": [
+    "🔖 ENREGISTRE LA RÈGLE",
+    "💬 COMMENTE PROGRAMME"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Commente programme pour recevoir le programme sept jours gratuit."
+  }
+ ]
+}

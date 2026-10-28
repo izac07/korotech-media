@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R33",
+ "layout": "sportmotion",
+ "music_seed": 8705,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "creuse",
+   "count": 0,
+   "title": "ABDOS : LA **POSITION CREUSE**",
+   "sub": "⏱ 3 REPÈRES",
+   "vo": "Des abdos sans crunch ? Allonge-toi, le bas du dos collé au sol."
+  },
+  {
+   "type": "erreur",
+   "pose": "creuse",
+   "myth": "« JAMBES TRÈS BASSES »",
+   "stamp": "FAUX",
+   "text": "DOS QUI SE DÉCOLLE ·<br>**JAMBES TROP BASSES**",
+   "vo": "Jambes trop basses, et le dos se décolle. Remonte-les un peu. Enregistre ça, tu le vérifieras à ta prochaine série."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "BAS DU DOS COLLÉ",
+    "JAMBES HAUTES",
+    "MENTON RENTRÉ"
+   ],
+   "poses": [
+    "creuse",
+    "creuse",
+    "creuse"
+   ],
+   "effort": "20 s",
+   "rest": "20 s",
+   "total": "2:00",
+   "vo": "Bas du dos collé, jambes hautes, menton rentré. Vingt secondes, vingt de repos. Trop dur ? Plie les genoux."
+  },
+  {
+   "type": "pourquoi",
+   "title": "ABDOS<br>**PROFONDS**",
+   "zones": [
+    "ABDOS",
+    "SANGLE",
+    "CONTRÔLE"
+   ],
+   "badges": [
+    "DOS COLLÉ",
+    "FACILE : GENOUX PLIÉS",
+    "ÉCRIS TON TEMPS EN SECONDES"
+   ],
+   "vo": "Tu travailles les abdos et la sangle. Écris ton temps en secondes, sans tricher. Douleur au dos ? Tu arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "DOS COLLÉ<br>**AU SOL**",
+   "ctas": [
+    "🔖 ENREGISTRE LE RAPPEL",
+    "💬 COMMENTE PROGRAMME"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Commente programme pour recevoir le programme sept jours gratuit."
+  }
+ ]
+}

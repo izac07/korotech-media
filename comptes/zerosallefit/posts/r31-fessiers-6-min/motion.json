@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R31",
+ "layout": "sportmotion",
+ "music_seed": 8703,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "pont",
+   "count": 0,
+   "title": "FESSIERS : **3 EXERCICES**",
+   "sub": "⏱ 6 MIN, ZÉRO MATÉRIEL",
+   "vo": "Des fessiers sans matériel, ça tient en trois exercices. Le dernier est le plus dur."
+  },
+  {
+   "type": "erreur",
+   "pose": "pont",
+   "myth": "« IL FAUT DES CHARGES »",
+   "stamp": "FAUX",
+   "text": "POIDS DU CORPS ·<br>**ASSEZ POUR COMMENCER**",
+   "vo": "Au début, ton poids du corps suffit, si tu vas lentement. Enregistre cette séance, tu la referas dès demain."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "PONT FESSIER",
+    "SQUAT LENT",
+    "FENTE ALTERNÉE"
+   ],
+   "poses": [
+    "pont",
+    "squat",
+    "fente"
+   ],
+   "effort": "40 s",
+   "rest": "20 s",
+   "total": "6:00",
+   "vo": "Pont fessier, squat lent, fente alternée. Quarante secondes chacun, vingt de repos, deux tours. Trop dur ? Fente plus courte."
+  },
+  {
+   "type": "pourquoi",
+   "title": "FESSIERS<br>**+ CUISSES**",
+   "zones": [
+    "FESSIERS",
+    "CUISSES",
+    "ÉQUILIBRE"
+   ],
+   "badges": [
+    "TALON AU SOL",
+    "FACILE : MOINS BAS",
+    "LE PLUS DUR : PONT, SQUAT OU FENTE ?"
+   ],
+   "vo": "Tu travailles fessiers, cuisses et équilibre. Le plus dur pour toi : pont, squat ou fente ? Écris-le. Douleur, tu arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "3 EXOS<br>**6 MINUTES**",
+   "ctas": [
+    "🔖 ENREGISTRE LA SÉANCE",
+    "💬 COMMENTE PROGRAMME"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Commente programme pour recevoir le programme sept jours gratuit."
+  }
+ ]
+}

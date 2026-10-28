@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R36",
+ "layout": "sportmotion",
+ "music_seed": 8708,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "pompe",
+   "count": 0,
+   "title": "SANS SALLE ? **FAIBLE** ?",
+   "sub": "⏱ MYTHE À TESTER",
+   "vo": "Sans salle, impossible d'être plus fort ? Ton poids du corps travaille déjà."
+  },
+  {
+   "type": "erreur",
+   "pose": "pompe",
+   "myth": "« SALLE = FORCE »",
+   "stamp": "FAUX",
+   "text": "POIDS DU CORPS ·<br>**RENDS-LE PLUS DUR**",
+   "vo": "Pompes, squats, planche : ton poids du corps suffit au début. Pour progresser, ralentis la descente. Enregistre ça pour ta prochaine séance."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "DESCENTE LENTE",
+    "PAUSE EN BAS",
+    "UNE RÉP EN PLUS"
+   ],
+   "poses": [
+    "pompe",
+    "squat",
+    "fente"
+   ],
+   "effort": "30 s",
+   "rest": "30 s",
+   "total": "3:00",
+   "vo": "Trois leviers : descente lente, pause en bas, une répétition de plus. Un seul à la fois. Trop dur ? Reviens en arrière."
+  },
+  {
+   "type": "pourquoi",
+   "title": "FORCE<br>**SANS SALLE**",
+   "zones": [
+    "FORCE",
+    "CONTRÔLE",
+    "RÉGULARITÉ"
+   ],
+   "badges": [
+    "UN LEVIER À LA FOIS",
+    "FACILE : MOINS DE RÉPÉTITIONS",
+    "TEAM SALLE OU MAISON ? 1 OU 2"
+   ],
+   "vo": "Tu progresses surtout en étant régulier. Team salle ou team maison ? Commente un ou deux. Écoute ton corps."
+  },
+  {
+   "type": "cta",
+   "title": "LA MAISON<br>**SUFFIT**",
+   "ctas": [
+    "🔖 ENREGISTRE LES 3 LEVIERS",
+    "💬 COMMENTE PROGRAMME"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Commente programme pour recevoir le programme sept jours gratuit."
+  }
+ ]
+}

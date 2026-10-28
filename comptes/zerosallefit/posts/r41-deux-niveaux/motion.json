@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R41",
+ "layout": "sportmotion",
+ "music_seed": 8713,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "squat",
+   "count": 0,
+   "title": "1 SÉANCE, **2 NIVEAUX**",
+   "sub": "⏱ 6 MIN",
+   "vo": "Une seule séance, deux niveaux : choisis ta variante avant de commencer."
+  },
+  {
+   "type": "erreur",
+   "pose": "squat",
+   "myth": "« FACILE = INUTILE »",
+   "stamp": "FAUX",
+   "text": "VERSION FACILE ·<br>**TOUJOURS UTILE**",
+   "vo": "Une version facile bien faite vaut mieux qu'une version dure bâclée. Enregistre cette séance, tu choisiras ta variante."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "SQUAT",
+    "FENTE",
+    "PONT FESSIER"
+   ],
+   "poses": [
+    "squat",
+    "fente",
+    "pont"
+   ],
+   "effort": "40 s",
+   "rest": "20 s",
+   "total": "6:00",
+   "vo": "Squat, fente, pont fessier, deux tours. Facile : moins bas, appui sur une chaise. Costaud : descente lente, pause en bas."
+  },
+  {
+   "type": "pourquoi",
+   "title": "TON NIVEAU<br>**TON CHOIX**",
+   "zones": [
+    "JAMBES",
+    "FESSIERS",
+    "ÉQUILIBRE"
+   ],
+   "badges": [
+    "CHOISIS TA VARIANTE",
+    "FACILE : MOINS BAS",
+    "FACILE OU COSTAUD ? 1 OU 2"
+   ],
+   "vo": "Tu travailles jambes, fessiers et équilibre. Team facile ou team costaud ? Commente un ou deux. Douleur, tu arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "CHOISIS<br>**TA VARIANTE**",
+   "ctas": [
+    "🔖 ENREGISTRE LA SÉANCE",
+    "💬 COMMENTE PROGRAMME"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Commente programme pour recevoir le programme sept jours gratuit."
+  }
+ ]
+}

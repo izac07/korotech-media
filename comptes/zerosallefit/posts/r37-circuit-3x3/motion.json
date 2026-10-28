@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R37",
+ "layout": "sportmotion",
+ "music_seed": 8709,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "squat",
+   "count": 0,
+   "title": "CIRCUIT **3 × 3**",
+   "sub": "⏱ 9 MIN",
+   "vo": "Trois exercices, trois tours, neuf minutes. Le piège, c'est de vouloir aller vite."
+  },
+  {
+   "type": "erreur",
+   "pose": "squat",
+   "myth": "« VITE = EFFICACE »",
+   "stamp": "FAUX",
+   "text": "VITESSE ·<br>**TECHNIQUE BÂCLÉE**",
+   "vo": "Aller vite bâcle la technique. Garde un rythme calme, avec un bon contrôle. Enregistre ce circuit pour tes jours pressés."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "SQUAT LENT",
+    "POMPE",
+    "PLANCHE"
+   ],
+   "poses": [
+    "squat",
+    "pompe",
+    "planche"
+   ],
+   "effort": "40 s",
+   "rest": "20 s",
+   "total": "9:00",
+   "vo": "Squat lent, pompe, planche. Quarante secondes d'effort, vingt de repos, trois tours. Trop dur ? Pompes genoux au sol."
+  },
+  {
+   "type": "pourquoi",
+   "title": "CORPS<br>**ENTIER**",
+   "zones": [
+    "JAMBES",
+    "POITRINE",
+    "SANGLE"
+   ],
+   "badges": [
+    "RYTHME CALME",
+    "FACILE : GENOUX AU SOL",
+    "TOUR 3 : FACILE OU DUR ?"
+   ],
+   "vo": "Tu travailles jambes, poitrine et sangle. Au troisième tour, c'était facile ou dur ? Écris-le. Douleur, tu arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "3 TOURS<br>**9 MINUTES**",
+   "ctas": [
+    "🔖 ENREGISTRE LE CIRCUIT",
+    "💬 COMMENTE PROGRAMME"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Commente programme pour recevoir le programme sept jours gratuit."
+  }
+ ]
+}

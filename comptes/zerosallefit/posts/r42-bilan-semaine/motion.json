@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R42",
+ "layout": "sportmotion",
+ "music_seed": 8714,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "pont",
+   "count": 0,
+   "title": "TA **SEMAINE** EN CROIX",
+   "sub": "⏱ 1 MIN DE BILAN",
+   "vo": "Combien de séances cette semaine ? Compte-les, c'est ton vrai point de départ."
+  },
+  {
+   "type": "erreur",
+   "pose": "pont",
+   "myth": "« RATÉ = FOUTU »",
+   "stamp": "FAUX",
+   "text": "TOUT OU RIEN ·<br>**LA RÉGULARITÉ GAGNE**",
+   "vo": "Une semaine imparfaite ne ruine rien. Ce qui compte, c'est de revenir. Enregistre ça pour les semaines chargées."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "COMPTE",
+    "PLANIFIE",
+    "SIMPLIFIE"
+   ],
+   "poses": [
+    "squat",
+    "pont",
+    "planche"
+   ],
+   "effort": "20 s",
+   "rest": "10 s",
+   "total": "1:00",
+   "vo": "Trois étapes : compte tes séances, place la prochaine dans ton agenda, prévois la version facile pour les jours chargés."
+  },
+  {
+   "type": "pourquoi",
+   "title": "UNE SEMAINE<br>**À LA FOIS**",
+   "zones": [
+    "HABITUDE",
+    "PLANNING",
+    "ÉNERGIE"
+   ],
+   "badges": [
+    "NIVEAU ADAPTÉ",
+    "FACILE : 5 MIN",
+    "TON SCORE SUR 7 ?"
+   ],
+   "vo": "Petit pas, régularité, zéro culpabilité. Donne ton score sur sept jours, sans mentir. Adapte à ton niveau."
+  },
+  {
+   "type": "cta",
+   "title": "TON BILAN<br>**DE SEMAINE**",
+   "ctas": [
+    "🔖 ENREGISTRE LE BILAN",
+    "💬 COMMENTE PROGRAMME"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Commente programme pour recevoir le programme sept jours gratuit."
+  }
+ ]
+}

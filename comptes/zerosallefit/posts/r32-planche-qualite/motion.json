@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R32",
+ "layout": "sportmotion",
+ "music_seed": 8704,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "planche",
+   "count": 0,
+   "title": "PLANCHE : **PLUS LONG** = MIEUX ?",
+   "sub": "⏱ 3 REPÈRES",
+   "vo": "Tenir la planche deux minutes, c'est mieux ? Pas si ton bas du dos se creuse."
+  },
+  {
+   "type": "erreur",
+   "pose": "planche",
+   "myth": "« PLUS LONG = MIEUX »",
+   "stamp": "FAUX",
+   "text": "DOS QUI S'AFFAISSE ·<br>**LA QUALITÉ D'ABORD**",
+   "vo": "Quand le bas du dos s'affaisse, le gainage ne travaille plus. Mieux vaut vingt secondes propres. Enregistre ça avant ta prochaine planche."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "FESSIERS SERRÉS",
+    "VENTRE RENTRÉ",
+    "NUQUE ALLONGÉE"
+   ],
+   "poses": [
+    "planche",
+    "planche",
+    "planche"
+   ],
+   "effort": "20 s",
+   "rest": "20 s",
+   "total": "2:00",
+   "vo": "Fessiers serrés, ventre rentré, nuque allongée. Vingt secondes propres, vingt de repos. Trop dur ? Genoux au sol."
+  },
+  {
+   "type": "pourquoi",
+   "title": "SANGLE<br>**PROPRE**",
+   "zones": [
+    "ABDOS",
+    "ÉPAULES",
+    "FESSIERS"
+   ],
+   "badges": [
+    "DOS PLAT",
+    "FACILE : GENOUX AU SOL",
+    "QUALITÉ OU DURÉE ? DIS-LE"
+   ],
+   "vo": "Tu travailles abdos, épaules et fessiers. Qualité ou durée, tu es dans quel camp ? Dis-le en commentaire. Douleur, tu arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "20 S<br>**PROPRES**",
+   "ctas": [
+    "🔖 ENREGISTRE LE RAPPEL",
+    "💬 COMMENTE PROGRAMME"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Commente programme pour recevoir le programme sept jours gratuit."
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R29",
+ "layout": "sportmotion",
+ "music_seed": 8701,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "pompe",
+   "count": 0,
+   "title": "POMPES : **TES COUDES**",
+   "sub": "⏱ 3 REPÈRES",
+   "vo": "Tes pompes te brûlent les épaules ? Regarde où sont tes coudes."
+  },
+  {
+   "type": "erreur",
+   "pose": "pompe",
+   "myth": "« COUDES EN CROIX »",
+   "stamp": "FAUX",
+   "text": "COUDES ÉCARTÉS ·<br>**ÉPAULES EN PREMIÈRE LIGNE**",
+   "vo": "Coudes écartés en croix, et tout le travail part dans les épaules. Rapproche-les du corps. Enregistre ça pour ta prochaine série."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "COUDES À 45°",
+    "CORPS ALIGNÉ",
+    "DESCENTE LENTE"
+   ],
+   "poses": [
+    "pompe",
+    "pompe",
+    "pompe"
+   ],
+   "effort": "30 s",
+   "rest": "30 s",
+   "total": "3:00",
+   "vo": "Trois repères : coudes à quarante-cinq degrés, corps aligné, descente lente. Trop dur ? Pose les genoux au sol."
+  },
+  {
+   "type": "pourquoi",
+   "title": "PECTORAUX<br>**+ TRICEPS**",
+   "zones": [
+    "PECTORAUX",
+    "TRICEPS",
+    "SANGLE"
+   ],
+   "badges": [
+    "CORPS ALIGNÉ",
+    "FACILE : GENOUX AU SOL",
+    "TEAM GENOUX OU CLASSIQUE ? 1 OU 2"
+   ],
+   "vo": "Tu travailles pecs, triceps et sangle. Team genoux ou team classique ? Commente un ou deux. Douleur ? Tu arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "TES COUDES<br>**À 45°**",
+   "ctas": [
+    "🔖 ENREGISTRE LE RAPPEL",
+    "💬 COMMENTE PROGRAMME"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Commente programme pour recevoir le programme sept jours gratuit."
+  }
+ ]
+}

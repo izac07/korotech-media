@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R30",
+ "layout": "sportmotion",
+ "music_seed": 8702,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "squat",
+   "count": 0,
+   "title": "POV : LE CANAPÉ **T'APPELLE**",
+   "sub": "⏱ 3 MIN SUFFISENT",
+   "vo": "POV : le canapé t'appelle à dix-huit heures. Fais juste trois minutes, pas plus."
+  },
+  {
+   "type": "erreur",
+   "pose": "squat",
+   "myth": "« ENVIE D'ABORD »",
+   "stamp": "PIÈGE",
+   "text": "ATTENDRE L'ENVIE ·<br>**ELLE ARRIVE APRÈS**",
+   "vo": "On croit qu'il faut d'abord avoir envie. En vrai, l'envie vient souvent après les premières minutes. Enregistre ça pour les soirs de flemme."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "SQUAT LENT",
+    "PONT FESSIER",
+    "PLANCHE"
+   ],
+   "poses": [
+    "squat",
+    "pont",
+    "planche"
+   ],
+   "effort": "40 s",
+   "rest": "20 s",
+   "total": "3:00",
+   "vo": "Squat lent, pont fessier, planche : quarante secondes, vingt de repos. Trop dur ? Raccourcis la planche."
+  },
+  {
+   "type": "pourquoi",
+   "title": "3 MIN<br>**C'EST DÉJÀ ÇA**",
+   "zones": [
+    "JAMBES",
+    "FESSIERS",
+    "SANGLE"
+   ],
+   "badges": [
+    "TENUE DÉJÀ ENFILÉE",
+    "FACILE : MOINS BAS",
+    "CANAPÉ OU SÉANCE ? 1 OU 2"
+   ],
+   "vo": "Après trois minutes, tu peux t'arrêter, c'est gagné. Canapé ou séance ce soir ? Commente un ou deux. Écoute ton corps."
+  },
+  {
+   "type": "cta",
+   "title": "ET SI C'ÉTAIT<br>**CE SOIR ?**",
+   "ctas": [
+    "🔖 ENREGISTRE POUR CE SOIR",
+    "💬 COMMENTE PROGRAMME"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Commente programme pour recevoir le programme sept jours gratuit."
+  }
+ ]
+}

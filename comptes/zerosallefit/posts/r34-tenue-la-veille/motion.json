@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R34",
+ "layout": "sportmotion",
+ "music_seed": 8706,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "squat",
+   "count": 0,
+   "title": "LA FLEMME : **LE TRUC**",
+   "sub": "⏱ 30 S LA VEILLE",
+   "vo": "La flemme gagne le matin ? Prépare une seule chose la veille au soir."
+  },
+  {
+   "type": "erreur",
+   "pose": "squat",
+   "myth": "« JE VERRAI SUR PLACE »",
+   "stamp": "PIÈGE",
+   "text": "DÉCIDER AU RÉVEIL ·<br>**LA FLEMME VOTE**",
+   "vo": "Décider au réveil, c'est laisser la flemme voter. Pose ta tenue de sport sur la chaise. Enregistre ça pour ce soir."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "TENUE SUR LA CHAISE",
+    "TAPIS DÉROULÉ",
+    "MINUTEUR RÉGLÉ"
+   ],
+   "poses": [
+    "squat",
+    "squat",
+    "squat"
+   ],
+   "effort": "10 s",
+   "rest": "10 s",
+   "total": "0:30",
+   "vo": "Trois gestes : tenue sur la chaise, tapis déroulé, minuteur réglé. Le lendemain, tu n'as plus rien à décider."
+  },
+  {
+   "type": "pourquoi",
+   "title": "MOINS DE<br>**DÉCISIONS**",
+   "zones": [
+    "ROUTINE",
+    "RÉGULARITÉ",
+    "ÉNERGIE"
+   ],
+   "badges": [
+    "FACILE : 10 MIN SEULEMENT",
+    "ÉCOUTE TON CORPS",
+    "TON ASTUCE ANTI-FLEMME ?"
+   ],
+   "vo": "Moins de décisions, plus de séances, et dix minutes suffisent. C'est quoi ton astuce anti-flemme ? Écris-la."
+  },
+  {
+   "type": "cta",
+   "title": "PRÉPARE-LA<br>**CE SOIR**",
+   "ctas": [
+    "🔖 ENREGISTRE POUR CE SOIR",
+    "💬 COMMENTE PROGRAMME"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Commente programme pour recevoir le programme sept jours gratuit."
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R40",
+ "layout": "sportmotion",
+ "music_seed": 8712,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "lateral",
+   "count": 0,
+   "title": "PLANCHE **LATÉRALE** : LA HANCHE",
+   "sub": "⏱ 3 REPÈRES",
+   "vo": "Ta hanche tombe en planche latérale ? Voici pourquoi, et comment la remonter."
+  },
+  {
+   "type": "erreur",
+   "pose": "lateral",
+   "myth": "« TENIR LONGTEMPS »",
+   "stamp": "FAUX",
+   "text": "HANCHE QUI TOMBE ·<br>**ÉPAULE SOUS PRESSION**",
+   "vo": "Hanche qui tombe, l'épaule encaisse et le côté ne travaille plus. Remonte la hanche. Enregistre ça."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "COUDE SOUS ÉPAULE",
+    "HANCHE HAUTE",
+    "CORPS EN LIGNE"
+   ],
+   "poses": [
+    "lateral",
+    "lateral",
+    "lateral"
+   ],
+   "effort": "20 s",
+   "rest": "20 s",
+   "total": "2:00",
+   "vo": "Coude sous l'épaule, hanche haute, corps en ligne. Vingt secondes par côté. Trop dur ? Pose le genou du bas au sol."
+  },
+  {
+   "type": "pourquoi",
+   "title": "OBLIQUES<br>**+ ÉPAULE**",
+   "zones": [
+    "OBLIQUES",
+    "ÉPAULES",
+    "FESSIERS"
+   ],
+   "badges": [
+    "HANCHE HAUTE",
+    "FACILE : GENOU AU SOL",
+    "TON CÔTÉ FAIBLE : G OU D ?"
+   ],
+   "vo": "Tu travailles les obliques et l'épaule. Quel côté est le plus dur, gauche ou droite ? Dis-le. Douleur, tu arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "HANCHE<br>**HAUTE**",
+   "ctas": [
+    "🔖 ENREGISTRE LE RAPPEL",
+    "💬 COMMENTE PROGRAMME"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Commente programme pour recevoir le programme sept jours gratuit."
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "id": "ZSF-R39",
+ "layout": "sportmotion",
+ "music_seed": 8711,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "squat",
+   "count": 0,
+   "title": "SÉANCE **SILENCIEUSE**",
+   "sub": "⏱ 6 MIN, ZÉRO BRUIT",
+   "vo": "Des voisins sous tes pieds ? Voici six minutes sans un seul saut."
+  },
+  {
+   "type": "erreur",
+   "pose": "squat",
+   "myth": "« BOUGER = DU BRUIT »",
+   "stamp": "FAUX",
+   "text": "SANS SAUTER ·<br>**TEMPO LENT = PLUS DUR**",
+   "vo": "Pas besoin de sauter pour sentir l'effort. Un tempo lent rend tout plus dur. Enregistre cette séance pour les jours de voisins."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "SQUAT LENT",
+    "PONT FESSIER",
+    "DEAD BUG"
+   ],
+   "poses": [
+    "squat",
+    "pont",
+    "deadbug"
+   ],
+   "effort": "40 s",
+   "rest": "20 s",
+   "total": "6:00",
+   "vo": "Squat lent, pont fessier, dead bug. Quarante secondes, vingt de repos, deux tours. Trop dur ? Va moins bas, plus doucement."
+  },
+  {
+   "type": "pourquoi",
+   "title": "ZÉRO<br>**BRUIT**",
+   "zones": [
+    "JAMBES",
+    "FESSIERS",
+    "ABDOS"
+   ],
+   "badges": [
+    "POSE LES PIEDS DOUCEMENT",
+    "FACILE : MOINS BAS",
+    "TEAM TAPIS OU SERVIETTE ? 1 OU 2"
+   ],
+   "vo": "Tu travailles jambes, fessiers et abdos. Team tapis ou team serviette ? Commente un ou deux. Douleur, tu arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "SILENCE,<br>**ON BOUGE**",
+   "ctas": [
+    "🔖 ENREGISTRE LA SÉANCE",
+    "💬 COMMENTE PROGRAMME"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Commente programme pour recevoir le programme sept jours gratuit."
+  }
+ ]
+}

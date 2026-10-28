@@ -1,0 +1,68 @@
+{
+ "id": "ZSF-R35",
+ "layout": "sportmotion",
+ "music_seed": 8707,
+ "handle": "zerosallefit",
+ "scenes": [
+  {
+   "type": "hook",
+   "pose": "deadbug",
+   "count": 0,
+   "title": "SÉANCE **AU SOL** 8 MIN",
+   "sub": "⏱ 4 EXERCICES",
+   "vo": "Huit minutes, un tapis ou une serviette, quatre exercices. Le dernier est le plus costaud."
+  },
+  {
+   "type": "erreur",
+   "pose": "deadbug",
+   "myth": "« SANS MATÉRIEL, ZÉRO »",
+   "stamp": "FAUX",
+   "text": "LE SOL SUFFIT ·<br>**AVEC DU CONTRÔLE**",
+   "vo": "Tu penses que sans matériel, ça ne sert à rien. Le sol suffit si tu contrôles chaque mouvement. Enregistre-la."
+  },
+  {
+   "type": "solution",
+   "ex": [
+    "DEAD BUG",
+    "PONT FESSIER",
+    "PLANCHE LATÉRALE",
+    "PLANCHE"
+   ],
+   "poses": [
+    "deadbug",
+    "pont",
+    "lateral",
+    "planche"
+   ],
+   "effort": "40 s",
+   "rest": "20 s",
+   "total": "8:00",
+   "vo": "Dead bug, pont fessier, planche latérale, puis planche. Quarante secondes, vingt de repos, deux tours. Trop dur ? Genoux au sol."
+  },
+  {
+   "type": "pourquoi",
+   "title": "CORPS<br>**ENTIER**",
+   "zones": [
+    "ABDOS",
+    "FESSIERS",
+    "ÉPAULES"
+   ],
+   "badges": [
+    "CONTRÔLE > VITESSE",
+    "FACILE : GENOUX AU SOL",
+    "LE PLUS DUR : 1, 2, 3 OU 4 ?"
+   ],
+   "vo": "Tu travailles abdos, fessiers et épaules. Lequel est le plus dur pour toi ? Commente son numéro. Douleur, tu arrêtes."
+  },
+  {
+   "type": "cta",
+   "title": "4 EXOS<br>**8 MINUTES**",
+   "ctas": [
+    "🔖 ENREGISTRE LA SÉANCE",
+    "💬 COMMENTE PROGRAMME"
+   ],
+   "ticker": "ZÉRO SALLE · ZÉRO EXCUSE",
+   "vo": "Commente programme pour recevoir le programme sept jours gratuit."
+  }
+ ]
+}
