@@ -39,3 +39,7 @@
 | 2026-10-30 18:00 | ZSF-R30 | Reel | POV : le canapé t'appelle, fais juste 3 minutes (Motivation & régularité, sportmotion) |
 | 2026-10-31 07:30 | ZSF-R31 | Reel | Fessiers sans matériel : 3 exercices en 6 minutes (Séances complètes prêtes à faire, sportmotion) |
 | 2026-10-31 18:00 | ZSF-R32 | Reel | Mythe : tenir la planche plus longtemps, c'est toujours mieux (Idées reçues sur le sport, sportmotion) |
+| 2026-11-01 07:30 | ZSF-R33 | Reel | Position creuse : des abdos sans crunch, le bas du dos collé (Technique, sportmotion) |
+| 2026-11-01 18:00 | ZSF-R34 | Reel | Anti-flemme : préparer sa tenue la veille au soir (Motivation & régularité, sportmotion) |
+| 2026-11-02 07:30 | ZSF-R35 | Reel | Séance au sol : 4 exercices en 8 minutes, sans matériel (Séances complètes prêtes à faire, sportmotion) |
+| 2026-11-02 18:00 | ZSF-R36 | Reel | Mythe : sans salle, impossible de devenir plus fort (Idées reçues sur le sport, sportmotion) |
