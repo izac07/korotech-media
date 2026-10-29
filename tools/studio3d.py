@@ -280,7 +280,9 @@ function plan(k){const pl=plan0(k);if(STYLE!='miniature')return pl;return [[pl[1
 function planCam(k){const s=SC[k];if(!s.camera||!HUM)return null;const b=baseHum(s.humeur),E=DEC.ecran;
   const C={dessus:[[b[0]+.15,4.3,b[2]+.75],[b[0],.55,b[2]]],contre:[[b[0]+.95,.32,b[2]+2.3],[b[0],1.45,b[2]]],serre:[[b[0]+.65,1.4,b[2]+2.0],[b[0],1.05,b[2]]],
     porte:[[b[0]+3.3,2.5,b[2]+5.6],[b[0],.9,b[2]]],epaule:[[b[0]-.35,1.75,b[2]+.95],[E.x,E.y,E.z]],profil:[[b[0]+3.4,1.2,b[2]+.2],[b[0],1.0,b[2]]],
-    orbite:[[b[0]+2.6,1.6,b[2]+2.6],[b[0],.95,b[2]]]};return C[s.camera]||null;}
+    orbite:[[b[0]+2.6,1.6,b[2]+2.6],[b[0],.95,b[2]]]};const r=C[s.camera];if(!r)return null;
+  // pompes (« sport ») : le corps est au ras du sol, la caméra et la visée descendent avec lui
+  if(s.humeur=='sport'){const k_=1.8;return [[b[0]+(r[0][0]-b[0])*k_,Math.max(.45,r[0][1]-.6),b[2]+(r[0][2]-b[2])*k_],[b[0],.3,b[2]]];}return r;}
 function plan0(k){const pc=planCam(k);if(pc)return pc;if(HUM&&SC[k].plan=='toi'){const b=DEC.sol;return [[b[0]-1.1,1.75,b[2]+3.4],[b[0]-.15,1.25,b[2]]];}
   if(HUM&&!DUO&&SC[k].plan=='mascotte'){const b=baseHum(SC[k].humeur);return [[b[0]+.55,1.55,b[2]+4.0],[b[0],.9,b[2]]];}return PLANS[SC[k].plan]||PLANS.large;}
 // ---- dessin de l'écran selon la scène
