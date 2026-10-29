@@ -44,15 +44,17 @@ Goat : « il faut que le langage soit adapté à ma cible, à l'audience que je 
 
 ## Mot-clé et ressource gratuite
 - **Mot-clé à commenter : PLAN**
-- **Ressource :** « Le plan 7 jours pour arrêter de repousser » (PDF gratuit) : https://izac07.github.io/korotech-media/ressources/mentaldacier/plan-7-jours-arreter-de-repousser.pdf
+- **Ressource :** « Le plan 7 jours pour arrêter de procrastiner » (PDF gratuit ; titre changé le 29/10/2026, même lien) : https://izac07.github.io/korotech-media/ressources/mentaldacier/plan-7-jours-arreter-de-repousser.pdf
 - Envoyée **en DM** par Goat (message prêt dans `ressources/messages-dm.md`). **Jamais le lien dans la légende.**
 
-## Structure obligatoire de chaque reel (voix) — revue le 27/10/2026
-**Écrire parlé et fluide** : règles complètes dans tools/MOTION.md « Écriture parlée et fluide » (Goat trouvait X20-X43 « pas fluides » : phrases-chocs empilées).
-1. **Scène 0 : punch dans les 6 premiers mots** (image drôle ou à double sens), **puis la cause** dans la même respiration (« Ton lit t'a encore eu ce matin ? Tu relances le réveil trois fois et tu émerges en retard. ») ; 18 mots max, changement de plan vers 3 s. Jamais « Enregistre » ici (X13 : 30 % de rétention à 6 s pendant ce mot).
-2. **Scène 1 : le conseil concret, relié par « du coup / alors »**, qui finit par **« Enregistre ça pour… »** + son utilité (« …pour tes mauvais jours »).
-3. **Scène 2 : pourquoi ça marche, avec du bon sens** (zéro pseudo-science), **puis la question d'interaction en dernier** (« Et toi, honnêtement, ton record de snooze ? »), écrite à l'écran aussi. Pas de morale après la question.
-4. **Scène 3 : le mot-clé qui dit ce qu'on reçoit** : « Commente plan pour recevoir mon plan de 7 jours pour arrêter de repousser. » (écran + voix ; offre dans ressources/mots-cles.json). Les phrases s'enchaînent avec des liens oraux, 70-90 mots, ~25-30 s.
+## Structure obligatoire de chaque reel (voix) — revue le 29/10/2026 (format long 40-45 s, validé par Goat)
+**Écrire parlé et fluide** : règles complètes dans tools/MOTION.md « Écriture parlée et fluide ». **Aucun ordre isolé** : « Enregistre » et « Commente » sont toujours accrochés à la phrase d'avant par un lien et une raison (Goat : « il charge dans une autre pièce. Enregistre ça. » n'est pas fluide). **Environ 120-135 mots (~40-45 s)** : Goat trouve les reels de 25-30 s trop courts ; ça ne tient que si l'attention est relancée toutes les 6-8 s.
+1. **0-4 s : punch dans les 6 premiers mots** (image drôle ou à double sens) ; une **question facile** (heure, chiffre, 1 ou 2) est affichée à l'écran dès la 1re image et pendant tout le reel.
+2. **4-10 s : boucle ouverte + 1re demande de commentaire** : « Enregistre la vidéo et reste jusqu'au troisième truc, c'est lui qui marche vraiment. Mais d'abord, dis-moi en commentaire… »
+3. **10-26 s : conseils 1 et 2**, chacun amené par une transition (« Le premier, c'est… du coup… », « Le deuxième… »), avec une mini-situation vécue.
+4. **Juste AVANT le 3e conseil : le mot-clé** (décision de Goat du 29/10/2026) : « Avant le troisième, commente PLAN, et je t'envoie le plan 7 jours gratuit pour arrêter de procrastiner. » La carte « 💬 COMMENTE PLAN » reste à l'écran à partir de là.
+5. **Fin : le 3e conseil (le meilleur), puis une question qui renvoie au début** pour boucler (« …là, il est quelle heure chez toi ? »).
+Exemple validé par Goat le 29/10/2026 : « Deux heures du mat » (voir tools/MOTION.md « Format long »).
 
 Légende (décision de Goat du 29/10/2026 : « elles sont trop longues ») : **courte, une seule ligne** : « Commente PLAN 👇 » suivie de 3 hashtags max (#mentaldacier #discipline #selfcontrol). Plus d'accroche, de bénéfice ni de « 🔖 Enregistre » dans la légende : tout est dans la vidéo.
 

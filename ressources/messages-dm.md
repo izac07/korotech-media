@@ -13,7 +13,7 @@ Si les commentaires deviennent trop nombreux pour répondre à la main : passer 
 Réponse publique : `Envoyé en DM 📩 Commence par le jour 1 dès ce soir 💪`
 DM :
 ```
-Salut ! Comme promis, voici ton plan 7 jours pour arrêter de repousser 👇
+Salut ! Comme promis, voici ton plan 7 jours pour arrêter de procrastiner 👇
 https://izac07.github.io/korotech-media/ressources/mentaldacier/plan-7-jours-arreter-de-repousser.pdf
 Une action par jour, 10 à 20 min. Tu me dis quelle tâche tu choisis au jour 1 ? 💪
 ```

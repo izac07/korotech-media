@@ -140,10 +140,19 @@ def verifier(path):
         for k, s in enumerate(sc):
             if s.get("qui") not in ("moi", "claude"):
                 err.append("scène %d : « qui » doit valoir « moi » ou « claude » (choisit la voix)" % k)
+    elif spec.get("handle") == "mentaldacier2030" and not 100 <= n <= 150:  # format long 40-45 s (décision de Goat du 29/10/2026)
+        (err if not 90 <= n <= 160 else att).append("voix off : %d mots (Mental d'Acier, format long : cible 110-140, soit 40-45 s)" % n)
+    elif spec.get("handle") == "mentaldacier2030":
+        pass
     elif n < MOTS_MIN - 10 or n > MOTS_MAX + 10:
         err.append("voix off : %d mots (cible %d-%d, soit 25-30 s)" % (n, MOTS_MIN, MOTS_MAX))
     elif not MOTS_MIN <= n <= MOTS_MAX:
         att.append("voix off : %d mots (cible %d-%d)" % (n, MOTS_MIN, MOTS_MAX))
+    # pas d'ordre isolé : « Enregistre ça. » / « Commente PLAN. » seuls ne sont pas fluides (Goat, 29/10/2026)
+    for k, s in enumerate(sc):
+        for ph in re.split(r"(?<=[.!?…])\s+", s.get("vo", "")):
+            if re.fullmatch(r"(enregistre|commente)\b[^,;:]{0,25}[.!]?", ph.strip().lower()):
+                att.append("scène %d : « %s » est un ordre isolé ; l'accrocher à la phrase d'avant avec une raison (« …et enregistre la vidéo pour pas l'oublier »)" % (k, ph.strip()))
     for k, s in enumerate(sc):
         if re.search(r"\d", s.get("vo", "")) and not s.get("say"):
             att.append("scène %d : chiffres dans « vo » (écrire les nombres en lettres, ou ajouter « say »)" % k)
@@ -299,10 +308,13 @@ def verifier(path):
         if mc:
             mot = mc["mot"].lower()
             fin = sc[-1]
-            ecran = norm(visible(json.dumps({k: v for k, v in fin.items() if k not in ("vo", "say")}, ensure_ascii=False)))
+            ecran = norm(visible(json.dumps([{k: v for k, v in s.items() if k not in ("vo", "say")} for s in (sc if handle == "mentaldacier2030" else [fin])], ensure_ascii=False)))
             if not re.search(r"\b%s\b" % re.escape(mot), ecran):
                 err.append("dernière scène : le mot-clé « %s » doit être affiché (ex. ctas « 💬 COMMENTE « %s » »)" % (mc["mot"], mc["mot"]))
             vo_fin = norm(fin.get("say") or fin.get("vo", ""))
+            # Mental d'Acier (format long) : le mot-clé est dit juste avant le 3e conseil, donc dans n'importe quelle scène
+            if handle == "mentaldacier2030":
+                vo_fin = norm(" ".join(s.get("say") or s.get("vo", "") for s in sc))
             if any(s.get("vo") for s in sc) and not (re.search(r"\bcommente\b", vo_fin) and re.search(r"\b%s\b" % re.escape(mot), vo_fin)):
                 err.append("dernière scène : la voix doit dire « Commente %s pour recevoir %s » (décision de Goat du 23/10/2026)" % (mot, mc["offre"]))
 
