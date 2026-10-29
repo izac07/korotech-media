@@ -21,6 +21,16 @@ Fiche lue par les skills (createur-reel, legende-instagram, usine-contenu…) av
 - Pourquoi : MDA-X13 (« Ce que tu fais à 22 h », 3D sombre) = ~900 vues en une journée et un commentaire blagueur (« Il est 4h20 chez moi 😂 »), record du compte (avant : 200 max).
 - Phrases-repères du compte : « Fait vaut mieux que parfait. », « Juste 2 minutes. », « Ce n'est pas une question de volonté, c'est une question d'environnement. »
 
+## Langage de la cible : 18-30 ans (règle n°1, demande de Goat du 29/10/2026)
+Goat : « il faut que le langage soit adapté à ma cible, à l'audience que je touche ». Les scripts du 28/10 sonnaient « grand frère poli » et contenaient des fautes.
+- **Écrire comme un pote de 22 ans parle à l'oral**, pas comme un coach : « t'as », « t'es », « y'a », « c'est pas », « ton tel », « la flemme », « en vrai », « grave », « chaud », « avoue », « genre », « direct ». Le registre familier est voulu (verifie.py ne le compte pas comme faute).
+- **Pas d'argot forcé** qui sonne faux ou daté (« wesh », « frérot », « de ouf » en rafale, verlan inventé) : un ou deux marqueurs familiers par phrase suffisent.
+- **Situations de leur vie** : le tel au lit, la flemme du matin, les potes, les cours / le taf, la salle, les crush, les notifs, Netflix à 2 h. Jamais de références de quadragénaire (« au bureau », « ton manager », « tes enfants »).
+- **Phrases courtes**, une idée, et chaque phrase s'enchaîne à la précédente (règles « Écriture parlée et fluide » de tools/MOTION.md).
+- **Zéro faute** : verifie.py relit chaque « vo » avec LanguageTool (ATTENTION « faute possible ») ; corriger avant de générer les voix. Les phrases bancales comptent aussi (ex. X31 « Pense au toi de dans un an »).
+- **Prononciation** : la voix ne reçoit pas « vo » tel quel mais `py -3.13 tools/prononce.py <motion.json>` (ressources/prononciation.json : « POV » → « pé-o-vé », « la BR » → « la bé-erre », « snooze » → « snouze »…). Ajouter au dictionnaire tout mot que Goat entend mal prononcé.
+- Exemple validé : « T'as encore craqué hier soir ? En vrai, normal : t'avais rien prévu pour le moment où ça chauffe. Du coup ce soir, ton tel dort hors de la chambre, et si l'envie monte, dix pompes direct. Enregistre ça pour le prochain moment chaud. Quand t'as un plan, t'as plus à négocier avec toi-même. Allez, avoue : t'as tenu combien de jours cette fois ? »
+
 ## Mots et idées interdits
 - Culte de la souffrance et injonctions toxiques : « dormir 4 h », « no excuses », « no pain no gain », « si tu échoues c'est que tu ne veux pas assez ».
 - « Détox dopamine » / « vider sa dopamine » : on parle de « réduire les plaisirs faciles ».

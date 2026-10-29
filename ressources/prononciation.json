@@ -1,0 +1,30 @@
+{
+ "_info": "Dictionnaire de prononciation pour ElevenLabs (demande de Goat du 29/10/2026 : « des fois la voix ne prononce pas correctement certains mots »). Les sous-titres gardent l'orthographe de « vo » ; seule la voix reçoit la version phonétique : tools/prononce.py <motion.json> donne le texte à envoyer au scénario voix pour chaque scène. Ajouter ici chaque mot que Goat entend mal prononcé. « mots_admis » : mots anglais/argot voulus, ignorés par la relecture LanguageTool de verifie.py.",
+ "remplacements": {
+  "POV": "pé-o-vé",
+  "la BR": "la bé-erre",
+  "BR": "bé-erre",
+  "snooze": "snouze",
+  "snoozer": "snouzer",
+  "scroll": "scrolle",
+  "to-do": "tou-dou",
+  "to-do list": "tou-dou liste",
+  "team": "tim",
+  "spoiler": "spoïleur",
+  "Spoiler": "Spoïleur",
+  "FAQ": "èf-a-ku",
+  "OK": "o-ké",
+  "tel": "tèl",
+  "notifs": "notifes",
+  "Netflix": "nètflix",
+  "Insta": "insta",
+  "feed": "fide",
+  "story": "stori",
+  "stories": "storize",
+  "like": "laïke",
+  "likes": "laïkes",
+  "freelance": "frilance",
+  "Claude Code": "Claude Code"
+ },
+ "mots_admis": ["snooze", "snoozer", "scroll", "scroller", "scrolles", "POV", "BR", "team", "spoiler", "to-do", "insta", "tel", "notifs", "netflix", "feed", "story", "stories", "like", "likes", "freelance", "flemme", "grave", "chelou", "crush", "go", "vu", "dm", "skill", "claude", "make"]
+}

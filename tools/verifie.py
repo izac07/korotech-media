@@ -316,7 +316,43 @@ def verifier(path):
         except Exception: pass
     if autres:
         att.append("music_seed %s déjà utilisé par %s" % (seed, ", ".join(autres[:3]) + (" ..." if len(autres) > 3 else "")))
+    att += fautes(sc)
     return err, att
+
+
+# Relecture orthographe/grammaire (demande de Goat du 29/10/2026 : « il y a beaucoup de fautes dans le script ») avec LanguageTool.
+# Le registre familier est VOULU (cible 18-30 ans : « t'as », « c'est quoi », « c'est pas ») : ces règles-là sont ignorées,
+# ainsi que les mots anglais/argot du compte (ressources/prononciation.json). Sans réseau, la relecture est sautée sans bloquer.
+FAMILIER = {"BARBARISME_TU", "C_EST_QUOI", "P_V_PAS", "QUOI_FAIRE", "POSER_UNE_QUESTION", "PAS_DE_VIRGULE", "VIRG_NON_TROUVEE",
+            "PLACE_DE_LA_VIRGULE", "FRENCH_WHITESPACE", "ESPACE_ENTRE_POINT_ET_GUILLEMET", "APOS_TYP", "UPPERCASE_SENTENCE_START"}
+
+
+def fautes(sc):
+    import urllib.request, urllib.parse
+    if os.environ.get("SANS_RELECTURE"):
+        return []
+    try:
+        mots_ok = {m.lower() for m in json.load(open(os.path.join(RACINE, "ressources", "prononciation.json"), encoding="utf-8")).get("mots_admis", [])}
+    except Exception:
+        mots_ok = set()
+    out = []
+    for k, s in enumerate(sc):
+        t = s.get("vo", "")
+        if not t:
+            continue
+        try:
+            data = urllib.parse.urlencode({"text": t, "language": "fr"}).encode()
+            r = json.load(urllib.request.urlopen("https://api.languagetool.org/v2/check", data, timeout=12))
+        except Exception:
+            return ["relecture LanguageTool impossible (pas de réseau ?) : relire les fautes à la main"]
+        for m in r.get("matches", []):
+            o, l = m["offset"], m["length"]
+            mot = t[o:o + l]
+            if m["rule"]["id"] in FAMILIER or mot.lower() in mots_ok:
+                continue
+            prop = ", ".join(x["value"] for x in m.get("replacements", [])[:2])
+            out.append("scène %d : faute possible « %s » (%s)%s" % (k, mot, m["message"][:70], " → " + prop if prop else ""))
+    return out
 
 
 if __name__ == "__main__":
