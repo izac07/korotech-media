@@ -70,6 +70,19 @@ Légende (décision de Goat du 29/10/2026 : « elles sont trop longues ») : **c
 - Méthodes anti-procrastination avec une chute drôle (« je commence lundi », motivation de 3 jours) — 20 %
 - Phrases fortes / vérités qui piquent — 15 %
 
+## Ce qui a marché : à reproduire (stats du 29/10/2026, 79 reels, demande de Goat)
+Les 12 reels au-dessus de 1 000 vues (les autres plafonnent à 120-300) ont presque tous les mêmes ingrédients. Chaque nouveau reel doit en cocher au moins 2.
+1. **Une heure ou un moment précis dans l'accroche** (7 des 12) : « Ce que tu fais à 22 h » (1 367 vues, 17 enregistrements), « à 6 h du matin quand personne ne regarde » (1 382), « la salle de bain à 2 h du matin » (1 062), « hier soir », « ce matin », « tu te couches à quelle heure ».
+2. **Un lieu intime** : le lit, la chambre, la salle de bain, la couette, le salon (« Ton lit t'a encore eu ce matin ? » 1 364 ; « Ton lit, ton bureau et ton canapé… » 1 137).
+3. **Le « je sais ce que tu fais » complice, à double sens** : « Tu as encore craqué hier soir ? » (record : 1 606 vues, 41 likes), « Ta mère sait ce que tu fais à 23 h ? » (804), « Je sais ce que tu as fait dans ta chambre hier soir » (632). On taquine, on ne juge pas.
+4. **La série « Jour N sans la BR »** : Jour 1 (1 385, posté par Goat) et Jour 3 (1 244). Continuer la série (Jour 10, Jour 21, Jour 30…), toujours codé.
+5. **Un objet de la chambre qui devient un personnage** : « Ton lit t'a eu », « Ton chargeur dort mieux que toi » (1 119), « Ton pouce a déjà la réponse » (1 082).
+6. **Les règles numérotées font enregistrer** : « 3 règles… » (22 h) = 17 enregistrements, le record. Combiner avec « commente ton numéro ».
+7. **Le « futur toi » fait liker** : « Ton futur toi te regarde scroller » = meilleur taux d'interaction (4,8 %).
+Ce qui ne marche PAS : les conseils de productivité génériques sans moment ni lieu (« Tu dis oui à tout », « la méthode 1-3-5 », « ton écran d'accueil » : 22 à 200 vues).
+Commentaires : seulement 3 en 79 reels (« 22 h » : 2, « Sous la couette à minuit » : 1). C'est la priorité des nouvelles règles (question facile affichée dès la 1re seconde, mot-clé avant le 3e conseil).
+Horaires : le 1er reel du jour (07:30) et ceux de 20:30-22:30 font le plus de vues.
+
 ## Banque d'accroches à double sens (rayer quand c'est fait)
 - ~~Ce que tu fais à 22 h décide de ta journée~~ (X13) · ~~Jour 1 sans la BR~~ (X14)
 - Il est 4 h 20 et tu es encore dessus. (→ le téléphone)
