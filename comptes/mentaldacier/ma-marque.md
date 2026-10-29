@@ -54,7 +54,7 @@ Goat : « il faut que le langage soit adapté à ma cible, à l'audience que je 
 3. **Scène 2 : pourquoi ça marche, avec du bon sens** (zéro pseudo-science), **puis la question d'interaction en dernier** (« Et toi, honnêtement, ton record de snooze ? »), écrite à l'écran aussi. Pas de morale après la question.
 4. **Scène 3 : le mot-clé qui dit ce qu'on reçoit** : « Commente plan pour recevoir mon plan de 7 jours pour arrêter de repousser. » (écran + voix ; offre dans ressources/mots-cles.json). Les phrases s'enchaînent avec des liens oraux, 70-90 mots, ~25-30 s.
 
-Légende : accroche (le double sens peut y rester), bénéfice, « 🔖 Enregistre… », puis « 💬 Commente PLAN et je t'envoie mon plan de 7 jours pour arrêter de repousser (gratuit) en DM. », et 5 hashtags max (#mentaldacier #discipline #routinedusoir #selfcontrol #procrastination…).
+Légende (décision de Goat du 29/10/2026 : « elles sont trop longues ») : **courte, une seule ligne** : « Commente PLAN 👇 » suivie de 3 hashtags max (#mentaldacier #discipline #selfcontrol). Plus d'accroche, de bénéfice ni de « 🔖 Enregistre » dans la légende : tout est dans la vidéo.
 
 ## Formats
 - **Format principal depuis le 25/10/2026 : studio3d « chambre sombre »** (layout `studio3d`, décor `chambre_mda`, personnage humain gris, lumière nuit → aube, habillage noir / blanc / or, voix Brian). 70-90 mots, 4-5 scènes, ~25-30 s (X13 et X14 suivent encore l'ancienne structure : copier leurs couleurs et décors, pas leur scène 0). Exemples complets : `posts/x13-3d-22h/motion.json` (~900 vues) et `posts/x14-3d-jour1-sans-br/motion.json`. Rendu sur le PC de Goat (carte graphique) : la routine cloud l'écrit et le liste dans `a-rendre/MDA-<date>.json`.
