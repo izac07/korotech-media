@@ -62,7 +62,7 @@ SCHEMA = {
         "grille": ["vo", "cartes", "titre?"], "compteur": ["vo", "valeur", "label", "lignes?", "titre?"], "cta": ["vo", "titre", "ctas"],
         "duo": ["vo", "qui", "bulle"], "punch": ["vo", "titre", "sous?"], "jauge": ["vo", "labels", "a", "de?", "unite?", "titre?"]}},  # PILOTE 23/10/2026 : cartes d'appli, tous comptes
     "anatomie3d": {"ordre": None, "types": {p: ["vo", "exercice?", "reps?", "muscle?", "jour?", "bandeau?", "question?", "carte?", "badge?", "source?", "compteur?"] for p in ("large", "face", "cote", "muscle", "orbite")}},  # PILOTE 25/10/2026 : mannequin + muscle lumineux (Zéro Salle) ; badge/source/compteur depuis le 27/10
-    "studio3d": {"ordre": None, "types": {p: ["vo", "bandeau", "ecran?", "compteur?", "humeur?", "tampon?", "carte?", "qui?", "bocal?", "lumiere?"] for p in ("large", "ecran", "mascotte", "telephone", "toi")}},  # PILOTE 24/10/2026 : scène 3D (LIA)
+    "studio3d": {"ordre": None, "types": {p: ["vo", "bandeau", "ecran?", "compteur?", "humeur?", "tampon?", "carte?", "qui?", "bocal?", "lumiere?", "camera?"] for p in ("large", "ecran", "mascotte", "telephone", "toi")}},  # PILOTE 24/10/2026 : scène 3D (LIA)
     "malin": {"ordre": None, "types": {
         "hook": ["vo", "big", "sub"],
         "list": ["vo", "title", "items", "slots?"],
@@ -361,6 +361,9 @@ def fautes(sc):
             o, l = m["offset"], m["length"]
             mot = t[o:o + l]
             if m["rule"]["id"] in FAMILIER or mot.lower() in mots_ok:
+                continue
+            # l'oral sans « ne » (« t'as pas », « personne te dit ») est voulu ; « tâche » (le travail) est bien écrit
+            if "négation" in m["message"] or mot.lower() in ("tâche", "tâches", "ou pas"):
                 continue
             prop = ", ".join(x["value"] for x in m.get("replacements", [])[:2])
             out.append("scène %d : faute possible « %s » (%s)%s" % (k, mot, m["message"][:70], " → " + prop if prop else ""))

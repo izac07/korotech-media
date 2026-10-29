@@ -35,9 +35,14 @@ canvas#cv{position:absolute;left:0;top:0}
 .fin b{font:400 112px/1 Anton;background:__ACC__;color:__TEXTEO__;padding:16px 44px 10px;border-radius:18px;box-shadow:8px 8px 0 __ENCRE__;transform:rotate(-2deg)}
 .fin span{font:400 54px/1.15 'Archivo Black';background:__JAUNE__;color:__ENCRE__;padding:10px 26px;border-radius:12px;box-shadow:6px 6px 0 __ENCRE__;text-align:center;transform:rotate(1.5deg)}
 .cf{position:absolute;width:18px;height:26px;z-index:4;opacity:0}
+.qfix{position:absolute;left:60px;right:60px;top:430px;z-index:7;text-align:center;opacity:0}
+.qfix span{display:inline-block;font:400 58px/1.12 Anton;text-transform:uppercase;color:__ENCRE__;background:__JAUNE__;padding:14px 30px 8px;border-radius:16px;box-shadow:6px 6px 0 __ENCRE__;transform:rotate(-1.5deg)}
+.noir{position:absolute;inset:0;background:#000;z-index:3;pointer-events:none;opacity:0}
 </style></head><body>
 <canvas id='cv' width='1080' height='1920'></canvas>
 <div class='hdl'>@__HANDLE__</div>
+<div class='noir' id='noir'></div>
+__QFIX__
 __BANDS__
 __BADGES__
 <div class='caps'>__CAPS__</div>
@@ -271,7 +276,12 @@ async function charger(){
 const PLANS=DEC.plans;
 const V=(a)=>new THREE.Vector3(a[0],a[1],a[2]);
 function plan(k){const pl=plan0(k);if(STYLE!='miniature')return pl;return [[pl[1][0]+(pl[0][0]-pl[1][0])*.85,pl[1][1]+5.2,pl[1][2]+(pl[0][2]-pl[1][2])*.7],pl[1]];}
-function plan0(k){if(HUM&&SC[k].plan=='toi'){const b=DEC.sol;return [[b[0]-1.1,1.75,b[2]+3.4],[b[0]-.15,1.25,b[2]]];}
+// angles de caméra au choix (Mental d'Acier, 29/10/2026 : « toutes les vidéos sont pareilles ») : la scène peut forcer « camera »
+function planCam(k){const s=SC[k];if(!s.camera||!HUM)return null;const b=baseHum(s.humeur),E=DEC.ecran;
+  const C={dessus:[[b[0]+.15,4.3,b[2]+.75],[b[0],.55,b[2]]],contre:[[b[0]+.95,.32,b[2]+2.3],[b[0],1.45,b[2]]],serre:[[b[0]+.65,1.4,b[2]+2.0],[b[0],1.05,b[2]]],
+    porte:[[b[0]+3.3,2.5,b[2]+5.6],[b[0],.9,b[2]]],epaule:[[b[0]-.35,1.75,b[2]+.95],[E.x,E.y,E.z]],profil:[[b[0]+3.4,1.2,b[2]+.2],[b[0],1.0,b[2]]],
+    orbite:[[b[0]+2.6,1.6,b[2]+2.6],[b[0],.95,b[2]]]};return C[s.camera]||null;}
+function plan0(k){const pc=planCam(k);if(pc)return pc;if(HUM&&SC[k].plan=='toi'){const b=DEC.sol;return [[b[0]-1.1,1.75,b[2]+3.4],[b[0]-.15,1.25,b[2]]];}
   if(HUM&&!DUO&&SC[k].plan=='mascotte'){const b=baseHum(SC[k].humeur);return [[b[0]+.55,1.55,b[2]+4.0],[b[0],.9,b[2]]];}return PLANS[SC[k].plan]||PLANS.large;}
 // ---- dessin de l'écran selon la scène
 function rr(x,X,Y,W,H,r,f){x.beginPath();x.roundRect(X,Y,W,H,r);x.fillStyle=f;x.fill();}
@@ -317,7 +327,12 @@ const RENDER=function(t){
   const to=plan(k),fr=k>0?plan(k-1):[[to[0][0],to[0][1]+.3,to[0][2]*1.12],to[1]];const q=sm(tl/.8);
   CAM.position.copy(V(fr[0]).lerp(V(to[0]),q)).add(new THREE.Vector3(Math.sin(t*.5)*.08,Math.sin(t*.7)*.04,-p*.25));
   const LA=V(fr[1]).lerp(V(to[1]),q);CAM.lookAt(LA);bokeh.uniforms.focus.value=CAM.position.distanceTo(LA);
+  if(s.camera=='orbite'&&HUM){const b=baseHum(s.humeur),a=.9-1.6*sm(p),R=3.4;CAM.position.set(b[0]+Math.sin(a)*R,1.5+.3*p,b[2]+Math.cos(a)*R);CAM.lookAt(b[0],.95,b[2]);}
+  if(s.camera=='dessus'&&HUM){CAM.position.y+=-.6*sm(p);CAM.lookAt(V(to[1]));}  // descente lente vers le lit
   CAM.position.x+=Math.sin(t*1.7)*.012+Math.sin(t*3.1)*.006;CAM.position.y+=Math.sin(t*2.3)*.01;  // caméra « tenue à la main »
+  // ouverture au noir : seule la lueur du tel apparaît, puis la pièce
+  if(SC[0].intro=='noir'){$('noir').style.opacity=1-c((t-.35)/1.4);}
+  const qf=$('qfix');if(qf){const on=!s.carte&&t>.15;qf.style.opacity=on?1:0;qf.style.transform=`scale(${on?.7+.3*back((t-.15)/.4):.7})`;}
   // horloge (les heures défilent pendant la scène « bazar »)
   if(hhP){const sp=(s.ecran&&s.ecran.type=='bazar')?2.2:.05;hhP.rotation.z=-t*sp/12;mhP.rotation.z=-t*sp;}
   // mascotte selon l'humeur : normal, fatigue, travail, content, sport (squats), triste, dort, pensif
@@ -414,11 +429,14 @@ def page(spec, theme, starts, durs, caps, total):
             ta = starts[k] + .25 * durs[k]
             ev += [{"k": "impact", "at": round(ta, 3)}, {"k": "sparkle", "at": round(ta + .1, 3)}]
     colj = dict(col, decor=spec.get("decor", "bureau"))
-    S = [dict(z, lumiere=sc[i].get("lumiere"), qui=sc[i].get("qui"), bocal=sc[i].get("bocal")) for i, z in enumerate(S)]
+    S = [dict(z, lumiere=sc[i].get("lumiere"), qui=sc[i].get("qui"), bocal=sc[i].get("bocal"), camera=sc[i].get("camera"), carte=bool(sc[i].get("carte")),
+              intro=spec.get("intro") if i == 0 else None) for i, z in enumerate(S)]
+    # question affichée pendant tout le reel (sauf sur la carte du mot-clé) : on peut y répondre sans effort
+    qfix = f"<div class='qfix' id='qfix'><span>{K.esc(spec['question'])}</span></div>" if spec.get("question") else ""
     colj["bois_hex"] = col["bois"]
     R = {"__FONTS__": K._font_faces(["Anton", "Archivo Black", "Inter"]), "__NUIT__": col["nuit"], "__PAPIER__": col["papier"], "__ENCRE__": col["encre"],
          "__ACC__": col["acc"], "__JAUNE__": col["jaune"], "__VERT__": col["vert"], "__BANDFOND__": col.get("bandeau_fond", col["papier"]), "__BANDTEXTE__": col.get("bandeau_texte", col["encre"]), "__BADGEFOND__": col.get("badge_fond", "#ffffff"), "__BADGETEXTE__": col.get("badge_texte", col["encre"]), "__TEXTEO__": col.get("texte_o", "#ffffff"), "__HANDLE__": H.escape(spec.get("handle", "")),
-         "__BANDS__": bands, "__BADGES__": badges, "__CAPS__": cap_html, "__TAMPONS__": tampons, "__FINS__": fins, "__CONFETTIS__": conf,
+         "__QFIX__": qfix, "__BANDS__": bands, "__BADGES__": badges, "__CAPS__": cap_html, "__TAMPONS__": tampons, "__FINS__": fins, "__CONFETTIS__": conf,
          "__IMPORTMAP__": import_map(), "__MODELES__": modeles(), "__D__": str(total), "__SC__": json.dumps(S, ensure_ascii=False), "__EV__": json.dumps(ev), "__COL__": json.dumps(colj)}
     out = TPL
     for kk, v in R.items():
