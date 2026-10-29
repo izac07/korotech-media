@@ -1,0 +1,93 @@
+{
+ "id": "MDA-X90",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9621,
+ "handle": "mentaldacier2030",
+ "question": "T'es sorti du lit à quelle heure aujourd'hui ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "MIDI, AU LIT",
+   "humeur": "dort",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Ta mère t'appelle, il est midi, et t'es encore au lit. T'as répondu quoi ?"
+  },
+  {
+   "type": "ecran",
+   "bandeau": "AVOUE L'HEURE",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Enregistre la vidéo, reste jusqu'au troisième, et dis-moi en commentaire à quelle heure t'es sorti du lit aujourd'hui.",
+   "ecran": {
+    "type": "chat",
+    "titre": "Maman",
+    "messages": [
+     [
+      "ia",
+      "Tu fais quoi ?"
+     ],
+     [
+      "moi",
+      "je bosse 🤓"
+     ]
+    ]
+   }
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. LE COUCHER",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Le premier, c'est que ton matin commence la veille : si tu te couches à quatre heures, midi, c'est logique."
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. UN RENDEZ-VOUS",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "vo": "Le deuxième, c'est d'avoir une raison de te lever : un rendez-vous, une séance, un pote à dix heures."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. LA LUMIÈRE",
+   "humeur": "content",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : volets ouverts avant de dormir, comme ça c'est la lumière qui te réveille, pas ta mère. Alors, t'es sorti du lit à quelle heure ?"
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "id": "MDA-X72",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9604,
+ "handle": "mentaldacier2030",
+ "question": "1 = Netflix · 2 = TikTok · 3 = autre chose 😏",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "HIER, MINUIT",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "vo": "Je sais ce que t'as fait hier à minuit. Et t'étais pas en train de dormir."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "1, 2 OU 3 ?",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Alors, avoue en commentaire : un pour Netflix, deux pour TikTok, trois pour autre chose. Et enregistre la vidéo, parce que le troisième conseil, c'est le bon."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. UNE HEURE DE FIN",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "contre",
+   "vo": "Le premier, c'est de te fixer une heure de fin, genre vingt-trois heures, avec une alarme pour te le rappeler.",
+   "ecran": {
+    "type": "timer",
+    "exo": "FIN À 23 H",
+    "secondes": 30
+   }
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. DÉCONNECTE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Le deuxième, c'est de rendre la suite plus dure : tu te déconnectes de l'appli le soir, comme ça, la relancer demande un effort."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. REMPLACE",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "Et le troisième : tu remplaces, tu supprimes pas. Un livre, une douche, dix pompes, n'importe quoi qui t'occupe les mains. Alors, un, deux ou trois ?"
+  }
+ ]
+}

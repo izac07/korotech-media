@@ -1,0 +1,79 @@
+{
+ "id": "MDA-X86",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9618,
+ "handle": "mentaldacier2030",
+ "question": "Identifie-le 😏 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "« RESTE, ON EST BIEN »",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "vo": "Le pote qui te dit reste, on est bien… ami ou frein ?"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "IDENTIFIE-LE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Identifie-le en commentaire, il se reconnaîtra, et enregistre la vidéo, parce que le troisième conseil, c'est pas ce que tu crois."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. PAS MÉCHANT",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "contre",
+   "vo": "Premier truc : c'est pas forcément un mauvais pote. Il est juste bien là où il est, et il aimerait que tu restes avec lui."
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. TES 5 PROCHES",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Deuxième truc : regarde les cinq personnes que tu vois le plus. Souvent, tu finis par leur ressembler."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. « APRÈS MA SÉANCE »",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "Et troisième truc : pas besoin de le lâcher. Dis-lui juste je viens après ma séance. Alors, tu l'identifies ou pas ?"
+  }
+ ]
+}

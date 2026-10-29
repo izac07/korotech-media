@@ -1,0 +1,94 @@
+{
+ "id": "MDA-X74",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9606,
+ "handle": "mentaldacier2030",
+ "question": "T'étais en ligne à quelle heure hier ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "4 H DU MAT",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Ton crush t'a vu en ligne à quatre heures du mat. Bonne chance pour expliquer ça."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "AVOUE L'HEURE",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "vo": "Enregistre la vidéo et reste jusqu'au troisième truc. Mais d'abord, avoue en commentaire à quelle heure t'étais encore en ligne hier.",
+   "ecran": {
+    "type": "chat",
+    "titre": "Messages",
+    "messages": [
+     [
+      "ia",
+      "t'es encore réveillé ?? 😭"
+     ],
+     [
+      "moi",
+      "non non je dormais"
+     ]
+    ]
+   }
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. NOTIFS COUPÉES",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est de couper les notifs à minuit : si personne te fait vibrer, t'as aucune raison d'ouvrir."
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. MODE AVION",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Le deuxième, c'est le mode avion à minuit pile : personne te voit en ligne, et toi, tu vois personne."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. IL DORT AU SALON",
+   "humeur": "dort",
+   "lumiere": "aube",
+   "camera": "dessus",
+   "vo": "Et le troisième : tu te couches à la même heure que ton tel, mais lui, il dort au salon. Alors, t'étais en ligne à quelle heure hier ?"
+  }
+ ],
+ "intro": "noir"
+}

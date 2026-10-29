@@ -1,0 +1,80 @@
+{
+ "id": "MDA-X85",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9617,
+ "handle": "mentaldacier2030",
+ "question": "Ton truc qui te met mal à l'aise ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "CHANGER ?",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "contre",
+   "vo": "Tout le monde veut changer. Personne veut être mal à l'aise."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "TON TRUC",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Écris en commentaire le truc qui te met mal à l'aise mais que tu sais que tu dois faire, et enregistre la vidéo pour la revoir juste avant."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. LE MALAISE",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Premier truc : le malaise, c'est souvent le signe que t'es au bon endroit, pas au mauvais."
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. VERSION MINI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Deuxième truc : commence par la version la plus petite. Pas la salle tous les jours, juste y aller une fois."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. LA 1RE FOIS",
+   "humeur": "content",
+   "lumiere": "aube",
+   "camera": "orbite",
+   "vo": "Et troisième truc : après la première fois, ça fait déjà moins peur. Le plus dur, c'est toujours le premier pas. Alors, c'est quoi ton truc ?"
+  }
+ ],
+ "intro": "noir"
+}

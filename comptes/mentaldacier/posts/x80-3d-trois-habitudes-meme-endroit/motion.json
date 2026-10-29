@@ -1,0 +1,84 @@
+{
+ "id": "MDA-X80",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9612,
+ "handle": "mentaldacier2030",
+ "question": "Commente ton numéro 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "MÊME ENDROIT",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Trois habitudes qui te gardent au même endroit depuis un an."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "SOIS HONNÊTE",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Commente le numéro que tu fais encore, sois honnête, et enregistre la vidéo pour voir dans un mois si t'as changé."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. LE LUNDI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "vo": "Un : tu commences tout le lundi. Du coup, tu passes ta vie à attendre le lundi d'après.",
+   "ecran": {
+    "type": "calendrier",
+    "jours": 30,
+    "jusqua": 0
+   }
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. L'AVIS DES AUTRES",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Deux : tu demandes l'avis de tout le monde avant de te lancer. Et à force d'écouter, tu bouges plus."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. TA ZONE",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et trois : tu fais seulement ce qui te met à l'aise. Sauf que rien de nouveau arrive dans ta zone de confort. Alors, c'est quel numéro, toi ?"
+  }
+ ]
+}

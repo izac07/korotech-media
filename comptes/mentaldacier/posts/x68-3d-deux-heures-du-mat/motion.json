@@ -1,0 +1,87 @@
+{
+ "id": "MDA-X68",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9600,
+ "handle": "mentaldacier2030",
+ "question": "T'as lâché ton tel à quelle heure hier ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "2 H DU MAT",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Deux heures du mat, t'es encore sur ton tel… et c'est pas pour réviser."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "RESTE JUSQU'AU 3E",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Enregistre la vidéo et reste jusqu'au troisième truc, c'est lui qui marche vraiment. Mais d'abord, dis-moi en commentaire à quelle heure tu l'as lâché hier."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. LE CHARGEUR",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Le premier, c'est ton chargeur : tant qu'il est à côté du lit, t'as juste à tendre le bras. Du coup, ce soir, il dort ailleurs.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE SOIR",
+    "lignes": [
+     "Chargeur hors de la chambre"
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. LE RÉVEIL",
+   "humeur": "dort",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "vo": "Le deuxième, c'est ton réveil : si c'est ton tel qui te réveille, c'est lui que tu regardes en premier. Prends un vrai réveil, et c'est réglé."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. DÉCIDE AVANT",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième, celui que personne fait : tu décides avant. Genre, si je suis encore dessus à minuit, dix pompes. Allez, dis-moi… il est quelle heure chez toi ?"
+  }
+ ],
+ "intro": "noir"
+}

@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X70",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9602,
+ "handle": "mentaldacier2030",
+ "question": "Ton record de snooze ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "TON LIT SAIT",
+   "humeur": "dort",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "vo": "Ton lit sait des trucs sur toi que personne d'autre sait."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "AVOUE",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Genre combien de fois t'as appuyé sur snooze ce matin. Enregistre la vidéo, reste jusqu'au troisième, et avoue en commentaire ton record."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. LE RÉVEIL LOIN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Le premier truc, c'est ton réveil : tant qu'il est à portée de main, tu le coupes sans ouvrir les yeux. Du coup, mets-le de l'autre côté de la pièce."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. PIEDS AU SOL",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Le deuxième, c'est le premier geste : pieds au sol, lumière allumée, avant que ton cerveau commence à négocier.",
+   "ecran": {
+    "type": "liste",
+    "titre": "AU RÉVEIL",
+    "lignes": [
+     "Pieds au sol",
+     "Lumière allumée",
+     "Verre d'eau"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. PRÉPARE LA VEILLE",
+   "humeur": "content",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième, celui qui change tout : tu prépares ton matin la veille, comme ça t'as plus rien à décider en te levant. Alors, ton record, c'est combien ?"
+  }
+ ]
+}

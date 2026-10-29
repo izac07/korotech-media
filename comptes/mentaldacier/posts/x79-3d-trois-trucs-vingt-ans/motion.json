@@ -1,0 +1,80 @@
+{
+ "id": "MDA-X79",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9611,
+ "handle": "mentaldacier2030",
+ "question": "Commente le numéro qui te parle 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "À 20 ANS",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "vo": "Trois trucs que personne te dit à vingt ans. Le troisième pique un peu."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "TON NUMÉRO ?",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Commente le numéro qui te parle le plus, et enregistre la vidéo pour la relire dans un an, tu verras si t'avais raison."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. TES POTES",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "contre",
+   "vo": "Un : tes potes de maintenant, t'en garderas pas la moitié, et c'est normal. Garde ceux qui te tirent vers le haut."
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. PERSONNE VIENDRA",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Deux : personne viendra te chercher. Si tu veux une autre vie, c'est toi qui la construis, un petit pas après l'autre."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. LE TEMPS",
+   "humeur": "triste",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "Et trois : le temps que tu perds à scroller, tu le récupéreras jamais. C'est pas pour te faire flipper, c'est pour que tu choisisses. Alors, ton numéro ?"
+  }
+ ],
+ "intro": "noir"
+}

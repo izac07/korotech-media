@@ -1,0 +1,79 @@
+{
+ "id": "MDA-X75",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9607,
+ "handle": "mentaldacier2030",
+ "question": "Ton temps d'écran d'hier ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "TON PIRE ENNEMI",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Ton pire ennemi dort dans ta poche, et tu le recharges tous les soirs."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "TON TEMPS D'ÉCRAN",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Reste jusqu'au troisième conseil et enregistre la vidéo, tu vas en avoir besoin. Mais d'abord, écris en commentaire ton temps d'écran d'hier."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. NOIR ET BLANC",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Le premier, c'est le noir et blanc : réglages, accessibilité, filtre gris. Ton feed devient tout de suite beaucoup moins attirant."
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. PAS LE MATIN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "vo": "Le deuxième, c'est le matin : pas de tel pendant la première demi-heure. Du coup, c'est toi qui choisis ta journée, pas ton feed."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. HORS DE LA CHAMBRE",
+   "humeur": "dort",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : il dort ailleurs que dans ta chambre, même si ça te paraît bizarre au début. Allez, ton temps d'écran d'hier, en commentaire."
+  }
+ ]
+}

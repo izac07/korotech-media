@@ -1,0 +1,79 @@
+{
+ "id": "MDA-X81",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9613,
+ "handle": "mentaldacier2030",
+ "question": "Laquelle tu fais encore ? 1, 2 ou 3 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "AVANT 25 ANS",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Trois choses à arrêter avant tes vingt-cinq ans. La deuxième, tout le monde la fait."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "1, 2 OU 3 ?",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "vo": "Commente un, deux ou trois pour celle que tu fais encore, et enregistre la vidéo, parce que tu vas vouloir la relire."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. 3 H EN SEMAINE",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Un : te coucher à trois heures en semaine. Le lendemain, t'es pas là, et ta journée non plus."
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. « DEMAIN »",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Deux : dire je verrai demain pour tout. Demain, c'est jamais une date dans un agenda."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. TE COMPARER",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "camera": "dessus",
+   "vo": "Et trois : te comparer aux autres sur Insta. Tu compares tes coulisses à leurs meilleurs moments. Alors, laquelle tu fais encore ?"
+  }
+ ]
+}

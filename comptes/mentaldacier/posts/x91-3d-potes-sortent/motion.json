@@ -1,0 +1,89 @@
+{
+ "id": "MDA-X91",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9622,
+ "handle": "mentaldacier2030",
+ "question": "Ce soir : 1 = sortie · 2 = chambre 😏",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "« JE RESTE TRANQUILLE »",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Tes potes sortent ce soir, et toi, tu restes tranquille. On sait ce que ça veut dire."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "1 OU 2 ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Ce soir, t'es un, sortie, ou deux, chambre ? Dis-le en commentaire, et enregistre la vidéo, parce que le troisième conseil va te parler."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. SEUL ≠ PERDU",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est que rester seul, c'est pas un problème. Le problème, c'est de rester seul sans rien prévu."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. UN PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Le deuxième, c'est d'avoir un plan pour ta soirée : une séance, un livre, un projet. Du coup, t'es occupé, pas coincé.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE SOIR",
+    "lignes": [
+     "Une séance",
+     "Un livre",
+     "Un projet"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. COUCHE-TOI TÔT",
+   "humeur": "content",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu te couches avant eux, et demain, c'est toi qui es en forme. Alors, ce soir, un ou deux ?"
+  }
+ ],
+ "intro": "noir"
+}

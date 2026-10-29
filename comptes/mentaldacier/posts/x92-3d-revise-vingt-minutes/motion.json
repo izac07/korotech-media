@@ -1,0 +1,84 @@
+{
+ "id": "MDA-X92",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9623,
+ "handle": "mentaldacier2030",
+ "question": "Ton ratio d'hier ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "20 MIN VS 2 H",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "vo": "Révisé vingt minutes, scrollé deux heures. Avoue, c'était ton ratio hier."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "TON RATIO",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Écris ton vrai ratio d'hier en commentaire, et enregistre la vidéo pour ta prochaine séance de révision, le troisième conseil va te sauver."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. TEL DEHORS",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Le premier, c'est ton tel : il reste dans une autre pièce pendant que tu bosses. Pas sur le bureau, pas retourné, ailleurs."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. 25 MINUTES",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Le deuxième, c'est le minuteur : vingt-cinq minutes de travail, cinq minutes de pause, et tu recommences.",
+   "ecran": {
+    "type": "timer",
+    "exo": "RÉVISION",
+    "secondes": 25
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. COMMENCE PETIT",
+   "humeur": "content",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu commences par le plus facile, juste pour te lancer. Une fois lancé, c'est plus simple de continuer. Alors, ton ratio, c'est quoi ?"
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "id": "MDA-X78",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9610,
+ "handle": "mentaldacier2030",
+ "question": "Ton premier geste au réveil ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "7 H DU MAT",
+   "humeur": "dort",
+   "lumiere": "nuit",
+   "camera": "contre",
+   "vo": "Ce que tu fais à sept heures du mat décide de toute ta journée."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "3 RÈGLES",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Voilà trois règles, et la troisième, c'est celle que personne applique. Enregistre la vidéo, et dis-moi en commentaire ton premier geste au réveil."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "RÈGLE 1",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Règle un : pas de tel avant d'être debout. Sinon, t'es déjà dans la vie des autres avant d'être dans la tienne."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "RÈGLE 2",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Règle deux : un verre d'eau et la lumière du jour, direct, avant même le café.",
+   "ecran": {
+    "type": "liste",
+    "titre": "AVANT LE CAFÉ",
+    "lignes": [
+     "Un verre d'eau",
+     "La lumière du jour"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "RÈGLE 3",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "orbite",
+   "vo": "Et règle trois : tu fais ta tâche la plus pénible en premier, avant que la flemme se réveille. Alors, ton premier geste demain, ce sera quoi ?"
+  }
+ ]
+}

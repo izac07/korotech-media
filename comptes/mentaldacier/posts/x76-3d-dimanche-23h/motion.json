@@ -1,0 +1,87 @@
+{
+ "id": "MDA-X76",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9608,
+ "handle": "mentaldacier2030",
+ "question": "Ton truc repoussé n°1 ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "DIMANCHE, 23 H",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Dimanche, vingt-trois heures, et tu sais très bien ce que t'as pas fait."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "TON TRUC REPOUSSÉ",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Ce truc que tu repousses depuis lundi, écris-le en commentaire, et enregistre la vidéo pour dimanche prochain, parce que le troisième conseil va te servir."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. DÉCOUPE-LE",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est de le découper : pas faire mon dossier, mais ouvrir le fichier. Du coup, ça fait déjà moins peur.",
+   "ecran": {
+    "type": "liste",
+    "titre": "PAS ÇA",
+    "lignes": [
+     "Faire mon dossier ✗",
+     "Ouvrir le fichier ✓"
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. UNE HEURE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Le deuxième, c'est de lui donner une heure : lundi, dix-huit heures, dans ton agenda, comme un vrai rendez-vous."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. DEUX MINUTES",
+   "humeur": "content",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : deux minutes, juste deux, ce soir avant de dormir. Le plus dur, c'est de commencer. Alors, c'est quoi ton truc repoussé ?"
+  }
+ ]
+}

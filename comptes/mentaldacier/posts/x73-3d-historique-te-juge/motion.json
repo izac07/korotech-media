@@ -1,0 +1,86 @@
+{
+ "id": "MDA-X73",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9605,
+ "handle": "mentaldacier2030",
+ "question": "Ton appli la plus ouverte hier ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "TON HISTORIQUE",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Ton historique de navigation te juge. Et franchement, il a raison."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "SANS TRICHER",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Enregistre la vidéo, reste jusqu'au troisième, et écris en commentaire l'appli que t'as le plus ouverte hier, sans tricher."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. REGARDE EN FACE",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "vo": "Le premier, c'est de regarder ton temps d'écran en face : réglages, temps d'écran, et tu lis le chiffre à voix haute. Ça calme."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. CACHE-LES",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Le deuxième, c'est de cacher les applis qui te volent du temps, dans un dossier sur la dernière page. Du coup, ton pouce les trouve plus par réflexe.",
+   "ecran": {
+    "type": "liste",
+    "titre": "DERNIÈRE PAGE",
+    "lignes": [
+     "Les applis qui te volent du temps"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. UNE HEURE MAX",
+   "humeur": "content",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : une limite d'une heure par jour sur la pire appli. Quand ça bloque, tu fermes, point. Alors, c'est laquelle, ton appli ?"
+  }
+ ]
+}

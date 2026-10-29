@@ -1,0 +1,93 @@
+{
+ "id": "MDA-X89",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9620,
+ "handle": "mentaldacier2030",
+ "question": "Ton record d'épisodes d'affilée ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "« JUSTE UN ÉPISODE »",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Juste un épisode, il était vingt-trois heures. Il est trois heures."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "TON RECORD",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "vo": "Enregistre la vidéo, reste jusqu'au troisième, et avoue en commentaire ton record d'épisodes d'affilée.",
+   "ecran": {
+    "type": "chat",
+    "titre": "Ce soir",
+    "messages": [
+     [
+      "ia",
+      "Vous regardez toujours ? 👀"
+     ],
+     [
+      "moi",
+      "oui."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. LECTURE AUTO",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est de couper la lecture automatique dans les réglages. Du coup, chaque épisode devient une vraie décision."
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. DÉCIDE LE NOMBRE",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Le deuxième, c'est de décider le nombre avant : deux épisodes, pas un de plus, et tu le dis à voix haute."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. JAMAIS AU LIT",
+   "humeur": "dort",
+   "lumiere": "aube",
+   "camera": "dessus",
+   "vo": "Et le troisième : tu regardes jamais au lit. Canapé, oui, lit, non. Ton lit, c'est pour dormir. Alors, ton record, c'est combien ?"
+  }
+ ]
+}

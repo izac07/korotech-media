@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X71",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9603,
+ "handle": "mentaldacier2030",
+ "question": "T'as scrollé jusqu'à quelle heure ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "LUMIÈRE OFF, TEL ON",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "contre",
+   "vo": "T'as éteint la lumière… mais pas ton tel. Classique."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "LE 3E MARCHE",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Reste jusqu'au troisième, c'est lui qui marche vraiment, et enregistre la vidéo pour ce soir. Mais d'abord, dis-moi jusqu'à quelle heure t'as scrollé hier."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. MODE NUIT",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Le premier, c'est la luminosité : écran au minimum et mode nuit dès vingt-deux heures. Du coup, ton tel devient beaucoup moins tentant."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. NE PAS DÉRANGER",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le deuxième, c'est le mode ne pas déranger : plus de notifs, plus d'excuse pour le reprendre juste deux secondes.",
+   "ecran": {
+    "type": "liste",
+    "titre": "22 H",
+    "lignes": [
+     "Ne pas déranger",
+     "Zéro notif"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. IL DORT AILLEURS",
+   "humeur": "dort",
+   "lumiere": "aube",
+   "camera": "orbite",
+   "vo": "Et le troisième, le plus efficace : ton tel dort hors de la chambre, et tu lis deux pages à la place. Alors, t'as lâché à quelle heure ?"
+  }
+ ],
+ "intro": "noir"
+}

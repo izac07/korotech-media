@@ -1,0 +1,79 @@
+{
+ "id": "MDA-X83",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9615,
+ "handle": "mentaldacier2030",
+ "question": "Il te dirait quoi, ton futur toi ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "1 H DU MAT",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Ton futur toi te regarde, là, à une heure du mat. Et il est pas content."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "IL TE DIRAIT QUOI ?",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Écris en commentaire ce qu'il te dirait, sérieux, et enregistre la vidéo pour la revoir le jour où t'auras la flemme."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. CHAQUE SOIR",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Premier truc : chaque soir, tu choisis entre ton confort de maintenant et la personne que tu veux devenir."
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. LES PETITS CHOIX",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Deuxième truc : ton futur toi se construit pas avec des grandes décisions, mais avec des petits choix, genre lâcher ton tel à minuit."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. 30 MIN PLUS TÔT",
+   "humeur": "dort",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et troisième truc : ce soir, fais-lui un cadeau, couche-toi trente minutes plus tôt. Juste ça. Alors, il te dirait quoi, ton futur toi ?"
+  }
+ ]
+}

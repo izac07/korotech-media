@@ -1,0 +1,85 @@
+{
+ "id": "MDA-X88",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9619,
+ "handle": "mentaldacier2030",
+ "question": "T'as déjà tenu 21 jours ? 1 = oui · 2 = non",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "JOUR 21",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Jour vingt et un sans la BR. Ce que personne te dit sur ce jour-là."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "1 OU 2 ?",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Commente un si t'as déjà tenu vingt et un jours, deux si jamais, et enregistre la vidéo pour le jour où tu y seras."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. PLUS SOURNOIS",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "vo": "Le premier, c'est que l'envie revient pas plus forte, elle revient plus sournoise : un soir d'ennui, un juste une fois."
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. GARDE TES RÈGLES",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Le deuxième, c'est que c'est là que tu dois garder tes règles du début, même si tu te sens solide."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "3. LA SÉRIE",
+   "humeur": "content",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu notes chaque jour tenu, une croix sur un calendrier. Voir la série, ça donne envie de pas la casser. Alors, un ou deux ?",
+   "ecran": {
+    "type": "calendrier",
+    "jours": 30,
+    "jusqua": 21
+   }
+  }
+ ],
+ "intro": "noir"
+}

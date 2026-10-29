@@ -1,0 +1,79 @@
+{
+ "id": "MDA-X84",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9616,
+ "handle": "mentaldacier2030",
+ "question": "1 = je suis dedans · 2 = j'en sors",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "TA PRISON DOUCE",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "vo": "Ton confort, c'est ta prison la plus douce. Et t'as même pas envie d'en sortir."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "1 OU 2 ?",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Dis-moi en commentaire, un si t'es dedans, deux si t'es en train d'en sortir, et enregistre la vidéo, le troisième point va te parler."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. ON S'HABITUE",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Premier point : le canapé, les séries, le tel, c'est pas mauvais. Le problème, c'est qu'on s'y habitue, et après, plus rien bouge."
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. PAS UN PIÈGE ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Deuxième point : tant que t'es dedans, ça ressemble jamais à un piège. Ça ressemble juste à une soirée tranquille."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. UN TRUC PAR JOUR",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et troisième point : pour en sortir, pas besoin de tout changer. Un truc un peu inconfortable par jour, ça suffit. Alors, un ou deux ?"
+  }
+ ]
+}

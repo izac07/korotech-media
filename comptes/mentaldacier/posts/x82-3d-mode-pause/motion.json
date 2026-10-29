@@ -1,0 +1,85 @@
+{
+ "id": "MDA-X82",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9614,
+ "handle": "mentaldacier2030",
+ "question": "Avoue ton numéro 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "MODE PAUSE",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Trois signes que ta vie est en pause, sans que tu t'en rendes compte."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "AVOUE",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Avoue en commentaire le numéro qui te ressemble, et enregistre la vidéo, parce que le troisième, c'est le plus important."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. TES SEMAINES",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Un : tes semaines se ressemblent toutes, et tu sais plus trop ce qui s'est passé lundi dernier.",
+   "ecran": {
+    "type": "calendrier",
+    "jours": 28,
+    "jusqua": 0
+   }
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. « QUAND J'AURAI LE TEMPS »",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "vo": "Deux : tu dis quand j'aurai le temps depuis des mois, pour les mêmes projets."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. LA MOTIVATION",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et trois : t'attends d'être motivé pour commencer. Mais la motivation arrive en faisant, pas avant. Alors, c'est quel numéro, toi ?"
+  }
+ ],
+ "intro": "noir"
+}

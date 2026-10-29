@@ -1,0 +1,89 @@
+{
+ "id": "MDA-X77",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9609,
+ "handle": "mentaldacier2030",
+ "question": "1 = le tel · 2 = les pensées · 3 = les deux",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "CREVÉ, PAS SOMMEIL",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "vo": "T'es crevé, mais t'as pas sommeil. Et on sait tous les deux pourquoi."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "1, 2 OU 3 ?",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Dis-moi en commentaire si c'est un, ton tel, deux, tes pensées, ou trois, les deux. Et enregistre la vidéo, le troisième conseil vaut le coup."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. L'ÉCRAN",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Le premier, c'est l'écran : plus de tel trente minutes avant de dormir. Du coup, ta tête redescend enfin."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. ÉCRIS-LES",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Le deuxième, c'est les pensées : tu les écris sur un papier, trois lignes, et tu les laisses là jusqu'à demain.",
+   "ecran": {
+    "type": "liste",
+    "titre": "DANS MA TÊTE",
+    "lignes": [
+     "…",
+     "…",
+     "…"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. MÊME HEURE",
+   "humeur": "dort",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : même heure de coucher tous les soirs, même le week-end. Au début ça saoule, après c'est automatique. Alors, un, deux ou trois ?"
+  }
+ ],
+ "intro": "noir"
+}
