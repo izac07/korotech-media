@@ -1,0 +1,79 @@
+{
+ "id": "R51",
+ "layout": "interface",
+ "music_seed": 1058,
+ "handle": "korotech_fr",
+ "couleurs": {
+  "acc": "#6d3df2",
+  "tuiles": [
+   "#6d3df2",
+   "#ff5a36",
+   "#f2a516",
+   "#1f9d6e"
+  ]
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "titre": "POV : un **contrat**<br>à signer",
+   "sous": "et tu ne comprends rien",
+   "notif": [
+    "📄",
+    "Document",
+    "Contrat · à signer"
+   ],
+   "vo": "POV : un contrat à signer, et tu ne comprends presque rien."
+  },
+  {
+   "type": "chat",
+   "titre": "Étape 1 : **explique**",
+   "messages": [
+    [
+     "moi",
+     "Explique ces clauses en mots simples."
+    ],
+    [
+     "ia",
+     "Clause 1 : …\nClause 2 : …"
+    ]
+   ],
+   "vo": "Étape un : colle les clauses dans Claude, sans tes données perso, et demande une explication simple. Enregistre cette vidéo pour t'en souvenir."
+  },
+  {
+   "type": "toggles",
+   "titre": "Qui fait **quoi** ?",
+   "carte": "Le contrat",
+   "carte_sous": "qui s'en occupe ?",
+   "items": [
+    "Expliquer les mots",
+    "Lister les points à vérifier",
+    "Préparer tes questions",
+    [
+     "Décider de signer",
+     false
+    ]
+   ],
+   "vo": "Étape deux : Claude explique, toi tu décides. Tu relis un contrat en entier ou tu signes direct, avoue-le en commentaire."
+  },
+  {
+   "type": "grille",
+   "titre": "Étape 3 : **fais vérifier**",
+   "cartes": [
+    "Durée",
+    "Prix",
+    "Préavis",
+    "Un pro"
+   ],
+   "vo": "Étape trois : Claude peut se tromper. Fais vérifier par un adulte ou un conseiller avant de signer."
+  },
+  {
+   "type": "cta",
+   "titre": "Mes 10 prompts<br>**pour réviser**",
+   "ctas": [
+    "🔖 Enregistre",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

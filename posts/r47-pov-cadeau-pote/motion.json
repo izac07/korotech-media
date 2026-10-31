@@ -1,0 +1,79 @@
+{
+ "id": "R47",
+ "layout": "interface",
+ "music_seed": 1054,
+ "handle": "korotech_fr",
+ "couleurs": {
+  "acc": "#6d3df2",
+  "tuiles": [
+   "#6d3df2",
+   "#ff5a36",
+   "#f2a516",
+   "#1f9d6e"
+  ]
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "titre": "POV : **cadeau**<br>et zéro idée",
+   "sous": "l'anniversaire de ton pote, c'est demain",
+   "notif": [
+    "🎁",
+    "Rappel",
+    "Anniversaire · demain"
+   ],
+   "vo": "POV : l'anniversaire de ton pote, c'est demain, et zéro idée de cadeau."
+  },
+  {
+   "type": "chat",
+   "titre": "Étape 1 : **les goûts**",
+   "messages": [
+    [
+     "moi",
+     "Il aime le foot. Budget : 20 €. Des idées ?"
+    ],
+    [
+     "ia",
+     "Voici des pistes : …"
+    ]
+   ],
+   "vo": "Étape un : dis à Claude ce qu'il aime et ton budget. Enregistre cette vidéo, ça dépanne pour tous les anniversaires."
+  },
+  {
+   "type": "toggles",
+   "titre": "Qui fait **quoi** ?",
+   "carte": "Le cadeau",
+   "carte_sous": "qui s'en occupe ?",
+   "items": [
+    "Trouver des idées",
+    "Trier par budget",
+    "Écrire la carte",
+    [
+     "Choisir ce qui lui ressemble",
+     false
+    ]
+   ],
+   "vo": "Étape deux : Claude propose, trie et écrit la carte. Toi, tu choisis ce qui lui ressemble. Pire cadeau reçu, avoue-le en commentaire."
+  },
+  {
+   "type": "grille",
+   "titre": "Étape 3 : **perso**",
+   "cartes": [
+    "Ses goûts",
+    "Ton budget",
+    "L'occasion",
+    "Un détail"
+   ],
+   "vo": "Étape trois : ajoute un détail perso, une private joke. C'est ça qui touche."
+  },
+  {
+   "type": "cta",
+   "titre": "Mes 10 prompts<br>**pour réviser**",
+   "ctas": [
+    "🔖 Enregistre",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

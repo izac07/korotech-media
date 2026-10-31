@@ -1,0 +1,79 @@
+{
+ "id": "R55",
+ "layout": "interface",
+ "music_seed": 1062,
+ "handle": "korotech_fr",
+ "couleurs": {
+  "acc": "#6d3df2",
+  "tuiles": [
+   "#6d3df2",
+   "#ff5a36",
+   "#f2a516",
+   "#1f9d6e"
+  ]
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "titre": "POV : **dimanche soir**",
+   "sous": "et la semaine te fait déjà peur",
+   "notif": [
+    "🔔",
+    "Agenda",
+    "Lundi · 8 h"
+   ],
+   "vo": "POV : dimanche soir, et la semaine qui arrive te fait déjà peur."
+  },
+  {
+   "type": "chat",
+   "titre": "Étape 1 : **vide ta tête**",
+   "messages": [
+    [
+     "moi",
+     "Voici ma semaine. Trie l'urgent."
+    ],
+    [
+     "ia",
+     "Donne-moi les dates et durées."
+    ]
+   ],
+   "vo": "Étape un : écris tout ce qui t'attend dans Claude et demande de trier l'urgent. Enregistre cette vidéo, c'est ton rituel du dimanche."
+  },
+  {
+   "type": "toggles",
+   "titre": "Qui fait **quoi** ?",
+   "carte": "La semaine",
+   "carte_sous": "qui s'en occupe ?",
+   "items": [
+    "Trier l'urgent",
+    "Caler les créneaux",
+    "Prévoir les pauses",
+    [
+     "Choisir tes priorités",
+     false
+    ]
+   ],
+   "vo": "Étape deux : Claude trie et cale. Toi, tu choisis tes priorités. Dimanche soir, tu planifies ou tu improvises, dis-le en commentant un ou deux."
+  },
+  {
+   "type": "grille",
+   "titre": "Étape 3 : **lundi**",
+   "cartes": [
+    "Un devoir",
+    "Un rendu",
+    "Une pause",
+    "Un objectif"
+   ],
+   "vo": "Étape trois : décide de la première tâche de lundi, une seule, la plus petite."
+  },
+  {
+   "type": "cta",
+   "titre": "Mes 10 prompts<br>**pour réviser**",
+   "ctas": [
+    "🔖 Enregistre",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

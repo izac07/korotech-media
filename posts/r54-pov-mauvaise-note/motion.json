@@ -1,0 +1,62 @@
+{
+ "id": "R54",
+ "layout": "cheatsheet",
+ "music_seed": 1061,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**ÉTAPES**",
+   "sub": "POV : une mauvaise note 😶",
+   "vo": "POV : le prof rend ta copie, et la note n'est pas terrible. Étape un : comprends d'abord."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Comprendre",
+   "file": "Copie_corrigee",
+   "ext": "PDF",
+   "pills": [
+    "📝 Ta copie",
+    "💬 Remarques",
+    "❓ Pourquoi ?"
+   ],
+   "text": "Cherche **le pourquoi**",
+   "vo": "Recopie les remarques du prof dans Claude et demande ce que chacune veut dire. Enregistre cette vidéo, ça aide."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Ton erreur",
+   "nodes": [
+    "Erreur",
+    "Cause",
+    "Correction"
+   ],
+   "text": "Trouve **ta cause**",
+   "vo": "Deux : pour chaque erreur, cherche si c'est le cours, la méthode ou le stress. Sois honnête, c'est lequel pour toi ?"
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "La suite",
+   "q": "Donne-moi un exercice sur mon erreur",
+   "answers": [
+    "Mon erreur",
+    "Un exercice",
+    "✅ Corrigé"
+   ],
+   "text": "Refais **un exercice**",
+   "vo": "Trois : demande un exercice sur ton erreur, fais-le, puis fais-le corriger. Une note n'est pas ta valeur."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour ta copie",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "id": "R46",
+ "layout": "cheatsheet",
+ "music_seed": 1053,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**ÉTAPES**",
+   "sub": "POV : leçon par cœur 😬",
+   "vo": "POV : tu dois apprendre une leçon par cœur pour demain. Étape un : coupe-la en morceaux."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Morceaux",
+   "file": "Lecon_decoupee",
+   "ext": "TXT",
+   "pills": [
+    "✂️ Petits blocs",
+    "📌 Mots-clés",
+    "🔁 Un à un"
+   ],
+   "text": "Coupe en **blocs**",
+   "vo": "Colle ta leçon dans Claude, demande des petits blocs avec les mots-clés. Enregistre cette vidéo, ça marche partout."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Texte à trous",
+   "nodes": [
+    "Texte",
+    "Trous",
+    "Réponses"
+   ],
+   "text": "Cache **des mots**",
+   "vo": "Deux : demande un texte à trous sur chaque bloc. Tu retrouves les mots seul. Ta leçon la plus galère, dis-la en commentaire."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Récite",
+   "q": "Corrige ma récitation avec mon texte",
+   "answers": [
+    "Je récite",
+    "Je compare",
+    "✅ Corrigé"
+   ],
+   "text": "Récite, puis **compare**",
+   "vo": "Trois : récite, colle ce que tu as dit, et fais comparer avec ton texte. Vérifie toujours dans ton cours."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour tes leçons",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "id": "R44",
+ "layout": "cheatsheet",
+ "music_seed": 1051,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**ÉTAPES**",
+   "sub": "POV : t'as pas commencé 😅",
+   "vo": "POV : le devoir est pour après-demain et tu n'as pas commencé. Premier pas : demande un plan."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Le plan",
+   "file": "Plan_devoir",
+   "ext": "DOC",
+   "pills": [
+    "📝 Ton sujet",
+    "🧩 Trois parties",
+    "🎯 Idées"
+   ],
+   "text": "Demande **un plan**",
+   "vo": "Colle ton sujet dans Claude, demande un plan en trois parties. Enregistre cette vidéo, la page blanche est le vrai problème."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Par blocs",
+   "nodes": [
+    "Dix minutes",
+    "Pause",
+    "Suite"
+   ],
+   "text": "Avance **par blocs**",
+   "vo": "Deux : travaille dix minutes par partie du plan, puis pause. Avoue : tu procrastines sur quoi d'habitude ?"
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Fais-toi relire",
+   "q": "Relis mon texte, que manque-t-il ?",
+   "answers": [
+    "Mon texte",
+    "Ce qui manque",
+    "✅ Version claire"
+   ],
+   "text": "Il **relit**, tu écris",
+   "vo": "Trois : demande ce qui manque, sans qu'il écrive à ta place. C'est ton devoir, pas le sien."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour demain",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

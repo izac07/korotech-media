@@ -1,0 +1,79 @@
+{
+ "id": "R45",
+ "layout": "interface",
+ "music_seed": 1052,
+ "handle": "korotech_fr",
+ "couleurs": {
+  "acc": "#6d3df2",
+  "tuiles": [
+   "#6d3df2",
+   "#ff5a36",
+   "#f2a516",
+   "#1f9d6e"
+  ]
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "titre": "POV : **entretien**<br>de job demain",
+   "sous": "tu n'as jamais passé d'entretien",
+   "notif": [
+    "📅",
+    "Calendrier",
+    "Entretien · demain 10 h"
+   ],
+   "vo": "POV : entretien pour un job étudiant demain, et tu n'en as jamais passé. Voilà comment t'entraîner."
+  },
+  {
+   "type": "chat",
+   "titre": "Étape 1 : **l'entraînement**",
+   "messages": [
+    [
+     "moi",
+     "Joue le recruteur. Une question à la fois."
+    ],
+    [
+     "ia",
+     "Peux-tu te présenter ?"
+    ]
+   ],
+   "vo": "Étape un : demande à Claude de jouer le recruteur, une question à la fois. Enregistre cette vidéo, elle resservira."
+  },
+  {
+   "type": "toggles",
+   "titre": "Qui fait **quoi** ?",
+   "carte": "L'entretien",
+   "carte_sous": "qui s'en occupe ?",
+   "items": [
+    "Poser les questions",
+    "Relire tes réponses",
+    "Proposer des pistes",
+    [
+     "Rester toi-même",
+     false
+    ]
+   ],
+   "vo": "Étape deux : Claude pose les questions. Toi, tu restes toi-même. Ton plus gros stress, la présentation ou les questions, dis-le en commentaire."
+  },
+  {
+   "type": "grille",
+   "titre": "Étape 3 : **prépare**",
+   "cartes": [
+    "Présentation",
+    "Motivation",
+    "Disponibilités",
+    "Tes questions"
+   ],
+   "vo": "Étape trois : prépare une ou deux questions à poser à la fin."
+  },
+  {
+   "type": "cta",
+   "titre": "Mes 10 prompts<br>**pour réviser**",
+   "ctas": [
+    "🔖 Enregistre",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

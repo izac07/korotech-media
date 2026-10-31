@@ -1,0 +1,62 @@
+{
+ "id": "R42",
+ "layout": "cheatsheet",
+ "music_seed": 1049,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**RÉFLEXES**",
+   "sub": "POV : interro surprise 😱",
+   "vo": "POV : le prof sort une feuille, interro surprise. Premier réflexe : lis tout avant d'écrire."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Lis tout",
+   "file": "Interro_surprise",
+   "ext": "PDF",
+   "pills": [
+    "👀 Tout lire",
+    "✅ Le facile d'abord",
+    "⏱️ Garde du temps"
+   ],
+   "text": "Commence par **le facile**",
+   "vo": "Commence par ce que tu maîtrises, ça calme la tête. Enregistre cette vidéo, la suite sert dès ce soir."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Après l'interro",
+   "nodes": [
+    "Erreurs",
+    "Cours",
+    "Quiz"
+   ],
+   "text": "Corrige **tes erreurs**",
+   "vo": "Deux : le soir même, donne tes réponses à Claude et fais-toi expliquer chaque erreur. Sois honnête, tu rates quoi le plus ?"
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Prochaine fois",
+   "q": "Interroge-moi sur ce chapitre",
+   "answers": [
+    "Question 1",
+    "Ma réponse",
+    "✅ Correction"
+   ],
+   "text": "Entraîne-toi **avant**",
+   "vo": "Trois, le meilleur : demande-lui de t'interroger chapitre par chapitre. La prochaine interro surprise ne le sera plus."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour l'interro",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "id": "R52",
+ "layout": "cheatsheet",
+ "music_seed": 1059,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**ÉTAPES**",
+   "sub": "POV : partiels dans 5 jours",
+   "vo": "POV : partiels dans cinq jours, et rien n'est prêt. Étape un : fais ton planning."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Le planning",
+   "file": "Planning_partiels",
+   "ext": "PDF",
+   "pills": [
+    "📅 Tes dates",
+    "📚 Tes matières",
+    "⏱️ Tes heures"
+   ],
+   "text": "Un planning **réaliste**",
+   "vo": "Donne tes matières, dates et heures libres à Claude, et demande un planning, et enregistre cette vidéo pour la garder."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Courtes séances",
+   "nodes": [
+    "Cours",
+    "Quiz",
+    "Pause"
+   ],
+   "text": "Séances **courtes**",
+   "vo": "Deux : des séances courtes, avec un quiz à la fin. Quelle matière te fait le plus peur, dis-le en commentaire."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Le soir",
+   "q": "Résume ce que j'ai retenu aujourd'hui",
+   "answers": [
+    "Ce que je sais",
+    "Ce qui manque",
+    "✅ Demain"
+   ],
+   "text": "Un bilan **chaque soir**",
+   "vo": "Trois : chaque soir, dis ce que tu as retenu et demande-lui ce qui manque. Ça donne le programme de demain."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour tes partiels",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

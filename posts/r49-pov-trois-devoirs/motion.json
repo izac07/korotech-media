@@ -1,0 +1,79 @@
+{
+ "id": "R49",
+ "layout": "interface",
+ "music_seed": 1056,
+ "handle": "korotech_fr",
+ "couleurs": {
+  "acc": "#6d3df2",
+  "tuiles": [
+   "#6d3df2",
+   "#ff5a36",
+   "#f2a516",
+   "#1f9d6e"
+  ]
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "titre": "POV : **3 devoirs**<br>pour demain",
+   "sous": "et tu ne sais pas par où commencer",
+   "notif": [
+    "📚",
+    "Cahier de textes",
+    "Maths · Histoire · Anglais"
+   ],
+   "vo": "POV : trois devoirs pour demain, et tu ne sais pas par où commencer."
+  },
+  {
+   "type": "chat",
+   "titre": "Étape 1 : **trie**",
+   "messages": [
+    [
+     "moi",
+     "Maths, histoire, anglais : quel ordre ?"
+    ],
+    [
+     "ia",
+     "Donne-moi la durée de chacun."
+    ]
+   ],
+   "vo": "Étape un : donne à Claude tes devoirs, leur durée et le plus dur. Enregistre cette vidéo, c'est ton plan du soir."
+  },
+  {
+   "type": "toggles",
+   "titre": "Qui fait **quoi** ?",
+   "carte": "Ce soir",
+   "carte_sous": "qui s'en occupe ?",
+   "items": [
+    "Ordonner les devoirs",
+    "Caler les pauses",
+    "Fixer l'heure de fin",
+    [
+     "Faire les devoirs",
+     false
+    ]
+   ],
+   "vo": "Étape deux : Claude ordonne. Toi, tu fais les devoirs. Tu commences par le dur ou le facile, dis-le en commentant un ou deux."
+  },
+  {
+   "type": "grille",
+   "titre": "Étape 3 : **le bilan**",
+   "cartes": [
+    "Fait",
+    "À finir",
+    "Pour demain",
+    "Pause"
+   ],
+   "vo": "Étape trois : le soir, note ce qui reste et demande-lui de le replacer demain."
+  },
+  {
+   "type": "cta",
+   "titre": "Mes 10 prompts<br>**pour réviser**",
+   "ctas": [
+    "🔖 Enregistre",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

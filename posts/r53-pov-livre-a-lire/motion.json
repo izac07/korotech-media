@@ -1,0 +1,79 @@
+{
+ "id": "R53",
+ "layout": "interface",
+ "music_seed": 1060,
+ "handle": "korotech_fr",
+ "couleurs": {
+  "acc": "#6d3df2",
+  "tuiles": [
+   "#6d3df2",
+   "#ff5a36",
+   "#f2a516",
+   "#1f9d6e"
+  ]
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "titre": "POV : **un livre**<br>en une semaine",
+   "sous": "et tu n'as pas ouvert la première page",
+   "notif": [
+    "📖",
+    "Prof de français",
+    "Lecture · lundi"
+   ],
+   "vo": "POV : un livre à lire en une semaine, et page un jamais ouverte."
+  },
+  {
+   "type": "chat",
+   "titre": "Étape 1 : **le planning**",
+   "messages": [
+    [
+     "moi",
+     "Répartis mes pages sur six jours."
+    ],
+    [
+     "ia",
+     "Jour 1 : …\nJour 2 : …"
+    ]
+   ],
+   "vo": "Étape un : demande à Claude de répartir les pages sur tes jours. Enregistre cette vidéo, ça marche pour tout livre."
+  },
+  {
+   "type": "toggles",
+   "titre": "Qui fait **quoi** ?",
+   "carte": "Le livre",
+   "carte_sous": "qui s'en occupe ?",
+   "items": [
+    "Répartir les pages",
+    "Poser des questions",
+    "Rappeler les personnages",
+    [
+     "Lire le livre",
+     false
+    ]
+   ],
+   "vo": "Étape deux : Claude répartit et te pose des questions. Toi, tu lis. Livre papier ou audio, dis-le en commentant un ou deux."
+  },
+  {
+   "type": "grille",
+   "titre": "Étape 3 : **la fiche**",
+   "cartes": [
+    "Personnages",
+    "Lieux",
+    "Thèmes",
+    "Citations"
+   ],
+   "vo": "Étape trois : note les personnages chaque soir, puis fais-toi interroger. Claude peut se tromper sur un livre précis."
+  },
+  {
+   "type": "cta",
+   "titre": "Mes 10 prompts<br>**pour réviser**",
+   "ctas": [
+    "🔖 Enregistre",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

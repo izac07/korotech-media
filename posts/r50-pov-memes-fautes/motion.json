@@ -1,0 +1,62 @@
+{
+ "id": "R50",
+ "layout": "cheatsheet",
+ "music_seed": 1057,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**ÉTAPES**",
+   "sub": "POV : les mêmes fautes 🙃",
+   "vo": "POV : tu fais toujours les mêmes fautes d'orthographe. Étape un : fais-les repérer."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Repère",
+   "file": "Mes_fautes",
+   "ext": "TXT",
+   "pills": [
+    "📄 Un texte à toi",
+    "🔍 Fautes types",
+    "📌 La règle"
+   ],
+   "text": "Trouve **tes fautes**",
+   "vo": "Colle un de tes textes dans Claude, demande tes fautes les plus fréquentes. Enregistre cette vidéo, c'est le vrai déclic."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Exercices",
+   "nodes": [
+    "Faute",
+    "Règle",
+    "Exercice"
+   ],
+   "text": "Entraîne **ces fautes**",
+   "vo": "Deux : demande dix phrases d'exercice sur ta faute numéro un. Ta faute préférée, avoue-la en commentaire."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Une phrase",
+   "q": "Résume la règle en une phrase",
+   "answers": [
+    "Règle",
+    "Exemple",
+    "✅ Retenue"
+   ],
+   "text": "Une règle, **une phrase**",
+   "vo": "Trois : demande la règle en une phrase et un exemple. Vérifie dans ton manuel, Claude peut se tromper."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour tes fautes",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}

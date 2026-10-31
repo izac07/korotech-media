@@ -1,0 +1,62 @@
+{
+ "id": "R48",
+ "layout": "cheatsheet",
+ "music_seed": 1055,
+ "handle": "korotech_fr",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "3",
+   "title": "**RÉFLEXES**",
+   "sub": "POV : exposé oral demain 😰",
+   "vo": "POV : exposé oral demain, et ton cerveau se vide déjà. Premier réflexe : trois points, pas plus."
+  },
+  {
+   "type": "pills",
+   "num": "01",
+   "name": "Trois points",
+   "file": "Plan_expose",
+   "ext": "DOC",
+   "pills": [
+    "1️⃣ L'idée",
+    "2️⃣ L'exemple",
+    "3️⃣ La fin"
+   ],
+   "text": "Réduis à **trois points**",
+   "vo": "Demande à Claude de ramener ton exposé à trois points. Enregistre cette vidéo, la suite te sauvera."
+  },
+  {
+   "type": "diagram",
+   "num": "02",
+   "name": "Le jury",
+   "nodes": [
+    "Tes notes",
+    "Questions",
+    "Réponses"
+   ],
+   "text": "Il joue **le jury**",
+   "vo": "Deux : demande-lui de jouer le jury, une question à la fois. Stress avant ou stress pendant, dis-le en commentant un ou deux."
+  },
+  {
+   "type": "search",
+   "num": "03",
+   "name": "Chrono",
+   "q": "Dis-moi ce que tu as oublié",
+   "answers": [
+    "Ma version",
+    "Ce que j'oublie",
+    "✅ Version claire"
+   ],
+   "text": "Entraîne-toi **à voix haute**",
+   "vo": "Trois, le meilleur : dis ton exposé à voix haute, chrono en main, puis demande ce que tu as oublié."
+  },
+  {
+   "type": "cta",
+   "ctas": [
+    "🔖 Enregistre pour ton oral",
+    "💬 Commente PROMPTS"
+   ],
+   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+  }
+ ]
+}
