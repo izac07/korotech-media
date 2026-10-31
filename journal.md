@@ -66,3 +66,13 @@ Parents : aider en maths ; outils gratuits ; parler d'IA à son ado.
 | 2026-10-31 19:15 | R39 | Reel | Budget étudiant du mois en 3 étapes (Vie étudiante, cheatsheet) | — |
 | 2026-11-01 12:15 | R40 | Reel | Retenir du vocabulaire d'anglais (Études malin, cheatsheet) | — |
 | 2026-11-01 19:15 | R41 | Reel | POV : ta mère te voit réviser avec ChatGPT (Humour / POV, cheatsheet) | — |
+| 2026-11-02 12:15 | R42 | Reel | Interro surprise : 3 réflexes (Études malin, cheatsheet) | — |
+| 2026-11-02 19:15 | R43 | Reel | POV : 200 messages non lus dans le groupe de la classe (Vie étudiante, interface) | — |
+| 2026-11-03 12:15 | R44 | Reel | POV : devoir pas commencé, démarrer en 3 étapes (Études malin, cheatsheet) | — |
+| 2026-11-03 19:15 | R45 | Reel | POV : entretien de job étudiant demain (Vie étudiante, interface) | — |
+| 2026-11-04 12:15 | R46 | Reel | POV : leçon à apprendre par coeur (Études malin, cheatsheet) | — |
+| 2026-11-04 19:15 | R47 | Reel | POV : cadeau pour un pote, zéro idée (L'IA au quotidien, interface) | — |
+| 2026-11-05 12:15 | R48 | Reel | POV : exposé oral demain (Études malin, cheatsheet) | — |
+| 2026-11-05 19:15 | R49 | Reel | POV : 3 devoirs pour demain, par où commencer (Vie étudiante, interface) | — |
+| 2026-11-06 12:15 | R50 | Reel | POV : toujours les mêmes fautes d'orthographe (Études malin, cheatsheet) | — |
+| 2026-11-06 19:15 | R51 | Reel | POV : contrat à signer, comprendre sans tout savoir (Vie étudiante, interface) | — |
