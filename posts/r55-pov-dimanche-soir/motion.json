@@ -22,7 +22,9 @@
     "Agenda",
     "Lundi · 8 h"
    ],
-   "vo": "POV : dimanche soir, et la semaine qui arrive te fait déjà peur."
+   "vo": "",
+   "vo_prevu": "POV : dimanche soir, et la semaine qui arrive te fait déjà peur.",
+   "dur": 5.0
   },
   {
    "type": "chat",
@@ -37,7 +39,9 @@
      "Donne-moi les dates et durées."
     ]
    ],
-   "vo": "Étape un : écris tout ce qui t'attend dans Claude et demande de trier l'urgent. Enregistre cette vidéo, c'est ton rituel du dimanche."
+   "vo": "",
+   "vo_prevu": "Étape un : écris tout ce qui t'attend dans Claude et demande de trier l'urgent. Enregistre cette vidéo, c'est ton rituel du dimanche.",
+   "dur": 6.0
   },
   {
    "type": "toggles",
@@ -53,7 +57,9 @@
      false
     ]
    ],
-   "vo": "Étape deux : Claude trie et cale. Toi, tu choisis tes priorités. Dimanche soir, tu planifies ou tu improvises, dis-le en commentant un ou deux."
+   "vo": "",
+   "vo_prevu": "Étape deux : Claude trie et cale. Toi, tu choisis tes priorités. Dimanche soir, tu planifies ou tu improvises, dis-le en commentant un ou deux.",
+   "dur": 6.0
   },
   {
    "type": "grille",
@@ -64,7 +70,9 @@
     "Une pause",
     "Un objectif"
    ],
-   "vo": "Étape trois : décide de la première tâche de lundi, une seule, la plus petite."
+   "vo": "",
+   "vo_prevu": "Étape trois : décide de la première tâche de lundi, une seule, la plus petite.",
+   "dur": 5.0
   },
   {
    "type": "cta",
@@ -73,7 +81,9 @@
     "🔖 Enregistre",
     "💬 Commente PROMPTS"
    ],
-   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+   "vo": "",
+   "vo_prevu": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier.",
+   "dur": 5.0
   }
  ]
 }

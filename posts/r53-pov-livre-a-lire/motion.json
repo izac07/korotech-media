@@ -22,7 +22,9 @@
     "Prof de français",
     "Lecture · lundi"
    ],
-   "vo": "POV : un livre à lire en une semaine, et page un jamais ouverte."
+   "vo": "",
+   "vo_prevu": "POV : un livre à lire en une semaine, et page un jamais ouverte.",
+   "dur": 5.0
   },
   {
    "type": "chat",
@@ -37,7 +39,9 @@
      "Jour 1 : …\nJour 2 : …"
     ]
    ],
-   "vo": "Étape un : demande à Claude de répartir les pages sur tes jours. Enregistre cette vidéo, ça marche pour tout livre."
+   "vo": "",
+   "vo_prevu": "Étape un : demande à Claude de répartir les pages sur tes jours. Enregistre cette vidéo, ça marche pour tout livre.",
+   "dur": 6.0
   },
   {
    "type": "toggles",
@@ -53,7 +57,9 @@
      false
     ]
    ],
-   "vo": "Étape deux : Claude répartit et te pose des questions. Toi, tu lis. Livre papier ou audio, dis-le en commentant un ou deux."
+   "vo": "",
+   "vo_prevu": "Étape deux : Claude répartit et te pose des questions. Toi, tu lis. Livre papier ou audio, dis-le en commentant un ou deux.",
+   "dur": 6.0
   },
   {
    "type": "grille",
@@ -64,7 +70,9 @@
     "Thèmes",
     "Citations"
    ],
-   "vo": "Étape trois : note les personnages chaque soir, puis fais-toi interroger. Claude peut se tromper sur un livre précis."
+   "vo": "",
+   "vo_prevu": "Étape trois : note les personnages chaque soir, puis fais-toi interroger. Claude peut se tromper sur un livre précis.",
+   "dur": 5.0
   },
   {
    "type": "cta",
@@ -73,7 +81,9 @@
     "🔖 Enregistre",
     "💬 Commente PROMPTS"
    ],
-   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+   "vo": "",
+   "vo_prevu": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier.",
+   "dur": 5.0
   }
  ]
 }

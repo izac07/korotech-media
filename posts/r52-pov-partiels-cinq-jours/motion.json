@@ -9,7 +9,9 @@
    "big": "3",
    "title": "**ÉTAPES**",
    "sub": "POV : partiels dans 5 jours",
-   "vo": "POV : partiels dans cinq jours, et rien n'est prêt. Étape un : fais ton planning."
+   "vo": "",
+   "vo_prevu": "POV : partiels dans cinq jours, et rien n'est prêt. Étape un : fais ton planning.",
+   "dur": 5.0
   },
   {
    "type": "pills",
@@ -23,7 +25,9 @@
     "⏱️ Tes heures"
    ],
    "text": "Un planning **réaliste**",
-   "vo": "Donne tes matières, dates et heures libres à Claude, et demande un planning, et enregistre cette vidéo pour la garder."
+   "vo": "",
+   "vo_prevu": "Donne tes matières, dates et heures libres à Claude, et demande un planning, et enregistre cette vidéo pour la garder.",
+   "dur": 6.0
   },
   {
    "type": "diagram",
@@ -35,7 +39,9 @@
     "Pause"
    ],
    "text": "Séances **courtes**",
-   "vo": "Deux : des séances courtes, avec un quiz à la fin. Quelle matière te fait le plus peur, dis-le en commentaire."
+   "vo": "",
+   "vo_prevu": "Deux : des séances courtes, avec un quiz à la fin. Quelle matière te fait le plus peur, dis-le en commentaire.",
+   "dur": 6.0
   },
   {
    "type": "search",
@@ -48,7 +54,9 @@
     "✅ Demain"
    ],
    "text": "Un bilan **chaque soir**",
-   "vo": "Trois : chaque soir, dis ce que tu as retenu et demande-lui ce qui manque. Ça donne le programme de demain."
+   "vo": "",
+   "vo_prevu": "Trois : chaque soir, dis ce que tu as retenu et demande-lui ce qui manque. Ça donne le programme de demain.",
+   "dur": 5.0
   },
   {
    "type": "cta",
@@ -56,7 +64,9 @@
     "🔖 Enregistre pour tes partiels",
     "💬 Commente PROMPTS"
    ],
-   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+   "vo": "",
+   "vo_prevu": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier.",
+   "dur": 5.0
   }
  ]
 }

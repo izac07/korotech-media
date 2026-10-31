@@ -9,7 +9,9 @@
    "big": "3",
    "title": "**ÉTAPES**",
    "sub": "POV : une mauvaise note 😶",
-   "vo": "POV : le prof rend ta copie, et la note n'est pas terrible. Étape un : comprends d'abord."
+   "vo": "",
+   "vo_prevu": "POV : le prof rend ta copie, et la note n'est pas terrible. Étape un : comprends d'abord.",
+   "dur": 5.0
   },
   {
    "type": "pills",
@@ -23,7 +25,9 @@
     "❓ Pourquoi ?"
    ],
    "text": "Cherche **le pourquoi**",
-   "vo": "Recopie les remarques du prof dans Claude et demande ce que chacune veut dire. Enregistre cette vidéo, ça aide."
+   "vo": "",
+   "vo_prevu": "Recopie les remarques du prof dans Claude et demande ce que chacune veut dire. Enregistre cette vidéo, ça aide.",
+   "dur": 6.0
   },
   {
    "type": "diagram",
@@ -35,7 +39,9 @@
     "Correction"
    ],
    "text": "Trouve **ta cause**",
-   "vo": "Deux : pour chaque erreur, cherche si c'est le cours, la méthode ou le stress. Sois honnête, c'est lequel pour toi ?"
+   "vo": "",
+   "vo_prevu": "Deux : pour chaque erreur, cherche si c'est le cours, la méthode ou le stress. Sois honnête, c'est lequel pour toi ?",
+   "dur": 6.0
   },
   {
    "type": "search",
@@ -48,7 +54,9 @@
     "✅ Corrigé"
    ],
    "text": "Refais **un exercice**",
-   "vo": "Trois : demande un exercice sur ton erreur, fais-le, puis fais-le corriger. Une note n'est pas ta valeur."
+   "vo": "",
+   "vo_prevu": "Trois : demande un exercice sur ton erreur, fais-le, puis fais-le corriger. Une note n'est pas ta valeur.",
+   "dur": 5.0
   },
   {
    "type": "cta",
@@ -56,7 +64,9 @@
     "🔖 Enregistre pour ta copie",
     "💬 Commente PROMPTS"
    ],
-   "vo": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier."
+   "vo": "",
+   "vo_prevu": "Commente prompts pour recevoir les dix prompts pour réviser, prêts à copier.",
+   "dur": 5.0
   }
  ]
 }
