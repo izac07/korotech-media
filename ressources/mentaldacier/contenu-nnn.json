@@ -1,0 +1,511 @@
+{
+ "fichier": "plan-30-jours-tenir-le-nnn",
+ "compte": "mentaldacier2030",
+ "mot_cle": "NNN",
+ "titre": "Tenir le NNN : <span class='acc'>le plan des 30 jours</span>",
+ "sous_titre": "Une chambre préparée, un réflexe par jour, un plan d'urgence quand l'envie monte. Pas de morale, que du concret.",
+ "couleurs": {
+  "accent": "#c8102e",
+  "fond_titre": "#0a0a0a",
+  "texte_titre": "#ffffff",
+  "police_titre": "Archivo Black"
+ },
+ "intro": "Le NNN, c'est 30 jours sans la BR, du 1er au 30 novembre. Beaucoup commencent motivés le 1er et lâchent avant la fin de la première semaine. Pas parce qu'ils sont faibles : parce qu'ils comptent **seulement sur leur volonté**. Or la volonté s'use, surtout le soir, seul, fatigué, le tel à la main. Ce plan fait l'inverse : il rend la tentation **plus difficile d'accès**, il te donne **un réflexe prêt** pour chaque moment à risque, et il te fait **suivre ta série** jour après jour. Lis-le une fois en entier aujourd'hui, puis reviens chaque matin à ton jour.",
+ "blocs": [
+  {
+   "h": "Jour 0 : prépare le terrain (à faire avant ce soir)"
+  },
+  {
+   "p": "Les 30 jours se gagnent surtout avant de commencer. Une chambre et un téléphone préparés, c'est la moitié du travail."
+  },
+  {
+   "etapes": [
+    {
+     "num": "A",
+     "t": "Écris ton « pourquoi »",
+     "d": "Une seule phrase, la tienne : pourquoi tu fais ce mois ? Par exemple « Je veux me prouver que c'est moi qui décide ». Écris-la sur un papier collé près de ton lit et en fond d'écran de verrouillage."
+    },
+    {
+     "num": "B",
+     "t": "Fais le ménage du téléphone",
+     "d": "Supprime ou masque les applis et les comptes qui te mettent dans l'ambiance. Désabonne-toi des comptes « limite ». Sur les reels qui s'en approchent, appuie sur **« Pas intéressé »** : ton fil apprend vite."
+    },
+    {
+     "num": "C",
+     "t": "Active un filtre de contenu",
+     "d": "**iPhone :** Réglages > Temps d'écran > Restrictions de contenu et de confidentialité (active-les), puis dans **Contenu web**, choisis **Limiter les sites pour adultes**. Demande à un pote de choisir le code, pas toi. **Android :** Réglages > Réseau > **DNS privé**, et entre un DNS familial filtrant (par exemple *family-filter-dns.cleanbrowsing.org*). Active aussi SafeSearch dans Google.",
+     "facile": "fais au moins le ménage des applis et des comptes (étape B)."
+    },
+    {
+     "num": "D",
+     "t": "Sors le téléphone de la chambre la nuit",
+     "d": "Il charge dans une autre pièce. Achète un réveil à quelques euros si c'est ton tel qui te réveille. C'est **la règle qui change le plus de choses**, parce que la majorité des rechutes arrivent au lit, tard, écran à la main."
+    },
+    {
+     "num": "E",
+     "t": "Choisis un pote de confiance",
+     "d": "Une seule personne, pas tout le monde. Tu lui dis que tu fais le NNN et tu lui envoies ton numéro de jour chaque soir, juste un chiffre. Savoir que quelqu'un attend ton message aide énormément."
+    },
+    {
+     "num": "F",
+     "t": "Imprime ou dessine ton calendrier",
+     "d": "30 cases. Chaque soir, une croix. Voir la série grandir donne envie de ne pas la casser. Le calendrier de suivi est à la fin de ce PDF."
+    }
+   ]
+  },
+  {
+   "note": "**Règle d'or du mois :** moins c'est facile, moins tu craques. Ne compte pas sur ta volonté à 1 h du matin : compte sur ce que tu as préparé à 18 h."
+  },
+  {
+   "saut": true
+  },
+  {
+   "h": "Les 4 semaines du NNN : à quoi t'attendre"
+  },
+  {
+   "tableau": {
+    "colonnes": [
+     "Semaine",
+     "Ce qui se passe souvent",
+     "Ton focus"
+    ],
+    "lignes": [
+     [
+      "**1. Le démarrage** (jours 1 à 7)",
+      "L'envie revient vite, surtout le soir. Le cerveau négocie : « juste pour voir ».",
+      "Tenir les soirées. Chambre préparée, tel dehors, réflexe d'urgence prêt."
+     ],
+     [
+      "**2. La tentation** (jours 8 à 14)",
+      "Moins d'envies, mais plus d'excuses : « j'ai tenu, j'ai le droit », « une fois, ça compte pas ».",
+      "Repérer les excuses et avoir une réponse prête pour chacune."
+     ],
+     [
+      "**3. Le milieu** (jours 15 à 21)",
+      "Le relâchement discret : le tel revient au lit, la porte se referme. Le doute : « ça sert à quoi ? ».",
+      "Revérifier tes règles du jour 0. Remplir ton temps libre."
+     ],
+     [
+      "**4. La ligne d'arrivée** (jours 22 à 30)",
+      "Tu te sens solide, tu baisses la garde. Le piège : se récompenser par une rechute.",
+      "Garder la même routine jusqu'au bout. Préparer l'après-NNN."
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Ton réflexe du jour, du jour 1 au jour 30"
+  },
+  {
+   "p": "Chaque matin, lis ton jour. Une action courte, 5 à 15 minutes. Si tu rates un jour, fais-le le lendemain : le plan continue."
+  },
+  {
+   "etapes": [
+    {
+     "num": 1,
+     "t": "Jour 1 — Le premier soir",
+     "d": "Vérifie ton jour 0 (pourquoi, tel, filtre, chambre). Prévois ta soirée à l'avance : une séance, une série avec un pote, un appel. Ce soir, tu te couches à une heure normale, tel hors de la chambre."
+    },
+    {
+     "num": 2,
+     "t": "Jour 2 — Trouve ton heure à risque",
+     "d": "Note à quel moment l'envie est arrivée hier, et où tu étais. Pour la plupart, c'est le soir, seul, au lit. Ce moment-là, à partir d'aujourd'hui, tu le passes ailleurs."
+    },
+    {
+     "num": 3,
+     "t": "Jour 3 — Le jour où ça tape fort",
+     "d": "Relis ton plan d'urgence (page suivante) et garde-le en capture d'écran. Rappel : l'envie monte et redescend comme une vague. Tu n'as pas à la combattre, juste à ne pas lui obéir pendant quelques minutes."
+    },
+    {
+     "num": 4,
+     "t": "Jour 4 — Bouge ton corps",
+     "d": "20 minutes de sport ou de marche dans la journée. Le soir, tu es plus fatigué et tu t'endors au lieu de scroller."
+    },
+    {
+     "num": 5,
+     "t": "Jour 5 — Choisis ton remplacement",
+     "d": "Écris 3 activités que tu fais quand tu t'ennuies le soir : un jeu avec des potes, lire, dessiner, cuisiner, un projet… On n'enlève pas une habitude, on la **remplace**."
+    },
+    {
+     "num": 6,
+     "t": "Jour 6 — Prépare ton premier week-end",
+     "d": "Les week-ends sont plus longs et moins cadrés. Prévois au moins une sortie par jour (marche, salle, potes) et garde une heure de coucher normale, même sans réveil."
+    },
+    {
+     "num": 7,
+     "t": "Jour 7 — Bilan de la semaine 1",
+     "d": "Compte tes croix. Note ce qui t'a le plus aidé. Fête ta semaine avec une vraie récompense : un bon repas, une sortie. Pas avec ce que tu arrêtes."
+    },
+    {
+     "num": 8,
+     "t": "Jour 8 — Le piège de la récompense",
+     "d": "Ton cerveau va te dire « t'as tenu une semaine, tu mérites ». Écris dès maintenant ta réponse : « Ma récompense, c'est la série, pas la rechute. »"
+    },
+    {
+     "num": 9,
+     "t": "Jour 9 — Démonte tes excuses",
+     "d": "Écris tes 3 excuses préférées (« je suis stressé », « j'arrive pas à dormir », « juste une fois ») et, en face, ce que tu fais à la place. Une excuse prévue perd sa force."
+    },
+    {
+     "num": 10,
+     "t": "Jour 10 — Le cap des dix jours",
+     "d": "Envoie ton « 10 » à ton pote de confiance. C'est souvent autour d'ici qu'on lâche : relis ton pourquoi ce soir avant de dormir."
+    },
+    {
+     "num": 11,
+     "t": "Jour 11 — Nettoie ton fil",
+     "d": "Passe 10 minutes à nettoyer Instagram, TikTok, YouTube : désabonne-toi, « Pas intéressé », efface l'historique de recherche. Ton fil doit arrêter de te tendre des pièges."
+    },
+    {
+     "num": 12,
+     "t": "Jour 12 — Ta routine du soir",
+     "d": "Fixe une routine de 30 minutes sans écran avant de dormir : douche, préparer demain, lire. Toujours dans le même ordre, pour que ton cerveau comprenne que la journée est finie."
+    },
+    {
+     "num": 13,
+     "t": "Jour 13 — Quand les images reviennent",
+     "d": "Ne te bats pas contre une image dans ta tête. Méthode en 3 temps : **tu la vois, tu la laisses passer, tu bouges** (tu te lèves, tu changes de pièce, tu fais autre chose)."
+    },
+    {
+     "num": 14,
+     "t": "Jour 14 — Le « juste une fois »",
+     "d": "Deux semaines. C'est le jour où « une fois, ça compte pas » sonne logique. Réponse : une fois rouvre la porte. Regarde tes 14 croix et demande-toi si tu veux vraiment repartir de zéro demain."
+    },
+    {
+     "num": 15,
+     "t": "Jour 15 — Mi-parcours",
+     "d": "Relis ton pourquoi. Revérifie tes règles du jour 0 une par une : le tel dort-il toujours ailleurs ? Le filtre est-il toujours actif ? Corrige ce qui a glissé."
+    },
+    {
+     "num": 16,
+     "t": "Jour 16 — Remplis ton temps libre",
+     "d": "Commence un petit projet ou un apprentissage : une langue, un instrument, un logiciel, un programme de sport. Un cerveau occupé cherche moins de distraction."
+    },
+    {
+     "num": 17,
+     "t": "Jour 17 — Le plan sale journée",
+     "d": "Le stress fait partie des pires déclencheurs. Prépare ton plan pour les jours difficiles : une marche, une douche, un appel à un pote, coucher tôt."
+    },
+    {
+     "num": 18,
+     "t": "Jour 18 — Ton entourage",
+     "d": "Les vidéos et les blagues qu'on t'envoie peuvent te faire tomber sans que personne le veuille. Tu as le droit de ne pas ouvrir et de couper un groupe pour la soirée."
+    },
+    {
+     "num": 19,
+     "t": "Jour 19 — Ce dont tu es fier",
+     "d": "Personne ne voit tes efforts, alors écris-les : 3 choses dont tu es fier depuis le 1er novembre. Relis-les les soirs où tu doutes."
+    },
+    {
+     "num": 20,
+     "t": "Jour 20 — Compare avec le jour 1",
+     "d": "Note de 1 à 10 la force des envies aujourd'hui et souviens-toi du début. Même si c'est encore dur, c'est souvent moins dur. Le doute n'est pas un signal pour lâcher."
+    },
+    {
+     "num": 21,
+     "t": "Jour 21 — Le mythe des 21 jours",
+     "d": "On dit qu'il faut 21 jours pour prendre une habitude. Une étude de l'University College London (Lally et al., 2009) a trouvé plutôt **66 jours en médiane**. Tu n'es pas en retard : tu es en route. Continue tes réflexes."
+    },
+    {
+     "num": 22,
+     "t": "Jour 22 — Verrouille tes soirées",
+     "d": "Après 22 h : tel au salon, mode avion, lumière allumée. Remplace le scroll du soir par un livre ou 10 pompes."
+    },
+    {
+     "num": 23,
+     "t": "Jour 23 — « Une fois, ça compte pas »",
+     "d": "Si, ça compte : 23 jours pour quelques minutes. Si l'envie monte, plan d'urgence immédiat, sans discuter avec toi-même."
+    },
+    {
+     "num": 24,
+     "t": "Jour 24 — Ton moment le plus risqué",
+     "d": "Regarde ton calendrier et tes notes : quel moment de la semaine a été le plus dur ? Prévois-le dès maintenant pour les 6 derniers jours."
+    },
+    {
+     "num": 25,
+     "t": "Jour 25 — Plus que 5 jours",
+     "d": "Ne te relâche pas juste avant la ligne d'arrivée, c'est là qu'on se fait avoir. Prépare la fête du jour 30 avec tes potes."
+    },
+    {
+     "num": 26,
+     "t": "Jour 26 — Ce qui a changé",
+     "d": "Écris ce qui a changé ce mois-ci : le temps que tu as récupéré, ce que tu as fait à la place, ce que tu te prouves. Garde cette liste."
+    },
+    {
+     "num": 27,
+     "t": "Jour 27 — Décide de l'après",
+     "d": "Que fais-tu en décembre ? Continuer jusqu'à 60 ou 90 jours, garder certaines règles… Décide maintenant, à froid, pas le 30 au soir."
+    },
+    {
+     "num": 28,
+     "t": "Jour 28 — Tes 3 règles pour toujours",
+     "d": "Choisis les 3 règles du mois que tu gardes même après le NNN. Par exemple : tel hors de la chambre la nuit, filtre actif, routine du soir."
+    },
+    {
+     "num": 29,
+     "t": "Jour 29 — Une lettre à toi",
+     "d": "Écris quelques lignes à ton « toi » du 1er novembre : ce que tu as appris, ce qui a été dur, ce que tu lui conseilles. Tu la reliras l'an prochain."
+    },
+    {
+     "num": 30,
+     "t": "Jour 30 — La ligne d'arrivée",
+     "d": "Fais ta dernière croix. Fête-le vraiment, sans te récompenser par une rechute. Et viens écrire « jour 30 » en commentaire sous le reel du jour : tu l'as mérité."
+    }
+   ]
+  },
+  {
+   "saut": true
+  },
+  {
+   "h": "Le plan d'urgence : quand l'envie monte"
+  },
+  {
+   "p": "Capture cette page et garde-la sur ton tel. Quand l'envie arrive, tu ne réfléchis pas, tu suis les étapes."
+  },
+  {
+   "etapes": [
+    {
+     "t": "Bouge dans les 10 secondes",
+     "d": "Ne reste pas allongé. Lève-toi, maintenant. Plus tu attends, plus le cerveau négocie."
+    },
+    {
+     "t": "Sors de la pièce",
+     "d": "Change d'endroit : salon, cuisine, dehors. L'envie est souvent liée à un lieu (le lit) et à un objet (le tel)."
+    },
+    {
+     "t": "Occupe ton corps",
+     "d": "10 pompes, 20 squats, une douche fraîche, un verre d'eau. Quelque chose qui prend tes mains et ton attention."
+    },
+    {
+     "t": "Dis « pas maintenant »",
+     "d": "Tu ne te dis pas « jamais », tu te dis « pas maintenant, dans 15 minutes ». Dans 15 minutes, la vague est souvent passée."
+    },
+    {
+     "t": "Écris à ton pote",
+     "d": "Un simple message : « soirée difficile ». Tu n'es pas obligé d'expliquer. Le fait de l'écrire casse l'automatisme."
+    },
+    {
+     "t": "Note ce qui s'est passé",
+     "d": "L'heure, l'humeur, l'endroit. Ces notes te montrent tes vrais déclencheurs pour la suite."
+    }
+   ]
+  },
+  {
+   "h": "Tes déclencheurs et leur réponse"
+  },
+  {
+   "tableau": {
+    "colonnes": [
+     "Déclencheur",
+     "Pourquoi c'est risqué",
+     "Ta réponse"
+    ],
+    "lignes": [
+     [
+      "**L'ennui**",
+      "Rien de prévu, le tel devient le seul passe-temps.",
+      "Ta liste de remplacements (jour 5). Sors, appelle, bouge."
+     ],
+     [
+      "**Le stress**",
+      "Le cerveau cherche un soulagement rapide.",
+      "Plan sale journée (jour 17) : marche, douche, coucher tôt."
+     ],
+     [
+      "**La solitude**",
+      "Seul, personne ne voit, tout semble « sans conséquence ».",
+      "Porte ouverte, salon plutôt que chambre, message à un pote."
+     ],
+     [
+      "**La fatigue**",
+      "Le soir, la volonté est au plus bas.",
+      "Routine du soir (jour 12), coucher à heure fixe."
+     ],
+     [
+      "**Le tel au lit**",
+      "Un clic sépare la tentation de toi.",
+      "Tel qui charge hors de la chambre, toujours."
+     ],
+     [
+      "**« Juste pour voir »**",
+      "C'est l'habitude qui négocie, pas toi.",
+      "Réponse prête : « pas maintenant », puis plan d'urgence."
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Si tu craques"
+  },
+  {
+   "p": "Ça peut arriver. Ce qui compte, c'est ce que tu fais **juste après**."
+  },
+  {
+   "ul": [
+    "**Ne te punis pas.** La honte pousse souvent à replonger, pas à remonter.",
+    "**Note ce qui s'est passé** : l'heure, l'humeur, l'endroit. C'est une information, pas une défaite.",
+    "**Corrige une règle** : le tel était dans la chambre ? le filtre était coupé ? Répare ça ce soir.",
+    "**Reprends dès le lendemain.** Ne jette pas le mois : compte tes **jours tenus sur 30** au lieu de repartir à zéro. 26 jours sur 30, c'est une énorme victoire par rapport à zéro."
+   ]
+  },
+  {
+   "note": "**Le NNN n'est pas un concours de perfection.** C'est un mois pour te prouver que c'est toi qui décides, et pour garder les bonnes habitudes après."
+  },
+  {
+   "h": "Les phrases à garder en tête"
+  },
+  {
+   "ul": [
+    "« Pas maintenant. »",
+    "« Moins c'est facile, moins je craque. »",
+    "« Ma récompense, c'est la série. »",
+    "« Une envie, c'est une vague : elle passe. »",
+    "« Si je craque, je reprends demain, sans me punir. »"
+   ]
+  },
+  {
+   "saut": true
+  },
+  {
+   "h": "Ton calendrier du NNN"
+  },
+  {
+   "p": "Chaque soir : une croix si tu as tenu, et en quelques mots ce qui t'a aidé (ou ce qui a été dur)."
+  },
+  {
+   "tableau": {
+    "colonnes": [
+     "Jour",
+     "Tenu ?",
+     "Ce qui m'a aidé / ce qui a été dur",
+     "Jour",
+     "Tenu ?",
+     "Ce qui m'a aidé / ce qui a été dur"
+    ],
+    "lignes": [
+     [
+      "1",
+      "☐",
+      "",
+      "16",
+      "☐",
+      ""
+     ],
+     [
+      "2",
+      "☐",
+      "",
+      "17",
+      "☐",
+      ""
+     ],
+     [
+      "3",
+      "☐",
+      "",
+      "18",
+      "☐",
+      ""
+     ],
+     [
+      "4",
+      "☐",
+      "",
+      "19",
+      "☐",
+      ""
+     ],
+     [
+      "5",
+      "☐",
+      "",
+      "20",
+      "☐",
+      ""
+     ],
+     [
+      "6",
+      "☐",
+      "",
+      "21",
+      "☐",
+      ""
+     ],
+     [
+      "7",
+      "☐",
+      "",
+      "22",
+      "☐",
+      ""
+     ],
+     [
+      "8",
+      "☐",
+      "",
+      "23",
+      "☐",
+      ""
+     ],
+     [
+      "9",
+      "☐",
+      "",
+      "24",
+      "☐",
+      ""
+     ],
+     [
+      "10",
+      "☐",
+      "",
+      "25",
+      "☐",
+      ""
+     ],
+     [
+      "11",
+      "☐",
+      "",
+      "26",
+      "☐",
+      ""
+     ],
+     [
+      "12",
+      "☐",
+      "",
+      "27",
+      "☐",
+      ""
+     ],
+     [
+      "13",
+      "☐",
+      "",
+      "28",
+      "☐",
+      ""
+     ],
+     [
+      "14",
+      "☐",
+      "",
+      "29",
+      "☐",
+      ""
+     ],
+     [
+      "15",
+      "☐",
+      "",
+      "30",
+      "☐",
+      ""
+     ]
+    ]
+   }
+  }
+ ],
+ "fin": "Chaque jour de novembre, un reel « NNN, jour X » t'attend sur **@mentaldacier2030** avec le piège du jour et comment l'éviter. Écris ton numéro de jour en commentaire : on tient le mois ensemble."
+}
