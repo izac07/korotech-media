@@ -1,0 +1,87 @@
+{
+ "id": "MDA-X124",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10024,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à quel jour ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "NNN · JOUR 1",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour un du NNN : t'as pas besoin de motivation. T'as besoin d'un plan."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Reste jusqu'au troisième, c'est le plus important, et enregistre la vidéo pour les soirs difficiles. Mais d'abord, dis-moi en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. ELLE DURE PAS",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est que la motivation du premier jour, elle dure pas. Le plan, lui, il reste."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. OÙ ET QUAND",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le deuxième, c'est de savoir où et quand ça risque d'arriver, et ce que tu fais à la place.",
+   "ecran": {
+    "type": "liste",
+    "titre": "TON PLAN",
+    "lignes": [
+     "Où ?",
+     "Quand ?",
+     "Quoi à la place ?"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. À 18 H",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu prépares tout à dix-huit heures, pas à minuit. À minuit, c'est trop tard. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}

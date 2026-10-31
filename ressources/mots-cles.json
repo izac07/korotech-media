@@ -1,6 +1,6 @@
 {
  "_info": "Mécanique « commente un mot-clé » (décidée le 23/10/2026) : chaque reel finit par « Commente <mot> » (écran + voix + légende) ; Goat répond en DM avec le lien (ressources/messages-dm.md). Lu par tools/verifie.py, tools/duel3d.py et tools/fable2d.py.",
- "mentaldacier2030": {"mot": "PLAN", "offre": "le plan 7 jours gratuit pour arrêter de procrastiner", "lien": "https://izac07.github.io/korotech-media/ressources/mentaldacier/plan-7-jours-arreter-de-repousser.pdf"},
+ "mentaldacier2030": {"mot": "NNN", "offre": "le plan gratuit pour tenir les 30 jours du NNN", "lien": "https://izac07.github.io/korotech-media/ressources/mentaldacier/plan-30-jours-tenir-le-nnn.pdf", "_avant": "PLAN jusqu'au 31/10/2026 (plan 7 jours anti-procrastination)"},
  "zerosallefit": {"mot": "PROGRAMME", "offre": "le programme 7 jours gratuit", "lien": "https://izac07.github.io/korotech-media/ressources/zerosallefit/programme-7-jours-sans-materiel.pdf"},
  "coeurlucide__": {"mot": "LIMITE", "offre": "les 10 phrases pour poser une limite", "lien": "https://izac07.github.io/korotech-media/ressources/coeurlucide/10-phrases-poser-une-limite.pdf"},
  "lia.entrepreneur": {"mot": "IA", "offre": "les 10 tâches à déléguer à l'IA", "lien": "https://izac07.github.io/korotech-media/ressources/lia-entrepreneur/10-taches-a-deleguer-a-l-ia.pdf"},

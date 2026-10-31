@@ -24,7 +24,39 @@
   "like": "laïke",
   "likes": "laïkes",
   "freelance": "frilance",
-  "Claude Code": "Claude Code"
+  "Claude Code": "Claude Code",
+  "NNN": "ène ène ène"
  },
- "mots_admis": ["snooze", "snoozer", "scroll", "scroller", "scrolles", "POV", "BR", "team", "spoiler", "to-do", "insta", "tel", "notifs", "netflix", "feed", "story", "stories", "like", "likes", "freelance", "flemme", "grave", "chelou", "crush", "go", "vu", "dm", "skill", "claude", "make"]
+ "mots_admis": [
+  "snooze",
+  "snoozer",
+  "scroll",
+  "scroller",
+  "scrolles",
+  "POV",
+  "BR",
+  "team",
+  "spoiler",
+  "to-do",
+  "insta",
+  "tel",
+  "notifs",
+  "netflix",
+  "feed",
+  "story",
+  "stories",
+  "like",
+  "likes",
+  "freelance",
+  "flemme",
+  "grave",
+  "chelou",
+  "crush",
+  "go",
+  "vu",
+  "dm",
+  "skill",
+  "claude",
+  "make"
+ ]
 }

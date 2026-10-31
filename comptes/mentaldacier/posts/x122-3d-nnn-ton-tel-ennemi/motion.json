@@ -1,0 +1,86 @@
+{
+ "id": "MDA-X122",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10022,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à quel jour ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "NNN · JOUR 1",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour un du NNN : ce mois-ci, ton pire ennemi, c'est ton tel."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Enregistre la vidéo pour ce soir et reste jusqu'au troisième, c'est lui qui t'aide à passer le cap. Avant ça, écris en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. VIRE LES APPLIS",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est de virer les applis et les comptes qui te mettent dans l'ambiance. Ce soir, pas demain."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. LE FILTRE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le deuxième, c'est d'activer le filtre de contenu de ton tel. Et demande à un pote de choisir le code.",
+   "ecran": {
+    "type": "liste",
+    "titre": "TON TEL",
+    "lignes": [
+     "Filtre de contenu",
+     "Code choisi par un pote"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. PAS INTÉRESSÉ",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : sur chaque vidéo limite, tu appuies sur pas intéressé. Ton fil apprend vite. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}
