@@ -4,6 +4,9 @@
  "handle": "mentaldacier2030",
  "music_seed": 9815,
  "mannequin": "mannequin",
+ "couleurs": {
+  "acc": "#d9a441"
+ },
  "sous_titres": "mot",
  "scenes": [
   {

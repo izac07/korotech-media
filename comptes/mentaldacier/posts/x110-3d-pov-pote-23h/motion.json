@@ -47,7 +47,7 @@
   {
    "type": "mascotte",
    "bandeau": "TA RÉPONSE ?",
-   "humeur": "pensif",
+   "humeur": "fatigue",
    "lumiere": "nuit",
    "camera": "serre",
    "vo": "Écris en commentaire ce que tu lui réponds, et enregistre la vidéo, parce que les soirs comme ça, t'auras besoin des trois réflexes."
@@ -86,7 +86,7 @@
    "bandeau": "COMMENTE PLAN",
    "humeur": "normal",
    "lumiere": "nuit",
-   "camera": "profil",
+   "camera": "porte",
    "carte": [
     "💬 COMMENTE PLAN",
     "plan 7 jours anti-procrastination"
