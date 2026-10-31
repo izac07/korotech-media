@@ -42,9 +42,8 @@
   {
    "type": "ecran",
    "bandeau": "1. TES HEURES CREUSES",
-   "humeur": "pensif",
+   "humeur": "normal",
    "lumiere": "nuit",
-   "camera": "serre",
    "vo": "Le premier, c'est de repérer tes heures creuses : le soir, ou le week-end quand t'as rien de prévu.",
    "ecran": {
     "type": "liste",
@@ -59,7 +58,7 @@
   {
    "type": "toi",
    "bandeau": "2. REMPLIS-LES",
-   "humeur": "normal",
+   "humeur": "fatigue",
    "lumiere": "nuit",
    "camera": "epaule",
    "vo": "Le deuxième, c'est de remplir ces heures-là avant qu'elles arrivent : une séance, une partie avec tes potes, un projet. Du coup, l'ennui trouve plus de place."

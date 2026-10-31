@@ -37,15 +37,14 @@
    "bandeau": "PASSE LE CAP",
    "humeur": "triste",
    "lumiere": "nuit",
-   "camera": "epaule",
+   "camera": "serre",
    "vo": "Enregistre la vidéo et reste jusqu'au troisième réflexe, c'est celui qui te fait passer le cap. Mais avant, écris en commentaire à quel jour t'en es."
   },
   {
    "type": "ecran",
    "bandeau": "1. LE MOMENT",
-   "humeur": "pensif",
+   "humeur": "normal",
    "lumiere": "nuit",
-   "camera": "dessus",
    "vo": "Le premier, c'est de savoir quand ça arrive : en général le soir, seul, quand tu t'ennuies. Du coup, ces moments-là, tu les prévois.",
    "ecran": {
     "type": "liste",
@@ -60,9 +59,9 @@
   {
    "type": "toi",
    "bandeau": "2. LA PIÈCE",
-   "humeur": "normal",
+   "humeur": "fatigue",
    "lumiere": "nuit",
-   "camera": "serre",
+   "camera": "epaule",
    "vo": "Le deuxième, c'est l'environnement : tel hors de la chambre, porte ouverte, lumière allumée. Moins c'est facile, moins tu craques."
   },
   {

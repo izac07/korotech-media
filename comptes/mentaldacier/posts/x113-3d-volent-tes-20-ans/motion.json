@@ -42,9 +42,8 @@
   {
    "type": "ecran",
    "bandeau": "1. LE SCROLL",
-   "humeur": "pensif",
+   "humeur": "normal",
    "lumiere": "nuit",
-   "camera": "profil",
    "vo": "Un : le scroll sans fin. Une heure par jour, ça fait plus de quinze jours entiers par an.",
    "ecran": {
     "type": "liste",

@@ -42,9 +42,8 @@
   {
    "type": "ecran",
    "bandeau": "1. TES EXCUSES",
-   "humeur": "pensif",
+   "humeur": "normal",
    "lumiere": "nuit",
-   "camera": "serre",
    "vo": "Le premier, c'est de connaître tes excuses par cœur : t'es stressé, t'arrives pas à dormir, t'as eu une sale journée.",
    "ecran": {
     "type": "liste",
@@ -59,7 +58,7 @@
   {
    "type": "toi",
    "bandeau": "2. UNE RÉPONSE",
-   "humeur": "normal",
+   "humeur": "fatigue",
    "lumiere": "nuit",
    "camera": "epaule",
    "vo": "Le deuxième, c'est d'avoir une réponse prête pour chacune : stressé, tu sors marcher. Pas sommeil, tu lis. Sale journée, t'appelles un pote."

@@ -42,9 +42,8 @@
   {
    "type": "ecran",
    "bandeau": "1. UN MOIS",
-   "humeur": "pensif",
+   "humeur": "normal",
    "lumiere": "nuit",
-   "camera": "serre",
    "vo": "Le premier, c'est de reconnaître ce que t'as fait. Un mois, c'est pas rien, beaucoup ont lâché bien avant.",
    "ecran": {
     "type": "calendrier",
@@ -57,7 +56,6 @@
    "bandeau": "2. « JE L'AI MÉRITÉ »",
    "humeur": "normal",
    "lumiere": "nuit",
-   "camera": "epaule",
    "vo": "Le deuxième, c'est de pas te récompenser avec une rechute. Le piège classique, c'est de te dire : je l'ai mérité.",
    "ecran": {
     "type": "liste",

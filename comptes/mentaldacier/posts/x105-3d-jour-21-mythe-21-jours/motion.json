@@ -42,9 +42,8 @@
   {
    "type": "ecran",
    "bandeau": "1. PLUTÔT 66 JOURS",
-   "humeur": "pensif",
+   "humeur": "normal",
    "lumiere": "nuit",
-   "camera": "serre",
    "vo": "Le premier, c'est qu'une étude de deux mille neuf a trouvé plutôt soixante-six jours, en général. Du coup, t'es pas en retard, t'es en route.",
    "ecran": {
     "type": "liste",
@@ -58,7 +57,7 @@
   {
    "type": "toi",
    "bandeau": "2. ELLE DORT",
-   "humeur": "normal",
+   "humeur": "fatigue",
    "lumiere": "nuit",
    "camera": "epaule",
    "vo": "Le deuxième, c'est de pas te dire que c'est gagné : à vingt et un jours, l'ancienne habitude est encore là, elle dort juste."

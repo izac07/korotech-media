@@ -52,7 +52,6 @@
    "bandeau": "2. TU REPARS À ZÉRO ?",
    "humeur": "normal",
    "lumiere": "nuit",
-   "camera": "epaule",
    "vo": "Le deuxième, c'est de te poser une question avant : tu veux vraiment repartir à zéro demain ? Deux semaines, ça se jette pas pour dix minutes.",
    "ecran": {
     "type": "calendrier",

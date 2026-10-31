@@ -34,9 +34,8 @@
   {
    "type": "ecran",
    "bandeau": "TON NUMÉRO ?",
-   "humeur": "pensif",
+   "humeur": "normal",
    "lumiere": "nuit",
-   "camera": "dessus",
    "vo": "Un, l'ennui. Deux, le stress. Trois, seul tard le soir. Quatre, le tel au lit. Cinq, le juste une fois. Enregistre la vidéo, voilà trois parades.",
    "ecran": {
     "type": "liste",
@@ -53,7 +52,7 @@
   {
    "type": "ecran",
    "bandeau": "1 ET 2 : BOUGE",
-   "humeur": "pensif",
+   "humeur": "fatigue",
    "lumiere": "nuit",
    "camera": "epaule",
    "vo": "Pour l'ennui et le stress, tu bouges : une marche, une douche, dix pompes, avant que l'envie s'installe."

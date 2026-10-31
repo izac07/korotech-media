@@ -42,9 +42,8 @@
   {
    "type": "ecran",
    "bandeau": "MYTHE 1",
-   "humeur": "pensif",
+   "humeur": "normal",
    "lumiere": "nuit",
-   "camera": "serre",
    "vo": "Mythe un : il faut de la motivation. En vrai, la motivation arrive après avoir commencé, pas avant.",
    "ecran": {
     "type": "liste",

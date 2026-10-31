@@ -42,9 +42,8 @@
   {
    "type": "ecran",
    "bandeau": "1. À LA PLACE",
-   "humeur": "pensif",
+   "humeur": "normal",
    "lumiere": "nuit",
-   "camera": "serre",
    "vo": "Le premier, c'est de noter ce que t'as fait de ton temps à la place : des séances, des soirées avec tes potes, des trucs que t'as finis.",
    "ecran": {
     "type": "liste",
@@ -59,7 +58,7 @@
   {
    "type": "toi",
    "bandeau": "2. TON POURQUOI",
-   "humeur": "normal",
+   "humeur": "fatigue",
    "lumiere": "nuit",
    "camera": "epaule",
    "vo": "Le deuxième, c'est de te rappeler pourquoi t'as commencé. Relis ta phrase, celle du jour un."

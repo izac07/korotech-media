@@ -42,9 +42,8 @@
   {
    "type": "ecran",
    "bandeau": "1. LA NÉGO",
-   "humeur": "pensif",
+   "humeur": "normal",
    "lumiere": "nuit",
-   "camera": "serre",
    "vo": "Le premier, c'est de reconnaître la négo : juste pour voir, une dernière fois, t'as été sage. C'est pas toi qui parles, c'est l'habitude.",
    "ecran": {
     "type": "liste",
@@ -59,7 +58,7 @@
   {
    "type": "toi",
    "bandeau": "2. DIS NON",
-   "humeur": "normal",
+   "humeur": "fatigue",
    "lumiere": "nuit",
    "camera": "epaule",
    "vo": "Le deuxième, c'est de répondre à voix haute : non, pas ce soir. Ça a l'air bête, mais dire non à voix haute, ça coupe la discussion."

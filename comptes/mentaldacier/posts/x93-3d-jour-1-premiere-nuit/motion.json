@@ -42,9 +42,8 @@
   {
    "type": "ecran",
    "bandeau": "1. TON POURQUOI",
-   "humeur": "pensif",
+   "humeur": "normal",
    "lumiere": "nuit",
-   "camera": "serre",
    "vo": "Le premier, c'est de savoir pourquoi tu le fais, en une phrase, et de l'écrire là où tu la vois tous les soirs.",
    "ecran": {
     "type": "liste",
@@ -58,7 +57,7 @@
   {
    "type": "toi",
    "bandeau": "2. LE MÉNAGE",
-   "humeur": "normal",
+   "humeur": "fatigue",
    "lumiere": "nuit",
    "camera": "epaule",
    "vo": "Le deuxième, c'est le ménage, ce soir : tu supprimes les comptes et les applis qui te mettent dans l'ambiance. Du coup, la tentation a moins d'entrées."

@@ -42,9 +42,8 @@
   {
    "type": "ecran",
    "bandeau": "1. LA VAGUE",
-   "humeur": "pensif",
+   "humeur": "normal",
    "lumiere": "nuit",
-   "camera": "serre",
    "vo": "Le premier, c'est de savoir que l'envie monte et redescend, comme une vague. Si tu tiens quelques minutes sans rien faire, elle repart.",
    "ecran": {
     "type": "timer",
@@ -55,7 +54,7 @@
   {
    "type": "toi",
    "bandeau": "2. PAS AU LIT",
-   "humeur": "normal",
+   "humeur": "fatigue",
    "lumiere": "nuit",
    "camera": "epaule",
    "vo": "Le deuxième, c'est de pas rester allongé avec ton tel quand ça monte. Assis, debout, ailleurs, mais pas au lit."

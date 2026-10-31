@@ -42,9 +42,8 @@
   {
    "type": "ecran",
    "bandeau": "1. ÇA REVIENT",
-   "humeur": "pensif",
+   "humeur": "normal",
    "lumiere": "nuit",
-   "camera": "serre",
    "vo": "Le premier, c'est le relâchement discret : le tel revient dans la chambre, la porte se referme, une règle après l'autre.",
    "ecran": {
     "type": "liste",
@@ -59,7 +58,7 @@
   {
    "type": "toi",
    "bandeau": "2. LE CHECK",
-   "humeur": "normal",
+   "humeur": "fatigue",
    "lumiere": "nuit",
    "camera": "epaule",
    "vo": "Le deuxième, c'est un check rapide ce soir : tes règles du début, tu les tiens encore toutes ?"

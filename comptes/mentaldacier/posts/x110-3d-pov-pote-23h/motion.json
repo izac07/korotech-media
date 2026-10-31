@@ -26,9 +26,8 @@
   {
    "type": "ecran",
    "bandeau": "23 H",
-   "humeur": "telephone",
+   "humeur": "normal",
    "lumiere": "nuit",
-   "camera": "porte",
    "vo": "Vingt-trois heures. Ton pote t'écrit : t'es seul ce soir ? Tu réponds quoi ?",
    "ecran": {
     "type": "chat",
@@ -56,9 +55,8 @@
   {
    "type": "ecran",
    "bandeau": "1. UN VRAI PLAN",
-   "humeur": "pensif",
+   "humeur": "normal",
    "lumiere": "nuit",
-   "camera": "orbite",
    "vo": "Le premier, c'est de répondre vite et de lancer un vrai plan : viens, on joue, ou on sort marcher.",
    "ecran": {
     "type": "chat",

@@ -34,7 +34,7 @@
   {
    "type": "mascotte",
    "bandeau": "3 RÈGLES",
-   "humeur": "pensif",
+   "humeur": "fatigue",
    "lumiere": "nuit",
    "camera": "epaule",
    "vo": "Voilà trois règles, et la troisième, presque personne l'applique. Enregistre la vidéo, et dis-moi en commentaire ce que tu fais à vingt-trois heures, en vrai."
@@ -52,7 +52,6 @@
    "bandeau": "RÈGLE 2",
    "humeur": "normal",
    "lumiere": "nuit",
-   "camera": "serre",
    "vo": "Règle deux : tu prépares demain en deux minutes, tes affaires et ta première tâche, sur un papier.",
    "ecran": {
     "type": "liste",
