@@ -1,0 +1,48 @@
+{
+ "id": "MDA-X115",
+ "layout": "anatomie3d",
+ "handle": "mentaldacier2030",
+ "music_seed": 9815,
+ "mannequin": "mannequin",
+ "sous_titres": "mot",
+ "scenes": [
+  {
+   "type": "large",
+   "exercice": "squat",
+   "reps": 3,
+   "question": "Ton réflexe à toi ? 👇",
+   "vo": "L'envie monte, le soir, seul dans ta chambre ? Le réflexe que presque personne essaie : bouger, tout de suite."
+  },
+  {
+   "type": "face",
+   "exercice": "squat",
+   "reps": 3,
+   "question": "Ton réflexe à toi ? 👇",
+   "vo": "Enregistre la vidéo et écris en commentaire ton réflexe à toi. Le premier, c'est de te lever : hors du lit, hors de la chambre."
+  },
+  {
+   "type": "cote",
+   "exercice": "pompes",
+   "reps": 4,
+   "compteur": true,
+   "question": "Ton réflexe à toi ? 👇",
+   "vo": "Le deuxième, c'est dix pompes, lentement, en comptant à voix haute. Ta tête est occupée à compter, pas à négocier."
+  },
+  {
+   "type": "face",
+   "exercice": "Idle_Loop",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "orbite",
+   "exercice": "burpee",
+   "reps": 3,
+   "question": "Ton réflexe à toi ? 👇",
+   "vo": "Et le troisième : si ça revient, tu recommences. Dix squats, dix pompes, un verre d'eau, et tu sors de la pièce. Alors, ton réflexe, c'est quoi ?"
+  }
+ ]
+}

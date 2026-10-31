@@ -1,0 +1,87 @@
+{
+ "id": "MDA-X104",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9804,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à quel jour ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "JOUR 18",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour dix-huit sans la BR : c'est le jour où un pote te tente sans même le savoir."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Enregistre la vidéo pour ce soir et reste jusqu'au troisième réflexe, c'est lui qui t'aide à passer le cap. Avant ça, écris en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. T'OUVRES PAS",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est les vidéos et les blagues qu'on t'envoie : t'as le droit de pas ouvrir, et même de couper le groupe un soir."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. UN SEUL POTE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Le deuxième, c'est de dire à un pote de confiance ce que tu fais. Pas à tout le monde, à un seul.",
+   "ecran": {
+    "type": "liste",
+    "titre": "UN SEUL POTE",
+    "lignes": [
+     "Il sait",
+     "Il te demande où t'en es"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. TON ENTOURAGE",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu choisis tes soirées. Ceux qui te tirent vers le haut, tu les vois plus souvent. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}

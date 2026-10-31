@@ -1,0 +1,91 @@
+{
+ "id": "MDA-X106",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9806,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à quel jour ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "JOUR 30",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour trente sans la BR : ton premier mois. Et maintenant, tu fais quoi ?"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Reste jusqu'au troisième réflexe, c'est le plus important, et enregistre la vidéo pour les soirs difficiles. Mais d'abord, dis-moi en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. UN MOIS",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est de reconnaître ce que t'as fait. Un mois, c'est pas rien, beaucoup ont lâché bien avant.",
+   "ecran": {
+    "type": "calendrier",
+    "jours": 30,
+    "jusqua": 30
+   }
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. « JE L'AI MÉRITÉ »",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Le deuxième, c'est de pas te récompenser avec une rechute. Le piège classique, c'est de te dire : je l'ai mérité.",
+   "ecran": {
+    "type": "liste",
+    "titre": "LE PIÈGE",
+    "lignes": [
+     "« Je l'ai mérité »"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. CAP SUR 60",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu te fixes le prochain cap, soixante jours, et tu gardes la même routine. Ce qui t'a amené ici t'amènera plus loin. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}

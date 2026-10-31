@@ -1,0 +1,87 @@
+{
+ "id": "MDA-X108",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9808,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à quel jour ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "JOUR 90",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour quatre-vingt-dix sans la BR. Ce qui a changé, tu le vois surtout en regardant en arrière."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Enregistre la vidéo et reste jusqu'au troisième réflexe, c'est celui qui fait la différence. Mais avant, écris en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. TON TEMPS",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est le temps que t'as récupéré : des soirées entières que tu passes autrement."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. TA PAROLE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Le deuxième, c'est ce que tu te prouves à toi-même : si t'as tenu ça, tu peux tenir le reste.",
+   "ecran": {
+    "type": "liste",
+    "titre": "TU T'ES PROUVÉ",
+    "lignes": [
+     "Que tu tiens parole",
+     "Que c'est toi qui décides"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. SANS COMPTER",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu continues sans compter. À un moment, c'est plus un défi, c'est juste ta vie. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}

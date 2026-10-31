@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X111",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9811,
+ "handle": "mentaldacier2030",
+ "question": "Tu fais quoi à 23 h ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "23 H",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "contre",
+   "vo": "Ce que tu fais à vingt-trois heures décide de comment tu te lèves demain."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "3 RÈGLES",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Voilà trois règles, et la troisième, presque personne l'applique. Enregistre la vidéo, et dis-moi en commentaire ce que tu fais à vingt-trois heures, en vrai."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "RÈGLE 1",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Règle un : à vingt-trois heures, ton tel part charger hors de la chambre. Pas de discussion."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "RÈGLE 2",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Règle deux : tu prépares demain en deux minutes, tes affaires et ta première tâche, sur un papier.",
+   "ecran": {
+    "type": "liste",
+    "titre": "DEMAIN",
+    "lignes": [
+     "Mes affaires",
+     "Ma première tâche"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "RÈGLE 3",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "orbite",
+   "vo": "Et règle trois : lumière basse, et tu lis ou t'écris trois lignes, rien d'autre. Ta journée est finie, point. Alors, toi, à vingt-trois heures, tu fais quoi ?"
+  }
+ ],
+ "intro": "noir"
+}

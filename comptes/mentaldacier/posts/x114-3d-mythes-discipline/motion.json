@@ -1,0 +1,87 @@
+{
+ "id": "MDA-X114",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9814,
+ "handle": "mentaldacier2030",
+ "question": "Tu croyais lequel ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "3 MYTHES",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Trois trucs qu'on croit sur la discipline, et ce qui marche vraiment."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "LEQUEL ?",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "vo": "Commente le mythe que tu croyais, et enregistre la vidéo, parce que le troisième va te surprendre."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "MYTHE 1",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Mythe un : il faut de la motivation. En vrai, la motivation arrive après avoir commencé, pas avant.",
+   "ecran": {
+    "type": "liste",
+    "titre": "MYTHE 1",
+    "lignes": [
+     "La motivation d'abord ✗",
+     "Commencer d'abord ✓"
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "bandeau": "MYTHE 2",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Mythe deux : il faut tout changer d'un coup. En vrai, un seul changement tenu vaut mieux que dix abandonnés."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "MYTHE 3",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "dessus",
+   "vo": "Et mythe trois : les gens disciplinés résistent mieux. En vrai, ils évitent les tentations avant même de les croiser. Alors, tu croyais lequel ?"
+  }
+ ]
+}

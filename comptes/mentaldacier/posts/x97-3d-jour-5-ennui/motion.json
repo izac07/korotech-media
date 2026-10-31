@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X97",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9797,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à quel jour ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "JOUR 5",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour cinq sans la BR : c'est le jour où tu t'ennuies à mort. Et l'ennui, c'est le piège numéro un."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Reste jusqu'au troisième réflexe, c'est le plus important, et enregistre la vidéo pour les soirs difficiles. Mais d'abord, dis-moi en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. TES HEURES CREUSES",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est de repérer tes heures creuses : le soir, ou le week-end quand t'as rien de prévu.",
+   "ecran": {
+    "type": "liste",
+    "titre": "HEURES CREUSES",
+    "lignes": [
+     "Le soir",
+     "Le week-end",
+     "Rien de prévu"
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. REMPLIS-LES",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Le deuxième, c'est de remplir ces heures-là avant qu'elles arrivent : une séance, une partie avec tes potes, un projet. Du coup, l'ennui trouve plus de place."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. ACCEPTE L'ENNUI",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : t'acceptes de t'ennuyer un peu. S'ennuyer, c'est pas grave, c'est même souvent là que les meilleures idées arrivent. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}

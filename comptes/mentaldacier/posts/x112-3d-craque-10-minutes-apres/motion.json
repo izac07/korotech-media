@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X112",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9812,
+ "handle": "mentaldacier2030",
+ "question": "1 = je culpabilise · 2 = je recommence direct",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "T'AS CRAQUÉ",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "vo": "T'as craqué hier soir. Ce que tu fais dans les dix minutes d'après, c'est ça qui compte."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "1 OU 2 ?",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Commente un si tu culpabilises, deux si tu recommences direct, et enregistre la vidéo pour la prochaine fois."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. PAS DE PUNITION",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "contre",
+   "vo": "Le premier, c'est de pas te punir. La honte, souvent, ça te fait replonger, pas l'inverse."
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. SORS DE LÀ",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Le deuxième, c'est de sortir de la pièce et de faire un truc concret : douche, marche, ranger ta chambre."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "3. NOTE TOUT",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "Et le troisième : tu notes ce qui s'est passé avant, l'heure, l'humeur, l'endroit. La prochaine fois, tu le vois venir. Alors, un ou deux ?",
+   "ecran": {
+    "type": "liste",
+    "titre": "AVANT DE CRAQUER",
+    "lignes": [
+     "L'heure",
+     "L'humeur",
+     "L'endroit"
+    ]
+   }
+  }
+ ]
+}

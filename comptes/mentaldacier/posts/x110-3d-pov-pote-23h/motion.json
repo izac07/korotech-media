@@ -1,0 +1,107 @@
+{
+ "id": "MDA-X110",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9810,
+ "handle": "mentaldacier2030",
+ "question": "Tu lui réponds quoi ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "ecran",
+   "bandeau": "23 H",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "vo": "Vingt-trois heures. Ton pote t'écrit : t'es seul ce soir ? Tu réponds quoi ?",
+   "ecran": {
+    "type": "chat",
+    "titre": "Messages",
+    "messages": [
+     [
+      "ia",
+      "t'es seul ce soir ? 😏"
+     ],
+     [
+      "moi",
+      "…"
+     ]
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "TA RÉPONSE ?",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Écris en commentaire ce que tu lui réponds, et enregistre la vidéo, parce que les soirs comme ça, t'auras besoin des trois réflexes."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. UN VRAI PLAN",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Le premier, c'est de répondre vite et de lancer un vrai plan : viens, on joue, ou on sort marcher.",
+   "ecran": {
+    "type": "chat",
+    "titre": "Messages",
+    "messages": [
+     [
+      "moi",
+      "viens on sort marcher"
+     ],
+     [
+      "ia",
+      "grave 👍"
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. PAS AU LIT",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Le deuxième, si personne est dispo, c'est de pas rester au lit avec ton tel : salon, lumière allumée, porte ouverte."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. LE PLAN B",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : t'as un plan de secours prêt, une série, un livre, une séance. Seul, oui. Sans rien à faire, non. Alors, tu lui réponds quoi ?"
+  }
+ ]
+}

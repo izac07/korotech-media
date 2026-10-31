@@ -1,0 +1,86 @@
+{
+ "id": "MDA-X107",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9807,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à quel jour ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "JOUR 60",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour soixante sans la BR : c'est le jour où tu baisses la garde, parce que t'as plus l'impression d'en avoir besoin."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Enregistre la vidéo pour ce soir et reste jusqu'au troisième réflexe, c'est lui qui t'aide à passer le cap. Avant ça, écris en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. PAR SURPRISE",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est que les envies sont plus rares, mais elles arrivent quand tu t'y attends le moins : un soir de stress, une rupture."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. NON NÉGOCIABLE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Le deuxième, c'est de garder une règle non négociable, même à soixante jours : le tel dort hors de la chambre.",
+   "ecran": {
+    "type": "liste",
+    "titre": "NON NÉGOCIABLE",
+    "lignes": [
+     "Tel hors de la chambre"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. AIDE QUELQU'UN",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : t'aides quelqu'un qui commence. Expliquer ce que t'as appris, c'est la meilleure façon de pas l'oublier. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}

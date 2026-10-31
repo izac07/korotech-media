@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X113",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9813,
+ "handle": "mentaldacier2030",
+ "question": "Lequel te vole le plus ? 1, 2 ou 3 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "TES 20 ANS",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Trois trucs qui te volent tes vingt ans, sans faire de bruit."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "1, 2 OU 3 ?",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Commente le numéro qui te vole le plus, et enregistre la vidéo, parce que le troisième, tu vas le reconnaître."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. LE SCROLL",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "vo": "Un : le scroll sans fin. Une heure par jour, ça fait plus de quinze jours entiers par an.",
+   "ecran": {
+    "type": "liste",
+    "titre": "1 H PAR JOUR",
+    "lignes": [
+     "= 365 h par an",
+     "= 15 jours entiers"
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. 3 H DU MAT",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Deux : les nuits à trois heures du mat. Le lendemain est perdu, et parfois le surlendemain aussi."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. ÊTRE PRÊT",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et trois : attendre d'être prêt. Personne est jamais prêt, ceux qui avancent commencent avant. Alors, c'est quel numéro, toi ?"
+  }
+ ],
+ "intro": "noir"
+}

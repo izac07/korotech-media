@@ -1,0 +1,87 @@
+{
+ "id": "MDA-X93",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9793,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à quel jour ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "JOUR 1",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour un sans la BR : c'est le jour où tu te dis que ça va être facile. Spoiler : non."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Enregistre la vidéo et reste jusqu'au troisième réflexe, c'est celui qui fait la différence. Mais avant, écris en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. TON POURQUOI",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est de savoir pourquoi tu le fais, en une phrase, et de l'écrire là où tu la vois tous les soirs.",
+   "ecran": {
+    "type": "liste",
+    "titre": "MON POURQUOI",
+    "lignes": [
+     "Une phrase",
+     "Visible chaque soir"
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. LE MÉNAGE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Le deuxième, c'est le ménage, ce soir : tu supprimes les comptes et les applis qui te mettent dans l'ambiance. Du coup, la tentation a moins d'entrées."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. TON 1ER SOIR",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu prévois ton premier soir à l'avance. Une séance, un jeu avec un pote, un appel. Le premier soir, faut pas le passer à attendre. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}

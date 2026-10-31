@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X103",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9803,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à quel jour ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "JOUR 15",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour quinze sans la BR, la moitié du mois. Et c'est là que beaucoup relâchent sans s'en rendre compte."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Reste jusqu'au troisième réflexe, c'est le plus important, et enregistre la vidéo pour les soirs difficiles. Mais d'abord, dis-moi en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. ÇA REVIENT",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est le relâchement discret : le tel revient dans la chambre, la porte se referme, une règle après l'autre.",
+   "ecran": {
+    "type": "liste",
+    "titre": "ÇA REVIENT",
+    "lignes": [
+     "Le tel au lit",
+     "La porte fermée",
+     "Les excuses"
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. LE CHECK",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Le deuxième, c'est un check rapide ce soir : tes règles du début, tu les tiens encore toutes ?"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. LE PROCHAIN CAP",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu te fixes le prochain cap, le jour trente. Un objectif proche, c'est plus facile à tenir qu'un « pour toujours ». Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}

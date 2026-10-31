@@ -1,0 +1,91 @@
+{
+ "id": "MDA-X109",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9809,
+ "handle": "mentaldacier2030",
+ "question": "Ton numéro ? 1 à 5 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "5 FAÇONS",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Cinq façons de craquer le soir. Commente le numéro qui te ressemble, et sois honnête."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "TON NUMÉRO ?",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Un, l'ennui. Deux, le stress. Trois, seul tard le soir. Quatre, le tel au lit. Cinq, le juste une fois. Enregistre la vidéo, voilà trois parades.",
+   "ecran": {
+    "type": "liste",
+    "titre": "LE SOIR",
+    "lignes": [
+     "1. L'ennui",
+     "2. Le stress",
+     "3. Seul tard",
+     "4. Le tel au lit",
+     "5. « Juste une fois »"
+    ]
+   }
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1 ET 2 : BOUGE",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Pour l'ennui et le stress, tu bouges : une marche, une douche, dix pompes, avant que l'envie s'installe."
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 ET 4 : LA CHAMBRE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "vo": "Pour seul tard et le tel au lit, c'est ta chambre qui change : tel dehors, porte ouverte, coucher à heure fixe."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "5 : LA QUESTION",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et pour le juste une fois, tu te poses une question : demain matin, je serai content ? Si c'est non, t'as ta réponse. Alors, c'est quel numéro, toi ?"
+  }
+ ],
+ "intro": "noir"
+}
