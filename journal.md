@@ -76,3 +76,7 @@ Parents : aider en maths ; outils gratuits ; parler d'IA à son ado.
 | 2026-11-05 19:15 | R49 | Reel | POV : 3 devoirs pour demain, par où commencer (Vie étudiante, interface) | — |
 | 2026-11-06 12:15 | R50 | Reel | POV : toujours les mêmes fautes d'orthographe (Études malin, cheatsheet) | — |
 | 2026-11-06 19:15 | R51 | Reel | POV : contrat à signer, comprendre sans tout savoir (Vie étudiante, interface) | — |
+| 2026-11-07 12:15 | R52 | Reel | POV : partiels dans cinq jours (Études malin, cheatsheet) | — |
+| 2026-11-07 19:15 | R53 | Reel | POV : un livre à lire en une semaine (Vie étudiante, interface) | — |
+| 2026-11-08 12:15 | R54 | Reel | POV : une mauvaise note (Études malin, cheatsheet) | — |
+| 2026-11-08 19:15 | R55 | Reel | POV : dimanche soir, la semaine fait peur (Vie étudiante, interface) | — |
