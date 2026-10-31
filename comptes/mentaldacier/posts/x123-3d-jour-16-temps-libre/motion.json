@@ -1,0 +1,87 @@
+{
+ "id": "MDA-X123",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9923,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à quel jour ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "JOUR 16",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour seize sans la BR : t'as plus de temps libre, et tu sais pas quoi en faire."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Enregistre la vidéo et reste jusqu'au troisième réflexe, c'est celui qui fait la différence. Mais avant, écris en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. TES SOIRÉES",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le premier, c'est de remplir tes soirées avec un truc qui te plaît : une séance, un projet, tes potes.",
+   "ecran": {
+    "type": "liste",
+    "titre": "TES SOIRÉES",
+    "lignes": [
+     "Une séance",
+     "Un projet",
+     "Tes potes"
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. APPRENDS UN TRUC",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Le deuxième, c'est d'apprendre un nouveau truc, même petit : une langue, un instrument, un logiciel."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. NOTE-LE",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu notes chaque soir ce que t'as fait de ton temps. Tu vas voir tout ce que t'as gagné. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}

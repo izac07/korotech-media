@@ -1,0 +1,87 @@
+{
+ "id": "MDA-X135",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 9935,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à quel jour ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "JOUR 40",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour quarante sans la BR : les autres te trouvent changé, mais toi, tu doutes encore."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Enregistre la vidéo et reste jusqu'au troisième réflexe, c'est celui qui fait la différence. Mais avant, écris en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. ÉCOUTE-LES",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est d'écouter ce que les autres remarquent. Parfois, ils voient avant toi ce qui a bougé."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. TES VICTOIRES",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le deuxième, c'est de noter tes victoires de la semaine, même petites. Ça t'aide à voir le chemin.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CETTE SEMAINE",
+    "lignes": [
+     "Victoire 1",
+     "Victoire 2",
+     "Victoire 3"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE PLAN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE PLAN",
+    "plan 7 jours anti-procrastination"
+   ],
+   "vo": "Avant le troisième, commente PLAN, et je t'envoie le plan sept jours gratuit pour arrêter de procrastiner."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. TA COURSE",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu continues sans te comparer aux autres. Ta série, c'est ta course à toi. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}
