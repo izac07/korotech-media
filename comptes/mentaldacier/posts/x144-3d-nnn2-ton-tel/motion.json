@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X144",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10094,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu hier ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "NNN · JOUR 2",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour deux du NNN : c'est ton tel qui te fait craquer. Pas toi.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Enregistre la vidéo et reste jusqu'au troisième, c'est celui qui fait la différence. Mais avant, écris en commentaire si t'as tenu hier."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. HORS DE LA CHAMBRE",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est qu'il charge hors de ta chambre ce soir. Pas à côté du lit."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. MODE AVION",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le deuxième, c'est le mode avion à vingt-trois heures. Plus de notifs, plus de tentation.",
+   "ecran": {
+    "type": "liste",
+    "titre": "TON TEL",
+    "lignes": [
+     "Hors de la chambre",
+     "Mode avion à 23 h",
+     "Filtre activé"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. LE FILTRE",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : le filtre de contenu activé, et c'est un pote qui choisit le code. Alors, t'as tenu hier, toi ?"
+  }
+ ]
+}

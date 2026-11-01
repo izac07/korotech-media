@@ -1,0 +1,87 @@
+{
+ "id": "MDA-X149",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10099,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu hier ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "NNN · JOUR 2",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour deux du NNN. Pour les autres, c'est un défi. Pour toi, c'est une question de respect envers toi-même.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Enregistre la vidéo pour ce soir et reste jusqu'au troisième, c'est lui qui t'aide à passer le cap. Avant ça, écris en commentaire si t'as tenu hier."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. TA PROMESSE",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est que tenir une promesse à toi-même, ça change la façon dont tu te vois."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. TA PREUVE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le deuxième, c'est que chaque soir tenu, c'est une preuve de plus que tu peux compter sur toi.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE QUE TU TE PROUVES",
+    "lignes": [
+     "Je tiens parole",
+     "C'est moi qui décide"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. POUR TOUT",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : cette confiance-là, tu la gardes pour tout le reste. Le sport, les études, le taf. Alors, t'as tenu hier, toi ?"
+  }
+ ]
+}

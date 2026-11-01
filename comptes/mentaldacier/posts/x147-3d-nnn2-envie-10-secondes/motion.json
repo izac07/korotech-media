@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X147",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10097,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu hier ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "NNN · JOUR 2",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour deux du NNN : l'envie monte. T'as dix secondes. Voilà quoi faire.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Enregistre la vidéo et reste jusqu'au troisième, c'est celui qui fait la différence. Mais avant, écris en commentaire si t'as tenu hier."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. LÈVE-TOI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est de te lever tout de suite. Allongé, ton cerveau négocie."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. SORS",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le deuxième, c'est de sortir de la pièce. L'envie est souvent liée à ton lit.",
+   "ecran": {
+    "type": "liste",
+    "titre": "10 SECONDES",
+    "lignes": [
+     "Lève-toi",
+     "Sors de la pièce",
+     "Pas maintenant"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. PAS MAINTENANT",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu te dis pas maintenant. Dans quinze minutes, la vague est passée. Alors, t'as tenu hier, toi ?"
+  }
+ ]
+}

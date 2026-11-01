@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X162",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10112,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu hier ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "NNN · JOUR 2",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour deux du NNN : voilà ce qui t'attend cette semaine.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Enregistre la vidéo et reste jusqu'au troisième, c'est celui qui fait la différence. Mais avant, écris en commentaire si t'as tenu hier."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. LE JOUR 3",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le premier, c'est le jour trois : souvent, l'envie tape fort.",
+   "ecran": {
+    "type": "liste",
+    "titre": "SEMAINE 1",
+    "lignes": [
+     "Jour 3 : le pic",
+     "Jour 5 : l'ennui",
+     "Jour 7 : le cap"
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. LE JOUR 5",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Le deuxième, c'est le jour cinq : l'ennui. Prévois tes soirées."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. LE JOUR 7",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : le jour sept, ta première semaine. Tu la fêtes, sans rien lâcher. Alors, t'as tenu hier, toi ?"
+  }
+ ]
+}

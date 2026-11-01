@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X146",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10096,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu hier ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "NNN · JOUR 2",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "T'as craqué hier, au jour un du NNN ? C'est pas fini. Repars ce soir.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Enregistre la vidéo pour ce soir et reste jusqu'au troisième, c'est lui qui t'aide à passer le cap. Avant ça, écris en commentaire si t'as tenu hier."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. PAS DE PUNITION",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est de pas te punir. La honte te fait replonger, pas remonter."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. COMPRENDS",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le deuxième, c'est de comprendre ce qui s'est passé : l'heure, l'endroit, l'humeur. Et tu corriges une règle.",
+   "ecran": {
+    "type": "liste",
+    "titre": "REPARS",
+    "lignes": [
+     "Note l'heure",
+     "Corrige une règle",
+     "Recommence ce soir"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. SUR TRENTE",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu comptes tes jours tenus sur trente. Vingt-neuf sur trente, c'est une victoire. Alors, t'as tenu hier, toi ?"
+  }
+ ]
+}

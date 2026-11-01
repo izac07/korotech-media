@@ -22,6 +22,7 @@ canvas#cv{position:absolute;left:0;top:0}
 .band{position:absolute;left:50%;top:235px;transform:translateX(-50%);z-index:6;white-space:nowrap;opacity:0}
 .band span{display:block;background:__BANDFOND__;color:__BANDTEXTE__;font:400 76px/1 Anton;letter-spacing:1px;text-transform:uppercase;padding:22px 64px 18px;
   box-shadow:0 10px 0 rgba(0,0,0,.25);clip-path:polygon(0 0,100% 0,96% 50%,100% 100%,0 100%,4% 50%)}
+.band em{display:block;width:max-content;margin:12px auto 0;font:400 36px/1 Anton;font-style:normal;letter-spacing:1px;text-transform:uppercase;color:#fff;background:rgba(0,0,0,.72);padding:8px 18px 6px}  /* sous_bandeau : petite ligne d'explication (NNN, 02/11/2026) */
 .badge{position:absolute;right:120px;top:390px;z-index:6;background:__BADGEFOND__;border:5px solid __BADGETEXTE__;border-radius:18px;padding:10px 22px 6px;
   display:flex;align-items:baseline;gap:16px;box-shadow:6px 6px 0 __ENCRE__;opacity:0;transform:rotate(3deg)}
 .badge b{font:400 34px Anton;color:__BADGETEXTE__;letter-spacing:1px}.badge i{font:400 92px/1 Anton;font-style:normal;color:__ACC__;font-variant-numeric:tabular-nums}
@@ -407,7 +408,7 @@ def page(spec, theme, starts, durs, caps, total):
     hexi = lambda h: int(h.lstrip("#"), 16)
     S = [{"a": round(starts[k], 3), "b": round(starts[k] + durs[k], 3), "plan": s.get("type", "large"), "ecran": s.get("ecran"),
           "humeur": s.get("humeur"), "tampon": s.get("tampon"), "compteur": s.get("compteur")} for k, s in enumerate(sc)]
-    bands = "".join(f"<div class='band' id='bd{k}'><span>{K.esc(s.get('bandeau', ''))}</span></div>" for k, s in enumerate(sc) if s.get("bandeau"))
+    bands = "".join(f"<div class='band' id='bd{k}'><span>{K.esc(s.get('bandeau', ''))}</span>" + (f"<em>{K.esc(s['sous_bandeau'])}</em>" if s.get('sous_bandeau') else '') + "</div>" for k, s in enumerate(sc) if s.get("bandeau"))
     badges = "".join(f"<div class='badge' id='bg{k}'><b>{K.esc(s['compteur'].get('label', ''))}</b><i>0</i></div>" for k, s in enumerate(sc) if s.get("compteur"))
     fins = "".join(f"<div class='fin' id='fn{k}'><b>{K.esc(s['carte'][0])}</b>" + (f"<span>{K.esc(s['carte'][1])}</span>" if len(s['carte']) > 1 else '') + "</div>" for k, s in enumerate(sc) if s.get("carte"))
     tampons = "".join(f"<div class='tampon' id='tp{k}'>✓ {K.esc(s['tampon'])}</div>" for k, s in enumerate(sc) if s.get("tampon"))
