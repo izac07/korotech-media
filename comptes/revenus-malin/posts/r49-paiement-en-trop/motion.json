@@ -1,0 +1,85 @@
+{
+ "id": "RM-R49",
+ "layout": "malin",
+ "music_seed": 3213,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Il t'a payé<br>**trop**",
+   "sub": "l'arnaque du trop-perçu",
+   "vo": "Un acheteur te paie trop et te demande de rembourser la différence ? Stop."
+  },
+  {
+   "type": "list",
+   "title": "Comment ça se **passe**",
+   "items": [
+    [
+     "Il paie plus",
+     "que le prix"
+    ],
+    [
+     "Il t'écrit",
+     "« erreur, rembourse »"
+    ],
+    [
+     "Le paiement",
+     "peut être annulé"
+    ]
+   ],
+   "slots": 3,
+   "vo": "L'acheteur paie plus que le prix, te demande la différence, et le paiement initial peut finir annulé. Enregistre cette vidéo."
+  },
+  {
+   "type": "list",
+   "title": "Ce que tu **fais**",
+   "items": [
+    [
+     "Tu attends",
+     "que l'argent soit reçu"
+    ],
+    [
+     "Tu ne rembourses pas",
+     "un inconnu"
+    ],
+    [
+     "Tu gardes",
+     "tous les messages"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Tu vérifies que l'argent est bien reçu et tu ne rembourses pas un inconnu. Déjà croisé un acheteur louche ? Commente oui ou non.",
+   "note": "Déjà croisé un acheteur louche ? OUI ou NON ?"
+  },
+  {
+   "type": "list",
+   "title": "Si c'est **louche**",
+   "items": [
+    [
+     "Tu coupes",
+     "le contact"
+    ],
+    [
+     "Tu signales",
+     "à la plateforme"
+    ],
+    [
+     "Tu alertes",
+     "ta banque"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Si c'est louche, coupe le contact, signale l'annonce à la plateforme, et préviens ta banque."
+  },
+  {
+   "type": "cta",
+   "big": "Un doute ?<br>**Tu ne rembourses pas.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

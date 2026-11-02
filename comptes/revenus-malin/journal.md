@@ -40,3 +40,17 @@
 | 2026-11-02 19:30 | RM-R34 | Reel | Relire des textes pour de l'argent : par où commencer (Idées de side hustle, malin) |
 | 2026-11-03 12:00 | RM-R35 | Reel | Défi sept jours sans achat impulsif (Organisation, malin) |
 | 2026-11-03 19:30 | RM-R36 | Reel | Un client te paie en visibilité ou en expérience (Arnaques & pièges à éviter, malin) |
+| 2026-11-04 12:00 | RM-R37 | Reel | Transformer une passion en petit service (Idées de side hustle, malin) |
+| 2026-11-04 19:30 | RM-R38 | Reel | On te demande de payer pour travailler : stop (Arnaques & pièges à éviter, malin) |
+| 2026-11-05 12:00 | RM-R39 | Reel | Bloque deux créneaux fixes pour ton side hustle (Organisation, malin) |
+| 2026-11-05 19:30 | RM-R40 | Reel | Trois side hustles sans rien acheter (Idées de side hustle, malin) |
+| 2026-11-06 12:00 | RM-R41 | Reel | Revenus annexes : où chercher la réponse (Démarches & cadre en France, malin) |
+| 2026-11-06 19:30 | RM-R42 | Reel | Rédiger des fiches produit pour petites boutiques (Idées de side hustle, malin) |
+| 2026-11-07 12:00 | RM-R43 | Reel | Suivre ses dépenses pendant un mois (Organisation, malin) |
+| 2026-11-07 19:30 | RM-R44 | Reel | Une formation promet des revenus garantis : méfie-toi (Arnaques & pièges à éviter, malin) |
+| 2026-11-08 12:00 | RM-R45 | Reel | POV : un créateur cherche quelqu'un pour ses sous-titres (Idées de side hustle, malin) |
+| 2026-11-08 19:30 | RM-R46 | Reel | Étudiant et side hustle : les points à vérifier (Démarches & cadre en France, malin) |
+| 2026-11-09 12:00 | RM-R47 | Reel | Une page avec tes services et tes prix (Organisation, malin) |
+| 2026-11-09 19:30 | RM-R48 | Reel | Photographier des produits pour petits vendeurs (Idées de side hustle, malin) |
+| 2026-11-10 12:00 | RM-R49 | Reel | L'acheteur qui te paie trop (Arnaques & pièges à éviter, malin) |
+| 2026-11-10 19:30 | RM-R50 | Reel | Bilan de ton premier mois : trois chiffres (Organisation, malin) |

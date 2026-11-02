@@ -1,0 +1,85 @@
+{
+ "id": "RM-R40",
+ "layout": "malin",
+ "music_seed": 3204,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Trois side hustles<br>**sans rien acheter**",
+   "sub": "avec ce que tu as déjà",
+   "vo": "Trois side hustles possibles sans rien acheter, et le dernier est le plus accessible."
+  },
+  {
+   "type": "list",
+   "title": "Avec ton **téléphone**",
+   "items": [
+    [
+     "Photos de produits",
+     "pour petits vendeurs"
+    ],
+    [
+     "Sous-titres",
+     "pour créateurs"
+    ],
+    [
+     "Aide numérique",
+     "pour tes voisins"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Un, ton téléphone : photos de produits, sous-titres, aide numérique. Enregistre cette vidéo pour choisir."
+  },
+  {
+   "type": "list",
+   "title": "Avec ton **ordinateur**",
+   "items": [
+    [
+     "Rédaction",
+     "articles, fiches"
+    ],
+    [
+     "Relecture",
+     "textes à corriger"
+    ],
+    [
+     "Saisie",
+     "tableaux, données"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Deux, ton ordinateur : rédaction, relecture, saisie. Alors, téléphone ou ordinateur ? Commente ton choix.",
+   "note": "Téléphone ou ordinateur ? Commente ton choix."
+  },
+  {
+   "type": "list",
+   "title": "Avec ton **temps**",
+   "items": [
+    [
+     "Garde de plantes",
+     "et d'animaux"
+    ],
+    [
+     "Courses",
+     "pour des proches âgés"
+    ],
+    [
+     "Coups de main",
+     "chez les voisins"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Trois, ton temps : garder des plantes ou des animaux, aider un voisin. C'est le plus accessible."
+  },
+  {
+   "type": "cta",
+   "big": "Tu as déjà<br>**de quoi démarrer.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

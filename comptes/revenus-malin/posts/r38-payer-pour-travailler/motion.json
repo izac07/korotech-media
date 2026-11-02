@@ -1,0 +1,85 @@
+{
+ "id": "RM-R38",
+ "layout": "malin",
+ "music_seed": 3202,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Payer pour<br>**travailler ?**",
+   "sub": "le signal d'alerte n° 1",
+   "vo": "On te demande de payer avant de commencer à travailler ? Méfie-toi."
+  },
+  {
+   "type": "list",
+   "title": "Les **3 signaux**",
+   "items": [
+    [
+     "Paiement d'avance",
+     "pour un kit ou du matériel"
+    ],
+    [
+     "Frais de dossier",
+     "avant toute mission"
+    ],
+    [
+     "Pression",
+     "« réponds aujourd'hui »"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Un paiement d'avance pour un kit, des frais de dossier avant la mission, et la pression de répondre aujourd'hui. Enregistre cette vidéo."
+  },
+  {
+   "type": "list",
+   "title": "Ce que tu **fais**",
+   "items": [
+    [
+     "Tu ne paies pas",
+     "sans contrat clair"
+    ],
+    [
+     "Tu cherches",
+     "l'entreprise en ligne"
+    ],
+    [
+     "Tu demandes",
+     "tout par écrit"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Tu ne paies rien, tu cherches l'entreprise en ligne et tu demandes tout par écrit. Tu as déjà croisé ça ? Commente oui ou non.",
+   "note": "Déjà croisé ça ? Commente OUI ou NON."
+  },
+  {
+   "type": "list",
+   "title": "Tu peux **signaler**",
+   "items": [
+    [
+     "Sur la plateforme",
+     "bouton signaler"
+    ],
+    [
+     "Site officiel",
+     "cybermalveillance.gouv.fr"
+    ],
+    [
+     "Tes proches",
+     "pour les prévenir"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Tu peux aussi signaler l'annonce, et consulter le site officiel Cybermalveillance."
+  },
+  {
+   "type": "cta",
+   "big": "Ton travail,<br>**tu ne le paies pas.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

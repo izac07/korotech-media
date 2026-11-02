@@ -1,0 +1,85 @@
+{
+ "id": "RM-R48",
+ "layout": "malin",
+ "music_seed": 3212,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Photos de produit :<br>**avant, après**",
+   "sub": "un service avec ton téléphone",
+   "vo": "Une photo floue donne moins envie qu'une photo nette, et ça se corrige."
+  },
+  {
+   "type": "list",
+   "title": "Ce qui change **tout**",
+   "items": [
+    [
+     "La lumière",
+     "près d'une fenêtre"
+    ],
+    [
+     "Un fond simple",
+     "uni, propre"
+    ],
+    [
+     "Le cadrage",
+     "produit bien centré"
+    ]
+   ],
+   "slots": 3,
+   "vo": "La lumière d'une fenêtre, un fond simple et un bon cadrage. Enregistre cette vidéo pour tes essais."
+  },
+  {
+   "type": "list",
+   "title": "Pour **démarrer**",
+   "items": [
+    [
+     "Un essai",
+     "sur trois objets à toi"
+    ],
+    [
+     "Un avant-après",
+     "pour montrer"
+    ],
+    [
+     "Un tarif écrit",
+     "par produit ou par lot"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Entraîne-toi sur trois objets à toi et montre un avant-après. Team avant ou team après ? Commente un ou deux.",
+   "note": "Team avant (1) ou team après (2) ?"
+  },
+  {
+   "type": "list",
+   "title": "Les **clients** possibles",
+   "items": [
+    [
+     "Petits vendeurs",
+     "en ligne"
+    ],
+    [
+     "Artisans",
+     "de ta ville"
+    ],
+    [
+     "Annonces",
+     "de location"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Pense aux petits vendeurs en ligne, aux artisans de ta ville, et à ceux qui louent un logement."
+  },
+  {
+   "type": "cta",
+   "big": "Une bonne photo,<br>**un petit service.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

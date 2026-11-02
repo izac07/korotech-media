@@ -1,0 +1,85 @@
+{
+ "id": "RM-R37",
+ "layout": "malin",
+ "music_seed": 3201,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Ta passion,<br>**un petit service ?**",
+   "sub": "en trois étapes honnêtes",
+   "vo": "Ta passion peut devenir un petit service, mais seulement dans cet ordre."
+  },
+  {
+   "type": "list",
+   "title": "Cherche ce que les autres **te demandent**",
+   "items": [
+    [
+     "On te demande conseil",
+     "sur quel sujet ?"
+    ],
+    [
+     "Tu aides déjà",
+     "des proches, gratuitement"
+    ],
+    [
+     "Tu vas plus vite",
+     "là où d'autres galèrent"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Regarde sur quoi on te demande déjà conseil. Enregistre cette vidéo : c'est ton point de départ."
+  },
+  {
+   "type": "list",
+   "title": "Fais-en une **offre claire**",
+   "items": [
+    [
+     "Un service précis",
+     "une phrase suffit"
+    ],
+    [
+     "Un public précis",
+     "qui en a besoin"
+    ],
+    [
+     "Un prix honnête",
+     "même petit au début"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Ensuite, une offre claire : un service précis, un public précis, un prix honnête. Ta passion, c'est quoi ? Écris-la en commentaire.",
+   "note": "Ta passion, c'est quoi ? Écris-la en commentaire."
+  },
+  {
+   "type": "list",
+   "title": "Teste **petit** d'abord",
+   "items": [
+    [
+     "Un seul essai",
+     "avec une personne"
+    ],
+    [
+     "Tu notes",
+     "ce qui a pris du temps"
+    ],
+    [
+     "Tu ajustes",
+     "avant d'en parler"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Teste avec une seule personne, note ce qui a pris du temps, puis ajuste."
+  },
+  {
+   "type": "cta",
+   "big": "Ta passion<br>**a peut-être<br>un prix.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

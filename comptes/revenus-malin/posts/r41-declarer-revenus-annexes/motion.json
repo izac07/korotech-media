@@ -1,0 +1,85 @@
+{
+ "id": "RM-R41",
+ "layout": "malin",
+ "music_seed": 3205,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Revenus annexes :<br>**à déclarer ?**",
+   "sub": "où chercher la réponse",
+   "vo": "Un petit revenu à côté, ça se déclare ? Voilà où chercher la réponse."
+  },
+  {
+   "type": "list",
+   "title": "Les **bons réflexes**",
+   "items": [
+    [
+     "Ne pas supposer",
+     "ni « trop petit »"
+    ],
+    [
+     "Aller à la source",
+     "impots.gouv.fr"
+    ],
+    [
+     "Garder une trace",
+     "factures, virements"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Ne pars pas du principe que c'est trop petit pour compter. Enregistre cette vidéo, et garde une trace de chaque somme reçue."
+  },
+  {
+   "type": "list",
+   "title": "Où **se renseigner**",
+   "items": [
+    [
+     "Impôts",
+     "impots.gouv.fr"
+    ],
+    [
+     "Statut, cotisations",
+     "autoentrepreneur.urssaf.fr"
+    ],
+    [
+     "Ton cas précis",
+     "un conseiller officiel"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Va voir le site des impôts, celui de l'Urssaf, ou demande à un conseiller. Tu t'étais déjà posé la question ? Commente oui ou non.",
+   "note": "Tu t'étais déjà posé la question ? OUI ou NON ?"
+  },
+  {
+   "type": "list",
+   "title": "Ce qu'on **retient**",
+   "items": [
+    [
+     "Les règles changent",
+     "vérifie à la source"
+    ],
+    [
+     "Info générale",
+     "pas un avis perso"
+    ],
+    [
+     "Dans le doute",
+     "demande"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Les règles changent : vérifie toujours à la source. Ici, c'est de l'information générale."
+  },
+  {
+   "type": "cta",
+   "big": "Vérifie<br>**à la source.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

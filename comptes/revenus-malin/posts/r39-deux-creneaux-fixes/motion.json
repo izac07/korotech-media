@@ -1,0 +1,85 @@
+{
+ "id": "RM-R39",
+ "layout": "malin",
+ "music_seed": 3203,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Pas le temps ?<br>**Bloque des créneaux**",
+   "sub": "le secret des gens réguliers",
+   "vo": "Tu n'as jamais le temps pour ton side hustle ? Il manque un truc simple."
+  },
+  {
+   "type": "list",
+   "title": "Le **créneau** fixe",
+   "items": [
+    [
+     "Un jour précis",
+     "pas « quand je peux »"
+    ],
+    [
+     "Une durée courte",
+     "réaliste pour toi"
+    ],
+    [
+     "Une tâche claire",
+     "écrite avant"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Choisis un jour précis, une durée courte et une tâche écrite avant. Enregistre cette vidéo pour ta semaine."
+  },
+  {
+   "type": "list",
+   "title": "Deux créneaux, pas **dix**",
+   "items": [
+    [
+     "Un en semaine",
+     "après le travail"
+    ],
+    [
+     "Un le week-end",
+     "plus long"
+    ],
+    [
+     "Rien d'autre",
+     "le reste est bonus"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Deux créneaux suffisent pour démarrer : un en semaine, un le week-end. Team soir ou team week-end ? Commente un ou deux.",
+   "note": "Team soir (1) ou team week-end (2) ?"
+  },
+  {
+   "type": "list",
+   "title": "Si tu en **rates** un",
+   "items": [
+    [
+     "Pas de culpabilité",
+     "tu reprends au suivant"
+    ],
+    [
+     "Tu raccourcis",
+     "dix minutes comptent"
+    ],
+    [
+     "Tu notes",
+     "ce qui t'a bloqué"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Si tu en rates un, tu reprends au suivant, même dix minutes."
+  },
+  {
+   "type": "cta",
+   "big": "Deux créneaux,<br>**et tu avances.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

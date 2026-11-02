@@ -1,0 +1,85 @@
+{
+ "id": "RM-R44",
+ "layout": "malin",
+ "music_seed": 3208,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Revenus<br>**garantis ?**",
+   "sub": "le mot qui doit t'alerter",
+   "vo": "Une formation qui garantit des revenus ? Méfie-toi, et fais trois vérifications."
+  },
+  {
+   "type": "list",
+   "title": "Les **3 vérifications**",
+   "items": [
+    [
+     "Des preuves",
+     "vérifiables, pas des captures"
+    ],
+    [
+     "Des conditions claires",
+     "prix, durée, remboursement"
+    ],
+    [
+     "Des avis",
+     "indépendants et récents"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Des preuves vérifiables, des conditions claires de remboursement et des avis indépendants. Enregistre cette vidéo avant de payer."
+  },
+  {
+   "type": "list",
+   "title": "Les mots qui **alertent**",
+   "items": [
+    [
+     "« Garanti »",
+     "aucun revenu n'est garanti"
+    ],
+    [
+     "« Sans effort »",
+     "tout demande du temps"
+    ],
+    [
+     "« Dernière place »",
+     "pression pour payer vite"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Garanti, sans effort, dernière place : ces mots servent souvent à te pousser à payer vite. Tu t'es déjà fait piéger ? Raconte en commentaire.",
+   "note": "Déjà piégé ? Raconte en commentaire."
+  },
+  {
+   "type": "list",
+   "title": "Avant de **payer**",
+   "items": [
+    [
+     "Attends 48 h",
+     "décide à froid"
+    ],
+    [
+     "Compare",
+     "avec des ressources gratuites"
+    ],
+    [
+     "Demande",
+     "tout par écrit"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Attends quarante-huit heures et compare avec des ressources gratuites avant de sortir ta carte."
+  },
+  {
+   "type": "cta",
+   "big": "Aucun revenu<br>**n'est garanti.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

@@ -1,0 +1,85 @@
+{
+ "id": "RM-R47",
+ "layout": "malin",
+ "music_seed": 3211,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Un client demande<br>**« tu fais quoi ? »**",
+   "sub": "prépare ta réponse",
+   "vo": "Un client te demande ce que tu proposes, et tu bégaies ? Prépare une page."
+  },
+  {
+   "type": "list",
+   "title": "Ta page **en 3 blocs**",
+   "items": [
+    [
+     "Ce que tu fais",
+     "une phrase simple"
+    ],
+    [
+     "Pour qui",
+     "ton public précis"
+    ],
+    [
+     "Combien",
+     "un prix de départ"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Trois blocs : ce que tu fais en une phrase, pour qui, et à partir de quel prix. Enregistre cette vidéo pour ta page."
+  },
+  {
+   "type": "list",
+   "title": "Rends-la **simple**",
+   "items": [
+    [
+     "Pas de jargon",
+     "comme à un ami"
+    ],
+    [
+     "Un exemple",
+     "avant, après"
+    ],
+    [
+     "Un contact",
+     "un seul moyen"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Écris comme à un ami, ajoute un exemple et un moyen de te contacter. Ta phrase d'offre, tu l'as ? Commente oui ou non.",
+   "note": "Ta phrase d'offre, tu l'as déjà ? OUI ou NON ?"
+  },
+  {
+   "type": "list",
+   "title": "Garde-la **vraie**",
+   "items": [
+    [
+     "Aucune promesse",
+     "de résultat"
+    ],
+    [
+     "Prix honnêtes",
+     "et à jour"
+    ],
+    [
+     "Tu la relis",
+     "chaque mois"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Pas de promesse de résultat, des prix honnêtes, mis à jour chaque mois."
+  },
+  {
+   "type": "cta",
+   "big": "Une page,<br>**une réponse claire.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

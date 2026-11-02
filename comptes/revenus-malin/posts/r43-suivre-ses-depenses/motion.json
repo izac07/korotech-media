@@ -1,0 +1,85 @@
+{
+ "id": "RM-R43",
+ "layout": "malin",
+ "music_seed": 3207,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Où part<br>**ton argent ?**",
+   "sub": "un mois pour le savoir",
+   "vo": "Tu ne sais pas où passe ton argent ? Un mois suffit pour le voir."
+  },
+  {
+   "type": "list",
+   "title": "La méthode **simple**",
+   "items": [
+    [
+     "Tu notes tout",
+     "chaque dépense, même petite"
+    ],
+    [
+     "Tu classes",
+     "logement, courses, loisirs"
+    ],
+    [
+     "Tu additionnes",
+     "à la fin du mois"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Note chaque dépense, même petite, range-la dans une catégorie et additionne en fin de mois. Enregistre cette vidéo, elle t'évitera des surprises."
+  },
+  {
+   "type": "list",
+   "title": "Ce que tu **découvres**",
+   "items": [
+    [
+     "Les petites fuites",
+     "abonnements oubliés"
+    ],
+    [
+     "Ce qui compte",
+     "logement, transport"
+    ],
+    [
+     "Ce qui se coupe",
+     "sans te priver"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Tu repères les abonnements oubliés et les petites dépenses qui s'accumulent. C'est quoi ta dépense invisible ? Avoue-la en commentaire.",
+   "note": "Ta dépense invisible ? Avoue-la en commentaire."
+  },
+  {
+   "type": "list",
+   "title": "Ensuite, tu **décides**",
+   "items": [
+    [
+     "Un budget réaliste",
+     "pas un régime strict"
+    ],
+    [
+     "Une part pour toi",
+     "plaisirs compris"
+    ],
+    [
+     "Un point mensuel",
+     "ajusté si besoin"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Ensuite, tu fixes un budget réaliste, plaisirs compris, et tu le revois chaque mois."
+  },
+  {
+   "type": "cta",
+   "big": "Un mois,<br>**et tu sais.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

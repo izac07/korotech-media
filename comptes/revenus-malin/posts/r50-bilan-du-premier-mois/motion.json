@@ -1,0 +1,85 @@
+{
+ "id": "RM-R50",
+ "layout": "malin",
+ "music_seed": 3214,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Premier mois :<br>**3 chiffres à noter**",
+   "sub": "pour savoir où tu en es",
+   "vo": "Un mois de side hustle derrière toi ? Note ces trois chiffres."
+  },
+  {
+   "type": "list",
+   "title": "Les **3 chiffres**",
+   "items": [
+    [
+     "Le temps passé",
+     "en heures"
+    ],
+    [
+     "Ce que ça a coûté",
+     "matériel, outils"
+    ],
+    [
+     "Ce que ça a rapporté",
+     "même si c'est zéro"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Le temps passé, le coût, et ce que ça a rapporté, même zéro. Enregistre cette vidéo pour ton bilan."
+  },
+  {
+   "type": "list",
+   "title": "Ce que tu en **tires**",
+   "items": [
+    [
+     "Ce qui a marché",
+     "à refaire"
+    ],
+    [
+     "Ce qui a traîné",
+     "à simplifier"
+    ],
+    [
+     "Ce que tu arrêtes",
+     "sans regret"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Tu repères ce qui a marché, ce qui a traîné, ce que tu arrêtes. Ton chiffre le plus dur : temps ou argent ? Commente ton choix.",
+   "note": "Ton chiffre le plus dur : temps ou argent ?"
+  },
+  {
+   "type": "list",
+   "title": "Le mois **suivant**",
+   "items": [
+    [
+     "Un seul objectif",
+     "petit et précis"
+    ],
+    [
+     "Un créneau fixe",
+     "déjà dans l'agenda"
+    ],
+    [
+     "Un bilan",
+     "dans trente jours"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Pour le mois suivant, fixe un seul objectif, petit et précis, et note-le dans ton agenda."
+  },
+  {
+   "type": "cta",
+   "big": "Un bilan,<br>**et tu avances.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

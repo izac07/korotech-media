@@ -1,0 +1,85 @@
+{
+ "id": "RM-R42",
+ "layout": "malin",
+ "music_seed": 3206,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Fiches produit :<br>**un side hustle ?**",
+   "sub": "pour les petites boutiques en ligne",
+   "vo": "Les petites boutiques manquent de temps pour écrire leurs fiches produit."
+  },
+  {
+   "type": "list",
+   "title": "Ce que contient une **fiche**",
+   "items": [
+    [
+     "Un titre clair",
+     "ce que c'est"
+    ],
+    [
+     "Des bénéfices",
+     "pas que des détails"
+    ],
+    [
+     "Les infos utiles",
+     "taille, matière, entretien"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Un titre clair, les bénéfices pour le client, et les infos utiles comme la taille ou la matière. Enregistre cette vidéo."
+  },
+  {
+   "type": "list",
+   "title": "Pour **démarrer**",
+   "items": [
+    [
+     "Trois exemples",
+     "écrits pour toi"
+    ],
+    [
+     "Un test",
+     "proposé à quelques boutiques"
+    ],
+    [
+     "Un tarif écrit",
+     "avant de commencer"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Écris trois exemples, puis propose un test à quelques boutiques. Tu écrirais pour quel type de produit ? Dis-le en commentaire.",
+   "note": "Tu écrirais pour quel produit ?"
+  },
+  {
+   "type": "list",
+   "title": "Reste **honnête**",
+   "items": [
+    [
+     "Aucune fausse qualité",
+     "sur le produit"
+    ],
+    [
+     "Tu vérifies",
+     "avec la boutique"
+    ],
+    [
+     "Tu fixes ton tarif",
+     "avant de commencer"
+    ]
+   ],
+   "slots": 3,
+   "vo": "N'invente jamais une qualité du produit, vérifie tout avec la boutique et fixe ton tarif avant de commencer."
+  },
+  {
+   "type": "cta",
+   "big": "Des mots justes,<br>**un petit revenu.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

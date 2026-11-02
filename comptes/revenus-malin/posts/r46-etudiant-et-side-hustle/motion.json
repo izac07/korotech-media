@@ -1,0 +1,85 @@
+{
+ "id": "RM-R46",
+ "layout": "malin",
+ "music_seed": 3210,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "Étudiant<br>**et side hustle ?**",
+   "sub": "les points à vérifier",
+   "vo": "Étudiant, tu veux gagner un peu à côté ? Vérifie d'abord trois points."
+  },
+  {
+   "type": "list",
+   "title": "Les **3 points**",
+   "items": [
+    [
+     "Ton statut",
+     "étudiant, boursier ?"
+    ],
+    [
+     "Tes revenus",
+     "à déclarer ?"
+    ],
+    [
+     "Ton temps",
+     "les études d'abord"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Ton statut, car une bourse peut avoir des règles. Tes revenus, à déclarer ou pas. Enregistre cette vidéo, et ton temps pour tes études."
+  },
+  {
+   "type": "list",
+   "title": "Où **vérifier**",
+   "items": [
+    [
+     "Ton école",
+     "service étudiant"
+    ],
+    [
+     "Le Crous",
+     "si tu es boursier"
+    ],
+    [
+     "Sites officiels",
+     "impots.gouv.fr"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Demande à ton école, au Crous si tu es boursier, et sur les sites officiels. Tu cumules études et petit job ? Commente oui ou non.",
+   "note": "Tu cumules études et petit job ? OUI ou NON ?"
+  },
+  {
+   "type": "list",
+   "title": "Ce qu'on **retient**",
+   "items": [
+    [
+     "Pas de seuil ici",
+     "ils changent"
+    ],
+    [
+     "Tout vérifier",
+     "à la source"
+    ],
+    [
+     "Info générale",
+     "pas un avis perso"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Les règles changent, donc vérifie à la source. Ici, c'est de l'information générale."
+  },
+  {
+   "type": "cta",
+   "big": "Vérifie d'abord,<br>**lance-toi ensuite.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}

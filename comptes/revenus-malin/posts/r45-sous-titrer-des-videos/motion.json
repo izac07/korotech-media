@@ -1,0 +1,85 @@
+{
+ "id": "RM-R45",
+ "layout": "malin",
+ "music_seed": 3209,
+ "handle": "revenus_malins",
+ "scenes": [
+  {
+   "type": "hook",
+   "big": "POV : un créateur<br>**cherche des sous-titres**",
+   "sub": "ton premier client ?",
+   "vo": "POV : un créateur de ta région galère à sous-titrer ses vidéos."
+  },
+  {
+   "type": "list",
+   "title": "Ce que tu **fournis**",
+   "items": [
+    [
+     "Des sous-titres exacts",
+     "sans fautes"
+    ],
+    [
+     "Un rendu lisible",
+     "couleurs, taille"
+    ],
+    [
+     "Un délai clair",
+     "annoncé avant"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Tu fournis des sous-titres sans fautes, lisibles sur téléphone, dans un délai annoncé. Enregistre cette vidéo pour ton offre."
+  },
+  {
+   "type": "list",
+   "title": "Pour **démarrer**",
+   "items": [
+    [
+     "Un logiciel gratuit",
+     "pour tes essais"
+    ],
+    [
+     "Un seul essai",
+     "sur une vidéo"
+    ],
+    [
+     "Un tarif écrit",
+     "avant de livrer"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Fais un essai sur une seule vidéo, puis annonce ton tarif par écrit. Tu as déjà sous-titré une vidéo ? Commente oui ou non.",
+   "note": "Déjà sous-titré une vidéo ? OUI ou NON ?"
+  },
+  {
+   "type": "list",
+   "title": "Où **trouver** des clients",
+   "items": [
+    [
+     "Les créateurs",
+     "de ta région"
+    ],
+    [
+     "Les petits commerces",
+     "qui filment"
+    ],
+    [
+     "Ton entourage",
+     "bouche-à-oreille"
+    ]
+   ],
+   "slots": 3,
+   "vo": "Cherche du côté des créateurs de ta région, des petits commerces qui filment, et de ton entourage."
+  },
+  {
+   "type": "cta",
+   "big": "Ton premier client<br>**est peut-être là.**",
+   "ctas": [
+    "↗️ Partage à un ami",
+    "💬 Commente BUDGET"
+   ],
+   "note": "Information générale, pas un conseil personnalisé",
+   "vo": "Commente budget pour recevoir le budget simple et dix idées de revenus."
+  }
+ ]
+}
