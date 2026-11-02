@@ -1,0 +1,79 @@
+{
+ "id": "LIA-R45",
+ "layout": "studio3d",
+ "music_seed": 3105,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Appel dans une heure",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "MINUTES",
+    "de": 0,
+    "a": 60
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "Appel prospect : rien de prêt"
+   },
+   "vo": "Un appel avec un prospect dans une heure, et zéro question préparée ?"
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Tu dis ce que tu vends",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Je vends des logos. Prépare mon appel avec un prospect."
+     ],
+     [
+      "ia",
+      "Cinq questions : besoin, budget, délai, décideur, style."
+     ]
+    ]
+   },
+   "vo": "Dis à Claude ce que tu vends et qui tu appelles. Il sort cinq questions : besoin, budget, délai, décideur, style. Enregistre ça pour ton prochain appel."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Ta fiche d'appel",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "Ta fiche d'appel",
+    "lignes": [
+     "Besoin",
+     "Budget",
+     "Délai"
+    ]
+   },
+   "vo": "Tu gardes les questions qui te ressemblent et tu en retires deux. Tu poses laquelle en premier, toi ? Dis-le en commentaire."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Toi, tu relis",
+   "humeur": "content",
+   "tampon": "APPEL PRÊT",
+   "ecran": {
+    "type": "export",
+    "titre": "Fiche d'appel"
+   },
+   "vo": "Tu arrives calme, avec une fiche, et tu écoutes au lieu d'improviser."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,79 @@
+{
+ "id": "LIA-R50",
+ "layout": "studio3d",
+ "music_seed": 3110,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Lundi matin",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "REELS",
+    "de": 0,
+    "a": 14
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "Lundi : les reels à écrire"
+   },
+   "vo": "Chaque lundi, Claude écrit mes quatorze reels de la semaine, par compte."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Claude écrit",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Écris les reels de la semaine, sujets variés."
+     ],
+     [
+      "ia",
+      "Fait : sujets, scripts, contrôles."
+     ]
+    ]
+   },
+   "vo": "Il choisit les sujets, écrit les scripts et vérifie qu'ils ne répètent pas ceux d'avant. Enregistre ça si tu publies toi aussi chaque semaine."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Ce que je fais",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "Ce que je fais moi",
+    "lignes": [
+     "Je relis",
+     "Je valide ou je refuse",
+     "Je réponds aux DM"
+    ]
+   },
+   "vo": "Moi, je relis, je valide ou je refuse, et je réponds aux messages. Et toi, qu'est-ce que tu garderais pour toi ? Raconte en commentaire."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Moi, je valide",
+   "humeur": "content",
+   "tampon": "VALIDÉ",
+   "ecran": {
+    "type": "export",
+    "titre": "File d'attente"
+   },
+   "vo": "Ensuite, Make publie, et je garde le veto."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

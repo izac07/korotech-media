@@ -45,3 +45,15 @@
 | 2026-11-01 18:30 | LIA-R38 | Reel | Claude Code ou Claude en conversation : lequel pour quoi (Tutos Claude, studio3d) |
 | 2026-11-02 12:30 | LIA-R39 | Reel | Claude compare deux devis de prestataires dans un tableau (Claude fait à ta place, studio3d) |
 | 2026-11-02 18:30 | LIA-R40 | Reel | Ce que je ne confie pas à Claude (Erreurs et vérités, studio3d) |
+| 2026-11-05 12:30 | LIA-R41 | Reel | POV : ta facture a trente jours de retard (Claude fait à ta place, studio3d) |
+| 2026-11-05 18:30 | LIA-R42 | Reel | Colle un ancien mail pour que Claude écrive comme toi (Tutos Claude, studio3d) |
+| 2026-11-06 12:30 | LIA-R43 | Reel | Claude écrit ta newsletter à partir de tes notes (Claude fait à ta place, studio3d) |
+| 2026-11-06 18:30 | LIA-R44 | Reel | Ce que tu ne colles jamais dans Claude (Erreurs et vérités, studio3d) |
+| 2026-11-07 12:30 | LIA-R45 | Reel | Claude prépare ton appel de découverte (Claude fait à ta place, studio3d) |
+| 2026-11-07 18:30 | LIA-R46 | Reel | Mes reels sont relus par Claude avant moi (Coulisses de mon système, studio3d) |
+| 2026-11-08 12:30 | LIA-R47 | Reel | Conversation trop longue : demande un résumé et repars (Tutos Claude, studio3d) |
+| 2026-11-08 18:30 | LIA-R48 | Reel | Ton mail d'absence en trois phrases avec Claude (Claude fait à ta place, studio3d) |
+| 2026-11-09 12:30 | LIA-R49 | Reel | Trois infos à donner à Claude avant toute demande (Tutos Claude, studio3d) |
+| 2026-11-09 18:30 | LIA-R50 | Reel | Un lundi chez moi : Claude écrit la semaine (Coulisses de mon système, studio3d) |
+| 2026-11-10 12:30 | LIA-R51 | Reel | Mythe : Claude connaît ton business (Erreurs et vérités, studio3d) |
+| 2026-11-10 18:30 | LIA-R52 | Reel | Claude écrit ta bio Instagram en trois versions (Claude fait à ta place, studio3d) |

@@ -1,0 +1,79 @@
+{
+ "id": "LIA-R48",
+ "layout": "studio3d",
+ "music_seed": 3108,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Départ demain",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "PHRASES",
+    "de": 0,
+    "a": 3
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "Mail d'absence : à écrire"
+   },
+   "vo": "Ton mail d'absence en trois phrases, avec Claude, avant de partir."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Donne tes dates",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Écris mon mail d'absence : retour le 20, urgences à Léa."
+     ],
+     [
+      "ia",
+      "Voici : dates, personne à contacter, ton cordial."
+     ]
+    ]
+   },
+   "vo": "Donne à Claude tes dates et la personne à contacter. Il écrit trois phrases : le retour, le contact, un ton cordial. Enregistre ça avant tes vacances."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Tu vérifies",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "À vérifier",
+    "lignes": [
+     "Dates de retour",
+     "Contact en cas d'urgence",
+     "Ton cordial"
+    ]
+   },
+   "vo": "Toi, tu vérifies les dates et le contact. Défi : ton mail d'absence, tu le fais en combien de phrases ? Écris ton score."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Toi, tu relis",
+   "humeur": "content",
+   "tampon": "ABSENCE PRÊTE",
+   "ecran": {
+    "type": "export",
+    "titre": "Mail d'absence"
+   },
+   "vo": "Tu envoies, et tu pars sans y repenser."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

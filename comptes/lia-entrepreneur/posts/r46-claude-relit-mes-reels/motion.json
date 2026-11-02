@@ -1,0 +1,79 @@
+{
+ "id": "LIA-R46",
+ "layout": "studio3d",
+ "music_seed": 3106,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Il est pointilleux",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "ERREURS",
+    "de": 0,
+    "a": 3
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "Texte qui déborde… trop tard"
+   },
+   "vo": "Claude relit mes reels avant moi, et il est pointilleux."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Il se relit",
+   "humeur": "normal",
+   "ecran": {
+    "type": "verif",
+    "titre": "Contrôle avant export",
+    "lignes": [
+     "Rien ne déborde",
+     "Lisible dès la 1re image",
+     "Mot-clé à la fin"
+    ]
+   },
+   "vo": "Il vérifie que rien ne déborde, que le texte se lit dès la première image et que le mot-clé est là. Enregistre ça pour tes vidéos."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Il corrige",
+   "humeur": "travail",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Le titre déborde de l'écran."
+     ],
+     [
+      "ia",
+      "Je le raccourcis et je recommence."
+     ]
+    ]
+   },
+   "vo": "S'il trouve un défaut, il corrige et recommence, mais c'est moi qui valide. Et toi, tu relis avant de poster ? Oui ou non ?"
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Moi, je valide",
+   "humeur": "content",
+   "tampon": "VALIDÉ PAR MOI",
+   "ecran": {
+    "type": "export",
+    "titre": "File d'attente"
+   },
+   "vo": "Ensuite le reel part dans la file, et je garde le droit de veto."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

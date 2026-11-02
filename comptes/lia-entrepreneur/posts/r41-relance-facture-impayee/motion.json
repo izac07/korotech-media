@@ -1,0 +1,79 @@
+{
+ "id": "LIA-R41",
+ "layout": "studio3d",
+ "music_seed": 3101,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Facture en retard",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "JOURS",
+    "de": 0,
+    "a": 30
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "Relance ? Je n'ose pas…"
+   },
+   "vo": "POV : ta facture a trente jours de retard et tu n'oses pas relancer."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Claude écrit",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Écris une relance polie : facture en retard de trente jours."
+     ],
+     [
+      "ia",
+      "Voici trois versions : douce, ferme, dernière relance."
+     ]
+    ]
+   },
+   "vo": "Demande à Claude une relance polie avec le montant et la date. Il te propose trois tons. Enregistre ça pour le prochain retard."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1 douce · 2 ferme",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "Tu relis avant d'envoyer",
+    "lignes": [
+     "Montant et date exacts",
+     "Ton adapté au client",
+     "Aucune menace"
+    ]
+   },
+   "vo": "Toi, tu vérifies les chiffres et tu choisis le ton. Team douce ou team ferme ? Commente un ou deux."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Toi, tu relis",
+   "humeur": "content",
+   "tampon": "MAIL PRÊT",
+   "ecran": {
+    "type": "export",
+    "titre": "Claude — relance"
+   },
+   "vo": "Le message part, poli et clair, et tu n'as pas eu à chercher tes mots."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

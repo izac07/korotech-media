@@ -1,0 +1,79 @@
+{
+ "id": "LIA-R49",
+ "layout": "studio3d",
+ "music_seed": 3109,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Il répond à côté",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "ESSAIS",
+    "de": 0,
+    "a": 3
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "« Écris-moi un texte »"
+   },
+   "vo": "Claude te répond à côté ? Donne-lui ces trois infos avant ta demande."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Qui tu es, pour qui",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Je suis coiffeuse. Mes clientes ont entre 30 et 50 ans."
+     ],
+     [
+      "ia",
+      "Parfait, j'écris pour elles, avec un ton chaleureux."
+     ]
+    ]
+   },
+   "vo": "Un : qui tu es. Deux : pour qui tu écris. Enregistre cette vidéo, le trois change tout."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Le ton voulu",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "Les 3 infos",
+    "lignes": [
+     "Qui tu es",
+     "Pour qui",
+     "Le ton voulu"
+    ]
+   },
+   "vo": "Trois : le ton, par exemple chaleureux, direct ou drôle. Avec ça, Claude vise bien plus juste. Chaleureux ou direct ? Commente un ou deux."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Toi, tu relis",
+   "humeur": "content",
+   "tampon": "BIEN VISÉ",
+   "ecran": {
+    "type": "export",
+    "titre": "Texte sur mesure"
+   },
+   "vo": "Trois infos et ta demande est claire."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

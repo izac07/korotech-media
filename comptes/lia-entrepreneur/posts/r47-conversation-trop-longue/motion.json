@@ -1,0 +1,79 @@
+{
+ "id": "LIA-R47",
+ "layout": "studio3d",
+ "music_seed": 3107,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Trop de messages",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "MESSAGES",
+    "de": 0,
+    "a": 80
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "Conversation sans fin…"
+   },
+   "vo": "Après des dizaines de messages, Claude peut se mélanger. Il existe un réflexe."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Demande un résumé",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Résume tout ce qu'on a décidé, en dix lignes."
+     ],
+     [
+      "ia",
+      "Voici le résumé : objectif, décisions, reste à faire."
+     ]
+    ]
+   },
+   "vo": "Demande-lui un résumé de ce que vous avez décidé. Enregistre ça : c'est le réflexe qui sauve les longues conversations."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Nouvelle conversation",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "Tu repars propre",
+    "lignes": [
+     "Colle le résumé",
+     "Redis ton objectif",
+     "Continue"
+    ]
+   },
+   "vo": "Ensuite, nouvelle conversation, tu colles le résumé et tu repars propre. Tu en es à combien de messages, là ? Écris ton score."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Toi, tu relis",
+   "humeur": "content",
+   "tampon": "REPARTI",
+   "ecran": {
+    "type": "export",
+    "titre": "Nouvelle conversation"
+   },
+   "vo": "Tu relis le résumé avant de coller : c'est lui qui guide la suite."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

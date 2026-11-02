@@ -1,0 +1,74 @@
+{
+ "id": "LIA-R51",
+ "layout": "studio3d",
+ "music_seed": 3111,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Il ne sait pas tout",
+   "humeur": "fatigue",
+   "ecran": {
+    "type": "bazar",
+    "titre": "« Claude sait tout »"
+   },
+   "vo": "Claude connaît ton métier, mais pas tes prix ni tes clients."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Dis-lui tout",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Quel est mon tarif habituel ?"
+     ],
+     [
+      "ia",
+      "Je ne sais pas : donne-le-moi."
+     ]
+    ]
+   },
+   "vo": "Si tu ne lui dis pas, il peut deviner. Donne-lui tes tarifs, tes règles et ton ton. Enregistre ça avant ta prochaine demande."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Vérifie à la source",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "À lui dire",
+    "lignes": [
+     "Tes tarifs",
+     "Tes règles",
+     "Ton public"
+    ]
+   },
+   "vo": "Et un chiffre ou une règle, ça se vérifie à la source. Vrai ou faux : Claude connaît ton business ? Commente vrai ou faux."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Toi, tu relis",
+   "humeur": "content",
+   "tampon": "SOURCE VÉRIFIÉE",
+   "ecran": {
+    "type": "export",
+    "titre": "Réponse relue"
+   },
+   "vo": "Tu lui donnes le contexte, il te donne un brouillon utile."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

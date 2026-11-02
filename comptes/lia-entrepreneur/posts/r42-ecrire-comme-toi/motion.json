@@ -1,0 +1,79 @@
+{
+ "id": "LIA-R42",
+ "layout": "studio3d",
+ "music_seed": 3102,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Mails trop lisses",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "RELECTURES",
+    "de": 0,
+    "a": 3
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "Un mail qui sonne robot"
+   },
+   "vo": "Les mails de Claude sonnent trop lisses ? Il suffit de lui montrer le tien."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Tu lui montres",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Voici trois mails que j'ai écrits. Garde mon style."
+     ],
+     [
+      "ia",
+      "Compris : phrases courtes, ton direct."
+     ]
+    ]
+   },
+   "vo": "Colle deux ou trois de tes vrais mails dans la conversation et demande à Claude de garder ton style. Enregistre ça, c'est le secret."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Il repère ton style",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "Ce qu'il repère",
+    "lignes": [
+     "Phrases courtes",
+     "Tes formules",
+     "Ton tutoiement"
+    ]
+   },
+   "vo": "Il repère tes tournures et ta façon de dire bonjour, donc ses brouillons te ressemblent. Et toi, tu ou vous avec tes clients ? Écris-le en commentaire."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Toi, tu relis",
+   "humeur": "content",
+   "tampon": "TON STYLE",
+   "ecran": {
+    "type": "export",
+    "titre": "Claude — brouillon"
+   },
+   "vo": "Relis quand même : c'est toi qui signes."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

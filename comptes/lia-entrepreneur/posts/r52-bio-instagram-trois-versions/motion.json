@@ -1,0 +1,79 @@
+{
+ "id": "LIA-R52",
+ "layout": "studio3d",
+ "music_seed": 3112,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Bio floue",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "VERSIONS",
+    "de": 0,
+    "a": 3
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "« Passionné de tout »"
+   },
+   "vo": "Ta bio Instagram dit « passionné de tout » ? Claude peut faire mieux."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Tu dis ce que tu fais",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Je suis photographe de mariage à Lille. Trois bios courtes."
+     ],
+     [
+      "ia",
+      "Trois versions : directe, chaleureuse, drôle."
+     ]
+    ]
+   },
+   "vo": "Dis à Claude ton métier, ta ville et ce que tu proposes. Il écrit trois versions courtes. Enregistre ça avant de changer ta bio."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Tu choisis",
+   "humeur": "travail",
+   "ecran": {
+    "type": "verif",
+    "titre": "Tu choisis",
+    "lignes": [
+     "Directe",
+     "Chaleureuse",
+     "Drôle"
+    ]
+   },
+   "vo": "Tu gardes celle qui te ressemble et tu vérifies qu'elle dit bien ce que tu proposes. Laquelle tu choisis ? Commente un, deux ou trois."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Toi, tu relis",
+   "humeur": "content",
+   "tampon": "BIO PRÊTE",
+   "ecran": {
+    "type": "export",
+    "titre": "Nouvelle bio"
+   },
+   "vo": "Après, ton profil dit enfin ce que tu fais."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

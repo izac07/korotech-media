@@ -1,0 +1,79 @@
+{
+ "id": "LIA-R44",
+ "layout": "studio3d",
+ "music_seed": 3104,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Trois interdits",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "ERREURS",
+    "de": 0,
+    "a": 3
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "Mot de passe copié-collé ?"
+   },
+   "vo": "Ne colle jamais ces trois choses dans Claude, même pour gagner du temps."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Les 3 interdits",
+   "humeur": "normal",
+   "ecran": {
+    "type": "verif",
+    "titre": "Jamais dans le chat",
+    "lignes": [
+     "Mots de passe",
+     "Numéros de carte",
+     "Données clients"
+    ]
+   },
+   "vo": "Un : tes mots de passe. Deux : tes numéros de carte. Enregistre cette vidéo, parce que le trois, c'est celui qu'on oublie."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Anonymise d'abord",
+   "humeur": "travail",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Voici le fichier de mes clients, avec leurs coordonnées."
+     ],
+     [
+      "ia",
+      "Anonymise-le d'abord : retire noms et adresses."
+     ]
+    ]
+   },
+   "vo": "Trois : les données de tes clients. Retire les noms et les coordonnées avant de coller. Tu en as déjà collé sans y penser ? Avoue-le en commentaire."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Toi, tu relis",
+   "humeur": "content",
+   "tampon": "ANONYMISÉ",
+   "ecran": {
+    "type": "export",
+    "titre": "Version sans noms"
+   },
+   "vo": "Remplace les noms par des lettres, et ton texte reste utile."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}

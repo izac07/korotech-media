@@ -243,11 +243,23 @@ date;compte;id;layout;pilier;formule;sujet;hook
 2026-11-04 19:15;korotech_fr;R47;interface;L'IA au quotidien;pov;POV : cadeau pour un pote, zéro idée;['🎁', 'Rappel', 'Anniversaire · demain']
 2026-11-05 07:30;zerosallefit;ZSF-R41;sportmotion;Séances complètes prêtes à faire;liste;Une séance jambes, deux niveaux : facile ou costaud;1 SÉANCE, 2 NIVEAUX ⏱ 6 MIN
 2026-11-05 12:15;korotech_fr;R48;cheatsheet;Études malin;pov;POV : exposé oral demain;3 RÉFLEXES POV : exposé oral demain 😰
+2026-11-05 12:30;lia.entrepreneur;LIA-R41;studio3d;Claude fait à ta place;pov;POV : ta facture a trente jours de retard;
 2026-11-05 18:00;zerosallefit;ZSF-R42;sportmotion;Motivation & régularité;defi;Bilan de la semaine : compte tes séances, sans culpabilité;TA SEMAINE EN CROIX ⏱ 1 MIN DE BILAN
+2026-11-05 18:30;lia.entrepreneur;LIA-R42;studio3d;Tutos Claude;secret;Colle un ancien mail pour que Claude écrive comme toi;
 2026-11-05 19:15;korotech_fr;R49;interface;Vie étudiante;pov;POV : 3 devoirs pour demain, par où commencer;['📚', 'Cahier de textes', 'Maths · Histoire · Anglais']
 2026-11-06 12:15;korotech_fr;R50;cheatsheet;Études malin;pov;POV : toujours les mêmes fautes d'orthographe;3 ÉTAPES POV : les mêmes fautes 🙃
+2026-11-06 12:30;lia.entrepreneur;LIA-R43;studio3d;Claude fait à ta place;liste;Claude écrit ta newsletter à partir de tes notes;
+2026-11-06 18:30;lia.entrepreneur;LIA-R44;studio3d;Erreurs et vérités;stop;Ce que tu ne colles jamais dans Claude;
 2026-11-06 19:15;korotech_fr;R51;interface;Vie étudiante;pov;POV : contrat à signer, comprendre sans tout savoir;['📄', 'Document', 'Contrat · à signer']
 2026-11-07 12:15;korotech_fr;R52;cheatsheet;Études malin;pov;POV : partiels dans cinq jours;3 ÉTAPES POV : partiels dans 5 jours
+2026-11-07 12:30;lia.entrepreneur;LIA-R45;studio3d;Claude fait à ta place;question;Claude prépare ton appel de découverte;
+2026-11-07 18:30;lia.entrepreneur;LIA-R46;studio3d;Coulisses de mon système;demo;Mes reels sont relus par Claude avant moi;
 2026-11-07 19:15;korotech_fr;R53;interface;Vie étudiante;pov;POV : un livre à lire en une semaine;['📖', 'Prof de français', 'Lecture · lundi']
 2026-11-08 12:15;korotech_fr;R54;cheatsheet;Études malin;pov;POV : une mauvaise note;3 ÉTAPES POV : une mauvaise note 😶
+2026-11-08 12:30;lia.entrepreneur;LIA-R47;studio3d;Tutos Claude;chiffre;Conversation trop longue : demande un résumé et repars;
+2026-11-08 18:30;lia.entrepreneur;LIA-R48;studio3d;Claude fait à ta place;defi;Ton mail d'absence en trois phrases avec Claude;
 2026-11-08 19:15;korotech_fr;R55;interface;Vie étudiante;pov;POV : dimanche soir, la semaine fait peur;['🔔', 'Agenda', 'Lundi · 8 h']
+2026-11-09 12:30;lia.entrepreneur;LIA-R49;studio3d;Tutos Claude;liste;Trois infos à donner à Claude avant toute demande;
+2026-11-09 18:30;lia.entrepreneur;LIA-R50;studio3d;Coulisses de mon système;histoire;Un lundi chez moi : Claude écrit la semaine;
+2026-11-10 12:30;lia.entrepreneur;LIA-R51;studio3d;Erreurs et vérités;mythe;Mythe : Claude connaît ton business;
+2026-11-10 18:30;lia.entrepreneur;LIA-R52;studio3d;Claude fait à ta place;avant-apres;Claude écrit ta bio Instagram en trois versions;

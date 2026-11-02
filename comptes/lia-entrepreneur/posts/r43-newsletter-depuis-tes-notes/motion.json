@@ -1,0 +1,80 @@
+{
+ "id": "LIA-R43",
+ "layout": "studio3d",
+ "music_seed": 3103,
+ "handle": "lia.entrepreneur",
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "Page blanche",
+   "humeur": "fatigue",
+   "compteur": {
+    "label": "NOTES",
+    "de": 0,
+    "a": 12
+   },
+   "ecran": {
+    "type": "bazar",
+    "titre": "Newsletter : page blanche"
+   },
+   "vo": "Douze notes éparpillées, zéro newsletter : on fait quoi ?"
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Tu colles tes notes",
+   "humeur": "normal",
+   "ecran": {
+    "type": "chat",
+    "titre": "Claude",
+    "messages": [
+     [
+      "moi",
+      "Voici mes notes en vrac. Fais-en une newsletter."
+     ],
+     [
+      "ia",
+      "Voici un plan : titre, intro, trois idées, appel."
+     ]
+    ]
+   },
+   "vo": "Colle tes notes en vrac dans Claude et demande un plan : un titre, une intro, trois idées, un appel à l'action. Enregistre ça pour dimanche soir."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "Claude rédige",
+   "humeur": "travail",
+   "compteur": {
+    "label": "ÉTAPES",
+    "de": 0,
+    "a": 3,
+    "fmt": "#/3"
+   },
+   "ecran": {
+    "type": "montage",
+    "titre": "Claude — rédaction"
+   },
+   "vo": "Il trie tes notes, écrit chaque partie et propose trois titres. Et toi, tu envoies une newsletter ? Réponds oui ou pas encore."
+  },
+  {
+   "type": "telephone",
+   "bandeau": "Toi, tu relis",
+   "humeur": "content",
+   "tampon": "À RELIRE",
+   "ecran": {
+    "type": "export",
+    "titre": "Newsletter prête"
+   },
+   "vo": "Tu relis, tu corriges les faits, et tu envoies."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "Commente IA",
+   "humeur": "content",
+   "vo": "Commente IA pour recevoir les dix tâches à déléguer à Claude.",
+   "carte": [
+    "💬 COMMENTE IA",
+    "les 10 tâches à déléguer à Claude"
+   ]
+  }
+ ]
+}
