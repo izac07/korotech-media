@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X185",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10135,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu combien de jours ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "NNN · JOUR 3",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Ce soir, si tu t'ennuies, fais ça. L'ennui, c'est le vrai ennemi du NNN.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Enregistre la vidéo pour les soirs difficiles et reste jusqu'au troisième. Avant ça, écris en commentaire combien de jours t'as tenu."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. SORS",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est de sortir. Dix minutes de marche, et tu changes d'air."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. APPELLE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le deuxième, c'est d'appeler un pote. Parler à quelqu'un, ça remplit le vide.",
+   "ecran": {
+    "type": "liste",
+    "titre": "SI TU T'ENNUIES",
+    "lignes": [
+     "Sors",
+     "Appelle un pote",
+     "Lance un projet"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. UN PROJET",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : commence le truc que tu repousses depuis longtemps. Ce soir, t'as le temps. Alors, t'as tenu combien de jours, toi ? Abonne-toi, demain c'est le jour quatre."
+  }
+ ]
+}
