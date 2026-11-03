@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X167",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10117,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu combien de jours ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "NNN · JOUR 3",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Le gars qui craque au jour trois du NNN fait presque toujours ces trois erreurs.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Enregistre la vidéo pour les soirs difficiles et reste jusqu'au troisième. Avant ça, écris en commentaire combien de jours t'as tenu."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. LE TEL AU LIT",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "La première, c'est qu'il garde son tel au lit. Un clic, et c'est fini."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. RIEN DE PRÉVU",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "La deuxième, c'est qu'il a rien prévu pour sa soirée. Il s'ennuie, et l'ennui choisit pour lui.",
+   "ecran": {
+    "type": "liste",
+    "titre": "SES ERREURS",
+    "lignes": [
+     "Tel au lit",
+     "Soirée vide",
+     "« Juste une fois »"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. JUSTE UNE FOIS",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et la troisième : il se dit juste une fois. Cette phrase-là, c'est elle qui fait craquer. Alors, t'as tenu combien de jours, toi ? Abonne-toi, demain c'est le jour quatre."
+  }
+ ]
+}
