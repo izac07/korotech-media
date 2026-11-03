@@ -1,0 +1,87 @@
+{
+ "id": "MDA-X176",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10126,
+ "handle": "mentaldacier2030",
+ "question": "Tu le fais, toi ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "LE NNN EXPLIQUÉ",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Le NNN, expliqué en trente secondes, pour ceux qui se demandent."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Enregistre la vidéo, je t'explique en trois points. Mais avant, dis-moi en commentaire si tu le fais."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. LE PRINCIPE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le premier, c'est le principe : No Nut November, trente jours sans la BR, tout le mois.",
+   "ecran": {
+    "type": "liste",
+    "titre": "LE NNN",
+    "lignes": [
+     "No Nut November",
+     "30 jours sans la BR",
+     "Du 1er au 30 novembre"
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "bandeau": "2. LE VRAI DÉFI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Le deuxième, c'est que le vrai défi, c'est pas l'envie. C'est l'ennui, le soir, seul avec ton tel."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. POURQUOI",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu le fais pour ta parole. Tenir une promesse que t'as faite à toi-même. Alors, tu le fais, toi ? Abonne-toi, je t'aide à tenir chaque jour."
+  }
+ ]
+}
