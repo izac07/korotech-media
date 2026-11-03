@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X171",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10121,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu combien de jours ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "NNN · JOUR 3",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour trois du NNN : les trois pièges qui t'attendent aujourd'hui.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Enregistre la vidéo et reste jusqu'au troisième, c'est celui qui fait la différence. Mais avant, écris en commentaire combien de jours t'as tenu."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. LE SCROLL",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est le scroll. Une vidéo en amène une autre, et tu sais où ça finit."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. LA FATIGUE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le deuxième, c'est la fatigue. Couche-toi à l'heure ce soir : fatigué et seul, c'est le pire combo.",
+   "ecran": {
+    "type": "liste",
+    "titre": "LES PIÈGES",
+    "lignes": [
+     "Le scroll",
+     "La fatigue",
+     "« J'ai mérité »"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. LA RÉCOMPENSE",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : te dire que t'as bien tenu, donc que t'as mérité une pause. Ta récompense, c'est la série. Alors, t'as tenu combien de jours, toi ? Abonne-toi, demain c'est le jour quatre."
+  }
+ ]
+}
