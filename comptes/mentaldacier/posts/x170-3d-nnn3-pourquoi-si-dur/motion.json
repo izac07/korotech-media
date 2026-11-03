@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X170",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10120,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu combien de jours ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "NNN · JOUR 3",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Pourquoi le jour trois du NNN est souvent le plus dur ? Trois raisons.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Enregistre la vidéo pour les soirs difficiles et reste jusqu'au troisième. Avant ça, écris en commentaire combien de jours t'as tenu."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. PLUS DE NOUVEAUTÉ",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "La première, c'est qu'au début, c'était nouveau. Maintenant, c'est juste toi et ta parole."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. L'HABITUDE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "La deuxième, c'est que l'habitude te rappelle, surtout aux heures où tu craquais avant.",
+   "ecran": {
+    "type": "liste",
+    "titre": "POURQUOI",
+    "lignes": [
+     "Plus de nouveauté",
+     "L'habitude rappelle",
+     "Tu baisses ta garde"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. TA GARDE",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et la troisième : tu te sens bien, alors tu baisses ta garde. C'est là que le piège se referme. Alors, t'as tenu combien de jours, toi ? Abonne-toi, demain c'est le jour quatre."
+  }
+ ]
+}
