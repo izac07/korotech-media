@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X187",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10137,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu combien de jours ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "NNN · 23 H",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Il est vingt-trois heures et l'envie monte ? Regarde cette vidéo jusqu'au bout.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Reste jusqu'au troisième, c'est le plus important, et enregistre la vidéo pour ce soir. Mais d'abord, dis-moi en commentaire combien de jours t'as tenu."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. UNE VAGUE",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est que l'envie, c'est une vague. Elle monte, puis elle redescend, si tu la nourris pas."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. COUPE TOUT",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le deuxième, c'est de tout couper : tel au salon, mode avion, lumière allumée.",
+   "ecran": {
+    "type": "liste",
+    "titre": "23 H",
+    "lignes": [
+     "Tel au salon",
+     "Mode avion",
+     "Lumière allumée"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. DORS",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu te couches. Demain matin, tu seras fier d'avoir tenu. Alors, t'as tenu combien de jours, toi ? Abonne-toi, demain c'est le jour quatre."
+  }
+ ]
+}
