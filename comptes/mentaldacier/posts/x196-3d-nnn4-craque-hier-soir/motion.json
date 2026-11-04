@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X196",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10146,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu combien de jours ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "NNN · JOUR 4",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "T'as craqué hier soir, au jour trois ? Lis ça avant de tout lâcher.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Abonne-toi, y'a une vidéo chaque jour pour t'aider à tenir. Reste jusqu'au troisième, c'est le plus important. Mais d'abord, dis-moi en commentaire combien de jours t'as tenu."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. ÇA EFFACE RIEN",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est qu'une rechute efface pas les jours que t'as tenus. Trois jours, ils sont à toi."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. LA CAUSE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le deuxième, c'est de trouver la cause : l'heure, l'endroit, ce que tu faisais juste avant. Et tu changes ce truc-là ce soir.",
+   "ecran": {
+    "type": "liste",
+    "titre": "REPARS",
+    "lignes": [
+     "L'heure",
+     "L'endroit",
+     "Ce que tu faisais"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. CE SOIR",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu repars ce soir, pas lundi. Sans te punir, sans honte. Alors, t'as tenu combien de jours, toi ? Demain, c'est le jour cinq."
+  }
+ ]
+}
