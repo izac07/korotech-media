@@ -1,0 +1,89 @@
+{
+ "id": "MDA-X230",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10180,
+ "handle": "mentaldacier2030",
+ "question": "Tenu ou craqué aujourd'hui ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#1b1b1e",
+  "sol": "#121214",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#c9a35b",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#c9a35b",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "LA PHRASE QUI COÛTE LE MOIS",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "J'ai craqué, autant tout lâcher. C'est pas le craquage qui te coûte le mois. C'est cette phrase.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Abonne-toi, y'a une vidéo chaque jour jusqu'au trente. Reste jusqu'au dernier point, c'est lui qui change tout. Et avant, écris ton numéro de jour en commentaire."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "UNE SOIRÉE",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Déjà, un craquage, c'est une soirée de perdue. Pas un mois. Tu comptes tes jours tenus sur trente."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LA SPIRALE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Ensuite, tout lâcher, c'est la spirale : une fois, puis deux, puis t'arrêtes de compter. C'est là que tu perds vraiment.",
+   "ecran": {
+    "type": "liste",
+    "titre": "NE PAS CONFONDRE",
+    "lignes": [
+     "Une rechute : 1 soir",
+     "Tout lâcher : le mois",
+     "Repartir : ce soir"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "Commente NNN",
+    "le PDF des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "CE SOIR",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le dernier point : tu repars ce soir. Mêmes règles, tel dehors, et demain t'es au jour suivant. Alors, tenu ou craqué aujourd'hui ? Je lis tout."
+  }
+ ]
+}

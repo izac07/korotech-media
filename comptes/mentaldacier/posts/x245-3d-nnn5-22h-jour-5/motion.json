@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X245",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10195,
+ "handle": "mentaldacier2030",
+ "question": "Tenu ou craqué aujourd'hui ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#1b1b1e",
+  "sol": "#121214",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#d8d4cc",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d8d4cc",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "22H · JOUR 5",
+   "humeur": "dort",
+   "lumiere": "nuit",
+   "camera": "profil",
+   "vo": "Vingt-deux heures, jour cinq. Si t'as craqué aujourd'hui, écoute bien : tu repars demain, pas lundi."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "contre",
+   "vo": "Abonne-toi, on tient le mois ensemble, une vidéo par jour. Enregistre celle-là, et dis-moi en commentaire si t'as tenu aujourd'hui."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "PAS LUNDI",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Un : lundi, c'est l'excuse de ceux qui lâchent. Demain matin, c'est le jour six, point."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "CE SOIR",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : ce soir, tu corriges une règle. Celle qui a lâché. Et le tel dort dehors.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE SOIR",
+    "lignes": [
+     "Tel dehors",
+     "Une règle corrigée",
+     "Au lit"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "Commente NNN",
+    "le PDF des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "SI T'AS TENU",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "Trois : et si t'as tenu aujourd'hui, ta cinquième croix. Dors bien, demain on continue. Alors, tenu ou craqué aujourd'hui ? Je lis tout."
+  }
+ ]
+}

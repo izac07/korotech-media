@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X229",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10179,
+ "handle": "mentaldacier2030",
+ "question": "Tenu ou craqué aujourd'hui ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#1b1b1e",
+  "sol": "#121214",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#d8d4cc",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d8d4cc",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "LE MESSAGE DE 23H",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Ton pote t'a envoyé un truc chaud à vingt-trois heures ? T'as pas à l'ouvrir. Voilà comment gérer."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "contre",
+   "vo": "Abonne-toi, on tient le mois ensemble, une vidéo par jour. Enregistre celle-là, et dis-moi en commentaire si t'as tenu aujourd'hui."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "N'OUVRE PAS",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "D'abord, tu n'ouvres pas. Personne vérifie, personne saura. C'est ton tel, c'est toi qui décides."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "SOURDINE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Après, tu mets le groupe en sourdine jusqu'à demain matin. Juste pour la soirée.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE SOIR",
+    "lignes": [
+     "N'ouvre pas",
+     "Groupe en sourdine",
+     "Réponds demain"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "Commente NNN",
+    "ton plan pour tenir, offert"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "DIS-LE",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "Et pour finir, dis-lui demain que tu fais le NNN. Tu serais surpris du nombre de potes qui répondent moi aussi. Alors, tenu ou craqué aujourd'hui ? Je lis tout."
+  }
+ ]
+}

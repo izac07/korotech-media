@@ -1,0 +1,84 @@
+{
+ "id": "MDA-X241",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10191,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu combien de jours ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#1b1b1e",
+  "sol": "#121214",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#d8d4cc",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d8d4cc",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "5E CROIX",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "camera": "dessus",
+   "vo": "Ce soir, tu fais ta cinquième croix. Elle vaut beaucoup plus que les quatre d'avant."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "contre",
+   "vo": "Abonne-toi, on tient le mois ensemble, une vidéo par jour. Enregistre celle-là, et dis-moi en commentaire si t'as tenu aujourd'hui."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LA MOTIVATION EST PARTIE",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Déjà, parce que la motivation du début, elle est partie. Cette croix-là, c'est ta discipline qui l'a faite, pas ton humeur."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LA SÉRIE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Ensuite, cinq d'affilée, ça devient une série. Et une série, ça se protège.",
+   "ecran": {
+    "type": "calendrier",
+    "jours": 30,
+    "jusqua": 5
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "Commente NNN",
+    "ton plan pour tenir, offert"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "QUELQUE CHOSE À PERDRE",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "Et le dernier point : maintenant, t'as quelque chose à perdre. C'est exactement ce qui va te faire tenir demain. Alors, t'as tenu combien de jours, toi ?"
+  }
+ ]
+}

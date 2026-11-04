@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X237",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10187,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu combien de jours ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#1b1b1e",
+  "sol": "#121214",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#d8d4cc",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d8d4cc",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "CE QUE PERSONNE TE DIT",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "vo": "Ce que personne te dit sur le jour cinq du NNN : t'as plus de place dans ta tête."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "contre",
+   "vo": "Abonne-toi, on tient le mois ensemble, une vidéo par jour. Enregistre celle-là, et dis-moi en commentaire si t'as tenu aujourd'hui."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "MOINS DE BRUIT",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Déjà, y'a moins de bruit là-dedans. Les pensées reviennent, mais elles prennent moins de place."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "PLUS DE FOCUS",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Ensuite, tu te concentres mieux. Les cours, le taf, la salle : t'es là, vraiment là.",
+   "ecran": {
+    "type": "liste",
+    "titre": "DANS TA TÊTE",
+    "lignes": [
+     "Moins de bruit",
+     "Plus de focus",
+     "Des idées qui reviennent"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "Commente NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "DES IDÉES",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "Et le dernier point : des idées reviennent. Des projets que t'avais laissés de côté. Note-les, c'est ça que tu protèges. Alors, t'as tenu combien de jours, toi ?"
+  }
+ ]
+}

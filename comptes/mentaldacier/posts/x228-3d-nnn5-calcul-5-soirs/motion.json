@@ -1,0 +1,89 @@
+{
+ "id": "MDA-X228",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10178,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à combien ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#1b1b1e",
+  "sol": "#121214",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#7f9bb8",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#7f9bb8",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "FAIS LE CALCUL",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Cinq soirs sans la BR. Fais le calcul avec moi, tu vas être surpris.",
+   "sous_bandeau": "le défi du mois : 30 jours"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Je poste tous les jours du mois, abonne-toi pour pas rater la suite. Garde la vidéo pour ce soir, et écris en commentaire combien de jours t'as tenu."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "PAR SOIR",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Un : une heure par soir, parfois deux, à scroller et tout ce qui va avec. Cinq fois. Ça fait déjà une soirée entière."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "SUR LE MOIS",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : sur trente jours, c'est plus d'un week-end complet que tu récupères.",
+   "ecran": {
+    "type": "liste",
+    "titre": "TON TEMPS",
+    "lignes": [
+     "5 soirs = 1 soirée",
+     "30 soirs = 1 week-end",
+     "Et après ?"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "Commente NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "QU'EST-CE QUE T'EN FAIS",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Trois : décide dès maintenant quoi en faire. Un projet, le sport, tes potes. Sinon le vide reprend la place. Toi, t'en es à combien ? Dis-le-moi."
+  }
+ ]
+}

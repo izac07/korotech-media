@@ -1,0 +1,89 @@
+{
+ "id": "MDA-X242",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10192,
+ "handle": "mentaldacier2030",
+ "question": "Ton numéro de jour",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#1b1b1e",
+  "sol": "#121214",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#c9a35b",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#c9a35b",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "LE 30 NOVEMBRE",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "contre",
+   "vo": "Ton toi du trente novembre regarde ta journée d'aujourd'hui. Voilà ce qu'il voit.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Abonne-toi, y'a une vidéo chaque jour jusqu'au trente. Reste jusqu'au dernier point, c'est lui qui change tout. Et avant, écris ton numéro de jour en commentaire."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LE SOIR OÙ T'AS TENU",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "D'abord, il voit le soir où t'as failli craquer et où t'as tenu. C'est celui-là qu'il retient."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "TRENTE CROIX",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Ensuite, il voit trente croix, et il sait qu'elles ont commencé par celle de ce soir.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE QU'IL VOIT",
+    "lignes": [
+     "Le soir où t'as tenu",
+     "30 croix",
+     "Un gars fiable"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "Commente NNN",
+    "le PDF des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "FIABLE",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et pour finir, il voit un gars sur qui on peut compter. Parce que t'as tenu parole trente fois. Et toi, ton numéro de jour, c'est quoi ?"
+  }
+ ]
+}

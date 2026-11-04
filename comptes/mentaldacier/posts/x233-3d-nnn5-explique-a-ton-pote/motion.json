@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X233",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10183,
+ "handle": "mentaldacier2030",
+ "question": "Tu le fais, toi ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#1b1b1e",
+  "sol": "#121214",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#d8d4cc",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d8d4cc",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "EXPLIQUE-LUI",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Ton pote comprend rien au NNN et il te chambre ? Envoie-lui cette vidéo."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "contre",
+   "vo": "Abonne-toi, je t'explique en trois points, et y'a une vidéo chaque jour pour t'aider à tenir. Avant ça, dis-moi en commentaire si tu le fais."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LE PRINCIPE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Alors, le principe : No Nut November, trente jours sans la BR, tout le mois de novembre.",
+   "ecran": {
+    "type": "liste",
+    "titre": "LE NNN",
+    "lignes": [
+     "No Nut November",
+     "30 jours sans la BR",
+     "Du 1er au 30"
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "bandeau": "POURQUOI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Pourquoi on le fait ? Pour se prouver que c'est nous qui décidons, pas l'habitude. Et pour tout le temps qu'on récupère."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "Commente NNN",
+    "le PDF des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "REJOINS",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "Et le mieux, c'est de le faire à deux. Tu commences aujourd'hui, et vous vous envoyez votre numéro de jour chaque soir. Alors, tu le fais, toi ?"
+  }
+ ]
+}

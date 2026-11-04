@@ -1,0 +1,87 @@
+{
+ "id": "MDA-X225",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10175,
+ "handle": "mentaldacier2030",
+ "question": "Tenu ou craqué aujourd'hui ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#2a1f1f",
+  "sol": "#1a1212",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#c8102e",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#c8102e",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "JEUDI SOIR",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "vo": "Le jeudi soir, c'est le soir où le plus de gars lâchent. Voilà pourquoi, et voilà quoi faire."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "contre",
+   "vo": "Abonne-toi, on tient le mois ensemble, une vidéo par jour. Enregistre celle-là, et dis-moi en commentaire si t'as tenu aujourd'hui."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LA FATIGUE",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Déjà, t'es cuit : quatre jours de taf ou de cours dans les pattes, la volonté est au plus bas."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "PRESQUE LE WEEK-END",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Ensuite, t'as cette petite voix qui dit que c'est presque le week-end, que tu peux te lâcher un peu. Non.",
+   "ecran": {
+    "type": "liste",
+    "titre": "JEUDI",
+    "lignes": [
+     "Fatigue de la semaine",
+     "« Presque le week-end »",
+     "Soirée vide"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "PRÉVOIS",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "Et le dernier point : prévois ta soirée maintenant. Une séance, un appel, un épisode. Le vide, c'est l'ennemi. Alors, tenu ou craqué aujourd'hui ? Je lis tout."
+  }
+ ]
+}

@@ -1,0 +1,89 @@
+{
+ "id": "MDA-X231",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10181,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu combien de jours ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#1b1b1e",
+  "sol": "#121214",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#b24a4a",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#b24a4a",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "LES 3 ENDROITS",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "vo": "Ton casque, ta douche, ton canapé. Les trois endroits où tu baisses la garde sans t'en rendre compte.",
+   "sous_bandeau": "30 jours sans la BR, jour 5"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Si tu veux la vidéo de demain, abonne-toi. Le troisième point, c'est le plus important, reste jusque-là. Mais d'abord, dis-moi en commentaire où t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LE CASQUE",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Le casque, d'abord : coupé du monde, dans ta bulle, c'est là que les pensées reviennent. Enlève-le une heure le soir."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LA DOUCHE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "La douche, ensuite : plus courte, plus fraîche, et le tel reste dans la chambre.",
+   "ecran": {
+    "type": "liste",
+    "titre": "OÙ TU BAISSES LA GARDE",
+    "lignes": [
+     "Le casque",
+     "La douche",
+     "Le canapé"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "Commente NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "LE CANAPÉ",
+   "humeur": "content",
+   "lumiere": "aube",
+   "camera": "profil",
+   "vo": "Et le canapé, le soir, tout seul, tel à la main. Tu te lèves au bout de vingt minutes, et tu fais autre chose. Alors, t'as tenu combien de jours, toi ?"
+  }
+ ]
+}

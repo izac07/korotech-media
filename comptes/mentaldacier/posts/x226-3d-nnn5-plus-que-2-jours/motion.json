@@ -1,0 +1,89 @@
+{
+ "id": "MDA-X226",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10176,
+ "handle": "mentaldacier2030",
+ "question": "Ton numéro de jour",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#1b1b1e",
+  "sol": "#121214",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#c9a35b",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#c9a35b",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "J-2",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "camera": "profil",
+   "vo": "Plus que deux jours et t'as ta première semaine de NNN. Tiens bon, voilà ce qui t'attend.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Abonne-toi, y'a une vidéo chaque jour jusqu'au trente. Reste jusqu'au dernier point, c'est lui qui change tout. Et avant, écris ton numéro de jour en commentaire."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "DEMAIN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "D'abord demain, vendredi : la soirée, les potes, le relâchement. Tu rentres, tel dehors, et tu dors.",
+   "ecran": {
+    "type": "liste",
+    "titre": "LA SEMAINE 1",
+    "lignes": [
+     "Vendredi : la sortie",
+     "Samedi : le cap",
+     "Dimanche : le bilan"
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "bandeau": "SAMEDI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Puis samedi, le jour sept. Tu fais ta septième croix, et tu fêtes ça pour de vrai, pas avec ce que t'arrêtes."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "Commente NNN",
+    "ton plan pour tenir, offert"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "LE BILAN",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et dimanche, tu regardes tes sept croix. Tu notes ce qui t'a aidé. C'est ton plan pour la suite. Et toi, ton numéro de jour, c'est quoi ?"
+  }
+ ]
+}

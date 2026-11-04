@@ -1,0 +1,89 @@
+{
+ "id": "MDA-X239",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10189,
+ "handle": "mentaldacier2030",
+ "question": "Ton numéro de jour",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#1b1b1e",
+  "sol": "#121214",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#b24a4a",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#b24a4a",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "SEUL",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "epaule",
+   "vo": "Tu fais le NNN seul, sans le dire à personne ? Beaucoup m'écrivent en privé pour me dire la même chose. Lis ça.",
+   "sous_bandeau": "30 jours sans la BR, jour 5"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Si tu veux la vidéo de demain, abonne-toi. Le troisième point, c'est le plus important, reste jusque-là. Mais d'abord, dis-moi en commentaire où t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "T'ES PAS SEUL",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Déjà, t'es loin d'être le seul. Des centaines de gars le font en silence. Vous êtes juste pas au courant les uns des autres."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "UN SEUL POTE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Ensuite, t'as pas besoin de l'annoncer. Un seul pote de confiance, à qui t'envoies un chiffre le soir, ça suffit.",
+   "ecran": {
+    "type": "liste",
+    "titre": "EN SOLO",
+    "lignes": [
+     "T'es pas le seul",
+     "Un pote, pas tout le monde",
+     "Reviens chaque jour"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "Commente NNN",
+    "le PDF des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "ICI",
+   "humeur": "content",
+   "lumiere": "aube",
+   "camera": "profil",
+   "vo": "Et si t'as vraiment personne, reviens ici chaque jour. La vidéo du jour, c'est ton check-in. Et toi, ton numéro de jour, c'est quoi ?"
+  }
+ ]
+}
