@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X215",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10165,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu combien de jours ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "NNN · 22 H",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Vingt-deux heures. Si t'as tenu aujourd'hui, t'as passé le jour quatre du NNN.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Abonne-toi pour la vidéo de demain, et reste jusqu'au troisième, c'est lui qui t'aide à passer le cap. Avant ça, écris en commentaire combien de jours t'as tenu."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. BIEN JOUÉ",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est de te féliciter. Quatre jours, et t'es encore là."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. FINIS PROPRE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le deuxième, c'est de finir la soirée proprement : tel dehors, porte ouverte.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE SOIR",
+    "lignes": [
+     "Tel dehors",
+     "Porte ouverte",
+     "Au lit à l'heure"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. TA CROIX",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu fais ta quatrième croix, et tu dors. Alors, t'as tenu combien de jours, toi ? Demain, c'est le jour cinq."
+  }
+ ]
+}
