@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X193",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10143,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu combien de jours ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "NNN · JOUR 4",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour quatre du NNN : les trois pièges qui t'attendent aujourd'hui.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Abonne-toi, y'a une vidéo chaque jour pour t'aider à tenir. Reste jusqu'au troisième, c'est le plus important. Mais d'abord, dis-moi en commentaire combien de jours t'as tenu."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. LA CONFIANCE",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est la confiance. Tu te sens bien, tu te dis que c'est gagné, et tu baisses ta garde."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. LE TEL AU LIT",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le deuxième, c'est le tel qui revient au lit, juste pour l'alarme. Non. Il charge dehors, comme le premier jour.",
+   "ecran": {
+    "type": "liste",
+    "titre": "LES 3 PIÈGES",
+    "lignes": [
+     "La confiance",
+     "Le tel au lit",
+     "« J'ai mérité »"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. LA RÉCOMPENSE",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : te dire que t'as bien tenu, donc que t'as mérité. Ta récompense, c'est la série, pas la rechute. Alors, t'as tenu combien de jours, toi ? Demain, c'est le jour cinq."
+  }
+ ]
+}
