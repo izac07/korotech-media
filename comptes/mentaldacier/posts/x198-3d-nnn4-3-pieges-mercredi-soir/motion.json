@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X198",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10148,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu combien de jours ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "NNN · JOUR 4",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Mercredi soir, jour quatre du NNN : les trois pièges qui t'attendent ce soir.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Abonne-toi, je poste une vidéo chaque jour jusqu'au trente. Et reste jusqu'au troisième, c'est lui qui fait la différence. Mais avant, écris en commentaire combien de jours t'as tenu."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. RIEN DE PRÉVU",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est rien de prévu. Le mercredi soir, souvent, y'a rien. Et le vide, c'est là que ça craque."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. LE SCROLL",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le deuxième, c'est le scroll. Une vidéo en amène une autre, et tu sais où ça finit.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE SOIR",
+    "lignes": [
+     "Rien de prévu",
+     "Le scroll",
+     "Le coucher tardif"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. TROP TARD",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : te coucher trop tard. Fatigué et seul, c'est le pire combo. Tel dehors, au lit à l'heure. Alors, t'as tenu combien de jours, toi ? Demain, c'est le jour cinq."
+  }
+ ]
+}
