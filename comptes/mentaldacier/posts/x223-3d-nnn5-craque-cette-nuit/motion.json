@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X223",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10173,
+ "handle": "mentaldacier2030",
+ "question": "Tenu ou craqué aujourd'hui ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "AVANT DE TE LEVER",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "T'as craqué cette nuit ? Reste au lit deux minutes, lis ça avant de te lever.",
+   "sous_bandeau": "30 jours sans la BR, jour 5"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Si tu veux la vidéo de demain, abonne-toi. Le troisième point, c'est le plus important, reste jusque-là. Mais d'abord, dis-moi en commentaire où t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "ZÉRO HONTE",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Un : la honte, tu la laisses sous la couette. Elle fait replonger, elle fait jamais remonter."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "TROUVE LE MOMENT",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : trouve à quelle heure ça a lâché, et ce que tu faisais juste avant. C'est là que tu changes une règle.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE MATIN",
+    "lignes": [
+     "L'heure du craquage",
+     "Ce que tu faisais",
+     "Une règle à changer"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "ton plan pour tenir, offert"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "AUJOURD'HUI COMPTE",
+   "humeur": "content",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Trois : aujourd'hui compte. Tes quatre jours tenus restent à toi, et ce soir tu refais une croix. Alors, tenu ou craqué aujourd'hui ? Je lis tout."
+  }
+ ]
+}

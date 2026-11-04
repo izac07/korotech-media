@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X222",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10172,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu combien de jours ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "JOUR 5",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour cinq du NNN. Ce matin, t'as remarqué ? T'as moins la flemme de te lever.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Abonne-toi, y'a une vidéo chaque jour jusqu'au trente. Reste jusqu'au dernier point, c'est lui qui change tout. Et avant, écris ton numéro de jour en commentaire."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "POURQUOI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Déjà, c'est parce que tu t'es couché à l'heure. Pas de tel au lit, pas de nuit à rallonge."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "CE QUE ÇA CHANGE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Ensuite, ton matin t'appartient. Dix minutes de plus, sans scroller, c'est énorme sur un mois.",
+   "ecran": {
+    "type": "liste",
+    "titre": "DEPUIS 5 JOURS",
+    "lignes": [
+     "Coucher à l'heure",
+     "Réveil plus facile",
+     "Matin à toi"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "GARDE-LE",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le dernier point : garde ce rythme. C'est lui qui te fera passer la semaine. Alors, t'as tenu combien de jours, toi ?"
+  }
+ ]
+}

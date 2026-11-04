@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X224",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10174,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à combien ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "1H DU MAT",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Il est une heure du mat. T'es debout dans la cuisine, le tel à la main. Tu sais ce qui va se passer.",
+   "sous_bandeau": "le défi du mois : 30 jours"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Je poste tous les jours du mois, abonne-toi pour pas rater la suite. Garde la vidéo pour ce soir, et écris en commentaire combien de jours t'as tenu."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "POSE-LE",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "D'abord, tu poses le tel sur la table. Pas dans ta poche, sur la table."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "UN VERRE D'EAU",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Après, un verre d'eau, lumière allumée. Le noir et le tel, c'est le combo qui te fait tomber.",
+   "ecran": {
+    "type": "liste",
+    "titre": "DANS LA CUISINE",
+    "lignes": [
+     "Tel sur la table",
+     "Un verre d'eau",
+     "Lumière allumée"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le PDF des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "AU LIT SANS LUI",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Pour finir, tu retournes au lit sans lui. Il dort dans la cuisine, et toi tu dors. Toi, t'en es à combien ? Dis-le-moi."
+  }
+ ]
+}

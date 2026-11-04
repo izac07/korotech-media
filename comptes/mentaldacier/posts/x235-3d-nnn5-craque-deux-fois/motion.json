@@ -1,0 +1,88 @@
+{
+ "id": "MDA-X235",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10185,
+ "handle": "mentaldacier2030",
+ "question": "Tenu ou craqué aujourd'hui ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "DEUX FOIS",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "T'as craqué deux fois en cinq jours et tu te dis que t'es foutu ? Non. Écoute.",
+   "sous_bandeau": "30 jours sans la BR, jour 5"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Si tu veux la vidéo de demain, abonne-toi. Le troisième point, c'est le plus important, reste jusque-là. Mais d'abord, dis-moi en commentaire où t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "TROIS SUR CINQ",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Déjà, deux craquages, c'est trois jours tenus sur cinq. Il y a une semaine, c'était zéro sur cinq."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LE POINT COMMUN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Ensuite, regarde tes deux craquages : même heure, même endroit, même humeur ? C'est ton déclencheur. Et un déclencheur, ça se contourne.",
+   "ecran": {
+    "type": "liste",
+    "titre": "TES 2 CRAQUAGES",
+    "lignes": [
+     "Même heure ?",
+     "Même endroit ?",
+     "Même humeur ?"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "ton plan pour tenir, offert"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "UNE RÈGLE",
+   "humeur": "content",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le dernier point : tu changes une seule règle ce soir. Pas dix, une. Celle qui vise ce déclencheur. Alors, tenu ou craqué aujourd'hui ? Je lis tout."
+  }
+ ]
+}
