@@ -109,7 +109,7 @@ const rim=new THREE.DirectionalLight(0x7f95ff,1.7);rim.position.set(4,3,-3);scen
 const lamp=new THREE.PointLight(0xffa860,3.2,7,2);lamp.position.set(...DEC.lampe);scene.add(lamp);
 const GRAD=new THREE.DataTexture(new Uint8Array([110,185,255]),3,1,THREE.RedFormat);GRAD.minFilter=GRAD.magFilter=THREE.NearestFilter;GRAD.needsUpdate=true;
 // style visuel du reel (couleurs.style) : jouet (défaut), bd, facettes, argile, neon, noirblanc, miniature
-const STYLE=COL.style||'jouet';const NEONC=new THREE.Color(COL.neon||'#3df2ff');
+const STYLE=COL.style||'jouet';const NEONC=new THREE.Color(COL.neon||'#3df2ff');const SOBRE=COL.overlay=='sobre';
 function matStyle(c_){const col=LIN(c_);
   if(STYLE=='bd')return new THREE.MeshToonMaterial({color:col,gradientMap:GRAD});
   if(STYLE=='facettes')return new THREE.MeshStandardMaterial({color:col,roughness:.78,metalness:0,flatShading:true});
@@ -148,7 +148,7 @@ let hhP=null,mhP=null;if(DEC.horloge){const clock=new THREE.Group();clock.positi
 // ---- écran du décor (moniteur, tableau au mur, télé ou téléphone posé) : c'est là que s'affiche l'interface de la scène
 const E=DEC.ecran;const scr=E.type=='mobile'?canvasTex(640,1136):canvasTex(1024,640);
 if(E.type=='moniteur'){mk(B(.14,.45,.14),toon(0x2a2e44),E.x,1.3,E.z+.05);mk(B(.6,.05,.4),toon(0x2a2e44),E.x,1.1,E.z+.05);mk(B(E.w+.15,E.h+.11,.1),toon(0x1a1d2e),E.x,E.y,E.z,null,1.02);}
-if(E.type=='tableau')mk(B(E.w+.2,E.h+.2,.06),toon('#6b4a32'),E.x,E.y,E.z,null,1.02);
+if(E.type=='tableau')mk(B(E.w+.2,E.h+.2,.06),toon(SOBRE?'#2a2a2e':'#6b4a32'),E.x,E.y,E.z,null,1.02);
 if(E.type=='tele')mk(B(E.w+.12,E.h+.12,.08),toon(0x14151c),E.x,E.y,E.z,null,1.02);
 if(E.type=='mobile')mk(B(E.w+.07,E.h+.1,.06),toon(0x111320),E.x,E.y,E.z,null,1.03);
 mk(new THREE.PlaneGeometry(E.w,E.h),new THREE.MeshBasicMaterial({map:scr}),E.x,E.y,E.z+(E.type=='moniteur'?.055:.045));
@@ -245,6 +245,7 @@ let NBP=null;if(STYLE=='noirblanc'){NBP=new ShaderPass({uniforms:{tDiffuse:{valu
 if(STYLE=='miniature'){composer.addPass(new ShaderPass({uniforms:{tDiffuse:{value:null},px:{value:new THREE.Vector2(1/1080,1/1920)}},vertexShader:VS,
   fragmentShader:'uniform sampler2D tDiffuse;uniform vec2 px;varying vec2 vUv;void main(){float a=smoothstep(.1,.4,abs(vUv.y-.5))*5.;vec3 s=vec3(0.);for(int i=-4;i<=4;i++)for(int j=-4;j<=4;j++)s+=texture2D(tDiffuse,vUv+vec2(float(i),float(j))*px*a).rgb;vec3 c=s/81.;c=mix(vec3(dot(c,vec3(.333))),c,1.3);gl_FragColor=vec4(c,1.);}'}));}
 if(STYLE=='neon'){bloom.strength=1.15;bloom.threshold=.18;bloom.radius=.6;}
+if(SOBRE){bloom.strength=.14;R.toneMappingExposure=.92;}  // habillage adulte : moins de halo, image un peu plus dense
 // mode allégé sans carte graphique (rendu logiciel SwiftShader, routines cloud) : pas de flou, ombres plus simples
 const gl_=R.getContext(),dbg=gl_.getExtension('WEBGL_debug_renderer_info');
 const LEGER=/swiftshader|llvmpipe|software/i.test(dbg?gl_.getParameter(dbg.UNMASKED_RENDERER_WEBGL):'');
@@ -290,7 +291,8 @@ function plan0(k){const pc=planCam(k);if(pc)return pc;if(HUM&&SC[k].plan=='toi')
 // ---- dessin de l'écran selon la scène
 function rr(x,X,Y,W,H,r,f){x.beginPath();x.roundRect(X,Y,W,H,r);x.fillStyle=f;x.fill();}
 function screenDraw(k,p,t){let kk=k;while(kk>0&&!SC[kk].ecran)kk--;if(kk!=k)p=1;const s=SC[kk].ecran||{type:'vide'};const x=scr.userData.x,SW=scr.userData.cv.width,SH=scr.userData.cv.height;
-  const tab=E.type=='tableau';x.fillStyle=tab?'#22322a':'#0f1222';x.fillRect(0,0,SW,SH);
+  const tab=E.type=='tableau';const TABF=SOBRE?'#1c1c20':'#22322a',TABL=SOBRE?'#2a2a30':'#2d4236',OK=SOBRE?COL.acc:'#2fd36b',OKT=SOBRE?'#f4ecdc':'#0f1222';  // ardoise sobre ou tableau vert
+  x.fillStyle=tab?TABF:'#0f1222';x.fillRect(0,0,SW,SH);
   if(!tab){x.fillStyle='#1a1e36';x.fillRect(0,0,SW,56);['#ff5f57','#febc2e','#28c840'].forEach((cl,i)=>{x.beginPath();x.arc(34+i*30,28,10,0,7);x.fillStyle=cl;x.fill();});
     x.fillStyle='#9aa3c7';x.font='600 26px Inter';x.fillText(s.titre||'Claude',140,37);}
   else{x.fillStyle='#f4ecdc';x.font='700 40px Inter';x.textAlign='center';x.fillText(s.titre||'',SW/2,58);x.textAlign='left';}
@@ -307,12 +309,12 @@ function screenDraw(k,p,t){let kk=k;while(kk>0&&!SC[kk].ecran)kk--;if(kk!=k)p=1;
       const nb=Math.floor(c(p*1.3-i*.12)*7);for(let j=0;j<nb;j++)rr(x,110+j*126,y+8,112,46,8,cl);});
     const ph_=110+c(p)*880;x.fillStyle='#fff';x.fillRect(ph_,330,4,280);
     x.font='700 28px Inter';x.fillStyle='#2fd36b';const tags=['✓ coupes','✓ sous-titres','✓ musique sous la voix'];tags.forEach((g,i)=>{if(p>.25+i*.22)x.fillText(g,700,110+i*52);});}
-  if(T=='verif'||T=='liste'){const L=s.lignes||[];const pas=Math.min(104,(SH-130)/Math.max(1,L.length));L.forEach((l,i)=>{const y=100+i*pas;const q=p>(i+.5)/(L.length+.5);rr(x,40,y,SW-80,pas-22,16,tab?'#2d4236':'#1a1e36');
-      x.font='600 34px Inter';x.fillStyle=tab?'#f4ecdc':'#e6e9ff';x.fillText(l,120,y+(pas-22)/2+12);x.beginPath();x.arc(78,y+(pas-22)/2,20,0,7);x.fillStyle=q?'#2fd36b':(tab?'#4a6255':'#3a4066');x.fill();
-      if(q){x.strokeStyle='#0f1222';x.lineWidth=6;x.beginPath();x.moveTo(68,y+(pas-22)/2);x.lineTo(76,y+(pas-22)/2+9);x.lineTo(90,y+(pas-22)/2-9);x.stroke();}});}
+  if(T=='verif'||T=='liste'){const L=s.lignes||[];const pas=Math.min(104,(SH-130)/Math.max(1,L.length));L.forEach((l,i)=>{const y=100+i*pas;const q=p>(i+.5)/(L.length+.5);rr(x,40,y,SW-80,pas-22,16,tab?TABL:'#1a1e36');
+      x.font='600 34px Inter';x.fillStyle=tab?'#f4ecdc':'#e6e9ff';x.fillText(l,120,y+(pas-22)/2+12);x.beginPath();x.arc(78,y+(pas-22)/2,20,0,7);x.fillStyle=q?OK:(tab?(SOBRE?'#3a3a42':'#4a6255'):'#3a4066');x.fill();
+      if(q){x.strokeStyle=SOBRE?'#1c1c20':'#0f1222';x.lineWidth=6;x.beginPath();x.moveTo(68,y+(pas-22)/2);x.lineTo(76,y+(pas-22)/2+9);x.lineTo(90,y+(pas-22)/2-9);x.stroke();}});}
   if(T=='calendrier'){const N=s.jours||30,col=6,rows=Math.ceil(N/col),fait=Math.floor(c(p*1.2)*(s.jusqua??N));const top=90,cw=(SW-80)/col,ch=(SH-top-30)/rows;
-    for(let i=0;i<N;i++){const X=40+(i%col)*cw,Y=top+Math.floor(i/col)*ch;const ok=i<fait;rr(x,X+5,Y+5,cw-10,ch-10,12,ok?'#2fd36b':(i==fait?COL.acc:(tab?'#2d4236':'#232842')));
-      x.fillStyle=ok?'#0f1222':'#f4ecdc';x.font='700 30px Inter';x.textAlign='center';x.fillText(ok?'✓':String(i+1),X+cw/2,Y+ch/2+10);x.textAlign='left';}}
+    for(let i=0;i<N;i++){const X=40+(i%col)*cw,Y=top+Math.floor(i/col)*ch;const ok=i<fait;rr(x,X+5,Y+5,cw-10,ch-10,12,ok?OK:(i==fait?(SOBRE?'#55555f':COL.acc):(tab?TABL:'#232842')));
+      x.fillStyle=ok?OKT:'#f4ecdc';x.font='700 30px Inter';x.textAlign='center';x.fillText(ok?'✓':String(i+1),X+cw/2,Y+ch/2+10);x.textAlign='left';}}
   if(T=='timer'){const tot=s.secondes||30,rest=Math.max(0,Math.ceil(tot*(1-c(p*1.05))));const cx=SW/2,cy=SH*.56,r=Math.min(SW,SH)*.3;
     x.lineWidth=26;x.strokeStyle='#2a2f4a';x.beginPath();x.arc(cx,cy,r,0,7);x.stroke();x.strokeStyle=COL.acc;x.beginPath();x.arc(cx,cy,r,-Math.PI/2,-Math.PI/2+2*Math.PI*(rest/tot));x.stroke();
     x.fillStyle='#fff';x.font='800 110px Inter';x.textAlign='center';x.fillText(rest+' s',cx,cy+38);x.font='800 46px Inter';x.fillText(s.exo||'',cx,122);
@@ -414,10 +416,11 @@ def page(spec, theme, starts, durs, caps, total):
     tampons = "".join(f"<div class='tampon' id='tp{k}'>✓ {K.esc(s['tampon'])}</div>" for k, s in enumerate(sc) if s.get("tampon"))
     pal = [col["acc"], col["jaune"], col["vert"], "#4f7cff", "#ff5fa2"]
     conf = "".join(f"<div class='cf' data-x='{(i * 137) % 1040}' style='background:{pal[i % 5]}'></div>" for i in range(70)) if any(s.get("tampon") for s in sc) else ""
+    sobre = col.get("overlay") == "sobre"  # habillage « adulte » (MDA, 05/11/2026) : typo fine, pas de boîtes, grain
     n = [0]
     def stk(w, t):
         n[0] += 1
-        return f"<span class='stk {'o' if n[0] % 2 else 'y'}' data-w='{t:.3f}' data-r='{((n[0] * 37) % 7) - 3}'>{H.escape(w)}</span>"
+        return f"<span class='stk {'o' if n[0] % 2 else 'y'}' data-w='{t:.3f}' data-r='{0 if sobre else ((n[0] * 37) % 7) - 3}'>{H.escape(w)}</span>"
     cap_html = "".join(f"<div class='cap' data-a='{cc[0][1]:.3f}' data-b='{cn:.3f}'>" + "".join(stk(w, t) for w, t in cc) + "</div>" for cc, cn in caps)
     ev = []
     for k, s in enumerate(sc):
@@ -438,7 +441,26 @@ def page(spec, theme, starts, durs, caps, total):
     # question affichée pendant tout le reel (sauf sur la carte du mot-clé) : on peut y répondre sans effort
     qfix = f"<div class='qfix' id='qfix'><span>{K.esc(spec['question'])}</span></div>" if spec.get("question") else ""
     colj["bois_hex"] = col["bois"]
-    R = {"__FONTS__": K._font_faces(["Anton", "Archivo Black", "Inter"]), "__NUIT__": col["nuit"], "__PAPIER__": col["papier"], "__ENCRE__": col["encre"],
+    fonts = K._font_faces(["Anton", "Archivo Black", "Inter"])
+    if sobre:
+        # Même moteur, autre habillage : Inter au lieu d'Anton, bandeaux discrets, sous-titres blancs avec le mot fort
+        # souligné par l'accent, question sans emoji, tableau ardoise, vignettage et grain léger.
+        acc = col["acc"]
+        css_sobre = ("\n.band span{font:700 50px/1.15 Inter;text-transform:none;letter-spacing:.2px;background:rgba(8,8,10,.62);color:#f3f1ec;padding:18px 38px 16px;"
+                  "border-radius:10px;box-shadow:none;clip-path:none;border-left:7px solid " + acc + "}"
+                  "\n.band em{font:500 27px/1.2 Inter;text-transform:none;letter-spacing:0;color:rgba(243,241,236,.72);background:none;padding:0;margin-top:10px}"
+                  "\n.qfix span{font:600 38px/1.2 Inter;text-transform:none;color:#f3f1ec;background:rgba(8,8,10,.5);padding:12px 26px;border-radius:9px;box-shadow:none;transform:none}"
+                  "\n.stk{font:600 62px/1.15 Inter;background:none;box-shadow:none;padding:4px 10px;border-radius:0;color:#f3f1ec;text-shadow:0 2px 10px rgba(0,0,0,.7)}"
+                  "\n.stk.o{background:none;color:" + acc + ";border-bottom:5px solid " + acc + "}.stk.y{background:none;color:#f3f1ec}"
+                  "\n.fin b{font:700 72px/1.1 Inter;background:rgba(8,8,10,.72);color:#f3f1ec;border-radius:12px;box-shadow:none;transform:none;padding:18px 40px}"
+                  "\n.fin span{font:500 40px/1.2 Inter;background:none;color:" + acc + ";box-shadow:none;transform:none;padding:4px 10px}"
+                  "\n.hdl{font:600 30px Inter;opacity:.45}"
+                  "\n.vign{position:absolute;inset:0;z-index:4;pointer-events:none;box-shadow:inset 0 0 320px rgba(0,0,0,.72)}"
+                  "\n.grain{position:absolute;inset:0;z-index:4;pointer-events:none;opacity:.11;mix-blend-mode:overlay;"
+                  "background-image:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>\")}")
+        # Injecté dans le body, donc APRÈS la feuille de style du modèle : ces règles gagnent sur les règles de base.
+        qfix = "<style>" + css_sobre + "</style><div class='vign'></div><div class='grain'></div>" + qfix
+    R = {"__FONTS__": fonts, "__NUIT__": col["nuit"], "__PAPIER__": col["papier"], "__ENCRE__": col["encre"],
          "__ACC__": col["acc"], "__JAUNE__": col["jaune"], "__VERT__": col["vert"], "__BANDFOND__": col.get("bandeau_fond", col["papier"]), "__BANDTEXTE__": col.get("bandeau_texte", col["encre"]), "__BADGEFOND__": col.get("badge_fond", "#ffffff"), "__BADGETEXTE__": col.get("badge_texte", col["encre"]), "__TEXTEO__": col.get("texte_o", "#ffffff"), "__HANDLE__": H.escape(spec.get("handle", "")),
          "__QFIX__": qfix, "__BANDS__": bands, "__BADGES__": badges, "__CAPS__": cap_html, "__TAMPONS__": tampons, "__FINS__": fins, "__CONFETTIS__": conf,
          "__IMPORTMAP__": import_map(), "__MODELES__": modeles(), "__D__": str(total), "__SC__": json.dumps(S, ensure_ascii=False), "__EV__": json.dumps(ev), "__COL__": json.dumps(colj)}
