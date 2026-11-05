@@ -2027,6 +2027,26 @@ def prepare(spec_path, tmp, estime=False):
     hp = os.path.join(tmp, "m.html"); open(hp, "w", encoding="utf-8").write(page)
     return spec, page, hp, starts, durs, total, ([] if estime else voice)
 
+def verifier_debut_clair(fr, fps=30, secondes=3.0, lum_min=45, noir_max=0.45):
+    """Règle Goat (05/11) : jamais de début sombre, les gens scrollent. Bloque le rendu si, sur les 3 premières
+    secondes, une image est trop sombre en moyenne (lum_min, sur 255) ou à plus de 45 % quasi noire.
+    Seuils calés le 05/11 sur les 30 derniers reels : les débuts à lum 11-12 / 94 % noir ont fait < 350 vues."""
+    from PIL import Image
+    pires = []
+    for i in range(1, int(fps * secondes) + 1, 6):  # 5 images par seconde suffisent
+        f = os.path.join(fr, f"f_{i:04d}.jpg")
+        if not os.path.exists(f):
+            break
+        im = Image.open(f).convert("L").resize((108, 192))
+        px = list(im.getdata())
+        moy, noir = sum(px) / len(px), sum(1 for v in px if v < 28) / len(px)
+        if moy < lum_min or noir > noir_max:
+            pires.append(f"{(i - 1) / fps:.1f}s lum {moy:.0f} noir {noir:.0%}")
+    if pires:
+        raise SystemExit("DÉBUT TROP SOMBRE (les gens scrollent) : " + ", ".join(pires[:4])
+                         + ". Change le plan ou la lumière de la scène 1, puis relance.")
+    print("début clair : OK")
+
 def build(spec_path, out):
     tmp = tempfile.mkdtemp()
     spec, page, hp, starts, durs, total, voice = prepare(spec_path, tmp)
@@ -2037,6 +2057,7 @@ def build(spec_path, out):
         print("audit non réalisé :", e)
     fr = os.path.join(tmp, "fr"); os.makedirs(fr)
     asyncio.run(K._frames(hp, fr, total))
+    verifier_debut_clair(fr)
     silent = os.path.join(tmp, "v.mp4")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-framerate", "30", "-i", f"{fr}/f_%04d.jpg", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "19", silent], check=True)
     music = os.path.join(tmp, "mu.wav"); K.make_music(music, total + 1, int(spec.get("music_seed", 5)))

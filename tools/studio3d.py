@@ -357,7 +357,9 @@ const RENDER=function(t){
   const parleC=s.qui=='claude'&&tl>.25&&t<s.b-.6, parleM=s.qui=='moi'&&tl>.25&&t<s.b-.6;
   if(parleC)mouth.scale.y*=1+2.2*Math.abs(Math.sin(t*14));
   if(HUM){poseHum(DUO?(parleM?'parle':'normal'):hu,t);if(parleM)F.head.position.y+=Math.abs(Math.sin(t*9))*.018;}
-  if(ciel2){let aube=0;SC.forEach((z,i)=>{if(i<=k&&z.lumiere=='aube')aube=i==k?c(tl/1.5):1;});ciel2.material.opacity=aube;
+  // Début jamais sombre (règle Goat 05/11) : scène 1 éclairée tout de suite, sans fondu depuis la nuit.
+  if(SOBRE)R.toneMappingExposure=k==0?1.15:.92;
+  if(ciel2){let aube=0;SC.forEach((z,i)=>{if(i<=k&&z.lumiere=='aube')aube=i==k?(k==0?1:c(tl/1.5)):1;});ciel2.material.opacity=aube;
     key.color.setRGB(.55+.45*aube,.62+.2*aube,.85-.3*aube);key.intensity=.9+1.9*aube;lamp.intensity=3.2*(1-aube)+.4;}
   // téléphone : visible quand la scène le demande
   const showP=(s.plan=='telephone'||(s.tampon&&!HUM))&&DEC.tel;P.visible=!!showP;if(showP){P.scale.setScalar(back(tl/.5));phoneDraw(p,t);}
@@ -438,6 +440,12 @@ def page(spec, theme, starts, durs, caps, total):
     colj = dict(col, decor=spec.get("decor", "bureau"))
     S = [dict(z, lumiere=sc[i].get("lumiere"), qui=sc[i].get("qui"), bocal=sc[i].get("bocal"), camera=sc[i].get("camera"), carte=bool(sc[i].get("carte")),
               intro=spec.get("intro") if i == 0 else None) for i, z in enumerate(S)]
+    # Règle Goat (05/11) : les 3 premières secondes ne sont JAMAIS sombres, sinon les gens scrollent.
+    # Scène 1 toujours éclairée (aube) et jamais « par-dessus l'épaule » (le tableau noir remplit l'écran).
+    if S:
+        S[0]["lumiere"] = "aube"
+        if S[0].get("camera") == "epaule":
+            S[0]["camera"] = "orbite"
     # question affichée pendant tout le reel (sauf sur la carte du mot-clé) : on peut y répondre sans effort
     qfix = f"<div class='qfix' id='qfix'><span>{K.esc(spec['question'])}</span></div>" if spec.get("question") else ""
     colj["bois_hex"] = col["bois"]
