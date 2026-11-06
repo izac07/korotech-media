@@ -1,0 +1,107 @@
+{
+ "id": "MDA-X274",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10224,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu ta semaine ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5e5850",
+  "sol": "#2f2c28",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fb8de",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fb8de",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2f2c28"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "bandeau": "IL Y A UNE SEMAINE",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Ton samedi d'il y a une semaine : au lit jusqu'à midi.",
+   "sous_bandeau": "30 jours sans la BR, jour 7"
+  },
+  {
+   "type": "large",
+   "bandeau": "ET LÀ",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "Et là, t'as sept soirs derrière toi. Trois choses que t'as récupérées, en vrai."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Abonne-toi, y'a une vidéo chaque jour jusqu'au trente. Et reste jusqu'au troisième point, c'est le plus fort."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · TES SOIRÉES",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "vo": "Un : des soirées entières. Celles que tu perdais à scroller, tu les as passées à autre chose."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · TES MATINS",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : tes matins. Sept fois, tu t'es levé sans la honte de la veille.",
+   "ecran": {
+    "type": "liste",
+    "titre": "EN 7 SOIRS",
+    "lignes": [
+     "Des soirées entières",
+     "Des matins debout",
+     "Une parole tenue 7 fois"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "camera": "porte",
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "carte": [
+    "Commente NNN",
+    "ton plan pour tenir, offert"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · TA PAROLE",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Trois, le plus important : ta parole. Sept fois, t'as dit non et t'as tenu. Donne un nom à ce temps-là, sinon le vide le reprend."
+  },
+  {
+   "type": "large",
+   "bandeau": "DEMAIN",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "orbite",
+   "vo": "Demain, jour huit : ta deuxième semaine commence. Abonne-toi pour pas la rater."
+  }
+ ]
+}
