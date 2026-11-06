@@ -1,0 +1,100 @@
+{
+ "id": "MDA-X285",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10235,
+ "handle": "mentaldacier2030",
+ "question": "Le soir le plus dur cette semaine ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#4b3a47",
+  "sol": "#291f27",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e3a13b",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e3a13b",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#291f27"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "bandeau": "18H",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "Dix-huit heures, samedi, t'as pas décidé ta soirée.",
+   "sous_bandeau": "jour 7 sur 30, samedi"
+  },
+  {
+   "type": "large",
+   "bandeau": "ELLE DÉCIDE",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Elle va décider pour toi. Trois questions, deux minutes."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "On tient le mois ensemble, une vidéo par jour, abonne-toi. Le dernier point, garde-le pour ce soir."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · AVEC QUI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Un : avec qui. Un pote, ta copine, personne. Mais tu le décides, là, pas à vingt-trois heures."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · OÙ",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : où. Dehors, chez quelqu'un, chez toi. Si c'est chez toi, le tel a déjà sa place.",
+   "ecran": {
+    "type": "liste",
+    "titre": "AVANT 19H",
+    "lignes": [
+     "Avec qui",
+     "Où",
+     "À quelle heure tu dors"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "carte": [
+    "Commente NNN",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · À QUELLE HEURE",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : à quelle heure tu dors. Tu l'écris. Une soirée écrite se tient, une soirée dans la tête s'évapore."
+  },
+  {
+   "type": "large",
+   "bandeau": "DEMAIN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Demain, dimanche, le réveil le plus dangereux de la semaine. Suis le compte, la vidéo sort tôt."
+  }
+ ]
+}
