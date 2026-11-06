@@ -1,0 +1,85 @@
+{
+ "id": "MDA-X252",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10202,
+ "handle": "mentaldacier2030",
+ "question": "Tenu ou craqué cette semaine ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3b4352",
+  "sol": "#262a33",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e07b5a",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e07b5a",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#262a33"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "LE NNN EN VRAI",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Non, le NNN c'est pas un défi TikTok. C'est un mois où tu reprends la main."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Je poste tous les jours du mois, abonne-toi. Garde la vidéo pour ce soir, et écris en commentaire combien de jours t'as tenu."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LE PRINCIPE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le principe : No Nut November, trente jours sans la BR, du premier au trente novembre.",
+   "ecran": {
+    "type": "liste",
+    "titre": "LE NNN",
+    "lignes": [
+     "No Nut November",
+     "30 jours sans la BR",
+     "Du 1er au 30"
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "bandeau": "POURQUOI ÇA PREND",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Pourquoi autant de gars s'y mettent ? Parce que c'est le seul défi où tu te bats contre toi-même, pas contre les autres."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "carte": [
+    "Commente NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "CE QUE T'Y GAGNES",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Et ce que t'y gagnes, c'est simple : la preuve que c'est toi qui décides. Pas ton tel, pas ton envie. Demain, c'est le jour sept. Abonne-toi, on le passe ensemble."
+  }
+ ]
+}
