@@ -1,0 +1,91 @@
+{
+ "id": "MDA-X262",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10212,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à combien ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5e5850",
+  "sol": "#2f2c28",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#ece8e0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#ece8e0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2f2c28"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "QUAND ÇA MONTE",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Quand ça monte vendredi soir, t'as pas besoin de volonté. T'as besoin d'un plan.",
+   "sous_bandeau": "30 jours sans la BR, jour 6"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Abonne-toi, y'a une vidéo chaque jour jusqu'au trente. Reste jusqu'au dernier point, et écris ton numéro de jour en commentaire."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "SORS DE LA PIÈCE",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Première minute : tu sors de la pièce où t'es. Salon, cuisine, balcon, n'importe où."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "OCCUPE TON CORPS",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Ensuite, tu bouges : pompes, squats, une douche. Ton corps prend le relais.",
+   "ecran": {
+    "type": "liste",
+    "titre": "LE PLAN",
+    "lignes": [
+     "Sors de la pièce",
+     "Bouge",
+     "Pas maintenant"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "camera": "porte",
+   "carte": [
+    "Commente NNN",
+    "ton plan pour tenir, offert"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "PAS MAINTENANT",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "profil",
+   "vo": "Et tu te dis pas jamais, tu te dis pas maintenant. Dans un quart d'heure, la vague est passée. Demain, jour sept : ta première semaine. Abonne-toi pour pas la rater."
+  }
+ ]
+}
