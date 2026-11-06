@@ -1,0 +1,99 @@
+{
+ "id": "MDA-X276",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10226,
+ "handle": "mentaldacier2030",
+ "question": "Première semaine : tenue ou pas ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3b4352",
+  "sol": "#262a33",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e07b5a",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e07b5a",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#262a33"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "15H, RIEN DE PRÉVU",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "vo": "Samedi, quinze heures, rien de prévu, ça tourne dans ta tête."
+  },
+  {
+   "type": "toi",
+   "bandeau": "LE VIDE",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "C'est pas l'envie qui t'attaque, c'est le vide. Trois trucs pour le remplir."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Enregistre cette vidéo pour ce soir, et abonne-toi : une par jour jusqu'au trente."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · SORS",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Un : tu sors de chez toi. Marcher, courir, n'importe quoi, mais dehors. Le vide reste à l'intérieur."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · LES MAINS",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : un truc avec les mains. Cuisine, bricole, range. Les mains occupées, la tête suit.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CET APRÈS-MIDI",
+    "lignes": [
+     "Sors de chez toi",
+     "Un truc avec les mains",
+     "Un pote, un appel"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "carte": [
+    "Commente NNN",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · DEUX TRUCS PRÉVUS",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : chaque samedi, deux trucs prévus avant midi. Pas dix. Deux. Et le samedi te prend plus."
+  },
+  {
+   "type": "large",
+   "bandeau": "DEMAIN",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Demain, c'est le jour huit. Abonne-toi, on le passe ensemble."
+  }
+ ]
+}
