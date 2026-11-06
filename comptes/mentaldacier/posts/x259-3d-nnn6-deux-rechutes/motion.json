@@ -1,0 +1,86 @@
+{
+ "id": "MDA-X259",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10209,
+ "handle": "mentaldacier2030",
+ "question": "Ton numéro de jour",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5a4836",
+  "sol": "#2e261e",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e07b5a",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e07b5a",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2e261e"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "bandeau": "DEUX RECHUTES",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "Deux rechutes cette semaine. Et pourtant t'es encore là. C'est ça qui compte.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Si tu veux celle de demain, abonne-toi. Le dernier point, c'est le plus important. Et dis-moi en commentaire où t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "T'ES ENCORE LÀ",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "La plupart arrêtent à la première. Toi, t'en es à deux et tu cherches encore comment tenir. C'est ça, le mental."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LE POINT COMMUN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Regarde tes deux rechutes : même heure, même endroit, même humeur ? Le point commun, c'est ta cible.",
+   "ecran": {
+    "type": "liste",
+    "titre": "TES DEUX RECHUTES",
+    "lignes": [
+     "Même heure ?",
+     "Même endroit ?",
+     "Même humeur ?"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "carte": [
+    "Commente NNN",
+    "ton plan pour tenir, offert"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "CE SOIR",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Ce soir, tu bloques ce moment-là précisément. Une sortie, un appel, le tel dehors. Juste ce moment. Demain, je te montre le piège du samedi. Abonne-toi, il tombe à neuf heures."
+  }
+ ]
+}
