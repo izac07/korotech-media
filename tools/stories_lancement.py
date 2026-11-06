@@ -29,8 +29,8 @@ def bloc(tag, titre, texte="", apres="", taille=104):
 
 
 VIS = {
- "lancement-1-annonce": bloc("VOUS ME L'AVEZ DEMANDÉE", "Elle<br><em>arrive.</em>",
-     "Il y a quelques jours, beaucoup d'entre vous m'ont écrit « APP » en DM.<br><br>Je l'ai construite. Elle s'appelle <b>Tenir</b>.",
+ "lancement-1-annonce": bloc("ANNONCE", "Elle<br><em>arrive.</em>",
+     "Depuis le début du NNN, je vous file un plan par jour en vidéo.<br><br>Alors j'ai construit l'app qui va avec. Elle s'appelle <b>Tenir</b>.",
      "<div class='main' style='margin-top:70px'>ça se passe dans les stories suivantes 👉</div>", taille=150),
  "lancement-2-mission": bloc("TENIR · 1/3", "Ta mission<br><em>du jour.</em>",
      "Chaque matin, un truc concret à faire. 5 à 15 minutes. Rien à réfléchir.", capture("1_aujourdhui.png", 560), taille=96),
@@ -39,8 +39,10 @@ VIS = {
  "lancement-4-chauffe": bloc("TENIR · 3/3", "Quand ça<br><em>chauffe.</em>",
      "Un bouton rouge. 6 étapes, un timer, zéro réflexion. Pour les soirs où la volonté suffit plus.", capture("3_ca_chauffe.png", 560), taille=96),
  "lancement-5-ouverture": bloc("OUVERTURE", "Le 16<br><em>novembre.</em>",
-     "<b>Membre fondateur : 9,99 €/mois, bloqué à vie.</b><br>Seulement pour les premiers. Places limitées.<br><br>Tout est privé : pas de pseudo, rien de public, personne sait que tu l'utilises.",
-     "<div class='zone' style='height:300px;margin-top:50px'></div>", taille=150),
+     "<b>Membre fondateur : 9,99 €/mois, bloqué à vie.</b><br><br>Tout est privé : pas de pseudo, rien de public, personne sait que tu l'utilises.",
+     f"<div style='margin-top:44px;display:flex;align-items:center;gap:30px'><div style='font:400 190px/1 Anton;color:{OR}'>50</div>"
+     "<div style='font:400 64px/1.05 Anton;text-transform:uppercase'>places<br>seulement</div></div>"
+     "<div class='zone' style='height:280px;margin-top:40px'></div>", taille=150),
  "lancement-6-liste": page(f"""<div class='pad'>
  <div class='tag'>LISTE D'ATTENTE</div>
  <div class='t' style='margin-top:44px;font-size:110px'>Sois prévenu<br><em>en premier.</em></div>
