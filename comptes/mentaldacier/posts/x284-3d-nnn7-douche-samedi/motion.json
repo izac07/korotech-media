@@ -1,0 +1,99 @@
+{
+ "id": "MDA-X284",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10234,
+ "handle": "mentaldacier2030",
+ "question": "Première semaine : tenue ou pas ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3f4b40",
+  "sol": "#232a24",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e0b45e",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e0b45e",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#232a24"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "SOUS LA DOUCHE",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Sous la douche, seul à la maison, l'idée arrive."
+  },
+  {
+   "type": "toi",
+   "bandeau": "LES 3 ENDROITS",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "C'est un des trois endroits où tu baisses la garde. Voilà quoi faire."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Enregistre cette vidéo pour ce soir, et abonne-toi : une par jour jusqu'au trente."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · LA DOUCHE",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Un : la douche, c'est cinq minutes, pas vingt. Froid à la fin, et tu t'habilles direct en sortant."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · LE CANAPÉ",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : le canapé. Seul, l'après-midi, le tel à la main. Tu t'y poses avec un truc à faire, ou tu t'y poses pas.",
+   "ecran": {
+    "type": "liste",
+    "titre": "LES 3 ENDROITS",
+    "lignes": [
+     "La douche",
+     "Le canapé",
+     "Le lit"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "carte": [
+    "Commente NNN",
+    "le PDF des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · LE LIT",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : le lit. Il sert à dormir. Quand l'idée arrive, tu changes de pièce. Pas de débat, tu bouges."
+  },
+  {
+   "type": "large",
+   "bandeau": "DEMAIN",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Demain, c'est le jour huit. Abonne-toi, on le passe ensemble."
+  }
+ ]
+}
