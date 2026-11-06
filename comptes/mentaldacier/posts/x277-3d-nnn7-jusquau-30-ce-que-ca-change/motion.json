@@ -1,0 +1,100 @@
+{
+ "id": "MDA-X277",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10227,
+ "handle": "mentaldacier2030",
+ "question": "Le soir le plus dur cette semaine ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5a4836",
+  "sol": "#2e261e",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e0b45e",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e0b45e",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2e261e"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "bandeau": "JUSQU'AU 30",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "T'es au jour sept. Ça change quoi, d'aller jusqu'au trente ?",
+   "sous_bandeau": "jour 7 sur 30, samedi"
+  },
+  {
+   "type": "large",
+   "bandeau": "PAS UNE MÉDAILLE",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Trois choses concrètes. Pas une médaille, pas un exploit."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "On tient le mois ensemble, une vidéo par jour, abonne-toi. Le dernier point, garde-le pour ce soir."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · TES SOIRÉES",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Un : tes soirées. Trente soirs où tu fais autre chose que scroller au lit."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · TA PAROLE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : ta parole envers toi-même. Trente fois non, trente fois tenu. Ça change le regard que t'as sur toi.",
+   "ecran": {
+    "type": "liste",
+    "titre": "EN 30 JOURS",
+    "lignes": [
+     "Tes soirées",
+     "Ta parole envers toi",
+     "Une tête moins encombrée"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "carte": [
+    "Commente NNN",
+    "ton plan pour tenir, offert"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · JOUR PAR JOUR",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : ça se gagne pas au jour trente. Ça se gagne ce soir, puis demain soir."
+  },
+  {
+   "type": "large",
+   "bandeau": "LE 16 NOVEMBRE",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Et le seize novembre, j'ouvre Tenir : l'app pour tenir les trente jours, jour par jour. Le lien est en bio."
+  }
+ ]
+}
