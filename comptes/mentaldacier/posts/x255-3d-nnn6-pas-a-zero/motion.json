@@ -1,0 +1,86 @@
+{
+ "id": "MDA-X255",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10205,
+ "handle": "mentaldacier2030",
+ "question": "Ton numéro de jour",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#4b3a47",
+  "sol": "#291f27",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#ece8e0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#ece8e0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#291f27"
+ },
+ "scenes": [
+  {
+   "type": "mascotte",
+   "bandeau": "PAS À ZÉRO",
+   "humeur": "triste",
+   "lumiere": "aube",
+   "vo": "Craqué au jour cinq ? Tes quatre jours tenus, personne te les reprend.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Si tu veux celle de demain, abonne-toi. Le dernier point, c'est le plus important. Et dis-moi en commentaire où t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "TES JOURS RESTENT",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Une rechute casse la série, pas tes jours tenus. Quatre sur cinq, ça reste à toi."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "CE QUE T'AS APPRIS",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Et maintenant, tu connais ton heure et ton lieu à risque. C'est une arme pour la suite.",
+   "ecran": {
+    "type": "liste",
+    "titre": "TU SAIS MAINTENANT",
+    "lignes": [
+     "Ton heure à risque",
+     "Ton lieu à risque",
+     "Ce qui t'aide"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "carte": [
+    "Commente NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "REPARS",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Alors tu repars ce soir, pas lundi. Une croix ce soir, et t'es déjà reparti. Demain, je te montre le piège du samedi. Abonne-toi, il tombe à neuf heures."
+  }
+ ]
+}
