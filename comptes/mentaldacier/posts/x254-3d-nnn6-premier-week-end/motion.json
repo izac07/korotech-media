@@ -1,0 +1,91 @@
+{
+ "id": "MDA-X254",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10204,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à combien ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3f4b40",
+  "sol": "#232a24",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e3a13b",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e3a13b",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#232a24"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "1ER WEEK-END",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "porte",
+   "vo": "Ton premier week-end. C'est lui qui décide si tu finis le mois.",
+   "sous_bandeau": "30 jours sans la BR, jour 6"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Abonne-toi, y'a une vidéo chaque jour jusqu'au trente. Reste jusqu'au dernier point, et écris ton numéro de jour en commentaire."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LES HEURES VIDES",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Pas de cours, pas de taf, des heures vides. Le week-end, c'est là que les rechutes se cachent."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "REMPLIS-LE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Alors tu remplis ton week-end maintenant : un truc samedi, un samedi soir, un dimanche.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE WEEK-END",
+    "lignes": [
+     "Samedi : une sortie",
+     "Samedi soir : un plan",
+     "Dimanche : du sport"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "camera": "porte",
+   "carte": [
+    "Commente NNN",
+    "le PDF des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "RESTE DEHORS",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "profil",
+   "vo": "Et la règle d'or : moins tu restes dans ta chambre, moins tu risques. Sors, même une heure. Demain, jour sept : ta première semaine. Abonne-toi pour pas la rater."
+  }
+ ]
+}
