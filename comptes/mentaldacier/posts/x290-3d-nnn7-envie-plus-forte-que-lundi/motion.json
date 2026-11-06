@@ -1,0 +1,107 @@
+{
+ "id": "MDA-X290",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10240,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu ta semaine ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3f4b40",
+  "sol": "#232a24",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e07b5a",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e07b5a",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#232a24"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "PLUS FORTE QUE LUNDI",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "T'as tenu la semaine, mais ce soir l'envie est plus forte.",
+   "sous_bandeau": "30 jours sans la BR, jour 7"
+  },
+  {
+   "type": "toi",
+   "bandeau": "NORMAL",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "Plus forte que lundi, oui. C'est normal. Trois raisons, et quoi faire."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Abonne-toi, y'a une vidéo chaque jour jusqu'au trente. Et reste jusqu'au troisième point, c'est le plus fort."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · PLUS DE TEMPS",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "vo": "Un : le week-end, t'as plus de temps libre. L'envie a plus de place. Alors tu remplis ta soirée avant elle."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · MOINS DE FATIGUE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : t'es moins fatigué qu'un soir de semaine. Alors tu te fatigues : sport, marche, n'importe quoi, mais tu bouges.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE SOIR",
+    "lignes": [
+     "Moins de temps libre",
+     "Plus de fatigue : bouge",
+     "Quelqu'un qui t'attend demain"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "camera": "porte",
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "carte": [
+    "Commente NNN",
+    "le PDF des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · DEMAIN MATIN",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Trois, le plus important : personne t'attend demain matin. Alors tu te donnes un rendez-vous, et tu le tiens."
+  },
+  {
+   "type": "large",
+   "bandeau": "DEMAIN",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "orbite",
+   "vo": "Demain, jour huit : ta deuxième semaine commence. Abonne-toi pour pas la rater."
+  }
+ ]
+}
