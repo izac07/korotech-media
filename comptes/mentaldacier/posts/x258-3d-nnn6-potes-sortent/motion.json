@@ -1,0 +1,91 @@
+{
+ "id": "MDA-X258",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10208,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à combien ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3b4352",
+  "sol": "#262a33",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fb8de",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fb8de",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#262a33"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "CE SOIR",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "Tes potes sortent ce soir. Toi, t'as un plan, ou juste ton tel ?",
+   "sous_bandeau": "30 jours sans la BR, jour 6"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Abonne-toi, y'a une vidéo chaque jour jusqu'au trente. Reste jusqu'au dernier point, et écris ton numéro de jour en commentaire."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "SORS AVEC EUX",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Le plus simple : sors avec eux. Dehors, entouré, t'as aucune chance de craquer."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "RENTRE MALIN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "En rentrant, tu poses le tel au salon, une douche, et au lit direct. Pas de dernier scroll.",
+   "ecran": {
+    "type": "liste",
+    "titre": "EN RENTRANT",
+    "lignes": [
+     "Tel dans le salon",
+     "Douche",
+     "Au lit direct"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "camera": "porte",
+   "carte": [
+    "Commente NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "SI TU RESTES",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "profil",
+   "vo": "Et si tu restes chez toi, prévois un vrai programme. Un film, une partie en ligne, un appel. Jamais le vide. Demain, jour sept : ta première semaine. Abonne-toi pour pas la rater."
+  }
+ ]
+}
