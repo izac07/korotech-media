@@ -1,0 +1,100 @@
+{
+ "id": "MDA-X289",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10239,
+ "handle": "mentaldacier2030",
+ "question": "Le soir le plus dur cette semaine ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5a4836",
+  "sol": "#2e261e",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fb8de",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fb8de",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2e261e"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "AVANT D'ÉTEINDRE",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant d'éteindre ce soir, y'a un truc à faire.",
+   "sous_bandeau": "jour 7 sur 30, samedi"
+  },
+  {
+   "type": "toi",
+   "bandeau": "TROIS MINUTES",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Trois minutes, trois lignes, et ta deuxième semaine est préparée."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "On tient le mois ensemble, une vidéo par jour, abonne-toi. Le dernier point, garde-le pour ce soir."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · LE SOIR LE PLUS DUR",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Un : le soir le plus dur de ta semaine. Lequel, et pourquoi. Pas pour te juger, pour savoir."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · CE QUI T'A SAUVÉ",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : ce qui t'a sauvé ce soir-là. Un geste, un pote, une sortie. C'est ton outil, garde-le.",
+   "ecran": {
+    "type": "liste",
+    "titre": "AVANT DE DORMIR",
+    "lignes": [
+     "Le soir le plus dur",
+     "Ce qui t'a sauvé",
+     "Le piège de demain"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "carte": [
+    "Commente NNN",
+    "ton plan pour tenir, offert"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · LE PIÈGE DE DEMAIN",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : le piège de demain. Dimanche, c'est le réveil. Tu l'écris ce soir, et le tel va au salon."
+  },
+  {
+   "type": "large",
+   "bandeau": "DEMAIN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Demain, dimanche, le réveil le plus dangereux de la semaine. Suis le compte, la vidéo sort tôt."
+  }
+ ]
+}
