@@ -1,0 +1,86 @@
+{
+ "id": "MDA-X269",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10219,
+ "handle": "mentaldacier2030",
+ "question": "Ton plan pour ce soir ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#2f4b57",
+  "sol": "#1b2a31",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#ece8e0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#ece8e0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#1b2a31"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "bandeau": "JUSQU'À MINUIT",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "vo": "Minuit, et c'est ta première semaine. Tiens jusque-là.",
+   "sous_bandeau": "jour 6 sur 30, vendredi"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "On tient le mois ensemble, une vidéo par jour, abonne-toi. Enregistre celle-là, et dis-moi en commentaire ton plan pour ce soir."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "DEUX HEURES",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Il te reste deux heures avant minuit. Deux heures, c'est rien, comparé aux six jours que t'as déjà tenus."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "TES DEUX HEURES",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Tel au salon, un épisode ou un bouquin, et au lit. C'est tout ce que tu dois faire.",
+   "ecran": {
+    "type": "liste",
+    "titre": "JUSQU'À MINUIT",
+    "lignes": [
+     "Tel au salon",
+     "Un épisode",
+     "Au lit"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "carte": [
+    "Commente NNN",
+    "le PDF des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "DEMAIN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Et demain matin, t'ouvres les yeux sur ta première semaine tenue. Ce sentiment-là, tu vas l'adorer. Demain, ta première semaine. Suis le compte, la vidéo sort le matin."
+  }
+ ]
+}
