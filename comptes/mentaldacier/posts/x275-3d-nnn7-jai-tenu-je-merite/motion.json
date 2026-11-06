@@ -1,0 +1,100 @@
+{
+ "id": "MDA-X275",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10225,
+ "handle": "mentaldacier2030",
+ "question": "Ton plan pour ce samedi soir ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#2f4b57",
+  "sol": "#1b2a31",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e07b5a",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e07b5a",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#1b2a31"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "bandeau": "JE MÉRITE",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "« J'ai tenu une semaine, ce soir je peux me lâcher. »",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "toi",
+   "bandeau": "CETTE PHRASE",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Si cette phrase traîne dans ta tête, écoute. Trois choses qu'elle cache."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Si tu veux celle de demain, abonne-toi. Le troisième point, c'est celui qui change tout."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · UNE ENVIE DÉGUISÉE",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Un : c'est pas une récompense, c'est l'envie qui a trouvé un costume. Elle a l'air raisonnable, c'est ça le danger."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · LE RETOUR À ZÉRO",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : si tu cèdes, lundi tu repars de zéro. Une semaine de tenue pour une soirée.",
+   "ecran": {
+    "type": "liste",
+    "titre": "« JE MÉRITE »",
+    "lignes": [
+     "Une envie déguisée",
+     "Un retour à zéro",
+     "Lundi, tout à refaire"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "carte": [
+    "Commente NNN",
+    "le PDF des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · LA VRAIE RÉCOMPENSE",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : la vraie récompense, c'est demain matin, ta huitième croix. Celle-là, personne te la reprend."
+  },
+  {
+   "type": "large",
+   "bandeau": "DEMAIN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Demain, je te montre pourquoi la deuxième semaine est différente. Abonne-toi, ça sort le matin."
+  }
+ ]
+}
