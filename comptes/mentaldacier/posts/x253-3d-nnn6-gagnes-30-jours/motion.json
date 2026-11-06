@@ -1,0 +1,86 @@
+{
+ "id": "MDA-X253",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10203,
+ "handle": "mentaldacier2030",
+ "question": "Ton plan pour ce soir ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5a4836",
+  "sol": "#2e261e",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e0b45e",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e0b45e",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2e261e"
+ },
+ "scenes": [
+  {
+   "type": "mascotte",
+   "bandeau": "EN 30 JOURS",
+   "humeur": "travail",
+   "lumiere": "aube",
+   "vo": "Trente jours. Voilà ce que tu récupères, et personne t'en parle.",
+   "sous_bandeau": "jour 6 sur 30, vendredi"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "On tient le mois ensemble, une vidéo par jour, abonne-toi. Enregistre celle-là, et dis-moi en commentaire ton plan pour ce soir."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "TES SOIRÉES",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "D'abord, tes soirées. Trente soirs où tu choisis ce que tu fais, au lieu de subir ton tel."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "TA PAROLE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Ensuite, ta parole. T'as dit trente jours, tu fais trente jours. C'est rare, et ça se voit.",
+   "ecran": {
+    "type": "liste",
+    "titre": "EN 30 JOURS",
+    "lignes": [
+     "Tes soirées",
+     "Ta parole",
+     "Ta fierté"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "carte": [
+    "Commente NNN",
+    "ton plan pour tenir, offert"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "TA FIERTÉ",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Et le plus gros : la fierté. Celle que personne voit, mais que tu sens chaque soir où tu tiens. Demain, ta première semaine. Suis le compte, la vidéo sort le matin."
+  }
+ ]
+}
