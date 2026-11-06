@@ -1,0 +1,100 @@
+{
+ "id": "MDA-X287",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10237,
+ "handle": "mentaldacier2030",
+ "question": "Ton plan pour ce samedi soir ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#2f4b57",
+  "sol": "#1b2a31",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fd1b0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fd1b0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#1b2a31"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "bandeau": "SEMAINE 2",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Demain, tu commences ta deuxième semaine.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "toi",
+   "bandeau": "PAS LA MÊME",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Elle ressemble pas à la première. Trois choses qui changent."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Si tu veux celle de demain, abonne-toi. Le troisième point, c'est celui qui change tout."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · L'ENNUI",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Un : la première semaine, c'est l'envie qui tape. La deuxième, c'est l'ennui. Elle change de forme, elle part pas."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · LES SOIRS DE SEMAINE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : les soirs de semaine. Fatigué, seul, rien de prévu. C'est là que la deuxième semaine se joue.",
+   "ecran": {
+    "type": "liste",
+    "titre": "SEMAINE 2",
+    "lignes": [
+     "L'ennui, pas l'envie",
+     "Les soirs de semaine",
+     "La routine qui s'installe"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "carte": [
+    "Commente NNN",
+    "le PDF des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · UN JOUR À LA FOIS",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : tu regardes pas le jour trente. Tu regardes demain. Juste demain."
+  },
+  {
+   "type": "large",
+   "bandeau": "LE 16 NOVEMBRE",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Et le seize novembre, j'ouvre Tenir : l'app pour tenir les trente jours, jour par jour. Le lien est en bio."
+  }
+ ]
+}
