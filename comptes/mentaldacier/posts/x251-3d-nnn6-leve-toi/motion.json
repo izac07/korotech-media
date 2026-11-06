@@ -1,0 +1,86 @@
+{
+ "id": "MDA-X251",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10201,
+ "handle": "mentaldacier2030",
+ "question": "Ton numéro de jour",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#2f4b57",
+  "sol": "#1b2a31",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e07b5a",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e07b5a",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#1b2a31"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "bandeau": "LÈVE-TOI",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Allongé, ton cerveau négocie. Debout, il perd.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Si tu veux celle de demain, abonne-toi. Le dernier point, c'est le plus important. Et dis-moi en commentaire où t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "DEBOUT",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Le réflexe est simple : dès que ça monte, tu te lèves. Pas dans une minute, maintenant."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "CHANGE DE PIÈCE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Ensuite, tu changes de pièce et t'allumes la lumière. L'envie est liée au lit et au noir.",
+   "ecran": {
+    "type": "liste",
+    "titre": "LE RÉFLEXE",
+    "lignes": [
+     "Debout",
+     "Autre pièce",
+     "Lumière allumée"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "carte": [
+    "Commente NNN",
+    "le PDF des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "BOUGE",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Et pour finir, vingt squats ou un verre d'eau. Ton corps bouge, ta tête suit. Demain, je te montre le piège du samedi. Abonne-toi, il tombe à neuf heures."
+  }
+ ]
+}
