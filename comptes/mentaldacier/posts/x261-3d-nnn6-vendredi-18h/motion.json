@@ -1,0 +1,86 @@
+{
+ "id": "MDA-X261",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10211,
+ "handle": "mentaldacier2030",
+ "question": "Ton plan pour ce soir ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#4b3a47",
+  "sol": "#291f27",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e3a13b",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e3a13b",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#291f27"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "18H",
+   "humeur": "travail",
+   "lumiere": "aube",
+   "vo": "Dix-huit heures. Si tu prévois rien maintenant, c'est ta soirée qui décidera.",
+   "sous_bandeau": "jour 6 sur 30, vendredi"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "On tient le mois ensemble, une vidéo par jour, abonne-toi. Enregistre celle-là, et dis-moi en commentaire ton plan pour ce soir."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "MAINTENANT",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "À dix-huit heures, t'as encore la tête froide. À vingt-trois heures, plus du tout. Alors c'est maintenant."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "TON PROGRAMME",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Trois cases : un truc à vingt et une heures, le tel dehors à vingt-trois, au lit à minuit.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE SOIR",
+    "lignes": [
+     "21h : un truc prévu",
+     "23h : tel dehors",
+     "Minuit : au lit"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "carte": [
+    "Commente NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "ÉCRIS-LE",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Et tu l'écris quelque part. Un plan écrit, tu le suis. Un plan dans ta tête, tu l'oublies. Demain, ta première semaine. Suis le compte, la vidéo sort le matin."
+  }
+ ]
+}
