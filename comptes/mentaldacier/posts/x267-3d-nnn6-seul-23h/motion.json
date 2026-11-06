@@ -1,0 +1,86 @@
+{
+ "id": "MDA-X267",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10217,
+ "handle": "mentaldacier2030",
+ "question": "Ton numéro de jour",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#4b3a47",
+  "sol": "#291f27",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e0b45e",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e0b45e",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#291f27"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "bandeau": "SEUL, 23H",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "vo": "T'es seul dans ta chambre, il est vingt-trois heures, t'as pas sommeil. Écoute-moi.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Si tu veux celle de demain, abonne-toi. Le dernier point, c'est le plus important. Et dis-moi en commentaire où t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "T'ES PAS SEUL",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Déjà, t'es loin d'être le seul dans cette situation ce soir. Et beaucoup tiennent."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "MAINTENANT",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Maintenant : t'allumes la lumière, tu poses le tel, et tu sors de la chambre deux minutes.",
+   "ecran": {
+    "type": "liste",
+    "titre": "LÀ, TOUT DE SUITE",
+    "lignes": [
+     "Lumière allumée",
+     "Tel posé",
+     "Sors de la chambre"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "carte": [
+    "Commente NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "APPELLE",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Et si c'est trop dur, envoie juste soirée difficile à un pote. T'as pas à expliquer. Ça suffit souvent. Demain, je te montre le piège du samedi. Abonne-toi, il tombe à neuf heures."
+  }
+ ]
+}
