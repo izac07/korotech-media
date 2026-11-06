@@ -1,0 +1,85 @@
+{
+ "id": "MDA-X260",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10210,
+ "handle": "mentaldacier2030",
+ "question": "Tenu ou craqué cette semaine ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3f4b40",
+  "sol": "#232a24",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e0b45e",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e0b45e",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#232a24"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "bandeau": "C'EST TOI",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Six soirs de suite, t'as choisi. Pas ton envie : toi."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Je poste tous les jours du mois, abonne-toi. Garde la vidéo pour ce soir, et écris en commentaire combien de jours t'as tenu."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LA PREUVE",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Six soirs, c'est six fois où l'envie a parlé, et où t'as répondu non. C'est une preuve, pas un hasard."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "CE QUE ÇA DIT",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Ça veut dire que tu sais dire non, que tu sais prévoir tes soirées, et que tu sais tenir.",
+   "ecran": {
+    "type": "liste",
+    "titre": "6 SOIRS",
+    "lignes": [
+     "Tu sais dire non",
+     "Tu sais prévoir",
+     "Tu sais repartir"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "carte": [
+    "Commente NNN",
+    "le PDF des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "GARDE-LA",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Garde cette preuve en tête ce soir. Quand ça montera, rappelle-toi : six fois, t'as gagné. Demain, c'est le jour sept. Abonne-toi, on le passe ensemble."
+  }
+ ]
+}
