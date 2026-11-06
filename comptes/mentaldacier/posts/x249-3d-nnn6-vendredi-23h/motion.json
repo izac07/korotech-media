@@ -1,0 +1,86 @@
+{
+ "id": "MDA-X249",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10199,
+ "handle": "mentaldacier2030",
+ "question": "Ton plan pour ce soir ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#4b3a47",
+  "sol": "#291f27",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fd1b0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fd1b0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#291f27"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "VENDREDI 23H",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "vo": "Vendredi, vingt-trois heures. Si tu dois craquer cette semaine, c'est là.",
+   "sous_bandeau": "jour 6 sur 30, vendredi"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "On tient le mois ensemble, une vidéo par jour, abonne-toi. Enregistre celle-là, et dis-moi en commentaire ton plan pour ce soir."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LA SEMAINE EST FINIE",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Pourquoi ? Parce que ta tête se dit que la semaine est finie, et qu'elle mérite une récompense."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LE PIÈGE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Fatigue, pas de réveil, le tel dans la main : c'est le trio parfait pour lâcher.",
+   "ecran": {
+    "type": "liste",
+    "titre": "23H, VENDREDI",
+    "lignes": [
+     "Fatigue",
+     "Personne demain matin",
+     "Le tel dans la main"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "carte": [
+    "Commente NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "TON PLAN DE 23H",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Alors à vingt-deux heures cinquante, tu poses le tel hors de la chambre. Avant l'heure, pas pendant. Demain, ta première semaine. Suis le compte, la vidéo sort le matin."
+  }
+ ]
+}
