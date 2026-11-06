@@ -1,0 +1,100 @@
+{
+ "id": "MDA-X291",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10241,
+ "handle": "mentaldacier2030",
+ "question": "Ton plan pour ce samedi soir ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#4b3a47",
+  "sol": "#291f27",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e0b45e",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e0b45e",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#291f27"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "bandeau": "IL EST TARD",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "vo": "Il est tard, t'es au lit, et le tel est là.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "toi",
+   "bandeau": "30 SECONDES",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Écoute-moi trente secondes. Trois gestes, deux minutes."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Si tu veux celle de demain, abonne-toi. Le troisième point, c'est celui qui change tout."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · LÈVE-TOI",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Un : tu te lèves. Là, maintenant. Allongé, ton cerveau négocie. Debout, il perd."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · TEL AU SALON",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : le tel va au salon. Tu le poses, tu le branches, tu le regardes pas.",
+   "ecran": {
+    "type": "liste",
+    "titre": "LÀ, TOUT DE SUITE",
+    "lignes": [
+     "Lève-toi",
+     "Tel au salon",
+     "Un verre d'eau, retour au lit"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "carte": [
+    "Commente NNN",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · UN VERRE D'EAU",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : un verre d'eau, et tu reviens te coucher sans lui. Deux minutes. L'envie, debout, elle tient pas deux minutes."
+  },
+  {
+   "type": "large",
+   "bandeau": "DEMAIN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Demain, je te montre pourquoi la deuxième semaine est différente. Abonne-toi, ça sort le matin."
+  }
+ ]
+}
