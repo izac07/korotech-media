@@ -1,0 +1,85 @@
+{
+ "id": "MDA-X268",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10218,
+ "handle": "mentaldacier2030",
+ "question": "Tenu ou craqué cette semaine ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5e5850",
+  "sol": "#2f2c28",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e3a13b",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e3a13b",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2f2c28"
+ },
+ "scenes": [
+  {
+   "type": "mascotte",
+   "bandeau": "PAS LUNDI",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "Si tu craques ce soir, tu repars demain matin. Pas lundi. Demain."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Je poste tous les jours du mois, abonne-toi. Garde la vidéo pour ce soir, et écris en commentaire combien de jours t'as tenu."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LE PIÈGE DU LUNDI",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Le piège, c'est de te dire je reprends lundi. Entre-temps, t'as perdu tout le week-end."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "DEMAIN MATIN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Si ça arrive, pas de honte. Tu notes l'heure, et tu repars dès ton réveil.",
+   "ecran": {
+    "type": "liste",
+    "titre": "SI ÇA ARRIVE",
+    "lignes": [
+     "Pas de honte",
+     "Note l'heure",
+     "Repars au réveil"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "carte": [
+    "Commente NNN",
+    "ton plan pour tenir, offert"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "TES JOURS RESTENT",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Et souviens-toi : tes jours tenus restent à toi. Une rechute, c'est une soirée, pas le mois. Demain, c'est le jour sept. Abonne-toi, on le passe ensemble."
+  }
+ ]
+}
