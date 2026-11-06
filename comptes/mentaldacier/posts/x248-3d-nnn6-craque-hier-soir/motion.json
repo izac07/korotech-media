@@ -1,0 +1,85 @@
+{
+ "id": "MDA-X248",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10198,
+ "handle": "mentaldacier2030",
+ "question": "Tenu ou craqué cette semaine ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3f4b40",
+  "sol": "#232a24",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#ece8e0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#ece8e0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#232a24"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "bandeau": "HIER SOIR ?",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "Hier soir t'as lâché ? Ok. Ton jour six démarre à la seconde où tu lis ça."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Je poste tous les jours du mois, abonne-toi. Garde la vidéo pour ce soir, et écris en commentaire combien de jours t'as tenu."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "PAS DE PROCÈS",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Déjà, pas de procès. La culpabilité, c'est elle qui te fait replonger le soir suivant."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "REGARDE L'HEURE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Ensuite, note l'heure et l'endroit. Un craquage, c'est une info, pas une défaite.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE QUI S'EST PASSÉ",
+    "lignes": [
+     "L'heure exacte",
+     "Où t'étais",
+     "Ce que t'aurais pu faire"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "carte": [
+    "Commente NNN",
+    "le PDF des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "CE SOIR",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Et ce soir, tu changes une seule chose : le tel dehors, ou une soirée prévue. Une seule, mais tu la tiens. Demain, c'est le jour sept. Abonne-toi, on le passe ensemble."
+  }
+ ]
+}
