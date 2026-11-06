@@ -1,0 +1,100 @@
+{
+ "id": "MDA-X279",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10229,
+ "handle": "mentaldacier2030",
+ "question": "Ton plan pour ce samedi soir ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#4b3a47",
+  "sol": "#291f27",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#ece8e0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#ece8e0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#291f27"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "bandeau": "RÉPONDS OUI",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "vo": "Tes potes t'ont écrit pour ce soir, t'as pas répondu.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "toi",
+   "bandeau": "RÉPONDS OUI",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Réponds oui. Voilà pourquoi, et trois choses pour préparer le retour."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Si tu veux celle de demain, abonne-toi. Le troisième point, c'est celui qui change tout."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · SORTIR PROTÈGE",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Un : sortir, c'est pas un risque pour ton NNN, c'est une protection. Le danger, c'est pas la soirée, c'est le retour."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · LE TEL",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : avant de partir, tu décides où dort le tel. Sur le meuble de l'entrée, branché. Pas dans la chambre.",
+   "ecran": {
+    "type": "liste",
+    "titre": "EN RENTRANT",
+    "lignes": [
+     "Tel sur le meuble",
+     "Eau, douche, lit",
+     "Pas d'écran au lit"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "carte": [
+    "Commente NNN",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · EAU, DOUCHE, LIT",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : en rentrant, c'est eau, douche, lit. Dans cet ordre, en automatique. Tu réfléchis pas, tu fais."
+  },
+  {
+   "type": "large",
+   "bandeau": "DEMAIN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Demain, je te montre pourquoi la deuxième semaine est différente. Abonne-toi, ça sort le matin."
+  }
+ ]
+}
