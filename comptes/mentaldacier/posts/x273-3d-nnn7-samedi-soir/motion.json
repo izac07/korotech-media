@@ -1,0 +1,100 @@
+{
+ "id": "MDA-X273",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10223,
+ "handle": "mentaldacier2030",
+ "question": "Le soir le plus dur cette semaine ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#4b3a47",
+  "sol": "#291f27",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fd1b0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fd1b0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#291f27"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "SAMEDI SOIR",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Le samedi soir, c'est l'autre soir où les gars lâchent.",
+   "sous_bandeau": "jour 7 sur 30, samedi"
+  },
+  {
+   "type": "toi",
+   "bandeau": "POURQUOI",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Voilà pourquoi, et voilà quoi faire. Trois choses."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "On tient le mois ensemble, une vidéo par jour, abonne-toi. Le dernier point, garde-le pour ce soir."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · LE PIÈGE",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Un : soit tu sors, et tu rentres tard, le tel dans la poche. Soit tu sors pas, et t'as toute la soirée seul."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · LES DEUX CAS",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : dans les deux cas, le piège est le même. Du temps libre, et personne autour. Alors tu prévois les deux.",
+   "ecran": {
+    "type": "liste",
+    "titre": "SAMEDI SOIR",
+    "lignes": [
+     "Tu sors : règle du retour",
+     "Tu sors pas : soirée prévue",
+     "Dans les deux : tel au salon"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "carte": [
+    "Commente NNN",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · LA RÈGLE",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : avant de sortir, ou avant vingt et une heures, le tel a sa place pour la nuit. Pas ta chambre."
+  },
+  {
+   "type": "large",
+   "bandeau": "DEMAIN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Demain, dimanche, le réveil le plus dangereux de la semaine. Suis le compte, la vidéo sort tôt."
+  }
+ ]
+}
