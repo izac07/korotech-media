@@ -1,0 +1,85 @@
+{
+ "id": "MDA-X256",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10206,
+ "handle": "mentaldacier2030",
+ "question": "Tenu ou craqué cette semaine ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5e5850",
+  "sol": "#2f2c28",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fd1b0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fd1b0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2f2c28"
+ },
+ "scenes": [
+  {
+   "type": "mascotte",
+   "bandeau": "TON TEL CE SOIR",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Ton tel dort où ce soir ? Pose la règle maintenant, pas à minuit."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Je poste tous les jours du mois, abonne-toi. Garde la vidéo pour ce soir, et écris en commentaire combien de jours t'as tenu."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "MAINTENANT",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "À minuit, t'auras plus envie de le sortir de la chambre. Alors tu décides maintenant, à froid."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LA RÈGLE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "La règle : il charge au salon, en mode avion à vingt-trois heures. Un vieux réveil à côté du lit si t'en as besoin.",
+   "ecran": {
+    "type": "liste",
+    "titre": "LA RÈGLE DU VENDREDI",
+    "lignes": [
+     "Charge au salon",
+     "Mode avion à 23h",
+     "Réveil à côté du lit"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "carte": [
+    "Commente NNN",
+    "ton plan pour tenir, offert"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "POUR TOUT LE WEEK-END",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Et tu la gardes vendredi, samedi et dimanche. Le week-end, c'est pas une pause du NNN. Demain, c'est le jour sept. Abonne-toi, on le passe ensemble."
+  }
+ ]
+}
