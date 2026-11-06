@@ -1,0 +1,107 @@
+{
+ "id": "MDA-X286",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10236,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu ta semaine ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5e5850",
+  "sol": "#2f2c28",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#ece8e0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#ece8e0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2f2c28"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "LE MESSAGE DE 23H",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "camera": "orbite",
+   "vo": "Ton pote envoie un truc chaud dans le groupe, à vingt-trois heures.",
+   "sous_bandeau": "30 jours sans la BR, jour 7"
+  },
+  {
+   "type": "toi",
+   "bandeau": "T'AS PAS À L'OUVRIR",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "T'as pas à l'ouvrir. Trois réglages pour que ça t'atteigne plus."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Abonne-toi, y'a une vidéo chaque jour jusqu'au trente. Et reste jusqu'au troisième point, c'est le plus fort."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · LES NOTIFS",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "vo": "Un : les notifs du groupe coupées après vingt-deux heures. Y'a pas de règle qui dit qu'un message, ça s'ouvre."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · LE TEL AU SALON",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : le tel dort au salon à vingt-trois heures. Tu réponds demain matin, le message sera encore là.",
+   "ecran": {
+    "type": "liste",
+    "titre": "LE SOIR",
+    "lignes": [
+     "Notifs du groupe coupées",
+     "Tel au salon à 23h",
+     "Tu réponds demain"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "camera": "porte",
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "carte": [
+    "Commente NNN",
+    "ton plan pour tenir, offert"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · DIS-LUI",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Trois, le plus important : si c'est toujours le même pote, dis-lui. Un vrai pote comprend. Celui qui comprend pas, il t'aide pas."
+  },
+  {
+   "type": "large",
+   "bandeau": "DEMAIN",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "orbite",
+   "vo": "Demain, jour huit : ta deuxième semaine commence. Abonne-toi pour pas la rater."
+  }
+ ]
+}
