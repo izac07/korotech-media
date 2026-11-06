@@ -1,0 +1,86 @@
+{
+ "id": "MDA-X263",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10213,
+ "handle": "mentaldacier2030",
+ "question": "Ton numéro de jour",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#2f4b57",
+  "sol": "#1b2a31",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fd1b0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fd1b0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#1b2a31"
+ },
+ "scenes": [
+  {
+   "type": "mascotte",
+   "bandeau": "CETTE ANNÉE",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Pourquoi tu vois des mecs partout parler du NNN cette année ? Simple.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Si tu veux celle de demain, abonne-toi. Le dernier point, c'est le plus important. Et dis-moi en commentaire où t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LE TEL PARTOUT",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Parce que le tel est devenu partout : au lit, aux toilettes, à table. Et beaucoup en ont marre de subir."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LE DÉFI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Ensuite, un mois, c'est court. C'est pas pour toujours, c'est un défi, et ça rend la chose possible.",
+   "ecran": {
+    "type": "liste",
+    "titre": "POURQUOI ÇA PREND",
+    "lignes": [
+     "Un mois, pas pour toujours",
+     "Des milliers à le faire",
+     "Une preuve à la fin"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "carte": [
+    "Commente NNN",
+    "le PDF des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "LA PREUVE",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Et à la fin, t'as une preuve : celle que tu sais tenir une parole envers toi-même. Demain, je te montre le piège du samedi. Abonne-toi, il tombe à neuf heures."
+  }
+ ]
+}
