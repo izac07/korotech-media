@@ -1,0 +1,99 @@
+{
+ "id": "MDA-X272",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10222,
+ "handle": "mentaldacier2030",
+ "question": "Première semaine : tenue ou pas ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3f4b40",
+  "sol": "#232a24",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#ece8e0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#ece8e0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#232a24"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "HIER SOIR",
+   "humeur": "triste",
+   "lumiere": "aube",
+   "vo": "Hier soir t'as craqué, et tu te demandes si tu continues ?"
+  },
+  {
+   "type": "toi",
+   "bandeau": "OUI",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Oui. Voilà pourquoi, et les trois choses à faire aujourd'hui."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Enregistre cette vidéo pour ce soir, et abonne-toi : une par jour jusqu'au trente."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · SIX SOIRS",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Un : tes six soirs tenus existent toujours. Un craquage les efface pas, il te montre juste où t'es faible."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · NOTE-LE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : note l'heure, l'endroit, et ce que tu faisais juste avant. C'est ta carte des pièges, pas ton casier.",
+   "ecran": {
+    "type": "liste",
+    "titre": "HIER SOIR",
+    "lignes": [
+     "L'heure exacte",
+     "L'endroit",
+     "Ce qui s'est passé avant"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "carte": [
+    "Commente NNN",
+    "le PDF des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · CE SOIR",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : ce soir, un seul changement. Le tel dort au salon. Un seul, mais tu le tiens."
+  },
+  {
+   "type": "large",
+   "bandeau": "DEMAIN",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Demain, c'est le jour huit. Abonne-toi, on le passe ensemble."
+  }
+ ]
+}

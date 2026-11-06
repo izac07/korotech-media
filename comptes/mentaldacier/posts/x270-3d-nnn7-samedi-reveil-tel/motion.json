@@ -1,0 +1,107 @@
+{
+ "id": "MDA-X270",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10220,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu ta semaine ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3b4352",
+  "sol": "#262a33",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e0b45e",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e0b45e",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#262a33"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "SAMEDI MATIN",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "camera": "dessus",
+   "vo": "Samedi, pas de réveil, et ta main cherche déjà le tel.",
+   "sous_bandeau": "30 jours sans la BR, jour 7"
+  },
+  {
+   "type": "toi",
+   "bandeau": "LE PIÈGE DU MATIN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "Le lit, le matin, c'est le piège du week-end. Trois gestes pour en sortir."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Abonne-toi, y'a une vidéo chaque jour jusqu'au trente. Et reste jusqu'au troisième point, c'est le plus fort."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · LE TEL RESTE LÀ",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "vo": "Un : le tel reste sur la table de nuit. Tu le prends pas, même pour l'heure."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · DEBOUT",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : debout en moins de deux minutes. Pas de négociation, les pieds par terre.",
+   "ecran": {
+    "type": "liste",
+    "titre": "AU RÉVEIL",
+    "lignes": [
+     "Tel hors du lit",
+     "Debout en 2 minutes",
+     "Douche direct"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "camera": "porte",
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "carte": [
+    "Commente NNN",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · LA DOUCHE",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Trois, le plus important : la douche direct. Debout et mouillé, l'envie tient pas deux minutes."
+  },
+  {
+   "type": "large",
+   "bandeau": "DEMAIN",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "orbite",
+   "vo": "Demain, jour huit : ta deuxième semaine commence. Abonne-toi pour pas la rater."
+  }
+ ]
+}

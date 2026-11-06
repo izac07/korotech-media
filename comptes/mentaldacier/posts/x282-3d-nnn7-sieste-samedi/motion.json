@@ -1,0 +1,107 @@
+{
+ "id": "MDA-X282",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10232,
+ "handle": "mentaldacier2030",
+ "question": "T'as tenu ta semaine ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3b4352",
+  "sol": "#262a33",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fb8de",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fb8de",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#262a33"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "LA SIESTE",
+   "humeur": "dort",
+   "lumiere": "aube",
+   "camera": "dessus",
+   "vo": "Tu t'allonges pour une sieste, le tel à côté de l'oreiller.",
+   "sous_bandeau": "30 jours sans la BR, jour 7"
+  },
+  {
+   "type": "toi",
+   "bandeau": "TU SAIS",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "Tu sais comment ça finit. Trois règles pour la sieste."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Abonne-toi, y'a une vidéo chaque jour jusqu'au trente. Et reste jusqu'au troisième point, c'est le plus fort."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · TEL DEHORS",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "vo": "Un : le tel hors de la chambre. La sieste, c'est le piège que personne voit : au lit, en plein jour, la porte fermée."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · VINGT MINUTES",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : vingt minutes, avec un réveil. Et sur le canapé plutôt que dans le lit.",
+   "ecran": {
+    "type": "liste",
+    "titre": "POUR LA SIESTE",
+    "lignes": [
+     "Tel hors de la chambre",
+     "Vingt minutes, réveil mis",
+     "Canapé plutôt que lit"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "camera": "porte",
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "carte": [
+    "Commente NNN",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · OU PAS DE SIESTE",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Trois, le plus important : si t'arrives pas à tenir ça, pas de sieste. Tu sors marcher. Le sommeil reviendra ce soir."
+  },
+  {
+   "type": "large",
+   "bandeau": "DEMAIN",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "orbite",
+   "vo": "Demain, jour huit : ta deuxième semaine commence. Abonne-toi pour pas la rater."
+  }
+ ]
+}
