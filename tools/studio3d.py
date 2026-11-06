@@ -190,7 +190,7 @@ function poseF(P){setL(F.torso,P.hip,P.sh);const sd=P.side.clone().normalize();c
     setL(F.arms[i][0],S,E_);setL(F.arms[i][1],E_,P.hands[i]);F.mains[i].position.copy(P.hands[i]);
     const Hp=P.hip.clone().addScaledVector(sd,.1*s_);const K=P.knees?P.knees[i]:ik(Hp,P.feet[i],.45,.45,P.knee);setL(F.legs[i][0],Hp,K);setL(F.legs[i][1],K,P.feet[i]);
     const fw=(P.toe||NV(0,0,1)).clone().normalize();setL(F.pieds[i],P.feet[i].clone().addScaledVector(fw,-.03),P.feet[i].clone().addScaledVector(fw,.12));});}
-function baseHum(hu){return (hu=='telephone'||hu=='fatigue'||hu=='dort'||hu=='triste')?DEC.lit:DEC.sol;}
+function baseHum(hu){return ((hu=='telephone'||hu=='fatigue'||hu=='dort'||hu=='triste')&&DEC.lit)?DEC.lit:(DEC.sol||DEC.M);}  // décor sans lit ni sol (salon) : position de base
 function poseHum(hu,t){const b=baseHum(hu);const W=(x,y,z)=>NV(b[0]+x,b[1]+y,b[2]+z);let P;F.phone.position.set(0,-10,0);F.pl.intensity=0;
   if(b===DEC.lit){const br=Math.sin(t*1.6)*.01;const ph=W(0,.98,.4);
     P={hip:W(0,.62,0),sh:W(0,1.1+br,.15),hands:[W(-.05,.95,.36),W(.05,.95,.36)],feet:[W(-.15,.07,.52),W(.15,.07,.52)],knees:[W(-.14,.6,.45),W(.14,.6,.45)],
@@ -271,7 +271,7 @@ function poser(o,q){let b=new THREE.Box3().setFromObject(o);const sz=b.getSize(n
   g.position.set(q.x,q.y||0,q.z);g.rotation.y=q.ry||0;scene.add(g);return g;}
 async function charger(){
   const P_=DEC.meubles;
-  for(const [n,q,teinte] of P_){if(!MODELES[n])continue;const o=await modele(n);toonify(o,teinte=='BOIS'?COL.bois:teinte);poser(o,q);}
+  for(const [n,q,teinte] of P_){if(!MODELES[n])continue;const o=await modele(n);toonify(o,teinte=='BOIS'?COL.bois:(teinte||(COL.overlay=='sobre'?(COL.meuble||'#56555b'):null)));poser(o,q);}  // sobre : meubles sans teinte en gris neutre (plus de rose « ado »)
   scene.traverse(o=>{if(o.isMesh&&o.material!==OLM&&!(o.material&&o.material.isMeshBasicMaterial)){o.castShadow=true;o.receiveShadow=true;}});
   if(STYLE=='bd'||STYLE=='neon')contours();}
 
@@ -286,7 +286,7 @@ function planCam(k){const s=SC[k];if(!s.camera||!HUM)return null;const b=baseHum
   // pompes (« sport ») : le corps est au ras du sol, la caméra et la visée descendent avec lui
   // le corps va des pieds (b-.62) à la tête (b+.75) : on vise son milieu
   if(s.humeur=='sport'){const k_=2.2,cx=b[0]+.1;return [[cx+(r[0][0]-b[0])*k_,Math.max(.45,r[0][1]-.6),b[2]+(r[0][2]-b[2])*k_],[cx,.3,b[2]]];}return r;}
-function plan0(k){const pc=planCam(k);if(pc)return pc;if(HUM&&SC[k].plan=='toi'){const b=DEC.sol;return [[b[0]-1.1,1.75,b[2]+3.4],[b[0]-.15,1.25,b[2]]];}
+function plan0(k){const pc=planCam(k);if(pc)return pc;if(HUM&&SC[k].plan=='toi'){const b=DEC.sol||DEC.M;return [[b[0]-1.1,1.75,b[2]+3.4],[b[0]-.15,1.25,b[2]]];}
   if(HUM&&!DUO&&SC[k].plan=='mascotte'){const b=baseHum(SC[k].humeur);return [[b[0]+.55,1.55,b[2]+4.0],[b[0],.9,b[2]]];}return PLANS[SC[k].plan]||PLANS.large;}
 // ---- dessin de l'écran selon la scène
 function rr(x,X,Y,W,H,r,f){x.beginPath();x.roundRect(X,Y,W,H,r);x.fillStyle=f;x.fill();}
@@ -358,7 +358,7 @@ const RENDER=function(t){
   if(parleC)mouth.scale.y*=1+2.2*Math.abs(Math.sin(t*14));
   if(HUM){poseHum(DUO?(parleM?'parle':'normal'):hu,t);if(parleM)F.head.position.y+=Math.abs(Math.sin(t*9))*.018;}
   // Début jamais sombre (règle Goat 05/11) : scène 1 éclairée tout de suite, sans fondu depuis la nuit.
-  if(SOBRE)R.toneMappingExposure=k==0?1.15:.92;
+  if(SOBRE)R.toneMappingExposure=k==0?((!ciel2&&DEC.ciel=='nuit')?1.35:1.15):.92;  // décor de nuit sans aube (bureau) : début encore plus éclairé
   if(ciel2){let aube=0;SC.forEach((z,i)=>{if(i<=k&&z.lumiere=='aube')aube=i==k?(k==0?1:c(tl/1.5)):1;});ciel2.material.opacity=aube;
     key.color.setRGB(.55+.45*aube,.62+.2*aube,.85-.3*aube);key.intensity=.9+1.9*aube;lamp.intensity=3.2*(1-aube)+.4;}
   // téléphone : visible quand la scène le demande
