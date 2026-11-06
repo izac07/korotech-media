@@ -1,0 +1,99 @@
+{
+ "id": "MDA-X288",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10238,
+ "handle": "mentaldacier2030",
+ "question": "Première semaine : tenue ou pas ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3b4352",
+  "sol": "#262a33",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fd1b0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fd1b0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#262a33"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "bandeau": "21H, T'HÉSITES",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Vingt et une heures, samedi, t'hésites entre sortir et rester."
+  },
+  {
+   "type": "large",
+   "bandeau": "LE VRAI CHOIX",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Le vrai choix, c'est pas celui-là. Trois règles selon ce que tu fais."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Enregistre cette vidéo pour ce soir, et abonne-toi : une par jour jusqu'au trente."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · SI TU RESTES",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Un : si tu restes, le tel va dans l'entrée, et t'as un truc prévu jusqu'à vingt-trois heures. Pas « on verra »."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · SI TU SORS",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : si tu sors, c'est le retour qui compte. Tel au salon en rentrant, eau, lit. Rien d'autre.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE SOIR",
+    "lignes": [
+     "Tu restes : tel dans l'entrée",
+     "Tu sors : règle du retour",
+     "Les deux : au lit à l'heure"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "carte": [
+    "Commente NNN",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · AVEC QUOI TU RESTES",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : le choix, c'est pas sortir ou rester. C'est avec quoi tu restes. Si tu restes avec ton tel, t'as déjà choisi."
+  },
+  {
+   "type": "large",
+   "bandeau": "DEMAIN",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Demain, c'est le jour huit. Abonne-toi, on le passe ensemble."
+  }
+ ]
+}
