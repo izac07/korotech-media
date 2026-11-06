@@ -1,0 +1,86 @@
+{
+ "id": "MDA-X247",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10197,
+ "handle": "mentaldacier2030",
+ "question": "Ton numéro de jour",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5a4836",
+  "sol": "#2e261e",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e3a13b",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e3a13b",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2e261e"
+ },
+ "scenes": [
+  {
+   "type": "mascotte",
+   "bandeau": "6 SOIRS",
+   "humeur": "travail",
+   "lumiere": "aube",
+   "vo": "Six soirs. Compte ce que t'en as fait, au lieu de les perdre au lit.",
+   "sous_bandeau": "NNN = 30 jours sans la BR"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Si tu veux celle de demain, abonne-toi. Le dernier point, c'est le plus important. Et dis-moi en commentaire où t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LE TEMPS",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Un : chaque soir, t'as récupéré le temps que tu perdais à scroller. Additionne, ça fait une vraie soirée."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "TA PAROLE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : six fois, t'as dit non et t'as tenu. C'est pas rien, c'est une habitude qui naît.",
+   "ecran": {
+    "type": "liste",
+    "titre": "EN 6 SOIRS",
+    "lignes": [
+     "Du temps rendu",
+     "Une parole tenue",
+     "Une série qui grandit"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "carte": [
+    "Commente NNN",
+    "ton plan pour tenir, offert"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "UTILISE-LE",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Trois : ce temps-là, donne-lui un nom ce week-end. Le sport, un pote, un projet. Sinon le vide le reprend. Demain, je te montre le piège du samedi. Abonne-toi, il tombe à neuf heures."
+  }
+ ]
+}
