@@ -1,0 +1,86 @@
+{
+ "id": "MDA-X265",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10215,
+ "handle": "mentaldacier2030",
+ "question": "Ton plan pour ce soir ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5a4836",
+  "sol": "#2e261e",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fb8de",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fb8de",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2e261e"
+ },
+ "scenes": [
+  {
+   "type": "mascotte",
+   "bandeau": "6E CROIX",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Sixième croix. Encore une, et t'as tenu ta première semaine.",
+   "sous_bandeau": "jour 6 sur 30, vendredi"
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "On tient le mois ensemble, une vidéo par jour, abonne-toi. Enregistre celle-là, et dis-moi en commentaire ton plan pour ce soir."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "CE QU'ELLE VAUT",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Six croix, c'est six soirs où t'as tenu ta parole. Ça vaut plus que n'importe quel défi réussi."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LA SEPTIÈME",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "La septième, c'est demain. Et c'est elle qui transforme six jours en une vraie semaine.",
+   "ecran": {
+    "type": "liste",
+    "titre": "TA SEMAINE",
+    "lignes": [
+     "6 croix faites",
+     "1 croix demain",
+     "1 semaine tenue"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "carte": [
+    "Commente NNN",
+    "ton plan pour tenir, offert"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "FÊTE-LA",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Prévois déjà comment tu la fêtes. Un bon repas, une sortie. Une vraie récompense, pas celle que t'arrêtes. Demain, ta première semaine. Suis le compte, la vidéo sort le matin."
+  }
+ ]
+}
