@@ -1,0 +1,99 @@
+{
+ "id": "MDA-X280",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10230,
+ "handle": "mentaldacier2030",
+ "question": "Première semaine : tenue ou pas ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5e5850",
+  "sol": "#2f2c28",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fd1b0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fd1b0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2f2c28"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "SEUL CE SOIR",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "vo": "Samedi soir, personne de dispo, t'es seul avec ton tel."
+  },
+  {
+   "type": "toi",
+   "bandeau": "LE VRAI MATCH",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Ça, c'est le vrai match. Trois règles pour le gagner."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Enregistre cette vidéo pour ce soir, et abonne-toi : une par jour jusqu'au trente."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · UN PROGRAMME",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Un : ta soirée a un programme choisi avant. Un film, une série, un truc à faire. Pas « on verra »."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · LE TEL AILLEURS",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : le tel est pas dans la pièce où tu passes ta soirée. Pas éteint. Ailleurs.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE SOIR",
+    "lignes": [
+     "Un film, pas un scroll",
+     "Tel dans une autre pièce",
+     "Coucher à l'heure fixée"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "carte": [
+    "Commente NNN",
+    "ton plan pour tenir, offert"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · L'HEURE",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : une heure de coucher fixée, comme un soir de semaine. Un samedi seul tenu, ça vaut deux soirs de semaine."
+  },
+  {
+   "type": "large",
+   "bandeau": "DEMAIN",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Demain, c'est le jour huit. Abonne-toi, on le passe ensemble."
+  }
+ ]
+}
