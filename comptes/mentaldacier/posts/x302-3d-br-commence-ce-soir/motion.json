@@ -1,0 +1,106 @@
+{
+ "id": "MDA-X302",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10252,
+ "handle": "mentaldacier2030",
+ "question": "Tu commences ce soir ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3f4b40",
+  "sol": "#232a24",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e3a13b",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e3a13b",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#232a24"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "bandeau": "PAS LUNDI",
+   "humeur": "triste",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "Tu te dis « j'arrête lundi ». Lundi, tu diras pareil."
+  },
+  {
+   "type": "large",
+   "bandeau": "CE SOIR",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "Commence ce soir. Trois choses, quinze minutes."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Abonne-toi, y'a une vidéo chaque jour là-dessus. Et reste jusqu'au troisième point, c'est le plus fort."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · TON POURQUOI",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "vo": "Un : écris ton pourquoi. Une phrase, la tienne. Colle-la près de ton lit."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · LE TERRAIN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : prépare le terrain. Le tel dort au salon, et les comptes limite, tu les vires.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE SOIR",
+    "lignes": [
+     "Ton pourquoi",
+     "Le tel au salon",
+     "Ta première croix"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE TENIR",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "camera": "porte",
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans la BR.",
+   "carte": [
+    "Commente TENIR",
+    "le PDF des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · TA PREMIÈRE CROIX",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Trois, le plus important : demain matin, ta première croix sur un calendrier. Une croix, c'est un jour gagné, pas un lundi de plus."
+  },
+  {
+   "type": "large",
+   "bandeau": "LE 16 NOVEMBRE",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "orbite",
+   "vo": "Et le seize novembre, j'ouvre Tenir : l'app pour reprendre le contrôle, jour par jour. Le lien est en bio."
+  }
+ ]
+}
