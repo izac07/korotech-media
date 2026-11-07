@@ -1,0 +1,96 @@
+{
+ "id": "MDA-X316",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10266,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#4b3a47",
+  "sol": "#291f27",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#ece8e0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#ece8e0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#291f27"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "vo": "Mental d'Acier 2 : pourquoi tu te sens vide juste après t'être masturbé.",
+   "bandeau": "Le vide après la m*sturbation"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Suis la page pour mettre des mots sur ce que tu ressens.",
+   "bandeau": "ABONNE-TOI"
+  },
+  {
+   "type": "large",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "T'as tout fermé, t'as posé le tel sur la table de nuit."
+  },
+  {
+   "type": "toi",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "D'un coup, le silence revient et tu fixes le plafond sans aucune motivation."
+  },
+  {
+   "type": "large",
+   "humeur": "content",
+   "lumiere": "nuit",
+   "vo": "C'est normal : t'as donné ta soirée à quelque chose qui existe pas vraiment."
+  },
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "T'as eu un truc rapide, sans rien construire."
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Et là, tu captes qu'il s'est rien passé de vrai."
+  },
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "C'est ce décalage entre l'écran et la réalité de ta chambre qui crée ce vide."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Commente Tenir, et je t'envoie mon plan gratuit pour trente jours.",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "vo": "La prochaine fois, rappelle-toi de cette sensation fade avant de lancer la recherche."
+  }
+ ],
+ "question": "Tu fais quoi juste après avoir posé le tel en général ?"
+}
