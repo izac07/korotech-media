@@ -21,7 +21,10 @@ if "--br" in sys.argv:
     OUT = os.path.join(RAC, "ressources", "mentaldacier", "plan-30-jours-sans-la-br.pdf")
     TXT = {"tag": "@MENTALDACIER2030 · CARNET GRATUIT", "big": "30", "t1": "Jours sans la BR<br><span>le plan pour tenir</span>",
            "pied": "30 JOURS SANS LA BR", "engage": "je tiens<br>30 jours sans la BR, du <span class='ln' style='width:30mm'></span><br>au <span class='ln' style='width:30mm'></span>.",
-           "recu": "Partage ce carnet à un pote qui veut reprendre le contrôle avec toi."}
+           "recu": "Partage ce carnet à un pote qui veut reprendre le contrôle avec toi.", "tenir": True}
+# Page « Tenir » (version --br seulement) : ouverture du 16/11, offre fondateur réelle (50 places), liste d'attente ?src=pdf.
+# À réécrire après l'ouverture (le 16/11, la liste d'attente devient l'inscription).
+LIEN_TENIR = "https://tenirapp.com/?src=pdf"
 
 
 def r(s):
@@ -74,6 +77,7 @@ def page(c):
     cases = "".join(f"<div class='cs'><span>{d}</span></div>" for d in range(1, 31))
     lignes = "".join(f"<div class='li'><span>{d:02d}</span></div>" for d in range(1, 31))
     traits = "".join("<i></i>" for _ in range(30))
+    tenir = page_tenir() if TXT.get("tenir") else ""
     fonts = K._font_faces(["Anton", "Caveat", "Space Grotesk", "JetBrains Mono"])
     return f"""<!doctype html><html><head><meta charset='utf-8'><style>{fonts}
 @page{{size:A4;margin:0}}
@@ -156,6 +160,15 @@ ul.cr li:before{{content:counter(c);position:absolute;left:0;top:1.4mm;font:400 
 .ln{{display:inline-block;border-bottom:1.5px solid {ENCRE};height:5mm;vertical-align:bottom}}
 .fin{{margin-top:6mm;font-size:9.4pt}}
 .fin .m{{font:700 17pt Caveat;color:#a2741f}}
+/* page Tenir */
+.tn{{display:grid;grid-template-columns:44mm 44mm 1fr;gap:6mm;margin:5mm 0 7mm;align-items:start}}
+.tcap img{{display:block;width:100%;border:2px solid #2e2e33;border-radius:5mm}}
+.tcap span{{display:block;font:700 13pt/1.1 Caveat;color:{OR};margin-top:2mm;text-align:center}}
+.tl{{padding:3mm 0;border-bottom:1px solid #ece6da2e;font-size:10.5pt}}
+.tl b{{font:400 19pt/1 Anton;color:{OR};margin-right:1.5mm}}
+.tcta{{display:block;background:{OR};color:{ENCRE};padding:5mm 7mm;text-decoration:none}}
+.tu{{display:block;font:400 34pt/1 Anton;text-transform:uppercase;margin:1.5mm 0 2mm}}
+.td{{display:block;font-size:10.5pt}}
 </style></head><body>
 
 <div class='pg noir'><div class='cv'>
@@ -225,6 +238,7 @@ ul.cr li:before{{content:counter(c);position:absolute;left:0;top:1.4mm;font:400 
  <div class='pied'><span>{TXT['pied']}</span><span>@MENTALDACIER2030</span></div>
 </div>
 
+{tenir}
 <div class='pg'>
  <div class='chap'>06 · TA SÉRIE</div>
  <h2>Une croix <em>par soir</em></h2>
@@ -236,6 +250,36 @@ ul.cr li:before{{content:counter(c);position:absolute;left:0;top:1.4mm;font:400 
  <div class='pied'><span>{TXT['pied']}</span><span>@MENTALDACIER2030</span></div>
 </div>
 </body></html>"""
+
+
+def page_tenir():
+    """Page sombre : le carnet en version app, captures réelles de Tenir, lien cliquable vers la liste d'attente."""
+    import base64
+    cap = os.path.join(RAC, "ressources", "mentaldacier", "app-captures")
+    def img(n):
+        b = base64.b64encode(open(os.path.join(cap, n), "rb").read()).decode()
+        return f"<img src='data:image/png;base64,{b}'>"
+    return f"""<div class='pg noir'>
+ <div class='chap' style='color:{OR};opacity:1'>07 · TENIR, L'APP</div>
+ <h2>Ce carnet,<br><em>dans ta poche.</em></h2>
+ <div class='lead' style='color:#ece6da;max-width:170mm'>Le <b style='background:none;color:{OR}'>16 novembre</b>, j'ouvre <b style='background:none;color:{OR}'>Tenir</b> : l'app qui fait ce carnet avec toi, chaque jour. Ta mission du matin, ta série, tes heures à risque, et un bouton rouge pour les soirs où ça chauffe.</div>
+ <div class='tn'>
+  <div class='tcap'>{img("1_aujourdhui.png")}<span>ta mission du jour</span></div>
+  <div class='tcap'>{img("2_serie.png")}<span>ta série, tes heures à risque</span></div>
+  <div class='tinfo'>
+   <div class='tl'><span class='lab'>Membre fondateur</span><b>9,99 €/mois,</b> bloqué à vie</div>
+   <div class='tl'><span class='lab'>Offre fondateur</span><b>50</b> places, pas une de plus</div>
+   <div class='tl'><span class='lab'>Discrétion</span>Pas de pseudo, rien de public. Personne ne sait que tu l'utilises.</div>
+  </div>
+ </div>
+ <a class='tcta' href='{LIEN_TENIR}'>
+  <span class='lab' style='color:{ENCRE};opacity:.7'>Liste d'attente · 2 minutes, ton mail, c'est tout</span>
+  <span class='tu'>tenirapp.com</span>
+  <span class='td'>Le 16, tu reçois l'accès avant tout le monde, et le prix fondateur avant que les places partent.</span>
+ </a>
+ <div class='main' style='margin-top:4mm'>clique, ou tape l'adresse dans ton navigateur · 18 ans et plus</div>
+ <div class='pied'><span>{TXT['pied']}</span><span>@MENTALDACIER2030</span></div>
+</div>"""
 
 
 def build():
