@@ -1,0 +1,162 @@
+{
+ "id": "MDA-X318",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10268,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#2f4b57",
+  "sol": "#1b2a31",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fb8de",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fb8de",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#1b2a31"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "vo": "T'as tenu une semaine sans te masturber et tu veux fêter ça.",
+   "bandeau": "Te m*sturber pour te récompenser ?"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Abonne-toi pour éviter les pires pièges quand tu commences à réussir.",
+   "bandeau": "ABONNE-TOI"
+  },
+  {
+   "type": "large",
+   "humeur": "content",
+   "lumiere": "nuit",
+   "vo": "Moi : Sept jours nickel, je mérite bien une petite récompense ce soir.",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "Sept jours nickel, je mérite bien une petite récompense ce soir."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "Ton grand frère : Te récompenser d'avoir arrêté un truc en le refaisant ?",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "Sept jours nickel, je mérite bien une petite récompense ce soir."
+     ],
+     [
+      "TON GRAND FRÈRE ",
+      "Te récompenser d'avoir arrêté un truc en le refaisant ?"
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "nuit",
+   "vo": "Moi : C'est juste pour relâcher la pression, j'ai prouvé que je contrôlais.",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "C'est juste pour relâcher la pression, j'ai prouvé que je contrôlais."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Ton pote qui a arrêté : C'est l'excuse classique pour te rassurer avant de craquer.",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "C'est juste pour relâcher la pression, j'ai prouvé que je contrôlais."
+     ],
+     [
+      "TON POTE QUI A ARRÊTÉ ",
+      "C'est l'excuse classique pour te rassurer avant de craquer."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "vo": "Moi : Mais si je craque pas là, je vais être tendu tout le week-end.",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "Mais si je craque pas là, je vais être tendu tout le week-end."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Ton toi dans un mois : T'es pas tendu, t'as juste une soirée libre à remplir autrement.",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "Mais si je craque pas là, je vais être tendu tout le week-end."
+     ],
+     [
+      "TON TOI DANS UN MOIS ",
+      "T'es pas tendu, t'as juste une soirée libre à remplir autrement."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Trouve une vraie récompense, va manger un bon truc ou lance un jeu."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Commente Tenir, et je t'envoie mon plan gratuit pour trente jours.",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "large",
+   "humeur": "content",
+   "lumiere": "nuit",
+   "vo": "Ne détruis pas tes fondations au moment où elles deviennent solides."
+  }
+ ],
+ "question": "C'est quoi ta vraie récompense quand tu passes une bonne semaine ?"
+}
