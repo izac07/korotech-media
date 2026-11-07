@@ -1,0 +1,100 @@
+{
+ "id": "MDA-X295",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10245,
+ "handle": "mentaldacier2030",
+ "question": "Tu croyais que c'était ta volonté ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5a4836",
+  "sol": "#2e261e",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e3a13b",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e3a13b",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2e261e"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "bandeau": "TA VOLONTÉ",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Tu te dis que t'as zéro volonté. C'est faux.",
+   "sous_bandeau": "reprendre le contrôle"
+  },
+  {
+   "type": "toi",
+   "bandeau": "LE VRAI PROBLÈME",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Le problème, c'est ton terrain. Trois choses à changer, dès ce soir."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Si tu veux la suite, abonne-toi. Le troisième point, c'est celui qui change tout."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · LE TEL DORT AILLEURS",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Un : le tel dort hors de la chambre. Pas d'écran au lit, pas de décision à minuit."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · LE FIL PROPRE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : nettoie ton fil. Chaque compte limite, tu le vires. Ton fil arrête de te piéger.",
+   "ecran": {
+    "type": "liste",
+    "titre": "TON TERRAIN",
+    "lignes": [
+     "Tel hors de la chambre",
+     "Fil nettoyé",
+     "Soirée prévue"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE TENIR",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans la BR.",
+   "carte": [
+    "Commente TENIR",
+    "ton plan pour tenir, offert"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · LA SOIRÉE PRÉVUE",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : prévois ta soirée avant dix-huit heures. La volonté lâche le soir, le plan, lui, il tient."
+  },
+  {
+   "type": "large",
+   "bandeau": "LE 16 NOVEMBRE",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Et le seize novembre, j'ouvre Tenir : l'app pour reprendre le contrôle, jour par jour. Le lien est en bio."
+  }
+ ]
+}
