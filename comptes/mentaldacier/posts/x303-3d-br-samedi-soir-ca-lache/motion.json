@@ -1,0 +1,100 @@
+{
+ "id": "MDA-X303",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10253,
+ "handle": "mentaldacier2030",
+ "question": "Ton plan pour ce soir ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#4b3a47",
+  "sol": "#291f27",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#ece8e0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#ece8e0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#291f27"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "bandeau": "SAMEDI SOIR",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "vo": "Le samedi soir, c'est là que ça lâche.",
+   "sous_bandeau": "reprendre le contrôle"
+  },
+  {
+   "type": "toi",
+   "bandeau": "POURQUOI CE SOIR",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Trois raisons, et la parade pour chacune."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Si tu veux la suite, abonne-toi. Le troisième point, c'est celui qui change tout."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · PAS DE RÉVEIL",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Un : pas de réveil demain, alors tu traînes. Fixe-toi une heure de coucher, même le samedi."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · LES AUTRES SORTENT",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : les autres sortent, et toi t'es seul. Sors aussi, ou appelle quelqu'un. Seul et sans plan, c'est le piège.",
+   "ecran": {
+    "type": "liste",
+    "titre": "SAMEDI SOIR",
+    "lignes": [
+     "Pas de réveil",
+     "Les autres sortent",
+     "« J'ai le droit »"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE TENIR",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans la BR.",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · « J'AI LE DROIT »",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : « c'est le week-end, j'ai le droit ». Le droit, c'est de choisir. Et ce soir, tu choisis de tenir."
+  },
+  {
+   "type": "large",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Abonne-toi : chaque jour, un piège et comment l'éviter."
+  }
+ ]
+}
