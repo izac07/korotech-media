@@ -1,0 +1,99 @@
+{
+ "id": "MDA-X300",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10250,
+ "handle": "mentaldacier2030",
+ "question": "Tu te reconnais dans lequel ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3b4352",
+  "sol": "#262a33",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e07b5a",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e07b5a",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#262a33"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "TES SOIRÉES",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "vo": "Ta soirée, c'est vraiment toi qui la décides ? Vérifie."
+  },
+  {
+   "type": "toi",
+   "bandeau": "TROIS SIGNES",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Trois signes que c'est plus toi qui décides."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Enregistre cette vidéo pour ce soir, et abonne-toi."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · TU REPOUSSES",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Un : tu repousses l'heure de dormir. Tu traînes, en attendant que tout le monde dorme."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · TU T'ISOLES",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : tu dis non aux potes pour rester seul dans ta chambre. Sans vraie raison, juste pour être tranquille.",
+   "ecran": {
+    "type": "liste",
+    "titre": "LES SIGNES",
+    "lignes": [
+     "Tu repousses le coucher",
+     "Tu t'isoles",
+     "Tu te promets demain"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE TENIR",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans la BR.",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · « DEMAIN »",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : chaque soir, tu te promets « demain, j'arrête ». Si tu te reconnais, c'est le moment de reprendre la main."
+  },
+  {
+   "type": "large",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Si ça t'a parlé, abonne-toi. Demain, on continue."
+  }
+ ]
+}
