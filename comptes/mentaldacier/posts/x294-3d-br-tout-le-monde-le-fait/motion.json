@@ -1,0 +1,106 @@
+{
+ "id": "MDA-X294",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10244,
+ "handle": "mentaldacier2030",
+ "question": "Normal ou pas, t'en penses quoi ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3b4352",
+  "sol": "#262a33",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e0b45e",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e0b45e",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#262a33"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "« TOUT LE MONDE »",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "camera": "dessus",
+   "vo": "« Tout le monde le fait, c'est normal. » Pas si simple."
+  },
+  {
+   "type": "toi",
+   "bandeau": "LA VRAIE QUESTION",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "La vraie question, c'est pas ça. Trois choses à te demander."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Abonne-toi, y'a une vidéo chaque jour là-dessus. Et reste jusqu'au troisième point, c'est le plus fort."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · QUI DÉCIDE",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "vo": "Un : qui décide ? Toi, ou la fatigue et le tel dans ta main ?"
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · TA PROMESSE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : tu t'étais promis quoi ? Si tu t'es déjà dit « ce soir, non », c'est que t'avais déjà ta réponse.",
+   "ecran": {
+    "type": "liste",
+    "titre": "LES 3 QUESTIONS",
+    "lignes": [
+     "Qui décide ?",
+     "Tu t'étais promis quoi ?",
+     "Tu te sens comment après ?"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE TENIR",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "camera": "porte",
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans la BR.",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · JUSTE APRÈS",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Trois, le plus important : comment tu te sens, juste après ? C'est ça qui compte, pas ce que font les autres."
+  },
+  {
+   "type": "large",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "orbite",
+   "vo": "Demain, une autre vidéo pour reprendre le contrôle. Abonne-toi pour pas la rater."
+  }
+ ]
+}
