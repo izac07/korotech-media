@@ -1,0 +1,111 @@
+{
+ "id": "MDA-X323",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10273,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5e5850",
+  "sol": "#2f2c28",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#ece8e0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#ece8e0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2f2c28"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "Cinq habitudes dix sur dix pour tenir sans masturbation au quotidien.",
+   "camera": "contre",
+   "bandeau": "5 habitudes 10/10 sans m*sturbation"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Abonne-toi pour valider tous ces niveaux avec nous.",
+   "camera": "profil",
+   "bandeau": "ABONNE-TOI"
+  },
+  {
+   "type": "large",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Niveau un : laisser ton chargeur dans le salon avant d'aller te coucher.",
+   "camera": "orbite",
+   "bandeau": "NIVEAU 1"
+  },
+  {
+   "type": "toi",
+   "humeur": "triste",
+   "lumiere": "aube",
+   "vo": "Niveau deux : utiliser un réveil classique pour ne jamais toucher le tel le matin.",
+   "camera": "serre",
+   "bandeau": "NIVEAU 2"
+  },
+  {
+   "type": "large",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Niveau trois : préparer tes affaires le soir pour être direct dans l'action au réveil.",
+   "camera": "dessus",
+   "bandeau": "NIVEAU 3"
+  },
+  {
+   "type": "toi",
+   "humeur": "content",
+   "lumiere": "nuit",
+   "vo": "Niveau quatre : sortir marcher dix minutes sans écran dès que t'as un coup de mou.",
+   "camera": "porte",
+   "bandeau": "NIVEAU 4"
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "Niveau cinq, le boss final : accepter de t'ennuyer le soir sans chercher la facilité.",
+   "camera": "contre",
+   "bandeau": "NIVEAU 5 · BOSS FINAL"
+  },
+  {
+   "type": "toi",
+   "humeur": "sport",
+   "lumiere": "nuit",
+   "vo": "Chaque habitude est un palier à franchir.",
+   "camera": "profil"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Commente Tenir, et je t'envoie mon plan gratuit pour trente jours.",
+   "camera": "porte",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "vo": "Cumule-les pour te construire un quotidien où craquer devient de plus en plus compliqué.",
+   "camera": "serre"
+  }
+ ],
+ "question": "Quel niveau te semble le plus difficile à passer dans cette liste ?"
+}

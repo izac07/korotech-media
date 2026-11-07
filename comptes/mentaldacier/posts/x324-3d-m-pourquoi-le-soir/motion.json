@@ -1,0 +1,96 @@
+{
+ "id": "MDA-X324",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10274,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#2f4b57",
+  "sol": "#1b2a31",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fd1b0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fd1b0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#1b2a31"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "Mental d'Acier 3 : pourquoi les mecs se masturbent le soir, pas le matin.",
+   "bandeau": "M*sturbation : pourquoi le soir ?"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Rejoins l'équipe pour comprendre comment tu fonctionnes vraiment au quotidien.",
+   "bandeau": "ABONNE-TOI"
+  },
+  {
+   "type": "large",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Le matin, t'as un but, t'es dans l'action, tu dois te lever pour assurer."
+  },
+  {
+   "type": "toi",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Ton esprit est occupé par ta journée, t'as même pas le temps d'y penser."
+  },
+  {
+   "type": "large",
+   "humeur": "content",
+   "lumiere": "nuit",
+   "vo": "Mais le soir, vers vingt-trois heures, le silence s'installe et la fatigue tombe d'un coup."
+  },
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "T'es seul dans le noir, tu as passé ta journée à faire des efforts."
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Ton tel est juste là, à portée de main, comme une solution de facilité."
+  },
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "C'est pas une fatalité, c'est juste de l'ennui mélangé à un gros coup de mou."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Commente Tenir, et je t'envoie mon plan gratuit pour trente jours.",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "vo": "Coupe ce moment flottant en instaurant une vraie routine avant d'aller au lit."
+  }
+ ],
+ "question": "T'es plus vulnérable à quelle heure de la journée ?"
+}
