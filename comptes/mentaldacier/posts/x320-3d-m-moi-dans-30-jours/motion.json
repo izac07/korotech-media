@@ -1,0 +1,66 @@
+{
+ "id": "MDA-X320",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10270,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5a4836",
+  "sol": "#2e261e",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e07b5a",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e07b5a",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2e261e"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Moi aujourd'hui, et moi dans trente jours sans masturbation."
+  },
+  {
+   "type": "toi",
+   "humeur": "travail",
+   "lumiere": "aube",
+   "vo": "Aujourd'hui : couché à deux heures, le tel à la main."
+  },
+  {
+   "type": "toi",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Dans trente jours : couché à l'heure, le tel dans le salon."
+  },
+  {
+   "type": "large",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Aujourd'hui : « je commence lundi »."
+  },
+  {
+   "type": "toi",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Dans trente jours : « j'ai commencé un dimanche »."
+  },
+  {
+   "type": "large",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Tague le pote qui commence avec toi."
+  }
+ ],
+ "meme": "MOI VS MOI DANS 30 JOURS SANS M*STURBATION"
+}

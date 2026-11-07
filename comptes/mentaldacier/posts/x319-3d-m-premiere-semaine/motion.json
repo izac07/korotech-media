@@ -1,0 +1,110 @@
+{
+ "id": "MDA-X319",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10269,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3b4352",
+  "sol": "#262a33",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fb8de",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fb8de",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#262a33"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "vo": "Réussis ta première semaine sans masturbation grâce à ces quatre étapes.",
+   "camera": "dessus",
+   "bandeau": "1re semaine sans m*sturbation"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Rejoins l'équipe si tu veux passer ce fameux cap des sept jours.",
+   "camera": "serre",
+   "bandeau": "ABONNE-TOI"
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Étape 1 : Planifie toutes tes soirées pour ne laisser aucune place au vide.",
+   "camera": "dessus",
+   "bandeau": "ÉTAPE 1"
+  },
+  {
+   "type": "toi",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Étape 2 : Préviens un pote de confiance pour qu'il prenne de tes nouvelles.",
+   "camera": "porte",
+   "bandeau": "ÉTAPE 2"
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Étape 3 : Arrête de compter les jours et concentre-toi juste sur le jour présent.",
+   "camera": "contre",
+   "bandeau": "ÉTAPE 3"
+  },
+  {
+   "type": "toi",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Étape 4, la plus décisive : accepte que le troisième soir soit souvent compliqué.",
+   "camera": "profil",
+   "bandeau": "ÉTAPE 4"
+  },
+  {
+   "type": "large",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "vo": "Au début, l'habitude va frapper à la porte très fort vers vingt-trois heures.",
+   "camera": "orbite"
+  },
+  {
+   "type": "toi",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Sois prêt pour ce moment, prévois un bon film ou sors marcher un peu.",
+   "camera": "serre"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Commente Tenir, et je t'envoie mon plan gratuit pour trente jours.",
+   "camera": "porte",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Une fois le cap du week-end passé, tu vas te sentir beaucoup plus léger.",
+   "camera": "porte"
+  }
+ ],
+ "question": "C'est quel jour qui te fait le plus peur dans la première semaine ?"
+}
