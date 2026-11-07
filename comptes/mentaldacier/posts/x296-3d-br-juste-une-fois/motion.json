@@ -1,0 +1,99 @@
+{
+ "id": "MDA-X296",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10246,
+ "handle": "mentaldacier2030",
+ "question": "Tu te l'es déjà dite, celle-là ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3f4b40",
+  "sol": "#232a24",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#ece8e0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#ece8e0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#232a24"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "JUSTE UNE FOIS",
+   "humeur": "triste",
+   "lumiere": "aube",
+   "vo": "« Juste une fois, ça compte pas. » Tu la connais, celle-là."
+  },
+  {
+   "type": "toi",
+   "bandeau": "ELLE TE MENT",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Cette phrase te ment trois fois. Voilà comment."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Enregistre cette vidéo pour ce soir, et abonne-toi."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · JAMAIS UNE FOIS",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Un : c'est jamais une fois. Une fois, ça rouvre la porte, et le lendemain elle est déjà ouverte."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · C'EST L'HABITUDE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : c'est pas toi qui parles, c'est l'habitude. Elle négocie, comme un vendeur qui veut juste te revoir.",
+   "ecran": {
+    "type": "liste",
+    "titre": "« JUSTE UNE FOIS »",
+    "lignes": [
+     "C'est l'habitude qui parle",
+     "Pas toi",
+     "Ta réponse : pas maintenant"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE TENIR",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans la BR.",
+   "carte": [
+    "Commente TENIR",
+    "le PDF des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · TA RÉPONSE",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : prépare ta réponse. « Pas maintenant. » Deux mots, tu te lèves, tu changes de pièce."
+  },
+  {
+   "type": "large",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Si ça t'a parlé, abonne-toi. Demain, on continue."
+  }
+ ]
+}
