@@ -1,0 +1,100 @@
+{
+ "id": "MDA-X299",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10249,
+ "handle": "mentaldacier2030",
+ "question": "Ton tel dort où, cette nuit ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#2f4b57",
+  "sol": "#1b2a31",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e07b5a",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e07b5a",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#1b2a31"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "bandeau": "AU LIT",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "T'es au lit, lumière éteinte, et le tel est encore allumé.",
+   "sous_bandeau": "reprendre le contrôle"
+  },
+  {
+   "type": "toi",
+   "bandeau": "LE VRAI DÉPART",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "C'est là que tout commence. Trois règles pour couper ça."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Si tu veux la suite, abonne-toi. Le troisième point, c'est celui qui change tout."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · IL CHARGE AILLEURS",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Un : le tel charge dans une autre pièce. Un réveil à quelques euros, et c'est réglé."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · LA DERNIÈRE DEMI-HEURE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : trente minutes sans écran avant de dormir. Douche, demain préparé, un livre.",
+   "ecran": {
+    "type": "liste",
+    "titre": "AVANT DE DORMIR",
+    "lignes": [
+     "Tel au salon",
+     "Trente minutes sans écran",
+     "Toujours le même ordre"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE TENIR",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans la BR.",
+   "carte": [
+    "Commente TENIR",
+    "le PDF des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · PAS D'EXCEPTION",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : pas d'exception. « Juste pour regarder l'heure », c'est comme ça que tout recommence."
+  },
+  {
+   "type": "large",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Abonne-toi : chaque jour, un piège et comment l'éviter."
+  }
+ ]
+}
