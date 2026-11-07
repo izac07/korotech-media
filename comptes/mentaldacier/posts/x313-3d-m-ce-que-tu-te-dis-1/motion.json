@@ -1,0 +1,162 @@
+{
+ "id": "MDA-X313",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10263,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3b4352",
+  "sol": "#262a33",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e07b5a",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e07b5a",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#262a33"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "vo": "Partie 1 : ce que tu te dis après t'être masturbé.",
+   "bandeau": "Après t'être m*sturbé (1)"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Garde cette vidéo pour demain et abonne-toi direct pour ne rien rater.",
+   "bandeau": "ABONNE-TOI"
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Tu te dis : J'y arriverai jamais, je suis juste nul.",
+   "panneau": {
+    "lignes": [
+     [
+      "TU TE DIS",
+      "J'y arriverai jamais, je suis juste nul."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "vo": "Remplace par : J'ai trébuché, mais je sais exactement pourquoi et je ferai mieux ce soir.",
+   "panneau": {
+    "lignes": [
+     [
+      "TU TE DIS",
+      "J'y arriverai jamais, je suis juste nul."
+     ],
+     [
+      "REMPLACE PAR",
+      "J'ai trébuché, mais je sais exactement pourquoi et je ferai mieux ce soir."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Tu te dis : J'ai gâché toute ma semaine d'efforts.",
+   "panneau": {
+    "lignes": [
+     [
+      "TU TE DIS",
+      "J'ai gâché toute ma semaine d'efforts."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Remplace par : Mes jours réussis sont toujours là, c'est de l'expérience gagnée.",
+   "panneau": {
+    "lignes": [
+     [
+      "TU TE DIS",
+      "J'ai gâché toute ma semaine d'efforts."
+     ],
+     [
+      "REMPLACE PAR",
+      "Mes jours réussis sont toujours là, c'est de l'expérience gagnée."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Tu te dis : Foutu pour foutu, autant continuer dans la facilité.",
+   "panneau": {
+    "lignes": [
+     [
+      "TU TE DIS",
+      "Foutu pour foutu, autant continuer dans la facilité."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "content",
+   "lumiere": "nuit",
+   "vo": "Remplace par : Le plus dur c'est de s'arrêter maintenant, et c'est ce que je fais.",
+   "panneau": {
+    "lignes": [
+     [
+      "TU TE DIS",
+      "Foutu pour foutu, autant continuer dans la facilité."
+     ],
+     [
+      "REMPLACE PAR",
+      "Le plus dur c'est de s'arrêter maintenant, et c'est ce que je fais."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Le dialogue dans ta tête change absolument tout."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Commente Tenir, et je t'envoie mon plan gratuit pour trente jours.",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Dans la partie deux, on verra quoi se dire quand l'envie monte fort."
+  }
+ ],
+ "question": "C'est quoi la pire phrase que tu te dis après avoir craqué ?"
+}

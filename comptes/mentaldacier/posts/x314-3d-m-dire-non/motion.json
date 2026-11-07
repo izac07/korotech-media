@@ -1,0 +1,114 @@
+{
+ "id": "MDA-X314",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10264,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5a4836",
+  "sol": "#2e261e",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e0b45e",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e0b45e",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2e261e"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "Tu dis non à tous, sauf à l'envie de te masturber.",
+   "panneau": {
+    "lignes": [
+     [
+      "TON POTE, TON COLLÈGUE",
+      "Non."
+     ],
+     [
+      "L'ENVIE DE TE M*STURBER",
+      "Oui, direct."
+     ]
+    ],
+    "vs": "MAIS"
+   }
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Suis le compte, on va régler ça calmement.",
+   "bandeau": "ABONNE-TOI"
+  },
+  {
+   "type": "large",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Ton pote veut sortir à vingt-trois heures ? Non, t'es crevé."
+  },
+  {
+   "type": "toi",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "vo": "Ton collègue te demande un service à dix-huit heures ? Non, t'as fini ta journée."
+  },
+  {
+   "type": "large",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Mais à minuit, quand l'envie arrive, tu dis oui sans même réfléchir."
+  },
+  {
+   "type": "toi",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Pourquoi ? Ton pote, tu le vois en face. L'envie, elle se déguise en idée à toi."
+  },
+  {
+   "type": "large",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Elle parle avec ta voix : « t'as bien le droit », « juste ce soir »."
+  },
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Le jour où tu l'entends comme une demande qui vient de dehors, tout change."
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "nuit",
+   "vo": "Tu peux lui répondre comme à n'importe qui : « non, pas ce soir »."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Commente Tenir, et je t'envoie mon plan gratuit pour trente jours.",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "large",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "T'as déjà le muscle du non. Utilise-le là où ça compte."
+  }
+ ],
+ "question": "C'est quoi la phrase que l'envie te dit le plus souvent ?"
+}
