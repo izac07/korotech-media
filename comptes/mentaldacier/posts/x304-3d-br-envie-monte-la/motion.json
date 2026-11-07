@@ -1,0 +1,99 @@
+{
+ "id": "MDA-X304",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10254,
+ "handle": "mentaldacier2030",
+ "question": "Ça t'arrive à quelle heure, toi ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5e5850",
+  "sol": "#2f2c28",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fd1b0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fd1b0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2f2c28"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "LÀ, MAINTENANT",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "vo": "L'envie monte, là, maintenant ? Regarde jusqu'au bout."
+  },
+  {
+   "type": "toi",
+   "bandeau": "DIX SECONDES",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "T'as dix secondes. Trois gestes, dans l'ordre."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Enregistre cette vidéo pour ce soir, et abonne-toi."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · DEBOUT",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Un : tu te lèves, tout de suite, même si t'as pas envie. Allongé, tu négocies. Debout, tu décides."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · CHANGE DE PIÈCE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : tu sors de la pièce. Cuisine, salon, dehors. Et le tel reste où il est, loin de toi.",
+   "ecran": {
+    "type": "liste",
+    "titre": "LÀ, MAINTENANT",
+    "lignes": [
+     "Debout",
+     "Change de pièce",
+     "Le tel reste là"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE TENIR",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans la BR.",
+   "carte": [
+    "Commente TENIR",
+    "ton plan pour tenir, offert"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · PAS MAINTENANT",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : tu te dis « pas maintenant », pas « jamais ». Dans quinze minutes, la vague est souvent passée."
+  },
+  {
+   "type": "large",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Si ça t'a parlé, abonne-toi. Demain, on continue."
+  }
+ ]
+}
