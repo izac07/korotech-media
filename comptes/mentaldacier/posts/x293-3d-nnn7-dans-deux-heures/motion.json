@@ -1,0 +1,100 @@
+{
+ "id": "MDA-X293",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10243,
+ "handle": "mentaldacier2030",
+ "question": "Le soir le plus dur cette semaine ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#2f4b57",
+  "sol": "#1b2a31",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#ece8e0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#ece8e0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#1b2a31"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "DANS 2 HEURES",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "vo": "Dans deux heures, t'as ta première semaine.",
+   "sous_bandeau": "jour 7 sur 30, samedi"
+  },
+  {
+   "type": "toi",
+   "bandeau": "MAINTENANT",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Pose le tel au salon maintenant, pas à minuit. Trois choses d'ici là."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "On tient le mois ensemble, une vidéo par jour, abonne-toi. Le dernier point, garde-le pour ce soir."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · LE TEL",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Un : le tel au salon maintenant. À vingt-deux heures, c'est encore toi qui décides. À minuit, c'est plus toi."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · LUMIÈRE BASSE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : lumière basse, et la dernière soirée de ta semaine, tu la finis proprement.",
+   "ecran": {
+    "type": "liste",
+    "titre": "D'ICI MINUIT",
+    "lignes": [
+     "Tel au salon",
+     "Lumière basse",
+     "Au lit avant minuit"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "carte": [
+    "Commente NNN",
+    "le PDF des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · DEMAIN MATIN",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : au lit avant minuit. Demain matin, ta septième croix. Ça, personne te le reprend."
+  },
+  {
+   "type": "large",
+   "bandeau": "DEMAIN",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Demain, dimanche, le réveil le plus dangereux de la semaine. Suis le compte, la vidéo sort tôt."
+  }
+ ]
+}
