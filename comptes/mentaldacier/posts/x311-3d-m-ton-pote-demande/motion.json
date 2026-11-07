@@ -1,0 +1,154 @@
+{
+ "id": "MDA-X311",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10261,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5e5850",
+  "sol": "#2f2c28",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fb8de",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fb8de",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2f2c28"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "Ton pote te demande pourquoi t'as décidé d'arrêter la masturbation.",
+   "camera": "contre",
+   "bandeau": "Pourquoi arrêter la m*sturbation ?"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Suis la page si tu veux des arguments solides pour toi-même.",
+   "camera": "profil",
+   "bandeau": "ABONNE-TOI"
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Lui : Sérieux, tu te prends la tête pour rien, tout le monde fait ça.",
+   "camera": "orbite",
+   "panneau": {
+    "lignes": [
+     [
+      "LUI",
+      "Sérieux, tu te prends la tête pour rien, tout le monde fait ça."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Moi : Peut-être, mais j'en ai marre de perdre mes soirées devant un écran.",
+   "camera": "serre",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "Peut-être, mais j'en ai marre de perdre mes soirées devant un écran."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Lui : C'est juste cinq minutes pour décompresser, c'est pas bien méchant.",
+   "camera": "dessus",
+   "panneau": {
+    "lignes": [
+     [
+      "LUI",
+      "C'est juste cinq minutes pour décompresser, c'est pas bien méchant."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Moi : Cinq minutes qui se transforment souvent en une heure de scroll dans le vide.",
+   "camera": "porte",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "Cinq minutes qui se transforment souvent en une heure de scroll dans le vide."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "vo": "Lui : Tu penses vraiment que ça va changer un truc dans ta vie ?",
+   "camera": "contre",
+   "panneau": {
+    "lignes": [
+     [
+      "LUI",
+      "Tu penses vraiment que ça va changer un truc dans ta vie ?"
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Moi : J'ai déjà remarqué que je suis plus présent et confiant quand je gère.",
+   "camera": "profil",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "J'ai déjà remarqué que je suis plus présent et confiant quand je gère."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Commente Tenir, et je t'envoie mon plan gratuit pour trente jours.",
+   "camera": "porte",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Assume ton choix calmement, c'est ta vie et c'est toi qui fixes les règles.",
+   "camera": "serre"
+  }
+ ],
+ "question": "T'en as déjà parlé ouvertement avec un de tes potes ?"
+}
