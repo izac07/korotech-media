@@ -1,0 +1,162 @@
+{
+ "id": "MDA-X330",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10280,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#2f4b57",
+  "sol": "#1b2a31",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#ece8e0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#ece8e0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#1b2a31"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "vo": "Il est vingt-trois heures, l'envie de te masturber monte et tu doutes.",
+   "bandeau": "23h, l'envie de te m*sturber"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Rejoins-nous vite pour te forger un mental d'acier tous les soirs.",
+   "bandeau": "ABONNE-TOI"
+  },
+  {
+   "type": "large",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Moi : Le week-end est fini, j'ai juste envie de me vider la tête.",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "Le week-end est fini, j'ai juste envie de me vider la tête."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "vo": "Ton grand frère : Je sais, mais tu sais très bien comment tu te sentiras après.",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "Le week-end est fini, j'ai juste envie de me vider la tête."
+     ],
+     [
+      "TON GRAND FRÈRE ",
+      "Je sais, mais tu sais très bien comment tu te sentiras après."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Moi : Juste une fois, ça m'aidera à trouver le sommeil plus vite.",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "Juste une fois, ça m'aidera à trouver le sommeil plus vite."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Ton pote : C'est faux, tu vas scroller pendant une heure et te coucher encore plus tard.",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "Juste une fois, ça m'aidera à trouver le sommeil plus vite."
+     ],
+     [
+      "TON POTE ",
+      "C'est faux, tu vas scroller pendant une heure et te coucher encore plus tard."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Moi : Mais je fais quoi de cette envie qui tape dans ma tête là ?",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "Mais je fais quoi de cette envie qui tape dans ma tête là ?"
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Ton toi du futur : Lève-toi, bois un grand verre d'eau et change de pièce.",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "Mais je fais quoi de cette envie qui tape dans ma tête là ?"
+     ],
+     [
+      "TON TOI DU FUTUR ",
+      "Lève-toi, bois un grand verre d'eau et change de pièce."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "nuit",
+   "vo": "Change de décor, et le scénario habituel peut plus se dérouler."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Commente Tenir, et je t'envoie mon plan gratuit pour trente jours.",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "large",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Demain matin, tu seras tellement fier d'avoir tenu le coup."
+  }
+ ],
+ "question": "T'es plutôt du genre à craquer le week-end ou la semaine ?"
+}

@@ -1,0 +1,162 @@
+{
+ "id": "MDA-X329",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10279,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5e5850",
+  "sol": "#2f2c28",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e3a13b",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e3a13b",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2f2c28"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "vo": "Toi au jour un sans masturbation, face à toi après un mois.",
+   "bandeau": "Un mois sans m*sturbation"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Abonne-toi pour atteindre cet objectif précis avec nous.",
+   "bandeau": "ABONNE-TOI"
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Moi au jour un : J'ai tenu vingt-quatre heures, ça me paraît vraiment interminable ce soir.",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI AU JOUR UN",
+      "J'ai tenu vingt-quatre heures, ça me paraît vraiment interminable ce soir."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "vo": "Moi à un mois : Je te jure que le temps finit par repasser à une vitesse normale.",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI AU JOUR UN",
+      "J'ai tenu vingt-quatre heures, ça me paraît vraiment interminable ce soir."
+     ],
+     [
+      "MOI À UN MOIS",
+      "Je te jure que le temps finit par repasser à une vitesse normale."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Moi au jour un : Et mes soirées, elles ressemblent à quoi sans regarder un écran ?",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI AU JOUR UN",
+      "Et mes soirées, elles ressemblent à quoi sans regarder un écran ?"
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Moi à un mois : Tu as enfin le temps de faire les trucs que tu repoussais.",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI AU JOUR UN",
+      "Et mes soirées, elles ressemblent à quoi sans regarder un écran ?"
+     ],
+     [
+      "MOI À UN MOIS",
+      "Tu as enfin le temps de faire les trucs que tu repoussais."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Moi au jour un : Je me sens vraiment différent ou c'est juste un mythe d'internet ?",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI AU JOUR UN",
+      "Je me sens vraiment différent ou c'est juste un mythe d'internet ?"
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "content",
+   "lumiere": "nuit",
+   "vo": "Moi à un mois : Tu t'assumes beaucoup plus et t'as un regard plus franc.",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI AU JOUR UN",
+      "Je me sens vraiment différent ou c'est juste un mythe d'internet ?"
+     ],
+     [
+      "MOI À UN MOIS",
+      "Tu t'assumes beaucoup plus et t'as un regard plus franc."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "L'effort du début finit par payer."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Commente Tenir, et je t'envoie mon plan gratuit pour trente jours.",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Reste solide, ça devient très vite une vraie habitude de vie."
+  }
+ ],
+ "question": "T'as déjà tenu un mois entier sans craquer ?"
+}
