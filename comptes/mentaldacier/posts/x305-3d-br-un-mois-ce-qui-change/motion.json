@@ -1,0 +1,99 @@
+{
+ "id": "MDA-X305",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10255,
+ "handle": "mentaldacier2030",
+ "question": "Tu tiendrais un mois ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#2f4b57",
+  "sol": "#1b2a31",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fb8de",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fb8de",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#1b2a31"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "bandeau": "UN MOIS",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "vo": "Imagine-toi dans un mois, sans la BR. Voilà ce qui change."
+  },
+  {
+   "type": "large",
+   "bandeau": "CE QUI CHANGE",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Trois choses. Rien de magique, que du concret."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Abonne-toi, une vidéo par jour pour reprendre le contrôle. Le dernier point, garde-le pour ce soir."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · TES SOIRÉES",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Un : tes soirées ont une autre forme. Le tel au salon, une routine, et c'est devenu normal."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · TA PAROLE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : tu sais que tu peux tenir une promesse faite à toi-même. Trente fois de suite.",
+   "ecran": {
+    "type": "liste",
+    "titre": "UN MOIS =",
+    "lignes": [
+     "Des soirées à toi",
+     "Une parole tenue",
+     "Des règles qui restent"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE TENIR",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans la BR.",
+   "carte": [
+    "Commente TENIR",
+    "le PDF des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · TES RÈGLES",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : t'as trois règles qui restent. Elles te protègent même les soirs où t'as plus envie de te battre."
+  },
+  {
+   "type": "large",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Envoie ça à un pote qui en a besoin, et abonne-toi."
+  }
+ ]
+}
