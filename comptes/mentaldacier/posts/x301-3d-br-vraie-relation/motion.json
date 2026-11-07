@@ -1,0 +1,99 @@
+{
+ "id": "MDA-X301",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10251,
+ "handle": "mentaldacier2030",
+ "question": "Tu sors ou tu scrolles, ce soir ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5a4836",
+  "sol": "#2e261e",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e0b45e",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e0b45e",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2e261e"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "bandeau": "UNE VRAIE RELATION",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "Tu veux une vraie relation, mais tes soirées sont sur ton tel."
+  },
+  {
+   "type": "large",
+   "bandeau": "COMMENCE PAR TOI",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Commence par tes soirées. Trois raisons."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Abonne-toi, une vidéo par jour pour reprendre le contrôle. Le dernier point, garde-le pour ce soir."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · LE TEMPS",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Un : le temps. Les soirées que tu passes seul au lit, c'est celles où tu pourrais sortir, voir du monde, rencontrer quelqu'un."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · TON REGARD",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : ton regard. Quand t'as rien à te cacher, tu regardes les gens en face, et ça se voit.",
+   "ecran": {
+    "type": "liste",
+    "titre": "UNE VRAIE RELATION",
+    "lignes": [
+     "Du temps pour sortir",
+     "Un regard franc",
+     "Le respect de toi"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE TENIR",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans la BR.",
+   "carte": [
+    "Commente TENIR",
+    "ton plan pour tenir, offert"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · LE RESPECT",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : le respect. Tenir les promesses que tu te fais, c'est la base pour être quelqu'un sur qui on peut compter."
+  },
+  {
+   "type": "large",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Envoie ça à un pote qui en a besoin, et abonne-toi."
+  }
+ ]
+}
