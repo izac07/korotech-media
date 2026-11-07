@@ -1,0 +1,72 @@
+{
+ "id": "MDA-X315",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10265,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3f4b40",
+  "sol": "#232a24",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e3a13b",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e3a13b",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#232a24"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "triste",
+   "lumiere": "aube",
+   "vo": "Moi et mon pote, si on arrêtait la masturbation pour de vrai.",
+   "camera": "serre"
+  },
+  {
+   "type": "large",
+   "humeur": "travail",
+   "lumiere": "aube",
+   "vo": "Nos soirées, on les passerait à construire un truc.",
+   "camera": "porte"
+  },
+  {
+   "type": "toi",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Le matin, on serait debout avant tout le monde.",
+   "camera": "contre"
+  },
+  {
+   "type": "large",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Le week-end, nos potes nous reconnaîtraient plus.",
+   "camera": "profil"
+  },
+  {
+   "type": "toi",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Dans un an, on se dirait : heureusement qu'on a commencé.",
+   "camera": "orbite"
+  },
+  {
+   "type": "large",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Tague le pote avec qui tu ferais ça.",
+   "camera": "serre"
+  }
+ ],
+ "meme": "MOI ET MON POTE SI ON ARRÊTAIT LA M*STURBATION"
+}
