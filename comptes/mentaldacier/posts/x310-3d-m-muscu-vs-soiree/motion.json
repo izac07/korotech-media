@@ -1,0 +1,120 @@
+{
+ "id": "MDA-X310",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10260,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#4b3a47",
+  "sol": "#291f27",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fd1b0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fd1b0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#291f27"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Deux heures de muscu, facile. Un soir sans te masturber, impossible ?",
+   "panneau": {
+    "lignes": [
+     [
+      "2 H DE MUSCU",
+      "Facile."
+     ],
+     [
+      "UN SOIR SANS M*STURBATION",
+      "Impossible ?"
+     ]
+    ],
+    "vs": "MAIS"
+   }
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Abonne-toi, on décortique ça ensemble, sans te juger.",
+   "bandeau": "ABONNE-TOI"
+  },
+  {
+   "type": "large",
+   "humeur": "content",
+   "lumiere": "nuit",
+   "vo": "À la salle, t'as un plan : tant de séries, tant de répétitions, une heure précise."
+  },
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "Tu sais quand ça commence, quand ça finit, et t'as tes potes autour."
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "nuit",
+   "vo": "Le soir, t'as aucun plan. Juste toi, ton lit et ton tel."
+  },
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "C'est pas une question de force. Tu l'as déjà prouvée à la salle."
+  },
+  {
+   "type": "large",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "vo": "C'est une question de terrain : la muscu se passe dehors, l'envie se passe dans ta chambre, seul."
+  },
+  {
+   "type": "toi",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Alors traite tes soirées comme une séance."
+  },
+  {
+   "type": "large",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Une heure de coucher fixe, le tel qui charge hors de la chambre, un truc prévu à vingt-deux heures."
+  },
+  {
+   "type": "toi",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Même discipline, autre terrain."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Commente Tenir, et je t'envoie mon plan gratuit pour trente jours.",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "T'es déjà capable. Il te manque juste le programme."
+  }
+ ],
+ "question": "T'es plus discipliné à la salle ou le soir ?"
+}

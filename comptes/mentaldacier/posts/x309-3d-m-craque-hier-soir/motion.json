@@ -1,0 +1,162 @@
+{
+ "id": "MDA-X309",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10259,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3f4b40",
+  "sol": "#232a24",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#ece8e0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#ece8e0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#232a24"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "humeur": "triste",
+   "lumiere": "aube",
+   "vo": "Tu t'es encore masturbé hier soir et tu te sens nul.",
+   "bandeau": "Tu t'es encore m*sturbé ?"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Abonne-toi, on va reprendre les choses en main ensemble calmement.",
+   "bandeau": "ABONNE-TOI"
+  },
+  {
+   "type": "large",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Moi : J'ai encore craqué à minuit, je crois que j'y arriverai jamais.",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "J'ai encore craqué à minuit, je crois que j'y arriverai jamais."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Ton toi de demain : C'est juste une erreur de parcours, c'est pas la fin.",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "J'ai encore craqué à minuit, je crois que j'y arriverai jamais."
+     ],
+     [
+      "TON TOI DE DEMAIN ",
+      "C'est juste une erreur de parcours, c'est pas la fin."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Moi : Mais j'ai cassé ma série, j'ai l'impression d'avoir tout gâché.",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "Mais j'ai cassé ma série, j'ai l'impression d'avoir tout gâché."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "sport",
+   "lumiere": "nuit",
+   "vo": "Ton pote qui a arrêté : Tu repars avec de l'expérience, pas de zéro.",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "Mais j'ai cassé ma série, j'ai l'impression d'avoir tout gâché."
+     ],
+     [
+      "TON POTE QUI A ARRÊTÉ ",
+      "Tu repars avec de l'expérience, pas de zéro."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "Moi : Je suis juste fatigué, j'ai même plus envie de me battre aujourd'hui.",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "Je suis juste fatigué, j'ai même plus envie de me battre aujourd'hui."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Ton grand frère : T'as pas besoin de te battre, juste de poser ce tel.",
+   "panneau": {
+    "lignes": [
+     [
+      "MOI",
+      "Je suis juste fatigué, j'ai même plus envie de me battre aujourd'hui."
+     ],
+     [
+      "TON GRAND FRÈRE ",
+      "T'as pas besoin de te battre, juste de poser ce tel."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Ce soir, tu vas juste sortir marcher dix minutes avant de te coucher."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Commente Tenir, et je t'envoie mon plan gratuit pour trente jours.",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "large",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Laisse passer cette mauvaise journée, t'es largement capable de reprendre le contrôle."
+  }
+ ],
+ "question": "C'est quoi ta phrase pour te remotiver après un échec ?"
+}
