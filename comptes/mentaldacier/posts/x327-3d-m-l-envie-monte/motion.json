@@ -1,0 +1,110 @@
+{
+ "id": "MDA-X327",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10277,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3f4b40",
+  "sol": "#232a24",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e07b5a",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e07b5a",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#232a24"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "triste",
+   "lumiere": "aube",
+   "vo": "Voici quatre étapes quand l'envie de te masturber monte d'un coup.",
+   "camera": "serre",
+   "bandeau": "L'envie de te m*sturber monte ?"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Suis le compte pour apprendre à gérer ces moments critiques sans paniquer.",
+   "camera": "porte",
+   "bandeau": "ABONNE-TOI"
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Étape 1 : Reconnais que c'est là, ne fais pas semblant de ne rien sentir.",
+   "camera": "contre",
+   "bandeau": "ÉTAPE 1"
+  },
+  {
+   "type": "toi",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Étape 2 : Lève-toi physiquement de ton lit ou de ton canapé, sans réfléchir.",
+   "camera": "profil",
+   "bandeau": "ÉTAPE 2"
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Étape 3 : Pose ton tel dans une autre pièce pendant dix minutes chrono.",
+   "camera": "orbite",
+   "bandeau": "ÉTAPE 3"
+  },
+  {
+   "type": "toi",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Étape 4, la plus importante : envoie un message à quelqu'un, n'importe qui.",
+   "camera": "serre",
+   "bandeau": "ÉTAPE 4"
+  },
+  {
+   "type": "large",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "vo": "L'envie, c'est comme une vague : elle monte, et elle finit par redescendre.",
+   "camera": "dessus"
+  },
+  {
+   "type": "toi",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Si tu changes de pièce et d'action, ton attention va switcher sur autre chose.",
+   "camera": "porte"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Commente Tenir, et je t'envoie mon plan gratuit pour trente jours.",
+   "camera": "porte",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Ces dix minutes de courage feront toute la différence sur la fin de ta soirée.",
+   "camera": "profil"
+  }
+ ],
+ "question": "T'as déjà testé l'astuce de changer de pièce ?"
+}
