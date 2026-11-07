@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """PDF « Tenir le NNN » (Mental d'Acier, novembre 2026) en mise en page « carnet de bord » : papier crème, encre noire,
 or des reels MDA, titres Anton, annotations manuscrites (Caveat). Le fond vient de ressources/mentaldacier/contenu-nnn.json.
-Usage : python3 tools/carnet_nnn.py   (écrit ressources/mentaldacier/plan-30-jours-tenir-le-nnn.pdf)"""
+Usage : python3 tools/carnet_nnn.py   (écrit ressources/mentaldacier/plan-30-jours-tenir-le-nnn.pdf)
+        python3 tools/carnet_nnn.py --br   (version « 30 jours sans la BR », sans NNN ni dates, depuis contenu-br.json,
+        écrit ressources/mentaldacier/plan-30-jours-sans-la-br.pdf ; ligne éditoriale du 07/11)"""
 import json, os, re, sys, html as H
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import korotech as K
@@ -10,6 +12,16 @@ RAC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 SRC = os.path.join(RAC, "ressources", "mentaldacier", "contenu-nnn.json")
 OUT = os.path.join(RAC, "ressources", "mentaldacier", "plan-30-jours-tenir-le-nnn.pdf")
 OR, ENCRE, PAPIER = "#d9a441", "#141414", "#f1ece2"
+# textes fixes de la mise en page : version NNN (novembre) et version générale « 30 jours sans la BR »
+TXT = {"tag": "@MENTALDACIER2030 · CARNET GRATUIT · NOVEMBRE", "big": "NNN", "t1": "Le plan pour tenir<br><span>les 30 jours</span>",
+       "pied": "TENIR LE NNN", "engage": "je tiens le NNN<br>du 1<sup>er</sup> au 30 novembre.",
+       "recu": "Tu as reçu ce carnet en commentant NNN. Partage-le à un pote qui fait le mois avec toi."}
+if "--br" in sys.argv:
+    SRC = os.path.join(RAC, "ressources", "mentaldacier", "contenu-br.json")
+    OUT = os.path.join(RAC, "ressources", "mentaldacier", "plan-30-jours-sans-la-br.pdf")
+    TXT = {"tag": "@MENTALDACIER2030 · CARNET GRATUIT", "big": "30", "t1": "Jours sans la BR<br><span>le plan pour tenir</span>",
+           "pied": "30 JOURS SANS LA BR", "engage": "je tiens<br>30 jours sans la BR, du <span class='ln' style='width:30mm'></span><br>au <span class='ln' style='width:30mm'></span>.",
+           "recu": "Partage ce carnet à un pote qui veut reprendre le contrôle avec toi."}
 
 
 def r(s):
@@ -147,9 +159,9 @@ ul.cr li:before{{content:counter(c);position:absolute;left:0;top:1.4mm;font:400 
 </style></head><body>
 
 <div class='pg noir'><div class='cv'>
- <div class='tag'>@MENTALDACIER2030 · CARNET GRATUIT · NOVEMBRE</div>
- <div class='big'>NNN</div>
- <div class='t1'>Le plan pour tenir<br><span>les 30 jours</span></div>
+ <div class='tag'>{TXT['tag']}</div>
+ <div class='big'>{TXT['big']}</div>
+ <div class='t1'>{TXT['t1']}</div>
  <div class='tally'>{traits}</div>
  <div class='st'>{r(c['sous_titre'])}</div>
  <div class='sig'><div class='m'>un jour à la fois.</div><div class='h'>30 JOURS<br>1 CHAMBRE PRÉPARÉE<br>0 EXCUSE</div></div>
@@ -166,12 +178,12 @@ ul.cr li:before{{content:counter(c);position:absolute;left:0;top:1.4mm;font:400 
  </div>
  <div class='contrat'>
   <div class='chap'>TON ENGAGEMENT</div>
-  <div class='ct'>Moi, <span class='ln' style='width:62mm'></span>, je tiens le NNN<br>du 1<sup>er</sup> au 30 novembre.</div>
+  <div class='ct'>Moi, <span class='ln' style='width:62mm'></span>, {TXT['engage']}</div>
   <div class='ct2'>Mon pourquoi : <span class='ln' style='width:128mm'></span></div>
   <div class='ct2'>Mon pote de confiance : <span class='ln' style='width:60mm'></span> &nbsp; Signé : <span class='ln' style='width:40mm'></span></div>
   <div class='main' style='margin-top:4mm'>écris-le pour de vrai. ça change tout.</div>
  </div>
- <div class='pied'><span>TENIR LE NNN</span><span>@MENTALDACIER2030</span></div>
+ <div class='pied'><span>{TXT['pied']}</span><span>@MENTALDACIER2030</span></div>
 </div>
 
 <div class='pg'>
@@ -180,7 +192,7 @@ ul.cr li:before{{content:counter(c);position:absolute;left:0;top:1.4mm;font:400 
  <div class='main' style='margin:-2mm 0 2mm'>à faire avant ce soir</div>
  {j0}
  <div class='regle'>Ne compte pas sur ta volonté à 1 h du matin. <span>Compte sur ce que tu as préparé à 18 h.</span></div>
- <div class='pied'><span>TENIR LE NNN</span><span>@MENTALDACIER2030</span></div>
+ <div class='pied'><span>{TXT['pied']}</span><span>@MENTALDACIER2030</span></div>
 </div>
 
 <div class='pg'>
@@ -188,16 +200,16 @@ ul.cr li:before{{content:counter(c);position:absolute;left:0;top:1.4mm;font:400 
  <h2>Un réflexe <em>par jour</em></h2>
  <p style='margin:0 0 4mm;max-width:165mm'>Chaque matin, lis ton jour : une action de 5 à 15 minutes. Tu as raté un jour ? Fais-le le lendemain, le plan continue. Coche la case quand c'est fait.</p>
  {secs[0]}
- <div class='pied'><span>TENIR LE NNN</span><span>@MENTALDACIER2030</span></div>
+ <div class='pied'><span>{TXT['pied']}</span><span>@MENTALDACIER2030</span></div>
 </div>
-{''.join(f"<div class='pg'>{x}<div class='pied'><span>TENIR LE NNN</span><span>@MENTALDACIER2030</span></div></div>" for x in secs[1:])}
+{''.join(f"<div class='pg'>{x}<div class='pied'><span>{TXT['pied']}</span><span>@MENTALDACIER2030</span></div></div>" for x in secs[1:])}
 
 <div class='pg noir'>
  <div class='chap' style='color:{OR};opacity:1'>02 · PLAN D'URGENCE</div>
  <h2>L'envie <em>monte.</em><br>Tu fais ça.</h2>
  <div class='capt'>fais une capture de cette page, garde-la sur ton tel</div>
  {urg}
- <div class='pied'><span>TENIR LE NNN</span><span>@MENTALDACIER2030</span></div>
+ <div class='pied'><span>{TXT['pied']}</span><span>@MENTALDACIER2030</span></div>
 </div>
 
 <div class='pg'>
@@ -210,7 +222,7 @@ ul.cr li:before{{content:counter(c);position:absolute;left:0;top:1.4mm;font:400 
    <div class='main' style='margin-top:4mm'>26 jours sur 30, c'est une victoire.</div></div>
   <div><div class='chap'>05 · À GARDER EN TÊTE</div>{ph}</div>
  </div>
- <div class='pied'><span>TENIR LE NNN</span><span>@MENTALDACIER2030</span></div>
+ <div class='pied'><span>{TXT['pied']}</span><span>@MENTALDACIER2030</span></div>
 </div>
 
 <div class='pg'>
@@ -220,8 +232,8 @@ ul.cr li:before{{content:counter(c);position:absolute;left:0;top:1.4mm;font:400 
  <div class='cal'>{cases}</div>
  <div class='chap'>CE QUI M'A AIDÉ / CE QUI A ÉTÉ DUR</div>
  <div class='notes'>{lignes}</div>
- <div class='fin'>{r(c['fin'])}<br><span class='m'>Tu as reçu ce carnet en commentant NNN. Partage-le à un pote qui fait le mois avec toi.</span></div>
- <div class='pied'><span>TENIR LE NNN</span><span>@MENTALDACIER2030</span></div>
+ <div class='fin'>{r(c['fin'])}<br><span class='m'>{TXT['recu']}</span></div>
+ <div class='pied'><span>{TXT['pied']}</span><span>@MENTALDACIER2030</span></div>
 </div>
 </body></html>"""
 
