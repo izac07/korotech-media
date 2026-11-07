@@ -1,0 +1,99 @@
+{
+ "id": "MDA-X297",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10247,
+ "handle": "mentaldacier2030",
+ "question": "Tu ressens ça aussi ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#4b3a47",
+  "sol": "#291f27",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fd1b0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fd1b0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#291f27"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "JUSTE APRÈS",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Juste après, tu poses le tel et tu te sens vide."
+  },
+  {
+   "type": "toi",
+   "bandeau": "CE VIDE-LÀ",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Ce vide te dit trois choses. Écoute-le."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Abonne-toi, une vidéo par jour pour reprendre le contrôle. Le dernier point, garde-le pour ce soir."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · T'ATTENDAIS AUTRE CHOSE",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Un : tu cherchais du repos, et t'as eu cinq minutes devant un écran. C'était pas ça que tu voulais."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · AVANT",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : regarde ce qui se passait avant. Fatigue, ennui, solitude. C'est ça qu'il fallait régler.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE VIDE DIT",
+    "lignes": [
+     "T'étais fatigué",
+     "T'étais seul",
+     "T'avais pas de plan"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE TENIR",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans la BR.",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · UN SIGNAL",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : ce vide, c'est pas une punition, c'est un signal. Il te dit que tu vaux mieux que cette soirée-là."
+  },
+  {
+   "type": "large",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Envoie ça à un pote qui en a besoin, et abonne-toi."
+  }
+ ]
+}
