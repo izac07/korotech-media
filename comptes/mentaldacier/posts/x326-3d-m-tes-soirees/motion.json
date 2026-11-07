@@ -1,0 +1,115 @@
+{
+ "id": "MDA-X326",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10276,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5a4836",
+  "sol": "#2e261e",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fb8de",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fb8de",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2e261e"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "T'attends quoi pour arrêter de finir tes soirées à te masturber ?",
+   "bandeau": "Tes soirées, pas la m*sturbation"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Suis la page pour récupérer enfin ton temps libre chaque soir.",
+   "bandeau": "ABONNE-TOI"
+  },
+  {
+   "type": "large",
+   "humeur": "content",
+   "lumiere": "nuit",
+   "vo": "T'attends d'avoir tout vu sur ton écran ?"
+  },
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "T'attends d'être tellement lassé que ça s'arrêtera par magie tout seul ?"
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "nuit",
+   "vo": "Ça marche pas comme ça dans la vraie vie."
+  },
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Tes soirées filent, une par une, dans un silence total."
+  },
+  {
+   "type": "large",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "vo": "Tu rentres du boulot, tu te poses et le temps disparaît."
+  },
+  {
+   "type": "toi",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "C'est ton quotidien qui défile bêtement dans le noir."
+  },
+  {
+   "type": "large",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Ce sont tes projets perso qui restent bloqués dans les cartons."
+  },
+  {
+   "type": "toi",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Tu vaux tellement mieux qu'une heure perdue seul dans ta chambre."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Commente Tenir, et je t'envoie mon plan gratuit pour trente jours.",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Pose ce tel loin de toi."
+  },
+  {
+   "type": "large",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Et le seize novembre, j'ouvre Tenir : l'app pour reprendre le contrôle, jour par jour. Le lien est en bio.",
+   "bandeau": "LE 16 NOVEMBRE"
+  }
+ ],
+ "question": "Tu ferais quoi avec une heure de temps libre en plus ce soir ?"
+}

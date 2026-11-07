@@ -1,0 +1,96 @@
+{
+ "id": "MDA-X325",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10275,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3b4352",
+  "sol": "#262a33",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fd1b0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fd1b0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#262a33"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "vo": "Mental d'Acier 4 : pourquoi tu repousses toujours l'arrêt de la masturbation au lundi.",
+   "bandeau": "« J'arrête la m*sturbation lundi »"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Rejoins-nous pour casser enfin cette boucle d'excuses qui te fait perdre du temps.",
+   "bandeau": "ABONNE-TOI"
+  },
+  {
+   "type": "large",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "C'est le grand classique : on est jeudi soir, tu craques, et tu te rassures."
+  },
+  {
+   "type": "toi",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Tu te dis que le week-end est foutu de toute façon, alors autant en profiter."
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Le lundi représente un nouveau départ propre, une feuille blanche dans ton esprit."
+  },
+  {
+   "type": "toi",
+   "humeur": "sport",
+   "lumiere": "nuit",
+   "vo": "Le problème, c'est que tu t'habitues à attendre une date magique pour agir."
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "Il n'y aura jamais de moment parfait ou de lundi idéal pour prendre une décision."
+  },
+  {
+   "type": "toi",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "La vraie discipline, c'est de décider d'arrêter un jeudi à vingt-deux heures trente."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Commente Tenir, et je t'envoie mon plan gratuit pour trente jours.",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "humeur": "triste",
+   "lumiere": "aube",
+   "vo": "Commence maintenant, sans attendre que le calendrier te donne la permission de changer."
+  }
+ ],
+ "question": "Tu t'es déjà dit cette fameuse phrase du lundi ?"
+}
