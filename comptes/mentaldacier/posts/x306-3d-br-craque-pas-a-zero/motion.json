@@ -1,0 +1,106 @@
+{
+ "id": "MDA-X306",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10256,
+ "handle": "mentaldacier2030",
+ "question": "T'as déjà repris après un craquage ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3b4352",
+  "sol": "#262a33",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fb8de",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fb8de",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#262a33"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "T'AS CRAQUÉ",
+   "humeur": "dort",
+   "lumiere": "aube",
+   "camera": "dessus",
+   "vo": "T'as craqué ce soir, et tu crois que tout est foutu ?"
+  },
+  {
+   "type": "toi",
+   "bandeau": "C'EST FAUX",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "C'est faux. Trois choses à faire, maintenant."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Abonne-toi, y'a une vidéo chaque jour là-dessus. Et reste jusqu'au troisième point, c'est le plus fort."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · PAS DE PUNITION",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "vo": "Un : te punis pas. La honte te fait replonger, elle t'aide jamais à remonter."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · NOTE-LE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : note l'heure, l'endroit, ce qui s'est passé avant. C'est une information, pas une défaite.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE SOIR",
+    "lignes": [
+     "L'heure",
+     "L'endroit",
+     "Ce qui s'est passé avant"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE TENIR",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "camera": "porte",
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans la BR.",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · DEMAIN MATIN",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Trois, le plus important : tu reprends demain matin, pas lundi. Tes jours tenus comptent toujours, tu les perds pas."
+  },
+  {
+   "type": "large",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "orbite",
+   "vo": "Demain, une autre vidéo pour reprendre le contrôle. Abonne-toi pour pas la rater."
+  }
+ ]
+}
