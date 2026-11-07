@@ -1,0 +1,162 @@
+{
+ "id": "MDA-X317",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10267,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5e5850",
+  "sol": "#2f2c28",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fd1b0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fd1b0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2f2c28"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "vo": "Partie 2 : ce que tu te dis quand l'envie de te masturber monte.",
+   "bandeau": "L'envie de te m*sturber (2)"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Suis la page pour la suite de cette série indispensable à ton mental.",
+   "bandeau": "ABONNE-TOI"
+  },
+  {
+   "type": "large",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Tu te dis : Allez, juste cinq minutes pour souffler un peu.",
+   "panneau": {
+    "lignes": [
+     [
+      "TU TE DIS",
+      "Allez, juste cinq minutes pour souffler un peu."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Remplace par : Je sais très bien que ça va durer une heure et me frustrer.",
+   "panneau": {
+    "lignes": [
+     [
+      "TU TE DIS",
+      "Allez, juste cinq minutes pour souffler un peu."
+     ],
+     [
+      "REMPLACE PAR",
+      "Je sais très bien que ça va durer une heure et me frustrer."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Tu te dis : Je m'ennuie trop là, j'ai vraiment rien à faire.",
+   "panneau": {
+    "lignes": [
+     [
+      "TU TE DIS",
+      "Je m'ennuie trop là, j'ai vraiment rien à faire."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "sport",
+   "lumiere": "nuit",
+   "vo": "Remplace par : C'est l'occasion parfaite pour avancer sur un projet qui traîne.",
+   "panneau": {
+    "lignes": [
+     [
+      "TU TE DIS",
+      "Je m'ennuie trop là, j'ai vraiment rien à faire."
+     ],
+     [
+      "REMPLACE PAR",
+      "C'est l'occasion parfaite pour avancer sur un projet qui traîne."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "Tu te dis : J'ai passé une sale journée, j'ai bien le droit.",
+   "panneau": {
+    "lignes": [
+     [
+      "TU TE DIS",
+      "J'ai passé une sale journée, j'ai bien le droit."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Remplace par : Je mérite mieux que du faux confort pour me détendre ce soir.",
+   "panneau": {
+    "lignes": [
+     [
+      "TU TE DIS",
+      "J'ai passé une sale journée, j'ai bien le droit."
+     ],
+     [
+      "REMPLACE PAR",
+      "Je mérite mieux que du faux confort pour me détendre ce soir."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Anticipe ces pensées pour ne plus te faire avoir."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Commente Tenir, et je t'envoie mon plan gratuit pour trente jours.",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "large",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Dans la partie trois, on parlera de l'envie de tout abandonner."
+  }
+ ],
+ "question": "C'est quoi ton excuse préférée pour justifier de craquer le soir ?"
+}
