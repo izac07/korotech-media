@@ -12,7 +12,14 @@ import korotech as K
 
 def words_timed(text, t0, dur):
     """Découpe la phrase en mots avec un instant de début (proportionnel au nb de lettres, pauses sur la ponctuation)."""
-    ws = text.split()
+    # Ponctuation française isolée (« : », « ? », « » ») collée au mot voisin : sinon elle s'affiche seule en sous-titre (07/11/2026)
+    ws, avant = [], ""
+    for w in text.split():
+        if not re.search(r"\w", w):
+            if w in ("«", "“", "(") or not ws:
+                avant += w + " "; continue
+            ws[-1] += " " + w; continue
+        ws.append(avant + w); avant = ""
     weights = [len(w) + (6 if re.search(r"[.,;:!?…]$", w) else 2) for w in ws]
     tot = sum(weights) or 1
     out, t = [], t0

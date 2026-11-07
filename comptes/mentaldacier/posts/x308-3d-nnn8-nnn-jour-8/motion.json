@@ -1,0 +1,93 @@
+{
+ "id": "MDA-X308",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10258,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5a4836",
+  "sol": "#2e261e",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e3a13b",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e3a13b",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2e261e"
+ },
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "NNN, jour huit : ta deuxième semaine commence ce matin.",
+   "bandeau": "NNN · jour 8 : la 2e semaine"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Abonne-toi si tu fais le NNN, on le tient ensemble jusqu'au trente.",
+   "bandeau": "ABONNE-TOI"
+  },
+  {
+   "type": "large",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "La première semaine, tu tenais avec l'énergie du début."
+  },
+  {
+   "type": "toi",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "La deuxième, cette énergie redescend, et c'est là que beaucoup lâchent."
+  },
+  {
+   "type": "large",
+   "humeur": "content",
+   "lumiere": "nuit",
+   "vo": "Piège un : « j'ai prouvé que je pouvais, je peux me relâcher ». Non, tu continues.",
+   "bandeau": "PIÈGE UN"
+  },
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Piège deux : le dimanche soir, seul, rien de prévu. Prévois un truc dès maintenant.",
+   "bandeau": "PIÈGE DEUX"
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Piège trois : compter les jours qui restent. Compte juste aujourd'hui.",
+   "bandeau": "PIÈGE TROIS"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Commente NNN, et je t'envoie le plan des trente jours, gratuit.",
+   "carte": [
+    "Commente NNN",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "large",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Jour huit sur trente. Un soir de plus, et t'es déjà plus le même qu'au jour un."
+  }
+ ],
+ "question": "T'en es à quel jour, toi ?"
+}

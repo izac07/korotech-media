@@ -1,0 +1,112 @@
+{
+ "id": "MDA-X307",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10257,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3b4352",
+  "sol": "#262a33",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e0b45e",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e0b45e",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#262a33"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "vo": "Cinq habitudes dix sur dix pour un dimanche sans masturbation.",
+   "camera": "dessus",
+   "bandeau": "Dimanche sans m*sturbation : 5 habitudes"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Rejoins la page pour arrêter de gâcher tes fins de semaine dans ton lit.",
+   "camera": "serre",
+   "bandeau": "ABONNE-TOI"
+  },
+  {
+   "type": "large",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Niveau un : t'habiller direct après le petit-déjeuner au lieu de traîner en jogging.",
+   "camera": "dessus",
+   "bandeau": "NIVEAU 1"
+  },
+  {
+   "type": "toi",
+   "humeur": "triste",
+   "lumiere": "aube",
+   "vo": "Niveau deux : sortir de chez toi au moins une fois l'après-midi, même pour marcher.",
+   "camera": "porte",
+   "bandeau": "NIVEAU 2"
+  },
+  {
+   "type": "large",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Niveau trois : appeler un pote au lieu de juste envoyer des messages écrits.",
+   "camera": "contre",
+   "bandeau": "NIVEAU 3"
+  },
+  {
+   "type": "toi",
+   "humeur": "content",
+   "lumiere": "nuit",
+   "vo": "Niveau quatre : faire le ménage dans ta chambre pour clarifier ton espace.",
+   "camera": "profil",
+   "bandeau": "NIVEAU 4"
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "Niveau cinq : prévoir un bon film le soir pour éviter l'ennui de vingt-trois heures.",
+   "camera": "orbite",
+   "bandeau": "NIVEAU 5"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Commente Tenir, et je t'envoie mon plan gratuit pour trente jours.",
+   "camera": "porte",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Gagner ton dimanche, c'est t'assurer un lundi matin avec une vraie fierté personnelle.",
+   "camera": "dessus"
+  },
+  {
+   "type": "toi",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Et le seize novembre, j'ouvre Tenir : l'app pour reprendre le contrôle, jour par jour. Le lien est en bio.",
+   "camera": "porte",
+   "bandeau": "LE 16 NOVEMBRE"
+  }
+ ],
+ "question": "Qu'est-ce que tu fais de tes dimanches en général pour t'occuper ?"
+}

@@ -39,6 +39,17 @@ canvas#cv{position:absolute;left:0;top:0}
 .qfix{position:absolute;left:60px;right:60px;top:430px;z-index:7;text-align:center;opacity:0}
 .qfix span{display:inline-block;font:400 58px/1.12 Anton;text-transform:uppercase;color:__ENCRE__;background:__JAUNE__;padding:14px 30px 8px;border-radius:16px;box-shadow:6px 6px 0 __ENCRE__;transform:rotate(-1.5deg)}
 .noir{position:absolute;inset:0;background:#000;z-index:3;pointer-events:none;opacity:0}
+/* panneau (MDA, 07/11/2026) : répliques d'un dialogue (« MOI : … ») ou comparatif « paradoxe » (2 lignes + « MAIS »), par scène */
+.pn{position:absolute;left:64px;right:64px;top:560px;z-index:7;display:flex;flex-direction:column;gap:22px;opacity:0;transform-origin:50% 0}
+.pn .r{background:rgba(8,8,10,.78);border-radius:16px;padding:20px 30px 22px;border-left:10px solid __ACC__}
+.pn .r.b{border-left-color:#f3f1ec}
+.pn .r b{display:block;font:700 32px/1.2 Inter;color:__ACC__;text-transform:uppercase;letter-spacing:1.5px}
+.pn .r.b b{color:rgba(243,241,236,.75)}
+.pn .r span{display:block;font:800 58px/1.13 Inter;color:#f3f1ec;margin-top:6px}
+.pn .r span.p{font-size:46px}
+.pn .vs{align-self:center;font:900 54px/1 Inter;color:__ACC__;letter-spacing:2px;text-shadow:0 3px 14px rgba(0,0,0,.8)}
+/* mème (mécanique H) : légende blanche en haut pendant tout le reel */
+.meme{position:absolute;left:0;right:0;top:150px;z-index:7;background:#fbfaf7;color:#111;font:800 60px/1.16 Inter;text-align:center;padding:30px 56px 34px;opacity:0;box-shadow:0 8px 30px rgba(0,0,0,.45)}
 </style></head><body>
 <canvas id='cv' width='1080' height='1920'></canvas>
 <div class='hdl'>@__HANDLE__</div>
@@ -49,6 +60,7 @@ __BADGES__
 <div class='caps'>__CAPS__</div>
 __TAMPONS__
 __FINS__
+__PANNEAUX__
 __CONFETTIS__
 <script type='importmap'>__IMPORTMAP__</script>
 <script type='module'>
@@ -370,7 +382,9 @@ const RENDER=function(t){
   SC.forEach((z,i)=>{const b=$('bd'+i);if(b){const on=i==k;const kk=back((t-z.a)/.4);b.style.opacity=on?1:0;b.style.transform=`translateX(-50%) rotate(-1.5deg) scale(${on?.6+.4*kk:1})`;}
     const g=$('bg'+i);if(g){const on=i==k;g.style.opacity=on?c((t-z.a-.2)/.2):0;const cc=z.compteur;g.querySelector('i').textContent=cc.fmt?cc.fmt.replace('#',Math.round(cc.de+(cc.a-cc.de)*sm(p*1.15))):Math.round(cc.de+(cc.a-cc.de)*sm(p*1.15));}
     const fn=$('fn'+i);if(fn){const kk=back((t-z.a-.15)/.45);fn.style.opacity=i==k?c((t-z.a-.15)/.15):0;fn.style.transform=`scale(${.6+.4*kk})`;}
+    const pn=$('pn'+i);if(pn){const kk=back((t-z.a-.1)/.4);pn.style.opacity=i==k?c((t-z.a-.1)/.15):0;pn.style.transform=`scale(${.75+.25*kk})`;}
     const tp=$('tp'+i);if(tp){const ta=z.a+.25*(z.b-z.a);const kk=c((t-ta)/.18);tp.style.opacity=t>=ta&&i==k?1:0;tp.style.transform=`translateX(-50%) rotate(-7deg) scale(${2.2-1.2*kk})`;}});
+  const mm=$('meme');if(mm)mm.style.opacity=c((t-.05)/.2);
   for(const cp of document.querySelectorAll('.cap')){const a=+cp.dataset.a,b=+cp.dataset.b;cp.style.display=(t>=a&&t<b)?'flex':'none';
     for(const w of cp.querySelectorAll('.stk')){const wt=+w.dataset.w;const kk=back((t-wt)/.22);w.style.opacity=t>=wt?1:0;w.style.transform=`rotate(${w.dataset.r}deg) scale(${t>=wt?.5+.5*kk:.5})`;}}
   const ct=SC.findIndex(z=>z.tampon);if(ct>=0){const t0=SC[ct].a+.25*(SC[ct].b-SC[ct].a);CF.forEach((f,i)=>{const u=t-t0-(i%7)*.05;const on=u>0;f.style.opacity=on?1:0;
@@ -415,6 +429,15 @@ def page(spec, theme, starts, durs, caps, total):
     bands = "".join(f"<div class='band' id='bd{k}'><span>{K.esc(s.get('bandeau', ''))}</span>" + (f"<em>{K.esc(s['sous_bandeau'])}</em>" if s.get('sous_bandeau') else '') + "</div>" for k, s in enumerate(sc) if s.get("bandeau"))
     badges = "".join(f"<div class='badge' id='bg{k}'><b>{K.esc(s['compteur'].get('label', ''))}</b><i>0</i></div>" for k, s in enumerate(sc) if s.get("compteur"))
     fins = "".join(f"<div class='fin' id='fn{k}'><b>{K.esc(s['carte'][0])}</b>" + (f"<span>{K.esc(s['carte'][1])}</span>" if len(s['carte']) > 1 else '') + "</div>" for k, s in enumerate(sc) if s.get("carte"))
+    # panneau : {"lignes": [[étiquette, texte], ...], "vs": "MAIS"?} ; la 2e ligne a un liseré clair (l'autre voix / l'autre côté)
+    def _pn(k, p):
+        rows = [f"<div class='r{' b' if j % 2 else ''}'><b>{K.esc(lab)}</b><span class='{'p' if len(txt) > 42 else ''}'>{K.esc(txt)}</span></div>" for j, (lab, txt) in enumerate(p["lignes"])]
+        if p.get("vs") and len(rows) == 2:
+            rows.insert(1, f"<div class='vs'>{K.esc(p['vs'])}</div>")
+        return f"<div class='pn' id='pn{k}'>{''.join(rows)}</div>"
+    panneaux = "".join(_pn(k, s["panneau"]) for k, s in enumerate(sc) if s.get("panneau"))
+    if spec.get("meme"):
+        panneaux += f"<div class='meme' id='meme'>{K.esc(spec['meme'])}</div>"
     tampons = "".join(f"<div class='tampon' id='tp{k}'>✓ {K.esc(s['tampon'])}</div>" for k, s in enumerate(sc) if s.get("tampon"))
     pal = [col["acc"], col["jaune"], col["vert"], "#4f7cff", "#ff5fa2"]
     conf = "".join(f"<div class='cf' data-x='{(i * 137) % 1040}' style='background:{pal[i % 5]}'></div>" for i in range(70)) if any(s.get("tampon") for s in sc) else ""
@@ -454,7 +477,8 @@ def page(spec, theme, starts, durs, caps, total):
         # Même moteur, autre habillage : Inter au lieu d'Anton, bandeaux discrets, sous-titres blancs avec le mot fort
         # souligné par l'accent, question sans emoji, tableau ardoise, vignettage et grain léger.
         acc = col["acc"]
-        css_sobre = ("\n.band span{font:700 50px/1.15 Inter;text-transform:none;letter-spacing:.2px;background:rgba(8,8,10,.62);color:#f3f1ec;padding:18px 38px 16px;"
+        css_sobre = ("\n.band{white-space:normal;width:max-content;max-width:960px;text-align:center}"  # bandeau long : retour à la ligne (07/11)
+                  "\n.band span{font:700 50px/1.15 Inter;text-transform:none;letter-spacing:.2px;background:rgba(8,8,10,.62);color:#f3f1ec;padding:18px 38px 16px;"
                   "border-radius:10px;box-shadow:none;clip-path:none;border-left:7px solid " + acc + "}"
                   "\n.band em{font:500 27px/1.2 Inter;text-transform:none;letter-spacing:0;color:rgba(243,241,236,.72);background:none;padding:0;margin-top:10px}"
                   "\n.qfix span{font:600 38px/1.2 Inter;text-transform:none;color:#f3f1ec;background:rgba(8,8,10,.5);padding:12px 26px;border-radius:9px;box-shadow:none;transform:none}"
@@ -470,7 +494,7 @@ def page(spec, theme, starts, durs, caps, total):
         qfix = "<style>" + css_sobre + "</style><div class='vign'></div><div class='grain'></div>" + qfix
     R = {"__FONTS__": fonts, "__NUIT__": col["nuit"], "__PAPIER__": col["papier"], "__ENCRE__": col["encre"],
          "__ACC__": col["acc"], "__JAUNE__": col["jaune"], "__VERT__": col["vert"], "__BANDFOND__": col.get("bandeau_fond", col["papier"]), "__BANDTEXTE__": col.get("bandeau_texte", col["encre"]), "__BADGEFOND__": col.get("badge_fond", "#ffffff"), "__BADGETEXTE__": col.get("badge_texte", col["encre"]), "__TEXTEO__": col.get("texte_o", "#ffffff"), "__HANDLE__": H.escape(spec.get("handle", "")),
-         "__QFIX__": qfix, "__BANDS__": bands, "__BADGES__": badges, "__CAPS__": cap_html, "__TAMPONS__": tampons, "__FINS__": fins, "__CONFETTIS__": conf,
+         "__QFIX__": qfix, "__BANDS__": bands, "__BADGES__": badges, "__CAPS__": cap_html, "__TAMPONS__": tampons, "__FINS__": fins, "__PANNEAUX__": panneaux, "__CONFETTIS__": conf,
          "__IMPORTMAP__": import_map(), "__MODELES__": modeles(), "__D__": str(total), "__SC__": json.dumps(S, ensure_ascii=False), "__EV__": json.dumps(ev), "__COL__": json.dumps(colj)}
     out = TPL
     for kk, v in R.items():
