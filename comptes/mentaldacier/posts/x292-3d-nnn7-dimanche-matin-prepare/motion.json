@@ -1,0 +1,99 @@
+{
+ "id": "MDA-X292",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10242,
+ "handle": "mentaldacier2030",
+ "question": "Première semaine : tenue ou pas ?",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5e5850",
+  "sol": "#2f2c28",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e3a13b",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e3a13b",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2f2c28"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "DIMANCHE MATIN",
+   "humeur": "triste",
+   "lumiere": "aube",
+   "vo": "Demain matin, dimanche : le réveil le plus dangereux de la semaine."
+  },
+  {
+   "type": "toi",
+   "bandeau": "POURQUOI",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Voilà pourquoi, et comment tu le prépares ce soir, en trois points."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Enregistre cette vidéo pour ce soir, et abonne-toi : une par jour jusqu'au trente."
+  },
+  {
+   "type": "large",
+   "bandeau": "1 · UN RÉVEIL",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Un : un réveil à neuf heures. Sans réveil, le dimanche, c'est la journée la plus vide de la semaine."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2 · UN TRUC À 10H",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Deux : un truc prévu à dix heures. Un pote, un sport, une course. Quelque chose qui t'attend.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE SOIR, POUR DEMAIN",
+    "lignes": [
+     "Un réveil à 9h",
+     "Un truc prévu à 10h",
+     "Tel au salon ce soir"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "carte": [
+    "Commente NNN",
+    "ton plan pour tenir, offert"
+   ]
+  },
+  {
+   "type": "toi",
+   "bandeau": "3 · LE PREMIER GESTE",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Trois, le plus important : le tel dort au salon ce soir. Et demain, le premier geste au réveil, c'est te lever. Pas chercher le tel."
+  },
+  {
+   "type": "large",
+   "bandeau": "DEMAIN",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Demain, c'est le jour huit. Abonne-toi, on le passe ensemble."
+  }
+ ]
+}
