@@ -1,0 +1,156 @@
+{
+ "id": "MDA-X321",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10271,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3f4b40",
+  "sol": "#232a24",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e0b45e",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e0b45e",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#232a24"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "humeur": "triste",
+   "lumiere": "aube",
+   "vo": "Partie 3 : arrêter la masturbation, et l'envie de tout lâcher.",
+   "bandeau": "Arrêter la m*sturbation, tout lâcher ? (3)"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Rejoins l'équipe, on ne lâche rien ici.",
+   "bandeau": "ABONNE-TOI"
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Tu te dis : C'est trop dur, ça demande beaucoup trop d'efforts tous les soirs.",
+   "panneau": {
+    "lignes": [
+     [
+      "TU TE DIS",
+      "C'est trop dur, ça demande beaucoup trop d'efforts tous les soirs."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "vo": "Remplace par : C'est dur maintenant, mais ça deviendra une habitude naturelle avec le temps.",
+   "panneau": {
+    "lignes": [
+     [
+      "TU TE DIS",
+      "C'est trop dur, ça demande beaucoup trop d'efforts tous les soirs."
+     ],
+     [
+      "REMPLACE PAR",
+      "C'est dur maintenant, mais ça deviendra une habitude naturelle avec le temps."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "vo": "Tu te dis : Tout le monde le fait, pourquoi je me prends la tête ?",
+   "panneau": {
+    "lignes": [
+     [
+      "TU TE DIS",
+      "Tout le monde le fait, pourquoi je me prends la tête ?"
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Remplace par : Je fais ça pour être fier de moi, pas pour faire comme les autres.",
+   "panneau": {
+    "lignes": [
+     [
+      "TU TE DIS",
+      "Tout le monde le fait, pourquoi je me prends la tête ?"
+     ],
+     [
+      "REMPLACE PAR",
+      "Je fais ça pour être fier de moi, pas pour faire comme les autres."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "large",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Tu te dis : De toute façon, ça changera rien à ma vie.",
+   "panneau": {
+    "lignes": [
+     [
+      "TU TE DIS",
+      "De toute façon, ça changera rien à ma vie."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "toi",
+   "humeur": "content",
+   "lumiere": "nuit",
+   "vo": "Remplace par : Je me sens déjà plus sûr de moi quand j'ai le contrôle de mon temps.",
+   "panneau": {
+    "lignes": [
+     [
+      "TU TE DIS",
+      "De toute façon, ça changera rien à ma vie."
+     ],
+     [
+      "REMPLACE PAR",
+      "Je me sens déjà plus sûr de moi quand j'ai le contrôle de mon temps."
+     ]
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Commente Tenir, et je t'envoie mon plan gratuit pour trente jours.",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "vo": "Reste solide, les moments de doutes font totalement partie du chemin."
+  }
+ ],
+ "question": "Quelle phrase t'aide le plus quand tu veux tout lâcher ?"
+}

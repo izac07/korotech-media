@@ -1,0 +1,101 @@
+{
+ "id": "MDA-X322",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10272,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#4b3a47",
+  "sol": "#291f27",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e3a13b",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e3a13b",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#291f27"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Voici comment arrêter la masturbation en cinq étapes très simples.",
+   "bandeau": "Arrêter la m*sturbation : 5 étapes"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "vo": "Garde cette vidéo de côté et abonne-toi pour l'appliquer dès ce soir.",
+   "bandeau": "ABONNE-TOI"
+  },
+  {
+   "type": "large",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Étape 1 : Fais le ménage direct dans tes abonnements et tes réseaux.",
+   "bandeau": "ÉTAPE 1"
+  },
+  {
+   "type": "toi",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "vo": "Étape 2 : Laisse la porte de ta chambre entrouverte quand t'es seul.",
+   "bandeau": "ÉTAPE 2"
+  },
+  {
+   "type": "large",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "vo": "Étape 3 : Achète un vrai réveil pour ne plus utiliser ton tel au lit.",
+   "bandeau": "ÉTAPE 3"
+  },
+  {
+   "type": "toi",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Étape 4 : Trouve une activité manuelle pour occuper tes soirées creuses.",
+   "bandeau": "ÉTAPE 4"
+  },
+  {
+   "type": "large",
+   "humeur": "content",
+   "lumiere": "aube",
+   "vo": "Étape 5, la plus importante : pardonne-toi vite si jamais tu trébuches un jour.",
+   "bandeau": "ÉTAPE 5"
+  },
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "vo": "Si tu restes bloqué sur un échec, tu vas juste abandonner tout le processus."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Commente Tenir, et je t'envoie mon plan gratuit pour trente jours.",
+   "carte": [
+    "Commente TENIR",
+    "le plan des 30 jours, gratuit"
+   ]
+  },
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "vo": "Relève-toi le lendemain matin et reprends ta nouvelle vie exactement là où t'en étais."
+  }
+ ],
+ "question": "Laquelle de ces cinq étapes est la plus dure pour toi ?"
+}
