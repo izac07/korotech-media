@@ -1,0 +1,99 @@
+{
+ "id": "MDA-X344",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10294,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5a4836",
+  "sol": "#2e261e",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e07b5a",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e07b5a",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2e261e"
+ },
+ "question": "Ça t'arrive à quelle heure, toi ? 👇",
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "content",
+   "lumiere": "aube",
+   "bandeau": "L'envie monte ? Regarde ça",
+   "vo": "L'envie monte, là, maintenant ? Regarde jusqu'au bout."
+  },
+  {
+   "type": "toi",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "TROIS GESTES",
+   "vo": "T'as trente secondes. Trois gestes, dans l'ordre."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "bandeau": "ABONNE-TOI",
+   "vo": "Enregistre cette vidéo pour ce soir, et abonne-toi."
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "bandeau": "1 · LE TEL DEHORS",
+   "vo": "Un : tu poses le tel. Pas en veille : dans une autre pièce."
+  },
+  {
+   "type": "ecran",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "bandeau": "2 · EAU FROIDE",
+   "ecran": {
+    "type": "liste",
+    "titre": "L'ENVIE MONTE ? REGARDE ÇA",
+    "lignes": [
+     "Le tel dehors",
+     "Eau froide",
+     "Un message"
+    ]
+   },
+   "vo": "Deux : de l'eau froide sur le visage, ou un grand verre d'eau. Un geste simple qui casse le moment."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "COMMENTE TENIR",
+   "carte": [
+    "💬 COMMENTE TENIR",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans masturbation."
+  },
+  {
+   "type": "toi",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "bandeau": "3 · UN MESSAGE",
+   "vo": "Trois, le plus important : tu envoies un message à quelqu'un. Un pote, ton frère, n'importe qui. Dès que t'es en lien avec quelqu'un, le scénario se casse."
+  },
+  {
+   "type": "large",
+   "humeur": "content",
+   "lumiere": "aube",
+   "bandeau": "LE 16 NOVEMBRE",
+   "vo": "Et le seize novembre, j'ouvre Tenir : l'app pour reprendre le contrôle, jour par jour. Le lien est en bio."
+  }
+ ]
+}
