@@ -1,0 +1,91 @@
+{
+ "id": "MDA-X335",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10285,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5e5850",
+  "sol": "#2f2c28",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fb8de",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fb8de",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2f2c28"
+ },
+ "question": "T'en es à quel jour ? 👇",
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "bandeau": "NNN : le piège du jour 9",
+   "vo": "NNN, jour neuf : le piège dans lequel tombent ceux qui tenaient bien.",
+   "camera": "contre"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "T'EN ES OÙ ?",
+   "vo": "Enregistre la vidéo pour ce soir et reste jusqu'au troisième, c'est lui qui t'aide à passer le cap. Avant ça, écris en commentaire à quel jour t'en es.",
+   "camera": "profil"
+  },
+  {
+   "type": "ecran",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "bandeau": "1 · BARRIÈRES",
+   "vo": "Le premier, c'est de relâcher les barrières. Tu te sens fort, alors le tel revient dans le lit.",
+   "camera": "orbite"
+  },
+  {
+   "type": "ecran",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "bandeau": "2 · TESTER",
+   "ecran": {
+    "type": "liste",
+    "titre": "NNN : LE PIÈGE DU JOUR 9",
+    "lignes": [
+     "Barrières",
+     "Tester",
+     "Garde le plan"
+    ]
+   },
+   "vo": "Le deuxième, c'est de tester. Juste regarder un peu, sans aller jusqu'au bout. C'est souvent comme ça qu'un craquage commence.",
+   "camera": "serre"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "COMMENTE NNN",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "camera": "porte"
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "bandeau": "3 · GARDE LE PLAN",
+   "vo": "Et le troisième : te dire que t'as plus besoin de plan. Le plan, c'est justement ce qui t'a amené au jour neuf sans masturbation. Garde-le. Alors, t'en es à quel jour, toi ?",
+   "camera": "porte"
+  }
+ ]
+}
