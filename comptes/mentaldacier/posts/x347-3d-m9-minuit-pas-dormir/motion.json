@@ -1,0 +1,91 @@
+{
+ "id": "MDA-X347",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10297,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5e5850",
+  "sol": "#2f2c28",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#ece8e0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#ece8e0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2f2c28"
+ },
+ "question": "Tenu ou craqué aujourd'hui ? 👇",
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "bandeau": "Minuit, t'arrives pas à dormir",
+   "vo": "Minuit, t'arrives pas à dormir, et l'envie monte. Voilà quoi faire, dans l'ordre.",
+   "camera": "contre"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "ABONNE-TOI",
+   "vo": "Abonne-toi, on tient le mois ensemble, une vidéo par jour. Enregistre celle-là, et dis-moi en commentaire si t'as tenu aujourd'hui.",
+   "camera": "profil"
+  },
+  {
+   "type": "ecran",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "bandeau": "1 · LÂCHE LE TEL",
+   "vo": "Déjà, tu lâches le tel. Le scroll pour t'endormir, c'est souvent là que tout commence.",
+   "camera": "orbite"
+  },
+  {
+   "type": "ecran",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "bandeau": "2 · LÈVE-TOI",
+   "ecran": {
+    "type": "liste",
+    "titre": "MINUIT, T'ARRIVES PAS À DORM",
+    "lignes": [
+     "Lâche le tel",
+     "Lève-toi",
+     "La phrase"
+    ]
+   },
+   "vo": "Ensuite, tu te lèves deux minutes. Un verre d'eau, la lumière douce, et tu reviens, sans le tel.",
+   "camera": "serre"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "COMMENTE TENIR",
+   "carte": [
+    "💬 COMMENTE TENIR",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans masturbation.",
+   "camera": "porte"
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "bandeau": "3 · LA PHRASE",
+   "vo": "Et le dernier point : tu reconnais la phrase « juste une fois, pour dormir ». C'est elle qui ouvre la porte à la masturbation. Ce soir, tu la vois passer, et tu la laisses filer. Alors, tenu ou craqué aujourd'hui ? Je lis tout.",
+   "camera": "porte"
+  }
+ ]
+}
