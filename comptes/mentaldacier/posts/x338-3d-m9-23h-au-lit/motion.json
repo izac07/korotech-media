@@ -1,0 +1,85 @@
+{
+ "id": "MDA-X338",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10288,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5a4836",
+  "sol": "#2e261e",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e0b45e",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e0b45e",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2e261e"
+ },
+ "question": "Ça t'arrive à quelle heure, toi ? 👇",
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "bandeau": "23 h, au lit, le tel allumé",
+   "vo": "Vingt-trois heures, au lit, le tel allumé. Tu sais comment ça finit. Voilà comment changer la fin."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "T'EN ES OÙ ?",
+   "vo": "Enregistre la vidéo pour ce soir et reste jusqu'au troisième, c'est lui qui t'aide à passer le cap. Avant ça, écris en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "bandeau": "1 · TEL DEHORS",
+   "vo": "Le premier, c'est de brancher ton tel ailleurs que dans ta chambre. Pas de tel au lit, pas de scénario."
+  },
+  {
+   "type": "ecran",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "bandeau": "2 · SANS ÉCRAN",
+   "ecran": {
+    "type": "liste",
+    "titre": "23 H, AU LIT, LE TEL ALLUMÉ",
+    "lignes": [
+     "Tel dehors",
+     "Sans écran",
+     "Debout"
+    ]
+   },
+   "vo": "Le deuxième, c'est d'avoir un truc à faire à la place : un livre, un podcast sur une enceinte, n'importe quoi sans écran."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "COMMENTE TENIR",
+   "carte": [
+    "💬 COMMENTE TENIR",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans masturbation."
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "bandeau": "3 · DEBOUT",
+   "vo": "Et le troisième : si l'envie de te masturber monte quand même, tu te lèves. Allongé, tu négocies. Debout, tu décides. Alors, toi, ça t'arrive à quelle heure ?"
+  }
+ ]
+}
