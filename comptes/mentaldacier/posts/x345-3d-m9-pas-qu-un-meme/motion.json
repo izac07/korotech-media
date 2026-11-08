@@ -1,0 +1,85 @@
+{
+ "id": "MDA-X345",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10295,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3f4b40",
+  "sol": "#232a24",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e0b45e",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e0b45e",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#232a24"
+ },
+ "question": "T'en es à quel jour ? 👇",
+ "scenes": [
+  {
+   "type": "large",
+   "humeur": "triste",
+   "lumiere": "aube",
+   "bandeau": "Le NNN, c'est pas qu'un mème",
+   "vo": "Jour neuf du NNN. Pour beaucoup, c'était un mème, et ils ont déjà lâché. Si t'es encore là, écoute."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "T'EN ES OÙ ?",
+   "vo": "Enregistre la vidéo pour ce soir et reste jusqu'au troisième, c'est lui qui t'aide à passer le cap. Avant ça, écris en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "bandeau": "1 · PLUS UN DÉLIRE",
+   "vo": "Le premier, c'est de reconnaître que t'es plus dans le délire. Tu tiens parce que tu l'as décidé, pas pour la blague."
+  },
+  {
+   "type": "ecran",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "bandeau": "2 · TON VRAI OBJECTIF",
+   "ecran": {
+    "type": "liste",
+    "titre": "LE NNN, C'EST PAS QU'UN MÈME",
+    "lignes": [
+     "Plus un délire",
+     "Ton vrai objectif",
+     "Dis-le"
+    ]
+   },
+   "vo": "Le deuxième, c'est de te fixer ton vrai objectif : trente jours sans masturbation, et après, garder ce qui marche."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "COMMENTE NNN",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "bandeau": "3 · DIS-LE",
+   "vo": "Et le troisième : tu le dis à un pote, ou tu lui envoies cette vidéo. Le dire, ça rend le truc réel. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}
