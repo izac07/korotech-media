@@ -1,0 +1,85 @@
+{
+ "id": "MDA-X333",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10283,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3f4b40",
+  "sol": "#232a24",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#ece8e0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#ece8e0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#232a24"
+ },
+ "question": "T'en es à quel jour ? 👇",
+ "scenes": [
+  {
+   "type": "large",
+   "humeur": "triste",
+   "lumiere": "aube",
+   "bandeau": "Ce que tu gagnes en 30 jours",
+   "vo": "Ce que tu gagnes vraiment en trente jours. Le troisième, presque personne n'en parle."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "T'EN ES OÙ ?",
+   "vo": "Reste jusqu'au troisième, c'est le plus important, et enregistre la vidéo pour les soirs difficiles. Mais d'abord, dis-moi en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "bandeau": "1 · TEMPS",
+   "vo": "Le premier, c'est du temps. Des soirées entières que tu passais sur ton tel, et que tu récupères."
+  },
+  {
+   "type": "ecran",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "bandeau": "2 · FIERTÉ",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE QUE TU GAGNES EN 30 JOURS",
+    "lignes": [
+     "Temps",
+     "Fierté",
+     "C'est toi qui décides"
+    ]
+   },
+   "vo": "Le deuxième, c'est la fierté de tenir une promesse que tu t'es faite à toi-même, sans que personne te surveille."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "COMMENTE NNN",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "bandeau": "3 · C'EST TOI QUI DÉCIDES",
+   "vo": "Et le troisième : la preuve que c'est toi qui décides, pas l'envie de te masturber. Et ça, ça te sert pour le sport, les cours, le taf, tout le reste. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}
