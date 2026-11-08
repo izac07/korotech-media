@@ -1,0 +1,85 @@
+{
+ "id": "MDA-X354",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10304,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#2f4b57",
+  "sol": "#1b2a31",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#ece8e0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#ece8e0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#1b2a31"
+ },
+ "question": "T'en es à quel jour ? 👇",
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "bandeau": "Si tu tiens ce soir",
+   "vo": "Si tu tiens ce soir, voilà ce que tu gagnes demain matin. Le troisième, c'est le plus important."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "T'EN ES OÙ ?",
+   "vo": "Reste jusqu'au troisième, c'est le plus important, et enregistre la vidéo pour les soirs difficiles. Mais d'abord, dis-moi en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "bandeau": "1 · SANS CE POIDS",
+   "vo": "Le premier, c'est de te réveiller sans ce poids-là. Pas de « encore une fois », pas de série à recommencer."
+  },
+  {
+   "type": "ecran",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "bandeau": "2 · JOUR 10",
+   "ecran": {
+    "type": "liste",
+    "titre": "SI TU TIENS CE SOIR",
+    "lignes": [
+     "Sans ce poids",
+     "Jour 10",
+     "Toi qui décides"
+    ]
+   },
+   "vo": "Le deuxième, c'est un jour de plus sur ta grille. Demain, ça fait dix jours : un tiers du mois."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "COMMENTE NNN",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "bandeau": "3 · TOI QUI DÉCIDES",
+   "vo": "Et le troisième : la preuve que l'envie de te masturber, tu la subis pas, c'est toi qui décides. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}
