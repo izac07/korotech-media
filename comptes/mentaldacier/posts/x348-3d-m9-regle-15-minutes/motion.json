@@ -1,0 +1,85 @@
+{
+ "id": "MDA-X348",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10298,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#2f4b57",
+  "sol": "#1b2a31",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fd1b0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fd1b0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#1b2a31"
+ },
+ "question": "C'est quoi ta règle à toi ? 👇",
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "bandeau": "La règle des 15 minutes",
+   "vo": "La règle des quinze minutes. Elle tient en une phrase, et elle peut te sauver ta soirée."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "T'EN ES OÙ ?",
+   "vo": "Reste jusqu'au troisième, c'est le plus important, et enregistre la vidéo pour les soirs difficiles. Mais d'abord, dis-moi en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "bandeau": "1 · PAS MAINTENANT",
+   "vo": "Le premier, c'est la règle : quand l'envie de te masturber monte, tu te dis « pas maintenant, dans quinze minutes ». Pas jamais : juste pas maintenant."
+  },
+  {
+   "type": "ecran",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "bandeau": "2 · SORS",
+   "ecran": {
+    "type": "liste",
+    "titre": "LA RÈGLE DES 15 MINUTES",
+    "lignes": [
+     "Pas maintenant",
+     "Sors",
+     "Recommence"
+    ]
+   },
+   "vo": "Le deuxième, c'est ce que tu fais pendant ces quinze minutes : tu sors de la pièce, et le tel reste où il est."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "COMMENTE TENIR",
+   "carte": [
+    "💬 COMMENTE TENIR",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans masturbation."
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "bandeau": "3 · RECOMMENCE",
+   "vo": "Et le troisième : au bout des quinze minutes, tu regardes où t'en es. Souvent, la vague est passée. Si elle est encore là, tu recommences. Alors, ta règle à toi, c'est quoi ?"
+  }
+ ]
+}
