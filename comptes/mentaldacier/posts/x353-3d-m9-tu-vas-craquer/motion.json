@@ -1,0 +1,62 @@
+{
+ "id": "MDA-X353",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10303,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5e5850",
+  "sol": "#2f2c28",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e3a13b",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e3a13b",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2f2c28"
+ },
+ "question": "Tenu ce soir ? 👇",
+ "scenes": [
+  {
+   "type": "large",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "bandeau": "Tu vas craquer ce soir ?",
+   "vo": "Tu sens que tu vas craquer ce soir ?"
+  },
+  {
+   "type": "large",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "LÈVE-TOI",
+   "vo": "Lève-toi. Sors de la pièce. Le tel reste là."
+  },
+  {
+   "type": "large",
+   "humeur": "content",
+   "lumiere": "aube",
+   "bandeau": "15 MINUTES",
+   "vo": "Quinze minutes. Pas jamais : juste pas maintenant."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "COMMENTE TENIR",
+   "carte": [
+    "💬 COMMENTE TENIR",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans masturbation."
+  }
+ ]
+}
