@@ -1,0 +1,91 @@
+{
+ "id": "MDA-X351",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10301,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3f4b40",
+  "sol": "#232a24",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e07b5a",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e07b5a",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#232a24"
+ },
+ "question": "Tenu ou craqué aujourd'hui ? 👇",
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "triste",
+   "lumiere": "aube",
+   "bandeau": "20 minutes que tu scrolles ?",
+   "vo": "Ça fait vingt minutes que tu scrolles sans but ? Arrête-toi deux secondes. Écoute.",
+   "camera": "serre"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "ABONNE-TOI",
+   "vo": "Abonne-toi, on tient le mois ensemble, une vidéo par jour. Enregistre celle-là, et dis-moi en commentaire si t'as tenu aujourd'hui.",
+   "camera": "porte"
+  },
+  {
+   "type": "ecran",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "bandeau": "1 · PORTE D'ENTRÉE",
+   "vo": "Déjà, le scroll sans but, c'est souvent la porte d'entrée. Une vidéo en amène une autre, et tu sais où ça finit.",
+   "camera": "contre"
+  },
+  {
+   "type": "ecran",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "bandeau": "2 · TU CHERCHES QUOI ?",
+   "ecran": {
+    "type": "liste",
+    "titre": "20 MINUTES QUE TU SCROLLES ?",
+    "lignes": [
+     "Porte d'entrée",
+     "Tu cherches quoi ?",
+     "Le vrai besoin"
+    ]
+   },
+   "vo": "Ensuite, demande-toi ce que tu cherches vraiment : du repos, de la compagnie, ou juste fuir l'ennui ?",
+   "camera": "profil"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "COMMENTE TENIR",
+   "carte": [
+    "💬 COMMENTE TENIR",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans masturbation.",
+   "camera": "porte"
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "bandeau": "3 · LE VRAI BESOIN",
+   "vo": "Et le dernier point : tu fais ce qui répond à ce besoin. Fatigué ? Au lit, sans tel. Seul ? Tu écris à un pote. Tu t'ennuies ? Tu bouges. La masturbation, elle, règle aucun des trois. Alors, tenu ou craqué aujourd'hui ? Je lis tout.",
+   "camera": "serre"
+  }
+ ]
+}
