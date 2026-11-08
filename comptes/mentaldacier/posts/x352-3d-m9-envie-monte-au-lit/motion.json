@@ -1,0 +1,99 @@
+{
+ "id": "MDA-X352",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10302,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#4b3a47",
+  "sol": "#291f27",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e0b45e",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e0b45e",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#291f27"
+ },
+ "question": "Ça t'arrive à quelle heure, toi ? 👇",
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "bandeau": "L'envie monte, là, au lit ?",
+   "vo": "L'envie monte, là, au lit ? Regarde jusqu'au bout."
+  },
+  {
+   "type": "toi",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "TROIS GESTES",
+   "vo": "T'as dix secondes. Trois gestes, dans l'ordre."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "bandeau": "ABONNE-TOI",
+   "vo": "Enregistre cette vidéo pour ce soir, et abonne-toi."
+  },
+  {
+   "type": "large",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "bandeau": "1 · LA LUMIÈRE",
+   "vo": "Un : tu allumes la lumière. Dans le noir, avec un écran, c'est là que ça dérape."
+  },
+  {
+   "type": "ecran",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "bandeau": "2 · DEBOUT",
+   "ecran": {
+    "type": "liste",
+    "titre": "L'ENVIE MONTE, LÀ, AU LIT ?",
+    "lignes": [
+     "La lumière",
+     "Debout",
+     "Le tel dehors"
+    ]
+   },
+   "vo": "Deux : tu sors du lit. Allongé, tu négocies. Debout, tu décides."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "COMMENTE TENIR",
+   "carte": [
+    "💬 COMMENTE TENIR",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans masturbation."
+  },
+  {
+   "type": "toi",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "bandeau": "3 · LE TEL DEHORS",
+   "vo": "Trois, le plus important : le tel sort de la chambre. Tu le branches dans la cuisine, et tu reviens sans lui."
+  },
+  {
+   "type": "large",
+   "humeur": "content",
+   "lumiere": "aube",
+   "bandeau": "LE 16 NOVEMBRE",
+   "vo": "Et le seize novembre, j'ouvre Tenir : l'app pour reprendre le contrôle, jour par jour. Le lien est en bio."
+  }
+ ]
+}
