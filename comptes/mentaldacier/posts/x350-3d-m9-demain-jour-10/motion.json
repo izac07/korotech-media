@@ -1,0 +1,85 @@
+{
+ "id": "MDA-X350",
+ "layout": "studio3d",
+ "decor": "chambre_aube",
+ "music_seed": 10300,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5a4836",
+  "sol": "#2e261e",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fb8de",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fb8de",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2e261e"
+ },
+ "question": "T'en es à quel jour ? 👇",
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "pensif",
+   "lumiere": "aube",
+   "bandeau": "Demain, jour 10 : prépare-toi",
+   "vo": "Demain, c'est le jour dix. Voilà ce qui t'attend, et comment le passer."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "T'EN ES OÙ ?",
+   "vo": "Reste jusqu'au troisième, c'est le plus important, et enregistre la vidéo pour les soirs difficiles. Mais d'abord, dis-moi en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "bandeau": "1 · L'HABITUDE",
+   "vo": "Le premier, c'est la routine. Les premiers jours, t'étais motivé. Là, c'est l'habitude qui doit prendre le relais."
+  },
+  {
+   "type": "ecran",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "bandeau": "2 · UN TIERS",
+   "ecran": {
+    "type": "liste",
+    "titre": "DEMAIN, JOUR 10 : PRÉPARE-TO",
+    "lignes": [
+     "L'habitude",
+     "Un tiers",
+     "La veille"
+    ]
+   },
+   "vo": "Le deuxième, c'est l'impression que t'as plus rien à prouver. C'est faux : t'es à un tiers du mois."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "COMMENTE NNN",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "bandeau": "3 · LA VEILLE",
+   "vo": "Et le troisième : tu prépares ta soirée de demain dès ce soir. Un truc de prévu, le tel loin du lit. Dix jours sans te masturber, ça se gagne la veille. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}
