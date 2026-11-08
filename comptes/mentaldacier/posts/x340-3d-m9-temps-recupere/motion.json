@@ -1,0 +1,85 @@
+{
+ "id": "MDA-X340",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10290,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#4b3a47",
+  "sol": "#291f27",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#ece8e0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#ece8e0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#291f27"
+ },
+ "question": "Tu ferais quoi de ce temps ? 👇",
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "bandeau": "Le temps que tu récupères",
+   "vo": "Le temps que tu récupères en arrêtant. Fais le calcul avec moi."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "T'EN ES OÙ ?",
+   "vo": "Enregistre la vidéo pour ce soir et reste jusqu'au troisième, c'est lui qui t'aide à passer le cap. Avant ça, écris en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "bandeau": "1 · LE SCROLL",
+   "vo": "Le premier, c'est le temps sur le moment. Compte le scroll avant et après : c'est rarement cinq minutes."
+  },
+  {
+   "type": "ecran",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "bandeau": "2 · LA SOIRÉE D'APRÈS",
+   "ecran": {
+    "type": "liste",
+    "titre": "LE TEMPS QUE TU RÉCUPÈRES",
+    "lignes": [
+     "Le scroll",
+     "La soirée d'après",
+     "× 30"
+    ]
+   },
+   "vo": "Le deuxième, c'est le temps d'après : la soirée où tu te sens vide et où tu fais plus rien."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "COMMENTE NNN",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "bandeau": "3 · × 30",
+   "vo": "Et le troisième : multiplie par trente soirs. Ce mois sans masturbation, c'est peut-être le mois où t'as enfin du temps pour le sport, un projet, tes potes. Alors, tu ferais quoi de ce temps, toi ?"
+  }
+ ]
+}
