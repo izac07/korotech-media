@@ -1,0 +1,85 @@
+{
+ "id": "MDA-X332",
+ "layout": "studio3d",
+ "decor": "bureau",
+ "music_seed": 10282,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#5a4836",
+  "sol": "#2e261e",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e3a13b",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e3a13b",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#5d5750",
+  "tapis": "#2e261e"
+ },
+ "question": "T'en es à quel jour ? 👇",
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "content",
+   "lumiere": "aube",
+   "bandeau": "T'as craqué ce week-end ?",
+   "vo": "T'as craqué ce week-end ? C'est pas fini. Voilà comment repartir ce lundi."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "T'EN ES OÙ ?",
+   "vo": "Enregistre la vidéo pour ce soir et reste jusqu'au troisième, c'est lui qui t'aide à passer le cap. Avant ça, écris en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "bandeau": "1 · CE MATIN",
+   "vo": "Le premier, c'est de repartir ce matin. Pas lundi prochain, pas le premier du mois : aujourd'hui."
+  },
+  {
+   "type": "ecran",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "bandeau": "2 · LA RÈGLE",
+   "ecran": {
+    "type": "liste",
+    "titre": "T'AS CRAQUÉ CE WEEK-END ?",
+    "lignes": [
+     "Ce matin",
+     "La règle",
+     "Jours tenus"
+    ]
+   },
+   "vo": "Le deuxième, c'est de regarder ce qui s'est passé. Samedi soir, seul, le tel au lit ? C'est cette règle-là que tu corriges ce soir."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "COMMENTE NNN",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "bandeau": "3 · JOURS TENUS",
+   "vo": "Et le troisième : tu comptes tes jours tenus, pas ta série. Un week-end raté, ça efface pas tes jours sans masturbation. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}
