@@ -1,0 +1,91 @@
+{
+ "id": "MDA-X343",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10293,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3b4352",
+  "sol": "#262a33",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fb8de",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fb8de",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#262a33"
+ },
+ "question": "Tenu ou craqué aujourd'hui ? 👇",
+ "scenes": [
+  {
+   "type": "large",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "bandeau": "T'as craqué hier soir ?",
+   "vo": "T'as craqué hier soir ? Ton jour neuf compte quand même. Écoute.",
+   "camera": "dessus"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "T'EN ES OÙ ?",
+   "vo": "Enregistre la vidéo pour ce soir et reste jusqu'au troisième, c'est lui qui t'aide à passer le cap. Avant ça, écris en commentaire à quel jour t'en es.",
+   "camera": "serre"
+  },
+  {
+   "type": "ecran",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "bandeau": "1 · 8 JOURS COMPTENT",
+   "vo": "Le premier, c'est de pas effacer tout ce que t'as fait. Huit jours, un seul soir les annule pas.",
+   "camera": "dessus"
+  },
+  {
+   "type": "ecran",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "bandeau": "2 · LA MINUTE D'AVANT",
+   "ecran": {
+    "type": "liste",
+    "titre": "T'AS CRAQUÉ HIER SOIR ?",
+    "lignes": [
+     "8 jours comptent",
+     "La minute d'avant",
+     "Une barrière"
+    ]
+   },
+   "vo": "Le deuxième, c'est de trouver le moment exact où ça a basculé. Pas le craquage : la minute d'avant. Le tel, le lit, l'ennui ?",
+   "camera": "porte"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "COMMENTE TENIR",
+   "carte": [
+    "💬 COMMENTE TENIR",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans masturbation.",
+   "camera": "porte"
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "bandeau": "3 · UNE BARRIÈRE",
+   "vo": "Et le troisième : ce soir, tu mets une barrière pile à cette minute-là. Arrêter la masturbation, c'est pas une question de volonté, c'est une question de barrières au bon endroit. Alors, tenu ou craqué aujourd'hui ? Je lis tout.",
+   "camera": "profil"
+  }
+ ]
+}
