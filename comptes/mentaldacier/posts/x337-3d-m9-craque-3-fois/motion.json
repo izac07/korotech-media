@@ -1,0 +1,85 @@
+{
+ "id": "MDA-X337",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10287,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3b4352",
+  "sol": "#262a33",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e07b5a",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e07b5a",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#262a33"
+ },
+ "question": "Tenu ou craqué aujourd'hui ? 👇",
+ "scenes": [
+  {
+   "type": "large",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "bandeau": "Craqué 3 fois ? T'es pas foutu",
+   "vo": "T'as craqué trois fois cette semaine et tu te dis que t'es foutu ? Non. Écoute."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "ABONNE-TOI",
+   "vo": "Si tu veux la vidéo de demain, abonne-toi. Le troisième point, c'est le plus important, reste jusque-là. Mais d'abord, dis-moi en commentaire où t'en es."
+  },
+  {
+   "type": "ecran",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "bandeau": "1 · 4 SOIRS TENUS",
+   "vo": "Déjà, trois craquages en sept jours, c'est quatre soirs tenus. Avant, c'était peut-être zéro."
+  },
+  {
+   "type": "ecran",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "bandeau": "2 · DÉCLENCHEUR",
+   "ecran": {
+    "type": "liste",
+    "titre": "CRAQUÉ 3 FOIS ? T'ES PAS FOU",
+    "lignes": [
+     "4 soirs tenus",
+     "Déclencheur",
+     "Une règle"
+    ]
+   },
+   "vo": "Ensuite, regarde tes trois craquages : même heure, même endroit, même humeur ? C'est ton déclencheur. Et un déclencheur, ça se contourne."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "COMMENTE TENIR",
+   "carte": [
+    "💬 COMMENTE TENIR",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans masturbation."
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "bandeau": "3 · UNE RÈGLE",
+   "vo": "Et le dernier point : tu changes une seule règle ce soir. Pas dix, une. Celle qui vise ce déclencheur. C'est comme ça qu'on sort de la masturbation du soir : une règle à la fois. Alors, tenu ou craqué aujourd'hui ? Je lis tout."
+  }
+ ]
+}
