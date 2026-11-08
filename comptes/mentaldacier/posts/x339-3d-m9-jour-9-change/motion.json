@@ -1,0 +1,91 @@
+{
+ "id": "MDA-X339",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10289,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3f4b40",
+  "sol": "#232a24",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e3a13b",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e3a13b",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#4f5559",
+  "tapis": "#232a24"
+ },
+ "question": "T'en es à quel jour ? 👇",
+ "scenes": [
+  {
+   "type": "toi",
+   "humeur": "triste",
+   "lumiere": "aube",
+   "bandeau": "Jour 9 : ce qui a changé",
+   "vo": "Jour neuf sans craquer. Si t'es encore là, il s'est déjà passé trois choses.",
+   "camera": "serre"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "T'EN ES OÙ ?",
+   "vo": "Reste jusqu'à la troisième, c'est la plus importante, et enregistre la vidéo pour les soirs difficiles. Mais d'abord, dis-moi en commentaire à quel jour t'en es.",
+   "camera": "porte"
+  },
+  {
+   "type": "ecran",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "bandeau": "1 · SOIRÉES",
+   "vo": "La première, c'est que t'as des soirées en plus. Des heures que tu passais avant sur ton tel.",
+   "camera": "contre"
+  },
+  {
+   "type": "ecran",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "bandeau": "2 · TU LA VOIS VENIR",
+   "ecran": {
+    "type": "liste",
+    "titre": "JOUR 9 : CE QUI A CHANGÉ",
+    "lignes": [
+     "Soirées",
+     "Tu la vois venir",
+     "Confiance"
+    ]
+   },
+   "vo": "La deuxième, c'est que tu sais à quelle heure l'envie arrive. Avant, elle te prenait par surprise. Maintenant, tu la vois venir.",
+   "camera": "profil"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "COMMENTE NNN",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant la troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "camera": "porte"
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "bandeau": "3 · CONFIANCE",
+   "vo": "Et la troisième : tu te fais confiance. Neuf jours sans te masturber, c'est neuf promesses tenues envers toi. Alors, t'en es à quel jour, toi ?",
+   "camera": "serre"
+  }
+ ]
+}
