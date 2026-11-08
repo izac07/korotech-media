@@ -1,0 +1,91 @@
+{
+ "id": "MDA-X331",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10281,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3b4352",
+  "sol": "#262a33",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#e0b45e",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#e0b45e",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#262a33"
+ },
+ "question": "T'en es à quel jour ? 👇",
+ "scenes": [
+  {
+   "type": "large",
+   "humeur": "telephone",
+   "lumiere": "aube",
+   "bandeau": "Jour 9 : tu crois que c'est gagné",
+   "vo": "Jour neuf. C'est souvent le jour où tu crois que c'est gagné. Et c'est là que ça se joue.",
+   "camera": "dessus"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "T'EN ES OÙ ?",
+   "vo": "Reste jusqu'au troisième, c'est le plus important, et enregistre la vidéo pour les soirs difficiles. Mais d'abord, dis-moi en commentaire à quel jour t'en es.",
+   "camera": "serre"
+  },
+  {
+   "type": "ecran",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "bandeau": "1 · RAISON",
+   "vo": "Le premier, c'est de te rappeler pourquoi t'as commencé. Pas la règle : la raison. Écris-la quelque part où tu la vois tous les jours.",
+   "camera": "dessus"
+  },
+  {
+   "type": "ecran",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "bandeau": "2 · BARRIÈRES",
+   "ecran": {
+    "type": "liste",
+    "titre": "JOUR 9 : TU CROIS QUE C'EST ",
+    "lignes": [
+     "Raison",
+     "Barrières",
+     "Chaque soir"
+    ]
+   },
+   "vo": "Le deuxième, c'est de garder les mêmes barrières que le jour un. Le tel hors de la chambre, même si tu te sens solide.",
+   "camera": "porte"
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "COMMENTE NNN",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours.",
+   "camera": "porte"
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "bandeau": "3 · CHAQUE SOIR",
+   "vo": "Et le troisième : arrêter la masturbation, c'est pas un examen que tu passes une fois. C'est un choix que tu refais chaque soir. Alors, t'en es à quel jour, toi ?",
+   "camera": "profil"
+  }
+ ]
+}
