@@ -1,0 +1,85 @@
+{
+ "id": "MDA-X349",
+ "layout": "studio3d",
+ "decor": "salon",
+ "music_seed": 10299,
+ "handle": "mentaldacier2030",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#5c5c63",
+  "mur": "#3b4352",
+  "sol": "#262a33",
+  "cadre": "#2a2a2e",
+  "nuit": "#050507",
+  "acc": "#8fd1b0",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#8fd1b0",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d",
+  "overlay": "sobre",
+  "meuble": "#56555b",
+  "tapis": "#262a33"
+ },
+ "question": "T'en es à quel jour ? 👇",
+ "scenes": [
+  {
+   "type": "large",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "bandeau": "NNN : l'erreur de ceux qui lâchent",
+   "vo": "NNN : l'erreur de ceux qui lâchent avant le jour quinze. Vérifie que c'est pas toi."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "T'EN ES OÙ ?",
+   "vo": "Enregistre la vidéo pour ce soir et reste jusqu'à la troisième, c'est elle qui t'aide à passer le cap. Avant ça, écris en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "humeur": "pensif",
+   "lumiere": "nuit",
+   "bandeau": "1 · LA VOLONTÉ",
+   "vo": "La première, c'est de compter sur la volonté. Le soir, t'en as plus. Ce qui tient, c'est ce que t'as préparé le matin."
+  },
+  {
+   "type": "ecran",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "bandeau": "2 · SEUL",
+   "ecran": {
+    "type": "liste",
+    "titre": "NNN : L'ERREUR DE CEUX QUI L",
+    "lignes": [
+     "La volonté",
+     "Seul",
+     "Tout effacer"
+    ]
+   },
+   "vo": "La deuxième, c'est de rester seul avec ça. Personne au courant, personne à qui écrire quand ça monte."
+  },
+  {
+   "type": "mascotte",
+   "humeur": "normal",
+   "lumiere": "aube",
+   "bandeau": "COMMENTE NNN",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant la troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "bandeau": "3 · TOUT EFFACER",
+   "vo": "Et la troisième : croire qu'un craquage efface tout. Alors ils lâchent le mois entier pour un soir. Toi, tu repars le lendemain, sans masturbation et sans te punir. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}
