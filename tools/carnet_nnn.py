@@ -15,16 +15,17 @@ OR, ENCRE, PAPIER = "#d9a441", "#141414", "#f1ece2"
 # textes fixes de la mise en page : version NNN (novembre) et version générale « 30 jours sans la BR »
 TXT = {"tag": "@MENTALDACIER2030 · CARNET GRATUIT · NOVEMBRE", "big": "NNN", "t1": "Le plan pour tenir<br><span>les 30 jours</span>",
        "pied": "TENIR LE NNN", "engage": "je tiens le NNN<br>du 1<sup>er</sup> au 30 novembre.",
-       "recu": "Tu as reçu ce carnet en commentant NNN. Partage-le à un pote qui fait le mois avec toi."}
+       "recu": "Tu as reçu ce carnet en commentant NNN. Partage-le à un pote qui fait le mois avec toi.", "tenir": True}
 if "--br" in sys.argv:
     SRC = os.path.join(RAC, "ressources", "mentaldacier", "contenu-br.json")
     OUT = os.path.join(RAC, "ressources", "mentaldacier", "plan-30-jours-sans-la-br.pdf")
     TXT = {"tag": "@MENTALDACIER2030 · CARNET GRATUIT", "big": "30", "t1": "Jours sans la BR<br><span>le plan pour tenir</span>",
            "pied": "30 JOURS SANS LA BR", "engage": "je tiens<br>30 jours sans la BR, du <span class='ln' style='width:30mm'></span><br>au <span class='ln' style='width:30mm'></span>.",
            "recu": "Partage ce carnet à un pote qui veut reprendre le contrôle avec toi.", "tenir": True}
-# Page « Tenir » (version --br seulement) : ouverture du 16/11, offre fondateur réelle (50 places), liste d'attente ?src=pdf.
+# Page « Tenir » (les deux versions depuis le 09/11) : ouverture du 16/11, offre fondateur réelle (50 places), liste d'attente.
+# Un lien par carnet pour savoir lequel amène des inscrits : ?src=pdf-nnn (carnet NNN) et ?src=pdf (carnet BR).
 # À réécrire après l'ouverture (le 16/11, la liste d'attente devient l'inscription).
-LIEN_TENIR = "https://tenirapp.com/?src=pdf"
+LIEN_TENIR = "https://tenirapp.com/?src=pdf" if "--br" in sys.argv else "https://tenirapp.com/?src=pdf-nnn"
 
 
 def r(s):
