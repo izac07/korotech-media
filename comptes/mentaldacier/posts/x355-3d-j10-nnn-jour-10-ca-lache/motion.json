@@ -1,0 +1,91 @@
+{
+ "id": "MDA-X355",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10355,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à quel jour ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "NNN · JOUR 10",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour dix du NNN : c'est souvent là que ça lâche. Voilà comment passer."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Reste jusqu'au troisième, c'est le plus important, et enregistre la vidéo pour les soirs difficiles. Mais d'abord, dis-moi en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. TES RÈGLES",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Le premier, c'est de savoir pourquoi ça lâche : l'élan du début est retombé, et il te reste que tes règles.",
+   "ecran": {
+    "type": "calendrier",
+    "jours": 30,
+    "jusqua": 10
+   }
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. DIX JOURS",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le deuxième, c'est de regarder ce que t'as déjà : dix jours. Tu vas pas tout remettre à zéro pour cinq minutes ce soir.",
+   "ecran": {
+    "type": "liste",
+    "titre": "JOUR 10",
+    "lignes": [
+     "Tes règles",
+     "Dix jours",
+     "Comme au jour 1"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. COMME AU JOUR 1",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : ce soir, tu fais exactement comme le jour un. Tel hors de la chambre, soirée prévue, coucher à l'heure. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}
