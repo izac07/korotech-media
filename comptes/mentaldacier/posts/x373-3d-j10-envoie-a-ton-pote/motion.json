@@ -1,0 +1,87 @@
+{
+ "id": "MDA-X373",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10373,
+ "handle": "mentaldacier2030",
+ "question": "Tague ton pote du NNN 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "ENVOIE À TON POTE",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Envoie ça au pote qui fait le NNN avec toi. Jour dix, il en a besoin."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "TROIS PHRASES",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Trois phrases à vous envoyer quand l'un des deux veut lâcher. La troisième, c'est la plus forte."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. PAS MAINTENANT",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "La première : « Pas maintenant. Dans quinze minutes. »"
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. DIX JOURS",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "La deuxième : « T'as tenu dix jours, tu vas pas tout lâcher pour cinq minutes. »",
+   "ecran": {
+    "type": "liste",
+    "titre": "À DEUX",
+    "lignes": [
+     "Pas maintenant",
+     "Dix jours",
+     "Écris-moi"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. ÉCRIS-MOI",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et la troisième : « Écris-moi au lieu d'ouvrir ton tel. » À deux, c'est plus simple. Alors, tague le pote qui le fait avec toi."
+  }
+ ]
+}
