@@ -1,0 +1,91 @@
+{
+ "id": "MDA-X372",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10372,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à quel jour ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "JOUR 7",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour sept sans la BR : une semaine. Et c'est maintenant que le piège arrive."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Reste jusqu'au troisième, c'est le plus important, et enregistre la vidéo pour les soirs difficiles. Mais d'abord, dis-moi en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. « JE L'AI MÉRITÉ »",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Le premier, c'est de te méfier de la phrase : une semaine, je l'ai mérité.",
+   "ecran": {
+    "type": "calendrier",
+    "jours": 30,
+    "jusqua": 7
+   }
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. MÊMES RÈGLES",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le deuxième, c'est de garder les mêmes règles qu'au jour un. Tel hors de la chambre, même si tu te sens solide.",
+   "ecran": {
+    "type": "liste",
+    "titre": "JOUR 7",
+    "lignes": [
+     "« Je l'ai mérité »",
+     "Mêmes règles",
+     "Le jour 8"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE TENIR",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE TENIR",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans masturbation."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. LE JOUR 8",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu vises pas un mois, tu vises le jour huit. Un jour à la fois, c'est plus simple à tenir. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "id": "MDA-X371",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10371,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à quel jour ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "NNN · JOUR 10",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Ceux qui lâchent au jour dix du NNN font souvent la même erreur."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Enregistre la vidéo pour ce soir et reste jusqu'au troisième, c'est lui qui t'aide à passer le cap. Avant ça, écris en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. « C'EST GAGNÉ »",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "La première, c'est de croire que c'est gagné. Dix jours, c'est bien, mais il en reste vingt."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. LES BARRIÈRES",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "La deuxième, c'est d'enlever les barrières. Le tel revient dans le lit, la porte se referme.",
+   "ecran": {
+    "type": "liste",
+    "titre": "L'ERREUR",
+    "lignes": [
+     "« C'est gagné »",
+     "Les barrières",
+     "En secret"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. EN SECRET",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et la troisième : garder ça pour soi. Dis-le à un pote, c'est plus dur de lâcher devant quelqu'un. Alors, t'en es à quel jour, toi ? Abonne-toi, demain c'est le jour onze."
+  }
+ ]
+}
