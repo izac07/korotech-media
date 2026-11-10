@@ -1,0 +1,87 @@
+{
+ "id": "MDA-X360",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10360,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à quel jour ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "L'ENVIE MONTE ?",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "L'envie monte, là, tout de suite ? Trois réflexes, dans l'ordre."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Enregistre la vidéo pour ce soir et reste jusqu'au troisième, c'est lui qui t'aide à passer le cap. Avant ça, écris en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. LÈVE-TOI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est de te lever. Tu quittes ton lit ou ton canapé, maintenant."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. LE TEL AILLEURS",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le deuxième, c'est de poser ton tel dans une autre pièce pendant dix minutes.",
+   "ecran": {
+    "type": "liste",
+    "titre": "TOUT DE SUITE",
+    "lignes": [
+     "Lève-toi",
+     "Le tel ailleurs",
+     "Écris à quelqu'un"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE TENIR",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE TENIR",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans masturbation."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. ÉCRIS À QUELQU'UN",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu écris à quelqu'un. N'importe quoi, juste pour plus être seul avec ça. L'envie, c'est une vague : elle monte, puis elle redescend. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}
