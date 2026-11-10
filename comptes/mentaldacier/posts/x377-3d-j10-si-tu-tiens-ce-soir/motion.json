@@ -1,0 +1,87 @@
+{
+ "id": "MDA-X377",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10377,
+ "handle": "mentaldacier2030",
+ "question": "Tenu ou craqué aujourd'hui ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#2a1f1f",
+  "sol": "#1a1212",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#c8102e",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#c8102e",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "SI TU TIENS CE SOIR",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "vo": "Si tu tiens ce soir, t'as dix jours complets de NNN. Voilà ce que ça veut dire."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "ABONNE-TOI",
+   "humeur": "telephone",
+   "lumiere": "nuit",
+   "camera": "contre",
+   "vo": "Abonne-toi, on tient le mois ensemble, une vidéo par jour. Enregistre celle-là, et dis-moi en commentaire si t'as tenu aujourd'hui."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "LE CAP",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Déjà, ça veut dire que t'as passé un cap où beaucoup s'arrêtent."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "TES RÈGLES",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Ensuite, ça veut dire que tes règles marchent. Le tel hors de la chambre, la soirée prévue : garde-les.",
+   "ecran": {
+    "type": "liste",
+    "titre": "CE SOIR",
+    "lignes": [
+     "Le cap",
+     "Tes règles",
+     "Demain matin"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "DEMAIN MATIN",
+   "humeur": "fatigue",
+   "lumiere": "aube",
+   "camera": "serre",
+   "vo": "Et le dernier point : demain matin, tu te réveilles avec onze jours, pas avec des regrets. Alors, tenu ou craqué aujourd'hui ? Je lis tout."
+  }
+ ]
+}
