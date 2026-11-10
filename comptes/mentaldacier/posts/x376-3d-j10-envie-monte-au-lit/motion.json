@@ -1,0 +1,87 @@
+{
+ "id": "MDA-X376",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10376,
+ "handle": "mentaldacier2030",
+ "question": "Tenu ou craqué aujourd'hui ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "L'ENVIE MONTE ?",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "T'es au lit, et l'envie monte ? Fais ça avant de toucher ton tel."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Enregistre la vidéo pour ce soir et reste jusqu'au troisième, c'est lui qui t'aide à passer le cap. Avant ça, écris en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. ASSIEDS-TOI",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est de t'asseoir. Rien que ça : tu sors de la position où tout se passe d'habitude."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. LA LUMIÈRE",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le deuxième, c'est d'allumer la lumière et de poser ton tel à l'autre bout de la pièce.",
+   "ecran": {
+    "type": "liste",
+    "titre": "AU LIT",
+    "lignes": [
+     "Assieds-toi",
+     "La lumière",
+     "Respire"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE TENIR",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE TENIR",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans masturbation."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. RESPIRE",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu respires dix fois, lentement, en comptant. L'envie, c'est une vague : elle monte, puis elle redescend. Alors, tenu ou craqué aujourd'hui ?"
+  }
+ ]
+}
