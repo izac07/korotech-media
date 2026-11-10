@@ -1,0 +1,87 @@
+{
+ "id": "MDA-X370",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10370,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à quel jour ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "JOUR 5",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour cinq sans la BR : le jour où tu t'ennuies à mort. Et l'ennui, c'est le piège."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Reste jusqu'au troisième, c'est le plus important, et enregistre la vidéo pour les soirs difficiles. Mais d'abord, dis-moi en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. TES HEURES CREUSES",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "serre",
+   "vo": "Le premier, c'est de repérer tes heures creuses : le soir, ou les jours où t'as rien de prévu."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. REMPLIS-LES",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le deuxième, c'est de les remplir avant qu'elles arrivent : une séance, une partie avec tes potes, un projet.",
+   "ecran": {
+    "type": "liste",
+    "titre": "L'ENNUI",
+    "lignes": [
+     "Tes heures creuses",
+     "Remplis-les",
+     "Accepte l'ennui"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE TENIR",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE TENIR",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans masturbation."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. ACCEPTE L'ENNUI",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : t'acceptes de t'ennuyer un peu. S'ennuyer, c'est pas grave, et ça passe. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}
