@@ -1,0 +1,91 @@
+{
+ "id": "MDA-X369",
+ "layout": "studio3d",
+ "decor": "chambre_mda",
+ "music_seed": 10369,
+ "handle": "mentaldacier2030",
+ "question": "T'en es à quel jour ? 👇",
+ "couleurs": {
+  "personnage": "humain",
+  "humain": "#bdbdbd",
+  "mur": "#242424",
+  "sol": "#171717",
+  "cadre": "#333333",
+  "nuit": "#0a0a0a",
+  "acc": "#d9a441",
+  "jaune": "#f2f2f2",
+  "encre": "#0d0d0d",
+  "vert": "#d9a441",
+  "papier": "#0d0d0d",
+  "bandeau_texte": "#f4f4f4",
+  "badge_fond": "#0d0d0d",
+  "badge_texte": "#f4f4f4",
+  "texte_o": "#0d0d0d"
+ },
+ "scenes": [
+  {
+   "type": "large",
+   "bandeau": "UN TIERS DU MOIS",
+   "humeur": "triste",
+   "lumiere": "nuit",
+   "camera": "dessus",
+   "vo": "Jour dix du NNN : un tiers du mois. La suite, c'est pas ce que tu crois."
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "T'EN ES OÙ ?",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "camera": "orbite",
+   "vo": "Reste jusqu'au troisième, c'est le plus important, et enregistre la vidéo pour les soirs difficiles. Mais d'abord, dis-moi en commentaire à quel jour t'en es."
+  },
+  {
+   "type": "ecran",
+   "bandeau": "1. LA ROUTINE",
+   "humeur": "fatigue",
+   "lumiere": "nuit",
+   "vo": "Le premier, c'est de savoir que les prochains jours sont moins excitants. Plus de nouveauté, juste la routine.",
+   "ecran": {
+    "type": "calendrier",
+    "jours": 30,
+    "jusqua": 10
+   }
+  },
+  {
+   "type": "ecran",
+   "bandeau": "2. CAP SUR 15",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "vo": "Le deuxième, c'est de te fixer un petit cap : le jour quinze, la moitié. Vingt jours d'un coup, c'est trop loin.",
+   "ecran": {
+    "type": "liste",
+    "titre": "LA SUITE",
+    "lignes": [
+     "La routine",
+     "Cap sur 15",
+     "Une croix"
+    ]
+   }
+  },
+  {
+   "type": "mascotte",
+   "bandeau": "COMMENTE NNN",
+   "humeur": "normal",
+   "lumiere": "nuit",
+   "camera": "porte",
+   "carte": [
+    "💬 COMMENTE NNN",
+    "le plan des 30 jours, gratuit"
+   ],
+   "vo": "Avant le troisième, commente NNN, et je t'envoie le plan gratuit pour tenir les trente jours."
+  },
+  {
+   "type": "large",
+   "bandeau": "3. UNE CROIX",
+   "humeur": "sport",
+   "lumiere": "aube",
+   "camera": "contre",
+   "vo": "Et le troisième : tu coches chaque soir. Une croix sur un calendrier. Voir dix croix d'affilée, ça donne pas envie d'en rater une. Alors, t'en es à quel jour, toi ?"
+  }
+ ]
+}
