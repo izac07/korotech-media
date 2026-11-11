@@ -1,0 +1,640 @@
+2;C02;2026-10-14 11:00;11:00;Carrousel;5 prompts pour réviser 2x plus vite;Publié;18008359854005504;
+3;R01;2026-10-14 18:30;2026-10-14 18:30;Reel;Ton cours en fiche de révision en 30 secondes;Publié;18193778074399803;
+4;R02;2026-10-14 16:45;16:45;Reel;Fais-toi interroger par l'IA avant ton contrôle;Publié;17962367151226608;
+5;C03;2026-10-14 18:00;18:00;Carrousel;20 mots d'anglais par jour sans effort;Publié;18114765650039196;
+6;R03;2026-10-14 19:15;19:15;Reel;Ta rédaction corrigée comme par un prof;Publié;18375391738242711;
+7;C04;2026-10-14 20:30;20:30;Carrousel;Parents : aider son enfant sans comprendre ses cours;Publié;17940253848364270;
+8;R04;2026-10-14 21:45;21:45;Reel;Ton cours est trop long ? Résume-le comme ça;Publié;18064917383789769;
+9;R05;2026-10-15 07:15;07:15;Reel;Méthode Feynman : explique ton cours à l'IA;Publié;18112748771466525;
+10;C05;2026-10-15 08:30;08:30;Carrousel;Parents : 5 questions à poser après les cours;Publié;17997848438826849;
+11;R06;2026-10-15 10:30;10:30;Reel;Parents : 3 règles pour l'IA à la maison;Publié;18148555273564597;
+12;R07;2026-10-15 12:15;12:15;Reel;5 faux amis anglais qui te piègent;Publié;18111568157605066;
+13;C06;2026-10-15 13:30;13:30;Carrousel;Tes flashcards Anki en 1 prompt;Publié;17910872880552618;
+14;R08;2026-10-15 16:45;16:45;Reel;L'IA qui t'aide sans te donner la réponse;Publié;17998977273006167;
+15;C07;2026-10-15 18:00;18:00;Carrousel;Parcoursup : 4 façons d'utiliser l'IA pour t'orienter;Publié;17994881445019419;
+16;R09;2026-10-15 19:15;19:15;Reel;L'IA rend bête ? Ça dépend de comment tu l'utilises;Publié;18031059440884282;
+17;C08;2026-10-15 20:30;20:30;Carrousel;Parents : a-t-il copié sur ChatGPT ? 4 réflexes;Publié;18157901608504529;
+18;R10;2026-10-15 21:45;21:45;Reel;Ta semaine organisée en 1 prompt;Publié;17919956655452403;
+19;R11;2026-10-19 19:15;19:15;Reel;Prédire les questions du prochain contrôle;Publié;18182810446439077;
+20;C09;2026-10-19 12:15;12:15;Carrousel;Parents : aider en maths sans tout réexpliquer;Refusé;;
+21;R12;2026-10-18 12:15;12:15;Reel;Mythe : relire son cours ne suffit pas;Publié;18056778380836770;
+22;R13;2026-10-17 21:00;21:00;Reel;Apprendre l'espagnol avec sa série;Publié;18144839044547030;
+23;C10;2026-10-17 19:15;19:15;Carrousel;La méthode Pomodoro avec l'IA;Publié;17978114118133392;
+24;R14;2026-10-20 12:15;12:15;Reel;Oral d'anglais en mode vocal;Publié;18074885966743629;
+25;C11;2026-10-18 19:15;19:15;Carrousel;Lettre de motivation qui te ressemble;Refusé;;
+26;R15;2026-10-21 19:15;19:15;Reel;Parents : préparer la réunion parents-profs;Publié;18216711739357756;
+27;C12;2026-10-20 19:15;19:15;Carrousel;Parents : l'IA et la vie privée de votre enfant;Refusé;;
+28;R16;2026-10-21 12:15;12:15;Reel;Son cours en podcast;Publié;18396191974164536;
+29;LIA-C01;2026-10-19 12:30;12:30;Carrousel;5 tâches à déléguer à l'IA dès lundi;Refusé;;17841420788582578
+30;ZSF-C01;2026-10-19 18:00;18:00;Carrousel;Séance 15 min sans matériel — débutant;Refusé;;17841467969534543
+31;CL-C01;2026-10-19 21:00;21:00;Carrousel;5 green flags qu'on ne remarque pas assez;Refusé;;17841415150585724
+32;LIA-R01;2026-10-20 12:30;12:30;Reel;Le prompt qui écrit tes relances de factures impayées;Refusé;;17841420788582578
+33;ZSF-R01;2026-10-20 18:00;18:00;Reel;Le squat : 3 erreurs à corriger;Refusé;;17841467969534543
+34;CL-R01;2026-10-20 21:00;21:00;Reel;Dire non sans se justifier;Refusé;;17841415150585724
+35;LIA-C02;2026-10-21 12:30;12:30;Carrousel;Les 3 erreurs qui rendent tes prompts nuls;Refusé;;17841420788582578
+36;ZSF-C02;2026-10-21 18:00;18:00;Carrousel;Pas encore de pompe ? Progresse en 4 étapes;Refusé;;17841467969534543
+37;CL-C02;2026-10-21 21:00;21:00;Carrousel;Exprimer un besoin sans faire de reproche;Refusé;;17841415150585724
+38;X04;2026-10-18 16:53;16:53;Reel;3 IA gratuites pour réviser (motion design);Publié;18133480051671128;
+39;LIA-R02;2026-10-17 08:50;08:50;Reel;L'iceberg de l'automatisation (motion design);Publié;18102913571327010;17841420788582578
+40;ZSF-R02;2026-10-17 18:00;18:00;Reel;Stop aux 100 crunchs : circuit abdos 5 min;Publié;18130482721864986;17841467969534543
+41;CL-R02;2026-10-17 19:15;19:15;Reel;Le message à entendre si tu doutes de ta valeur;Publié;18115797077132422;17841415150585724
+42;ZSF-R03;2026-10-17 08:30;08:30;Reel;Circuit jambes 5 min : arrête les squats bâclés;Publié;17949661215340778;17841467969534543
+43;LIA-R04;2026-10-17 18:30;18:30;Reel;2 posts par jour, 0 à la main : mon système avec Claude;Publié;18113187404165635;17841420788582578
+44;ZSF-C03;2026-10-18 07:30;07:30;Carrousel;L'échauffement de 3 min que tu zappes trop;Publié;18113398277132717;17841467969534543
+45;ZSF-R04;2026-10-18 18:00;18:00;Reel;Cardio sans sauter : 5 min sans déranger les voisins;Publié;17992339884104034;17841467969534543
+46;ZSF-R05;2026-10-19 07:30;07:30;Reel;Pas besoin de finir trempé : la séance tempo lent;Publié;18055895606649284;17841467969534543
+47;ZSF-R06;2026-10-20 18:00;18:00;Reel;Fentes bancales ? La bonne position;Publié;18117821158996019;17841467969534543
+48;ZSF-C04;2026-10-20 07:30;07:30;Carrousel;Planche : passer de 20 s à 1 minute;Refusé;;17841467969534543
+49;ZSF-R07;2026-10-21 07:30;07:30;Reel;Pas envie ? La séance minimum de 4 minutes;Publié;18094253972187956;17841467969534543
+50;LIA-R05;2026-10-19 18:30;18:30;Reel;Tout part seul, sauf veto : ma file d'attente;Publié;18124504228882503;17841420788582578
+51;CL-R03;2026-10-19 12:30;12:30;Reel;Après une dispute : le message qui répare;Publié;17962340175235257;17841415150585724
+52;CL-C03;2026-10-20 12:30;12:30;Carrousel;Compromis ou sacrifice : comment faire la différence;Refusé;;17841415150585724
+53;C13;2026-10-22 19:15;19:15;Carrousel;CV sans expérience : ce que tu as déjà fait compte;Refusé;;
+54;C14;2026-10-23 12:15;12:15;Carrousel;POV : exposé de groupe et personne ne bosse;Refusé;;
+55;R17;2026-10-23 19:15;19:15;Reel;Message gênant : 3 réflexes avec l'IA avant d'envoyer;Publié;18127080328852531;
+56;R18;2026-10-24 12:15;12:15;Reel;POV : tu comprends rien au prof, 3 astuces;Publié;17910311304487620;
+57;C15;2026-10-24 19:15;19:15;Carrousel;Apprendre un truc en 10 min par jour avec l'IA;Refusé;;
+58;MDA-C01;2026-10-19 07:30;07:30;Carrousel;La règle des 2 minutes contre la procrastination;Refusé;;17841429867473189
+59;RM-R03;2026-10-19 12:00;12:00;Reel;Revendre tes affaires sans te faire avoir;Publié;18635510455029549;17841421563093307
+60;RM-C01;2026-10-19 19:30;19:30;Carrousel;4 arnaques « argent facile » à reconnaître;Refusé;;17841421563093307
+61;MDA-R04;2026-10-19 21:30;21:30;Reel;14 jours pour reprendre tes soirées (et tes matins);Publié;18125978941910792;17841429867473189
+62;MDA-R03;2026-10-17 19:15;19:15;Reel;Reset 30 jours : reprendre le contrôle;Publié;17891033316683842;17841429867473189
+63;RM-R02;2026-10-17 19:15;19:15;Reel;Tes premiers 100 € en ligne : la méthode honnête;Publié;17911454955551879;17841421563093307
+64;MDA-C03;2026-10-20 21:30;21:30;Carrousel;La méthode 1-3-5 pour ta journée;Refusé;;17841429867473189
+65;MDA-C02;2026-10-21 07:30;07:30;Carrousel;Routine du matin en 4 étapes (sans se lever à 5 h);Refusé;;17841429867473189
+66;RM-C02;2026-10-21 19:30;19:30;Carrousel;Trouver tes 3 premiers clients;Refusé;;17841421563093307
+67;ZSF-R08;2026-10-17 22:40;22:40;Reel;Haut du corps en 5 min, sans matériel;Publié;18097071884395078;17841467969534543
+68;LIA-R06;2026-10-17 22:40;22:40;Reel;Mythe : le prompt magique;Publié;17961236763236942;17841420788582578
+69;RM-R04;2026-10-18 08:55;08:55;Reel;La règle 50/30/20 pour ton premier salaire;Publié;18100865636455042;17841421563093307
+70;R19;2026-10-18 19:15;19:15;Reel;Lettre de motivation : 3 étapes pour qu'elle te ressemble;Publié;18095995112395860;
+71;MDA-R05;2026-10-19 07:30;07:30;Reel;7 jours avec la règle des 2 minutes;Publié;18106229789528654;17841429867473189
+72;R20;2026-10-19 12:15;12:15;Reel;Parents : 3 réflexes pour aider en maths;Publié;17996873307046723;
+73;LIA-R07;2026-10-19 12:30;12:30;Reel;Lundi, délègue ça : 3 tâches pour Claude;Publié;18218166784346216;17841420788582578
+74;ZSF-R09;2026-10-19 18:00;18:00;Reel;Stop à la séance d'1 h : ta séance débutant de 15 min;Publié;17915857791531174;17841467969534543
+75;RM-R05;2026-10-19 19:30;19:30;Reel;L'argent facile ? 4 arnaques à reconnaître;Publié;18139013521552696;17841421563093307
+76;ZSF-R10;2026-10-20 07:30;07:30;Reel;Planche : de 20 s à 1 minute, la progression simple;Publié;18247098670313575;17841467969534543
+77;R21;2026-10-20 19:15;19:15;Reel;Parents : 3 réflexes pour sa vie privée avec l'IA;Publié;18633617524045947;
+78;MDA-R07;2026-10-21 07:30;07:30;Reel;7 jours pour une routine du matin (sans te lever à 5 h);Publié;18335552011279130;17841429867473189
+79;LIA-R08;2026-10-21 12:30;12:30;Reel;La 1re réponse de l'IA est un brouillon : 3 relances;Publié;18116266055589342;17841420788582578
+80;CL-R04;2026-10-19 21:00;21:00;Reel;Les green flags qu'on ne remarque pas assez;Publié;18186708379418097;17841415150585724
+81;CL-R05;2026-10-20 12:30;12:30;Reel;Compromis ou sacrifice : fais la différence;Publié;17911318659488610;17841415150585724
+82;CL-R06;2026-10-21 21:00;21:00;Reel;Dire ton besoin sans faire de reproche;Publié;17912575563507578;17841415150585724
+83;R22;2026-10-22 19:15;19:15;Reel;CV vide ? 3 étapes pour le remplir sans mentir;Publié;18009177431781634;
+84;R23;2026-10-23 12:15;12:15;Reel;POV : exposé de groupe et personne ne bosse, 3 étapes;Publié;18170044765474901;
+85;R24;2026-10-24 19:15;19:15;Reel;Apprendre un truc en 10 min par jour avec l'IA;Publié;18106255940202458;
+86;MDA-R06;2026-10-20 21:30;21:30;Reel;9 tâches max par jour : la méthode 1-3-5;Publié;17974935891147099;17841429867473189
+87;ZSF-R11;2026-10-21 18:00;18:00;Reel;Zéro pompe ? Normal : 4 étapes pour ta première;Publié;18022247999946247;17841467969534543
+88;RM-R06;2026-10-21 19:30;19:30;Reel;Le message qui trouve tes 3 premiers clients;Publié;18154214740529615;17841421563093307
+89;LIA-R09;2026-10-18 16:42;16:42;Reel;Le bilan du dimanche : Claude lit mes stats;Publié;18132062821797713;17841420788582578
+90;RM-R07;2026-10-18 16:42;16:42;Reel;Où proposer tes services près de chez toi;Publié;18340597030287445;17841421563093307
+91;MDA-R08;2026-10-18 16:42;16:42;Reel;7 jours de journal de 5 minutes;Publié;18136002895681463;17841429867473189
+92;CL-R07;2026-10-18 16:42;16:42;Reel;Le silence radio : comment réagir;Publié;18013366175986196;17841415150585724
+93;ZSF-R12;2026-10-18 16:42;16:42;Reel;L'échauffement de 3 minutes à ne pas zapper;Publié;17871564276644757;17841467969534543
+94;MDA-R09;2026-10-20 07:30;07:30;Reel;7 jours pour reprendre la main sur ton téléphone;Publié;18203416648379040;17841429867473189
+95;CL-R08;2026-10-20 21:00;21:00;Reel;Poser une limite avec un proche;Publié;17908243830575651;17841415150585724
+96;R25;2026-10-22 12:15;12:15;Reel;3 astuces IA pour retenir tes dates d'histoire;Publié;18634826845007500;
+97;LIA-R10;2026-10-20 12:30;12:30;Reel;Le prompt « consultant » pour challenger ton idée;Publié;18151695013546682;17841420788582578
+98;LIA-R11;2026-10-20 18:30;18:30;Reel;Ce que je donne à Claude avant qu'il écrive un seul post;Publié;18116924621585142;17841420788582578
+99;LIA-R12;2026-10-21 18:30;18:30;Reel;Pourquoi je relis encore tout ce que l'IA écrit;Publié;18110833163613567;17841420788582578
+100;LIA-R13;2026-10-22 12:30;12:30;Reel;Résumer une réunion et en sortir les actions;Publié;18492145093102512;17841420788582578
+101;LIA-R14;2026-10-22 18:30;18:30;Reel;Publier sur Instagram avec Make : le schéma en 3 blocs;Publié;18094159037660955;17841420788582578
+102;LIA-R15;2026-10-23 12:30;12:30;Reel;Transformer un vocal de 2 minutes en devis propre;Publié;18013103597766156;17841420788582578
+103;LIA-R16;2026-10-23 18:30;18:30;Reel;Comment Claude évite de refaire le même post;Publié;18437671897183167;17841420788582578
+104;LIA-R17;2026-10-24 12:30;12:30;Reel;Mythe : l'IA va remplacer les freelances;Publié;18164105566516538;17841420788582578
+105;LIA-R18;2026-10-28 12:30;12:30;Reel;Arrête de tout lancer à la main : la tâche planifiée;Refusé;;17841420788582578
+106;LIA-R19;2026-10-25 12:30;12:30;Reel;POV : un client furieux t'écrit, ta réponse avec Claude;Publié;18012195740985701;17841420788582578
+107;LIA-R20;2026-10-25 18:30;18:30;Reel;Les outils derrière mes posts Instagram;Refusé;;17841420788582578
+108;LIA-R21;2026-10-26 12:30;12:30;Reel;Ta page « À propos » en 10 minutes avec Claude;Refusé;;17841420788582578
+109;LIA-R22;2026-10-26 18:30;18:30;Reel;Ton automatisation va casser : 2 causes et le filet de sécurité;Refusé;;17841420788582578
+110;LIA-R23;2026-10-27 12:30;12:30;Reel;Un script de reel en 1 prompt : le modèle à copier;Refusé;;17841420788582578
+111;LIA-R24;2026-10-27 18:30;18:30;Reel;Mail de prospection : comment ne pas sentir le spam;Refusé;;17841420788582578
+112;RM-R08;2026-10-20 12:00;12:00;Reel;Freelance débutant : par où commencer ?;Publié;18119477002757797;17841421563093307
+113;RM-R09;2026-10-20 19:30;19:30;Reel;Micro-entreprise : les étapes, avec les sources officielles;Publié;18118607356800458;17841421563093307
+114;RM-R10;2026-10-21 12:00;12:00;Reel;Livret A ou LEP : la différence en 40 secondes;Publié;18080114270387036;17841421563093307
+115;RM-R11;2026-10-22 12:00;12:00;Reel;Offre de job trop belle ? 3 signaux d'une fausse offre;Publié;18017448791950584;17841421563093307
+116;RM-R12;2026-10-22 19:30;19:30;Reel;Cours particuliers : par où commencer;Publié;18132791626684128;17841421563093307
+117;RM-R13;2026-10-23 12:00;12:00;Reel;Combien de temps faut-il vraiment pour un side hustle ?;Publié;17962808814236026;17841421563093307
+118;RM-R14;2026-10-23 19:30;19:30;Reel;Premier mois de side hustle : les 4 erreurs à éviter;Publié;18218103526346433;17841421563093307
+119;RM-R15;2026-10-24 12:00;12:00;Reel;Fixer tes premiers prix : la méthode simple;Publié;17995724570841039;17841421563093307
+120;RM-R16;2026-10-24 19:30;19:30;Reel;Salarié et side hustle : 3 points à vérifier d'abord;Publié;18128985520856233;17841421563093307
+121;RM-R17;2026-10-25 12:00;12:00;Reel;Monter des vidéos pour des créateurs : par où commencer;Publié;17910276399483114;17841421563093307
+122;RM-R18;2026-10-25 19:30;19:30;Reel;POV : ton premier client te paie, et maintenant ?;Publié;18154654489521689;17841421563093307
+123;RM-R19;2026-10-26 12:00;12:00;Reel;Gérer les réseaux sociaux de commerçants : comment démarrer;Publié;17908669023578185;17841421563093307
+124;RM-R20;2026-10-26 19:30;19:30;Reel;Créer un produit digital simple : par où commencer;Publié;18138513709632674;17841421563093307
+125;RM-R21;2026-10-27 12:00;12:00;Reel;Écrire pour le web sans être écrivain : par où commencer;Publié;18112774699895998;17841421563093307
+126;RM-R22;2026-10-27 19:30;19:30;Reel;Testeur d'apps payé ? Ce qui est vrai, ce qui est un piège;Publié;17982376724912709;17841421563093307
+127;MDA-R10;2026-10-21 21:30;21:30;Reel;7 jours pour agir sans attendre l'envie;Publié;18107822456625241;17841429867473189
+128;MDA-R11;2026-10-22 07:30;07:30;Reel;7 jours pour remplacer une mauvaise habitude;Publié;17992606308107675;17841429867473189
+129;MDA-R12;2026-10-22 21:30;21:30;Reel;Pourquoi tu abandonnes au bout de 3 jours;Publié;17909774151592731;17841429867473189
+130;MDA-R13;2026-10-23 07:30;07:30;Reel;Un bloc de focus de 90 minutes en 7 jours;Publié;18007639118990521;17841429867473189
+131;MDA-R14;2026-10-23 21:30;21:30;Reel;Ta semaine en 15 minutes, le dimanche;Publié;18313840627303161;17841429867473189
+132;MDA-R15;2026-10-24 07:30;07:30;Reel;Reprendre après avoir tout lâché;Publié;18116500841083255;17841429867473189
+133;MDA-R16;2026-10-24 21:30;21:30;Reel;7 jours pour changer ton décor;Publié;18115829072087336;17841429867473189
+134;MDA-R17;2026-10-29 07:30;07:30;Reel;7 jours de petites victoires pour te faire confiance;Refusé;;17841429867473189
+135;MDA-R18;2026-10-25 21:30;21:30;Reel;Prépare demain avant de dormir (10 minutes);Refusé;;17841429867473189
+136;MDA-R19;2026-10-26 07:30;07:30;Reel;Fixe un objectif que tu tiens vraiment;Refusé;;17841429867473189
+137;MDA-R20;2026-10-26 21:30;21:30;Reel;Échouer sans tout arrêter;Refusé;;17841429867473189
+138;MDA-R21;2026-10-27 07:30;07:30;Reel;7 jours pour dire non à tes distractions;Refusé;;17841429867473189
+139;MDA-R22;2026-10-27 21:30;21:30;Reel;POV : tu te dis « je m'y mets » depuis des semaines;Refusé;;17841429867473189
+140;MDA-R23;2026-10-28 07:30;07:30;Reel;Tenir tes promesses envers toi (sans te punir);Refusé;;17841429867473189
+141;MDA-R24;2026-10-28 21:30;21:30;Reel;Commence par le plus dur;Refusé;;17841429867473189
+142;CL-R09;2026-10-21 12:30;12:30;Reel;Trois jours sans réponse : ce que ça dit (et ne dit pas);Publié;18135965068660418;17841415150585724
+143;CL-R10;2026-10-22 12:30;12:30;Reel;Les phrases qui rassurent vraiment;Publié;18118672246955473;17841415150585724
+144;CL-R11;2026-10-22 21:00;21:00;Reel;Après une rupture : traverser les premiers jours;Publié;17905735857356413;17841415150585724
+145;CL-R12;2026-10-23 12:30;12:30;Reel;Signes que tu t'oublies dans ta relation;Publié;18639551155051122;17841415150585724
+146;CL-R13;2026-10-23 21:00;21:00;Reel;Pourquoi on retourne vers ce qui fait mal;Erreur;;17841415150585724
+147;CL-R14;2026-10-24 12:30;12:30;Reel;Questions à se poser avant de s'engager;Publié;18120480616983163;17841415150585724
+148;CL-R15;2026-10-24 21:00;21:00;Reel;Comment parler d'un sujet qui fâche;Publié;18573846724079616;17841415150585724
+149;CL-R16;2026-10-25 12:30;12:30;Reel;La confiance en soi, c'est une pratique;Publié;18109201973349202;17841415150585724
+150;CL-R17;2026-10-25 21:00;21:00;Reel;Être célibataire et bien : 5 rappels;Refusé;;17841415150585724
+151;CL-R18;2026-10-26 12:30;12:30;Reel;Arrêter de vérifier son téléphone en attendant un message;Publié;18147904573543186;17841415150585724
+152;CL-R19;2026-10-26 21:00;21:00;Reel;Quand une relation t'épuise;Publié;18228978688330255;17841415150585724
+153;CL-R20;2026-10-27 12:30;12:30;Reel;Se reconstruire : les petites victoires du quotidien;Publié;18081831377369321;17841415150585724
+154;CL-R21;2026-10-27 21:00;21:00;Reel;Apaiser l'attente d'un message;Publié;18137556925573800;17841415150585724
+155;CL-R22;2026-10-28 12:30;12:30;Reel;Demander de l'aide à un proche sans se sentir un poids;Publié;17962584363209717;17841415150585724
+156;CL-R23;2026-10-28 21:00;21:00;Reel;Arrêter de trop s'excuser;Publié;17969530869193792;17841415150585724
+157;MDA-X01;2026-10-20 23:00;23:00;Reel;Perfectionniste vs Passe à l'action (duel 3D, mur vertical);Publié;17914191087551193;17841429867473189
+158;MDA-X02;2026-10-20 23:00;23:00;Reel;Qui finit le mur ? Perfectionniste vs Passe à l'action (duel 3D v1);Publié;18030993638902333;17841429867473189
+159;ZSF-R13;2026-10-22 07:30;07:30;Reel;Séance bas du corps dans 2 m²;Publié;18495025858110334;17841467969534543
+160;ZSF-R14;2026-10-22 18:00;18:00;Reel;Le squat : 3 erreurs qui font souffrir les genoux;Publié;18077194328570065;17841467969534543
+161;ZSF-R15;2026-10-23 07:30;07:30;Reel;Le gainage dynamique en 5 exercices;Publié;18139576024641800;17841467969534543
+162;ZSF-R16;2026-10-23 18:00;18:00;Reel;Mythe : il faut des courbatures pour progresser;Publié;17973840621152113;17841467969534543
+163;ZSF-R17;2026-10-24 07:30;07:30;Reel;Étirements du soir en 5 minutes;Publié;18338540542275985;17841467969534543
+164;ZSF-R18;2026-10-24 18:00;18:00;Reel;POV : premier jour de reprise du sport;Publié;17993016767851317;17841467969534543
+165;ZSF-R19;2026-10-25 07:30;07:30;Reel;Défi 7 jours : 10 minutes par jour;Publié;17869806867662616;17841467969534543
+166;ZSF-R20;2026-10-25 18:00;18:00;Reel;Mobilité des hanches au bureau;Publié;18127208638846542;17841467969534543
+167;ZSF-R21;2026-10-26 07:30;07:30;Reel;Séance canapé : bouger pendant ta série;Publié;18417625444086307;17841467969534543
+168;ZSF-R22;2026-10-26 18:00;18:00;Reel;Programme semaine type : 3 séances;Publié;18082561838361942;17841467969534543
+169;ZSF-R23;2026-10-27 07:30;07:30;Reel;Circuit 4 exercices × 4 tours;Publié;17992652883108851;17841467969534543
+170;ZSF-R24;2026-10-27 18:00;18:00;Reel;Mythe : si ce n'est pas dur, ça ne sert à rien;Publié;17961141678011591;17841467969534543
+171;ZSF-R25;2026-10-28 07:30;07:30;Reel;Le pont fessier : bien le sentir;Refusé;;17841467969534543
+172;ZSF-R26;2026-10-28 18:00;18:00;Reel;L'astuce pour rester régulier : un geste déclencheur;Publié;17879699004564695;17841467969534543
+173;ZSF-R27;2026-10-29 07:30;07:30;Reel;Séance corps entier de 10 minutes;Publié;18147057097572392;17841467969534543
+174;ZSF-R28;2026-10-29 18:00;18:00;Reel;Le dead bug : abdos en gardant le dos plaqué;Publié;17980096841919656;17841467969534543
+175;MDA-X03;2026-10-21 10:55;10:55;Reel;Motivé vs Discipliné : même réveil, même pluie (duel 3D);Publié;18173700874393272;17841429867473189
+176;MDA-X04;2026-10-21 10:55;10:55;Reel;Ce qui pèse dans ta tête : 3h07, encore (duel 3D);Publié;18125734573912360;17841429867473189
+177;MDA-X05;2026-10-21 11:15;11:15;Reel;Ta propre progression (fable 2D);Publié;18153774460541207;17841429867473189
+178;MDA-X06;2026-10-21 17:20;17:20;Reel;Les petits choix du soir (fable 2D courte);Publié;18094986158691799;17841429867473189
+179;CL-X01;2026-10-22 19:10;19:10;Reel;Choisis ta paix (fable 2D);Publié;18061694804789798;17841415150585724
+180;ZSF-X03;2026-10-23 13:35;13:35;Reel;Réveil musculaire 5 min (structure mot-clé);Publié;17916953454467469;17841467969534543
+181;X05;2026-10-23 13:35;13:35;Reel;3 prompts pour réviser sans tricher (structure mot-clé);Publié;18098184398422185;17841469424488869
+182;LIA-X01;2026-10-23 13:35;13:35;Reel;L'IA magique vs ce qui fait gagner du temps (structure mot-clé);Publié;17972770101170516;17841420788582578
+183;RM-X01;2026-10-23 13:35;13:35;Reel;3 fuites d'argent invisibles (structure mot-clé);Publié;17915358822496691;17841421563093307
+184;MDA-X08;2026-10-23 13:35;13:35;Reel;7 jours pour arrêter de repousser (structure mot-clé);Publié;17941551561384804;17841429867473189
+185;CL-X02;2026-10-23 13:35;13:35;Reel;Dire non sans te justifier (structure mot-clé);Publié;18104761109019982;17841415150585724
+186;R26;2026-10-25 12:15;12:15;Reel;POV : ta fiche de révision est trop longue;Publié;18002999537805202;
+187;R27;2026-10-25 19:15;19:15;Reel;Photo du frigo → recette;Publié;17921383182448866;
+188;R28;2026-10-26 12:15;12:15;Reel;Arrêter de tout surligner;Publié;18094994720163306;
+189;R29;2026-10-26 19:15;19:15;Reel;POV : le prof rend les copies;Publié;18115982735119190;
+190;R30;2026-10-27 12:15;12:15;Reel;Introduction de dissertation sans page blanche;Publié;18121528709035339;
+191;R31;2026-10-27 19:15;19:15;Reel;POV : 2 h du mat et contrôle demain;Publié;17979927581918531;
+192;R32;2026-10-28 12:15;12:15;Reel;POV : oral d'anglais dans dix minutes;Publié;18137688745658001;
+193;R33;2026-10-28 19:15;19:15;Reel;Écrire un mail à un prof;Publié;18158738401450292;
+194;R34;2026-10-29 12:15;12:15;Reel;Bloqué en maths : poser des questions sans copier la réponse;Publié;18641035522005949;
+195;R35;2026-10-29 19:15;19:15;Reel;POV : choisir sa formation;Publié;18106776203632840;
+196;R36;2026-10-30 12:15;12:15;Reel;Retenir une liste avec l'IA;Publié;18100380686367543;
+197;R37;2026-10-30 19:15;19:15;Reel;Préparer un week-end pas cher;Publié;17886664092689081;
+198;R38;2026-10-31 12:15;12:15;Reel;POV : tu as raté un cours;Publié;18118301338814355;
+199;R39;2026-10-31 19:15;19:15;Reel;Budget étudiant du mois en 3 étapes;Publié;18135030313738488;
+200;R40;2026-11-01 12:15;12:15;Reel;Retenir du vocabulaire d'anglais;Publié;17991888705096660;
+201;R41;2026-11-01 19:15;19:15;Reel;POV : ta mère te voit réviser avec ChatGPT;Publié;17959878609017775;
+202;LIA-X03;2026-10-24 18:30;18:30;Reel;14 reels par semaine sans monter : mon vrai système en 6 étapes;Publié;18126692449905419;17841420788582578
+203;MDA-X13;2026-10-25 07:30;07:30;Reel;Ce que tu fais à 22 h décide de ta journée (3D);Publié;18647411152024920;17841429867473189
+204;MDA-X16;2026-10-26 07:30;07:30;Reel;Ton lit t'a encore eu ce matin (3D);Publié;18109708334625804;17841429867473189
+205;MDA-X15;2026-10-26 21:30;21:30;Reel;4 h 20 et tu es encore dessus (3D);Publié;18112979687273482;17841429867473189
+206;MDA-X17;2026-10-27 07:30;07:30;Reel;Jour 3 sans la BR (3D);Publié;18154170520542682;17841429867473189
+207;MDA-X19;2026-10-26 17:30;17:30;Reel;Lundi, promis, tu commences (3D);Publié;18567631711074783;17841429867473189
+208;LIA-X05;2026-10-25 18:30;18:30;Reel;Claude déborde : dialogue 3D (mémoire de travail);Publié;18126578332900534;17841420788582578
+209;CL-X04;2026-10-25 21:00;21:00;Reel;POV : vu à 23:14, toujours rien (1, 2 ou 3 ?);Publié;18057339446802386;17841415150585724
+210;LIA-X06;2026-10-25 18:50;18:50;Reel;Monter tes vidéos avec Claude en 7 étapes (3D);Publié;18073038191758196;17841420788582578
+211;RM-R23;2026-10-28 12:00;12:00;Reel;Garder les plantes et animaux de tes voisins;Publié;18114199526148104;17841421563093307
+212;RM-R24;2026-10-28 19:30;19:30;Reel;Faux acheteur : les signaux d'alerte;Publié;18149589397633712;17841421563093307
+213;RM-R25;2026-10-29 12:00;12:00;Reel;Le matelas de sécurité, c'est quoi ?;Publié;17963658753228957;17841421563093307
+214;RM-R26;2026-10-29 19:30;19:30;Reel;Tier list : les side hustles les plus faciles à lancer;Publié;18114140057606338;17841421563093307
+215;RM-R27;2026-10-30 12:00;12:00;Reel;Faut-il séparer ses revenus annexes ?;Publié;17879206239568184;17841421563093307
+216;RM-R28;2026-10-30 19:30;19:30;Reel;3 compétences que tu as déjà et qui se vendent;Publié;17879617044565262;17841421563093307
+217;RM-R29;2026-10-31 12:00;12:00;Reel;30 minutes par jour pour ton side hustle;Publié;18151963693524505;17841421563093307
+218;RM-R30;2026-10-31 19:30;19:30;Reel;Revenus passifs en un clic : le mythe;Publié;18086279459323919;17841421563093307
+219;RM-R31;2026-11-01 12:00;12:00;Reel;Ta première facture : les bases;Publié;18184460575426990;17841421563093307
+220;RM-R32;2026-11-01 19:30;19:30;Reel;La méthode des enveloppes;Publié;17955700344333750;17841421563093307
+221;RM-R33;2026-11-02 12:00;12:00;Reel;POV : tu aides ta voisine avec son téléphone;Publié;18064091684792334;17841421563093307
+222;RM-R34;2026-11-02 19:30;19:30;Reel;Relire des textes pour de l'argent;Publié;18086568449322475;17841421563093307
+223;RM-R35;2026-11-03 12:00;12:00;Reel;Défi : une semaine sans achat impulsif;Refusé;;17841421563093307
+224;RM-R36;2026-11-03 19:30;19:30;Reel;Payé en visibilité ? Réfléchis avant;Refusé;;17841421563093307
+225;MDA-X38;2026-10-27 08:00;08:00;Reel;Tu ouvres Insta avant d'ouvrir les yeux (3D);Publié;18116040701162656;17841429867473189
+226;MDA-X21;2026-10-27 09:15;09:15;Reel;Tu tiens combien sans ton téléphone ? (3D);Publié;17963692371213220;17841429867473189
+227;MDA-X22;2026-10-27 10:00;10:00;Reel;3 minutes, c'est tout ce que ça prend (3D);Publié;18129236221872507;17841429867473189
+228;MDA-X23;2026-10-27 10:30;10:30;Reel;L'onglet privé ne protège pas de ça (3D);Publié;18234801169324830;17841429867473189
+229;MDA-X24;2026-10-27 11:15;11:15;Reel;Tu finis toujours trop vite (3D);Publié;18101283797385119;17841429867473189
+230;MDA-X25;2026-10-27 11:45;11:45;Reel;Jour 7 sans la BR (3D);Publié;17992112174861316;17841429867473189
+231;MDA-X27;2026-10-27 12:30;12:30;Reel;Tout le monde le fait, personne n'en parle (3D);Publié;18126962791681192;17841429867473189
+232;MDA-X28;2026-10-27 13:00;13:00;Reel;Tu as encore craqué hier soir (3D);Publié;18077196341588848;17841429867473189
+233;MDA-X29;2026-10-27 13:45;13:45;Reel;Je sais ce que tu as fait dans ta chambre (3D);Publié;18034207817675449;17841429867473189
+234;MDA-X30;2026-10-27 14:15;14:15;Reel;Seul dans ta chambre, tu es un autre homme (3D);Publié;18239388223317369;17841429867473189
+235;MDA-X31;2026-10-27 15:00;15:00;Reel;Ton futur toi te regarde scroller (3D);Publié;17995266617846751;17841429867473189
+236;MDA-X32;2026-10-27 15:30;15:30;Reel;« Encore 5 minutes » depuis 2 heures (3D);Publié;17962432715999501;17841429867473189
+237;MDA-X33;2026-10-27 16:15;16:15;Reel;Ta playlist motivation a plus d'heures que tes séances (3D);Publié;17991284816995757;17841429867473189
+238;MDA-X34;2026-10-27 16:45;16:45;Reel;Ton lit, ton bureau, ton canapé : même endroit ? (3D);Publié;18132044317685572;17841429867473189
+239;MDA-X35;2026-10-27 17:30;17:30;Reel;Tu attends d'être motivé ? (3D);Publié;18083707814338478;17841429867473189
+240;MDA-X36;2026-10-27 18:00;18:00;Reel;Tu as 47 onglets ouverts dans ta tête (3D);Publié;18140802118528805;17841429867473189
+241;MDA-X39;2026-10-27 18:45;18:45;Reel;Ton record de jours sans craquer ? (3D);Publié;17876835900582612;17841429867473189
+242;MDA-X26;2026-10-27 21:15;21:15;Reel;Ton chargeur dort mieux que toi (3D);Publié;18119515354982079;17841429867473189
+243;MDA-X37;2026-10-27 21:45;21:45;Reel;Tu te couches à quelle heure, vraiment ? (3D);Publié;18120268525986157;17841429867473189
+244;MDA-X20;2026-10-27 22:30;22:30;Reel;Salle de bain à 2 h du matin (3D);Publié;18220556947345103;17841429867473189
+245;MDA-X40;2026-10-27 08:45;08:45;Reel;Team 6 h ou team snooze ? (3D);Publié;17894232237616140;17841429867473189
+246;MDA-X41;2026-10-27 19:15;19:15;Reel;Le stress du lundi ? 15 minutes suffisent (3D);Publié;17909817618581305;17841429867473189
+247;MDA-X42;2026-10-27 20:00;20:00;Reel;Tu commences 10 trucs, tu n'en finis aucun (3D);Publié;18112358243579967;17841429867473189
+248;MDA-X43;2026-10-27 20:30;20:30;Reel;Ce que tu fais à 6 h quand personne ne regarde (3D);Publié;18128495294310234;17841429867473189
+249;CL-R24;2026-10-29 12:30;12:30;Reel;Ses promesses ne suivent pas : que regarder;Publié;18097017524665025;17841415150585724
+250;MDA-X45;2026-10-28 07:30;07:30;Reel;Elle t'a laissé en vu. Ton réveil aussi.;Publié;17997389979024826;17841429867473189
+251;MDA-X60;2026-10-28 08:00;08:00;Reel;Tes messages attendront vingt minutes;Publié;18147180343575495;17841429867473189
+252;MDA-X46;2026-10-28 08:45;08:45;Reel;Tu le touches combien de fois par jour ?;Publié;17880869688555938;17841429867473189
+253;MDA-X49;2026-10-28 09:15;09:15;Reel;Ta liste fait vingt lignes. Tu en fais zéro.;Publié;18148654138566137;17841429867473189
+254;MDA-X51;2026-10-28 10:00;10:00;Reel;Quatre-vingt-dix minutes sans lui. Tu tiens ?;Publié;17953038804083594;17841429867473189
+255;MDA-X48;2026-10-28 10:30;10:30;Reel;Tu as tout lâché ? Voilà comment on reprend;Publié;18140847484625258;17841429867473189
+256;MDA-X52;2026-10-28 11:15;11:15;Reel;Tu dis oui à tout, sauf à toi;Publié;17914077465521606;17841429867473189
+257;MDA-X57;2026-10-28 11:45;11:45;Reel;Ton objectif est trop gros. C'est pour ça que tu lâches.;Publié;18119359817283483;17841429867473189
+258;MDA-X61;2026-10-28 12:30;12:30;Reel;POV : ta pause de cinq minutes dure une heure;Publié;18422175250155047;17841429867473189
+259;MDA-X63;2026-10-28 13:45;13:45;Reel;Ton écran d'accueil en dit long sur toi;Publié;17966454831215857;17841429867473189
+260;MDA-X55;2026-10-28 14:15;14:15;Reel;Arrêter d'un coup ne marche jamais;Publié;17926494564433265;17841429867473189
+261;MDA-X53;2026-10-28 15:00;15:00;Reel;Personne ne voit ça. Ta confiance, si.;Publié;18234255037324069;17841429867473189
+262;MDA-X56;2026-10-28 15:30;15:30;Reel;Tu as raté un jour. Pas la semaine.;Publié;18123938057001920;17841429867473189
+263;MDA-X58;2026-10-28 16:15;16:15;Reel;Tu tiens tes promesses aux autres. Et à toi ?;Publié;18126160717929739;17841429867473189
+264;MDA-X64;2026-10-28 16:45;16:45;Reel;Dis ton objectif à un seul pote, pas à tout le monde;Publié;17934301671410569;17841429867473189
+265;MDA-X54;2026-10-28 17:30;17:30;Reel;Ce qui fait peur ce soir : ta liste de tâches;Publié;17999042517042891;17841429867473189
+266;MDA-X66;2026-10-28 18:00;18:00;Reel;« Ce week-end, je m'y mets » : la phrase qui ment;Publié;18014600426966723;17841429867473189
+267;MDA-X67;2026-10-28 18:45;18:45;Reel;Tu as de la discipline, il te manque un plan;Publié;18120250240751502;17841429867473189
+268;MDA-X62;2026-10-28 19:15;19:15;Reel;Ce que tu prépares ce soir, tu ne le décides pas demain;Publié;17912062455480891;17841429867473189
+269;MDA-X50;2026-10-28 20:00;20:00;Reel;Au lit, ce carnet vaut mieux que ton écran;Publié;18077081111748394;17841429867473189
+270;MDA-X47;2026-10-28 20:30;20:30;Reel;Tu as dit « une dernière » il y a deux heures;Publié;18092191862214169;17841429867473189
+271;MDA-X65;2026-10-28 21:15;21:15;Reel;Tu comptes les moutons ou les notifications ?;Publié;18099427478432323;17841429867473189
+272;MDA-X59;2026-10-28 21:45;21:45;Reel;Jour 1 : ton téléphone dort dans le salon;Publié;18163231627496182;17841429867473189
+273;MDA-X44;2026-10-28 22:30;22:30;Reel;Sous la couette à minuit, tu fais quoi vraiment ?;Publié;18447646489123584;17841429867473189
+274;LIA-R25;2026-10-28 12:30;12:30;Reel;Claude trie tes mails en trois piles;Publié;18120108619989704;17841420788582578
+275;LIA-R26;2026-10-28 18:30;18:30;Reel;Claude prépare ton rendez-vous client;Publié;17915910267537405;17841420788582578
+276;LIA-R27;2026-10-29 12:30;12:30;Reel;Claude écrit la FAQ de ta boutique;Publié;18096200543660080;17841420788582578
+277;LIA-R28;2026-10-29 18:30;18:30;Reel;Claude organise ta semaine en trois piles;Publié;18347691811283729;17841420788582578
+278;LIA-R29;2026-10-30 12:30;12:30;Reel;Le secret pour ne plus tout répéter à Claude;Publié;18349737034258722;17841420788582578
+279;LIA-R30;2026-10-30 18:30;18:30;Reel;Trois erreurs qui rendent tes prompts nuls;Publié;18174937924459476;17841420788582578
+280;LIA-R31;2026-10-31 12:30;12:30;Reel;C'est quoi un skill Claude ?;Publié;18039258650656982;17841420788582578
+281;LIA-R32;2026-10-31 18:30;18:30;Reel;Claude peut inventer un chiffre;Publié;18132599077842725;17841420788582578
+282;LIA-R33;2026-11-01 12:30;12:30;Reel;POV : tu lis un avis négatif;Publié;17932666662163202;17841420788582578
+283;LIA-R34;2026-11-01 18:30;18:30;Reel;Six comptes, un seul humain;Publié;17939096244125848;17841420788582578
+284;LIA-R35;2026-11-02 12:30;12:30;Reel;Le message qui relance un prospect silencieux;Publié;17895504294432873;17841420788582578
+285;LIA-R36;2026-11-02 18:30;18:30;Reel;Demande à Claude de te poser des questions d'abord;Publié;18136426603721439;17841420788582578
+286;LIA-R37;2026-11-03 12:30;12:30;Reel;Un article, trois idées de reels;Refusé;;17841420788582578
+287;LIA-R38;2026-11-03 18:30;18:30;Reel;Claude Code ou Claude en chat ?;Refusé;;17841420788582578
+288;LIA-R39;2026-11-04 12:30;12:30;Reel;Claude compare deux devis dans un tableau;Refusé;;17841420788582578
+289;LIA-R40;2026-11-04 18:30;18:30;Reel;Ce que je ne confie pas à Claude;Refusé;;17841420788582578
+290;ZSF-T02;2026-10-28 07:30;07:30;Reel;Pompes diamant : 10 par jour pendant 30 jours;Publié;18135129571778725;17841467969534543
+291;ZSF-R29;2026-10-30 07:30;07:30;Reel;Pompes : les coudes à 45° pour ménager les épaules;Publié;18503176318098246;17841467969534543
+292;ZSF-R30;2026-10-30 18:00;18:00;Reel;POV : le canapé t'appelle, fais juste 3 minutes;Publié;18094686461176126;17841467969534543
+293;ZSF-R31;2026-10-31 07:30;07:30;Reel;Fessiers sans matériel : 3 exercices en 6 minutes;Publié;18164804362494538;17841467969534543
+294;ZSF-R32;2026-10-31 18:00;18:00;Reel;Mythe : tenir la planche plus longtemps, c'est toujours mieux;Publié;18077139302780989;17841467969534543
+295;ZSF-R33;2026-11-01 07:30;07:30;Reel;Position creuse : des abdos sans crunch, le bas du dos collé;Publié;18041512808836192;17841467969534543
+296;ZSF-R34;2026-11-01 18:00;18:00;Reel;Anti-flemme : préparer sa tenue la veille au soir;Publié;18099208625431056;17841467969534543
+297;ZSF-R35;2026-11-02 07:30;07:30;Reel;Séance au sol : 4 exercices en 8 minutes, sans matériel;Publié;18109568210211727;17841467969534543
+298;ZSF-R36;2026-11-02 18:00;18:00;Reel;Mythe : sans salle, impossible de devenir plus fort;Publié;18213220306364616;17841467969534543
+299;ZSF-R37;2026-11-03 07:30;07:30;Reel;Neuf minutes, trois tours : l'erreur d'aller trop vite;Refusé;;17841467969534543
+300;ZSF-R38;2026-11-03 18:00;18:00;Reel;Reprise après une pause : la règle de la moitié;Refusé;;17841467969534543
+301;ZSF-R39;2026-11-04 07:30;07:30;Reel;Séance silencieuse d'appartement : 6 minutes sans un saut;Refusé;;17841467969534543
+302;ZSF-R40;2026-11-04 18:00;18:00;Reel;Planche latérale : la hanche qui tombe;Refusé;;17841467969534543
+303;ZSF-R41;2026-11-05 07:30;07:30;Reel;Une séance jambes, deux niveaux : facile ou costaud;Refusé;;17841467969534543
+304;ZSF-R42;2026-11-05 18:00;18:00;Reel;Bilan de la semaine : compte tes séances, sans culpabilité;Refusé;;17841467969534543
+305;MDA-X78;2026-10-29 08:00;08:00;Reel;Ce que tu fais à 7 h décide de ta journée;Publié;17986210860084403;17841429867473189
+306;MDA-X70;2026-10-29 08:30;08:30;Reel;Ton lit sait des trucs sur toi;Publié;18434100673151523;17841429867473189
+307;MDA-X80;2026-10-29 09:15;09:15;Reel;3 habitudes qui te gardent au même endroit;Publié;18125428136292610;17841429867473189
+308;MDA-X79;2026-10-29 09:45;09:45;Reel;3 trucs que personne te dit à 20 ans;Publié;17914039509514913;17841429867473189
+309;MDA-X92;2026-10-29 10:30;10:30;Reel;Révisé 20 minutes, scrollé 2 heures;Publié;18107154320644974;17841429867473189
+310;MDA-X82;2026-10-29 11:00;11:00;Reel;3 signes que t'es en mode pause;Publié;17967092693986100;17841429867473189
+311;MDA-X90;2026-10-29 11:45;11:45;Reel;Ta mère t'appelle, t'es au lit à midi;Publié;18467365585190617;17841429867473189
+312;MDA-X73;2026-10-29 12:15;12:15;Reel;Ton historique de navigation te juge;Publié;18018904616955606;17841429867473189
+313;MDA-X81;2026-10-29 13:00;13:00;Reel;3 choses à arrêter avant tes 25 ans;Publié;18102297254645377;17841429867473189
+314;MDA-X85;2026-10-29 13:30;13:30;Reel;Tout le monde veut changer;Publié;18234836536323897;17841429867473189
+315;MDA-X86;2026-10-29 14:15;14:15;Reel;Le pote qui te dit « reste, on est bien »;Publié;18053981153814143;17841429867473189
+316;MDA-X84;2026-10-29 14:45;14:45;Reel;Ton confort, ta prison la plus douce;Publié;18157287628534554;17841429867473189
+317;MDA-X75;2026-10-29 15:30;15:30;Reel;Ton pire ennemi dort dans ta poche;Publié;18029101868879957;17841429867473189
+318;MDA-X76;2026-10-29 16:00;16:00;Reel;Dimanche 23 h, tu sais ce que t'as pas fait;Publié;18119694845101375;17841429867473189
+319;MDA-X88;2026-10-29 16:45;16:45;Reel;Jour 21 sans la BR;Publié;18105683123333458;17841429867473189
+320;MDA-X72;2026-10-29 17:15;17:15;Reel;Je sais ce que t'as fait hier à minuit;Publié;18076557095754151;17841429867473189
+321;MDA-X91;2026-10-29 18:00;18:00;Reel;Tes potes sortent, toi tu « restes tranquille »;Publié;18098985287432958;17841429867473189
+322;MDA-X83;2026-10-29 18:30;18:30;Reel;Ton futur toi te regarde à 1 h du mat;Publié;18118697561053477;17841429867473189
+323;MDA-X69;2026-10-29 19:15;19:15;Reel;Jour 10 sans la BR;Publié;18117834797584299;17841429867473189
+324;MDA-X89;2026-10-29 19:45;19:45;Reel;« Juste un épisode », il était 23 h;Publié;18123753439898470;17841429867473189
+325;MDA-X77;2026-10-29 20:30;20:30;Reel;T'es crevé mais t'as pas sommeil;Publié;18157421251455662;17841429867473189
+326;MDA-X74;2026-10-29 21:00;21:00;Reel;Ton crush t'a vu en ligne à 4 h;Publié;18092795282669081;17841429867473189
+327;MDA-X71;2026-10-29 21:45;21:45;Reel;T'as éteint la lumière, pas ton tel;Publié;18129109276874170;17841429867473189
+328;MDA-X68;2026-10-29 22:30;22:30;Reel;Deux heures du mat, t'es encore sur ton tel;Publié;17879257905574050;17841429867473189
+329;R42;2026-11-02 12:15;12:15;Reel;POV : interro surprise, 3 réflexes;Publié;18572826940074387;
+330;R43;2026-11-02 19:15;19:15;Reel;POV : 200 messages non lus dans le groupe de la classe;Publié;18493558129105719;
+331;R44;2026-11-03 12:15;12:15;Reel;POV : le devoir est pour après-demain et tu n'as pas commencé;Refusé;;
+332;R45;2026-11-03 19:15;19:15;Reel;POV : entretien de job étudiant demain;Refusé;;
+333;R46;2026-11-04 12:15;12:15;Reel;POV : leçon à apprendre par cœur pour demain;Refusé;;
+334;R47;2026-11-04 19:15;19:15;Reel;POV : cadeau pour un pote et zéro idée;Refusé;;
+335;R48;2026-11-05 12:15;12:15;Reel;POV : exposé oral demain, 3 réflexes;Refusé;;
+336;R49;2026-11-05 19:15;19:15;Reel;POV : 3 devoirs pour demain, par où commencer ?;Refusé;;
+337;R50;2026-11-06 12:15;12:15;Reel;POV : toujours les mêmes fautes d'orthographe;Refusé;;
+338;R51;2026-11-06 19:15;19:15;Reel;POV : un contrat à signer et tu ne comprends presque rien;Refusé;;
+339;R52;2026-11-07 12:15;12:15;Reel;POV : partiels dans 5 jours, 3 étapes;Refusé;;
+340;R53;2026-11-07 19:15;19:15;Reel;POV : un livre à lire en une semaine;Refusé;;
+341;R54;2026-11-08 12:15;12:15;Reel;POV : une mauvaise note, 3 étapes pour rebondir;Refusé;;
+342;R55;2026-11-08 19:15;19:15;Reel;POV : dimanche soir et la semaine te fait peur;Refusé;;
+343;MDA-X99;2026-10-31 13:00;13:00;Reel;Jour 7 sans la BR;Publié;18108633893204417;17841429867473189
+344;MDA-X109;2026-10-31 13:30;13:30;Reel;5 façons de craquer le soir;Publié;18031882748909548;17841429867473189
+345;MDA-X93;2026-10-31 14:00;14:00;Reel;Jour 1 sans la BR;Publié;18119244715792606;17841429867473189
+346;MDA-X96;2026-10-31 14:15;14:15;Reel;Jour 4 sans la BR;Publié;18129690268829138;17841429867473189
+347;MDA-X111;2026-10-31 14:45;14:45;Reel;Ce que tu fais à 23 h décide de ton lendemain;Publié;18110958641207597;17841429867473189
+348;MDA-X95;2026-10-31 15:15;15:15;Reel;Jour 3 sans la BR;Publié;18157135366460322;17841429867473189
+349;MDA-X102;2026-10-31 15:30;15:30;Reel;Jour 14 sans la BR;Publié;17893100208619070;17841429867473189
+350;MDA-X113;2026-10-31 16:00;16:00;Reel;3 trucs qui te volent tes 20 ans;Publié;17866002738687358;17841429867473189
+351;MDA-X94;2026-10-31 16:30;16:30;Reel;Jour 2 sans la BR;Publié;18152223124554534;17841429867473189
+352;MDA-X100;2026-10-31 16:45;16:45;Reel;Jour 9 sans la BR;Publié;18105718325369038;17841429867473189
+353;MDA-X112;2026-10-31 17:15;17:15;Reel;T'as craqué hier soir : les 10 minutes d'après;Publié;18101679014550181;17841429867473189
+354;MDA-X97;2026-10-31 17:45;17:45;Reel;Jour 5 sans la BR;Publié;18287226880288810;17841429867473189
+355;MDA-X103;2026-10-31 18:00;18:00;Reel;Jour 15 sans la BR;Publié;18111072133924324;17841429867473189
+356;MDA-X115;2026-10-31 18:30;18:30;Reel;L'envie monte ? 10 pompes;Publié;18120901291767700;17841429867473189
+357;MDA-X105;2026-10-31 19:00;19:00;Reel;Jour 21 sans la BR;Publié;18110560804935020;17841429867473189
+358;MDA-X116;2026-10-31 19:15;19:15;Reel;Jour 10 sans la BR (mise en scène B);Publié;18494173012128350;17841429867473189
+359;MDA-X110;2026-10-31 20:15;20:15;Reel;POV : ton pote t'écrit à 23 h;Publié;18133992589683326;17841429867473189
+360;MDA-X101;2026-10-31 19:45;19:45;Reel;Jour 12 sans la BR;Publié;18053875508616549;17841429867473189
+361;MDA-X104;2026-10-31 20:30;20:30;Reel;Jour 18 sans la BR;Publié;18095815988158460;17841429867473189
+362;MDA-X114;2026-10-31 21:00;21:00;Reel;3 mythes sur la discipline;Publié;17991840501097666;17841429867473189
+363;MDA-X98;2026-10-31 21:15;21:15;Reel;Jour 6 sans la BR;Publié;18084967817711492;17841429867473189
+364;MDA-X106;2026-10-31 21:45;21:45;Reel;Jour 30 sans la BR;Publié;18573610216072221;17841429867473189
+365;MDA-X107;2026-10-31 22:15;22:15;Reel;Jour 60 sans la BR;Publié;18164212402496325;17841429867473189
+366;MDA-X108;2026-10-31 22:30;22:30;Reel;Jour 90 sans la BR;Publié;18639279292037942;17841429867473189
+367;MDA-X117;2026-11-01 07:30;07:30;Reel;NNN jour 1 : comment tenir les 30 jours;Publié;18153468082551951;17841429867473189
+368;MDA-X118;2026-11-01 08:15;08:15;Reel;NNN jour 1 : mes 3 conseils;Publié;18140997013625978;17841429867473189
+369;MDA-X119;2026-11-01 08:45;08:45;Reel;NNN jour 1 : écris ton pourquoi;Publié;18441601543198393;17841429867473189
+370;MDA-X120;2026-11-01 09:30;09:30;Reel;NNN jour 1 : prépare ta chambre;Publié;18097755719137603;17841429867473189
+371;MDA-X121;2026-11-01 10:00;10:00;Reel;NNN : le planning de ta 1re semaine;Publié;17954636910321932;17841429867473189
+372;MDA-X122;2026-11-01 10:45;10:45;Reel;NNN : ton tel, ton pire ennemi;Publié;17909234559665614;17841429867473189
+373;MDA-X123;2026-11-01 11:15;11:15;Reel;NNN : les comptes à virer ce soir;Publié;18635291221022953;17841429867473189
+374;MDA-X124;2026-11-01 12:00;12:00;Reel;NNN : t'as besoin d'un plan;Publié;17952220716322697;17841429867473189
+375;MDA-X125;2026-11-01 12:30;12:30;Reel;Le NNN, c'est pas juste un mème;Publié;18079395905423828;17841429867473189
+376;MDA-X126;2026-11-01 13:15;13:15;Reel;NNN : quand l'envie monte, en 10 secondes;Publié;18026757884924841;17841429867473189
+377;MDA-X127;2026-11-01 13:45;13:45;Reel;NNN : le réflexe des 10 pompes;Publié;18130299478853420;17841429867473189
+378;MDA-X128;2026-11-01 14:30;14:30;Reel;NNN : remplace, supprime pas;Publié;18017271500753274;17841429867473189
+379;MDA-X129;2026-11-01 15:00;15:00;Reel;NNN : le piège du jour 3;Publié;18138869392650802;17841429867473189
+380;MDA-X130;2026-11-01 15:45;15:45;Reel;NNN : pourquoi beaucoup lâchent;Publié;18135308950707554;17841429867473189
+381;MDA-X131;2026-11-01 16:15;16:15;Reel;NNN : ce que font ceux qui tiennent;Publié;18096768647654381;17841429867473189
+382;MDA-X132;2026-11-01 17:00;17:00;Reel;NNN : une croix par soir;Publié;18140316136737402;17841429867473189
+383;MDA-X133;2026-11-01 17:30;17:30;Reel;NNN : ce que tu gagnes en 30 jours;Publié;18179255674452188;17841429867473189
+384;MDA-X134;2026-11-01 18:15;18:15;Reel;NNN : t'as dit à tes potes ?;Publié;18166713121496121;17841429867473189
+385;MDA-X135;2026-11-01 18:45;18:45;Reel;NNN : en solo ou avec un pote ?;Publié;18028869221866771;17841429867473189
+386;MDA-X136;2026-11-01 19:30;19:30;Reel;Premier soir du NNN : 3 pièges;Publié;17942765298385097;17841429867473189
+387;MDA-X137;2026-11-01 20:00;20:00;Reel;NNN jour 1 et dimanche soir;Publié;17882644059627327;17841429867473189
+388;MDA-X138;2026-11-01 20:45;20:45;Reel;NNN : dormir sans scroller;Publié;18096301868657257;17841429867473189
+389;MDA-X139;2026-11-01 21:15;21:15;Reel;1er novembre, 23 h : ton premier test;Publié;17939662776124378;17841429867473189
+390;MDA-X140;2026-11-01 22:00;22:00;Reel;T'as craqué au jour 1 du NNN ?;Publié;18637540579039297;17841429867473189
+391;MDA-X141;2026-11-02 07:30;07:30;Reel;NNN jour 2 : c'est lundi;Publié;18100209446421560;17841429867473189
+392;MDA-X142;2026-11-02 08:15;08:15;Reel;C'est quoi le NNN ?;Publié;18101348987548935;17841429867473189
+393;MDA-X143;2026-11-02 08:45;08:45;Reel;NNN : le gars qui tient 30 jours;Publié;18105997250367869;17841429867473189
+394;MDA-X144;2026-11-02 09:30;09:30;Reel;NNN : c'est ton tel qui te fait craquer;Publié;17958987891257723;17841429867473189
+395;MDA-X145;2026-11-02 10:00;10:00;Reel;NNN : sans pourquoi, tu lâches;Publié;18056984624804139;17841429867473189
+396;MDA-X146;2026-11-02 10:45;10:45;Reel;T'as craqué au jour 1 ? Repars;Publié;18146415268598268;17841429867473189
+397;MDA-X147;2026-11-02 11:15;11:15;Reel;NNN : l'envie monte, t'as 10 secondes;Publié;17921672055243002;17841429867473189
+398;MDA-X148;2026-11-02 12:00;12:00;Reel;NNN : ce que personne te dit;Publié;18114912977521187;17841429867473189
+399;MDA-X149;2026-11-02 12:30;12:30;Reel;NNN : plus qu'un défi;Publié;18062002898797783;17841429867473189
+400;MDA-X150;2026-11-02 13:15;13:15;Reel;NNN : le réflexe des 10 pompes;Publié;17954534748315624;17841429867473189
+401;MDA-X151;2026-11-02 13:45;13:45;Reel;NNN : tu récupères ton temps;Publié;17997597246025019;17841429867473189
+402;MDA-X152;2026-11-02 14:30;14:30;Reel;Le NNN, ce que c'est vraiment;Publié;18116136401587286;17841429867473189
+403;MDA-X153;2026-11-02 15:00;15:00;Reel;NNN : demain, le piège du jour 3;Publié;18102913085642662;17841429867473189
+404;MDA-X154;2026-11-02 15:45;15:45;Reel;NNN : un test de parole;Publié;17972662035190462;17841429867473189
+405;MDA-X155;2026-11-02 16:15;16:15;Reel;NNN : laisse-les rire;Publié;18028304141704104;17841429867473189
+406;MDA-X156;2026-11-02 17:00;17:00;Reel;NNN : la fierté vaut plus que 5 minutes;Publié;18119017034113568;17841429867473189
+407;MDA-X157;2026-11-02 17:30;17:30;Reel;NNN : ce que tu gagnes en une semaine;Publié;18036614402851211;17841429867473189
+408;MDA-X158;2026-11-02 18:15;18:15;Reel;NNN : ton toi du 30 novembre;Publié;17996746281029219;17841429867473189
+409;MDA-X159;2026-11-02 18:45;18:45;Reel;NNN : tes potes te chambrent ?;Publié;18124779398473343;17841429867473189
+410;MDA-X160;2026-11-02 19:30;19:30;Reel;Deuxième soir du NNN;Publié;17991061983074679;17841429867473189
+411;MDA-X161;2026-11-02 20:00;20:00;Reel;NNN : le vrai ennemi, c'est l'ennui;Publié;17982282312136833;17841429867473189
+412;MDA-X162;2026-11-02 20:45;20:45;Reel;NNN : ce qui t'attend cette semaine;Publié;18107443358201294;17841429867473189
+413;MDA-X163;2026-11-02 21:15;21:15;Reel;NNN jour 2, 23 h : tout se joue;Publié;18028231634863333;17841429867473189
+414;MDA-X164;2026-11-02 22:00;22:00;Reel;NNN : 22 h, t'as tenu deux jours;Publié;17998271565058539;17841429867473189
+415;RM-R37;2026-11-04 12:00;12:00;Reel;Transformer une passion en petit service;Refusé;;17841421563093307
+416;RM-R38;2026-11-04 19:30;19:30;Reel;On te demande de payer pour travailler : stop;Refusé;;17841421563093307
+417;RM-R39;2026-11-05 12:00;12:00;Reel;Bloque deux créneaux fixes pour ton side hustle;Refusé;;17841421563093307
+418;RM-R40;2026-11-05 19:30;19:30;Reel;Trois side hustles sans rien acheter;Refusé;;17841421563093307
+419;RM-R41;2026-11-06 12:00;12:00;Reel;Revenus annexes : où chercher la réponse;Refusé;;17841421563093307
+420;RM-R42;2026-11-06 19:30;19:30;Reel;Rédiger des fiches produit pour petites boutiques;Refusé;;17841421563093307
+421;RM-R43;2026-11-07 12:00;12:00;Reel;Suivre ses dépenses pendant un mois;Refusé;;17841421563093307
+422;RM-R44;2026-11-07 19:30;19:30;Reel;Une formation promet des revenus garantis : méfie-toi;Refusé;;17841421563093307
+423;RM-R45;2026-11-08 12:00;12:00;Reel;POV : un créateur cherche quelqu'un pour ses sous-titres;Refusé;;17841421563093307
+424;RM-R46;2026-11-08 19:30;19:30;Reel;Étudiant et side hustle : les points à vérifier;Refusé;;17841421563093307
+425;RM-R47;2026-11-09 12:00;12:00;Reel;Une page avec tes services et tes prix;Refusé;;17841421563093307
+426;RM-R48;2026-11-09 19:30;19:30;Reel;Photographier des produits pour petits vendeurs;Refusé;;17841421563093307
+427;RM-R49;2026-11-10 12:00;12:00;Reel;L'acheteur qui te paie trop;Refusé;;17841421563093307
+428;RM-R50;2026-11-10 19:30;19:30;Reel;Bilan de ton premier mois : trois chiffres;Refusé;;17841421563093307
+429;MDA-X165;2026-11-03 07:30;07:30;Reel;NNN jour 3 : c'est mardi;Publié;18089489147293717;17841429867473189
+430;MDA-X166;2026-11-03 08:15;08:15;Reel;NNN : aujourd'hui, c'est le jour 3;Publié;18501335053096099;17841429867473189
+431;MDA-X167;2026-11-03 08:45;08:45;Reel;NNN : celui qui craque au jour 3;Publié;17974197972168704;17841429867473189
+432;MDA-X168;2026-11-03 09:30;09:30;Reel;NNN : c'est quoi, en vrai ?;Publié;18181390588441212;17841429867473189
+433;MDA-X177;2026-11-03 15:00;15:00;Reel;NNN : l'erreur de ceux qui lâchent;Publié;18101902916435109;17841429867473189
+434;MDA-X178;2026-11-03 15:45;15:45;Reel;NNN : tu le fais tout seul ?;Publié;18121603577072338;17841429867473189
+435;MDA-X179;2026-11-03 16:15;16:15;Reel;NNN : rappelle-toi pourquoi;Publié;17976803994169684;17841429867473189
+436;MDA-X180;2026-11-03 17:00;17:00;Reel;NNN : en 3 jours, t'as déjà gagné ça;Publié;17970489563981319;17841429867473189
+437;MDA-X169;2026-11-03 10:00;10:00;Reel;T'as craqué hier ? Lis ça;Publié;18126478771914204;17841429867473189
+438;MDA-X170;2026-11-03 10:45;10:45;Reel;NNN : pourquoi le jour 3 est si dur;Publié;17905641744513665;17841429867473189
+439;MDA-X171;2026-11-03 11:15;11:15;Reel;NNN : les 3 pièges du jour 3;Publié;18390715438230656;17841429867473189
+440;MDA-X172;2026-11-03 12:00;12:00;Reel;NNN : trois jours, c'est pas rien;Publié;17949393963072373;17841429867473189
+441;MDA-X173;2026-11-03 12:30;12:30;Reel;Le NNN, je le prends au sérieux;Publié;18114511624995583;17841429867473189
+442;MDA-X174;2026-11-03 13:15;13:15;Reel;NNN : l'envie monte, là ?;Publié;18135596243508539;17841429867473189
+443;MDA-X175;2026-11-03 13:45;13:45;Reel;NNN : une rechute, c'est pas la fin;Publié;18129164470884303;17841429867473189
+444;MDA-X176;2026-11-03 14:30;14:30;Reel;Le NNN expliqué en 30 secondes;Publié;17928904218205208;17841429867473189
+445;MDA-X181;2026-11-03 17:30;17:30;Reel;NNN : ce que tu gagnes en 30 jours;Publié;17873717640641262;17841429867473189
+446;MDA-X182;2026-11-03 18:15;18:15;Reel;NNN : « juste une fois »;Erreur;;17841429867473189
+447;MDA-X183;2026-11-03 18:45;18:45;Reel;NNN : fais-le avec un pote;Publié;18120101728953655;17841429867473189
+448;MDA-X184;2026-11-03 19:30;19:30;Reel;Troisième soir du NNN;Publié;17895597555681739;17841429867473189
+449;MDA-X185;2026-11-03 20:00;20:00;Reel;NNN : ce soir, si tu t'ennuies;Publié;17912762799311595;17841429867473189
+450;MDA-X186;2026-11-03 20:45;20:45;Reel;NNN : 4 jours avant ta 1re semaine;Publié;18145095280607899;17841429867473189
+451;MDA-X187;2026-11-03 21:15;21:15;Reel;NNN jour 3, 23 h : l'envie monte ?;Publié;17947616748362871;17841429867473189
+452;MDA-X188;2026-11-03 22:00;22:00;Reel;NNN : 22 h, t'as passé le jour 3;Publié;17873616312642938;17841429867473189
+453;MDA-X189;2026-11-03 19:00;19:00;Reel;NNN : on le tient ensemble;Publié;17882143323627813;17841429867473189
+454;MDA-X192;2026-11-04 07:30;07:30;Reel;NNN jour 4 : c'est mercredi;Publié;17956365165038589;17841429867473189
+455;MDA-X193;2026-11-04 08:15;08:15;Reel;NNN : les 3 pièges du jour 4;Publié;18092519081240618;17841429867473189
+456;MDA-X194;2026-11-04 08:45;08:45;Reel;NNN : les 3 excuses qui te font lâcher;Publié;17964484056250578;17841429867473189
+457;MDA-X195;2026-11-04 09:30;09:30;Reel;NNN : c'est quoi, en vrai ?;Publié;17975501625170933;17841429867473189
+458;MDA-X196;2026-11-04 10:00;10:00;Reel;T'as craqué hier soir ? Lis ça;Publié;18149696194549852;17841429867473189
+459;MDA-X197;2026-11-04 10:45;10:45;Reel;NNN jour 4 : tu te sens bien ? C'est le piège;Publié;17927339694202648;17841429867473189
+460;MDA-X198;2026-11-04 11:15;11:15;Reel;NNN : les 3 pièges du mercredi soir;Publié;18128263096850780;17841429867473189
+461;MDA-X199;2026-11-04 12:00;12:00;Reel;NNN : les 3 trucs de ceux qui tiennent;Publié;18115594703467808;17841429867473189
+462;MDA-X200;2026-11-04 12:30;12:30;Reel;NNN : comment arrêter d'y penser;Publié;17912535675577056;17841429867473189
+463;MDA-X201;2026-11-04 13:15;13:15;Reel;NNN : l'envie arrive d'un coup ? 3 réflexes;Publié;18083985620408971;17841429867473189
+464;MDA-X202;2026-11-04 13:45;13:45;Reel;NNN : quand t'as rien à faire, 3 erreurs;Publié;18644368126047802;17841429867473189
+465;MDA-X203;2026-11-04 14:30;14:30;Reel;Le NNN expliqué en 30 secondes;Publié;18117988829044167;17841429867473189
+466;MDA-X204;2026-11-04 15:00;15:00;Reel;NNN : l'erreur n°1 de ceux qui lâchent au jour 4;Publié;18130662013869070;17841429867473189
+467;MDA-X205;2026-11-04 15:45;15:45;Reel;NNN : tu le fais en cachette ? 3 règles;Publié;17912353203309080;17841429867473189
+468;MDA-X206;2026-11-04 16:15;16:15;Reel;NNN : tes 3 règles du soir;Publié;18110135531259915;17841429867473189
+469;MDA-X207;2026-11-04 17:00;17:00;Reel;NNN : en 4 jours, t'as déjà gagné ça;Publié;18139693054645362;17841429867473189
+470;MDA-X208;2026-11-04 17:30;17:30;Reel;NNN : ce que tu gagnes si tu tiens la semaine;Publié;18472408471191162;17841429867473189
+471;MDA-X209;2026-11-04 18:15;18:15;Reel;NNN : « juste une fois », les 3 réponses;Publié;18131225146847829;17841429867473189
+472;MDA-X210;2026-11-04 18:45;18:45;Reel;NNN : les 3 pièges du 4e soir;Publié;18136980028777015;17841429867473189
+473;MDA-X211;2026-11-04 19:30;19:30;Reel;NNN : ton tel à 22 h, 3 règles;Publié;17902011921611069;17841429867473189
+474;MDA-X212;2026-11-04 20:00;20:00;Reel;NNN : l'envie monte ce soir ? 3 étapes;Publié;18180228601429008;17841429867473189
+475;MDA-X213;2026-11-04 20:45;20:45;Reel;NNN : plus que 3 jours avant ta 1re semaine;Publié;18120384493985923;17841429867473189
+476;MDA-X214;2026-11-04 21:15;21:15;Reel;NNN jour 4, 23 h : les 3 pièges de la nuit;Publié;18116478146129191;17841429867473189
+477;MDA-X215;2026-11-04 22:00;22:00;Reel;NNN : 22 h, t'as passé le jour 4;Publié;18115016758995583;17841429867473189
+478;MDA-X216;2026-11-04 11:45;11:45;Reel;NNN : le temps que tu récupères en 30 jours;Publié;18126940073304678;17841429867473189
+479;MDA-X217;2026-11-04 14:00;14:00;Reel;NNN : t'as craqué aujourd'hui ? Repars ce soir;Publié;18223195861350065;17841429867473189
+480;MDA-X218;2026-11-04 16:45;16:45;Reel;NNN : ce que tu remarques après 4 jours;Publié;18039854834672307;17841429867473189
+481;MDA-X219;2026-11-04 19:00;19:00;Reel;NNN : ce que tu gagnes en 30 jours;Publié;18114977989995583;17841429867473189
+482;MDA-X220;2026-11-04 21:45;21:45;Reel;NNN : si tu craques ce soir, quoi faire juste après;Publié;18221983579347370;17841429867473189
+483;MDA-X221;2026-11-04 22:15;22:15;Reel;NNN : craquer une fois, c'est pas perdre le mois;Publié;18145286233607407;17841429867473189
+484;MDA-X222;2026-11-05 07:30;07:30;Reel;NNN jour 5 : le premier matin sans la flemme;Publié;18148467838569389;17841429867473189
+485;MDA-X223;2026-11-05 08:15;08:15;Reel;T'as craqué cette nuit ? Lis ça avant de te lever;Publié;18121901063285003;17841429867473189
+486;MDA-X224;2026-11-05 08:45;08:45;Reel;1h du mat, la cuisine, le tel à la main;Publié;18131751068493137;17841429867473189
+487;MDA-X225;2026-11-05 09:30;09:30;Reel;Le jeudi soir, c'est là que ça lâche;Publié;18166942366494956;17841429867473189
+488;MDA-X226;2026-11-05 10:00;10:00;Reel;Plus que 2 jours avant ta première semaine;Publié;17987496510088928;17841429867473189
+489;MDA-X227;2026-11-05 10:45;10:45;Reel;T'as raté le début du NNN ? Commence aujourd'hui;Publié;18020369327953461;17841429867473189
+490;MDA-X228;2026-11-05 11:45;11:45;Reel;5 soirs sans ça : fais le calcul;Publié;18123731587924909;17841429867473189
+491;MDA-X229;2026-11-05 12:00;12:00;Reel;Ton pote t'a envoyé « ça » à 23h ?;Publié;18045721973828677;17841429867473189
+492;MDA-X230;2026-11-05 12:30;12:30;Reel;« J'ai craqué, autant tout lâcher »;Publié;18014247428969220;17841429867473189
+493;MDA-X231;2026-11-05 13:15;13:15;Reel;Ton casque, ta douche, ton canapé;Publié;18106179515570232;17841429867473189
+494;MDA-X232;2026-11-05 14:00;14:00;Reel;Ce que tu gagnes en 30 jours;Publié;17919464178496588;17841429867473189
+495;MDA-X233;2026-11-05 15:00;15:00;Reel;Le NNN expliqué à ton pote qui comprend rien;Publié;17965312647239296;17841429867473189
+496;MDA-X234;2026-11-05 15:45;15:45;Reel;Envoie « 5 » à ton pote ce soir;Publié;18107587880525575;17841429867473189
+497;MDA-X235;2026-11-05 16:15;16:15;Reel;Craqué deux fois en 5 jours ? T'es pas foutu;Publié;18131536195876846;17841429867473189
+498;MDA-X236;2026-11-05 16:45;16:45;Reel;Pourquoi tu dors mieux depuis 5 jours;Publié;18089740838281983;17841429867473189
+499;MDA-X237;2026-11-05 17:30;17:30;Reel;Ce que personne te dit sur le jour 5;Publié;18122140244075754;17841429867473189
+500;MDA-X238;2026-11-05 18:15;18:15;Reel;L'ennui, le vrai boss du jour 5;Publié;18090164384704931;17841429867473189
+501;MDA-X239;2026-11-05 18:45;18:45;Reel;Tu le fais seul ? Lis ça;Publié;18105650729634361;17841429867473189
+502;MDA-X240;2026-11-05 19:30;19:30;Reel;Si tu craques ce soir : les 10 minutes d'après;Publié;17881495266651473;17841429867473189
+503;MDA-X241;2026-11-05 20:00;20:00;Reel;Ta 5e croix : ce qu'elle vaut vraiment;Publié;17865859404693905;17841429867473189
+504;MDA-X242;2026-11-05 20:45;20:45;Reel;Jour 5 : ce que ton toi du 30 voit déjà;Publié;18078609545718893;17841429867473189
+505;MDA-X243;2026-11-05 21:15;21:15;Reel;23h, jour 5 : quand la lumière s'éteint;Publié;18096584432479935;17841429867473189
+506;MDA-X244;2026-11-05 21:45;21:45;Reel;La fierté, ça se compte en soirs tenus;Publié;18346187650259185;17841429867473189
+507;MDA-X245;2026-11-05 22:00;22:00;Reel;Jour 5, 22h : si t'as craqué aujourd'hui, repars demain, pas lundi;Publié;17891153271621716;17841429867473189
+508;MDA-X246;2026-11-06 07:30;07:30;Reel;Vendredi, jour 6 : le soir le plus long de la semaine;Publié;17930512728180482;17841429867473189
+509;MDA-X247;2026-11-06 08:15;08:15;Reel;6 soirs sans : ce que t'as déjà récupéré;Publié;18042684521838688;17841429867473189
+510;MDA-X248;2026-11-06 08:45;08:45;Reel;T'as craqué hier soir ? Ton jour 6 commence maintenant;Publié;17918431767536654;17841429867473189
+511;MDA-X249;2026-11-06 09:30;09:30;Reel;Vendredi 23h : le moment où tout le monde lâche;Publié;18088756295706381;17841429867473189
+512;MDA-X250;2026-11-06 10:00;10:00;Reel;Demain, ta première semaine. Gâche-la pas ce soir;Publié;17907539292352464;17841429867473189
+513;MDA-X251;2026-11-07 11:15;11:15;Reel;L'envie monte au lit ? Lève-toi. C'est tout;Publié;18361382047218451;17841429867473189
+514;MDA-X252;2026-11-06 11:45;11:45;Reel;Le NNN en vrai : c'est pas ce que tu crois;Publié;18096486194673223;17841429867473189
+515;MDA-X253;2026-11-06 12:00;12:00;Reel;Ce que tu gagnes en 30 jours, et que personne te dit;Publié;18126394840924583;17841429867473189
+516;MDA-X254;2026-11-06 12:30;12:30;Reel;Ton premier week-end du NNN : le vrai test;Publié;18120264253988842;17841429867473189
+517;MDA-X255;2026-11-06 13:15;13:15;Reel;Craqué au jour 5 ? T'es pas à zéro, voilà pourquoi;Publié;18076071101770139;17841429867473189
+518;MDA-X256;2026-11-06 14:00;14:00;Reel;Ton tel au lit le vendredi : la règle à poser ce soir;Publié;18134105912496785;17841429867473189
+519;MDA-X257;2026-11-06 15:00;15:00;Reel;« C'est le week-end, j'ai le droit » : le piège du vendredi;Publié;18140205847629245;17841429867473189
+520;MDA-X258;2026-11-06 15:45;15:45;Reel;Ce soir, tes potes sortent. Toi, tu fais quoi ?;Publié;18142398058623733;17841429867473189
+521;MDA-X259;2026-11-06 16:15;16:15;Reel;Deux rechutes en une semaine ? Lis ça avant ce soir;Publié;17890346976620190;17841429867473189
+522;MDA-X260;2026-11-06 16:45;16:45;Reel;6 soirs tenus : la preuve que c'est toi qui décides;Publié;17912991129488488;17841429867473189
+523;MDA-X261;2026-11-06 17:30;17:30;Reel;Vendredi 18h : prépare ta soirée avant qu'elle te prépare;Publié;18029161313704283;17841429867473189
+524;MDA-X262;2026-11-06 18:15;18:15;Reel;Les 10 minutes qui sauvent ton vendredi soir;Publié;18079448816748781;17841429867473189
+525;MDA-X263;2026-11-06 18:45;18:45;Reel;Pourquoi autant de mecs font le NNN cette année;Publié;17939230200399925;17841429867473189
+526;MDA-X264;2026-11-06 19:30;19:30;Reel;Samedi matin au réveil : le piège que personne voit;Publié;18498777508101879;17841429867473189
+527;MDA-X265;2026-11-06 20:00;20:00;Reel;Ta 6e croix : plus qu'une pour ta semaine;Publié;18168140200491820;17841429867473189
+528;MDA-X266;2026-11-06 20:45;20:45;Reel;Le temps que tu récupères en un week-end sans ça;Publié;18062166635552780;17841429867473189
+529;MDA-X267;2026-11-06 21:15;21:15;Reel;Vendredi 23h, seul dans ta chambre : lis ça;Publié;18147307624565069;17841429867473189
+530;MDA-X268;2026-11-06 21:45;21:45;Reel;Si tu craques ce soir, repars demain matin. Pas lundi;Publié;18098704943655537;17841429867473189
+531;MDA-X269;2026-11-06 22:00;22:00;Reel;Demain, jour 7 : ta première semaine. Tiens jusqu'à minuit;Publié;18132523666820530;17841429867473189
+532;MDA-X270;2026-11-07 07:30;07:30;Reel;Samedi matin, pas de réveil, la main sur le tel : le piège;Publié;17915710890554917;17841429867473189
+533;MDA-X271;2026-11-07 08:15;08:15;Reel;Ta 7e croix ce matin : ce qu'une semaine prouve;Publié;17997554693840366;17841429867473189
+534;MDA-X272;2026-11-07 08:45;08:45;Reel;T'as craqué vendredi soir ? Ton jour 7 compte quand même;Publié;17903708112377723;17841429867473189
+535;MDA-X273;2026-11-07 09:30;09:30;Reel;Samedi soir : l'autre soir où les gars lâchent;Publié;18129161849511438;17841429867473189
+536;MDA-X274;2026-11-07 10:00;10:00;Reel;Ton samedi d'il y a une semaine, et celui-là;Publié;18112562654522218;17841429867473189
+537;MDA-X275;2026-11-07 10:45;10:45;Reel;« J'ai tenu une semaine, je peux me lâcher » : le piège;Publié;18647613646057533;17841429867473189
+538;MDA-X276;2026-11-07 11:45;11:45;Reel;Samedi 15h, rien de prévu : le moment où ça tourne;Publié;18082899995416654;17841429867473189
+539;MDA-X277;2026-11-07 12:00;12:00;Reel;Jour 7 : ce que ça change vraiment d'aller jusqu'au 30;Publié;18645105868010924;17841429867473189
+540;MDA-X278;2026-11-07 12:30;12:30;Reel;Craqué au jour 6 ? Ton compteur est pas revenu à zéro;Refusé;;17841429867473189
+541;MDA-X279;2026-11-07 13:15;13:15;Reel;Tes potes t'ont écrit pour ce soir ? Réponds oui;Refusé;;17841429867473189
+542;MDA-X280;2026-11-07 14:00;14:00;Reel;Samedi soir seul chez toi : le vrai match;Refusé;;17841429867473189
+543;MDA-X281;2026-11-07 15:00;15:00;Reel;2h du mat, tu rentres de soirée : le moment exact;Refusé;;17841429867473189
+544;MDA-X282;2026-11-07 15:45;15:45;Reel;La sieste du samedi, le tel à côté : tu sais comment ça finit;Refusé;;17841429867473189
+545;MDA-X283;2026-11-07 16:15;16:15;Reel;Cette nuit, t'as dormi direct ? Note-le;Refusé;;17841429867473189
+546;MDA-X284;2026-11-07 16:45;16:45;Reel;Sous la douche, seul à la maison : l'idée arrive toute seule;Refusé;;17841429867473189
+547;MDA-X285;2026-11-07 17:30;17:30;Reel;18h, samedi, t'as pas décidé ta soirée : elle va décider pour toi;Refusé;;17841429867473189
+548;MDA-X286;2026-11-07 18:15;18:15;Reel;Ton pote envoie un truc chaud à 23h : t'as pas à l'ouvrir;Refusé;;17841429867473189
+549;MDA-X287;2026-11-07 18:45;18:45;Reel;Demain, ta deuxième semaine : elle ressemble pas à la première;Refusé;;17841429867473189
+550;MDA-X288;2026-11-07 19:30;19:30;Reel;21h samedi, t'hésites entre sortir et rester : reste pas seul avec ton tel;Refusé;;17841429867473189
+551;MDA-X289;2026-11-07 20:00;20:00;Reel;Avant d'éteindre ce soir : 3 minutes qui décident ta 2e semaine;Refusé;;17841429867473189
+552;MDA-X290;2026-11-07 20:45;20:45;Reel;T'as tenu la semaine, mais ce soir l'envie est plus forte : normal;Refusé;;17841429867473189
+553;MDA-X291;2026-11-07 21:15;21:15;Reel;Il est tard, t'es au lit, le tel est là : écoute 30 secondes;Refusé;;17841429867473189
+554;MDA-X292;2026-11-07 21:45;21:45;Reel;Demain matin, dimanche : le réveil le plus dangereux, prépare-le ce soir;Refusé;;17841429867473189
+555;MDA-X293;2026-11-07 22:00;22:00;Reel;Dans 2h, ta première semaine : pose le tel maintenant;Refusé;;17841429867473189
+556;MDA-X294;2026-11-07 15:00;15:00;Reel;Tout le monde le fait, donc c'est normal ? Pas si simple;Publié;17936744562410142;17841429867473189
+557;MDA-X295;2026-11-07 15:45;15:45;Reel;T'arrives pas à arrêter la BR ? C'est pas ta volonté;Publié;18106406798548123;17841429867473189
+558;MDA-X296;2026-11-07 16:15;16:15;Reel;« Juste une fois » : la phrase qui te coûte le plus;Publié;18120163718059617;17841429867473189
+559;MDA-X297;2026-11-07 16:45;16:45;Reel;Pourquoi tu te sens vide juste après;Publié;17956127418295483;17841429867473189
+560;MDA-X298;2026-11-07 17:30;17:30;Reel;Une semaine sans la BR : ce que tu récupères;Publié;18116072158995583;17841429867473189
+561;MDA-X299;2026-11-07 18:15;18:15;Reel;Le tel au lit : c'est là que tout commence;Publié;17938333992404492;17841429867473189
+562;MDA-X300;2026-11-07 18:45;18:45;Reel;Trois signes que la BR décide de tes soirées;Publié;18111828773185588;17841429867473189
+563;MDA-X301;2026-11-07 19:30;19:30;Reel;Tu veux une vraie relation ? Commence par tes soirées;Publié;18119246794790432;17841429867473189
+564;MDA-X302;2026-11-07 20:00;20:00;Reel;Tu veux arrêter la BR ? Commence ce soir, pas lundi;Publié;17902157874608371;17841429867473189
+565;MDA-X303;2026-11-07 20:45;20:45;Reel;Le samedi soir, c'est là que ça lâche;Publié;18037365098855011;17841429867473189
+566;MDA-X304;2026-11-07 21:15;21:15;Reel;L'envie monte, là, maintenant ? Fais ça dans les 10 secondes;Publié;18164340115450116;17841429867473189
+567;MDA-X305;2026-11-07 21:45;21:45;Reel;Un mois sans la BR : ce qui change vraiment;Publié;17913196056481488;17841429867473189
+568;MDA-X306;2026-11-07 22:00;22:00;Reel;T'as craqué ? T'es pas revenu à zéro;Publié;18241190842316334;17841429867473189
+569;MDA-X307;2026-11-08 07:30;07:30;Reel;5 habitudes 10/10 pour un dimanche sans masturbation;Publié;18132388156781472;17841429867473189
+570;MDA-X308;2026-11-08 08:15;08:15;Reel;NNN jour 8 : les 3 pièges de la deuxième semaine;Publié;18110622865944258;17841429867473189
+571;MDA-X309;2026-11-08 08:45;08:45;Reel;Tu t'es encore masturbé hier soir ? Lis ça avant de te juger;Publié;18196898686403818;17841429867473189
+572;MDA-X310;2026-11-08 09:30;09:30;Reel;2 h de muscu : facile. Un soir sans te masturber : impossible ?;Publié;18099287900444341;17841429867473189
+573;MDA-X311;2026-11-08 10:00;10:00;Reel;Ton pote te demande pourquoi t'arrêtes la masturbation : voilà quoi répondre;Publié;18492123190110710;17841429867473189
+574;MDA-X312;2026-11-08 10:45;10:45;Reel;Pourquoi t'y penses encore plus dès que t'arrêtes;Publié;17896413555653652;17841429867473189
+575;MDA-X313;2026-11-08 11:45;11:45;Reel;Ce que tu te dis après avoir craqué (partie 1);Publié;18084182477359617;17841429867473189
+576;MDA-X314;2026-11-08 12:00;12:00;Reel;Tu dis non à tout le monde, sauf à cette envie-là;Publié;18095297828281067;17841429867473189
+577;MDA-X315;2026-11-08 12:30;12:30;Reel;Moi et mon pote si on arrêtait la masturbation;Publié;18112256093133753;17841429867473189
+578;MDA-X316;2026-11-08 13:15;13:15;Reel;Pourquoi tu te sens vide juste après t'être masturbé;Publié;18377380051215607;17841429867473189
+579;MDA-X317;2026-11-08 14:00;14:00;Reel;Ce que tu te dis quand l'envie monte (partie 2);Erreur;;17841429867473189
+580;MDA-X318;2026-11-08 15:00;15:00;Reel;Une semaine sans te masturber : le piège de la « récompense »;Publié;18253109380310633;17841429867473189
+581;MDA-X319;2026-11-08 15:45;15:45;Reel;Ta première semaine sans masturbation : 4 étapes pour la réussir;Publié;18174517933461373;17841429867473189
+582;MDA-X320;2026-11-08 16:15;16:15;Reel;Moi aujourd'hui vs moi dans 30 jours sans masturbation;Publié;18132459325693252;17841429867473189
+583;MDA-X321;2026-11-08 16:45;16:45;Reel;Ce que tu te dis quand t'as envie de tout lâcher (partie 3);Publié;18101697530538640;17841429867473189
+584;MDA-X322;2026-11-08 17:30;17:30;Reel;Arrêter la masturbation en 5 étapes simples;Publié;18112573688189990;17841429867473189
+585;MDA-X323;2026-11-08 18:15;18:15;Reel;5 habitudes 10/10 pour tenir sans masturbation;Publié;18090242318315488;17841429867473189
+586;MDA-X324;2026-11-08 18:45;18:45;Reel;Pourquoi les mecs se masturbent le soir, et presque jamais le matin;Publié;18643030180014974;17841429867473189
+587;MDA-X325;2026-11-08 19:30;19:30;Reel;« J'arrête lundi » : pourquoi tu repousses toujours;Publié;18106170569371735;17841429867473189
+588;MDA-X326;2026-11-08 20:00;20:00;Reel;T'attends quoi pour reprendre tes soirées ?;Publié;18109630703459990;17841429867473189
+589;MDA-X327;2026-11-08 20:45;20:45;Reel;L'envie de te masturber monte ? 4 étapes, dans l'ordre;Publié;18233094991333226;17841429867473189
+590;MDA-X328;2026-11-08 21:15;21:15;Reel;Dans un an, tu veux encore finir tes soirées comme ça ?;Publié;18101377742359604;17841429867473189
+591;MDA-X329;2026-11-08 21:45;21:45;Reel;Toi au jour 1 face à toi après un mois sans masturbation;Publié;18093688493226185;17841429867473189
+592;MDA-X330;2026-11-08 22:00;22:00;Reel;23 h, dimanche, l'envie monte : la conversation qui te sauve la soirée;Publié;18115964938863915;17841429867473189
+593;MDA-X331;2026-11-09 07:30;07:30;Reel;Jour 9 : le jour où tu crois que c'est gagné;Publié;17940998211401673;17841429867473189
+594;MDA-X332;2026-11-09 08:15;08:15;Reel;T'as craqué ce week-end ? Voilà comment repartir aujourd'hui;Publié;18641726362019833;17841429867473189
+595;MDA-X333;2026-11-09 08:45;08:45;Reel;Ce que tu gagnes vraiment en 30 jours;Publié;18079213508727580;17841429867473189
+596;MDA-X334;2026-11-09 09:30;09:30;Reel;Le lundi soir, c'est là que ça lâche. Voilà quoi faire;Publié;18051281825820443;17841429867473189
+597;MDA-X335;2026-11-09 10:00;10:00;Reel;NNN jour 9 : le piège de ceux qui tenaient bien;Publié;18124840036821699;17841429867473189
+598;MDA-X336;2026-11-09 10:45;10:45;Reel;L'envie monte ? 10 pompes, et voilà pourquoi ça marche;Publié;18358564432216523;17841429867473189
+599;MDA-X337;2026-11-09 11:15;11:15;Reel;Craqué 3 fois cette semaine ? T'es pas foutu;Publié;18115725476126755;17841429867473189
+600;MDA-X338;2026-11-09 12:00;12:00;Reel;23 h, au lit, le tel allumé : comment changer la fin;Publié;18450683551135104;17841429867473189
+601;MDA-X339;2026-11-09 12:30;12:30;Reel;Jour 9 : ce qui a déjà changé si t'es encore là;Publié;18077879837732612;17841429867473189
+602;MDA-X340;2026-11-09 13:15;13:15;Reel;Le temps que tu récupères en 30 jours. Fais le calcul;Publié;18007102476006977;17841429867473189
+603;MDA-X341;2026-11-09 14:00;14:00;Reel;Envoie ça au pote qui fait le NNN avec toi;Publié;18292680808295083;17841429867473189
+604;MDA-X342;2026-11-09 15:00;15:00;Reel;NNN : 3 pièges quand t'es seul chez toi;Publié;17956868568289224;17841429867473189
+605;MDA-X343;2026-11-09 15:45;15:45;Reel;T'as craqué hier soir ? Ton jour 9 compte quand même;Publié;18092250557646195;17841429867473189
+606;MDA-X344;2026-11-09 16:15;16:15;Reel;L'envie monte, là, maintenant ? 3 gestes en 30 secondes;Publié;17916726453471177;17841429867473189
+607;MDA-X345;2026-11-09 16:45;16:45;Reel;Le NNN, c'est pas qu'un mème. Jour 9, t'es encore là ?;Publié;18231143833332937;17841429867473189
+608;MDA-X346;2026-11-09 17:30;17:30;Reel;T'as craqué au jour 8 du NNN ? C'est pas fini;Publié;17975576040180604;17841429867473189
+609;MDA-X347;2026-11-09 18:15;18:15;Reel;Minuit, pas sommeil, l'envie monte : quoi faire, dans l'ordre;Publié;18123037687947797;17841429867473189
+610;MDA-X348;2026-11-09 18:45;18:45;Reel;La règle des 15 minutes, en une phrase;Publié;18125843800890181;17841429867473189
+611;MDA-X349;2026-11-09 19:30;19:30;Reel;NNN : l'erreur de ceux qui lâchent avant le jour 15;Publié;18111806963189061;17841429867473189
+612;MDA-X350;2026-11-09 20:00;20:00;Reel;Demain, jour 10 du NNN : ce qui t'attend;Publié;17911960164665034;17841429867473189
+613;MDA-X351;2026-11-09 20:45;20:45;Reel;20 minutes que tu scrolles sans but ? Arrête-toi 2 secondes;Publié;17914268817554273;17841429867473189
+614;MDA-X352;2026-11-09 21:15;21:15;Reel;L'envie monte, là, au lit ? 3 gestes, dans l'ordre;Publié;18099285689444074;17841429867473189
+615;MDA-X353;2026-11-09 21:45;21:45;Reel;Tu sens que tu vas craquer ce soir ? Fais juste ça;Publié;18111167309460564;17841429867473189
+616;MDA-X354;2026-11-09 22:00;22:00;Reel;Si tu tiens ce soir, voilà ce que tu gagnes demain matin;Publié;18188068903418388;17841429867473189
+617;MDA-X355;2026-11-10 07:30;07:30;Reel;Jour 10 du NNN : c'est souvent là que ça lâche;Publié;17909846856668223;17841429867473189
+618;MDA-X356;2026-11-10 08:15;08:15;Reel;Jour 10 sans la BR;Publié;18076494323753300;17841429867473189
+619;MDA-X357;2026-11-10 08:45;08:45;Reel;Dix jours de NNN : ce que t'as déjà gagné;Publié;18219762064357059;17841429867473189
+620;MDA-X358;2026-11-10 09:30;09:30;Reel;Jour 1 sans la BR;Publié;17936178024403364;17841429867473189
+621;MDA-X359;2026-11-10 10:00;10:00;Reel;T'as craqué au jour 9 du NNN ?;Publié;18071088668787308;17841429867473189
+622;MDA-X360;2026-11-10 10:45;10:45;Reel;L'envie monte, là, tout de suite ? 3 réflexes;Publié;18069006434716401;17841429867473189
+623;MDA-X361;2026-11-10 11:15;11:15;Reel;NNN : les 3 pièges du jour 10;Publié;18161478217508298;17841429867473189
+624;MDA-X362;2026-11-10 12:00;12:00;Reel;Jour 30 sans la BR;Publié;18090237071302092;17841429867473189
+625;MDA-X363;2026-11-10 12:30;12:30;Reel;Le NNN, c'est plus un mème;Publié;18061008761650909;17841429867473189
+626;MDA-X364;2026-11-10 13:15;13:15;Reel;23 h, au lit, le tel dans la main;Publié;18139136881729403;17841429867473189
+627;MDA-X365;2026-11-10 14:00;14:00;Reel;Veille de férié : un soir où ça lâche;Publié;18106964717642426;17841429867473189
+628;MDA-X366;2026-11-10 15:00;15:00;Reel;Jour 3 sans la BR;Publié;18132108616875572;17841429867473189
+629;MDA-X367;2026-11-10 15:45;15:45;Reel;NNN jour 10 : le réflexe des 10 pompes;Publié;17999425872018939;17841429867473189
+630;MDA-X368;2026-11-10 16:15;16:15;Reel;T'as craqué hier soir ? T'es pas foutu;Publié;18290389492292403;17841429867473189
+631;MDA-X369;2026-11-10 16:45;16:45;Reel;NNN : un tiers du mois;Publié;18099679733444225;17841429867473189
+632;MDA-X370;2026-11-10 17:30;17:30;Reel;Jour 5 sans la BR;Publié;18423393211153115;17841429867473189
+633;MDA-X371;2026-11-10 18:15;18:15;Reel;NNN : l'erreur de ceux qui lâchent au jour 10;Publié;17992758057063258;17841429867473189
+634;MDA-X372;2026-11-10 18:45;18:45;Reel;Jour 7 sans la BR;Publié;17900258712405949;17841429867473189
+635;MDA-X373;2026-11-10 19:30;19:30;Reel;Envoie ça à ton pote du NNN;Publié;17956786299316135;17841429867473189
+636;MDA-X374;2026-11-10 20:00;20:00;Reel;Seul chez toi ce soir : 3 réflexes;Publié;18112307186216981;17841429867473189
+637;MDA-X375;2026-11-10 20:45;20:45;Reel;NNN jour 10 : tu sens que tu vas craquer ?;Publié;18230499160335621;17841429867473189
+638;MDA-X376;2026-11-10 21:15;21:15;Reel;L'envie monte au lit ? Fais ça avant ton tel;Publié;18350483845250878;17841429867473189
+639;MDA-X377;2026-11-10 21:45;21:45;Reel;Si tu tiens ce soir : 10 jours de NNN;Publié;17880786762588255;17841429867473189
+640;MDA-X378;2026-11-10 22:00;22:00;Reel;Jour 21 sans la BR;Publié;18086470349709432;17841429867473189
+641;MDA-X379;2026-11-11 16:50;16:50;Reel;T'as craqué au jour 10 du NNN ?;Publié;18134969518760328;17841429867473189
