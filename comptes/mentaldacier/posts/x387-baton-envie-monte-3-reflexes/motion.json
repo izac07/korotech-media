@@ -1,0 +1,66 @@
+{
+ "id": "MDA-X387",
+ "layout": "baton",
+ "music_seed": 10387,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "monte",
+   "texte": "L'envie monte,<br>**là, maintenant ?**",
+   "vo": "L'envie monte, là, maintenant ? Trois réflexes, dans l'ordre.",
+   "dur": 4.2
+  },
+  {
+   "tab": "pose",
+   "texte": "1. Pose le tel,<br>**loin de toi.**",
+   "vo": "Le premier : tu poses le tel, loin de toi.",
+   "dur": 4.6
+  },
+  {
+   "tab": "marionnette",
+   "texte": "Dans ta main,<br>**c'est lui qui gagne.**",
+   "vo": "Tant qu'il est dans ta main, c'est lui qui gagne.",
+   "dur": 3.6
+  },
+  {
+   "tab": "porte",
+   "texte": "2. Lève-toi.<br>**Sors de la chambre.**",
+   "vo": "Le deuxième : tu te lèves, et tu sors de la chambre.",
+   "dur": 4.4
+  },
+  {
+   "tab": "seule",
+   "texte": "Ailleurs, elle a<br>**moins de prise.**",
+   "vo": "Dans une autre pièce, elle a moins de prise.",
+   "dur": 3.6
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "COMMENTE TENIR",
+    "le plan des 30 jours, gratuit"
+   ],
+   "texte": "Avant le troisième…",
+   "vo": "Avant le troisième, commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans masturbation."
+  },
+  {
+   "tab": "pompes",
+   "reps": 3,
+   "texte": "3. Dix pompes,<br>**tout de suite.**",
+   "vo": "Et le troisième : dix pompes, tout de suite.",
+   "dur": 4.4
+  },
+  {
+   "tab": "petit",
+   "texte": "C'est déjà<br>**moins fort.**",
+   "vo": "Le temps de les faire, c'est déjà moins fort.",
+   "dur": 3.6
+  },
+  {
+   "tab": "question",
+   "texte": "Ton premier réflexe,<br>**c'est lequel ? 👇**",
+   "vo": "Alors, ton premier réflexe, c'est lequel ?",
+   "dur": 3.6
+  }
+ ]
+}
