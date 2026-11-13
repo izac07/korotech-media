@@ -1,0 +1,176 @@
+{
+ "id": "MDA-X388",
+ "layout": "baton",
+ "music_seed": 10388,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "meme",
+   "texte": "23 h.<br>**L'envie te parle.**",
+   "vo": "Vingt-trois heures. L'envie te parle. Voilà quoi lui répondre.",
+   "dur": 4.2,
+   "meme": {
+    "img": "evil-kermit.jpg",
+    "legendes": [
+     {
+      "t": "MOI :|JE POSE LE TEL|ET JE DORS",
+      "x": 0.26,
+      "y": 0.2,
+      "taille": 40
+     },
+     {
+      "t": "L'ENVIE :|JUSTE|5 MINUTES",
+      "x": 0.76,
+      "y": 0.2,
+      "taille": 40
+     }
+    ]
+   }
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "bulle": "Allez, juste|cinq minutes…",
+   "vo": "Allez, juste cinq minutes. Personne le saura.",
+   "dur": 3.4,
+   "objets": [
+    {
+     "img": "clock",
+     "x": 540,
+     "y": 1185,
+     "h": 200,
+     "at": 0.12,
+     "anim": "pose"
+    },
+    {
+     "img": "lock",
+     "x": 535,
+     "y": 955,
+     "h": 170,
+     "at": 0.55
+    }
+   ]
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "bulle": "Tu dis ça|à chaque fois.",
+   "vo": "Cinq minutes ? Tu dis ça à chaque fois.",
+   "dur": 3.2,
+   "objets": [
+    {
+     "img": "calender",
+     "x": 545,
+     "y": 1150,
+     "h": 240,
+     "at": 0.2,
+     "rot": -6
+    }
+   ]
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "taille": 1.15,
+   "bulle": "T'as eu une sale|journée. Tu l'as|bien mérité.",
+   "vo": "T'as eu une sale journée. Tu l'as bien mérité.",
+   "dur": 3.6,
+   "objets": [
+    {
+     "img": "umbrella",
+     "x": 300,
+     "y": 755,
+     "h": 210,
+     "at": 0.05
+    },
+    {
+     "img": "gift",
+     "x": 570,
+     "y": 1182,
+     "h": 210,
+     "at": 0.5,
+     "anim": "pose"
+    }
+   ]
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "taille": 0.9,
+   "fond": "lever",
+   "hum": "fier",
+   "bulle": "Je mérite de me|réveiller fier demain.",
+   "vo": "Ce que je mérite, c'est de me réveiller fier demain.",
+   "dur": 3.8,
+   "objets": [
+    {
+     "img": "trophy",
+     "x": 525,
+     "y": 1172,
+     "h": 230,
+     "at": 0.45,
+     "anim": "pose"
+    }
+   ]
+  },
+  {
+   "tab": "mur",
+   "texte": "Chaque non,<br>**c'est une brique.**",
+   "vo": "Chaque fois que tu dis non, tu poses une brique entre elle et toi.",
+   "dur": 4.4
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "COMMENTE TENIR",
+    "le plan des 30 jours, gratuit"
+   ],
+   "texte": "Le plan gratuit :",
+   "vo": "Commente TENIR, et je t'envoie mon plan gratuit pour trente jours sans masturbation."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "taille": 0.42,
+   "ehum": "peur",
+   "hum": "fier",
+   "bulle": "Bon… à demain ?",
+   "vo": "Bon… à demain, alors ?",
+   "dur": 2.8
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "taille": 0.42,
+   "ehum": "peur",
+   "hum": "colere",
+   "bulle": "Non.",
+   "vo": "Non.",
+   "dur": 2.2,
+   "objets": [
+    {
+     "img": "thumb-down",
+     "x": 560,
+     "y": 1040,
+     "h": 250,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "question",
+   "texte": "Et toi, elle te dit quoi,<br>**l'envie ? 👇**",
+   "vo": "Et toi, elle te dit quoi, l'envie ? Écris-le en commentaire.",
+   "dur": 3.6,
+   "objets": [
+    {
+     "img": "chat-bubble",
+     "x": 700,
+     "y": 900,
+     "h": 200,
+     "at": 0.1
+    }
+   ]
+  }
+ ]
+}
