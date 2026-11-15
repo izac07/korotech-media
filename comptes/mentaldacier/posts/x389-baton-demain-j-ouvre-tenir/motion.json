@@ -1,0 +1,14 @@
+{
+ "id": "MDA-X389", "layout": "baton", "music_seed": 10389, "handle": "mentaldacier2030",
+ "scenes": [
+  {"tab": "monte", "texte": "Seul face à l'envie,<br>**c'est dur de tenir.**", "vo": "Seul face à l'envie, c'est dur de tenir. Demain, t'es plus tout seul.", "dur": 4.2},
+  {"tab": "allie", "bulle": "Salut !|Moi, c'est Tenir.", "texte": "Demain,<br>**j'ouvre Tenir.**", "vo": "Demain, j'ouvre Tenir. L'app pour reprendre le contrôle.", "dur": 4.0},
+  {"tab": "allie", "texte": "Chaque jour,<br>**une mission.**", "vo": "Chaque jour, elle te donne une mission. Une seule.", "dur": 3.6,
+   "objets": [{"img": "calender", "x": 480, "y": 850, "h": 210, "at": 0.15, "rot": -6}]},
+  {"tab": "allie", "texte": "Ta série,<br>**jour après jour.**", "vo": "Elle compte ta série, jour après jour.", "dur": 3.4,
+   "objets": [{"img": "fire", "x": 480, "y": 850, "h": 210, "at": 0.15}]},
+  {"tab": "garde", "bulle": "Pas ce soir.", "texte": "Quand ça chauffe :<br>**un plan en 6 étapes.**", "vo": "Et quand ça chauffe, tu suis un plan en six étapes.", "dur": 4.0},
+  {"tab": "carte", "carte": ["50 PLACES", "9,99 €/mois, garanti à vie"], "texte": "Prix fondateur :", "vo": "Cinquante places au prix fondateur : neuf euros quatre-vingt-dix-neuf par mois, garanti à vie.", "dur": 5.0},
+  {"tab": "allie", "taille": 0.3, "hum": "fier", "texte": "Ouverture demain.<br>**Le lien est en bio.**", "vo": "Ça ouvre demain. Le lien est en bio.", "dur": 3.6}
+ ]
+}
