@@ -1,0 +1,64 @@
+{
+ "id": "MDA-X394",
+ "layout": "baton",
+ "music_seed": 10394,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "Seul chez toi,<br>**rien à faire ?**",
+   "vo": "Seul chez toi, rien à faire, et l'envie arrive ? Trois réflexes.",
+   "dur": 4.0,
+   "qui": "envie",
+   "bulle": "On est|tranquilles."
+  },
+  {
+   "tab": "porte",
+   "texte": "1. Sors.<br>**Même dix minutes.**",
+   "vo": "Un : tu sors. Même dix minutes, même juste pour marcher.",
+   "dur": 4.0
+  },
+  {
+   "tab": "seule",
+   "texte": "Dehors, elle a<br>**moins de prise.**",
+   "vo": "Dehors, l'envie a beaucoup moins de prise.",
+   "dur": 4.0
+  },
+  {
+   "tab": "pose",
+   "texte": "2. Si tu restes :<br>**le tel dans une autre pièce.**",
+   "vo": "Deux : si tu restes, le tel va dans une autre pièce.",
+   "dur": 4.4
+  },
+  {
+   "tab": "pompes",
+   "texte": "3. Occupe tes mains.<br>**Tout de suite.**",
+   "vo": "Trois : tu occupes tes mains. Pompes, vaisselle, n'importe quoi.",
+   "dur": 4.0,
+   "reps": 3
+  },
+  {
+   "tab": "allie",
+   "texte": "Rien à faire ?<br>**Tenir t'en donne un.**",
+   "vo": "Et si t'as rien à faire, Tenir te donne une mission, chaque jour.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "target",
+     "x": 480,
+     "y": 850,
+     "h": 200,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "allie",
+   "taille": 0.3,
+   "hum": "fier",
+   "texte": "Tenir est ouvert.<br>**Le lien est en bio.**",
+   "vo": "Tenir est ouvert. Le lien est en bio.",
+   "dur": 3.4
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "id": "MDA-X393",
+ "layout": "baton",
+ "music_seed": 10393,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "Ton pote dit<br>**« lundi, promis » ?**",
+   "vo": "Envoie ça à ton pote qui dit « lundi, promis » depuis un mois.",
+   "dur": 4.0,
+   "qui": "heros",
+   "hum": "content",
+   "bulle": "Lundi,|promis."
+  },
+  {
+   "tab": "marionnette",
+   "texte": "« Demain »,<br>**ça arrive jamais.**",
+   "vo": "Demain, ça arrive jamais. Et l'envie le sait très bien.",
+   "dur": 4.0
+  },
+  {
+   "tab": "boutons",
+   "texte": "La seule date qui compte :<br>**aujourd'hui.**",
+   "vo": "La seule date qui compte, c'est aujourd'hui.",
+   "dur": 4.0,
+   "choix": [
+    "Demain",
+    "Maintenant"
+   ]
+  },
+  {
+   "tab": "pose",
+   "texte": "Commence petit :<br>**le tel loin, ce soir.**",
+   "vo": "Commence petit : ce soir, le tel dort loin de toi.",
+   "dur": 4.4
+  },
+  {
+   "tab": "petit",
+   "texte": "Un soir tenu,<br>**puis un autre.**",
+   "vo": "Un soir tenu, puis un autre. C'est comme ça qu'on avance.",
+   "dur": 4.0
+  },
+  {
+   "tab": "allie",
+   "texte": "Et s'il veut<br>**un vrai plan :**",
+   "vo": "Et s'il veut un vrai plan, jour par jour :",
+   "dur": 4.0,
+   "bulle": "On commence|aujourd'hui ?"
+  },
+  {
+   "tab": "allie",
+   "taille": 0.3,
+   "hum": "fier",
+   "texte": "Tenir est ouvert.<br>**Le lien est en bio.**",
+   "vo": "Tenir est ouvert. Le lien est en bio.",
+   "dur": 3.4
+  }
+ ]
+}

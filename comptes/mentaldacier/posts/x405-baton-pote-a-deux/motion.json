@@ -1,0 +1,73 @@
+{
+ "id": "MDA-X405",
+ "layout": "baton",
+ "music_seed": 10405,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "Envoie ça au pote<br>**avec qui tu le fais.**",
+   "vo": "Envoie ça au pote avec qui tu veux le faire.",
+   "dur": 4.0,
+   "qui": "heros",
+   "hum": "content",
+   "bulle": "On le fait|à deux ?"
+  },
+  {
+   "tab": "monte",
+   "texte": "Seul,<br>**personne le sait.**",
+   "vo": "Seul, tu peux lâcher sans que personne le sache.",
+   "dur": 4.0
+  },
+  {
+   "tab": "boutons",
+   "texte": "À deux,<br>**un message suffit.**",
+   "vo": "À deux, quand ça chauffe, tu envoies un message à l'autre.",
+   "dur": 4.4,
+   "choix": [
+    "Écrire",
+    "Craquer"
+   ]
+  },
+  {
+   "tab": "petit",
+   "texte": "Le temps d'écrire,<br>**ça redescend.**",
+   "vo": "Le temps d'écrire, l'envie redescend.",
+   "dur": 4.0
+  },
+  {
+   "tab": "refuse_accepte",
+   "texte": "Si l'un craque,<br>**l'autre le relance.**",
+   "vo": "Et si l'un craque, l'autre le relance, sans le juger.",
+   "dur": 4.4,
+   "choix": [
+    "Le juger",
+    "Le relancer"
+   ]
+  },
+  {
+   "tab": "allie",
+   "texte": "Et chacun<br>**sa mission du jour.**",
+   "vo": "Et chacun suit sa mission du jour sur Tenir.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "calender",
+     "x": 480,
+     "y": 850,
+     "h": 200,
+     "at": 0.15,
+     "rot": -6
+    }
+   ]
+  },
+  {
+   "tab": "allie",
+   "taille": 0.3,
+   "hum": "fier",
+   "texte": "Tenir est ouvert.<br>**Le lien est en bio.**",
+   "vo": "Tenir est ouvert. Le lien est en bio.",
+   "dur": 3.4
+  }
+ ]
+}

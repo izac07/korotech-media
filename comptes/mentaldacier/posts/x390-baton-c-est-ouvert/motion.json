@@ -1,0 +1,96 @@
+{
+ "id": "MDA-X390",
+ "layout": "baton",
+ "music_seed": 10390,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "hum": "triste",
+   "ehum": "ricane",
+   "bulle": "Demain,|j'arrête.",
+   "texte": "« Demain, j'arrête. »<br>**Encore ?**",
+   "vo": "Demain, j'arrête. Tu l'as dit combien de fois ?",
+   "dur": 4.0
+  },
+  {
+   "tab": "garde",
+   "bulle": "Aujourd'hui.",
+   "texte": "Aujourd'hui,<br>**Tenir est ouvert.**",
+   "vo": "Aujourd'hui, t'es plus tout seul. Tenir est ouvert.",
+   "dur": 4.0
+  },
+  {
+   "tab": "allie",
+   "texte": "30 jours.<br>**Une mission par jour.**",
+   "vo": "Trente jours pour commencer. Une mission par jour.",
+   "dur": 3.6,
+   "objets": [
+    {
+     "img": "calender",
+     "x": 480,
+     "y": 850,
+     "h": 210,
+     "at": 0.15,
+     "rot": -6
+    }
+   ]
+  },
+  {
+   "tab": "allie",
+   "texte": "Le soir,<br>**ton check-in.**",
+   "vo": "Le soir, tu fais ton check-in, et tu suis ta série.",
+   "dur": 3.8,
+   "objets": [
+    {
+     "img": "moon",
+     "x": 470,
+     "y": 850,
+     "h": 190,
+     "at": 0.1
+    },
+    {
+     "img": "fire",
+     "x": 800,
+     "y": 900,
+     "h": 150,
+     "at": 0.55
+    }
+   ]
+  },
+  {
+   "tab": "allie",
+   "texte": "Personne saura<br>**que tu l'utilises.**",
+   "vo": "Et personne saura que tu l'utilises.",
+   "dur": 3.2,
+   "objets": [
+    {
+     "img": "lock",
+     "x": 480,
+     "y": 850,
+     "h": 200,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "50 PLACES",
+    "9,99 €/mois, garanti à vie"
+   ],
+   "texte": "Prix fondateur :",
+   "vo": "Cinquante places au prix fondateur : neuf euros quatre-vingt-dix-neuf par mois, garanti à vie.",
+   "dur": 5.0
+  },
+  {
+   "tab": "allie",
+   "taille": 0.3,
+   "hum": "fier",
+   "texte": "C'est ouvert.<br>**Le lien est en bio.**",
+   "vo": "C'est ouvert, maintenant. Le lien est en bio.",
+   "dur": 3.6
+  }
+ ]
+}

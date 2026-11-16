@@ -1,0 +1,72 @@
+{
+ "id": "MDA-X391",
+ "layout": "baton",
+ "music_seed": 10391,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "monte",
+   "texte": "Tu te réveilles.<br>**Premier réflexe : le tel ?**",
+   "vo": "Tu te réveilles, et ton premier réflexe, c'est le tel ? Trois choses avant de le toucher.",
+   "dur": 4.4
+  },
+  {
+   "tab": "porte",
+   "texte": "1. Sors du lit.<br>**Tout de suite.**",
+   "vo": "Un : tu sors du lit, tout de suite, sans le regarder.",
+   "dur": 4.0
+  },
+  {
+   "tab": "petit",
+   "texte": "2. Ouvre les volets.<br>**La lumière d'abord.**",
+   "vo": "Deux : t'ouvres les volets. La lumière d'abord.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "sun",
+     "x": 810,
+     "y": 820,
+     "h": 190,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "pompes",
+   "texte": "3. Dix pompes,<br>**avant l'écran.**",
+   "vo": "Trois : dix pompes, avant le moindre écran.",
+   "dur": 4.0,
+   "reps": 3
+  },
+  {
+   "tab": "seule",
+   "texte": "Le tel attend.<br>**Toi, t'as déjà gagné.**",
+   "vo": "Le tel peut attendre. Toi, t'as déjà gagné ta matinée.",
+   "dur": 4.0
+  },
+  {
+   "tab": "allie",
+   "texte": "Chaque matin,<br>**ta mission du jour.**",
+   "vo": "Et chaque matin, Tenir te donne ta mission du jour.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "calender",
+     "x": 480,
+     "y": 850,
+     "h": 200,
+     "at": 0.15,
+     "rot": -6
+    }
+   ]
+  },
+  {
+   "tab": "allie",
+   "taille": 0.3,
+   "hum": "fier",
+   "texte": "Tenir est ouvert.<br>**Le lien est en bio.**",
+   "vo": "Tenir est ouvert. Le lien est en bio.",
+   "dur": 3.4
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+{
+ "id": "MDA-X406",
+ "layout": "baton",
+ "music_seed": 10406,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "marionnette",
+   "texte": "Ce soir vers 22 h,<br>**ça se joue.**",
+   "vo": "Ce soir vers vingt-deux heures, c'est là que ça se joue. Trois réflexes.",
+   "dur": 4.4
+  },
+  {
+   "tab": "pose",
+   "texte": "1. À 21 h 30,<br>**le tel va se coucher.**",
+   "vo": "Un : à vingt et une heures trente, le tel va se coucher, loin de toi.",
+   "dur": 4.4
+  },
+  {
+   "tab": "petit",
+   "texte": "2. Prépare<br>**demain.**",
+   "vo": "Deux : tu prépares demain. Tes affaires, ta journée.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "notebook",
+     "x": 810,
+     "y": 820,
+     "h": 190,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "pompes",
+   "texte": "3. Des pompes,<br>**puis au lit.**",
+   "vo": "Trois : une série de pompes, puis au lit.",
+   "dur": 4.0,
+   "reps": 3
+  },
+  {
+   "tab": "mur",
+   "texte": "Ta soirée<br>**est verrouillée.**",
+   "vo": "Et ta soirée est verrouillée.",
+   "dur": 3.4
+  },
+  {
+   "tab": "garde",
+   "texte": "Si ça chauffe :<br>**le bouton rouge.**",
+   "vo": "Et si ça chauffe quand même, Tenir a un bouton rouge pour ça.",
+   "dur": 4.4,
+   "bulle": "Pas ce soir."
+  },
+  {
+   "tab": "allie",
+   "taille": 0.3,
+   "hum": "fier",
+   "texte": "Tenir est ouvert.<br>**Le lien est en bio.**",
+   "vo": "Tenir est ouvert. Le lien est en bio.",
+   "dur": 3.4
+  }
+ ]
+}

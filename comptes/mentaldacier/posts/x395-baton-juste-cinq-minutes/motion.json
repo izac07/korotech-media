@@ -1,0 +1,57 @@
+{
+ "id": "MDA-X395",
+ "layout": "baton",
+ "music_seed": 10395,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "« Juste cinq minutes. »<br>**Tu te l'es dit ?**",
+   "vo": "« Juste cinq minutes. » Tu te l'es déjà dit ?",
+   "dur": 4.0,
+   "qui": "envie",
+   "bulle": "Juste cinq|minutes…"
+  },
+  {
+   "tab": "marionnette",
+   "texte": "Cette phrase,<br>**c'est elle qui parle.**",
+   "vo": "Cette phrase, c'est pas toi. C'est l'envie qui parle.",
+   "dur": 4.0
+  },
+  {
+   "tab": "monte",
+   "texte": "Cinq minutes,<br>**ça devient une heure.**",
+   "vo": "Et cinq minutes, tu sais très bien que ça devient une heure.",
+   "dur": 4.0
+  },
+  {
+   "tab": "dialogue",
+   "texte": "Réponds-lui<br>**à voix haute.**",
+   "vo": "La prochaine fois, réponds-lui à voix haute : non, pas ce soir.",
+   "dur": 4.4,
+   "qui": "heros",
+   "bulle": "Non.|Pas ce soir."
+  },
+  {
+   "tab": "porte",
+   "texte": "Puis bouge.<br>**Change de pièce.**",
+   "vo": "Et tout de suite après, tu changes de pièce.",
+   "dur": 4.0
+  },
+  {
+   "tab": "garde",
+   "texte": "Quand ça chauffe :<br>**un plan en 6 étapes.**",
+   "vo": "Quand ça chauffe, Tenir te donne un plan en six étapes.",
+   "dur": 4.0,
+   "bulle": "Pas ce soir."
+  },
+  {
+   "tab": "allie",
+   "taille": 0.3,
+   "hum": "fier",
+   "texte": "Tenir est ouvert.<br>**Le lien est en bio.**",
+   "vo": "Tenir est ouvert. Le lien est en bio.",
+   "dur": 3.4
+  }
+ ]
+}

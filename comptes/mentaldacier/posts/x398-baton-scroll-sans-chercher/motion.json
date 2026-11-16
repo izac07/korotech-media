@@ -1,0 +1,67 @@
+{
+ "id": "MDA-X398",
+ "layout": "baton",
+ "music_seed": 10398,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "monte",
+   "texte": "Tu scrolles<br>**sans rien chercher ?**",
+   "vo": "Tu scrolles sans savoir ce que tu cherches ? Trois signes que l'envie arrive.",
+   "dur": 4.4
+  },
+  {
+   "tab": "boutons",
+   "texte": "1. Tu fais défiler<br>**sans regarder.**",
+   "vo": "Un : tu fais défiler sans vraiment regarder.",
+   "dur": 4.0,
+   "choix": [
+    "Encore une",
+    "Je pose"
+   ]
+  },
+  {
+   "tab": "marionnette",
+   "texte": "2. Il est tard,<br>**t'es fatigué.**",
+   "vo": "Deux : il est tard, et t'es fatigué.",
+   "dur": 4.0
+  },
+  {
+   "tab": "dialogue",
+   "texte": "3. T'es seul,<br>**porte fermée.**",
+   "vo": "Trois : t'es seul, porte fermée.",
+   "dur": 4.0,
+   "qui": "envie",
+   "bulle": "Personne|te voit."
+  },
+  {
+   "tab": "pose",
+   "texte": "Les trois en même temps ?<br>**Pose le tel.**",
+   "vo": "Les trois en même temps ? Tu poses le tel, maintenant.",
+   "dur": 4.0
+  },
+  {
+   "tab": "allie",
+   "texte": "Tenir t'aide<br>**à les voir venir.**",
+   "vo": "Tenir t'aide à repérer ces moments avant qu'ils arrivent.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "bell",
+     "x": 480,
+     "y": 850,
+     "h": 200,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "allie",
+   "taille": 0.3,
+   "hum": "fier",
+   "texte": "Tenir est ouvert.<br>**Le lien est en bio.**",
+   "vo": "Tenir est ouvert. Le lien est en bio.",
+   "dur": 3.4
+  }
+ ]
+}

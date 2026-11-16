@@ -1,0 +1,70 @@
+{
+ "id": "MDA-X401",
+ "layout": "baton",
+ "music_seed": 10401,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "« Une dernière fois,<br>**et j'arrête. »**",
+   "vo": "Une dernière fois, et après j'arrête. Pourquoi ça marche jamais ?",
+   "dur": 4.4,
+   "qui": "heros",
+   "hum": "triste",
+   "bulle": "Une dernière|fois…"
+  },
+  {
+   "tab": "marionnette",
+   "texte": "La dernière fois<br>**appelle la suivante.**",
+   "vo": "Parce que la dernière fois appelle toujours la suivante.",
+   "dur": 4.0
+  },
+  {
+   "tab": "dialogue",
+   "texte": "Et l'envie le sait<br>**très bien.**",
+   "vo": "Et l'envie le sait très bien.",
+   "dur": 3.4,
+   "qui": "envie",
+   "bulle": "Allez,|la dernière."
+  },
+  {
+   "tab": "refuse_accepte",
+   "texte": "La vraie dernière fois,<br>**c'est celle d'avant.**",
+   "vo": "La vraie dernière fois, c'est celle d'avant. Pas celle de ce soir.",
+   "dur": 4.4,
+   "choix": [
+    "Une dernière fois",
+    "Aucune ce soir"
+   ]
+  },
+  {
+   "tab": "porte",
+   "texte": "Ce soir,<br>**tu sors de la pièce.**",
+   "vo": "Ce soir, tu sors de la pièce, et c'est tout.",
+   "dur": 4.0
+  },
+  {
+   "tab": "allie",
+   "texte": "Pour tenir ce soir,<br>**et demain :**",
+   "vo": "Et pour tenir ce soir, et demain :",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "flag",
+     "x": 480,
+     "y": 850,
+     "h": 200,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "allie",
+   "taille": 0.3,
+   "hum": "fier",
+   "texte": "Tenir est ouvert.<br>**Le lien est en bio.**",
+   "vo": "Tenir est ouvert. Le lien est en bio.",
+   "dur": 3.4
+  }
+ ]
+}

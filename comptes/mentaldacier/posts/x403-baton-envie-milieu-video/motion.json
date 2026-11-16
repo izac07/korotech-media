@@ -1,0 +1,69 @@
+{
+ "id": "MDA-X403",
+ "layout": "baton",
+ "music_seed": 10403,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "boutons",
+   "texte": "L'envie monte<br>**au milieu d'une vidéo ?**",
+   "vo": "L'envie monte au milieu d'une vidéo ? Trois réflexes.",
+   "dur": 4.0,
+   "choix": [
+    "Continuer",
+    "Fermer"
+   ]
+  },
+  {
+   "tab": "refuse_accepte",
+   "texte": "1. Ferme l'appli.<br>**Maintenant.**",
+   "vo": "Un : tu fermes l'appli. Pas dans dix secondes, maintenant.",
+   "dur": 4.4,
+   "choix": [
+    "Encore dix secondes",
+    "Je ferme"
+   ]
+  },
+  {
+   "tab": "pose",
+   "texte": "2. Le tel,<br>**loin de toi.**",
+   "vo": "Deux : le tel, écran contre la table, loin de toi.",
+   "dur": 4.0
+  },
+  {
+   "tab": "porte",
+   "texte": "3. De l'eau froide<br>**sur le visage.**",
+   "vo": "Trois : tu vas te passer de l'eau froide sur le visage.",
+   "dur": 4.0
+  },
+  {
+   "tab": "petit",
+   "texte": "Le pic passe.<br>**Toi, t'as tenu.**",
+   "vo": "Le pic passe. Et toi, t'as tenu.",
+   "dur": 4.0
+  },
+  {
+   "tab": "allie",
+   "texte": "Pour ces moments-là,<br>**un plan.**",
+   "vo": "Pour ces moments-là, Tenir a un plan.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "bulb",
+     "x": 480,
+     "y": 850,
+     "h": 200,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "allie",
+   "taille": 0.3,
+   "hum": "fier",
+   "texte": "Tenir est ouvert.<br>**Le lien est en bio.**",
+   "vo": "Tenir est ouvert. Le lien est en bio.",
+   "dur": 3.4
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "id": "MDA-X399",
+ "layout": "baton",
+ "music_seed": 10399,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "petit",
+   "texte": "Ton pote tient<br>**depuis une semaine ?**",
+   "vo": "Envoie ça à ton pote qui tient depuis une semaine.",
+   "dur": 4.0
+  },
+  {
+   "tab": "mur",
+   "texte": "Une semaine,<br>**c'est pas rien.**",
+   "vo": "Une semaine, c'est pas rien. Dis-le-lui.",
+   "dur": 4.0
+  },
+  {
+   "tab": "dialogue",
+   "texte": "Là, l'envie lui dit :<br>**« t'as mérité une pause »**",
+   "vo": "Parce que là, l'envie va lui dire : t'as mérité une pause.",
+   "dur": 4.4,
+   "qui": "envie",
+   "bulle": "T'as mérité|une pause."
+  },
+  {
+   "tab": "dialogue",
+   "texte": "La récompense,<br>**c'est de tenir.**",
+   "vo": "Mais la récompense, c'est justement de tenir.",
+   "dur": 4.0,
+   "qui": "heros",
+   "bulle": "Ma récompense,|c'est tenir."
+  },
+  {
+   "tab": "pompes",
+   "texte": "Qu'il continue<br>**ce qui marche.**",
+   "vo": "Dis-lui de continuer exactement ce qui marche.",
+   "dur": 4.0,
+   "reps": 3
+  },
+  {
+   "tab": "allie",
+   "texte": "Sa série,<br>**jour après jour.**",
+   "vo": "Et pour suivre sa série, jour après jour :",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "fire",
+     "x": 480,
+     "y": 850,
+     "h": 200,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "allie",
+   "taille": 0.3,
+   "hum": "fier",
+   "texte": "Tenir est ouvert.<br>**Le lien est en bio.**",
+   "vo": "Tenir est ouvert. Le lien est en bio.",
+   "dur": 3.4
+  }
+ ]
+}

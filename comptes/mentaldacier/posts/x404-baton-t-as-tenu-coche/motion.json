@@ -1,0 +1,82 @@
+{
+ "id": "MDA-X404",
+ "layout": "baton",
+ "music_seed": 10404,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "petit",
+   "texte": "T'as tenu<br>**aujourd'hui ?**",
+   "vo": "T'as tenu aujourd'hui ? Alors coche-le.",
+   "dur": 3.6
+  },
+  {
+   "tab": "allie",
+   "texte": "Une croix<br>**par soir.**",
+   "vo": "Une croix par soir, chaque soir.",
+   "dur": 3.4,
+   "objets": [
+    {
+     "img": "tick",
+     "x": 480,
+     "y": 850,
+     "h": 200,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "allie",
+   "texte": "Ta série<br>**grandit.**",
+   "vo": "Ta série grandit, et t'as plus envie de la casser.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "fire",
+     "x": 480,
+     "y": 850,
+     "h": 200,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "mur",
+   "texte": "Plus elle est longue,<br>**plus tu la protèges.**",
+   "vo": "Plus elle est longue, plus tu la protèges.",
+   "dur": 4.0
+  },
+  {
+   "tab": "dialogue",
+   "texte": "Chaque croix,<br>**c'est une preuve.**",
+   "vo": "Et chaque croix, c'est une preuve que tu peux le faire.",
+   "dur": 4.0,
+   "qui": "heros",
+   "hum": "content",
+   "bulle": "Encore|un soir."
+  },
+  {
+   "tab": "allie",
+   "texte": "Le soir,<br>**ton check-in.**",
+   "vo": "Dans Tenir, c'est ton check-in du soir.",
+   "dur": 3.4,
+   "objets": [
+    {
+     "img": "moon",
+     "x": 480,
+     "y": 850,
+     "h": 200,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "allie",
+   "taille": 0.3,
+   "hum": "fier",
+   "texte": "Tenir est ouvert.<br>**Le lien est en bio.**",
+   "vo": "Tenir est ouvert. Le lien est en bio.",
+   "dur": 3.4
+  }
+ ]
+}

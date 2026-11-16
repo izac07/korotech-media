@@ -1,0 +1,74 @@
+{
+ "id": "MDA-X402",
+ "layout": "baton",
+ "music_seed": 10402,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "T'as craqué<br>**et tu te sens nul ?**",
+   "vo": "T'as craqué, et tu te sens nul ? Écoute ça.",
+   "dur": 4.0,
+   "qui": "heros",
+   "hum": "triste",
+   "bulle": "Je suis|nul…"
+  },
+  {
+   "tab": "petit",
+   "texte": "Tu viens<br>**d'apprendre un truc.**",
+   "vo": "Tu viens d'apprendre un truc sur toi.",
+   "dur": 4.0
+  },
+  {
+   "tab": "allie",
+   "texte": "L'heure :<br>**note-la.**",
+   "vo": "L'heure où t'as craqué : note-la.",
+   "dur": 3.4,
+   "objets": [
+    {
+     "img": "clock",
+     "x": 480,
+     "y": 850,
+     "h": 200,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "allie",
+   "texte": "L'endroit :<br>**note-le aussi.**",
+   "vo": "L'endroit où t'étais : note-le aussi.",
+   "dur": 3.4,
+   "objets": [
+    {
+     "img": "target",
+     "x": 480,
+     "y": 850,
+     "h": 200,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "mur",
+   "texte": "La prochaine fois,<br>**t'es prêt.**",
+   "vo": "Et la prochaine fois que ce moment arrive, t'es prêt.",
+   "dur": 4.0
+  },
+  {
+   "tab": "garde",
+   "texte": "Chaque soir,<br>**ton check-in.**",
+   "vo": "C'est ce que fait Tenir, avec ton check-in du soir.",
+   "dur": 4.0,
+   "bulle": "Je l'ai|vu venir."
+  },
+  {
+   "tab": "allie",
+   "taille": 0.3,
+   "hum": "fier",
+   "texte": "Tenir est ouvert.<br>**Le lien est en bio.**",
+   "vo": "Tenir est ouvert. Le lien est en bio.",
+   "dur": 3.4
+  }
+ ]
+}

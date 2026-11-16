@@ -1,0 +1,74 @@
+{
+ "id": "MDA-X409",
+ "layout": "baton",
+ "music_seed": 10409,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "monte",
+   "texte": "Minuit. Dans ton lit,<br>**le tel à la main.**",
+   "vo": "Minuit, t'es dans ton lit, le tel à la main. Écoute bien.",
+   "dur": 4.0
+  },
+  {
+   "tab": "pose",
+   "texte": "1. Pose-le.<br>**Loin du lit.**",
+   "vo": "Un : tu le poses, loin du lit. Pas sur la table de nuit.",
+   "dur": 4.0
+  },
+  {
+   "tab": "dialogue",
+   "texte": "Elle va dire :<br>**« juste un coup d'œil »**",
+   "vo": "L'envie va te dire : juste un coup d'œil.",
+   "dur": 4.0,
+   "qui": "envie",
+   "bulle": "Juste un|coup d'œil."
+  },
+  {
+   "tab": "dialogue",
+   "texte": "2. Réponds :<br>**« non, je dors »**",
+   "vo": "Deux : tu lui réponds, non, je dors.",
+   "dur": 3.6,
+   "qui": "heros",
+   "bulle": "Non.|Je dors."
+  },
+  {
+   "tab": "petit",
+   "texte": "3. Lumière éteinte,<br>**yeux fermés.**",
+   "vo": "Trois : lumière éteinte, yeux fermés. Demain, t'auras gagné.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "moon",
+     "x": 810,
+     "y": 820,
+     "h": 190,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "allie",
+   "texte": "Une nuit tenue,<br>**une croix de plus.**",
+   "vo": "Une nuit tenue, une croix de plus dans ta série.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "tick",
+     "x": 480,
+     "y": 850,
+     "h": 200,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "allie",
+   "taille": 0.3,
+   "hum": "fier",
+   "texte": "Tenir est ouvert.<br>**Le lien est en bio.**",
+   "vo": "Tenir est ouvert. Le lien est en bio.",
+   "dur": 3.4
+  }
+ ]
+}

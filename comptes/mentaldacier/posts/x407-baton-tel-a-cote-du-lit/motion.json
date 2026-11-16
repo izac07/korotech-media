@@ -1,0 +1,70 @@
+{
+ "id": "MDA-X407",
+ "layout": "baton",
+ "music_seed": 10407,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "monte",
+   "texte": "Tu dors avec le tel<br>**à côté du lit ?**",
+   "vo": "Tu dors avec le tel à côté du lit ? Change ça ce soir.",
+   "dur": 4.0
+  },
+  {
+   "tab": "marionnette",
+   "texte": "À portée de main,<br>**c'est elle qui décide.**",
+   "vo": "Tant qu'il est à portée de main, c'est l'envie qui décide.",
+   "dur": 4.0
+  },
+  {
+   "tab": "porte",
+   "texte": "Ce soir, il dort<br>**dans une autre pièce.**",
+   "vo": "Ce soir, il dort dans une autre pièce.",
+   "dur": 4.0
+  },
+  {
+   "tab": "petit",
+   "texte": "Ton réveil ?<br>**Un vrai réveil.**",
+   "vo": "Ton réveil ? Un vrai réveil, pas le tel.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "bell",
+     "x": 810,
+     "y": 820,
+     "h": 190,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "seule",
+   "texte": "Elle reste seule.<br>**Toi, tu dors.**",
+   "vo": "L'envie reste seule dans l'autre pièce. Toi, tu dors.",
+   "dur": 4.0
+  },
+  {
+   "tab": "allie",
+   "texte": "Avant de dormir,<br>**ton check-in.**",
+   "vo": "Et avant de dormir, ton check-in sur Tenir.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "moon",
+     "x": 480,
+     "y": 850,
+     "h": 200,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "allie",
+   "taille": 0.3,
+   "hum": "fier",
+   "texte": "Tenir est ouvert.<br>**Le lien est en bio.**",
+   "vo": "Tenir est ouvert. Le lien est en bio.",
+   "dur": 3.4
+  }
+ ]
+}

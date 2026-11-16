@@ -1,0 +1,64 @@
+{
+ "id": "MDA-X400",
+ "layout": "baton",
+ "music_seed": 10400,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "Tes parents partent<br>**pour le week-end ?**",
+   "vo": "Tes parents sont partis pour le week-end, t'es seul à la maison ? Trois réflexes.",
+   "dur": 4.6,
+   "qui": "envie",
+   "bulle": "Rien que|nous deux."
+  },
+  {
+   "tab": "petit",
+   "texte": "1. Remplis<br>**ton week-end.**",
+   "vo": "Un : tu remplis ton week-end avant qu'il commence.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "calender",
+     "x": 810,
+     "y": 820,
+     "h": 190,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "porte",
+   "texte": "2. Sors.<br>**Sport, potes, dehors.**",
+   "vo": "Deux : tu sors. Sport, potes, n'importe quoi dehors.",
+   "dur": 4.0
+  },
+  {
+   "tab": "pose",
+   "texte": "3. Le soir, le tel<br>**hors de la chambre.**",
+   "vo": "Trois : le soir, le tel dort hors de ta chambre.",
+   "dur": 4.0
+  },
+  {
+   "tab": "seule",
+   "texte": "Seul,<br>**pas sans défense.**",
+   "vo": "Seul à la maison, mais pas sans défense.",
+   "dur": 4.0
+  },
+  {
+   "tab": "garde",
+   "texte": "Tenir reste<br>**avec toi.**",
+   "vo": "Et Tenir reste avec toi tout le week-end.",
+   "dur": 4.0,
+   "bulle": "Je suis là."
+  },
+  {
+   "tab": "allie",
+   "taille": 0.3,
+   "hum": "fier",
+   "texte": "Tenir est ouvert.<br>**Le lien est en bio.**",
+   "vo": "Tenir est ouvert. Le lien est en bio.",
+   "dur": 3.4
+  }
+ ]
+}

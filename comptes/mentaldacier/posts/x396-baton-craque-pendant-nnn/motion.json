@@ -1,0 +1,77 @@
+{
+ "id": "MDA-X396",
+ "layout": "baton",
+ "music_seed": 10396,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "T'as craqué<br>**pendant le NNN ?**",
+   "vo": "T'as craqué pendant le NNN ? C'est pas fini pour toi.",
+   "dur": 4.0,
+   "qui": "heros",
+   "hum": "triste",
+   "bulle": "J'ai|craqué…"
+  },
+  {
+   "tab": "refuse_accepte",
+   "texte": "Le piège :<br>**tout lâcher.**",
+   "vo": "Le piège, c'est de te dire : tant pis, je lâche tout.",
+   "dur": 4.0,
+   "choix": [
+    "Tout lâcher",
+    "Recommencer ce soir"
+   ]
+  },
+  {
+   "tab": "petit",
+   "texte": "Recommence<br>**ce soir.**",
+   "vo": "Non. Tu recommences ce soir, pas le mois prochain.",
+   "dur": 4.0
+  },
+  {
+   "tab": "allie",
+   "texte": "Note ce qui<br>**t'a fait craquer.**",
+   "vo": "Note ce qui t'a fait craquer : l'heure, l'endroit, ce que tu faisais.",
+   "dur": 4.4,
+   "objets": [
+    {
+     "img": "notebook",
+     "x": 480,
+     "y": 850,
+     "h": 200,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "mur",
+   "texte": "Et prépare<br>**ce moment-là.**",
+   "vo": "Et la prochaine fois, ce moment-là, tu l'as préparé.",
+   "dur": 4.0
+  },
+  {
+   "tab": "allie",
+   "texte": "Ta série<br>**repart de un.**",
+   "vo": "Ta série repart de un. Et un, c'est déjà plus que zéro.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "fire",
+     "x": 480,
+     "y": 850,
+     "h": 200,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "allie",
+   "taille": 0.3,
+   "hum": "fier",
+   "texte": "Tenir est ouvert.<br>**Le lien est en bio.**",
+   "vo": "Tenir est ouvert. Le lien est en bio.",
+   "dur": 3.4
+  }
+ ]
+}

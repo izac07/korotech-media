@@ -1,0 +1,69 @@
+{
+ "id": "MDA-X392",
+ "layout": "baton",
+ "music_seed": 10392,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "T'as craqué<br>**hier soir ?**",
+   "vo": "T'as craqué hier soir ? Voilà ce que tu fais ce matin.",
+   "dur": 4.0,
+   "qui": "heros",
+   "hum": "triste",
+   "bulle": "J'ai encore|craqué…"
+  },
+  {
+   "tab": "refuse_accepte",
+   "texte": "1. Pas de punition.<br>**Tu reprends.**",
+   "vo": "Un : pas de punition. Tu reprends, c'est tout.",
+   "dur": 4.0,
+   "choix": [
+    "Me punir",
+    "Reprendre"
+   ]
+  },
+  {
+   "tab": "allie",
+   "texte": "2. Note l'heure<br>**et l'endroit.**",
+   "vo": "Deux : tu notes l'heure et l'endroit où t'as lâché.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "clock",
+     "x": 480,
+     "y": 850,
+     "h": 200,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "porte",
+   "texte": "3. Ce soir, à cette heure-là,<br>**sors de la pièce.**",
+   "vo": "Trois : ce soir, à cette heure-là, t'es plus dans cette pièce.",
+   "dur": 4.4
+  },
+  {
+   "tab": "petit",
+   "texte": "Un craquage,<br>**c'est une info.**",
+   "vo": "Un craquage, c'est pas un échec. C'est une info.",
+   "dur": 4.0
+  },
+  {
+   "tab": "garde",
+   "texte": "Tenir te montre<br>**tes heures à risque.**",
+   "vo": "Tenir te montre tes heures à risque, pour que tu les voies venir.",
+   "dur": 4.0,
+   "bulle": "Je l'ai|vu venir."
+  },
+  {
+   "tab": "allie",
+   "taille": 0.3,
+   "hum": "fier",
+   "texte": "Tenir est ouvert.<br>**Le lien est en bio.**",
+   "vo": "Tenir est ouvert. Le lien est en bio.",
+   "dur": 3.4
+  }
+ ]
+}

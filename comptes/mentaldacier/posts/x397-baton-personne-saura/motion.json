@@ -1,0 +1,61 @@
+{
+ "id": "MDA-X397",
+ "layout": "baton",
+ "music_seed": 10397,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "L'envie te dit :<br>**« personne saura »**",
+   "vo": "L'envie te dit : personne saura. Tu connais ?",
+   "dur": 4.0,
+   "qui": "envie",
+   "bulle": "Personne|saura."
+  },
+  {
+   "tab": "dialogue",
+   "texte": "Sauf que toi,<br>**tu sauras.**",
+   "vo": "Sauf que toi, tu sauras. Et c'est toi qui comptes.",
+   "dur": 4.0,
+   "qui": "heros",
+   "bulle": "Moi,|je saurai."
+  },
+  {
+   "tab": "dialogue",
+   "texte": "Puis elle dit :<br>**« juste une fois »**",
+   "vo": "Après, elle te dit : juste une fois.",
+   "dur": 4.0,
+   "qui": "envie",
+   "bulle": "Juste|une fois."
+  },
+  {
+   "tab": "dialogue",
+   "texte": "Réponds-lui :<br>**« tu dis ça à chaque fois »**",
+   "vo": "Réponds-lui : tu dis ça à chaque fois.",
+   "dur": 4.0,
+   "qui": "heros",
+   "bulle": "Tu dis ça|à chaque fois."
+  },
+  {
+   "tab": "mur",
+   "texte": "Puis mets<br>**un mur entre vous.**",
+   "vo": "Et mets un mur entre vous : pose le tel et sors de la pièce.",
+   "dur": 4.4
+  },
+  {
+   "tab": "garde",
+   "texte": "Tenir se met<br>**entre vous deux.**",
+   "vo": "Et quand t'arrives pas à lui répondre seul, Tenir se met entre vous.",
+   "dur": 4.4,
+   "bulle": "Pas ce soir."
+  },
+  {
+   "tab": "allie",
+   "taille": 0.3,
+   "hum": "fier",
+   "texte": "Tenir est ouvert.<br>**Le lien est en bio.**",
+   "vo": "Tenir est ouvert. Le lien est en bio.",
+   "dur": 3.4
+  }
+ ]
+}

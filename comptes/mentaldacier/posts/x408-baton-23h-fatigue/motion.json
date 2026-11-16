@@ -1,0 +1,64 @@
+{
+ "id": "MDA-X408",
+ "layout": "baton",
+ "music_seed": 10408,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "Vers 23 h,<br>**la fatigue arrive.**",
+   "vo": "Vers vingt-trois heures, la fatigue arrive. Et c'est là que tu lâches.",
+   "dur": 4.4,
+   "qui": "envie",
+   "bulle": "T'es crevé,|lâche-toi."
+  },
+  {
+   "tab": "marionnette",
+   "texte": "Fatigué,<br>**tu décides moins bien.**",
+   "vo": "Fatigué, tu décides moins bien. L'envie le sait.",
+   "dur": 4.0
+  },
+  {
+   "tab": "pose",
+   "texte": "1. Décide avant :<br>**le tel loin.**",
+   "vo": "Alors décide avant : à vingt-deux heures, le tel est déjà loin.",
+   "dur": 4.4
+  },
+  {
+   "tab": "petit",
+   "texte": "2. Fatigué ?<br>**Tu te couches.**",
+   "vo": "Et dès que t'es fatigué, tu te couches. Pas de dernier scroll.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "moon",
+     "x": 810,
+     "y": 820,
+     "h": 190,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "mur",
+   "texte": "À 23 h, ta décision<br>**est déjà prise.**",
+   "vo": "Comme ça, à vingt-trois heures, ta décision est déjà prise.",
+   "dur": 4.0
+  },
+  {
+   "tab": "garde",
+   "texte": "Si ça chauffe,<br>**étape par étape.**",
+   "vo": "Et si ça chauffe quand même, Tenir te guide, étape par étape.",
+   "dur": 4.4,
+   "bulle": "Au lit."
+  },
+  {
+   "tab": "allie",
+   "taille": 0.3,
+   "hum": "fier",
+   "texte": "Tenir est ouvert.<br>**Le lien est en bio.**",
+   "vo": "Tenir est ouvert. Le lien est en bio.",
+   "dur": 3.4
+  }
+ ]
+}
