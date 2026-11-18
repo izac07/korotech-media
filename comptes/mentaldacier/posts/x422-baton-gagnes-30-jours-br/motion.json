@@ -1,0 +1,67 @@
+{
+ "id": "MDA-X422",
+ "layout": "baton",
+ "music_seed": 10422,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "petit",
+   "texte": "Ce que tu gagnes<br>**en 30 jours sans la BR.**",
+   "vo": "Ce que tu gagnes en trente jours sans la BR. Le dernier, personne t'en parle.",
+   "dur": 4.6,
+   "objets": [
+    {
+     "img": "trophy",
+     "x": 810,
+     "y": 820,
+     "h": 190,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "pose",
+   "texte": "Du temps.<br>**Des soirées entières.**",
+   "vo": "D'abord du temps. Des soirées entières que tu récupères.",
+   "dur": 4.0
+  },
+  {
+   "tab": "dialogue",
+   "texte": "De la fierté.<br>**Une promesse tenue.**",
+   "vo": "Ensuite de la fierté : une promesse tenue, sans que personne te surveille.",
+   "dur": 4.4,
+   "qui": "heros",
+   "hum": "content",
+   "bulle": "Promesse|tenue."
+  },
+  {
+   "tab": "mur",
+   "texte": "De la confiance.<br>**30 preuves.**",
+   "vo": "De la confiance, aussi. Trente jours, c'est trente preuves.",
+   "dur": 4.0
+  },
+  {
+   "tab": "seule",
+   "texte": "Et le dernier :<br>**c'est toi qui décides.**",
+   "vo": "Et le dernier : tu sais que c'est toi qui décides, pas l'envie.",
+   "dur": 4.0
+  },
+  {
+   "tab": "pompes",
+   "texte": "Ça te sert<br>**partout ailleurs.**",
+   "vo": "Et ça, ça te sert pour le sport, les cours, le taf, tout le reste.",
+   "dur": 4.0,
+   "reps": 3
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

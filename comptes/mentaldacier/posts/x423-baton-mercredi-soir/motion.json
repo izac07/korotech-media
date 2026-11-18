@@ -1,0 +1,57 @@
+{
+ "id": "MDA-X423",
+ "layout": "baton",
+ "music_seed": 10423,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "marionnette",
+   "texte": "Le mercredi soir,<br>**c'est là que ça lâche.**",
+   "vo": "Le mercredi soir, c'est là que ça lâche. Et y a une raison.",
+   "dur": 4.4
+  },
+  {
+   "tab": "monte",
+   "texte": "Milieu de semaine :<br>**t'es fatigué.**",
+   "vo": "Milieu de semaine : t'es fatigué, et le week-end est encore loin.",
+   "dur": 4.0
+  },
+  {
+   "tab": "dialogue",
+   "texte": "L'envie te dit :<br>**« décompresse »**",
+   "vo": "L'envie te dit : t'as besoin de décompresser.",
+   "dur": 4.0,
+   "qui": "envie",
+   "bulle": "T'as besoin de|décompresser."
+  },
+  {
+   "tab": "pompes",
+   "texte": "Décompresse<br>**autrement.**",
+   "vo": "Décompresse, oui. Mais autrement : une séance, une douche, une marche.",
+   "dur": 4.4,
+   "reps": 3
+  },
+  {
+   "tab": "pose",
+   "texte": "À 22 h,<br>**le tel est loin.**",
+   "vo": "Et à vingt-deux heures, le tel est déjà loin de ton lit.",
+   "dur": 4.0
+  },
+  {
+   "tab": "mur",
+   "texte": "Jeudi matin,<br>**tu te remercies.**",
+   "vo": "Jeudi matin, tu te remercies d'avoir tenu ce soir.",
+   "dur": 4.0
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

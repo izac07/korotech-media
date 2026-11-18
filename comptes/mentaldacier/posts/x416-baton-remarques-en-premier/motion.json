@@ -1,0 +1,62 @@
+{
+ "id": "MDA-X416",
+ "layout": "baton",
+ "music_seed": 10416,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "refuse_accepte",
+   "texte": "Ce que tu remarques<br>**en premier.**",
+   "vo": "Ce que tu remarques en premier quand tu tiens. Et c'est pas ce que tu crois.",
+   "dur": 4.4,
+   "choix": [
+    "Ce que tu crois",
+    "Ce qui arrive"
+   ]
+  },
+  {
+   "tab": "pose",
+   "texte": "Tes soirées<br>**sont plus longues.**",
+   "vo": "D'abord, tes soirées. Elles sont plus longues, d'un coup.",
+   "dur": 4.0
+  },
+  {
+   "tab": "pompes",
+   "texte": "Du temps<br>**pour le reste.**",
+   "vo": "T'as du temps pour le sport, tes potes, ce que tu repoussais.",
+   "dur": 4.0,
+   "reps": 3
+  },
+  {
+   "tab": "dialogue",
+   "texte": "Ensuite,<br>**la fierté.**",
+   "vo": "Ensuite, la fierté. Celle de tenir une promesse que tu t'es faite.",
+   "dur": 4.0,
+   "qui": "heros",
+   "hum": "content",
+   "bulle": "J'ai tenu|ma parole."
+  },
+  {
+   "tab": "seule",
+   "texte": "Tu te couches<br>**sans regret.**",
+   "vo": "Tu te couches sans regret. Et le matin, tu te regardes autrement.",
+   "dur": 4.0
+  },
+  {
+   "tab": "mur",
+   "texte": "Et la preuve :<br>**c'est toi qui décides.**",
+   "vo": "Et surtout, t'as la preuve que c'est toi qui décides.",
+   "dur": 4.0
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

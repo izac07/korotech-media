@@ -1,0 +1,65 @@
+{
+ "id": "MDA-X419",
+ "layout": "baton",
+ "music_seed": 10419,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "petit",
+   "texte": "L'envie arrive<br>**à la même heure.**",
+   "vo": "L'envie arrive toujours à la même heure. Trouve la tienne.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "clock",
+     "x": 810,
+     "y": 820,
+     "h": 190,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "monte",
+   "texte": "22 h ? Minuit ?<br>**Au réveil ?**",
+   "vo": "Vingt-deux heures ? Minuit ? Au réveil ? Chacun a la sienne.",
+   "dur": 4.0
+  },
+  {
+   "tab": "dialogue",
+   "texte": "Note-la<br>**3 soirs de suite.**",
+   "vo": "Note-la trois soirs de suite, tu vas voir le schéma.",
+   "dur": 4.0,
+   "qui": "heros",
+   "bulle": "Encore|23 h…"
+  },
+  {
+   "tab": "mur",
+   "texte": "Puis prépare<br>**cette heure-là.**",
+   "vo": "Ensuite, tu prépares cette heure-là, et pas le reste de la journée.",
+   "dur": 4.4
+  },
+  {
+   "tab": "porte",
+   "texte": "Un quart d'heure avant,<br>**t'es ailleurs.**",
+   "vo": "Un quart d'heure avant, t'es déjà ailleurs : douche, séance, autre pièce.",
+   "dur": 4.4
+  },
+  {
+   "tab": "seule",
+   "texte": "Elle arrive.<br>**T'es plus là.**",
+   "vo": "Elle arrive à l'heure. Sauf que toi, t'es plus là.",
+   "dur": 4.0
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

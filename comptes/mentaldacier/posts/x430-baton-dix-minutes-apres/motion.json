@@ -1,0 +1,61 @@
+{
+ "id": "MDA-X430",
+ "layout": "baton",
+ "music_seed": 10430,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "Les 10 minutes<br>**après avoir craqué.**",
+   "vo": "Ce que tu fais dans les dix minutes après avoir craqué, ça compte pour la suite.",
+   "dur": 4.6,
+   "qui": "heros",
+   "hum": "triste",
+   "bulle": "Et|maintenant ?"
+  },
+  {
+   "tab": "monte",
+   "texte": "Rester au lit,<br>**c'est risquer de recommencer.**",
+   "vo": "Si tu restes au lit avec le tel, tu risques de recommencer.",
+   "dur": 4.0
+  },
+  {
+   "tab": "porte",
+   "texte": "Minute 1 :<br>**tu te lèves.**",
+   "vo": "Première minute : tu te lèves et tu sors de la pièce.",
+   "dur": 4.0
+  },
+  {
+   "tab": "pose",
+   "texte": "Le tel<br>**reste derrière.**",
+   "vo": "Le tel, lui, reste derrière.",
+   "dur": 3.4
+  },
+  {
+   "tab": "pompes",
+   "texte": "Une douche,<br>**ou dix pompes.**",
+   "vo": "Une douche, ou dix pompes. Ton corps passe à autre chose.",
+   "dur": 4.0,
+   "reps": 3
+  },
+  {
+   "tab": "dialogue",
+   "texte": "Et tu te dis :<br>**« ça repart demain »**",
+   "vo": "Et tu te dis une seule phrase : ça repart demain.",
+   "dur": 4.0,
+   "qui": "heros",
+   "hum": "content",
+   "bulle": "Ça repart|demain."
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

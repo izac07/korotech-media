@@ -1,0 +1,58 @@
+{
+ "id": "MDA-X412",
+ "layout": "baton",
+ "music_seed": 10412,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "boutons",
+   "texte": "Arrête de compter<br>**sur ta volonté.**",
+   "vo": "Arrête de compter sur ta volonté. C'est pas elle qui te fait tenir.",
+   "dur": 4.0,
+   "choix": [
+    "Volonté",
+    "Préparation"
+   ]
+  },
+  {
+   "tab": "marionnette",
+   "texte": "À 23 h, fatigué,<br>**elle pèse rien.**",
+   "vo": "À vingt-trois heures, fatigué, seul, ta volonté pèse plus rien.",
+   "dur": 4.0
+  },
+  {
+   "tab": "pose",
+   "texte": "Ce qui marche :<br>**préparer avant.**",
+   "vo": "Ce qui marche, c'est ce que t'as préparé avant. Le tel hors de la chambre.",
+   "dur": 4.4
+  },
+  {
+   "tab": "porte",
+   "texte": "Une soirée<br>**déjà prévue.**",
+   "vo": "Une soirée déjà prévue : une séance, un pote, un film dans le salon.",
+   "dur": 4.0
+  },
+  {
+   "tab": "mur",
+   "texte": "Moins c'est facile,<br>**moins tu craques.**",
+   "vo": "Moins c'est facile de craquer, moins tu craques.",
+   "dur": 4.0
+  },
+  {
+   "tab": "petit",
+   "texte": "La volonté,<br>**c'est le plan B.**",
+   "vo": "La volonté, garde-la en plan B. Ton plan A, c'est l'organisation.",
+   "dur": 4.0
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

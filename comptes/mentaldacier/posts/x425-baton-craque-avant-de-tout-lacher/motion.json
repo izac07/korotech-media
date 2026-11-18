@@ -1,0 +1,61 @@
+{
+ "id": "MDA-X425",
+ "layout": "baton",
+ "music_seed": 10425,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "T'as craqué ?<br>**Regarde ça d'abord.**",
+   "vo": "T'as craqué ? Regarde ça avant de tout lâcher.",
+   "dur": 4.0,
+   "qui": "heros",
+   "hum": "triste",
+   "bulle": "J'arrête|tout…"
+  },
+  {
+   "tab": "monte",
+   "texte": "La honte te pousse<br>**à recraquer.**",
+   "vo": "Là, la honte te pousse à recraquer. C'est le piège.",
+   "dur": 4.0
+  },
+  {
+   "tab": "petit",
+   "texte": "Respire.<br>**C'est une fois.**",
+   "vo": "Respire. C'est une fois, pas une habitude qui revient.",
+   "dur": 4.0
+  },
+  {
+   "tab": "porte",
+   "texte": "Lève-toi,<br>**sors de la pièce.**",
+   "vo": "Lève-toi, sors de la pièce, bois un verre d'eau.",
+   "dur": 4.0
+  },
+  {
+   "tab": "refuse_accepte",
+   "texte": "Pas de punition.<br>**Tu repars.**",
+   "vo": "Pas de punition, pas de promesse énorme. Tu repars, c'est tout.",
+   "dur": 4.4,
+   "choix": [
+    "Me punir",
+    "Repartir"
+   ]
+  },
+  {
+   "tab": "mur",
+   "texte": "Demain soir,<br>**t'es mieux préparé.**",
+   "vo": "Et demain soir, t'es mieux préparé qu'aujourd'hui.",
+   "dur": 4.0
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

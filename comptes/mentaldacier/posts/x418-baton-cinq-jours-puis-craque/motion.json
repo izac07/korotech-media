@@ -1,0 +1,67 @@
+{
+ "id": "MDA-X418",
+ "layout": "baton",
+ "music_seed": 10418,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "5 jours tenus,<br>**puis t'as craqué ?**",
+   "vo": "T'as tenu cinq jours, puis t'as craqué ? T'as pas perdu cinq jours.",
+   "dur": 4.4,
+   "qui": "heros",
+   "hum": "triste",
+   "bulle": "Cinq jours|pour rien…"
+  },
+  {
+   "tab": "mur",
+   "texte": "5 jours,<br>**c'est 5 preuves.**",
+   "vo": "Cinq jours, c'est cinq preuves que tu sais le faire.",
+   "dur": 4.0
+  },
+  {
+   "tab": "petit",
+   "texte": "Le jour 6 :<br>**il s'est passé quoi ?**",
+   "vo": "Regarde plutôt le sixième jour : il s'est passé quoi, juste avant ?",
+   "dur": 4.4,
+   "objets": [
+    {
+     "img": "notebook",
+     "x": 810,
+     "y": 820,
+     "h": 190,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "marionnette",
+   "texte": "Fatigue, ennui,<br>**tel au lit ?**",
+   "vo": "La fatigue, l'ennui, le tel au lit ? Trouve ce qui a changé.",
+   "dur": 4.0
+  },
+  {
+   "tab": "pose",
+   "texte": "Corrige<br>**ce détail-là.**",
+   "vo": "Corrige ce détail-là, et seulement celui-là.",
+   "dur": 4.0
+  },
+  {
+   "tab": "pompes",
+   "texte": "Et vise<br>**6 jours.**",
+   "vo": "Et cette fois, vise six jours. Un de plus, c'est tout.",
+   "dur": 4.0,
+   "reps": 3
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

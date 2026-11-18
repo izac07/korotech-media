@@ -1,0 +1,63 @@
+{
+ "id": "MDA-X417",
+ "layout": "baton",
+ "music_seed": 10417,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "L'envie te dit :<br>**« juste ce soir »**",
+   "vo": "L'envie te dit : allez, juste ce soir. Voilà quoi lui répondre.",
+   "dur": 4.0,
+   "qui": "envie",
+   "bulle": "Allez,|juste ce soir."
+  },
+  {
+   "tab": "dialogue",
+   "texte": "Réponds :<br>**« t'as dit ça hier »**",
+   "vo": "Tu lui réponds : t'as dit ça hier aussi.",
+   "dur": 3.6,
+   "qui": "heros",
+   "bulle": "T'as dit ça|hier aussi."
+  },
+  {
+   "tab": "dialogue",
+   "texte": "Elle insiste :<br>**« demain, on arrête »**",
+   "vo": "Elle insiste : demain, on arrête, promis.",
+   "dur": 3.6,
+   "qui": "envie",
+   "bulle": "Demain,|on arrête."
+  },
+  {
+   "tab": "dialogue",
+   "texte": "Réponds :<br>**« non, ce soir »**",
+   "vo": "Tu lui dis : non. On arrête ce soir.",
+   "dur": 3.4,
+   "qui": "heros",
+   "hum": "fier",
+   "bulle": "Non.|Ce soir."
+  },
+  {
+   "tab": "porte",
+   "texte": "Puis tu sors<br>**de la pièce.**",
+   "vo": "Et tu sors de la pièce avant qu'elle trouve autre chose.",
+   "dur": 4.0
+  },
+  {
+   "tab": "seule",
+   "texte": "Sans toi en face,<br>**elle se tait.**",
+   "vo": "Sans toi en face, elle finit par se taire.",
+   "dur": 4.0
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

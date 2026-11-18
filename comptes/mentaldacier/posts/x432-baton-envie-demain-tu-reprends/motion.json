@@ -1,0 +1,67 @@
+{
+ "id": "MDA-X432",
+ "layout": "baton",
+ "music_seed": 10432,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "L'envie te dit :<br>**« demain tu reprends »**",
+   "vo": "L'envie te dit : craque ce soir, demain tu reprends.",
+   "dur": 4.0,
+   "qui": "envie",
+   "bulle": "Demain,|tu reprends."
+  },
+  {
+   "tab": "marionnette",
+   "texte": "Demain,<br>**elle redira pareil.**",
+   "vo": "Sauf que demain, elle te redira exactement la même chose.",
+   "dur": 4.0
+  },
+  {
+   "tab": "dialogue",
+   "texte": "Réponds :<br>**« demain, c'est ce soir »**",
+   "vo": "Réponds-lui : mon demain, c'est ce soir.",
+   "dur": 4.0,
+   "qui": "heros",
+   "bulle": "Demain,|c'est ce soir."
+  },
+  {
+   "tab": "pose",
+   "texte": "Pose le tel.<br>**Maintenant.**",
+   "vo": "Et pose le tel, maintenant, loin du lit.",
+   "dur": 4.0
+  },
+  {
+   "tab": "petit",
+   "texte": "Dors.<br>**Elle aura rien eu.**",
+   "vo": "Tu dors. Et elle aura rien eu ce soir.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "moon",
+     "x": 810,
+     "y": 820,
+     "h": 190,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "mur",
+   "texte": "Un soir de plus<br>**de ton côté.**",
+   "vo": "Ça fait un soir de plus de ton côté.",
+   "dur": 4.0
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

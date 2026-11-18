@@ -1,0 +1,60 @@
+{
+ "id": "MDA-X415",
+ "layout": "baton",
+ "music_seed": 10415,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "Le problème,<br>**c'est pas l'envie.**",
+   "vo": "Le problème, c'est pas l'envie. C'est l'endroit où t'es quand elle arrive.",
+   "dur": 4.4,
+   "qui": "envie",
+   "bulle": "C'est pas|ma faute."
+  },
+  {
+   "tab": "monte",
+   "texte": "Le lit, le tel,<br>**la porte fermée.**",
+   "vo": "Le lit, le tel, la porte fermée : c'est toujours le même décor.",
+   "dur": 4.0
+  },
+  {
+   "tab": "porte",
+   "texte": "Change le décor,<br>**elle perd.**",
+   "vo": "Change le décor, et elle perd de sa force.",
+   "dur": 4.0
+  },
+  {
+   "tab": "pose",
+   "texte": "Le tel<br>**reste au salon.**",
+   "vo": "Le tel reste au salon. Dans ta chambre, il entre plus.",
+   "dur": 4.0
+  },
+  {
+   "tab": "boutons",
+   "texte": "La porte<br>**reste ouverte.**",
+   "vo": "Et la porte reste ouverte, même si ça te paraît bête.",
+   "dur": 4.0,
+   "choix": [
+    "Porte fermée",
+    "Porte ouverte"
+   ]
+  },
+  {
+   "tab": "seule",
+   "texte": "Même envie,<br>**autre endroit.**",
+   "vo": "Même envie, autre endroit : et là, c'est toi qui gagnes.",
+   "dur": 4.0
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "id": "MDA-X411",
+ "layout": "baton",
+ "music_seed": 10411,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "petit",
+   "texte": "Le temps que tu récupères<br>**en 30 jours.**",
+   "vo": "Le temps que tu récupères en trente jours. Fais le calcul avec moi.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "clock",
+     "x": 810,
+     "y": 820,
+     "h": 190,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "marionnette",
+   "texte": "Une demi-heure<br>**par soir ?**",
+   "vo": "Mettons que ça te prenne une demi-heure par soir, entre le scroll et le reste.",
+   "dur": 4.4
+  },
+  {
+   "tab": "monte",
+   "texte": "En 30 jours :<br>**15 heures.**",
+   "vo": "En trente jours, ça fait quinze heures.",
+   "dur": 3.4
+  },
+  {
+   "tab": "pompes",
+   "texte": "15 heures,<br>**c'est 15 séances.**",
+   "vo": "Quinze heures, c'est quinze séances de sport d'une heure.",
+   "dur": 4.0,
+   "reps": 3
+  },
+  {
+   "tab": "porte",
+   "texte": "Ou 15 heures<br>**avec tes potes.**",
+   "vo": "Ou quinze heures dehors, avec tes potes.",
+   "dur": 4.0
+  },
+  {
+   "tab": "pose",
+   "texte": "Ce temps,<br>**il est déjà à toi.**",
+   "vo": "Ce temps, il est déjà à toi. Il suffit d'arrêter de le donner.",
+   "dur": 4.0
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

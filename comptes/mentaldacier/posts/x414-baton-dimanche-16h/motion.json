@@ -1,0 +1,64 @@
+{
+ "id": "MDA-X414",
+ "layout": "baton",
+ "music_seed": 10414,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "marionnette",
+   "texte": "Dimanche, 16 h,<br>**rien de prévu.**",
+   "vo": "Dimanche, seize heures, rien de prévu. C'est le moment le plus risqué de ta semaine.",
+   "dur": 4.8
+  },
+  {
+   "tab": "monte",
+   "texte": "L'ennui<br>**ouvre la porte.**",
+   "vo": "Parce que l'ennui ouvre la porte, et l'envie entre toute seule.",
+   "dur": 4.0
+  },
+  {
+   "tab": "petit",
+   "texte": "Samedi soir,<br>**prévois ton dimanche.**",
+   "vo": "Alors dès le samedi soir, tu prévois ton dimanche après-midi.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "calender",
+     "x": 810,
+     "y": 820,
+     "h": 190,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "porte",
+   "texte": "Un truc dehors.<br>**N'importe lequel.**",
+   "vo": "Un truc dehors, n'importe lequel : marcher, un foot, voir quelqu'un.",
+   "dur": 4.0
+  },
+  {
+   "tab": "pompes",
+   "texte": "Ou une séance<br>**à 16 h pile.**",
+   "vo": "Ou une séance à seize heures pile, comme un rendez-vous.",
+   "dur": 4.0,
+   "reps": 3
+  },
+  {
+   "tab": "seule",
+   "texte": "Dimanche rempli :<br>**elle reste dehors.**",
+   "vo": "Un dimanche rempli, et l'envie reste dehors.",
+   "dur": 4.0
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

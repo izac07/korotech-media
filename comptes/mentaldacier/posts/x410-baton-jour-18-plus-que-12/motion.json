@@ -1,0 +1,68 @@
+{
+ "id": "MDA-X410",
+ "layout": "baton",
+ "music_seed": 10410,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "mur",
+   "texte": "Jour 18.<br>**Plus que 12.**",
+   "vo": "Jour dix-huit du NNN. Plus que douze. Et c'est maintenant que ça se joue.",
+   "dur": 4.6
+  },
+  {
+   "tab": "marionnette",
+   "texte": "La 3e semaine,<br>**c'est la plus longue.**",
+   "vo": "La troisième semaine, c'est la plus longue. L'effet nouveauté est parti.",
+   "dur": 4.0
+  },
+  {
+   "tab": "dialogue",
+   "texte": "L'envie change<br>**de discours.**",
+   "vo": "Et l'envie change de discours : t'as assez prouvé, tu peux t'arrêter là.",
+   "dur": 4.4,
+   "qui": "envie",
+   "bulle": "T'as assez|prouvé."
+  },
+  {
+   "tab": "dialogue",
+   "texte": "Réponds :<br>**« je finis »**",
+   "vo": "Réponds-lui : je finis ce que j'ai commencé.",
+   "dur": 4.0,
+   "qui": "heros",
+   "hum": "fier",
+   "bulle": "Je finis ce que|j'ai commencé."
+  },
+  {
+   "tab": "seule",
+   "texte": "Elle s'épuise.<br>**Pas toi.**",
+   "vo": "Chaque jour tenu, elle s'épuise un peu plus. Pas toi.",
+   "dur": 4.0
+  },
+  {
+   "tab": "petit",
+   "texte": "T'as craqué en route ?<br>**Ton jour 1, c'est ce soir.**",
+   "vo": "Et si t'as craqué en route, ton jour un peut être ce soir.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "flag",
+     "x": 810,
+     "y": 820,
+     "h": 190,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

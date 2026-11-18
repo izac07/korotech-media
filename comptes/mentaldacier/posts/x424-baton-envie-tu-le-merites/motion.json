@@ -1,0 +1,65 @@
+{
+ "id": "MDA-X424",
+ "layout": "baton",
+ "music_seed": 10424,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "L'envie te dit :<br>**« tu le mérites »**",
+   "vo": "L'envie te dit : t'as bien bossé, tu le mérites. Écoute bien la suite.",
+   "dur": 4.4,
+   "qui": "envie",
+   "bulle": "T'as bien bossé,|tu le mérites."
+  },
+  {
+   "tab": "marionnette",
+   "texte": "Elle se déguise<br>**en récompense.**",
+   "vo": "Elle se déguise en récompense. C'est son meilleur costume.",
+   "dur": 4.0
+  },
+  {
+   "tab": "dialogue",
+   "texte": "Une récompense<br>**qu'on regrette ?**",
+   "vo": "Sauf qu'une récompense que tu regrettes dix minutes après, c'en est pas une.",
+   "dur": 4.4,
+   "qui": "heros",
+   "bulle": "Une récompense|que je regrette ?"
+  },
+  {
+   "tab": "refuse_accepte",
+   "texte": "Choisis<br>**la tienne.**",
+   "vo": "Alors choisis la tienne : un bon repas, un film, une sortie.",
+   "dur": 4.0,
+   "choix": [
+    "Sa récompense",
+    "La mienne"
+   ]
+  },
+  {
+   "tab": "porte",
+   "texte": "Et prends-la<br>**loin du lit.**",
+   "vo": "Et prends-la loin de ton lit et de ton tel.",
+   "dur": 4.0
+  },
+  {
+   "tab": "dialogue",
+   "texte": "Ce que tu mérites :<br>**te réveiller fier.**",
+   "vo": "Ce que tu mérites vraiment, c'est de te réveiller fier demain.",
+   "dur": 4.0,
+   "qui": "heros",
+   "hum": "fier",
+   "bulle": "Je mérite|mieux."
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

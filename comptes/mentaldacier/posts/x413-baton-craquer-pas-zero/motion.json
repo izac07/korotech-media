@@ -1,0 +1,70 @@
+{
+ "id": "MDA-X413",
+ "layout": "baton",
+ "music_seed": 10413,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "Craquer une fois,<br>**c'est pas repartir de zéro.**",
+   "vo": "Craquer une fois, c'est pas repartir de zéro.",
+   "dur": 4.0,
+   "qui": "heros",
+   "hum": "triste",
+   "bulle": "Tout ça|pour rien…"
+  },
+  {
+   "tab": "mur",
+   "texte": "Tes jours tenus<br>**restent tenus.**",
+   "vo": "Les jours que t'as tenus, personne te les enlève.",
+   "dur": 4.0
+  },
+  {
+   "tab": "refuse_accepte",
+   "texte": "Le vrai danger :<br>**« foutu pour foutu »**",
+   "vo": "Le vrai danger, c'est de te dire : foutu pour foutu, autant continuer.",
+   "dur": 4.4,
+   "choix": [
+    "Tout lâcher",
+    "Repartir ce soir"
+   ]
+  },
+  {
+   "tab": "petit",
+   "texte": "Note l'heure<br>**et l'endroit.**",
+   "vo": "À la place, note l'heure et l'endroit. C'est une info, pas une défaite.",
+   "dur": 4.4,
+   "objets": [
+    {
+     "img": "notebook",
+     "x": 810,
+     "y": 820,
+     "h": 190,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "pose",
+   "texte": "Change une règle<br>**ce soir.**",
+   "vo": "Change une seule règle ce soir. Par exemple, l'endroit où dort ton tel.",
+   "dur": 4.0
+  },
+  {
+   "tab": "porte",
+   "texte": "Et tu repars.<br>**Ce soir.**",
+   "vo": "Et tu repars ce soir. Pas lundi, pas le mois prochain.",
+   "dur": 4.0
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

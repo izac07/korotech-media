@@ -1,0 +1,61 @@
+{
+ "id": "MDA-X429",
+ "layout": "baton",
+ "music_seed": 10429,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "Tu luttes<br>**contre l'envie ?**",
+   "vo": "Tu luttes contre l'envie ? C'est pour ça que tu perds.",
+   "dur": 4.0,
+   "qui": "heros",
+   "hum": "triste",
+   "bulle": "Je résiste,|je résiste…"
+  },
+  {
+   "tab": "monte",
+   "texte": "Plus tu la fixes,<br>**plus elle grossit.**",
+   "vo": "Plus tu la fixes, plus elle prend de place.",
+   "dur": 4.0
+  },
+  {
+   "tab": "refuse_accepte",
+   "texte": "Lutte pas.<br>**Bouge.**",
+   "vo": "Lutte pas. Bouge.",
+   "dur": 3.0,
+   "choix": [
+    "Lutter",
+    "Bouger"
+   ]
+  },
+  {
+   "tab": "porte",
+   "texte": "Autre pièce,<br>**autre chose.**",
+   "vo": "Tu changes de pièce, et tu fais autre chose avec tes mains.",
+   "dur": 4.0
+  },
+  {
+   "tab": "petit",
+   "texte": "Elle redescend<br>**toute seule.**",
+   "vo": "Sans toi pour la nourrir, elle redescend toute seule.",
+   "dur": 4.0
+  },
+  {
+   "tab": "seule",
+   "texte": "T'as quitté<br>**le ring.**",
+   "vo": "T'as pas gagné le combat. T'as juste quitté le ring. Et ça suffit.",
+   "dur": 4.4
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

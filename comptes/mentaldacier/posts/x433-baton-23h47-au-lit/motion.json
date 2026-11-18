@@ -1,0 +1,69 @@
+{
+ "id": "MDA-X433",
+ "layout": "baton",
+ "music_seed": 10433,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "monte",
+   "texte": "23 h 47. Au lit,<br>**le tel à 10 cm.**",
+   "vo": "Vingt-trois heures quarante-sept. T'es au lit, le tel à dix centimètres.",
+   "dur": 4.6
+  },
+  {
+   "tab": "dialogue",
+   "texte": "Elle chuchote :<br>**« juste l'heure »**",
+   "vo": "L'envie chuchote : prends-le, juste pour regarder l'heure.",
+   "dur": 4.0,
+   "qui": "envie",
+   "bulle": "Juste|regarder l'heure."
+  },
+  {
+   "tab": "marionnette",
+   "texte": "Tu connais<br>**la suite.**",
+   "vo": "Tu connais la suite. Tu l'as déjà vécue.",
+   "dur": 3.4
+  },
+  {
+   "tab": "refuse_accepte",
+   "texte": "Lève-toi.<br>**Maintenant.**",
+   "vo": "Alors lève-toi. Maintenant, pas dans une minute.",
+   "dur": 4.0,
+   "choix": [
+    "Le prendre",
+    "Me lever"
+   ]
+  },
+  {
+   "tab": "porte",
+   "texte": "Emmène-le<br>**dans une autre pièce.**",
+   "vo": "Emmène-le dans une autre pièce, et reviens sans lui.",
+   "dur": 4.0
+  },
+  {
+   "tab": "petit",
+   "texte": "23 h 52.<br>**T'as gagné ta nuit.**",
+   "vo": "Vingt-trois heures cinquante-deux. T'as gagné ta nuit.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "moon",
+     "x": 810,
+     "y": 820,
+     "h": 190,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

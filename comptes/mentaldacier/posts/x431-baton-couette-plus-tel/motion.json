@@ -1,0 +1,67 @@
+{
+ "id": "MDA-X431",
+ "layout": "baton",
+ "music_seed": 10431,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "monte",
+   "texte": "La couette + le tel :<br>**le combo qui te fait craquer.**",
+   "vo": "La couette plus le tel : c'est le combo qui te fait craquer.",
+   "dur": 4.4
+  },
+  {
+   "tab": "marionnette",
+   "texte": "Allongé, au chaud,<br>**tu négocies.**",
+   "vo": "Allongé, au chaud, dans le noir, tu négocies avec l'envie. Et tu perds.",
+   "dur": 4.4
+  },
+  {
+   "tab": "boutons",
+   "texte": "Casse le combo :<br>**enlève un des deux.**",
+   "vo": "Alors casse le combo. Tu enlèves un des deux.",
+   "dur": 4.0,
+   "choix": [
+    "Tel au lit",
+    "Tel au salon"
+   ]
+  },
+  {
+   "tab": "pose",
+   "texte": "Le tel<br>**dort au salon.**",
+   "vo": "Le plus simple : le tel dort au salon.",
+   "dur": 4.0
+  },
+  {
+   "tab": "petit",
+   "texte": "Sous la couette,<br>**tu dors.**",
+   "vo": "Et sous la couette, tu fais une seule chose : dormir.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "moon",
+     "x": 810,
+     "y": 820,
+     "h": 190,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "seule",
+   "texte": "Sans le combo,<br>**elle a rien.**",
+   "vo": "Sans le combo, l'envie a plus rien pour t'attraper.",
+   "dur": 4.0
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

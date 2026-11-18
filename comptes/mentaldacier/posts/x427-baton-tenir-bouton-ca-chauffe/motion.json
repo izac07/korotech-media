@@ -1,0 +1,75 @@
+{
+ "id": "MDA-X427",
+ "layout": "baton",
+ "music_seed": 10427,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "allie",
+   "texte": "Quand ça chauffe,<br>**tu fais quoi ?**",
+   "vo": "Quand ça chauffe, tu fais quoi ? Dans l'app Tenir, y a un bouton pour ça.",
+   "dur": 4.4,
+   "bulle": "Ça chauffe ?"
+  },
+  {
+   "tab": "garde",
+   "texte": "Étape 1 :<br>**tu te lèves.**",
+   "vo": "Il lance six étapes, avec un timer. Un : tu te lèves.",
+   "dur": 4.0,
+   "bulle": "Lève-toi."
+  },
+  {
+   "tab": "porte",
+   "texte": "Étape 2 :<br>**tu sors de la pièce.**",
+   "vo": "Deux : tu sors de la pièce.",
+   "dur": 3.4
+  },
+  {
+   "tab": "pompes",
+   "texte": "Étape 3 :<br>**occupe ton corps.**",
+   "vo": "Trois : tu occupes ton corps. Pompes, squats, eau froide.",
+   "dur": 4.0,
+   "reps": 3
+  },
+  {
+   "tab": "petit",
+   "texte": "Étape 4 :<br>**« pas maintenant »**",
+   "vo": "Quatre : tu te dis pas maintenant. Juste quinze minutes.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "clock",
+     "x": 810,
+     "y": 820,
+     "h": 190,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "allie",
+   "texte": "Puis tu notes.<br>**Et t'as tenu.**",
+   "vo": "Ensuite tu préviens un pote, tu notes, et c'est passé. T'as tenu.",
+   "dur": 4.4,
+   "objets": [
+    {
+     "img": "tick",
+     "x": 480,
+     "y": 850,
+     "h": 200,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

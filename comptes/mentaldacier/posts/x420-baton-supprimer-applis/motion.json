@@ -1,0 +1,67 @@
+{
+ "id": "MDA-X420",
+ "layout": "baton",
+ "music_seed": 10420,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "boutons",
+   "texte": "Supprimer les applis,<br>**ça suffit pas.**",
+   "vo": "Supprimer les applis, ça suffit pas. Tu les réinstalles en trente secondes.",
+   "dur": 4.4,
+   "choix": [
+    "Supprimer",
+    "Réinstaller"
+   ]
+  },
+  {
+   "tab": "marionnette",
+   "texte": "Le souci,<br>**c'est le moment.**",
+   "vo": "Le souci, c'est pas l'appli. C'est le moment où t'es seul avec ton tel.",
+   "dur": 4.4
+  },
+  {
+   "tab": "pose",
+   "texte": "Le soir, le tel<br>**change de pièce.**",
+   "vo": "Alors le soir, c'est le tel qui change de pièce.",
+   "dur": 4.0
+  },
+  {
+   "tab": "petit",
+   "texte": "Un vrai réveil<br>**sur la table de nuit.**",
+   "vo": "Et sur ta table de nuit, tu mets un vrai réveil.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "bell",
+     "x": 810,
+     "y": 820,
+     "h": 190,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "porte",
+   "texte": "Et une soirée<br>**qui t'occupe.**",
+   "vo": "Et tu te prévois une soirée qui t'occupe vraiment.",
+   "dur": 4.0
+  },
+  {
+   "tab": "mur",
+   "texte": "Bloque le moment,<br>**pas l'appli.**",
+   "vo": "Bloque le moment, pas l'appli. C'est ça qui tient.",
+   "dur": 4.0
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

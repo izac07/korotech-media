@@ -1,0 +1,61 @@
+{
+ "id": "MDA-X421",
+ "layout": "baton",
+ "music_seed": 10421,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "texte": "Tu rentres.<br>**La maison est vide.**",
+   "vo": "Tu rentres, la maison est vide. Les dix prochaines minutes décident de ta soirée.",
+   "dur": 4.8,
+   "qui": "envie",
+   "bulle": "Enfin|seuls."
+  },
+  {
+   "tab": "monte",
+   "texte": "Si tu t'allonges<br>**avec le tel…**",
+   "vo": "Si tu t'allonges avec le tel, tu sais déjà comment ça finit.",
+   "dur": 4.0
+  },
+  {
+   "tab": "refuse_accepte",
+   "texte": "Reste debout<br>**10 minutes.**",
+   "vo": "Alors pendant dix minutes, tu restes debout.",
+   "dur": 4.0,
+   "choix": [
+    "M'allonger",
+    "Rester debout"
+   ]
+  },
+  {
+   "tab": "pompes",
+   "texte": "Range, douche,<br>**ou bouge.**",
+   "vo": "Tu ranges, tu te douches, ou tu fais des pompes.",
+   "dur": 4.0,
+   "reps": 3
+  },
+  {
+   "tab": "pose",
+   "texte": "Le tel<br>**reste dans l'entrée.**",
+   "vo": "Et le tel, tu le laisses dans l'entrée.",
+   "dur": 4.0
+  },
+  {
+   "tab": "petit",
+   "texte": "10 minutes,<br>**et le pire est passé.**",
+   "vo": "Dix minutes plus tard, le pire est passé, et ta soirée est à toi.",
+   "dur": 4.0
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

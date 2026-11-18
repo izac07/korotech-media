@@ -1,0 +1,67 @@
+{
+ "id": "MDA-X426",
+ "layout": "baton",
+ "music_seed": 10426,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "pose",
+   "texte": "Défi de ce soir :<br>**le tel dort ailleurs.**",
+   "vo": "Défi de ce soir : ton tel dort hors de ta chambre. T'es cap ?",
+   "dur": 4.4
+  },
+  {
+   "tab": "marionnette",
+   "texte": "Au lit avec toi,<br>**c'est lui qui gagne.**",
+   "vo": "Au lit avec toi, c'est lui qui gagne, tu le sais.",
+   "dur": 4.0
+  },
+  {
+   "tab": "petit",
+   "texte": "Mets un vrai réveil.<br>**Plus d'excuse.**",
+   "vo": "Mets un vrai réveil, comme ça t'as plus d'excuse.",
+   "dur": 4.0,
+   "objets": [
+    {
+     "img": "bell",
+     "x": 810,
+     "y": 820,
+     "h": 190,
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "tab": "porte",
+   "texte": "Branche-le<br>**dans le salon.**",
+   "vo": "Branche-le dans le salon avant vingt-deux heures.",
+   "dur": 4.0
+  },
+  {
+   "tab": "seule",
+   "texte": "Une nuit<br>**sans lui.**",
+   "vo": "Une seule nuit sans lui, juste pour voir.",
+   "dur": 4.0
+  },
+  {
+   "tab": "boutons",
+   "texte": "Alors,<br>**cap ou pas cap ?**",
+   "vo": "Alors, cap ou pas cap ?",
+   "dur": 3.0,
+   "choix": [
+    "Pas cap",
+    "Cap"
+   ]
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}

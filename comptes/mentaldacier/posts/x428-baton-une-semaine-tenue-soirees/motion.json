@@ -1,0 +1,58 @@
+{
+ "id": "MDA-X428",
+ "layout": "baton",
+ "music_seed": 10428,
+ "handle": "mentaldacier2030",
+ "scenes": [
+  {
+   "tab": "mur",
+   "texte": "Une semaine tenue :<br>**ce qui change le soir.**",
+   "vo": "Une semaine tenue. Voilà ce qui change dans tes soirées.",
+   "dur": 4.4
+  },
+  {
+   "tab": "pose",
+   "texte": "Tu sais<br>**où est ton tel.**",
+   "vo": "Tu sais où est ton tel le soir, et c'est plus dans ton lit.",
+   "dur": 4.0
+  },
+  {
+   "tab": "porte",
+   "texte": "Un truc prévu<br>**à 21 h.**",
+   "vo": "T'as un truc prévu à vingt et une heures, au lieu d'attendre que ça passe.",
+   "dur": 4.4
+  },
+  {
+   "tab": "dialogue",
+   "texte": "L'envie frappe.<br>**Tu la vois venir.**",
+   "vo": "L'envie frappe encore, mais tu la vois venir.",
+   "dur": 4.0,
+   "qui": "envie",
+   "taille": 0.5,
+   "bulle": "Y a|quelqu'un ?"
+  },
+  {
+   "tab": "petit",
+   "texte": "7 soirs.<br>**7 preuves.**",
+   "vo": "Sept soirs, c'est sept preuves que tu peux le faire.",
+   "dur": 4.0
+  },
+  {
+   "tab": "pompes",
+   "texte": "La 2e semaine<br>**commence mieux.**",
+   "vo": "Et la deuxième semaine commence mieux que la première.",
+   "dur": 4.0,
+   "reps": 3
+  },
+  {
+   "tab": "carte",
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton plan, en privé"
+   ],
+   "texte": "En commentaire :",
+   "vo": "Écris TENIR en commentaire, je t'envoie ton plan en privé.",
+   "dur": 3.8
+  }
+ ]
+}
