@@ -1,0 +1,191 @@
+{
+ "id": "MDA-X445",
+ "layout": "baton",
+ "music_seed": 11445,
+ "handle": "mentaldacier2030",
+ "bandeau": "LE DÉMON DE LA BR",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Minuit dix. J'avais dit : ce soir, pas de BR. Et là, il est arrivé.",
+   "dur": 2.4,
+   "taille": 0,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "Minuit dix. J'avais dit :|ce soir, pas de BR. Et|là, il est arrivé."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Hé. Tu dors pas ?",
+   "dur": 2.4,
+   "taille": 0.9,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Hé. Tu dors pas|?",
+   "taille0": 0.3
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "J'essaie.",
+   "dur": 2.4,
+   "taille": 0.9,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "J'essaie."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Je dis ça pour toi. T'es tendu. Une petite BR, et tu dors comme un bébé.",
+   "dur": 2.4,
+   "taille": 1.1,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Je dis ça pour|toi. T'es tendu.|Une petite BR,|et tu dors comme|un bébé.",
+   "taille0": 0.9
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "J'ai dit pas ce soir.",
+   "dur": 2.4,
+   "taille": 1.1,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "J'ai dit pas ce soir."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "T'as dit ça à qui ? Y a personne. La porte est fermée.",
+   "dur": 2.4,
+   "taille": 1.3,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "T'as dit ça à|qui ? Y a|personne. La|porte est|fermée.",
+   "taille0": 1.1
+  },
+  {
+   "tab": "meme",
+   "meme": {
+    "img": "evil-kermit.jpg",
+    "legendes": [
+     {
+      "t": "MOI :|JE POSE LE TEL|ET JE DORS",
+      "x": 0.26,
+      "y": 0.2,
+      "taille": 40
+     },
+     {
+      "t": "LE DÉMON|DE LA BR :|JUSTE L'HEURE",
+      "x": 0.76,
+      "y": 0.2,
+      "taille": 40
+     }
+    ]
+   },
+   "vo": "Allez. Prends juste le tel. Juste pour regarder l'heure.",
+   "dur": 4.2
+  },
+  {
+   "tab": "monte",
+   "texte": "Minuit douze. **Le tel en main.**",
+   "vo": "Minuit douze.",
+   "dur": 3.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Voilà. Et tant que t'y es…",
+   "dur": 2.4,
+   "taille": 1.7,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Voilà. Et tant|que t'y es…",
+   "taille0": 1.5
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Attends. Tu m'as dit pareil hier.",
+   "dur": 2.4,
+   "taille": 1.7,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "Attends. Tu m'as dit|pareil hier."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Hier, c'était différent.",
+   "dur": 2.4,
+   "taille": 1.6,
+   "ehum": "boude",
+   "hum": "triste",
+   "bulle": "Hier, c'était|différent."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Et tu sais ce qui se passe après ? Toi, tu disparais. Et moi je reste là, tout seul, à me promettre que c'est la dernière.",
+   "dur": 2.4,
+   "taille": 1.5,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "Et tu sais ce qui se|passe après ? Toi, tu|disparais. Et moi je|reste là, tout seul, à me|promettre que c'est la|dernière.",
+   "taille0": 1.6
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "On n'est pas obligés de parler d'après.",
+   "dur": 2.4,
+   "taille": 1.3,
+   "ehum": "boude",
+   "hum": "triste",
+   "bulle": "On n'est pas|obligés de|parler d'après.",
+   "taille0": 1.5
+  },
+  {
+   "tab": "porte",
+   "texte": "Minuit, c'est son heure. **Le tel dort dans le couloir.**",
+   "vo": "Si. Et cette fois, j'ai un plan. Minuit, c'est ton heure. Alors à minuit, le tel dort dans le couloir.",
+   "dur": 3.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Un plan ? Depuis quand t'as un plan ?",
+   "dur": 2.4,
+   "taille": 0.7,
+   "ehum": "peur",
+   "hum": "triste",
+   "bulle": "Un plan ? Depuis|quand t'as un|plan ?",
+   "taille0": 1.0
+  },
+  {
+   "tab": "carte",
+   "texte": "Écris **TENIR**<br>en commentaire",
+   "vo": "Toi aussi, ton démon a son heure. Écris TENIR en commentaire : je t'envoie ton plan en privé. Ton heure à risque, et quoi faire quand il arrive.",
+   "dur": 3.0,
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton heure à risque"
+   ]
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Non non non, écris pas ça !",
+   "dur": 2.4,
+   "taille": 0.4,
+   "ehum": "peur",
+   "hum": "triste",
+   "bulle": "Non non non,|écris pas ça !",
+   "taille0": 0.7
+  }
+ ]
+}
