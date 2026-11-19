@@ -1,0 +1,165 @@
+{
+ "id": "MDA-X443",
+ "layout": "baton",
+ "music_seed": 11443,
+ "handle": "mentaldacier2030",
+ "bandeau": "LE DÉMON DE LA BR",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Jour neuf sans BR. Dans dix minutes, je craque. Sauf si…",
+   "dur": 2.4,
+   "taille": 0,
+   "hum": "peur",
+   "ehum": "boude",
+   "bulle": "Jour neuf sans BR. Dans|dix minutes, je craque.|Sauf si…"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Ça chauffe, hein ?",
+   "dur": 2.4,
+   "taille": 1.0,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Ça chauffe, hein|?",
+   "taille0": 0.3
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Un peu.",
+   "dur": 2.4,
+   "taille": 1.0,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "Un peu."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Un peu beaucoup. Je te connais. Dans dix minutes, t'es à moi.",
+   "dur": 2.4,
+   "taille": 1.3,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Un peu beaucoup.|Je te connais.|Dans dix|minutes, t'es à|moi.",
+   "taille0": 1.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "T'as rien prévu ce soir. Personne t'appelle. Tu vas faire quoi ?",
+   "dur": 2.4,
+   "taille": 1.6,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "T'as rien prévu|ce soir.|Personne|t'appelle. Tu|vas faire quoi ?",
+   "taille0": 1.3
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Je sais pas.",
+   "dur": 2.4,
+   "taille": 1.6,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "Je sais pas."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Voilà. Et quand tu sais pas quoi faire, c'est moi qui décide.",
+   "dur": 2.4,
+   "taille": 1.7,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Voilà. Et quand|tu sais pas quoi|faire, c'est moi|qui décide."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Sauf que là, je sais.",
+   "dur": 2.4,
+   "taille": 1.7,
+   "hum": "fier",
+   "ehum": "boude",
+   "bulle": "Sauf que là, je sais."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Ah ! Tu le prends, le tel !",
+   "dur": 2.4,
+   "taille": 1.7,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Ah ! Tu le|prends, le tel !"
+  },
+  {
+   "tab": "allie",
+   "texte": "L'app Tenir : **le bouton « Ça chauffe ».**",
+   "vo": "Je l'ouvre pour toi. Tenir. Le bouton « Ça chauffe ».",
+   "dur": 3.0,
+   "taille": 1.3,
+   "bulle": "Ça chauffe ?|On y va."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "C'est quoi, ça ?",
+   "dur": 2.4,
+   "taille": 1.2,
+   "ehum": "peur",
+   "hum": "triste",
+   "bulle": "C'est quoi, ça ?"
+  },
+  {
+   "tab": "porte",
+   "texte": "Étape 1 : **il se lève.** Étape 2 : **il sort.**",
+   "vo": "Six étapes, avec un timer. Un : je me lève. Deux : je sors de la pièce.",
+   "dur": 3.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Attends, c'est de la triche…",
+   "dur": 2.4,
+   "taille": 0.8,
+   "ehum": "peur",
+   "hum": "triste",
+   "bulle": "Attends, c'est|de la triche…",
+   "taille0": 1.1
+  },
+  {
+   "tab": "pompes",
+   "texte": "Étape 3 : **il occupe son corps.**",
+   "vo": "Trois : j'occupe mon corps. Dix pompes.",
+   "dur": 3.0,
+   "reps": 10
+  },
+  {
+   "tab": "carte",
+   "texte": "Écris **TENIR**<br>en commentaire",
+   "vo": "Toi aussi, t'as ton heure où ça chauffe. Écris TENIR en commentaire : je t'envoie ton plan en privé. Ton heure à risque, et quoi faire quand il arrive.",
+   "dur": 3.0,
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton heure à risque"
+   ]
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Qui a inventé ce bouton ?!",
+   "dur": 2.4,
+   "taille": 0.4,
+   "ehum": "peur",
+   "hum": "triste",
+   "bulle": "Qui a inventé ce|bouton ?!",
+   "taille0": 0.7
+  }
+ ]
+}

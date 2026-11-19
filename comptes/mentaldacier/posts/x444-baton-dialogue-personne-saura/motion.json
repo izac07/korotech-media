@@ -1,0 +1,190 @@
+{
+ "id": "MDA-X444",
+ "layout": "baton",
+ "music_seed": 11444,
+ "handle": "mentaldacier2030",
+ "bandeau": "LE DÉMON DE LA BR",
+ "scenes": [
+  {
+   "tab": "meme",
+   "meme": {
+    "img": "two-buttons.jpg",
+    "legendes": [
+     {
+      "t": "PERSONNE|SAURA",
+      "x": 0.32,
+      "y": 0.16,
+      "taille": 36
+     },
+     {
+      "t": "MOI, JE|SAURAI",
+      "x": 0.64,
+      "y": 0.11,
+      "taille": 36
+     },
+     {
+      "t": "MOI, SEUL CE SOIR,|FACE AU DÉMON DE LA BR",
+      "x": 0.5,
+      "y": 0.9,
+      "taille": 34
+     }
+    ]
+   },
+   "vo": "Ce soir, maison vide. Et le démon de la BR a sorti le grand jeu.",
+   "dur": 4.2
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "T'as vu ? Personne. Toute la soirée.",
+   "dur": 2.4,
+   "taille": 1.0,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "T'as vu ?|Personne. Toute|la soirée."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Je regarde un film.",
+   "dur": 2.4,
+   "taille": 1.0,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "Je regarde un film."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Avec le tel dans la main. Allez, une BR. Personne saura.",
+   "dur": 2.4,
+   "taille": 1.2,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Avec le tel dans|la main. Allez,|une BR. Personne|saura.",
+   "taille0": 1.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "J'ai dit non.",
+   "dur": 2.4,
+   "taille": 1.2,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "J'ai dit non."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Non à qui ? Y a personne pour vérifier. Personne pour te juger.",
+   "dur": 2.4,
+   "taille": 1.5,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Non à qui ? Y a|personne pour|vérifier.|Personne pour te|juger.",
+   "taille0": 1.2
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "C'est vrai que personne verra…",
+   "dur": 2.4,
+   "taille": 1.5,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "C'est vrai que personne|verra…"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Personne ! C'est le moment parfait.",
+   "dur": 2.4,
+   "taille": 1.7,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Personne ! C'est|le moment|parfait.",
+   "taille0": 1.5
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Attends. Pourquoi tu viens toujours quand je suis seul ?",
+   "dur": 2.4,
+   "taille": 1.7,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "Attends. Pourquoi tu|viens toujours quand je|suis seul ?"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Hasard.",
+   "dur": 2.4,
+   "taille": 1.6,
+   "ehum": "boude",
+   "hum": "triste",
+   "bulle": "Hasard."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Non. Seul, c'est ton heure. Quand y a du monde, t'existes plus.",
+   "dur": 2.4,
+   "taille": 1.4,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "Non. Seul, c'est ton|heure. Quand y a du|monde, t'existes plus.",
+   "taille0": 1.6
+  },
+  {
+   "tab": "seule",
+   "texte": "Personne saura ? **Moi, je saurai.**",
+   "vo": "Personne saura ? Moi, je saurai. Et la maison vide, je la remplis : j'écris à un pote, il passe.",
+   "dur": 3.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Il viendra pas, ton pote.",
+   "dur": 2.4,
+   "taille": 0.8,
+   "ehum": "boude",
+   "hum": "triste",
+   "bulle": "Il viendra pas,|ton pote.",
+   "taille0": 1.1
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Il est en bas.",
+   "dur": 2.4,
+   "taille": 0.6,
+   "hum": "fier",
+   "ehum": "boude",
+   "bulle": "Il est en bas.",
+   "taille0": 0.8
+  },
+  {
+   "tab": "carte",
+   "texte": "Écris **TENIR**<br>en commentaire",
+   "vo": "Le démon adore quand t'es seul. Écris TENIR en commentaire : je t'envoie ton plan en privé. Ton heure à risque, et quoi faire quand il arrive.",
+   "dur": 3.0,
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton heure à risque"
+   ]
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Ferme la porte, vite !",
+   "dur": 2.4,
+   "taille": 0.4,
+   "ehum": "peur",
+   "hum": "triste",
+   "bulle": "Ferme la porte,|vite !",
+   "taille0": 0.7
+  }
+ ]
+}

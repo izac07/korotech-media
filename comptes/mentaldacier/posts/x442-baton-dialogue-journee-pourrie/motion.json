@@ -1,0 +1,164 @@
+{
+ "id": "MDA-X442",
+ "layout": "baton",
+ "music_seed": 11442,
+ "handle": "mentaldacier2030",
+ "bandeau": "LE DÉMON DE LA BR",
+ "scenes": [
+  {
+   "tab": "meme",
+   "meme": {
+    "img": "this-is-fine.jpg",
+    "legendes": [
+     {
+      "t": "MOI APRÈS UNE JOURNÉE POURRIE,|SEUL AVEC LE DÉMON DE LA BR",
+      "x": 0.5,
+      "y": 0.84,
+      "taille": 30
+     }
+    ]
+   },
+   "vo": "Journée horrible. Je rentre, je me dis que tout va bien. Et le démon de la BR m'attend sur le canapé.",
+   "dur": 4.2
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Dure journée, hein ?",
+   "dur": 2.4,
+   "taille": 1.0,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Dure journée,|hein ?"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Horrible.",
+   "dur": 2.4,
+   "taille": 1.0,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "Horrible."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Le taf, les transports… Tu mérites un moment pour toi.",
+   "dur": 2.4,
+   "taille": 1.2,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Le taf, les|transports… Tu|mérites un|moment pour toi.",
+   "taille0": 1.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Une BR, et tout s'efface. Tu l'as bien gagnée.",
+   "dur": 2.4,
+   "taille": 1.5,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Une BR, et tout|s'efface. Tu|l'as bien|gagnée.",
+   "taille0": 1.2
+  },
+  {
+   "tab": "monte",
+   "texte": "Il s'affale **sur le canapé.**",
+   "vo": "C'est vrai que je l'ai gagnée.",
+   "dur": 3.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Tu vois ! Prends le tel.",
+   "dur": 2.4,
+   "taille": 1.7,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Tu vois ! Prends|le tel.",
+   "taille0": 1.5
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Et après, je me sens comment ?",
+   "dur": 2.4,
+   "taille": 1.7,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "Et après, je me sens|comment ?"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Euh. Détendu ?",
+   "dur": 2.4,
+   "taille": 1.6,
+   "ehum": "boude",
+   "hum": "triste",
+   "bulle": "Euh. Détendu ?"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Non. Après, je me sens pire. La journée pourrie, plus la honte en bonus.",
+   "dur": 2.4,
+   "taille": 1.4,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "Non. Après, je me sens|pire. La journée pourrie,|plus la honte en bonus.",
+   "taille0": 1.6
+  },
+  {
+   "tab": "porte",
+   "texte": "Mauvaise journée ? **Il bouge d'abord.**",
+   "vo": "Les soirs de mauvaise journée, c'est ton heure. Alors ces soirs-là, je pose le sac, et je ressors marcher dix minutes.",
+   "dur": 3.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Il pleut, peut-être.",
+   "dur": 2.4,
+   "taille": 0.8,
+   "ehum": "boude",
+   "hum": "triste",
+   "bulle": "Il pleut, peut-|être.",
+   "taille0": 1.1
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Tant pis.",
+   "dur": 2.4,
+   "taille": 0.6,
+   "hum": "fier",
+   "ehum": "boude",
+   "bulle": "Tant pis.",
+   "taille0": 0.8
+  },
+  {
+   "tab": "carte",
+   "texte": "Écris **TENIR**<br>en commentaire",
+   "vo": "Le démon adore tes mauvaises journées. Écris TENIR en commentaire : je t'envoie ton plan en privé. Ton heure à risque, et quoi faire quand il arrive.",
+   "dur": 3.0,
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton heure à risque"
+   ]
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Non ! Les mauvaises journées, c'est à moi !",
+   "dur": 2.4,
+   "taille": 0.4,
+   "ehum": "peur",
+   "hum": "triste",
+   "bulle": "Non ! Les|mauvaises|journées, c'est|à moi !",
+   "taille0": 0.7
+  }
+ ]
+}

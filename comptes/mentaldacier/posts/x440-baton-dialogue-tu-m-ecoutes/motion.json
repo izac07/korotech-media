@@ -1,0 +1,150 @@
+{
+ "id": "MDA-X440",
+ "layout": "baton",
+ "music_seed": 11440,
+ "handle": "mentaldacier2030",
+ "bandeau": "LE DÉMON DE LA BR",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "HÉ ! TU M'ÉCOUTES ?",
+   "dur": 2.4,
+   "taille": 1.5,
+   "ehum": "colere",
+   "hum": "content",
+   "bulle": "HÉ ! TU|M'ÉCOUTES ?"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Trois semaines sans BR, et tu me parles plus ? Hé ! Je te parle.",
+   "dur": 2.4,
+   "taille": 1.3,
+   "ehum": "colere",
+   "hum": "content",
+   "bulle": "Trois semaines|sans BR, et tu|me parles plus ?|Hé ! Je te|parle."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Tu fais quoi, là ?",
+   "dur": 2.4,
+   "taille": 1.3,
+   "ehum": "boude",
+   "hum": "content",
+   "bulle": "Tu fais quoi, là|?"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Je bosse.",
+   "dur": 2.4,
+   "taille": 1.3,
+   "hum": "content",
+   "ehum": "boude",
+   "bulle": "Je bosse."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Ouais, mais une petite pause, ça te ferait du bien…",
+   "dur": 2.4,
+   "taille": 1.4,
+   "ehum": "ricane",
+   "hum": "content",
+   "bulle": "Ouais, mais une|petite pause, ça|te ferait du|bien…"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Allez. Juste cinq minutes. Personne le saura.",
+   "dur": 2.4,
+   "taille": 1.6,
+   "ehum": "ricane",
+   "hum": "content",
+   "bulle": "Allez. Juste|cinq minutes.|Personne le|saura.",
+   "taille0": 1.4
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "T'AS PAS LE DROIT DE M'IGNORER !",
+   "dur": 2.4,
+   "taille": 1.8,
+   "ehum": "colere",
+   "hum": "content",
+   "bulle": "T'AS PAS LE|DROIT DE|M'IGNORER !",
+   "taille0": 1.6
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Avant, je te répondais. Je négociais. Et quand on négocie avec toi, on perd.",
+   "dur": 2.4,
+   "taille": 1.8,
+   "hum": "fier",
+   "ehum": "boude",
+   "bulle": "Avant, je te répondais.|Je négociais. Et quand on|négocie avec toi, on|perd."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "On peut discuter, quand même.",
+   "dur": 2.4,
+   "taille": 1.6,
+   "ehum": "boude",
+   "hum": "triste",
+   "bulle": "On peut|discuter, quand|même."
+  },
+  {
+   "tab": "porte",
+   "texte": "Il répond pas. **Il bouge.**",
+   "vo": "Non. Quand t'arrives, je réponds pas, je bouge. Et tu te calmes tout seul.",
+   "dur": 3.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "C'est vexant.",
+   "dur": 2.4,
+   "taille": 0.8,
+   "ehum": "boude",
+   "hum": "triste",
+   "bulle": "C'est vexant.",
+   "taille0": 1.2
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "C'est le but.",
+   "dur": 2.4,
+   "taille": 0.7,
+   "hum": "fier",
+   "ehum": "boude",
+   "bulle": "C'est le but.",
+   "taille0": 0.8
+  },
+  {
+   "tab": "carte",
+   "texte": "Écris **TENIR**<br>en commentaire",
+   "vo": "Le démon vit de la discussion. Écris TENIR en commentaire : je t'envoie ton plan en privé. Ton heure à risque, et quoi faire quand il arrive.",
+   "dur": 3.0,
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton heure à risque"
+   ]
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Personne m'écoute, ici.",
+   "dur": 2.4,
+   "taille": 0.4,
+   "ehum": "peur",
+   "hum": "triste",
+   "bulle": "Personne|m'écoute, ici.",
+   "taille0": 0.7
+  }
+ ]
+}

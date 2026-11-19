@@ -1,0 +1,172 @@
+{
+ "id": "MDA-X439",
+ "layout": "baton",
+ "music_seed": 11439,
+ "handle": "mentaldacier2030",
+ "bandeau": "LE DÉMON DE LA BR",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "« Foutu pour foutu. » Si t'as déjà pensé ça après une BR, regarde la suite.",
+   "dur": 2.4,
+   "taille": 0,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "« Foutu pour foutu. » Si|t'as déjà pensé ça après|une BR, regarde la suite."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Douze jours sans BR, et ce matin, j'ai craqué. Et là, il est revenu me voir.",
+   "dur": 2.4,
+   "taille": 0.9,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "Douze jours sans BR, et|ce matin, j'ai craqué. Et|là, il est revenu me|voir.",
+   "taille0": 0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Bon. C'est fait, c'est fait.",
+   "dur": 2.4,
+   "taille": 0.9,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Bon. C'est fait,|c'est fait."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Je sais.",
+   "dur": 2.4,
+   "taille": 0.9,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "Je sais."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Douze jours à la poubelle. Foutu pour foutu, autant en profiter aujourd'hui.",
+   "dur": 2.4,
+   "taille": 1.3,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Douze jours à la|poubelle. Foutu|pour foutu,|autant en|profiter|aujourd'hui.",
+   "taille0": 0.9
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Tu recommenceras lundi, propre. Aujourd'hui, ça compte plus.",
+   "dur": 2.4,
+   "taille": 1.6,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Tu recommenceras|lundi, propre.|Aujourd'hui, ça|compte plus.",
+   "taille0": 1.3
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Ça compte plus…",
+   "dur": 2.4,
+   "taille": 1.6,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "Ça compte plus…"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Voilà. Tu comprends vite.",
+   "dur": 2.4,
+   "taille": 1.7,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Voilà. Tu|comprends vite."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Attends. La honte que j'ai là, c'est toi qui la fais grossir ?",
+   "dur": 2.4,
+   "taille": 1.7,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "Attends. La honte que|j'ai là, c'est toi qui la|fais grossir ?"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Moi ? Jamais.",
+   "dur": 2.4,
+   "taille": 1.6,
+   "ehum": "boude",
+   "hum": "triste",
+   "bulle": "Moi ? Jamais."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "C'est ton plan. Je craque une fois, tu me fais croire que tout est foutu, et j'en fais dix.",
+   "dur": 2.4,
+   "taille": 1.4,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "C'est ton plan. Je craque|une fois, tu me fais|croire que tout est|foutu, et j'en fais dix.",
+   "taille0": 1.6
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Les douze jours, personne me les enlève. Une fois, c'est un écart.",
+   "dur": 2.4,
+   "taille": 1.1,
+   "hum": "fier",
+   "ehum": "boude",
+   "bulle": "Les douze jours, personne|me les enlève. Une fois,|c'est un écart.",
+   "taille0": 1.4
+  },
+  {
+   "tab": "porte",
+   "texte": "Il sort **marcher 10 minutes.**",
+   "vo": "Alors je me lève, je sors marcher dix minutes, et je repars.",
+   "dur": 3.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Tu devais pas déprimer, là ?",
+   "dur": 2.4,
+   "taille": 0.6,
+   "ehum": "boude",
+   "hum": "triste",
+   "bulle": "Tu devais pas|déprimer, là ?",
+   "taille0": 0.9
+  },
+  {
+   "tab": "carte",
+   "texte": "Écris **TENIR**<br>en commentaire",
+   "vo": "Le plus dangereux, c'est pas de craquer. C'est l'heure d'après. Écris TENIR en commentaire : je t'envoie ton plan en privé. Ton heure à risque, et quoi faire quand il arrive.",
+   "dur": 3.0,
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton heure à risque"
+   ]
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Laisse-les culpabiliser tranquilles !",
+   "dur": 2.4,
+   "taille": 0.4,
+   "ehum": "peur",
+   "hum": "triste",
+   "bulle": "Laisse-les|culpabiliser|tranquilles !",
+   "taille0": 0.7
+  }
+ ]
+}

@@ -1,0 +1,195 @@
+{
+ "id": "MDA-X441",
+ "layout": "baton",
+ "music_seed": 11441,
+ "handle": "mentaldacier2030",
+ "bandeau": "LE DÉMON DE LA BR",
+ "scenes": [
+  {
+   "tab": "meme",
+   "meme": {
+    "img": "clown-makeup.jpg",
+    "legendes": [
+     {
+      "t": "« JE COMMENCE|LUNDI »",
+      "x": 0.27,
+      "y": 0.1,
+      "taille": 38
+     },
+     {
+      "t": "« BON, LE 1ER|DU MOIS »",
+      "x": 0.27,
+      "y": 0.35,
+      "taille": 38
+     },
+     {
+      "t": "« APRÈS LES|VACANCES »",
+      "x": 0.27,
+      "y": 0.6,
+      "taille": 38
+     },
+     {
+      "t": "« J'ARRÊTE LA BR|DEMAIN »",
+      "x": 0.27,
+      "y": 0.85,
+      "taille": 38
+     }
+    ]
+   },
+   "vo": "Lundi. Le premier du mois. Après les vacances. Ça fait trois mois que je dis que j'arrête la BR demain. Devine qui me souffle ça.",
+   "dur": 4.2
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Moi ! Et j'ai raison. Ce soir, profite. Demain, tu commences.",
+   "dur": 2.4,
+   "taille": 1.0,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Moi ! Et j'ai|raison. Ce soir,|profite. Demain,|tu commences."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Tu m'as dit ça hier.",
+   "dur": 2.4,
+   "taille": 1.0,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "Tu m'as dit ça hier."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Hier, c'était pas le bon moment.",
+   "dur": 2.4,
+   "taille": 1.1,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Hier, c'était|pas le bon|moment."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Et avant-hier ?",
+   "dur": 2.4,
+   "taille": 1.1,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "Et avant-hier ?"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Pas le bon non plus. Mais demain, c'est le bon. Je le sens.",
+   "dur": 2.4,
+   "taille": 1.4,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Pas le bon non|plus. Mais|demain, c'est le|bon. Je le sens.",
+   "taille0": 1.1
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "C'est vrai que demain, j'ai rien de prévu…",
+   "dur": 2.4,
+   "taille": 1.4,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "C'est vrai que demain,|j'ai rien de prévu…"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Voilà ! Commencer un jour calme, c'est parfait.",
+   "dur": 2.4,
+   "taille": 1.7,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Voilà !|Commencer un|jour calme,|c'est parfait.",
+   "taille0": 1.4
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Et demain soir, tu me diras quoi ?",
+   "dur": 2.4,
+   "taille": 1.7,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "Et demain soir, tu me|diras quoi ?"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Je verrai.",
+   "dur": 2.4,
+   "taille": 1.6,
+   "ehum": "boude",
+   "hum": "triste",
+   "bulle": "Je verrai."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Tu me diras : demain. Comme chaque soir depuis trois mois.",
+   "dur": 2.4,
+   "taille": 1.4,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "Tu me diras : demain.|Comme chaque soir depuis|trois mois.",
+   "taille0": 1.6
+  },
+  {
+   "tab": "pose",
+   "texte": "Le jour 1, **c'est ce soir.**",
+   "vo": "Le jour un, c'est pas demain. C'est ce soir. Et ce soir, à vingt-deux heures, le tel dort au salon.",
+   "dur": 3.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Mais t'étais pas prêt !",
+   "dur": 2.4,
+   "taille": 0.7,
+   "ehum": "peur",
+   "hum": "triste",
+   "bulle": "Mais t'étais pas|prêt !",
+   "taille0": 1.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Avec toi, on l'est jamais.",
+   "dur": 2.4,
+   "taille": 0.6,
+   "hum": "fier",
+   "ehum": "boude",
+   "bulle": "Avec toi, on l'est|jamais.",
+   "taille0": 0.7
+  },
+  {
+   "tab": "carte",
+   "texte": "Écris **TENIR**<br>en commentaire",
+   "vo": "Si toi aussi tu commences toujours demain : Écris TENIR en commentaire : je t'envoie ton plan en privé. Ton heure à risque, et quoi faire quand il arrive.",
+   "dur": 3.0,
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton heure à risque"
+   ]
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Fais-le demain !",
+   "dur": 2.4,
+   "taille": 0.4,
+   "ehum": "peur",
+   "hum": "triste",
+   "bulle": "Fais-le demain !",
+   "taille0": 0.7
+  }
+ ]
+}

@@ -66,7 +66,7 @@
    "taille": 1.1,
    "hum": "triste",
    "ehum": "boude",
-   "bulle": "J'avais dit trente|jours."
+   "bulle": "J'avais dit trente jours."
   },
   {
    "tab": "dialogue",
@@ -87,7 +87,7 @@
    "taille": 1.4,
    "hum": "triste",
    "ehum": "boude",
-   "bulle": "C'est vrai que je|l'ai méritée…"
+   "bulle": "C'est vrai que je l'ai|méritée…"
   },
   {
    "tab": "dialogue",
@@ -128,7 +128,7 @@
    "taille": 1.5,
    "hum": "colere",
    "ehum": "boude",
-   "bulle": "C'est rien pour|toi. Moi, ça me|fait six jours à|refaire.",
+   "bulle": "C'est rien pour toi. Moi,|ça me fait six jours à|refaire.",
    "taille0": 1.7
   },
   {
@@ -139,7 +139,7 @@
    "taille": 1.2,
    "hum": "fier",
    "ehum": "boude",
-   "bulle": "Tu me félicites|pour me faire|lâcher. Une|récompense que je|regrette dix|minutes après,|c'en est pas une.",
+   "bulle": "Tu me félicites pour me|faire lâcher. Une|récompense que je|regrette dix minutes|après, c'en est pas une.",
    "taille0": 1.5
   },
   {

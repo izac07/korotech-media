@@ -1,0 +1,179 @@
+{
+ "id": "MDA-X438",
+ "layout": "baton",
+ "music_seed": 11438,
+ "handle": "mentaldacier2030",
+ "bandeau": "LE DÉMON DE LA BR",
+ "scenes": [
+  {
+   "tab": "meme",
+   "meme": {
+    "img": "trade-offer.jpg",
+    "legendes": [
+     {
+      "t": "5 MINUTES|DE BR",
+      "x": 0.2,
+      "y": 0.3,
+      "taille": 40
+     },
+     {
+      "t": "LA HONTE|TOUT L'APRÈM",
+      "x": 0.74,
+      "y": 0.3,
+      "taille": 40
+     }
+    ]
+   },
+   "vo": "Proposition. Moi, je reçois cinq minutes de BR. Toi, tu reçois… on en parle après.",
+   "dur": 4.2
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Je vois très bien ce que je reçois. Non.",
+   "dur": 2.4,
+   "taille": 1.0,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "Je vois très bien ce que|je reçois. Non."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Trois minutes ?",
+   "dur": 2.4,
+   "taille": 1.0,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Trois minutes ?"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Non.",
+   "dur": 2.4,
+   "taille": 1.0,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "Non."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Deux minutes, et je te laisse tranquille tout l'aprèm.",
+   "dur": 2.4,
+   "taille": 1.2,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Deux minutes, et|je te laisse|tranquille tout|l'aprèm.",
+   "taille0": 1.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Tu dis toujours ça.",
+   "dur": 2.4,
+   "taille": 1.2,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "Tu dis toujours ça."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Une minute ! Juste ouvrir. Tu fermes après, promis.",
+   "dur": 2.4,
+   "taille": 1.6,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Une minute !|Juste ouvrir. Tu|fermes après,|promis.",
+   "taille0": 1.2
+  },
+  {
+   "tab": "monte",
+   "texte": "Seul à midi, **le tel en main.**",
+   "vo": "Une minute, c'est rien…",
+   "dur": 3.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "C'est rien du tout !",
+   "dur": 2.4,
+   "taille": 1.7,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "C'est rien du|tout !",
+   "taille0": 1.6
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Sauf que ta minute, la dernière fois, elle a duré une heure. Et j'ai sauté le repas.",
+   "dur": 2.4,
+   "taille": 1.7,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "Sauf que ta minute, la|dernière fois, elle a|duré une heure. Et j'ai|sauté le repas."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Détail.",
+   "dur": 2.4,
+   "taille": 1.6,
+   "ehum": "boude",
+   "hum": "triste",
+   "bulle": "Détail."
+  },
+  {
+   "tab": "porte",
+   "texte": "Règle du midi : **jamais seul avec le tel.**",
+   "vo": "Ma règle du midi : je mange pas seul avec le tel. Je descends, je mange dehors.",
+   "dur": 3.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Trente secondes ?",
+   "dur": 2.4,
+   "taille": 0.8,
+   "ehum": "peur",
+   "hum": "triste",
+   "bulle": "Trente secondes|?",
+   "taille0": 1.2
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Zéro.",
+   "dur": 2.4,
+   "taille": 0.5,
+   "hum": "fier",
+   "ehum": "boude",
+   "bulle": "Zéro.",
+   "taille0": 0.8
+  },
+  {
+   "tab": "carte",
+   "texte": "Écris **TENIR**<br>en commentaire",
+   "vo": "Lui, il négocie. Toi, il te faut une règle déjà prête. Écris TENIR en commentaire : je t'envoie ton plan en privé. Ton heure à risque, et quoi faire quand il arrive.",
+   "dur": 3.0,
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton heure à risque"
+   ]
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Zéro, c'est pas un chiffre !",
+   "dur": 2.4,
+   "taille": 0.4,
+   "ehum": "peur",
+   "hum": "triste",
+   "bulle": "Zéro, c'est pas|un chiffre !",
+   "taille0": 0.7
+  }
+ ]
+}

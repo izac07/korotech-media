@@ -1,0 +1,173 @@
+{
+ "id": "MDA-X437",
+ "layout": "baton",
+ "music_seed": 11437,
+ "handle": "mentaldacier2030",
+ "bandeau": "LE DÉMON DE LA BR",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Tu sais quand le démon de la BR est le plus dangereux ? Quand il te fait des compliments.",
+   "dur": 2.4,
+   "taille": 0,
+   "hum": "fier",
+   "ehum": "boude",
+   "bulle": "Tu sais quand le démon de|la BR est le plus|dangereux ? Quand il te|fait des compliments."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Deux semaines que je tiens. Écoute-le.",
+   "dur": 2.4,
+   "taille": 0.9,
+   "hum": "content",
+   "ehum": "boude",
+   "bulle": "Deux semaines que je|tiens. Écoute-le.",
+   "taille0": 0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Franchement, t'es impressionnant. Le plus fort que je connaisse.",
+   "dur": 2.4,
+   "taille": 0.9,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Franchement,|t'es|impressionnant.|Le plus fort que|je connaisse."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Tu veux quoi ?",
+   "dur": 2.4,
+   "taille": 0.9,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "Tu veux quoi ?"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Rien ! Je dis juste : quelqu'un d'aussi fort, une BR, ça le fait pas tomber.",
+   "dur": 2.4,
+   "taille": 1.2,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Rien ! Je dis|juste :|quelqu'un|d'aussi fort,|une BR, ça le|fait pas tomber.",
+   "taille0": 0.9
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Tu contrôles, toi. Une fois, et tu reprends direct. Les autres, non. Toi, oui.",
+   "dur": 2.4,
+   "taille": 1.5,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Tu contrôles,|toi. Une fois,|et tu reprends|direct. Les|autres, non.|Toi, oui.",
+   "taille0": 1.2
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "C'est vrai que je contrôle.",
+   "dur": 2.4,
+   "taille": 1.5,
+   "hum": "content",
+   "ehum": "boude",
+   "bulle": "C'est vrai que je|contrôle."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Voilà. Prouve-le.",
+   "dur": 2.4,
+   "taille": 1.7,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Voilà. Prouve-|le.",
+   "taille0": 1.5
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Attends. Si je contrôle, pourquoi j'en aurais besoin ?",
+   "dur": 2.4,
+   "taille": 1.7,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "Attends. Si je contrôle,|pourquoi j'en aurais|besoin ?"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Pour te prouver que tu contrôles.",
+   "dur": 2.4,
+   "taille": 1.6,
+   "ehum": "boude",
+   "hum": "triste",
+   "bulle": "Pour te prouver|que tu|contrôles."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Tu m'as fait le même coup la dernière fois. Et je me suis pas arrêté à une.",
+   "dur": 2.4,
+   "taille": 1.4,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "Tu m'as fait le même coup|la dernière fois. Et je|me suis pas arrêté à une.",
+   "taille0": 1.6
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Ton truc, c'est pas ma force. C'est le moment où je crois que j'ai gagné.",
+   "dur": 2.4,
+   "taille": 1.2,
+   "hum": "fier",
+   "ehum": "boude",
+   "bulle": "Ton truc, c'est pas ma|force. C'est le moment où|je crois que j'ai gagné.",
+   "taille0": 1.4
+  },
+  {
+   "tab": "pose",
+   "texte": "Comme au jour 1 : **tel hors de la chambre.**",
+   "vo": "Alors je fais comme au jour un : le soir, le tel dort hors de la chambre.",
+   "dur": 3.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "T'es pas drôle quand t'es lucide.",
+   "dur": 2.4,
+   "taille": 0.6,
+   "ehum": "boude",
+   "hum": "triste",
+   "bulle": "T'es pas drôle|quand t'es|lucide.",
+   "taille0": 0.9
+  },
+  {
+   "tab": "carte",
+   "texte": "Écris **TENIR**<br>en commentaire",
+   "vo": "Le démon te flatte quand il peut plus te forcer. Écris TENIR en commentaire : je t'envoie ton plan en privé. Ton heure à risque, et quoi faire quand il arrive.",
+   "dur": 3.0,
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton heure à risque"
+   ]
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Pas les commentaires, pitié !",
+   "dur": 2.4,
+   "taille": 0.4,
+   "ehum": "peur",
+   "hum": "triste",
+   "bulle": "Pas les|commentaires,|pitié !",
+   "taille0": 0.7
+  }
+ ]
+}
