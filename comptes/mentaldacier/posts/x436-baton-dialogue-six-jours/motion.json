@@ -1,0 +1,184 @@
+{
+ "id": "MDA-X436",
+ "layout": "baton",
+ "music_seed": 11436,
+ "handle": "mentaldacier2030",
+ "bandeau": "LE DÉMON DE LA BR",
+ "scenes": [
+  {
+   "tab": "meme",
+   "meme": {
+    "img": "buff-doge-cheems.png",
+    "legendes": [
+     {
+      "t": "MOI AU JOUR 1|SANS BR :|« JE LÂCHE RIEN »",
+      "x": 0.27,
+      "y": 0.08,
+      "taille": 38
+     },
+     {
+      "t": "MOI AU JOUR 6,|QUAND LE DÉMON|ME FÉLICITE",
+      "x": 0.76,
+      "y": 0.1,
+      "taille": 38
+     }
+    ]
+   },
+   "vo": "Au jour un sans BR, je lâchais rien. Au jour six, le démon est revenu. Tout gentil.",
+   "dur": 4.2
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Bravo, franchement. Six jours. Je suis fier de toi.",
+   "dur": 2.4,
+   "taille": 0.9,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Bravo,|franchement. Six|jours. Je suis|fier de toi."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Merci… ?",
+   "dur": 2.4,
+   "taille": 0.9,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "Merci… ?"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Tu t'es prouvé que tu pouvais. Pas besoin d'aller plus loin.",
+   "dur": 2.4,
+   "taille": 1.1,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Tu t'es prouvé|que tu pouvais.|Pas besoin|d'aller plus|loin.",
+   "taille0": 0.9
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "J'avais dit trente jours.",
+   "dur": 2.4,
+   "taille": 1.1,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "J'avais dit trente|jours."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Trente, c'était pour te motiver. Là, t'as gagné. Une petite récompense, et tu repars.",
+   "dur": 2.4,
+   "taille": 1.4,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Trente, c'était|pour te motiver.|Là, t'as gagné.|Une petite|récompense, et|tu repars.",
+   "taille0": 1.1
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "C'est vrai que je l'ai méritée…",
+   "dur": 2.4,
+   "taille": 1.4,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "C'est vrai que je|l'ai méritée…"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Voilà ! Ce soir, tranquille.",
+   "dur": 2.4,
+   "taille": 1.7,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Voilà ! Ce soir,|tranquille.",
+   "taille0": 1.4
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Et demain ?",
+   "dur": 2.4,
+   "taille": 1.7,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "Et demain ?"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Demain, tu repars du jour un. C'est rien.",
+   "dur": 2.4,
+   "taille": 1.7,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Demain, tu|repars du jour|un. C'est rien."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "C'est rien pour toi. Moi, ça me fait six jours à refaire.",
+   "dur": 2.4,
+   "taille": 1.5,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "C'est rien pour|toi. Moi, ça me|fait six jours à|refaire.",
+   "taille0": 1.7
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Tu me félicites pour me faire lâcher. Une récompense que je regrette dix minutes après, c'en est pas une.",
+   "dur": 2.4,
+   "taille": 1.2,
+   "hum": "fier",
+   "ehum": "boude",
+   "bulle": "Tu me félicites|pour me faire|lâcher. Une|récompense que je|regrette dix|minutes après,|c'en est pas une.",
+   "taille0": 1.5
+  },
+  {
+   "tab": "seule",
+   "texte": "Sa récompense : **le jour 7.**",
+   "vo": "Ce soir, ma récompense, c'est le jour sept. Et à vingt et une heures, je suis dehors.",
+   "dur": 3.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Rabat-joie.",
+   "dur": 2.4,
+   "taille": 0.6,
+   "ehum": "boude",
+   "hum": "triste",
+   "bulle": "Rabat-joie.",
+   "taille0": 0.9
+  },
+  {
+   "tab": "carte",
+   "texte": "Écris **TENIR**<br>en commentaire",
+   "vo": "Le démon devient gentil quand tu tiens bien. Écris TENIR en commentaire : je t'envoie ton plan en privé. Ton heure à risque, et quoi faire quand il arrive.",
+   "dur": 3.0,
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton heure à risque"
+   ]
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Tu vas tout gâcher !",
+   "dur": 2.4,
+   "taille": 0.4,
+   "ehum": "peur",
+   "hum": "triste",
+   "bulle": "Tu vas tout|gâcher !",
+   "taille0": 0.7
+  }
+ ]
+}

@@ -1,0 +1,175 @@
+{
+ "id": "MDA-X435",
+ "layout": "baton",
+ "music_seed": 11435,
+ "handle": "mentaldacier2030",
+ "bandeau": "LE DÉMON DE LA BR",
+ "scenes": [
+  {
+   "tab": "meme",
+   "meme": {
+    "img": "bike-fall.jpg",
+    "legendes": [
+     {
+      "t": "MOI QUI VEUX|ARRÊTER LA BR",
+      "x": 0.5,
+      "y": 0.1,
+      "taille": 36
+     },
+     {
+      "t": "MOI QUI GARDE|LE TEL DANS MON LIT",
+      "x": 0.5,
+      "y": 0.42,
+      "taille": 34
+     },
+     {
+      "t": "« POURQUOI|J'AI CRAQUÉ ? »",
+      "x": 0.5,
+      "y": 0.78,
+      "taille": 36
+     }
+    ]
+   },
+   "vo": "J'ai essayé d'arrêter la BR dix fois. Et dix fois, je me suis mis le bâton dans la roue tout seul.",
+   "dur": 4.2
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Et ce matin, je t'ai ressorti la liste. Le mois dernier ? Trois jours. La fois d'avant ? Deux.",
+   "dur": 2.4,
+   "taille": 1.2,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Et ce matin, je|t'ai ressorti la|liste. Le mois|dernier ? Trois|jours. La fois|d'avant ? Deux."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Je m'en souviens.",
+   "dur": 2.4,
+   "taille": 1.2,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "Je m'en souviens."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Alors pourquoi la onzième marcherait ? T'es pas fait pour ça. Lâche l'affaire.",
+   "dur": 2.4,
+   "taille": 1.5,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Alors pourquoi|la onzième|marcherait ?|T'es pas fait|pour ça. Lâche|l'affaire.",
+   "taille0": 1.2
+  },
+  {
+   "tab": "marionnette",
+   "texte": "Il baisse **la tête.**",
+   "vo": "Peut-être que t'as raison.",
+   "dur": 3.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Évidemment. Reste comme t'es, c'est plus simple.",
+   "dur": 2.4,
+   "taille": 1.7,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Évidemment.|Reste comme|t'es, c'est plus|simple.",
+   "taille0": 1.5
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Attends. Les dix fois, je faisais comment ?",
+   "dur": 2.4,
+   "taille": 1.7,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "Attends. Les dix|fois, je faisais|comment ?"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Comment ça ?",
+   "dur": 2.4,
+   "taille": 1.6,
+   "ehum": "boude",
+   "hum": "triste",
+   "bulle": "Comment ça ?"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Je comptais sur ma volonté. Et toi, tu revenais toujours à la même heure. Le soir, dans ma chambre.",
+   "dur": 2.4,
+   "taille": 1.6,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "Je comptais sur ma|volonté. Et toi,|tu revenais|toujours à la même|heure. Le soir,|dans ma chambre."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Coïncidence.",
+   "dur": 2.4,
+   "taille": 1.4,
+   "ehum": "boude",
+   "hum": "triste",
+   "bulle": "Coïncidence.",
+   "taille0": 1.6
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Non. Ton heure. Cette fois, je change pas de volonté, je change de soir.",
+   "dur": 2.4,
+   "taille": 1.2,
+   "hum": "fier",
+   "ehum": "boude",
+   "bulle": "Non. Ton heure.|Cette fois, je|change pas de|volonté, je change|de soir.",
+   "taille0": 1.4
+  },
+  {
+   "tab": "porte",
+   "texte": "À 22 h, **le tel sort de la chambre.**",
+   "vo": "À vingt-deux heures, le tel sort de la chambre.",
+   "dur": 3.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Ça marchera pas non plus.",
+   "dur": 2.4,
+   "taille": 0.6,
+   "ehum": "colere",
+   "hum": "triste",
+   "bulle": "Ça marchera pas|non plus.",
+   "taille0": 0.9
+  },
+  {
+   "tab": "carte",
+   "texte": "Écris **TENIR**<br>en commentaire",
+   "vo": "Si t'as raté dix fois, c'est pas toi le problème, c'est le plan. Écris TENIR en commentaire : je t'envoie ton plan en privé. Ton heure à risque, et quoi faire quand il arrive.",
+   "dur": 3.0,
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton heure à risque"
+   ]
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Arrête de leur donner des idées !",
+   "dur": 2.4,
+   "taille": 0.4,
+   "ehum": "peur",
+   "hum": "triste",
+   "bulle": "Arrête de leur|donner des idées|!",
+   "taille0": 0.7
+  }
+ ]
+}

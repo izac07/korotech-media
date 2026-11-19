@@ -1,0 +1,167 @@
+{
+ "id": "MDA-X434",
+ "layout": "baton",
+ "music_seed": 11434,
+ "handle": "mentaldacier2030",
+ "bandeau": "LE DÉMON DE LA BR",
+ "scenes": [
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Bouge pas. T'es bien, là. Une petite BR avant de te lever ?",
+   "dur": 2.4,
+   "taille": 1.0,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Bouge pas. T'es|bien, là. Une|petite BR avant|de te lever ?"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Il est sept heures. T'es déjà là, toi ?",
+   "dur": 2.4,
+   "taille": 1.0,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "Il est sept|heures. T'es déjà|là, toi ?"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Reste au chaud. T'as le temps.",
+   "dur": 2.4,
+   "taille": 1.1,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Reste au chaud.|T'as le temps."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Je commence à neuf heures.",
+   "dur": 2.4,
+   "taille": 1.1,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "Je commence à neuf|heures."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Justement. Une petite BR, et tu commences la journée détendu.",
+   "dur": 2.4,
+   "taille": 1.3,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Justement. Une|petite BR, et tu|commences la|journée détendu.",
+   "taille0": 1.1
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "La dernière fois, j'ai commencé la journée en retard. Et dégoûté.",
+   "dur": 2.4,
+   "taille": 1.3,
+   "hum": "triste",
+   "ehum": "boude",
+   "bulle": "La dernière fois,|j'ai commencé la|journée en retard.|Et dégoûté."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Ça, c'était avant. T'es même pas levé, personne te voit. Prends le tel.",
+   "dur": 2.4,
+   "taille": 1.6,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Ça, c'était|avant. T'es même|pas levé,|personne te|voit. Prends le|tel.",
+   "taille0": 1.3
+  },
+  {
+   "tab": "monte",
+   "texte": "Il attrape **le tel.**",
+   "vo": "Je regarde juste mes messages.",
+   "dur": 3.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Voilà. Et après les messages…",
+   "dur": 2.4,
+   "taille": 1.7,
+   "ehum": "ricane",
+   "hum": "triste",
+   "bulle": "Voilà. Et après|les messages…",
+   "taille0": 1.6
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Après les messages, tu me gardes au lit une heure. Je connais ton truc.",
+   "dur": 2.4,
+   "taille": 1.7,
+   "hum": "colere",
+   "ehum": "boude",
+   "bulle": "Après les|messages, tu me|gardes au lit une|heure. Je connais|ton truc."
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Quel truc ?",
+   "dur": 2.4,
+   "taille": 1.7,
+   "ehum": "boude",
+   "hum": "triste",
+   "bulle": "Quel truc ?"
+  },
+  {
+   "tab": "dialogue",
+   "qui": "heros",
+   "vo": "Allongé, je négocie. Debout, t'as plus rien à dire.",
+   "dur": 2.4,
+   "taille": 1.4,
+   "hum": "fier",
+   "ehum": "boude",
+   "bulle": "Allongé, je|négocie. Debout,|t'as plus rien à|dire.",
+   "taille0": 1.7
+  },
+  {
+   "tab": "pose",
+   "texte": "Le matin, **c'est son heure.**",
+   "vo": "Le matin, c'est ton heure. Alors le matin, je me lève tout de suite, et le tel attend que je sois habillé.",
+   "dur": 3.0
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "C'est quoi ce plan sorti de nulle part ?",
+   "dur": 2.4,
+   "taille": 0.6,
+   "ehum": "colere",
+   "hum": "triste",
+   "bulle": "C'est quoi ce|plan sorti de|nulle part ?",
+   "taille0": 1.0
+  },
+  {
+   "tab": "carte",
+   "texte": "Écris **TENIR**<br>en commentaire",
+   "vo": "Toi aussi, ton démon a son heure. Écris TENIR en commentaire : je t'envoie ton plan en privé. Ton heure à risque, et quoi faire quand il arrive.",
+   "dur": 3.0,
+   "carte": [
+    "ÉCRIS TENIR",
+    "ton heure à risque"
+   ]
+  },
+  {
+   "tab": "dialogue",
+   "qui": "envie",
+   "vo": "Non ! Écris pas ça, toi !",
+   "dur": 2.4,
+   "taille": 0.4,
+   "ehum": "peur",
+   "hum": "triste",
+   "bulle": "Non ! Écris pas|ça, toi !",
+   "taille0": 0.7
+  }
+ ]
+}
